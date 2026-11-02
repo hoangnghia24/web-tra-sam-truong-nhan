@@ -18,3 +18,10 @@
 - The full 16:9 cover must remain visible on desktop and mobile. Place the editorial lead and CTAs in a separate content block after the image.
 - Do not treat the PDF's percentage breakdown beyond the highlighted 3% as final product labeling; the Master Prompt explicitly requires verification of the other ratios. The prototype's detailed ingredient percentages must be removed until confirmed.
 - JSON file storage targets a writable single-process Node server for this demo. It is unsuitable as durable storage on serverless or multiple processes.
+
+## CP-01 typography implementation
+
+- `next/font/local` serves Spectral 400/600/700 and Mulish 400/600/700 with `display: swap`, local fallback metrics and no browser requests to a font provider. `font-synthesis: none` prevents fake weights. The TTF sources and SIL OFL texts are committed together.
+- Shared tokens: H1 `clamp(34px, 5vw, 76px)`, H2 `clamp(28px, 3.8vw, 52px)`, H3 `clamp(24px, 2.3vw, 30px)`, body 16–18px, caption 13–14px, button 14–16px. Spectral headings use tighter tracking and 1.07–1.12 line height; Mulish controls/body use roomier line height. These values follow the user's typography amendment.
+- The original 16:9 artwork is a separate full-width hero; the site's H1 appears below it. The image is not cropped, stretched or overlaid.
+- Header uses an editorial text wordmark rather than recreating the logo embedded in the cover. The footer labels the site as a campaign simulation until brand authorization is confirmed.

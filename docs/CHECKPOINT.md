@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-01
+Current checkpoint: CP-02
 Status: IN_PROGRESS
-Last completed checkpoint: CP-00 (verified; commit pending). Source audit was committed as `d43d066`.
+Last completed checkpoint: CP-01 (verified; commit pending). CP-00 was committed as `d8a6b16`; source audit was committed as `d43d066`.
 
 ## Completed Work
 
@@ -18,10 +18,11 @@ Last completed checkpoint: CP-00 (verified; commit pending). Source audit was co
 - Created an uncommitted static visual prototype. It does not satisfy the Next.js application requirement and must be migrated.
 - Initialized Next.js 16.4.4 App Router with React 19.3.1, strict TypeScript, Tailwind 4, ESLint and requested app libraries. Removed the temporary static prototype source.
 - Next.js development server returned HTTP 200 on `http://localhost:3000/`; production build, lint, and typecheck passed.
+- Completed CP-01 shared header/footer and PageBanner, responsive typography tokens, and full 16:9 hero with CTAs in a separate content block. Verified mobile navigation and font rendering in browser.
 
 ## Current Task
 
-Complete CP-01 branding and typography: shared shell, tuned responsive type, full-image hero, Vietnamese glyph and visual checks.
+Build CP-02: versioned content/seed JSON, private runtime JSON storage, Zod schemas, and public API foundations.
 
 ## Completed Files
 
@@ -38,12 +39,13 @@ Complete CP-01 branding and typography: shared shell, tuned responsive type, ful
 - `src/app/page.tsx`
 - `src/app/globals.css`
 - `package.json`, `package-lock.json`, `tsconfig.json`, `postcss.config.mjs`, `eslint.config.mjs`, `next.config.ts`
+- `src/components/site/SiteHeader.tsx`, `SiteFooter.tsx`, `PageBanner.tsx`
 
 ## Files Being Modified
 
-- `src/app/globals.css`
-- `src/app/page.tsx`
-- `src/components/*`
+- `data/content/*`, `data/seed/*`
+- `src/lib/json-store.ts`, `src/lib/schemas.ts`
+- `src/app/api/*`
 
 ## Tests Passed
 
@@ -53,20 +55,22 @@ Complete CP-01 branding and typography: shared shell, tuned responsive type, ful
 - `npm run build`, `npm run lint`, `npm run typecheck` passed for the Next.js skeleton.
 - GET `http://localhost:3000/` returned HTTP 200.
 - `npm audit --omit=dev --audit-level=moderate` found 0 production vulnerabilities.
+- CP-01 `npm run build`, `npm run lint`, and `npm run typecheck` passed.
+- All six font files contain required Vietnamese glyphs; browser computed fonts are Mulish for body and Spectral for H1.
+- Desktop and 390 px mobile inspection showed the complete 16:9 cover; mobile width 390 px with document scroll width 375 px. Mobile menu opened and closed.
 
 ## Known Issues
 
-- The Next.js skeleton has only the homepage intro; APIs, runtime storage, other routes, and admin features are not yet implemented.
-- The homepage uses the full 16:9 cover, but desktop/mobile Next.js visual QA is pending.
+- The Next.js app has only the homepage intro; APIs, runtime storage, other routes, and admin features are not yet implemented.
+- Typography must be reviewed again across the six requested routes after those pages exist.
 - `npm install` reported 16 moderate vulnerabilities including dev dependencies; production-only audit found 0. Review during CP-10.
 - Official purchase URL is not supplied, so no buy link should be shown.
 
 ## Next Actions
 
-1. Complete shared header/footer and editorial typography tokens without duplicate text over the cover.
-2. Check all required Vietnamese glyphs in local font files.
-3. Inspect desktop/mobile rendering and adjust type scale and wrapping.
-4. Verify CP-01, record results, commit, then begin CP-02.
+1. Create content/seed JSON, schemas and a queued atomic JSON store with backups.
+2. Add public API route handlers and test write/read/restart behavior.
+3. Verify CP-02, record results and commit before CP-03.
 
 ## Resume Command
 

@@ -32,3 +32,15 @@ Relevant source facts: campaign line and three phases (page 21); 15 × 2 g box, 
 | `git check-ignore` | `.next`, `data/runtime`, and 198 MB PDF excluded. |
 
 CP-00 passes. Next.js visual checks and all feature checks remain open for later checkpoints.
+
+## CP-01 — branding and typography (2026-11-02)
+
+| Check | Result |
+| --- | --- |
+| Required Vietnamese glyphs `ă â ê ô ơ ư đ ễ ữ ộ ự ắ` and uppercase forms | PASS in all six Spectral/Mulish TTF files via `fontTools` cmap. |
+| `npm run build`, `npm run lint`, `npm run typecheck` | PASS after shared shell and typography changes. |
+| Desktop browser, `localhost:3000` | Full cover visible without crop/overlay. Header, CTA and wordmark render. |
+| Mobile browser, 390 × 844 | Cover ratio measured 1.7778; H1 computed 34px; body font computed Mulish and heading Spectral; no horizontal overflow (document scroll width 375px). |
+| Mobile menu | Open/close confirmed via visible menu and `aria-expanded` changes. |
+
+The six-route typography review requested in the later brief remains pending until those routes are implemented.

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function HomePage() {
   return (
-    <main>
+    <main id="main">
       <section className="cover-hero" aria-label="Trà Sâm Trường Nhân">
         <Image
           src="/images/truong-nhan-cover.png"

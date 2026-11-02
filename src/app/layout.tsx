@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { SiteFooter } from '@/components/site/SiteFooter';
+import { SiteHeader } from '@/components/site/SiteHeader';
 import './globals.css';
 
 const spectral = localFont({
@@ -32,7 +34,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="vi" className={`${spectral.variable} ${mulish.variable}`}>
-      <body>{children}</body>
+      <body>
+        <a href="#main" className="skip-link">Bỏ qua điều hướng</a>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
