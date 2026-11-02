@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-06
+Current checkpoint: CP-07
 Status: IN_PROGRESS
-Last completed checkpoint: CP-05 (verified; commit pending). CP-04 was committed as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-06 (verified; commit pending). CP-05 was committed as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -23,10 +23,11 @@ Last completed checkpoint: CP-05 (verified; commit pending). CP-04 was committed
 - Completed CP-03 ten-section homepage journey (hero, editorial intro, seven campaign sections and closing) with source-based copy, product facts, challenge steps and exact team names.
 - Completed CP-04 eight-category receipt with 24-hour validation, JSON persistence, editorial result, PNG/print/copy/share controls and a link to the timer.
 - Completed CP-05 seven-minute wall-clock timer with pause/resume/reset, progress indicators, completion message and private event tracking.
+- Completed CP-06 product route from JSON with original-image gallery, seven ingredient tabs, preparation, FAQ, source caveats and verified-URL-only shop CTA.
 
 ## Current Task
 
-Build CP-06 product experience from JSON: transparent product facts, ingredient exploration, preparation, FAQ and a purchase CTA only if an official URL is configured.
+Build CP-07 community submission and moderation flow plus a local personalized reminder card creator.
 
 ## Completed Files
 
@@ -51,11 +52,12 @@ Build CP-06 product experience from JSON: transparent product facts, ingredient 
 - `src/app/page.tsx` complete landing journey
 - `src/app/hoa-don-cho-doi/page.tsx`, `src/components/receipt/ReceiptExperience.tsx`
 - `src/app/7-phut-cho-minh/page.tsx`, `src/components/timer/SevenMinuteTimer.tsx`, `src/lib/timer.ts`, `src/lib/timer.test.ts`
+- `src/app/san-pham/page.tsx`, `src/components/product/IngredientExplorer.tsx`
 
 ## Files Being Modified
 
-- `src/app/san-pham/page.tsx`
-- `src/components/product/*`
+- `src/app/thu-thach/page.tsx`, `src/app/gui-loi-nhac/page.tsx`
+- `src/components/community/*`, `src/components/reminder/*`
 
 ## Tests Passed
 
@@ -73,10 +75,11 @@ Build CP-06 product experience from JSON: transparent product facts, ingredient 
 - CP-03 `npm run build`, `npm run lint`, and `npm run typecheck` passed; desktop/mobile browser inspection found no broken images or horizontal overflow.
 - CP-04 `npm run test` (7 tests), lint, typecheck and build passed. Mobile form POST created a correct receipt. Runtime JSON survived a dev-server restart.
 - CP-05 `npm run test` (9 tests), lint, typecheck and build passed. Mobile start/pause/resume/reset worked. POST completion event returned 201 and was removed after testing.
+- CP-06 JSON validation, lint, typecheck and build passed. Mobile image/overflow check, ingredient selection and FAQ expansion passed; no fake shop link rendered.
 
 ## Known Issues
 
-- Feature routes beyond the homepage, receipt and timer are not yet implemented. Landing links to those routes will work as their checkpoints complete.
+- Feature routes beyond the homepage, receipt, timer and product are not yet implemented. Landing links to those routes will work as their checkpoints complete.
 - Full seven-minute completion UI was not exercised in browser; the elapsed-time helper and event API were verified separately.
 - PNG button reported success, but the in-app browser did not expose a download event; verify actual file delivery in a regular browser during final QA.
 - Typography must be reviewed again across the six requested routes after those pages exist.
@@ -85,10 +88,10 @@ Build CP-06 product experience from JSON: transparent product facts, ingredient 
 
 ## Next Actions
 
-1. Build product route from validated JSON and an ingredient explorer.
-2. Verify desktop/mobile content and source accuracy, then record and commit CP-06.
-3. Continue to CP-07 community and reminders.
+1. Build challenge submission form and approved-only public gallery.
+2. Build local reminder card preview and export/share controls.
+3. Verify moderation and persistence, record results, commit, then continue to CP-08.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-06. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-07. Do not repeat completed work.

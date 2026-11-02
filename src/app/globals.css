@@ -237,6 +237,70 @@ img { display: block; max-width: 100%; }
 .timer-finish a { display: inline-flex; align-items: center; gap: .2rem; color: var(--brand-forest); font-size: .84rem; font-weight: 700; text-decoration: underline; text-underline-offset: .3rem; }
 .timer-privacy { margin: 1.8rem 0 0; color: var(--text-secondary); font-size: .74rem; }
 
+.product-container { width: min(100% - 3rem, 1180px); margin: auto; }
+.product-page-intro, .product-gallery-section, .product-ingredients-section, .product-faq-section, .product-shop-section { padding: clamp(5rem, 8vw, 8rem) 0; }
+.product-page-intro { background: var(--brand-ivory); }
+.product-page-layout { width: min(100% - 3rem, 1280px); margin: auto; display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: clamp(3rem, 6vw, 7rem); }
+.product-page-image { padding: 1rem; background: #e5e8d9; transform: rotate(-1.3deg); box-shadow: 20px 20px 0 #d9dfce; }
+.product-page-image img, .product-gallery-art img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: contain; }
+.product-page-copy h2, .product-brewing-section h2, .product-shop-section h2 { margin: 0 0 1.5rem; font-family: var(--type-display); font-size: var(--text-h2); font-weight: 600; line-height: 1.12; letter-spacing: -.04em; }
+.product-page-copy h2 em, .product-shop-section h2 em { color: var(--brand-leaf); font-weight: 400; }
+.product-page-copy > p:not(.section-index), .product-section-lead, .product-faq-layout > div:first-child > p:last-child { color: var(--text-secondary); }
+.product-facts { margin: 2.5rem 0 0; border-top: 1px solid #ccd6c4; }
+.product-facts div { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid #ccd6c4; }
+.product-facts dt { color: var(--text-secondary); font-size: .84rem; }
+.product-facts dd { margin: 0; color: var(--brand-forest); font-weight: 700; text-align: right; }
+.product-gallery-section { background: #ececde; }
+.product-gallery { display: grid; grid-template-columns: 1.6fr .8fr; gap: 2rem; margin-top: 3rem; }
+.product-gallery-art { align-self: start; padding: .75rem; background: #faf7ee; }
+.product-gallery-notes { display: grid; gap: 1.5rem; }
+.product-gallery-notes > div { position: relative; min-height: 180px; padding: 1.7rem; background: var(--brand-ivory); }
+.product-gallery-notes svg { color: var(--brand-gold); }
+.product-gallery-notes span { position: absolute; top: 1.4rem; right: 1.6rem; font-family: var(--type-display); color: #9aab8b; }
+.product-gallery-notes h3 { margin: .7rem 0 .3rem; font-family: var(--type-display); font-size: 1.5rem; font-weight: 600; }
+.product-gallery-notes p, .gallery-disclosure { margin: 0; color: var(--text-secondary); font-size: .85rem; }
+.gallery-disclosure { margin-top: 1.25rem; }
+.product-ingredients-section { background: var(--brand-ivory); }
+.product-section-lead { max-width: 650px; }
+.ingredient-explorer { display: grid; grid-template-columns: .75fr 1.25fr; gap: 2rem; margin-top: 3rem; }
+.ingredient-list { display: grid; align-content: start; }
+.ingredient-list button { display: flex; align-items: center; gap: 1.5rem; min-height: 62px; border: 0; border-bottom: 1px solid #d7dece; padding: .7rem 1rem; background: transparent; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.35rem; text-align: left; cursor: pointer; }
+.ingredient-list button:hover, .ingredient-list button[aria-selected="true"] { background: #e8eddf; }
+.ingredient-list button[aria-selected="true"] { border-left: 3px solid var(--brand-gold); }
+.ingredient-list button span { color: var(--brand-tea); font-family: var(--type-body); font-size: .76rem; font-weight: 700; }
+.ingredient-detail { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 420px; overflow: hidden; padding: clamp(2rem, 5vw, 4.5rem); background: radial-gradient(circle at 75% 25%, #3e6644, transparent 55%), var(--brand-forest); color: var(--brand-ivory); }
+.ingredient-orbit { position: absolute; top: -5rem; right: -4rem; width: 360px; height: 360px; display: grid; place-items: center; border: 1px solid rgba(226,199,124,.32); border-radius: 50%; }
+.ingredient-orbit::before, .ingredient-orbit::after { content: ''; position: absolute; inset: 2rem; border: 1px solid rgba(226,199,124,.24); border-radius: 50%; }
+.ingredient-orbit::after { inset: 4.5rem; }
+.ingredient-orbit span { color: rgba(226,199,124,.35); font-size: 10rem; }
+.ingredient-detail .eyebrow { position: relative; color: var(--brand-gold-light); }
+.ingredient-detail h3 { position: relative; margin: 0 0 1rem; font-family: var(--type-display); font-size: clamp(2rem, 3vw, 3rem); font-weight: 600; line-height: 1.1; }
+.ingredient-detail > p:not(.eyebrow) { position: relative; max-width: 440px; margin: 0 0 1rem; color: #dce8da; }
+.ingredient-detail .ingredient-measure { color: var(--brand-gold-light) !important; font-size: .82rem; font-weight: 700; }
+.ingredient-verification { grid-column: 1/-1; margin: 0; color: var(--text-secondary); font-size: .8rem; }
+.product-brewing-section { position: relative; overflow: hidden; padding: clamp(5rem, 8vw, 8rem) 0; background: var(--brand-dark); color: var(--brand-ivory); }
+.product-brewing-layout { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; }
+.product-brewing-section h2 em { color: var(--brand-gold-light); font-weight: 400; }
+.product-brewing-layout > div > p:last-child { max-width: 390px; color: #c7d6c4; }
+.product-brewing-section ol { position: relative; z-index: 1; list-style: none; margin: 0; padding: 0; }
+.product-brewing-section li { display: grid; grid-template-columns: 3rem 1fr; column-gap: 1rem; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,.2); }
+.product-brewing-section li span { grid-row: span 2; color: var(--brand-gold-light); font-family: var(--type-display); font-size: 1.3rem; }
+.product-brewing-section li strong { font-family: var(--type-display); font-size: 1.45rem; font-weight: 600; }
+.product-brewing-section li p { margin: 0; color: #c7d6c4; font-size: .88rem; }
+.brewing-icon { position: absolute; bottom: -4rem; left: 30%; color: rgba(226,199,124,.13); }
+.product-faq-section { background: #f0efe3; }
+.product-faq-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(3rem, 8vw, 8rem); }
+.product-faq-list details { border-top: 1px solid #cdd5c5; }
+.product-faq-list details:last-child { border-bottom: 1px solid #cdd5c5; }
+.product-faq-list summary { padding: 1.3rem 2rem 1.3rem 0; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.3rem; font-weight: 600; cursor: pointer; }
+.product-faq-list details p { margin: -.25rem 0 1.4rem; color: var(--text-secondary); font-size: .9rem; }
+.product-shop-section { background: var(--brand-cream); text-align: center; }
+.product-shop-section .section-index { justify-content: center; }
+.product-shop-section h2 { margin-bottom: .6rem; }
+.product-shop-section p { max-width: 630px; margin: 0 auto 1.5rem; color: var(--text-secondary); }
+.product-shop-actions { display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; }
+.product-shop-section .shop-reference-price { margin-top: 2.5rem; font-size: .78rem; }
+
 .page-banner { position: relative; overflow: hidden; padding: clamp(4rem, 8vw, 7rem) 1.5rem; }
 .page-banner::after { content: '✳'; position: absolute; right: 5%; bottom: -9rem; font-family: var(--type-display); font-size: clamp(16rem, 30vw, 30rem); line-height: 1; opacity: .07; pointer-events: none; }
 .page-banner-light { background: radial-gradient(circle at 78% 12%, #e5ead6, transparent 38%), var(--brand-cream); color: var(--brand-forest); }
@@ -273,6 +337,9 @@ img { display: block; max-width: 100%; }
   .story-layout, .receipt-feature, .pause-feature, .product-feature, .reminder-feature, .team-feature { gap: 3rem; }
   .receipt-experience-inner { grid-template-columns: 1fr; max-width: 740px; }
   .timer-layout { grid-template-columns: 1fr; max-width: 740px; }
+  .product-page-layout, .product-gallery, .product-brewing-layout, .product-faq-layout { grid-template-columns: 1fr; }
+  .product-page-image { transform: none; }
+  .product-gallery-notes { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 800px) {
@@ -308,6 +375,12 @@ img { display: block; max-width: 100%; }
   .timer-experience { padding-inline: 1.25rem; }
   .timer-card { padding: 2rem 1.2rem; box-shadow: 8px 8px 0 #e4e8d9; }
   .timer-ritual { margin-top: 2rem; }
+  .product-container, .product-page-layout { width: min(100% - 2.5rem, 480px); }
+  .product-page-image { box-shadow: 8px 8px 0 #d9dfce; }
+  .product-gallery-notes, .ingredient-explorer { grid-template-columns: 1fr; }
+  .ingredient-detail { min-height: 350px; }
+  .ingredient-verification { grid-column: 1; }
+  .product-gallery-notes > div { min-height: 150px; }
   .home-container { width: min(100% - 2.5rem, 480px); }
   .home-section { padding: 4.5rem 0; }
   .section-title { line-height: 1.16; }

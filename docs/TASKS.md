@@ -11,8 +11,8 @@
 | DONE | CP-03: complete eight-section landing page. |
 | DONE | CP-04: receipt time form, persistence, export and sharing. |
 | DONE | CP-05: seven-minute timer and completion tracking. |
-| IN_PROGRESS | CP-06: product route and ingredient exploration. |
-| TODO | CP-07: community submissions and reminder cards. |
+| DONE | CP-06: product route and ingredient exploration. |
+| IN_PROGRESS | CP-07: community submissions and reminder cards. |
 | TODO | CP-08: strategy report and charts. |
 | TODO | CP-09: contact, team and protected admin. |
 | TODO | CP-10: QA, SEO, README, lint, tests and production build. |

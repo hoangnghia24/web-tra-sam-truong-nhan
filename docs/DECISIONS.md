@@ -45,3 +45,10 @@
 - Base remaining time on a wall-clock deadline rather than subtracting one second per interval. This keeps the countdown accurate if a mobile browser throttles background timers.
 - Record completion once per finished session. The timer can be used without account details or purchase, and a failed analytics write does not erase the visitor's completion state.
 - Use a tea-toned circular dial, a thin linear bar and short optional breathing prompts; honor reduced-motion preferences in the shared CSS.
+
+## CP-06 product content
+
+- Render the supplied full cover without cropping in the product gallery. Use editorial fact cards for extra views until official product photography exists.
+- Keep all seven ingredients selectable. Show the documented 3% leaf ratio, while clearly marking other ratios as pending label verification; ingredient presence does not imply a proven effect.
+- Resolve a purchase link only from validated `site-settings.json` or product JSON. When both are null, show the status as text and no fake destination.
+- Render homepage and product page dynamically so edits to JSON content can appear without rebuilding the site.

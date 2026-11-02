@@ -92,3 +92,15 @@ Print, copy and Web Share controls are implemented; browser-level verification r
 | POST `/api/events` | `timer_completed` returned HTTP 201 and appeared in private `analytics-events.json`. Test record was deleted afterward using the validated store. |
 
 The full seven-minute wait was not run in browser; the elapsed-time helper and event API were verified separately. The completion UI should be included in final QA.
+
+## CP-06 — product experience (2026-11-03)
+
+| Check | Result |
+| --- | --- |
+| `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run build` | PASS before the final dynamic-rendering adjustment; rerun build at commit gate. |
+| Mobile browser, 390 px | Product content, gallery, ingredient tabs, FAQ and shop disclosure fit; scroll width 375 px, no broken images. |
+| Ingredient interaction | Selecting Lá Sâm Ngọc Linh changed the detail panel to the source's 3% statement and verification note. |
+| FAQ | Expanded the 3% question and saw the documented answer. |
+| Shop state | No unverified purchase link rendered while `officialShopUrl` is null. |
+
+The source provides one full product image. The gallery labels missing official close-up photos instead of inventing them.

@@ -4,6 +4,8 @@ import { ArrowDown, ArrowUpRight, Clock3, Leaf, Mail, Sparkles } from 'lucide-re
 import { readJson } from '@/lib/json-store';
 import { brandSchema, campaignSchema, productSchema, teamSchema } from '@/lib/schemas';
 
+export const dynamic = 'force-dynamic';
+
 export default async function HomePage() {
   const [brand, campaign, product, team] = await Promise.all([
     readJson('content/brand.json', brandSchema),
