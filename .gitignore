@@ -7,6 +7,7 @@ dist/
 *.log
 public/references/
 data/runtime/
+data/**/*.bak
 .env
 .env.*
 !.env.example

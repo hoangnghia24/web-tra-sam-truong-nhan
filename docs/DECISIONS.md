@@ -64,3 +64,11 @@
 - Keep detailed strategy notes in validated `strategy-report.json`, with page references to the supplied PDF. The public report renders dynamically so edited content can appear without rebuilding.
 - Use interactive SWOT and 7Ps tabs, a Recharts budget chart with an accompanying data table, and editorial cards for journey, phases, KPI and risks.
 - Label every budget and KPI as a plan. The deck contains inconsistent statements about product ingredients and some performance figures; visitor product facts follow the separately reviewed ingredient page, while the report avoids presenting draft claims as verified outcomes.
+
+## CP-09 contact and administration
+
+- Render the four team members exactly from `team.json`; use initials rather than invented portraits or roles. Contact submissions require consent and remain private.
+- Keep admin disabled until `ADMIN_PASSWORD_HASH` and a 32-character minimum `SESSION_SECRET` are configured. The signed, HTTP-only cookie expires after eight hours. All admin pages guard on the server; all admin APIs also check the session.
+- Count only records in private runtime JSON. The dashboard never converts planned KPI targets into observed results.
+- Use validated JSON editors for product, team, campaign phase and site settings. Each save writes atomically and preserves a `.bak`; backups are ignored by Git. Public shop and social URLs require HTTPS.
+- Track explicit product and shop CTA clicks with an anonymous event. The site never constructs an unverified shop link.

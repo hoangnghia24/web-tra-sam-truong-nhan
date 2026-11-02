@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowDown, ArrowUpRight, Clock3, Leaf, Mail, Sparkles } from 'lucide-react';
 import { readJson } from '@/lib/json-store';
 import { brandSchema, campaignSchema, productSchema, teamSchema } from '@/lib/schemas';
+import { TrackedLink } from '@/components/site/TrackedLink';
 
 export const dynamic = 'force-dynamic';
 
@@ -27,7 +28,7 @@ export default async function HomePage() {
           <p>{brand.emotionalMessage} Hãy bắt đầu bằng một khoảng dừng nhỏ.</p>
           <div className="intro-actions">
             <Link href="/hoa-don-cho-doi" className="button-primary">Khám phá hóa đơn của tôi <ArrowUpRight size={17} aria-hidden="true" /></Link>
-            <Link href="/san-pham" className="button-text">Tìm hiểu trà sâm <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <TrackedLink href="/san-pham" type="product_clicked" className="button-text">Tìm hiểu trà sâm <ArrowUpRight size={17} aria-hidden="true" /></TrackedLink>
           </div>
           <a className="intro-scroll" href="#cau-chuyen" aria-label="Cuộn đến câu chuyện"><ArrowDown size={17} aria-hidden="true" /></a>
         </div>
@@ -87,7 +88,7 @@ export default async function HomePage() {
             <h2 className="section-title" id="home-product-title">Một tách trà cho <em>nhịp sống hôm nay.</em></h2>
             <p>{product.name} kết hợp {product.ingredientCount} thành phần trong dạng túi lọc tiện pha. Tài liệu chiến dịch ghi nhận {product.ngocLinhLeafPercent}% lá Sâm Ngọc Linh — một tỷ lệ cần được nói rõ, không phóng đại.</p>
             <div className="product-feature-facts"><div><strong>{product.packCount} × {product.gramsPerBag}g</strong><span>Mỗi hộp</span></div><div><strong>{product.brewMinutesMin}–{product.brewMinutesMax} phút</strong><span>Thời gian pha gợi ý</span></div></div>
-            <Link className="editorial-link" href="/san-pham">Khám phá sản phẩm <ArrowUpRight size={16} aria-hidden="true" /></Link>
+            <TrackedLink className="editorial-link" href="/san-pham" type="product_clicked">Khám phá sản phẩm <ArrowUpRight size={16} aria-hidden="true" /></TrackedLink>
           </div>
           <div className="product-feature-visual"><Image src="/images/truong-nhan-cover.png" alt="Trọn bộ hình ảnh sản phẩm Trà Sâm Trường Nhân" width={1920} height={1080} sizes="(max-width: 800px) 100vw, 50vw" /><span className="image-seal"><Leaf size={18} aria-hidden="true" /> Tinh hoa từ núi Ngọc Linh</span></div>
         </div>

@@ -129,3 +129,17 @@ The temporary `.env.local` credential is ignored by Git and will be removed afte
 | Planned data labeling | 500/400/100 million VND budget, chart, KPI targets and absent real results are explicitly labeled as plan versus actual. |
 
 The report summarizes pages 12–37 of the supplied 38-page PDF. A dev-server hot reload briefly kept a stale schema; a server restart resolved it, and the production build passed.
+
+## CP-09 — contact and admin (2026-11-03)
+
+| Check | Result |
+| --- | --- |
+| `npm run validate:json`, `npm run test`, `npm run lint`, `npm run typecheck`, `npm run build` | PASS; 9 unit tests. |
+| Contact page, mobile 390 px | Exact four names, `mailto:` and `tel:` links match team JSON; no horizontal overflow. |
+| Contact form | Disposable QA message submitted via browser; success status and private JSON record verified. Admin dashboard showed one contact and admin contacts displayed the message. Record deleted afterward. |
+| Admin access | Direct dashboard navigation redirected to login. Unauthorized stats, contacts, submissions and settings APIs returned 401. |
+| Temporary local test session | Login 200, protected dashboard/contacts/settings loaded, same-value settings save succeeded, invalid JSON was rejected in UI, `javascript:` shop URL was rejected by API with 400, logout returned to login. |
+| Tracking | Clicking a product CTA created one `product_clicked` event; exact QA event deleted afterward. |
+| Credential cleanup | Temporary `.env.local` removed; after server restart login controls were disabled with configuration guidance. Runtime receipt, event, UGC and contact arrays were empty. |
+
+The content editor is a validated JSON editor, not field-by-field controls. It provides backup on save. Only HTTPS URLs are accepted for configured public links.

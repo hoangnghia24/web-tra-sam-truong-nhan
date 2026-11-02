@@ -14,7 +14,7 @@
 | DONE | CP-06: product route and ingredient exploration. |
 | DONE | CP-07: community submissions, protected moderation API and reminder cards. |
 | DONE | CP-08: strategy report, SWOT/TOWS/7Ps and planned budget chart. |
-| IN_PROGRESS | CP-09: contact, team and protected admin. |
-| TODO | CP-10: QA, SEO, README, lint, tests and production build. |
+| DONE | CP-09: contact, team, policy and protected admin. |
+| IN_PROGRESS | CP-10: QA, SEO, README, lint, tests and production build. |
 
 Typography amendment: base system and glyph coverage DONE. Cross-page visual review for the six named pages remains TODO until those pages exist; complete in CP-10.

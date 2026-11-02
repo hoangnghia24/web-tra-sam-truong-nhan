@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-09
+Current checkpoint: CP-10
 Status: IN_PROGRESS
-Last completed checkpoint: CP-08 (verified; commit pending). CP-07 was committed as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-09 (verified; commit pending). CP-08 was committed as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -26,10 +26,11 @@ Last completed checkpoint: CP-08 (verified; commit pending). CP-07 was committed
 - Completed CP-06 product route from JSON with original-image gallery, seven ingredient tabs, preparation, FAQ, source caveats and verified-URL-only shop CTA.
 - Completed CP-07 challenge form, approved-only stories, protected moderation API and local personalized reminder creator.
 - Completed CP-08 source-based report with interactive SWOT/7Ps, TOWS, budget chart, planned KPIs and explicit lack of real campaign results.
+- Completed CP-09 team/about/contact/policy pages, consent-based contact form, protected admin UI/APIs, real JSON dashboard and validated content editors.
 
 ## Current Task
 
-Build CP-09 team/about/contact/policy routes and protected admin UI/APIs for metrics, moderation, contacts and JSON content settings.
+Complete CP-10 SEO, README, cross-route typography and responsive QA, production verification and any necessary fixes.
 
 ## Completed Files
 
@@ -57,11 +58,11 @@ Build CP-09 team/about/contact/policy routes and protected admin UI/APIs for met
 - `src/app/san-pham/page.tsx`, `src/components/product/IngredientExplorer.tsx`
 - `src/app/thu-thach/page.tsx`, `src/app/gui-loi-nhac/page.tsx`, community/reminder components and admin login/moderation APIs
 - `src/app/chien-luoc/page.tsx`, `src/components/strategy/StrategyExplorer.tsx`, `data/content/strategy-report.json`
+- `src/app/{ve-du-an,lien-he,chinh-sach,admin}/*`, contact/admin components and protected admin APIs
 
 ## Files Being Modified
 
-- `src/app/{ve-du-an,lien-he,chinh-sach,admin}/*`
-- `src/app/api/admin/*`
+- `README.md`, SEO metadata files and final QA fixes
 
 ## Tests Passed
 
@@ -82,10 +83,11 @@ Build CP-09 team/about/contact/policy routes and protected admin UI/APIs for met
 - CP-06 JSON validation, lint, typecheck and build passed. Mobile image/overflow check, ingredient selection and FAQ expansion passed; no fake shop link rendered.
 - CP-07 lint, typecheck and build passed. UI submission stayed pending/hidden; protected login/PATCH approval made it public. Reminder preview and PNG status were verified.
 - CP-08 validated 9 content files, lint, typecheck and build passed. Mobile 390 px report and SWOT/7Ps tabs passed; plan/actual labels checked.
+- CP-09 JSON validation, 9 tests, lint, typecheck and build passed. Exact contacts, form persistence, admin access control, dashboard, content save and click tracking verified.
 
 ## Known Issues
 
-- Team, contact, policy and admin UI routes are not yet implemented. Landing links to those routes will work as their checkpoints complete.
+- Final cross-route typography and Chrome checks remain for CP-10.
 - Full seven-minute completion UI was not exercised in browser; the elapsed-time helper and event API were verified separately.
 - PNG button reported success, but the in-app browser did not expose a download event; verify actual file delivery in a regular browser during final QA.
 - Typography must be reviewed again across the six requested routes after those pages exist.
@@ -94,10 +96,10 @@ Build CP-09 team/about/contact/policy routes and protected admin UI/APIs for met
 
 ## Next Actions
 
-1. Build exact team/about/contact/policy routes and private contact viewing.
-2. Build protected admin UI, analytics from real JSON and content edit APIs.
-3. Verify authentication and mobile routes, record and commit CP-09, then complete final QA.
+1. Write README with setup, admin hash, JSON storage and backup/reset guidance.
+2. Add metadata/sitemap/robots and run six-route typography and responsive checks.
+3. Run final test/build/security checks, record results and commit CP-10.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-09. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-10. Do not repeat completed work.

@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 const email = z.email().max(254);
 const safeText = (max: number) => z.string().trim().min(1).max(max);
+const publicUrl = z.url({ protocol: /^https$/ });
 
 export const brandSchema = z.object({
   name: safeText(100), campaignTitle: safeText(140), tagline: safeText(140),
@@ -21,7 +22,7 @@ export const productSchema = z.object({
   brewWaterMl: z.number().positive(), brewMinutesMin: z.number().positive(),
   brewMinutesMax: z.number().positive(), referencePriceVndMin: z.number().int().nonnegative(),
   referencePriceVndMax: z.number().int().nonnegative(), referencePriceLabel: safeText(160),
-  officialShopUrl: z.url().nullable(), note: safeText(500),
+  officialShopUrl: publicUrl.nullable(), note: safeText(500),
 });
 
 export const ingredientsSchema = z.object({
@@ -66,8 +67,8 @@ export const strategyReportSchema = z.object({
 
 export const faqsSchema = z.object({ items: z.array(z.object({ question: safeText(200), answer: safeText(900) })) });
 export const siteSettingsSchema = z.object({
-  officialShopUrl: z.url().nullable(),
-  socialLinks: z.object({ tiktok: z.url().nullable(), facebook: z.url().nullable(), shopee: z.url().nullable(), zalo: z.url().nullable() }),
+  officialShopUrl: publicUrl.nullable(),
+  socialLinks: z.object({ tiktok: publicUrl.nullable(), facebook: publicUrl.nullable(), shopee: publicUrl.nullable(), zalo: publicUrl.nullable() }),
   analyticsEnabled: z.boolean(), contactFormEnabled: z.boolean(),
 });
 
@@ -94,7 +95,7 @@ export const eventInputSchema = z.object({
 export const eventRecordSchema = eventInputSchema.extend({ id: z.uuid(), createdAt: z.iso.datetime() });
 
 export const ugcInputSchema = z.object({
-  displayName: safeText(80), videoUrl: z.url({ protocol: /^https$/ }).max(500),
+  displayName: safeText(80), videoUrl: publicUrl.max(500),
   story: safeText(1000), consent: z.literal(true), website: z.string().max(0).optional(),
 });
 export const ugcRecordSchema = ugcInputSchema.omit({ website: true }).extend({

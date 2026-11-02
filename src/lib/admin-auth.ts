@@ -17,7 +17,7 @@ function signature(payload: string) {
 
 export async function verifyAdminPassword(password: string) {
   const hash = process.env.ADMIN_PASSWORD_HASH;
-  if (!hash || !process.env.SESSION_SECRET) throw new ApiInputError('Quản trị chưa được cấu hình.', 503);
+  if (!hash || !process.env.SESSION_SECRET || process.env.SESSION_SECRET.length < 32) throw new ApiInputError('Quản trị chưa được cấu hình.', 503);
   return bcrypt.compare(password, hash);
 }
 
@@ -27,7 +27,7 @@ export function createAdminSession(now = Date.now()) {
 }
 
 export function verifyAdminSession(token: string | undefined, now = Date.now()) {
-  if (!token || !process.env.SESSION_SECRET) return false;
+  if (!token || !process.env.SESSION_SECRET || process.env.SESSION_SECRET.length < 32) return false;
   const parts = token.split('.');
   if (parts.length !== 3 || !/^\d+$/.test(parts[0]) || !/^[a-f0-9]{32}$/.test(parts[1]) || !/^[a-f0-9]{64}$/.test(parts[2])) return false;
   if (Number(parts[0]) <= Math.floor(now / 1000)) return false;

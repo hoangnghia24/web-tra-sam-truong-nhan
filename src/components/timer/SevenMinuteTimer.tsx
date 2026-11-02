@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowUpRight, Pause, Play, RotateCcw } from 'lucide-react';
 import { motion } from 'motion/react';
 import { formatRemaining, remainingAt, TIMER_SECONDS } from '@/lib/timer';
+import { TrackedLink } from '@/components/site/TrackedLink';
 
 type TimerState = 'idle' | 'running' | 'paused' | 'complete';
 const messages = [
@@ -117,7 +118,7 @@ export function SevenMinuteTimer() {
           </div>
           {state === 'complete' && <motion.div className="timer-finish" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
             <p>{eventStatus}</p>
-            <div><Link href="/san-pham">Khám phá trà sâm <ArrowUpRight size={15} /></Link><Link href="/gui-loi-nhac">Gửi lời nhắc <ArrowUpRight size={15} /></Link></div>
+            <div><TrackedLink href="/san-pham" type="product_clicked">Khám phá trà sâm <ArrowUpRight size={15} /></TrackedLink><Link href="/gui-loi-nhac">Gửi lời nhắc <ArrowUpRight size={15} /></Link></div>
           </motion.div>}
           <p className="timer-privacy">Bạn có thể tham gia mà không cần mua sản phẩm hay cung cấp thông tin cá nhân.</p>
         </div>

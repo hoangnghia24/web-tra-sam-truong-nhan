@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowUpRight, Droplets, Hourglass, Package } from 'lucide-react';
 import { PageBanner } from '@/components/site/PageBanner';
 import { IngredientExplorer } from '@/components/product/IngredientExplorer';
+import { TrackedLink } from '@/components/site/TrackedLink';
 import { readJson } from '@/lib/json-store';
 import { faqsSchema, ingredientsSchema, productSchema, siteSettingsSchema } from '@/lib/schemas';
 
@@ -63,7 +64,7 @@ export default async function ProductPage() {
 
       <section className="product-faq-section" aria-labelledby="product-faq-title"><div className="product-container product-faq-layout"><div><p className="section-index"><span /> 05 · Minh bạch</p><h2 id="product-faq-title" className="section-title">Những điều <em>nên biết rõ.</em></h2><p>{product.note}</p></div><div className="product-faq-list">{faqs.items.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></div></section>
 
-      <section className="product-shop-section" aria-labelledby="product-shop-title"><div className="product-container"><p className="section-index"><span /> 06 · Tiếp tục câu chuyện</p><h2 id="product-shop-title">Một lời hẹn với <em>chính mình.</em></h2><p>{shopUrl ? 'Kênh mua hàng được cấu hình cho website.' : 'Kênh mua hàng chính thức chưa được xác minh. Nhóm sẽ cập nhật liên kết sau khi đối chiếu nguồn.'}</p><div className="product-shop-actions">{shopUrl && <a className="button-primary" href={shopUrl} target="_blank" rel="noopener noreferrer">Đến gian hàng <ArrowUpRight size={17} /></a>}<Link className="button-text" href="/7-phut-cho-minh">Dành 7 phút cho mình <ArrowUpRight size={16} /></Link></div><p className="shop-reference-price">Giá {product.referencePriceVndMin.toLocaleString('vi-VN')}–{product.referencePriceVndMax.toLocaleString('vi-VN')} ₫/hộp: {product.referencePriceLabel.toLowerCase()}.</p></div></section>
+      <section className="product-shop-section" aria-labelledby="product-shop-title"><div className="product-container"><p className="section-index"><span /> 06 · Tiếp tục câu chuyện</p><h2 id="product-shop-title">Một lời hẹn với <em>chính mình.</em></h2><p>{shopUrl ? 'Kênh mua hàng được cấu hình cho website.' : 'Kênh mua hàng chính thức chưa được xác minh. Nhóm sẽ cập nhật liên kết sau khi đối chiếu nguồn.'}</p><div className="product-shop-actions">{shopUrl && <TrackedLink className="button-primary" href={shopUrl} type="shop_clicked" external>Đến gian hàng <ArrowUpRight size={17} /></TrackedLink>}<Link className="button-text" href="/7-phut-cho-minh">Dành 7 phút cho mình <ArrowUpRight size={16} /></Link></div><p className="shop-reference-price">Giá {product.referencePriceVndMin.toLocaleString('vi-VN')}–{product.referencePriceVndMax.toLocaleString('vi-VN')} ₫/hộp: {product.referencePriceLabel.toLowerCase()}.</p></div></section>
     </main>
   );
 }
