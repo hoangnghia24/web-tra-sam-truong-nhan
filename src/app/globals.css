@@ -301,6 +301,69 @@ img { display: block; max-width: 100%; }
 .product-shop-actions { display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; }
 .product-shop-section .shop-reference-price { margin-top: 2.5rem; font-size: .78rem; }
 
+.challenge-page-section, .challenge-stories-section, .reminder-creator { padding: clamp(5rem, 8vw, 8rem) 0; }
+.challenge-page-section { background: var(--brand-ivory); }
+.challenge-page-steps { display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; gap: 1rem; margin: 3rem 0 0; padding: 0; }
+.challenge-page-steps li { min-height: 245px; padding: 1.7rem; border: 1px solid #d4dccd; background: #f1f0e7; }
+.challenge-page-steps span { color: var(--brand-tea); font-family: var(--type-display); font-size: 1.3rem; }
+.challenge-page-steps h3 { margin: 2.4rem 0 .4rem; font-family: var(--type-display); font-size: 1.6rem; line-height: 1.2; }
+.challenge-page-steps p { margin: 0; color: var(--text-secondary); font-size: .86rem; }
+.challenge-page-steps a { color: var(--brand-forest); font-weight: 700; }
+.challenge-submit-section { padding: clamp(5rem, 8vw, 8rem) 0; background: var(--brand-dark); color: var(--brand-ivory); }
+.challenge-submit-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(3rem, 8vw, 8rem); }
+.challenge-submit-layout h2, .reminder-editor h2 { margin: 0 0 1.4rem; font-family: var(--type-display); font-size: var(--text-h2); line-height: 1.12; letter-spacing: -.04em; font-weight: 600; }
+.challenge-submit-layout h2 em { color: var(--brand-gold-light); font-weight: 400; }
+.challenge-submit-layout > div:first-child > p:last-child { color: #c6d4c4; }
+.challenge-form { display: grid; gap: .9rem; padding: clamp(1.5rem, 4vw, 3rem); background: var(--brand-ivory); color: var(--brand-forest); }
+.challenge-form > label:not(.challenge-consent) { display: grid; gap: .35rem; font-size: .82rem; font-weight: 700; }
+.challenge-form input:not([type="checkbox"]), .challenge-form textarea { width: 100%; border: 1px solid #bfcdb9; border-radius: 0; padding: .75rem .85rem; outline-color: var(--brand-gold); background: #fffdf7; color: var(--brand-forest); font-size: .94rem; font-weight: 400; }
+.challenge-form input::placeholder, .challenge-form textarea::placeholder { color: #8a9886; }
+.challenge-consent { display: flex; gap: .7rem; align-items: flex-start; font-size: .8rem; font-weight: 400; line-height: 1.5; }
+.challenge-consent input { margin-top: .25rem; accent-color: var(--brand-forest); }
+.challenge-form .button-primary { justify-content: center; border: 0; cursor: pointer; }
+.challenge-form .button-primary:disabled { opacity: .6; cursor: wait; }
+.challenge-form-status { min-height: 1.3em; margin: 0; font-size: .82rem; }
+.visually-hidden-honeypot { position: absolute; left: -9999px; width: 1px !important; height: 1px; opacity: 0; }
+.challenge-stories-section { background: #ececde; }
+.challenge-empty { display: flex; align-items: center; gap: 1.5rem; max-width: 650px; margin-top: 2rem; padding: 2rem; border: 1px solid #cdd6c6; }
+.challenge-empty span { color: var(--brand-gold); font-size: 3rem; line-height: 1; }
+.challenge-empty p { margin: 0; color: var(--text-secondary); }
+.story-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2rem; }
+.story-card { padding: 2rem; background: var(--brand-ivory); }
+.story-card h3 { margin: 0 0 1rem; font-family: var(--type-display); font-size: 1.6rem; }
+.story-card > p:not(.eyebrow) { color: var(--text-secondary); font-size: .9rem; white-space: pre-wrap; }
+.story-card a { display: inline-flex; align-items: center; gap: .3rem; color: var(--brand-forest); font-size: .82rem; font-weight: 700; text-decoration: underline; }
+.reminder-creator { background: var(--brand-ivory); }
+.reminder-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(3rem, 7vw, 7rem); }
+.reminder-editor h2 em { color: var(--brand-leaf); font-weight: 400; }
+.reminder-editor > p:not(.section-index) { color: var(--text-secondary); }
+.reminder-editor fieldset { margin: 2rem 0; padding: 0; border: 0; }
+.reminder-editor legend, .reminder-message-label { display: block; margin-bottom: .8rem; color: var(--brand-forest); font-size: .85rem; font-weight: 700; }
+.reminder-options, .reminder-themes { display: flex; flex-wrap: wrap; gap: .55rem; }
+.reminder-options button { padding: .55rem .75rem; border: 1px solid #c5d0bc; background: transparent; color: var(--brand-forest); font-size: .78rem; font-weight: 700; cursor: pointer; }
+.reminder-options button.is-active { background: var(--brand-forest); color: white; border-color: var(--brand-forest); }
+.reminder-message-label textarea { display: block; width: 100%; margin-top: .5rem; padding: .85rem; border: 1px solid #bfcdb9; background: #fffdf7; color: var(--brand-forest); font-size: .94rem; font-weight: 400; resize: vertical; }
+.reminder-character-count { color: var(--text-secondary); font-size: .75rem; }
+.reminder-themes button { display: inline-flex; align-items: center; gap: .45rem; padding: .55rem .7rem; border: 1px solid #c5d0bc; background: transparent; color: var(--brand-forest); font-size: .78rem; cursor: pointer; }
+.reminder-themes button.is-active { outline: 2px solid var(--brand-gold); outline-offset: 2px; }
+.reminder-themes span { width: 15px; height: 15px; background: var(--brand-forest); }
+.reminder-themes .theme-cream span { background: var(--brand-cream); border: 1px solid #c5d0bc; }
+.reminder-themes .theme-gold span { background: var(--brand-gold); }
+.reminder-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 490px; padding: clamp(2rem, 4vw, 3.8rem); color: var(--brand-ivory); background: radial-gradient(circle at 75% 18%, #356349, transparent 48%), var(--brand-forest); }
+.reminder-card.theme-cream { color: var(--brand-forest); background: radial-gradient(circle at 75% 18%, #eef0dd, transparent 48%), var(--brand-cream); }
+.reminder-card.theme-gold { color: #fffaf0; background: radial-gradient(circle at 75% 18%, #c3954b, transparent 48%), #8d5e27; }
+.reminder-card-brand { margin: 0; font-size: .73rem; font-weight: 700; letter-spacing: .09em; }
+.reminder-card-mark { align-self: center; color: var(--brand-gold-light); font-family: var(--type-display); font-size: 4rem; line-height: 1; }
+.reminder-card.theme-cream .reminder-card-mark { color: var(--brand-gold); }
+.reminder-card-to { margin: 1.4rem 0 .3rem; font-family: var(--type-display); font-size: 1.25rem; font-style: italic; }
+.reminder-card h3 { margin: 0; font-family: var(--type-display); font-size: clamp(1.7rem, 3.1vw, 2.8rem); font-weight: 500; line-height: 1.2; letter-spacing: -.025em; overflow-wrap: anywhere; white-space: pre-wrap; }
+.reminder-card-sign { margin: 2rem 0 0; padding-top: 1rem; border-top: 1px solid currentColor; font-size: .8rem; font-weight: 700; }
+.reminder-tools { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+.reminder-tools button { display: inline-flex; align-items: center; gap: .4rem; padding: .55rem .7rem; border: 1px solid #bfcdb9; background: transparent; color: var(--brand-forest); font-size: .8rem; font-weight: 700; cursor: pointer; }
+.reminder-tools button:hover { background: #e5eadc; }
+.reminder-status { min-height: 1.3em; color: var(--brand-forest); font-size: .8rem; }
+.reminder-local-note { color: var(--text-secondary); font-size: .76rem; }
+
 .page-banner { position: relative; overflow: hidden; padding: clamp(4rem, 8vw, 7rem) 1.5rem; }
 .page-banner::after { content: '✳'; position: absolute; right: 5%; bottom: -9rem; font-family: var(--type-display); font-size: clamp(16rem, 30vw, 30rem); line-height: 1; opacity: .07; pointer-events: none; }
 .page-banner-light { background: radial-gradient(circle at 78% 12%, #e5ead6, transparent 38%), var(--brand-cream); color: var(--brand-forest); }
@@ -338,6 +401,8 @@ img { display: block; max-width: 100%; }
   .receipt-experience-inner { grid-template-columns: 1fr; max-width: 740px; }
   .timer-layout { grid-template-columns: 1fr; max-width: 740px; }
   .product-page-layout, .product-gallery, .product-brewing-layout, .product-faq-layout { grid-template-columns: 1fr; }
+  .challenge-submit-layout, .reminder-layout { grid-template-columns: 1fr; }
+  .challenge-page-steps, .story-card-grid { grid-template-columns: repeat(2, 1fr); }
   .product-page-image { transform: none; }
   .product-gallery-notes { grid-template-columns: repeat(2, 1fr); }
 }
@@ -381,6 +446,11 @@ img { display: block; max-width: 100%; }
   .ingredient-detail { min-height: 350px; }
   .ingredient-verification { grid-column: 1; }
   .product-gallery-notes > div { min-height: 150px; }
+  .challenge-page-steps, .story-card-grid { grid-template-columns: 1fr; }
+  .challenge-page-steps li { min-height: auto; }
+  .challenge-page-steps h3 { margin-top: 1.2rem; }
+  .challenge-empty { align-items: flex-start; }
+  .reminder-card { min-height: 430px; }
   .home-container { width: min(100% - 2.5rem, 480px); }
   .home-section { padding: 4.5rem 0; }
   .section-title { line-height: 1.16; }

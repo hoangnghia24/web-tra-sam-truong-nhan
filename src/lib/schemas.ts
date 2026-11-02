@@ -81,7 +81,7 @@ export const eventInputSchema = z.object({
 export const eventRecordSchema = eventInputSchema.extend({ id: z.uuid(), createdAt: z.iso.datetime() });
 
 export const ugcInputSchema = z.object({
-  displayName: safeText(80), videoUrl: z.url().max(500),
+  displayName: safeText(80), videoUrl: z.url({ protocol: /^https$/ }).max(500),
   story: safeText(1000), consent: z.literal(true), website: z.string().max(0).optional(),
 });
 export const ugcRecordSchema = ugcInputSchema.omit({ website: true }).extend({

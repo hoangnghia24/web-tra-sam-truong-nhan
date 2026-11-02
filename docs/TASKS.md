@@ -12,8 +12,8 @@
 | DONE | CP-04: receipt time form, persistence, export and sharing. |
 | DONE | CP-05: seven-minute timer and completion tracking. |
 | DONE | CP-06: product route and ingredient exploration. |
-| IN_PROGRESS | CP-07: community submissions and reminder cards. |
-| TODO | CP-08: strategy report and charts. |
+| DONE | CP-07: community submissions, protected moderation API and reminder cards. |
+| IN_PROGRESS | CP-08: strategy report and charts. |
 | TODO | CP-09: contact, team and protected admin. |
 | TODO | CP-10: QA, SEO, README, lint, tests and production build. |
 

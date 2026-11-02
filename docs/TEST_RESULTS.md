@@ -104,3 +104,16 @@ The full seven-minute wait was not run in browser; the elapsed-time helper and e
 | Shop state | No unverified purchase link rendered while `officialShopUrl` is null. |
 
 The source provides one full product image. The gallery labels missing official close-up photos instead of inventing them.
+
+## CP-07 — community and reminders (2026-11-03)
+
+| Check | Result |
+| --- | --- |
+| `npm run lint`, `npm run typecheck`, `npm run build` | PASS. |
+| Mobile browser, 390 px | Challenge and reminder pages fit without horizontal overflow. |
+| Challenge form | Submitted a disposable QA entry via UI; response showed pending moderation. Public GET `/api/ugc` stayed empty. |
+| Admin moderation API | Unauthenticated GET returned 401. With a temporary local test credential, login returned 200, protected GET showed the pending item, PATCH approval returned 200, and the public page then showed the item. |
+| Reminder creator | Changed audience, theme and Vietnamese message; preview updated. PNG action reported success. |
+| Cleanup | Deleted the exact QA submission and reminder analytics event through the validated JSON store. |
+
+The temporary `.env.local` credential is ignored by Git and will be removed after final admin QA. The in-app browser did not expose the actual downloaded PNG file path.

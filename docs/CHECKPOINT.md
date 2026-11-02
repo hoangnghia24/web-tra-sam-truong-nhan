@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-07
+Current checkpoint: CP-08
 Status: IN_PROGRESS
-Last completed checkpoint: CP-06 (verified; commit pending). CP-05 was committed as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-07 (verified; commit pending). CP-06 was committed as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -24,10 +24,11 @@ Last completed checkpoint: CP-06 (verified; commit pending). CP-05 was committed
 - Completed CP-04 eight-category receipt with 24-hour validation, JSON persistence, editorial result, PNG/print/copy/share controls and a link to the timer.
 - Completed CP-05 seven-minute wall-clock timer with pause/resume/reset, progress indicators, completion message and private event tracking.
 - Completed CP-06 product route from JSON with original-image gallery, seven ingredient tabs, preparation, FAQ, source caveats and verified-URL-only shop CTA.
+- Completed CP-07 challenge form, approved-only stories, protected moderation API and local personalized reminder creator.
 
 ## Current Task
 
-Build CP-07 community submission and moderation flow plus a local personalized reminder card creator.
+Build CP-08 interactive strategy report from the supplied PDF, distinguishing planned KPI and budget from actual results.
 
 ## Completed Files
 
@@ -53,11 +54,12 @@ Build CP-07 community submission and moderation flow plus a local personalized r
 - `src/app/hoa-don-cho-doi/page.tsx`, `src/components/receipt/ReceiptExperience.tsx`
 - `src/app/7-phut-cho-minh/page.tsx`, `src/components/timer/SevenMinuteTimer.tsx`, `src/lib/timer.ts`, `src/lib/timer.test.ts`
 - `src/app/san-pham/page.tsx`, `src/components/product/IngredientExplorer.tsx`
+- `src/app/thu-thach/page.tsx`, `src/app/gui-loi-nhac/page.tsx`, community/reminder components and admin login/moderation APIs
 
 ## Files Being Modified
 
-- `src/app/thu-thach/page.tsx`, `src/app/gui-loi-nhac/page.tsx`
-- `src/components/community/*`, `src/components/reminder/*`
+- `src/app/chien-luoc/page.tsx`
+- `src/components/strategy/*`
 
 ## Tests Passed
 
@@ -76,10 +78,11 @@ Build CP-07 community submission and moderation flow plus a local personalized r
 - CP-04 `npm run test` (7 tests), lint, typecheck and build passed. Mobile form POST created a correct receipt. Runtime JSON survived a dev-server restart.
 - CP-05 `npm run test` (9 tests), lint, typecheck and build passed. Mobile start/pause/resume/reset worked. POST completion event returned 201 and was removed after testing.
 - CP-06 JSON validation, lint, typecheck and build passed. Mobile image/overflow check, ingredient selection and FAQ expansion passed; no fake shop link rendered.
+- CP-07 lint, typecheck and build passed. UI submission stayed pending/hidden; protected login/PATCH approval made it public. Reminder preview and PNG status were verified.
 
 ## Known Issues
 
-- Feature routes beyond the homepage, receipt, timer and product are not yet implemented. Landing links to those routes will work as their checkpoints complete.
+- Strategy, contact, team, policy and admin UI routes are not yet implemented. Landing links to those routes will work as their checkpoints complete.
 - Full seven-minute completion UI was not exercised in browser; the elapsed-time helper and event API were verified separately.
 - PNG button reported success, but the in-app browser did not expose a download event; verify actual file delivery in a regular browser during final QA.
 - Typography must be reviewed again across the six requested routes after those pages exist.
@@ -88,10 +91,10 @@ Build CP-07 community submission and moderation flow plus a local personalized r
 
 ## Next Actions
 
-1. Build challenge submission form and approved-only public gallery.
-2. Build local reminder card preview and export/share controls.
-3. Verify moderation and persistence, record results, commit, then continue to CP-08.
+1. Build source-based SWOT, TOWS, 7Ps, timeline and budget/KPI displays.
+2. Verify report labels for planned versus actual figures and mobile typography.
+3. Record and commit CP-08, then continue to CP-09 admin and contact.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-07. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-08. Do not repeat completed work.

@@ -52,3 +52,9 @@
 - Keep all seven ingredients selectable. Show the documented 3% leaf ratio, while clearly marking other ratios as pending label verification; ingredient presence does not imply a proven effect.
 - Resolve a purchase link only from validated `site-settings.json` or product JSON. When both are null, show the status as text and no fake destination.
 - Render homepage and product page dynamically so edits to JSON content can appear without rebuilding the site.
+
+## CP-07 community and reminders
+
+- Keep submitted UGC pending by default and show only approved records publicly. Links to videos must use HTTPS. The protected moderation endpoint changes status in private runtime JSON.
+- Use an HTTP-only, same-site signed session cookie with an eight-hour expiry. Credentials and signing secret come only from environment variables; admin login remains disabled when they are absent.
+- Personal reminder text remains in component memory. The PNG, copy and Web Share actions are visitor initiated; only an anonymous download event is stored.
