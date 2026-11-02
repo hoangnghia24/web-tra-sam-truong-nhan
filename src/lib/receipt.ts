@@ -9,9 +9,12 @@ export function createReceipt(input: ReceiptInput, now = new Date()): ReceiptRec
     : selfMinutes < 7
       ? 'Bạn đã bắt đầu dành thời gian cho mình. Thử thêm 7 phút nữa nhé.'
       : 'Bạn đã dành thời gian cho chính mình hôm nay. Hãy giữ lời hẹn ấy.';
+  const localDay = new Intl.DateTimeFormat('sv-SE', {
+    timeZone: 'Asia/Ho_Chi_Minh', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(now).replaceAll('-', '');
   return {
     id: randomUUID(),
-    code: `TN-${now.toISOString().slice(0, 10).replaceAll('-', '')}-${randomUUID().slice(0, 6).toUpperCase()}`,
+    code: `TN-${localDay}-${randomUUID().slice(0, 6).toUpperCase()}`,
     createdAt: now.toISOString(),
     activities: input.activities,
     totalMinutes,

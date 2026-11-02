@@ -68,3 +68,16 @@ Public POST success flows and process-restart persistence remain to be checked w
 | Source consistency | Homepage uses product facts from JSON and team names from `team.json`. Receipt preview is labeled as illustrative, not actual visitor data. |
 
 Links to feature routes are pending their checkpoints; none is marked complete yet.
+
+## CP-04 — Hóa đơn chờ đợi (2026-11-03)
+
+| Check | Result |
+| --- | --- |
+| `npm run test` | PASS — 7 tests total, including receipt calculations, 24-hour limit and Vietnam-local date code. |
+| `npm run lint`, `npm run typecheck`, `npm run build` | PASS. |
+| Mobile browser, 390 px | Eight activities and 16 time inputs fit; no horizontal overflow. |
+| Form to API | Entered 8 hours of work and 15 minutes of self-care. POST `/api/receipts` returned 201; printed result shows 8 giờ 15 phút total and 15 phút for self. |
+| PNG control | Clicking “Tải PNG” showed “Ảnh PNG đã sẵn sàng để tải.” The in-app browser did not surface a download event, so filesystem delivery in a regular browser remains unverified. |
+| Persistence | The generated receipt was present in `data/runtime/receipts.json` after restarting the dev server. |
+
+Print, copy and Web Share controls are implemented; browser-level verification remains for final QA.

@@ -33,3 +33,9 @@
 - Receipt data stores minutes and no personal identity. Contact and UGC submissions remain private until an admin reviews them; public UGC returns approved fields only.
 - In-memory rate limiting and Zod input validation provide baseline abuse protection. This is a local single-process demo; multi-process rate limiting and storage need a different backend.
 - The detailed percentage breakdown in the source PDF is excluded from content JSON except for the document's highlighted 3% Ngọc Linh leaf because the Master Prompt requires label verification for the other ratios.
+
+## CP-04 receipt interaction
+
+- Use eight explicit time categories with hours and minutes, a live total and a 24-hour guard. The receipt never asks for a name or contact detail.
+- Persist only normalized minutes and a random receipt code. Date in the display code uses Vietnam local time; the ISO timestamp remains UTC.
+- Generate an on-page editorial receipt with the same Spectral/Mulish typography. PNG export uses `html-to-image`; print, copy and Web Share offer other ways to keep or send it.
