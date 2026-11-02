@@ -9,7 +9,8 @@
     "start": "next start -p 3000",
     "lint": "eslint .",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate:json": "tsx scripts/validate-json.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^7.0.1",
@@ -34,6 +35,7 @@
     "eslint-config-next": "^16.4.4",
     "postcss": "^8.5.32",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3",
     "vitest": "^5.1.0"
   }

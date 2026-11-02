@@ -25,3 +25,11 @@
 - Shared tokens: H1 `clamp(34px, 5vw, 76px)`, H2 `clamp(28px, 3.8vw, 52px)`, H3 `clamp(24px, 2.3vw, 30px)`, body 16–18px, caption 13–14px, button 14–16px. Spectral headings use tighter tracking and 1.07–1.12 line height; Mulish controls/body use roomier line height. These values follow the user's typography amendment.
 - The original 16:9 artwork is a separate full-width hero; the site's H1 appears below it. The image is not cropped, stretched or overlaid.
 - Header uses an editorial text wordmark rather than recreating the logo embedded in the cover. The footer labels the site as a campaign simulation until brand authorization is confirmed.
+
+## CP-02 data and API
+
+- Source facts live in versioned `data/content` JSON; empty `data/seed` arrays initialize a private, ignored `data/runtime` on first access.
+- JSON writes are validated, serialized per file in one process, written to a temporary file, backed up, then renamed. Corrupt existing JSON is preserved and reported as an error.
+- Receipt data stores minutes and no personal identity. Contact and UGC submissions remain private until an admin reviews them; public UGC returns approved fields only.
+- In-memory rate limiting and Zod input validation provide baseline abuse protection. This is a local single-process demo; multi-process rate limiting and storage need a different backend.
+- The detailed percentage breakdown in the source PDF is excluded from content JSON except for the document's highlighted 3% Ngọc Linh leaf because the Master Prompt requires label verification for the other ratios.

@@ -44,3 +44,16 @@ CP-00 passes. Next.js visual checks and all feature checks remain open for later
 | Mobile menu | Open/close confirmed via visible menu and `aria-expanded` changes. |
 
 The six-route typography review requested in the later brief remains pending until those routes are implemented.
+
+## CP-02 — JSON storage and API foundation (2026-11-02)
+
+| Command/check | Result |
+| --- | --- |
+| `npm run validate:json` | PASS — 8 content files and 5 empty seed files validated. |
+| `npm run test` | PASS — 4 storage tests: concurrent writes/new instance/backup, duplicate and corrupt JSON guard, update/delete, traversal guard. |
+| `npm run typecheck`, `npm run lint`, `npm run build` | PASS — no build warning after scoped filesystem tracing annotation. |
+| GET `/api/product`, `/api/campaign`, `/api/team`, `/api/strategy`, `/api/ugc` | HTTP 200. Empty UGC returns an empty list. |
+| POST invalid `/api/receipts` | HTTP 400. |
+| GET `/data/runtime/ugc-submissions.json` | HTTP 404; runtime data is outside `public`. |
+
+Public POST success flows and process-restart persistence remain to be checked with their UI features. `data/runtime` is ignored by Git.

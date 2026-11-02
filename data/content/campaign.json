@@ -1,0 +1,10 @@
+{
+  "title": "Sâm không đợi dịp. Bạn đợi gì?",
+  "currentPhase": 1,
+  "phases": [
+    { "number": 1, "name": "Bấm hoãn", "weeks": "1–4", "message": "Bạn đã hoãn điều gì cho bản thân?", "focus": ["Hóa đơn chờ đợi", "Câu chuyện trì hoãn", "Nội dung nhận thức"] },
+    { "number": 2, "name": "Làm ngay", "weeks": "5–8", "message": "Một việc duy nhất đáng đợi 7 phút này.", "focus": ["7 phút cho mình", "Khám phá sản phẩm", "Câu chuyện cộng đồng"] },
+    { "number": 3, "name": "Gửi lời nhắc", "weeks": "9–12", "message": "Yêu thương cũng không nên đợi dịp.", "focus": ["Thiệp lời nhắc", "Chia sẻ câu chuyện", "Duy trì kết nối"] }
+  ],
+  "statusNote": "Đây là kế hoạch chiến dịch. Không khẳng định các giai đoạn đã triển khai thực tế."
+}

@@ -1,0 +1,18 @@
+{
+  "reportTitle": "Chiến lược Digital Marketing — Trà Sâm Trường Nhân",
+  "source": "Tra_Sam_Truong_Nhan_SWOT_TOWS_7Ps.pptx.pdf, 38 trang",
+  "bigIdea": "Sâm không đợi dịp. Bạn đợi gì?",
+  "customerInsight": "Tôi biết mình cũng cần được chăm sóc, chỉ là tôi luôn nghĩ mình có thể chờ thêm một chút.",
+  "primaryAudience": "Người trưởng thành đô thị 25–40 tuổi, bận rộn và quan tâm chăm sóc bản thân chủ động.",
+  "secondaryAudience": "Người 45–60 tuổi quan tâm sức khỏe bản thân và gia đình.",
+  "plannedBudgetVnd": 500000000,
+  "plannedExecutionBudgetVnd": 400000000,
+  "plannedReserveVnd": 100000000,
+  "plannedWeeks": 12,
+  "plannedKpis": [
+    { "label": "Lượt xem Hero Video", "target": 350000, "unit": "lượt", "sourcePage": 12 },
+    { "label": "UGC hợp lệ", "target": 250, "unit": "bài", "sourcePage": 12 },
+    { "label": "Đơn hàng hợp lệ", "target": 400, "unit": "đơn", "sourcePage": 36 }
+  ],
+  "actualResultsAvailable": false
+}
