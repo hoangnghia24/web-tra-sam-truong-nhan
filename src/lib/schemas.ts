@@ -51,6 +51,19 @@ export const strategySchema = z.object({
   actualResultsAvailable: z.boolean(),
 });
 
+const strategyEntry = z.object({ title: safeText(120), body: safeText(500), page: z.number().int().positive().optional() });
+export const strategyReportSchema = z.object({
+  sourceNote: safeText(350),
+  market: z.array(strategyEntry),
+  swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),
+  tows: z.array(z.object({ key: z.enum(['SO', 'WO', 'ST', 'WT']), title: safeText(100), body: safeText(500) })).length(4),
+  sevenPs: z.array(z.object({ key: safeText(50), title: safeText(100), body: safeText(500) })).length(7),
+  journey: z.array(z.object({ step: safeText(100), touchpoint: safeText(200) })).length(5),
+  pillars: z.array(strategyEntry).length(4),
+  budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(10),
+  risks: z.array(z.object({ title: safeText(100), response: safeText(500), page: z.number().int().positive() })),
+});
+
 export const faqsSchema = z.object({ items: z.array(z.object({ question: safeText(200), answer: safeText(900) })) });
 export const siteSettingsSchema = z.object({
   officialShopUrl: z.url().nullable(),

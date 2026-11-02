@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-08
+Current checkpoint: CP-09
 Status: IN_PROGRESS
-Last completed checkpoint: CP-07 (verified; commit pending). CP-06 was committed as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-08 (verified; commit pending). CP-07 was committed as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -25,10 +25,11 @@ Last completed checkpoint: CP-07 (verified; commit pending). CP-06 was committed
 - Completed CP-05 seven-minute wall-clock timer with pause/resume/reset, progress indicators, completion message and private event tracking.
 - Completed CP-06 product route from JSON with original-image gallery, seven ingredient tabs, preparation, FAQ, source caveats and verified-URL-only shop CTA.
 - Completed CP-07 challenge form, approved-only stories, protected moderation API and local personalized reminder creator.
+- Completed CP-08 source-based report with interactive SWOT/7Ps, TOWS, budget chart, planned KPIs and explicit lack of real campaign results.
 
 ## Current Task
 
-Build CP-08 interactive strategy report from the supplied PDF, distinguishing planned KPI and budget from actual results.
+Build CP-09 team/about/contact/policy routes and protected admin UI/APIs for metrics, moderation, contacts and JSON content settings.
 
 ## Completed Files
 
@@ -55,11 +56,12 @@ Build CP-08 interactive strategy report from the supplied PDF, distinguishing pl
 - `src/app/7-phut-cho-minh/page.tsx`, `src/components/timer/SevenMinuteTimer.tsx`, `src/lib/timer.ts`, `src/lib/timer.test.ts`
 - `src/app/san-pham/page.tsx`, `src/components/product/IngredientExplorer.tsx`
 - `src/app/thu-thach/page.tsx`, `src/app/gui-loi-nhac/page.tsx`, community/reminder components and admin login/moderation APIs
+- `src/app/chien-luoc/page.tsx`, `src/components/strategy/StrategyExplorer.tsx`, `data/content/strategy-report.json`
 
 ## Files Being Modified
 
-- `src/app/chien-luoc/page.tsx`
-- `src/components/strategy/*`
+- `src/app/{ve-du-an,lien-he,chinh-sach,admin}/*`
+- `src/app/api/admin/*`
 
 ## Tests Passed
 
@@ -79,10 +81,11 @@ Build CP-08 interactive strategy report from the supplied PDF, distinguishing pl
 - CP-05 `npm run test` (9 tests), lint, typecheck and build passed. Mobile start/pause/resume/reset worked. POST completion event returned 201 and was removed after testing.
 - CP-06 JSON validation, lint, typecheck and build passed. Mobile image/overflow check, ingredient selection and FAQ expansion passed; no fake shop link rendered.
 - CP-07 lint, typecheck and build passed. UI submission stayed pending/hidden; protected login/PATCH approval made it public. Reminder preview and PNG status were verified.
+- CP-08 validated 9 content files, lint, typecheck and build passed. Mobile 390 px report and SWOT/7Ps tabs passed; plan/actual labels checked.
 
 ## Known Issues
 
-- Strategy, contact, team, policy and admin UI routes are not yet implemented. Landing links to those routes will work as their checkpoints complete.
+- Team, contact, policy and admin UI routes are not yet implemented. Landing links to those routes will work as their checkpoints complete.
 - Full seven-minute completion UI was not exercised in browser; the elapsed-time helper and event API were verified separately.
 - PNG button reported success, but the in-app browser did not expose a download event; verify actual file delivery in a regular browser during final QA.
 - Typography must be reviewed again across the six requested routes after those pages exist.
@@ -91,10 +94,10 @@ Build CP-08 interactive strategy report from the supplied PDF, distinguishing pl
 
 ## Next Actions
 
-1. Build source-based SWOT, TOWS, 7Ps, timeline and budget/KPI displays.
-2. Verify report labels for planned versus actual figures and mobile typography.
-3. Record and commit CP-08, then continue to CP-09 admin and contact.
+1. Build exact team/about/contact/policy routes and private contact viewing.
+2. Build protected admin UI, analytics from real JSON and content edit APIs.
+3. Verify authentication and mobile routes, record and commit CP-09, then complete final QA.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-08. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-09. Do not repeat completed work.

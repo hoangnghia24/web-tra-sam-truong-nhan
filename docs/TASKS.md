@@ -13,8 +13,8 @@
 | DONE | CP-05: seven-minute timer and completion tracking. |
 | DONE | CP-06: product route and ingredient exploration. |
 | DONE | CP-07: community submissions, protected moderation API and reminder cards. |
-| IN_PROGRESS | CP-08: strategy report and charts. |
-| TODO | CP-09: contact, team and protected admin. |
+| DONE | CP-08: strategy report, SWOT/TOWS/7Ps and planned budget chart. |
+| IN_PROGRESS | CP-09: contact, team and protected admin. |
 | TODO | CP-10: QA, SEO, README, lint, tests and production build. |
 
 Typography amendment: base system and glyph coverage DONE. Cross-page visual review for the six named pages remains TODO until those pages exist; complete in CP-10.

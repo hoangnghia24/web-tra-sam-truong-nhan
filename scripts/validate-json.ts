@@ -2,7 +2,7 @@ import { readJson } from '../src/lib/json-store';
 import { z } from 'zod';
 import {
   brandSchema, campaignSchema, faqsSchema, ingredientsSchema,
-  productSchema, siteSettingsSchema, strategySchema, teamSchema,
+  productSchema, siteSettingsSchema, strategySchema, strategyReportSchema, teamSchema,
 } from '../src/lib/schemas';
 
 const checks = [
@@ -12,6 +12,7 @@ const checks = [
   () => readJson('content/ingredients.json', ingredientsSchema),
   () => readJson('content/campaign.json', campaignSchema),
   () => readJson('content/strategy.json', strategySchema),
+  () => readJson('content/strategy-report.json', strategyReportSchema),
   () => readJson('content/faqs.json', faqsSchema),
   () => readJson('content/site-settings.json', siteSettingsSchema),
 ];

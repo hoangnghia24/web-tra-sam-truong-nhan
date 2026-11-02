@@ -1,0 +1,59 @@
+{
+  "sourceNote": "Tóm lược từ tài liệu kế hoạch Digital Marketing 38 trang. Số liệu ngân sách và KPI là mục tiêu dự kiến, chưa phải kết quả thực tế.",
+  "market": [
+    { "title": "Trà thảo mộc tiện lợi", "body": "Tài liệu nhận định nhu cầu sản phẩm dễ pha, phù hợp nhịp sống bận rộn là một cơ hội cho sản phẩm.", "page": 13 },
+    { "title": "Thương mại xã hội", "body": "TikTok Shop, KOC và livestream được đề xuất là những điểm chạm để tiếp cận và giải thích sản phẩm.", "page": 14 },
+    { "title": "Rào cản niềm tin", "body": "Giá ở phân khúc cao và thắc mắc về tỷ lệ 3% lá Sâm Ngọc Linh đòi hỏi thông tin minh bạch trước lời hứa quảng cáo.", "page": 12 }
+  ],
+  "swot": [
+    { "key": "S", "title": "Điểm mạnh", "items": ["Di sản nghiên cứu dược liệu được nêu trong kế hoạch", "Công thức bảy thành phần; 3% lá Sâm Ngọc Linh", "Dạng túi lọc thuận tiện"] },
+    { "key": "W", "title": "Điểm yếu", "items": ["Giá cao hơn trà phổ thông", "Định kiến sâm chỉ dành cho dịp đặc biệt", "Thương hiệu còn mới với một bộ phận người dùng"] },
+    { "key": "O", "title": "Cơ hội", "items": ["Nhu cầu trà thảo mộc dễ dùng", "Kênh social commerce mở rộng tiếp cận", "Quan tâm đến lối sống chủ động"] },
+    { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh về giá", "Lo ngại nguồn gốc và chất lượng", "Giới hạn pháp lý với tuyên bố công dụng"] }
+  ],
+  "tows": [
+    { "key": "SO", "title": "Khai thác thế mạnh", "body": "Đưa câu chuyện nguyên liệu và sự thuận tiện lên video ngắn, KOC và các kênh số." },
+    { "key": "WO", "title": "Giảm rào cản", "body": "Giải thích công thức rõ ràng; dùng trải nghiệm thử và ưu đãi phù hợp để người mới dễ bắt đầu." },
+    { "key": "ST", "title": "Chứng minh trước lời hứa", "body": "Ưu tiên nguồn gốc, thông tin nhãn và hướng dẫn pha thay cho tuyên bố lợi ích chưa được kiểm chứng." },
+    { "key": "WT", "title": "Xây niềm tin", "body": "Trình bày giá và quy cách minh bạch; tránh giảm giá sâu làm mờ giá trị sản phẩm." }
+  ],
+  "sevenPs": [
+    { "key": "Product", "title": "Sản phẩm", "body": "Trà túi lọc 15 × 2 g, bảy nguyên liệu theo trang 18; gợi ý pha khoảng 300 ml trong 5–7 phút." },
+    { "key": "Price", "title": "Giá", "body": "Định vị premium; mức 380.000–390.000 đồng/hộp chỉ là tham khảo trong kế hoạch, không phải giá hiện hành." },
+    { "key": "Place", "title": "Phân phối", "body": "Đề xuất TikTok Shop là kênh chủ đạo, Shopee bổ trợ, website cung cấp thông tin minh bạch. Chưa có URL mua hàng được xác minh." },
+    { "key": "Promotion", "title": "Xúc tiến", "body": "Nội dung giải thích sản phẩm, câu chuyện cá nhân, KOC và livestream. Mọi tuyên bố công dụng cần được kiểm duyệt." },
+    { "key": "People", "title": "Con người", "body": "Creator, đội ngũ tư vấn và người tham gia thật tạo các điểm chạm; không giả lập phản hồi khách hàng." },
+    { "key": "Process", "title": "Quy trình", "body": "Hành trình đề xuất đi từ nhận thức, tìm hiểu, cân nhắc, mua hàng tới chăm sóc sau mua." },
+    { "key": "Physical evidence", "title": "Bằng chứng hữu hình", "body": "Bao bì, nhãn, nguồn gốc, trang sản phẩm và đánh giá thật cần được đối chiếu với hồ sơ chính thức." }
+  ],
+  "journey": [
+    { "step": "Khám phá", "touchpoint": "Video ngắn, nội dung đồng cảm" },
+    { "step": "Tìm hiểu", "touchpoint": "Hóa đơn chờ đợi, trang thành phần" },
+    { "step": "Đánh giá", "touchpoint": "FAQ, giá và nguồn gốc minh bạch" },
+    { "step": "Mua thử", "touchpoint": "Gian hàng chính thức khi được xác minh" },
+    { "step": "Duy trì", "touchpoint": "7 phút cho mình, lời nhắc và cộng đồng" }
+  ],
+  "pillars": [
+    { "title": "Chạm cảm xúc", "body": "Câu chuyện trì hoãn, Hóa đơn chờ đợi", "page": 23 },
+    { "title": "Minh bạch", "body": "Giải thích tỷ lệ 3%, nhãn và cách pha", "page": 23 },
+    { "title": "Hành động", "body": "Khoảng dừng 7 phút, trải nghiệm sản phẩm", "page": 23 },
+    { "title": "Lan tỏa", "body": "UGC có duyệt và lời nhắc quan tâm", "page": 23 }
+  ],
+  "budget": [
+    { "name": "Paid Ads", "millionVnd": 135 },
+    { "name": "KOC / Creator", "millionVnd": 105 },
+    { "name": "Content Production", "millionVnd": 45 },
+    { "name": "Microsite", "millionVnd": 30 },
+    { "name": "CRM / Zalo OA", "millionVnd": 10 },
+    { "name": "UGC & Seeding", "millionVnd": 22 },
+    { "name": "Samples & Gifts", "millionVnd": 22 },
+    { "name": "Livestream nội bộ", "millionVnd": 10 },
+    { "name": "Đo lường & tối ưu", "millionVnd": 21 },
+    { "name": "Dự phòng", "millionVnd": 100 }
+  ],
+  "risks": [
+    { "title": "Phát ngôn KOC", "response": "Chọn người hợp định vị, hướng dẫn công bố hợp tác và kiểm duyệt nội dung.", "page": 37 },
+    { "title": "Hiểu nhầm công dụng", "response": "Công khai thành phần và kiểm tra mọi tuyên bố với bằng chứng phù hợp.", "page": 37 },
+    { "title": "Sự cố nền tảng", "response": "Kiểm thử trước khi triển khai và chuẩn bị kênh thay thế.", "page": 37 }
+  ]
+}

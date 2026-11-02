@@ -117,3 +117,15 @@ The source provides one full product image. The gallery labels missing official 
 | Cleanup | Deleted the exact QA submission and reminder analytics event through the validated JSON store. |
 
 The temporary `.env.local` credential is ignored by Git and will be removed after final admin QA. The in-app browser did not expose the actual downloaded PNG file path.
+
+## CP-08 — interactive strategy report (2026-11-03)
+
+| Check | Result |
+| --- | --- |
+| `npm run validate:json` | PASS — 9 content JSON files and 5 seed arrays. |
+| `npm run lint`, `npm run typecheck`, `npm run build` | PASS. |
+| Mobile browser, 390 px | Eight report sections render; document scroll width 375 px; no horizontal overflow. |
+| Interactive SWOT and 7Ps | Selecting W changed the detail to weaknesses. Selecting Physical evidence changed the 7Ps panel to the seventh item. |
+| Planned data labeling | 500/400/100 million VND budget, chart, KPI targets and absent real results are explicitly labeled as plan versus actual. |
+
+The report summarizes pages 12–37 of the supplied 38-page PDF. A dev-server hot reload briefly kept a stale schema; a server restart resolved it, and the production build passed.

@@ -58,3 +58,9 @@
 - Keep submitted UGC pending by default and show only approved records publicly. Links to videos must use HTTPS. The protected moderation endpoint changes status in private runtime JSON.
 - Use an HTTP-only, same-site signed session cookie with an eight-hour expiry. Credentials and signing secret come only from environment variables; admin login remains disabled when they are absent.
 - Personal reminder text remains in component memory. The PNG, copy and Web Share actions are visitor initiated; only an anonymous download event is stored.
+
+## CP-08 report
+
+- Keep detailed strategy notes in validated `strategy-report.json`, with page references to the supplied PDF. The public report renders dynamically so edited content can appear without rebuilding.
+- Use interactive SWOT and 7Ps tabs, a Recharts budget chart with an accompanying data table, and editorial cards for journey, phases, KPI and risks.
+- Label every budget and KPI as a plan. The deck contains inconsistent statements about product ingredients and some performance figures; visitor product facts follow the separately reviewed ingredient page, while the report avoids presenting draft claims as verified outcomes.
