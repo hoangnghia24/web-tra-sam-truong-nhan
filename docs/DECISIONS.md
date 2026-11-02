@@ -39,3 +39,9 @@
 - Use eight explicit time categories with hours and minutes, a live total and a 24-hour guard. The receipt never asks for a name or contact detail.
 - Persist only normalized minutes and a random receipt code. Date in the display code uses Vietnam local time; the ISO timestamp remains UTC.
 - Generate an on-page editorial receipt with the same Spectral/Mulish typography. PNG export uses `html-to-image`; print, copy and Web Share offer other ways to keep or send it.
+
+## CP-05 timer
+
+- Base remaining time on a wall-clock deadline rather than subtracting one second per interval. This keeps the countdown accurate if a mobile browser throttles background timers.
+- Record completion once per finished session. The timer can be used without account details or purchase, and a failed analytics write does not erase the visitor's completion state.
+- Use a tea-toned circular dial, a thin linear bar and short optional breathing prompts; honor reduced-motion preferences in the shared CSS.

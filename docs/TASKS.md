@@ -10,8 +10,8 @@
 | DONE | CP-02: JSON content/seed/runtime, atomic store, schemas and public APIs. |
 | DONE | CP-03: complete eight-section landing page. |
 | DONE | CP-04: receipt time form, persistence, export and sharing. |
-| IN_PROGRESS | CP-05: seven-minute timer and completion tracking. |
-| TODO | CP-06: product route and ingredient exploration. |
+| DONE | CP-05: seven-minute timer and completion tracking. |
+| IN_PROGRESS | CP-06: product route and ingredient exploration. |
 | TODO | CP-07: community submissions and reminder cards. |
 | TODO | CP-08: strategy report and charts. |
 | TODO | CP-09: contact, team and protected admin. |

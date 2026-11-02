@@ -81,3 +81,14 @@ Links to feature routes are pending their checkpoints; none is marked complete y
 | Persistence | The generated receipt was present in `data/runtime/receipts.json` after restarting the dev server. |
 
 Print, copy and Web Share controls are implemented; browser-level verification remains for final QA.
+
+## CP-05 — 7 phút cho mình (2026-11-03)
+
+| Check | Result |
+| --- | --- |
+| `npm run test` | PASS — 9 tests total, including wall-clock countdown and display formatting. |
+| `npm run lint`, `npm run typecheck`, `npm run build` | PASS. |
+| Mobile browser, 390 px | Start → pause at 06:56 → resume → reset to 07:00 all visible; circular and linear indicators fit with document scroll width 390 px. |
+| POST `/api/events` | `timer_completed` returned HTTP 201 and appeared in private `analytics-events.json`. Test record was deleted afterward using the validated store. |
+
+The full seven-minute wait was not run in browser; the elapsed-time helper and event API were verified separately. The completion UI should be included in final QA.

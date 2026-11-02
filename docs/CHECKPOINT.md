@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-05
+Current checkpoint: CP-06
 Status: IN_PROGRESS
-Last completed checkpoint: CP-04 (verified; commit pending). CP-03 was committed as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-05 (verified; commit pending). CP-04 was committed as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -22,10 +22,11 @@ Last completed checkpoint: CP-04 (verified; commit pending). CP-03 was committed
 - Completed CP-02 content/seed JSON, Zod schemas, atomic queued JSON storage with backups, JSON validation script, public API foundation, and four storage tests.
 - Completed CP-03 ten-section homepage journey (hero, editorial intro, seven campaign sections and closing) with source-based copy, product facts, challenge steps and exact team names.
 - Completed CP-04 eight-category receipt with 24-hour validation, JSON persistence, editorial result, PNG/print/copy/share controls and a link to the timer.
+- Completed CP-05 seven-minute wall-clock timer with pause/resume/reset, progress indicators, completion message and private event tracking.
 
 ## Current Task
 
-Build CP-05 seven-minute timer with pause, resume, reset and completion event tracking.
+Build CP-06 product experience from JSON: transparent product facts, ingredient exploration, preparation, FAQ and a purchase CTA only if an official URL is configured.
 
 ## Completed Files
 
@@ -49,11 +50,12 @@ Build CP-05 seven-minute timer with pause, resume, reset and completion event tr
 - `scripts/validate-json.ts`, `src/lib/json-store.test.ts`, `src/lib/receipt.test.ts`
 - `src/app/page.tsx` complete landing journey
 - `src/app/hoa-don-cho-doi/page.tsx`, `src/components/receipt/ReceiptExperience.tsx`
+- `src/app/7-phut-cho-minh/page.tsx`, `src/components/timer/SevenMinuteTimer.tsx`, `src/lib/timer.ts`, `src/lib/timer.test.ts`
 
 ## Files Being Modified
 
-- `src/app/7-phut-cho-minh/page.tsx`
-- `src/components/timer/*`
+- `src/app/san-pham/page.tsx`
+- `src/components/product/*`
 
 ## Tests Passed
 
@@ -70,10 +72,12 @@ Build CP-05 seven-minute timer with pause, resume, reset and completion event tr
 - Public API GETs returned HTTP 200; invalid receipt input returned 400; direct runtime URL returned 404.
 - CP-03 `npm run build`, `npm run lint`, and `npm run typecheck` passed; desktop/mobile browser inspection found no broken images or horizontal overflow.
 - CP-04 `npm run test` (7 tests), lint, typecheck and build passed. Mobile form POST created a correct receipt. Runtime JSON survived a dev-server restart.
+- CP-05 `npm run test` (9 tests), lint, typecheck and build passed. Mobile start/pause/resume/reset worked. POST completion event returned 201 and was removed after testing.
 
 ## Known Issues
 
-- Feature routes beyond the homepage and receipt are not yet implemented. Landing links to those routes will work as their checkpoints complete.
+- Feature routes beyond the homepage, receipt and timer are not yet implemented. Landing links to those routes will work as their checkpoints complete.
+- Full seven-minute completion UI was not exercised in browser; the elapsed-time helper and event API were verified separately.
 - PNG button reported success, but the in-app browser did not expose a download event; verify actual file delivery in a regular browser during final QA.
 - Typography must be reviewed again across the six requested routes after those pages exist.
 - `npm install` reported 16 moderate vulnerabilities including dev dependencies; production-only audit found 0. Review during CP-10.
@@ -81,10 +85,10 @@ Build CP-05 seven-minute timer with pause, resume, reset and completion event tr
 
 ## Next Actions
 
-1. Build the seven-minute timer with pause, resume, reset and completion state.
-2. Verify event persistence and mobile behavior, then record and commit CP-05.
-3. Continue to CP-06 product experience.
+1. Build product route from validated JSON and an ingredient explorer.
+2. Verify desktop/mobile content and source accuracy, then record and commit CP-06.
+3. Continue to CP-07 community and reminders.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-05. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-06. Do not repeat completed work.
