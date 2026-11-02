@@ -8,8 +8,8 @@
 | DONE | CP-00: initialize Next.js, strict TypeScript, Tailwind, dependencies and project structure. |
 | DONE | CP-01: design tokens, Spectral/Mulish typography, full-image hero, responsive shell. |
 | DONE | CP-02: JSON content/seed/runtime, atomic store, schemas and public APIs. |
-| IN_PROGRESS | CP-03: complete eight-section landing page. |
-| TODO | CP-04: receipt time form, persistence, export and sharing. |
+| DONE | CP-03: complete eight-section landing page. |
+| IN_PROGRESS | CP-04: receipt time form, persistence, export and sharing. |
 | TODO | CP-05: seven-minute timer and completion tracking. |
 | TODO | CP-06: product route and ingredient exploration. |
 | TODO | CP-07: community submissions and reminder cards. |

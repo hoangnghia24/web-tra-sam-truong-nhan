@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-03
+Current checkpoint: CP-04
 Status: IN_PROGRESS
-Last completed checkpoint: CP-02 (verified; commit pending). CP-01 was committed as `d2022cd`; CP-00 as `d8a6b16`; source audit as `d43d066`.
+Last completed checkpoint: CP-03 (verified; commit pending). CP-02 was committed as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -20,10 +20,11 @@ Last completed checkpoint: CP-02 (verified; commit pending). CP-01 was committed
 - Next.js development server returned HTTP 200 on `http://localhost:3000/`; production build, lint, and typecheck passed.
 - Completed CP-01 shared header/footer and PageBanner, responsive typography tokens, and full 16:9 hero with CTAs in a separate content block. Verified mobile navigation and font rendering in browser.
 - Completed CP-02 content/seed JSON, Zod schemas, atomic queued JSON storage with backups, JSON validation script, public API foundation, and four storage tests.
+- Completed CP-03 ten-section homepage journey (hero, editorial intro, seven campaign sections and closing) with source-based copy, product facts, challenge steps and exact team names.
 
 ## Current Task
 
-Build CP-03 landing page: eight distinct sections linking to real campaign routes, using the source's story and brand visuals.
+Build CP-04 functional receipt route with eight time inputs, correct calculations, API persistence, PNG/print/copy/share and mobile QA.
 
 ## Completed Files
 
@@ -45,11 +46,12 @@ Build CP-03 landing page: eight distinct sections linking to real campaign route
 - `src/lib/json-store.ts`, `schemas.ts`, `api.ts`, `receipt.ts`
 - Public API routes under `src/app/api/{product,campaign,team,strategy,receipts,events,ugc,contact}`
 - `scripts/validate-json.ts`, `src/lib/json-store.test.ts`
+- `src/app/page.tsx` complete landing journey
 
 ## Files Being Modified
 
-- `src/app/page.tsx`, `src/app/globals.css`
-- `src/components/home/*`
+- `src/app/hoa-don-cho-doi/page.tsx`
+- `src/components/receipt/*`
 
 ## Tests Passed
 
@@ -64,10 +66,11 @@ Build CP-03 landing page: eight distinct sections linking to real campaign route
 - Desktop and 390 px mobile inspection showed the complete 16:9 cover; mobile width 390 px with document scroll width 375 px. Mobile menu opened and closed.
 - CP-02 `npm run validate:json`, `npm run test` (4 tests), `npm run typecheck`, `npm run lint`, and `npm run build` passed.
 - Public API GETs returned HTTP 200; invalid receipt input returned 400; direct runtime URL returned 404.
+- CP-03 `npm run build`, `npm run lint`, and `npm run typecheck` passed; desktop/mobile browser inspection found no broken images or horizontal overflow.
 
 ## Known Issues
 
-- The Next.js app has only the homepage intro; feature routes and admin features are not yet implemented.
+- Feature routes beyond the homepage are not yet implemented. Landing links to those routes will work as their checkpoints complete.
 - Public write API happy paths must be tested alongside their UI features; CP-02 verified storage writes in isolated tests and invalid receipt rejection.
 - Typography must be reviewed again across the six requested routes after those pages exist.
 - `npm install` reported 16 moderate vulnerabilities including dev dependencies; production-only audit found 0. Review during CP-10.
@@ -75,10 +78,10 @@ Build CP-03 landing page: eight distinct sections linking to real campaign route
 
 ## Next Actions
 
-1. Build eight homepage sections with clear paths to the feature routes.
-2. Test desktop/mobile layout and navigation; update source-informed copy as needed.
-3. Verify CP-03, record results and commit before CP-04.
+1. Build and validate eight activity time inputs and receipt calculation UX.
+2. Test real API persistence and PNG/print/copy/share behavior.
+3. Verify CP-04, record results, commit, then begin CP-05.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-03. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-04. Do not repeat completed work.

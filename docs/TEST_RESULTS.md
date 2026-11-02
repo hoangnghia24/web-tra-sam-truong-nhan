@@ -57,3 +57,14 @@ The six-route typography review requested in the later brief remains pending unt
 | GET `/data/runtime/ugc-submissions.json` | HTTP 404; runtime data is outside `public`. |
 
 Public POST success flows and process-restart persistence remain to be checked with their UI features. `data/runtime` is ignored by Git.
+
+## CP-03 — landing page (2026-11-03)
+
+| Check | Result |
+| --- | --- |
+| `npm run typecheck`, `npm run lint`, `npm run build` | PASS. |
+| Desktop browser, 1440 px | Full 16:9 cover, navigation and editorial section layouts render; no image is broken; document width equals viewport. |
+| Mobile browser, 390 px | Hero remains 16:9; all ten sections fit without horizontal overflow; visual checks of story and receipt feature show readable diacritics and no clipping. |
+| Source consistency | Homepage uses product facts from JSON and team names from `team.json`. Receipt preview is labeled as illustrative, not actual visitor data. |
+
+Links to feature routes are pending their checkpoints; none is marked complete yet.
