@@ -9,6 +9,8 @@ export async function getAdminStats() {
     readJson('runtime/contact-submissions.json', contactRecordSchema.array()),
   ]);
   const daily = new Map<string, number>();
+  const utmSources = new Map<string, number>();
+  for (const event of events) if (event.utmSource) utmSources.set(event.utmSource, (utmSources.get(event.utmSource) || 0) + 1);
   for (const item of [...receipts, ...events, ...submissions, ...contacts]) {
     const day = item.createdAt.slice(0, 10);
     daily.set(day, (daily.get(day) || 0) + 1);
@@ -24,5 +26,6 @@ export async function getAdminStats() {
     submissionsPending: submissions.filter((item) => item.status === 'pending').length,
     contacts: contacts.length,
     dailyInteractions: [...daily].sort(([a], [b]) => a.localeCompare(b)).map(([date, count]) => ({ date, count })),
+    utmSources: [...utmSources].sort((a, b) => b[1] - a[1]).map(([source, count]) => ({ source, count })),
   };
 }

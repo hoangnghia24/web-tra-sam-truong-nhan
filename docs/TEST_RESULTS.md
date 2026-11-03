@@ -143,3 +143,18 @@ The report summarizes pages 12–37 of the supplied 38-page PDF. A dev-server ho
 | Credential cleanup | Temporary `.env.local` removed; after server restart login controls were disabled with configuration guidance. Runtime receipt, event, UGC and contact arrays were empty. |
 
 The content editor is a validated JSON editor, not field-by-field controls. It provides backup on save. Only HTTPS URLs are accepted for configured public links.
+
+## CP-10 — production readiness (2026-11-03)
+
+| Check | Observed result |
+| --- | --- |
+| Final JSON, tests, lint, typecheck, production build | PASS after accessibility/contrast/robots fixes — 9 content files, 5 seed arrays, 9 tests; Next.js 16.4.4 build generated all routes and Proxy. |
+| HTTP routes on `npm run start` | Ten public pages returned 200. HEAD and ranged GET `/references/Tra_Sam_Truong_Nhan_SWOT_TOWS_7Ps.pptx.pdf` returned 404 without transferring the PDF. GET `/api/admin/stats` returned 401 without a session. |
+| SEO | `robots.txt` and `sitemap.xml` returned 200. With no public origin configured, sitemap contained zero URLs. Calling metadata route functions with a disposable `https://example.com` origin produced ten public URLs and its sitemap reference. |
+| Typography, in-app Chromium | Six required pages inspected at 390 × 844 and 1440 × 900: home, receipt, product, timer, contact and strategy. Computed body font was Mulish; H1 was Spectral at 34 px mobile and 72 px desktop. All page document widths were within viewport, H1 did not overflow, and no loaded images were broken. Screenshots showed legible Vietnamese and intentional line breaks. |
+| Contrast and keyboard review | Computed palette contrast: leaf on ivory 4.61:1, secondary text on ivory 4.71:1. White on gold was 3.25:1, so button hover text was changed to dark green; small gold team numbers were deepened to 5.50:1 on ivory. Ingredient/SWOT/7Ps tabs gained Arrow/Home/End handling and roving tab focus. Code lint/typecheck/build passed; post-change keyboard interaction in a browser remains unverified. |
+| UTM event and dashboard count | POST `/api/events` with a disposable UTM payload returned 201. Private JSON contained one matching event, `getAdminStats()` returned source `qa-cp10` with count 1, and validated deletion of that exact event returned true. Runtime arrays were all empty afterward. |
+| Final HTTP smoke test after build | Ten public routes 200, unknown route 404, PDF reference route 404, protected stats API 401; `robots.txt` disallows admin and references. |
+| Dependency audit | `npm audit --omit=dev --audit-level=moderate`: 0 vulnerabilities. Full audit: 16 moderate advisories in the development ESLint/minimatch chain; suggested force fix would downgrade ESLint incompatibly. |
+
+Native Chrome automation stopped because the Computer Use tool could not determine the existing browser window's URL with confidence. The separate in-app Chromium QA above completed. Actual PNG file delivery in regular Chrome and the seven-minute completion UI remain unverified; prior UI action status, calculation unit tests and completion API checks are recorded in CP-04/CP-05/CP-07.

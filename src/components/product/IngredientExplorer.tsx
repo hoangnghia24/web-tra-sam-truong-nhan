@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import type { z } from 'zod';
 import type { ingredientsSchema } from '@/lib/schemas';
+import { handleTabKey } from '@/lib/tab-keyboard';
 
 type IngredientData = z.infer<typeof ingredientsSchema>;
 
@@ -13,7 +14,7 @@ export function IngredientExplorer({ data }: { data: IngredientData }) {
   return (
     <div className="ingredient-explorer">
       <div className="ingredient-list" role="tablist" aria-label="Khám phá bảy thành phần">
-        {data.ingredients.map((item, index) => <button key={item.id} type="button" role="tab" id={`ingredient-tab-${item.id}`} aria-selected={selected === index} aria-controls="ingredient-panel" onClick={() => setSelected(index)}><span>{String(index + 1).padStart(2, '0')}</span>{item.name}</button>)}
+        {data.ingredients.map((item, index) => <button key={item.id} type="button" role="tab" id={`ingredient-tab-${item.id}`} aria-selected={selected === index} aria-controls="ingredient-panel" tabIndex={selected === index ? 0 : -1} onKeyDown={(event) => handleTabKey(event, index, data.ingredients.length, setSelected)} onClick={() => setSelected(index)}><span>{String(index + 1).padStart(2, '0')}</span>{item.name}</button>)}
       </div>
       <div className="ingredient-detail" role="tabpanel" id="ingredient-panel" aria-labelledby={`ingredient-tab-${ingredient.id}`}>
         <div className="ingredient-orbit" aria-hidden="true"><span>✳</span></div>

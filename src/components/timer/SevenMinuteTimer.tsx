@@ -2,10 +2,10 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { ArrowUpRight, Pause, Play, RotateCcw } from 'lucide-react';
+import { ArrowUpRight, Coffee, Pause, Play, RotateCcw } from 'lucide-react';
 import { motion } from 'motion/react';
 import { formatRemaining, remainingAt, TIMER_SECONDS } from '@/lib/timer';
-import { TrackedLink } from '@/components/site/TrackedLink';
+import { TrackedLink, eventPayload } from '@/components/site/TrackedLink';
 
 type TimerState = 'idle' | 'running' | 'paused' | 'complete';
 const messages = [
@@ -32,7 +32,7 @@ export function SevenMinuteTimer() {
       const response = await fetch('/api/events', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: 'timer_completed' }),
+        body: JSON.stringify(eventPayload('timer_completed')),
       });
       if (!response.ok) throw new Error('Không lưu được lượt hoàn thành.');
       setEventStatus('Khoảnh khắc này đã được ghi nhận.');
@@ -106,7 +106,7 @@ export function SevenMinuteTimer() {
               <circle className="timer-track" cx="130" cy="130" r="116" />
               <circle className="timer-progress-ring" cx="130" cy="130" r="116" strokeDasharray={ringCircumference} strokeDashoffset={ringCircumference * (1 - progress)} />
             </svg>
-            <div className="timer-dial-center"><span className="timer-flower" aria-hidden="true">✳</span><strong>{formatRemaining(remaining)}</strong><small>{state === 'complete' ? 'Bạn đã làm được' : 'phút dành cho mình'}</small></div>
+            <div className="timer-dial-center"><span className="timer-flower" aria-hidden="true"><Coffee size={33} strokeWidth={1.2} /></span><strong>{formatRemaining(remaining)}</strong><small>{state === 'complete' ? 'Bạn đã làm được' : 'phút dành cho mình'}</small></div>
           </div>
           <div className="timer-linear-track" role="progressbar" aria-valuemin={0} aria-valuemax={420} aria-valuenow={420 - remaining} aria-label="Tiến độ 7 phút"><span style={{ width: `${progress * 100}%` }} /></div>
           <p className="timer-guidance" aria-live="polite">{state === 'complete' ? 'Bạn đã dành 7 phút cho chính mình. Đó là một khởi đầu đáng trân trọng.' : messages[messageIndex]}</p>

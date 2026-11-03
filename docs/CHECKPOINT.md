@@ -5,8 +5,8 @@ Project: Truong Nhan Digital Campaign
 ## Current Status
 
 Current checkpoint: CP-10
-Status: IN_PROGRESS
-Last completed checkpoint: CP-09 (verified; commit pending). CP-08 was committed as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Status: DONE
+Last completed checkpoint: CP-10 (verified in this commit). CP-09 was committed as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -27,10 +27,11 @@ Last completed checkpoint: CP-09 (verified; commit pending). CP-08 was committed
 - Completed CP-07 challenge form, approved-only stories, protected moderation API and local personalized reminder creator.
 - Completed CP-08 source-based report with interactive SWOT/7Ps, TOWS, budget chart, planned KPIs and explicit lack of real campaign results.
 - Completed CP-09 team/about/contact/policy pages, consent-based contact form, protected admin UI/APIs, real JSON dashboard and validated content editors.
+- Completed CP-10 README, SEO routes, branded fallback states, UTM source counts, keyboard tabs and contrast fixes. The six requested pages were reviewed at mobile and desktop viewport sizes.
 
 ## Current Task
 
-Complete CP-10 SEO, README, cross-route typography and responsive QA, production verification and any necessary fixes.
+No implementation checkpoint remains. A later deployment should set the real site origin and administrator secrets, and run manual checks on a physical phone and regular Chrome.
 
 ## Completed Files
 
@@ -60,9 +61,9 @@ Complete CP-10 SEO, README, cross-route typography and responsive QA, production
 - `src/app/chien-luoc/page.tsx`, `src/components/strategy/StrategyExplorer.tsx`, `data/content/strategy-report.json`
 - `src/app/{ve-du-an,lien-he,chinh-sach,admin}/*`, contact/admin components and protected admin APIs
 
-## Files Being Modified
+## Final Files Added
 
-- `README.md`, SEO metadata files and final QA fixes
+- `README.md`, `src/app/{error,loading,not-found,robots,sitemap}.tsx/ts`, `src/proxy.ts`, `src/lib/tab-keyboard.ts`; updates to layout, CSS, admin statistics and interactive components.
 
 ## Tests Passed
 
@@ -84,21 +85,21 @@ Complete CP-10 SEO, README, cross-route typography and responsive QA, production
 - CP-07 lint, typecheck and build passed. UI submission stayed pending/hidden; protected login/PATCH approval made it public. Reminder preview and PNG status were verified.
 - CP-08 validated 9 content files, lint, typecheck and build passed. Mobile 390 px report and SWOT/7Ps tabs passed; plan/actual labels checked.
 - CP-09 JSON validation, 9 tests, lint, typecheck and build passed. Exact contacts, form persistence, admin access control, dashboard, content save and click tracking verified.
+- CP-10 initial gate: JSON validation, 9 tests, lint, typecheck and production build passed. Ten public routes returned 200; `/references/` returned 404 and protected stats API returned 401. Six named pages were inspected at 390 px and 1440 px with Spectral/Mulish computed styles, no horizontal document overflow and no loaded broken images. Production-only audit found 0 vulnerabilities.
+- CP-10 final gate after fixes: JSON validation, 9 tests, lint, typecheck and production build passed. Production HTTP smoke test returned 200 for all ten public routes, 404 for missing/PDF routes and 401 for admin stats. A disposable UTM event incremented admin source count and was removed; all runtime arrays remained empty.
 
 ## Known Issues
 
-- Final cross-route typography and Chrome checks remain for CP-10.
+- Native Chrome verification is unavailable this turn: Windows Computer Use stopped when it could not establish the browser URL confidently. The in-app Chromium browser was used for visual QA.
 - Full seven-minute completion UI was not exercised in browser; the elapsed-time helper and event API were verified separately.
 - PNG button reported success, but the in-app browser did not expose a download event; verify actual file delivery in a regular browser during final QA.
-- Typography must be reviewed again across the six requested routes after those pages exist.
-- `npm install` reported 16 moderate vulnerabilities including dev dependencies; production-only audit found 0. Review during CP-10.
+- Full dependency audit reports 16 moderate advisories in the ESLint/minimatch development toolchain; production-only audit found 0. `npm audit fix --force` proposes a breaking ESLint downgrade, so no forced change was made.
 - Official purchase URL is not supplied, so no buy link should be shown.
 
 ## Next Actions
 
-1. Write README with setup, admin hash, JSON storage and backup/reset guidance.
-2. Add metadata/sitemap/robots and run six-route typography and responsive checks.
-3. Run final test/build/security checks, record results and commit CP-10.
+1. For a real deployment, configure `NEXT_PUBLIC_SITE_URL`, `ADMIN_PASSWORD_HASH` and `SESSION_SECRET` outside Git; use a writable single-process Node host or replace JSON storage.
+2. Manually verify downloaded PNG files, the seven-minute completion screen, keyboard tab interaction and native Chrome/physical phone rendering before public launch.
 
 ## Resume Command
 

@@ -27,6 +27,13 @@ const mulish = localFont({
 export const metadata: Metadata = {
   title: { default: 'Trà Sâm Trường Nhân — Sâm không đợi dịp', template: '%s | Trà Sâm Trường Nhân' },
   description: 'Sâm không đợi dịp. Bạn đợi gì? Một khoảng dừng nhỏ để bắt đầu chăm sóc bản thân hôm nay.',
+  metadataBase: process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : undefined,
+  openGraph: {
+    type: 'website', locale: 'vi_VN', siteName: 'Trà Sâm Trường Nhân',
+    title: 'Trà Sâm Trường Nhân — Sâm không đợi dịp',
+    description: 'Một khoảng dừng nhỏ để bắt đầu chăm sóc bản thân hôm nay.',
+    images: process.env.NEXT_PUBLIC_SITE_URL ? [{ url: new URL('/images/truong-nhan-cover.png', process.env.NEXT_PUBLIC_SITE_URL).toString(), width: 1920, height: 1080, alt: 'Trà Sâm Trường Nhân' }] : undefined,
+  },
   robots: { index: true, follow: true },
   icons: { icon: '/favicon.svg' },
 };

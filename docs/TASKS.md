@@ -15,6 +15,6 @@
 | DONE | CP-07: community submissions, protected moderation API and reminder cards. |
 | DONE | CP-08: strategy report, SWOT/TOWS/7Ps and planned budget chart. |
 | DONE | CP-09: contact, team, policy and protected admin. |
-| IN_PROGRESS | CP-10: QA, SEO, README, lint, tests and production build. |
+| DONE | CP-10: QA, SEO, README, accessibility fixes, security review, tests and production build. |
 
-Typography amendment: base system and glyph coverage DONE. Cross-page visual review for the six named pages remains TODO until those pages exist; complete in CP-10.
+Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

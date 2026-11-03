@@ -72,3 +72,12 @@
 - Count only records in private runtime JSON. The dashboard never converts planned KPI targets into observed results.
 - Use validated JSON editors for product, team, campaign phase and site settings. Each save writes atomically and preserves a `.bak`; backups are ignored by Git. Public shop and social URLs require HTTPS.
 - Track explicit product and shop CTA clicks with an anonymous event. The site never constructs an unverified shop link.
+
+## CP-10 production readiness
+
+- Generate Open Graph metadata, robots and sitemap from `NEXT_PUBLIC_SITE_URL` only after an actual deployment origin is supplied; do not invent a public domain. Exclude admin and local PDF reference routes from indexing.
+- Block `/references/` through the Next.js Proxy because the 198 MB source PDF currently sits under `public/references/`. It remains ignored by Git. A non-Next static deployment must also exclude the PDF from its public directory.
+- Keep fallback loading, error and 404 states in the same Spectral/Mulish design system. Include a retry action for render errors.
+- Store only the optional UTM source, medium and campaign attached to anonymous click/completion events. The admin dashboard counts recorded UTM sources from runtime JSON, not from planned campaign KPIs.
+- Use dark text on muted-gold button hover states and a deeper gold for small text on light backgrounds to retain readable contrast.
+- Make ingredient, SWOT and 7Ps tabs a single keyboard tab stop with Arrow, Home and End navigation; selected tab and panel remain linked by ARIA attributes.

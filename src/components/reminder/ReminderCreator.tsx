@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import { toPng } from 'html-to-image';
 import { Copy, Download, Share2 } from 'lucide-react';
+import { recordClick } from '@/components/site/TrackedLink';
 
 const audiences = ['Bản thân', 'Cha mẹ', 'Bạn bè', 'Đồng nghiệp', 'Người thân'];
 const themes = [{ id: 'forest', label: 'Xanh rừng' }, { id: 'cream', label: 'Kem ấm' }, { id: 'gold', label: 'Vàng đồng' }];
@@ -23,7 +24,7 @@ export function ReminderCreator() {
       await document.fonts.ready;
       const url = await toPng(cardRef.current, { pixelRatio: 2, cacheBust: true });
       const link = document.createElement('a'); link.href = url; link.download = 'loi-nhac-truong-nhan.png'; link.click();
-      void fetch('/api/events', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: 'reminder_downloaded' }) });
+      recordClick('reminder_downloaded');
       setStatus('Ảnh thiệp đã sẵn sàng để tải.');
     } catch { setStatus('Không thể tạo PNG trên trình duyệt này. Hãy thử sao chép nội dung.'); }
   }

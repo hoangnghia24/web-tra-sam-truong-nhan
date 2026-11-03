@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowUpRight, BriefcaseBusiness, BookOpen, Check, Clapperboard, Copy, Download, Ellipsis, Heart, House, Printer, Share2, Smartphone, UserRound } from 'lucide-react';
 import { toPng } from 'html-to-image';
+import { recordClick } from '@/components/site/TrackedLink';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, useWatch } from 'react-hook-form';
 import { useEffect, useRef, useState } from 'react';
@@ -97,7 +98,7 @@ export function ReceiptExperience() {
   async function shareReceipt() {
     if (!receipt) return;
     if (!navigator.share) { setStatus('Thiết bị chưa hỗ trợ chia sẻ trực tiếp. Hãy dùng nút Sao chép.'); return; }
-    void fetch('/api/events', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: 'share_clicked' }) });
+    recordClick('share_clicked');
     try { await navigator.share({ title: 'Hóa đơn chờ đợi', text: receiptText(receipt) }); setStatus('Đã mở bảng chia sẻ.'); }
     catch (error) { if (error instanceof Error && error.name !== 'AbortError') setStatus('Không thể chia sẻ lúc này.'); }
   }
