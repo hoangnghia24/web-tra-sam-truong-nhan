@@ -13,8 +13,8 @@
   --brand-tea: #af6b22;
   --text-primary: #233a29;
   --text-secondary: #65735d;
-  --type-display: var(--font-spectral), Georgia, serif;
-  --type-body: var(--font-mulish), sans-serif;
+  --type-display: var(--font-fraunces), Georgia, serif;
+  --type-body: var(--font-inter), sans-serif;
   --text-h1: clamp(2.125rem, 5vw, 4.75rem);
   --text-h2: clamp(1.75rem, 3.8vw, 3.25rem);
   --text-h3: clamp(1.5rem, 2.3vw, 1.875rem);
@@ -26,6 +26,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--brand-ivory); color: var(--text-primary); font-family: var(--type-body); font-size: var(--text-body); line-height: 1.65; font-synthesis: none; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--type-display); }
 button, input, textarea, select { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 img { display: block; max-width: 100%; }

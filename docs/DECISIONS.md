@@ -91,3 +91,9 @@
 - Keep the user-provided Google Drive rules URL as an external reference. Its content could not be opened through the available web tool, so the website does not claim its contents or invent a hashtag.
 - The Word file labels ROAS as 3,5% and NPS as 45%; display those targets verbatim as *plan* and flag their measurement definitions for confirmation. Do not promote the unverified medical phrase or legal filing number as established evidence.
 - Add weekly plan details inside the existing phase cards and channel roles within the existing strategy section. Border radii are updated without changing primary grids, section order or the 16:9 hero.
+
+## CP-12 typography update (2026-11-04)
+
+- The user requested Bogart headings and Inter copy, then confirmed no licensed Bogart font file or Adobe Fonts kit is available and chose Fraunces as the temporary heading font. Bogart is offered by Zetafonts under a separate web embedding license; do not bundle the trial font into this website.
+- Downloaded Inter and Fraunces variable font files and OFL license texts from the official Google Fonts repository. `next/font/local` self-hosts both; the site makes no external font request. Kept earlier Spectral/Mulish files in the repository as unused historical assets.
+- Use Fraunces for all semantic headings and existing display typography, Inter for body and interface text. Switch the display font to licensed Bogart once the user supplies its asset or kit; retain Inter.

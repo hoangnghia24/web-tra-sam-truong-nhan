@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-11
+Current checkpoint: CP-12
 Status: DONE
-Last completed checkpoint: CP-11 (Word content amendment, verified in this commit). CP-10 was committed as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-12 (Inter and temporary Fraunces typography, verified in this commit). CP-11 was committed as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -29,10 +29,11 @@ Last completed checkpoint: CP-11 (Word content amendment, verified in this commi
 - Completed CP-09 team/about/contact/policy pages, consent-based contact form, protected admin UI/APIs, real JSON dashboard and validated content editors.
 - Completed CP-10 README, SEO routes, branded fallback states, UTM source counts, keyboard tabs and contrast fixes. The six requested pages were reviewed at mobile and desktop viewport sizes.
 - Completed CP-11 content revisions from the supplied Word file: company overview, navigation order, challenge instructions, ingredient ratios, strategy details, weekly activities, KPI targets and risks. Rounded rectangular UI elements while retaining the site grids and full hero image.
+- Completed CP-12 self-hosted Inter for body/interface copy and Fraunces for headings as the user-approved temporary substitute for Bogart. Checked Vietnamese glyphs, production build and responsive rendering.
 
 ## Current Task
 
-CP-11 is complete. A later deployment should confirm company/product statements, the exact challenge rules and KPI definitions, set the real site origin and administrator secrets, and run manual checks on a physical phone and regular Chrome.
+CP-12 is complete. Bogart remains pending a web-licensed font file or Adobe Fonts kit from the user; Fraunces is the approved temporary heading font. A later deployment should confirm company/product statements, the exact challenge rules and KPI definitions, set the real site origin and administrator secrets, and run manual checks on a physical phone and regular Chrome.
 
 ## Completed Files
 
@@ -89,6 +90,7 @@ CP-11 is complete. A later deployment should confirm company/product statements,
 - CP-10 initial gate: JSON validation, 9 tests, lint, typecheck and production build passed. Ten public routes returned 200; `/references/` returned 404 and protected stats API returned 401. Six named pages were inspected at 390 px and 1440 px with Spectral/Mulish computed styles, no horizontal document overflow and no loaded broken images. Production-only audit found 0 vulnerabilities.
 - CP-10 final gate after fixes: JSON validation, 9 tests, lint, typecheck and production build passed. Production HTTP smoke test returned 200 for all ten public routes, 404 for missing/PDF routes and 401 for admin stats. A disposable UTM event incremented admin source count and was removed; all runtime arrays remained empty.
 - CP-11: 10 content JSON files and 5 seed arrays validated; 9 tests, lint, typecheck and build passed. At 390 px, five edited pages had no horizontal overflow; the weekly disclosure opened. At 1440 px, the navigation fit and the hero kept its 16:9 ratio.
+- CP-12: Inter, Fraunces upright and Fraunces italic contained the checked Vietnamese glyphs. Production build passed. Mobile browser checks on home and six routes found Inter body/Fraunces H1, no H1 or horizontal overflow; desktop homepage header and H1 also fit.
 
 ## Known Issues
 
@@ -97,12 +99,14 @@ CP-11 is complete. A later deployment should confirm company/product statements,
 - PNG button reported success, but the in-app browser did not expose a download event; verify actual file delivery in a regular browser during final QA.
 - Full dependency audit reports 16 moderate advisories in the ESLint/minimatch development toolchain; production-only audit found 0. `npm audit fix --force` proposes a breaking ESLint downgrade, so no forced change was made.
 - Official purchase URL is not supplied, so no buy link should be shown.
+- Bogart is not bundled: a web-licensed font file or Adobe Fonts kit is needed before replacing the temporary Fraunces headings.
 
 ## Next Actions
 
 1. For a real deployment, configure `NEXT_PUBLIC_SITE_URL`, `ADMIN_PASSWORD_HASH` and `SESSION_SECRET` outside Git; use a writable single-process Node host or replace JSON storage.
 2. Manually verify downloaded PNG files, the seven-minute completion screen, keyboard tab interaction and native Chrome/physical phone rendering before public launch.
+3. When licensed Bogart files or an Adobe Fonts kit become available, replace the Fraunces display font and repeat glyph/build/browser checks.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-11. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-12. Do not repeat completed work.

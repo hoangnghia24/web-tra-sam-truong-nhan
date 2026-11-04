@@ -169,3 +169,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Phase interaction | Opening the first phase revealed weeks 1–4. Computed phase-card radius was 18 px and primary-button radius 999 px. |
 | Desktop browser, 1440 × 900 | Homepage document width was 1425 px against a 1440 px viewport. The full hero image retained a 1.7778 ratio. Header navigation placed `Về công ty` second and fit without internal overflow. |
 | External rules | The Google Drive URL from the Word file was added as a labeled link; the web tool could not access its content, so the linked rules and hashtag remain unverified. |
+
+## CP-12 — Typography update (2026-11-04)
+
+| Check | Observed result |
+| --- | --- |
+| Font provenance | Inter and Fraunces variable TTF files plus OFL texts downloaded from `google/fonts` official repository. Bogart was not bundled because no licensed web asset or kit was available; user approved Fraunces temporarily. |
+| Vietnamese glyphs | `fontTools` cmap checks of Inter, Fraunces upright and Fraunces italic found no missing letters across all `.tsx` source and content JSON, including the required Vietnamese sample. |
+| Build and lint | `npm run build` passed on Next.js 16.4.4 after the font change; TypeScript compiled and all routes generated. `npm run lint` passed without warnings. |
+| Mobile browser, 390 × 844 | Home plus receipt, timer, product, contact, strategy and company pages used computed Fraunces headings and Inter body text. All six checked routes had H1 width within its box and document scroll width 375 px, below the 390 px viewport. Screenshots showed legible Vietnamese and no clipped headings. |
+| Desktop browser, 1440 × 900 | Homepage used the new computed fonts; H1 and navigation had no internal overflow and document scroll width was 1425 px. |
