@@ -41,9 +41,9 @@ export default async function HomePage() {
             <h2 className="section-title" id="home-story-title">Cho mọi người một chút.<br /><em>Cho mình thì để mai.</em></h2>
           </div>
           <div className="story-column">
-            <p className="story-quote">“Tôi biết mình cũng cần được chăm sóc, chỉ là tôi luôn nghĩ mình có thể chờ thêm một chút.”</p>
+            <p className="story-quote">“Tôi cố gắng hoàn thành công việc, chăm lo cho người thân; còn bản thân thường được xếp sau vì nghĩ rằng ngày mai vẫn kịp.”</p>
             <p>Giữa những việc cần hoàn thành, một cuộc hẹn với bản thân rất dễ bị đẩy xuống cuối ngày. Chiến dịch mời bạn nhìn lại khoảng thời gian ấy và bắt đầu bằng điều nhỏ nhất có thể làm ngay.</p>
-            <Link className="editorial-link" href="/ve-du-an">Đọc câu chuyện chiến dịch <ArrowUpRight size={16} aria-hidden="true" /></Link>
+            <Link className="editorial-link" href="/ve-du-an">Tìm hiểu Trường Sinh Group <ArrowUpRight size={16} aria-hidden="true" /></Link>
           </div>
         </div>
       </section>
@@ -96,8 +96,8 @@ export default async function HomePage() {
 
       <section className="home-challenge home-section" aria-labelledby="home-challenge-title">
         <div className="home-container">
-          <div className="challenge-heading"><div><p className="section-index">05 <span></span> Câu chuyện cộng đồng</p><h2 className="section-title" id="home-challenge-title">Hóa đơn của bạn.<br /><em>Câu chuyện của bạn.</em></h2></div><p>Không cần một thay đổi lớn. Hãy kể về một việc bạn đã thôi trì hoãn cho bản thân; bài dự thi chỉ xuất hiện sau khi được duyệt.</p></div>
-          <ol className="challenge-steps"><li><span>01</span><strong>Tạo hóa đơn</strong><p>Nhìn lại cách bạn dùng thời gian.</p></li><li><span>02</span><strong>Làm một việc nhỏ</strong><p>Chọn một bước dành cho mình.</p></li><li><span>03</span><strong>Kể câu chuyện</strong><p>Chia sẻ qua một video của bạn.</p></li><li><span>04</span><strong>Gửi liên kết</strong><p>Để câu chuyện được xem xét.</p></li></ol>
+          <div className="challenge-heading"><div><p className="section-index">05 <span></span> Câu chuyện cộng đồng</p><h2 className="section-title" id="home-challenge-title">Hóa đơn của bạn.<br /><em>Câu chuyện của bạn.</em></h2></div><p>Không cần một thay đổi lớn. Hãy kể về một việc bạn đã thôi trì hoãn cho bản thân và chia sẻ câu chuyện theo thể lệ của thử thách.</p></div>
+          <ol className="challenge-steps"><li><span>01</span><strong>Quay video</strong><p>Kể câu chuyện của bạn.</p></li><li><span>02</span><strong>Đăng TikTok</strong><p>Kèm hashtag theo thể lệ.</p></li><li><span>03</span><strong>Gửi thông tin</strong><p>Điền thông tin dự thi.</p></li><li><span>04</span><strong>Chờ kết quả</strong><p>Theo dõi kết quả và thông tin nhận quà.</p></li></ol>
           <Link className="editorial-link" href="/thu-thach">Xem thể lệ và tham gia <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </div>
       </section>

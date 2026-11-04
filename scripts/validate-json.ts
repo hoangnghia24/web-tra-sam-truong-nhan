@@ -1,12 +1,13 @@
 import { readJson } from '../src/lib/json-store';
 import { z } from 'zod';
 import {
-  brandSchema, campaignSchema, faqsSchema, ingredientsSchema,
+  brandSchema, campaignSchema, companySchema, faqsSchema, ingredientsSchema,
   productSchema, siteSettingsSchema, strategySchema, strategyReportSchema, teamSchema,
 } from '../src/lib/schemas';
 
 const checks = [
   () => readJson('content/brand.json', brandSchema),
+  () => readJson('content/company.json', companySchema),
   () => readJson('content/team.json', teamSchema),
   () => readJson('content/product.json', productSchema),
   () => readJson('content/ingredients.json', ingredientsSchema),

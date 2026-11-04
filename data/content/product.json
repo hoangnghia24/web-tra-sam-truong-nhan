@@ -9,9 +9,9 @@
   "brewWaterMl": 300,
   "brewMinutesMin": 5,
   "brewMinutesMax": 7,
-  "referencePriceVndMin": 380000,
+  "referencePriceVndMin": 390000,
   "referencePriceVndMax": 390000,
-  "referencePriceLabel": "Giá tham khảo trong kế hoạch, không phải giá bán hiện hành",
+  "referencePriceLabel": "Giá niêm yết nêu trong file chỉnh sửa, chưa xác minh là giá bán hiện hành",
   "officialShopUrl": null,
   "note": "Vui lòng đối chiếu nhãn và hồ sơ sản phẩm chính thức trước khi sử dụng. Sản phẩm trà không thay thế thuốc hay tư vấn y tế."
 }

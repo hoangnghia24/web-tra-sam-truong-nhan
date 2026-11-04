@@ -9,6 +9,11 @@ export const brandSchema = z.object({
   emotionalMessage: safeText(180), simulationNotice: safeText(250),
 });
 
+export const companySchema = z.object({
+  name: safeText(100), overview: safeText(900), connection: safeText(700), verificationNote: safeText(350),
+  facts: z.array(z.object({ label: safeText(100), detail: safeText(350) })).length(3),
+});
+
 export const teamMemberSchema = z.object({
   id: safeText(40), name: safeText(100), email,
   phone: z.string().regex(/^0\d{9}$/, 'Số điện thoại phải có 10 chữ số'),
@@ -37,7 +42,8 @@ export const campaignSchema = z.object({
   title: safeText(140), currentPhase: z.number().int().min(1).max(3),
   phases: z.array(z.object({
     number: z.number().int().min(1).max(3), name: safeText(50),
-    weeks: safeText(30), message: safeText(180), focus: z.array(safeText(80)).min(1),
+    weeks: safeText(30), message: safeText(180), focus: z.array(safeText(100)).min(1),
+    weeklyPlan: z.array(z.object({ week: z.number().int().min(1).max(12), activities: z.array(safeText(200)).min(1), goal: safeText(300) })).length(4),
   })).length(3),
   statusNote: safeText(250),
 });
@@ -45,10 +51,10 @@ export const campaignSchema = z.object({
 export const strategySchema = z.object({
   reportTitle: safeText(180), source: safeText(180), bigIdea: safeText(180),
   customerInsight: safeText(400), primaryAudience: safeText(400),
-  secondaryAudience: safeText(400), plannedBudgetVnd: z.number().nonnegative(),
+  secondaryAudience: safeText(400), persona: z.object({ belief: safeText(400), pain: safeText(900), motivation: safeText(700) }), plannedBudgetVnd: z.number().nonnegative(),
   plannedExecutionBudgetVnd: z.number().nonnegative(), plannedReserveVnd: z.number().nonnegative(),
   plannedWeeks: z.number().int().positive(),
-  plannedKpis: z.array(z.object({ label: safeText(100), target: z.number().nonnegative(), unit: safeText(30), sourcePage: z.number().int().positive() })),
+  plannedKpis: z.array(z.object({ label: safeText(100), target: z.number().nonnegative(), displayTarget: safeText(30).optional(), unit: safeText(100), sourcePage: z.number().int().positive().optional() })),
   actualResultsAvailable: z.boolean(),
 });
 
@@ -58,11 +64,12 @@ export const strategyReportSchema = z.object({
   market: z.array(strategyEntry),
   swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),
   tows: z.array(z.object({ key: z.enum(['SO', 'WO', 'ST', 'WT']), title: safeText(100), body: safeText(500) })).length(4),
-  sevenPs: z.array(z.object({ key: safeText(50), title: safeText(100), body: safeText(500) })).length(7),
+  sevenPs: z.array(z.object({ key: safeText(50), title: safeText(100), body: safeText(1200) })).length(7),
   journey: z.array(z.object({ step: safeText(100), touchpoint: safeText(200) })).length(5),
+  channelRoles: z.array(z.object({ channel: safeText(100), role: safeText(240) })).length(6),
   pillars: z.array(strategyEntry).length(4),
   budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(10),
-  risks: z.array(z.object({ title: safeText(100), response: safeText(500), page: z.number().int().positive() })),
+  risks: z.array(z.object({ title: safeText(100), response: safeText(500), page: z.number().int().positive().optional() })),
 });
 
 export const faqsSchema = z.object({ items: z.array(z.object({ question: safeText(200), answer: safeText(900) })) });

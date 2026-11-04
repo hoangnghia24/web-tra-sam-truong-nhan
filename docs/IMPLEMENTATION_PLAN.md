@@ -15,5 +15,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-08 Strategy Dashboard | Interactive strategy report from PDF, planned versus actual labels and charts; content checks. |
 | CP-09 Contact & Admin | Team/contact route and private JSON, admin auth/session and management views; security and workflow tests. |
 | CP-10 QA & Production Readiness | Responsive, accessibility, SEO, validation, lint, tests, production build, README and final review. |
+| CP-11 Word content amendment | Map supplied DOCX notes and screenshots to existing pages; update content, soften corners without changing section grids; validate JSON, lint, typecheck, tests, build and inspect mobile/desktop. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

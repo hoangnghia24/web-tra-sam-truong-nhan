@@ -158,3 +158,14 @@ The content editor is a validated JSON editor, not field-by-field controls. It p
 | Dependency audit | `npm audit --omit=dev --audit-level=moderate`: 0 vulnerabilities. Full audit: 16 moderate advisories in the development ESLint/minimatch chain; suggested force fix would downgrade ESLint incompatibly. |
 
 Native Chrome automation stopped because the Computer Use tool could not determine the existing browser window's URL with confidence. The separate in-app Chromium QA above completed. Actual PNG file delivery in regular Chrome and the seven-minute completion UI remain unverified; prior UI action status, calculation unit tests and completion API checks are recorded in CP-04/CP-05/CP-07.
+
+# CP-11 — Word content amendment (2026-11-04)
+
+| Check | Observed result |
+| --- | --- |
+| Word source | Extracted all 183 nonempty paragraphs and reviewed an 18-image contact sheet plus the channel-role image. Mapped notes to the navigation, company, challenge, product and strategy sections. |
+| JSON and code | `npm run validate:json` passed for 10 content files and 5 seed arrays; `npm run typecheck` passed; `npm run test` passed all 9 tests; `npm run build` compiled all routes. |
+| Mobile browser, 390 × 844 | Home, company, product, challenge and strategy loaded; document width was 375 px against a 390 px viewport with no horizontal overflow. Challenge showed the four revised steps; product gallery showed one note; strategy showed six channel roles, six KPI cards and three phase cards. |
+| Phase interaction | Opening the first phase revealed weeks 1–4. Computed phase-card radius was 18 px and primary-button radius 999 px. |
+| Desktop browser, 1440 × 900 | Homepage document width was 1425 px against a 1440 px viewport. The full hero image retained a 1.7778 ratio. Header navigation placed `Về công ty` second and fit without internal overflow. |
+| External rules | The Google Drive URL from the Word file was added as a labeled link; the web tool could not access its content, so the linked rules and hashtag remain unverified. |

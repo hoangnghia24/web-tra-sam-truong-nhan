@@ -81,3 +81,13 @@
 - Store only the optional UTM source, medium and campaign attached to anonymous click/completion events. The admin dashboard counts recorded UTM sources from runtime JSON, not from planned campaign KPIs.
 - Use dark text on muted-gold button hover states and a deeper gold for small text on light backgrounds to retain readable contrast.
 - Make ingredient, SWOT and 7Ps tabs a single keyboard tab stop with Arrow, Home and End navigation; selected tab and panel remain linked by ARIA attributes.
+
+# CP-11 Word content amendment (2026-11-04)
+
+- Treat the supplied DOCX as the requested content amendment. Its screenshots identify existing elements; the short notes are editing directions for those elements, not proof that product or company claims are independently verified.
+- Replace the fourth navigation item `Sản phẩm` with `Về công ty` immediately after `Trang chủ`, using the existing `/ve-du-an` route so the navigation footprint and page section layout stay familiar. Keep `/san-pham` reachable from the homepage, footer and company page.
+- Present company history, area, plant count and GMP/ISO as statements from the supplied material, with a visible verification note. The seven ingredient percentages and proposed 390.000 ₫ price are likewise attributed to the Word file and subject to label and current-price checks.
+- Preserve campaign moderation even though the homepage approval sentence is removed. It protects visitor submissions; the Word file changes the displayed four-step instructions.
+- Keep the user-provided Google Drive rules URL as an external reference. Its content could not be opened through the available web tool, so the website does not claim its contents or invent a hashtag.
+- The Word file labels ROAS as 3,5% and NPS as 45%; display those targets verbatim as *plan* and flag their measurement definitions for confirmation. Do not promote the unverified medical phrase or legal filing number as established evidence.
+- Add weekly plan details inside the existing phase cards and channel roles within the existing strategy section. Border radii are updated without changing primary grids, section order or the 16:9 hero.

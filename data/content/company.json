@@ -1,0 +1,11 @@
+{
+  "name": "Trường Sinh Group",
+  "overview": "Được thành lập năm 2004, Trường Sinh Group hoạt động trong lĩnh vực nghiên cứu, sản xuất và phát triển sản phẩm từ dược liệu thiên nhiên. Theo file nội dung do nhóm cung cấp, doanh nghiệp chú trọng chuỗi giá trị từ vùng nguyên liệu, công nghệ sản xuất đến sản phẩm chăm sóc sức khỏe.",
+  "connection": "Trên nền tảng nghiên cứu và sản xuất của Trường Sinh Group, Trường Nhân Pharma phát triển sản phẩm từ dược liệu, hướng đến đưa giá trị sâm Ngọc Linh gần hơn với người tiêu dùng qua những sản phẩm tiện lợi cho nhịp sống hiện đại.",
+  "verificationNote": "Các thông tin về doanh nghiệp và năng lực sản xuất được nêu trong file nội dung chỉnh sửa; cần đối chiếu công bố và hồ sơ chính thức.",
+  "facts": [
+    { "label": "Kinh nghiệm", "detail": "Hơn 20 năm hoạt động, tính từ năm thành lập 2004 theo tài liệu cung cấp." },
+    { "label": "Vùng nguyên liệu", "detail": "Hợp tác phát triển khoảng 70 ha vùng trồng với hơn 500.000 cây sâm theo tài liệu cung cấp." },
+    { "label": "Sản xuất", "detail": "Thông tin doanh nghiệp công bố về ứng dụng công nghệ và quy trình đạt GMP, ISO cần được đối chiếu chứng nhận." }
+  ]
+}

@@ -16,5 +16,6 @@
 | DONE | CP-08: strategy report, SWOT/TOWS/7Ps and planned budget chart. |
 | DONE | CP-09: contact, team, policy and protected admin. |
 | DONE | CP-10: QA, SEO, README, accessibility fixes, security review, tests and production build. |
+| DONE | CP-11: apply `NỘI DUNG SỬA WEBSITE.docx` content to company, product, challenge and strategy pages; soften corners while retaining the existing layout. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

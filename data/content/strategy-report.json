@@ -1,30 +1,30 @@
 {
-  "sourceNote": "Tóm lược từ tài liệu kế hoạch Digital Marketing 38 trang. Số liệu ngân sách và KPI là mục tiêu dự kiến, chưa phải kết quả thực tế.",
+  "sourceNote": "Tóm lược từ tài liệu kế hoạch Digital Marketing 38 trang và file nội dung chỉnh sửa. Ngân sách, hoạt động và KPI là kế hoạch, chưa phải kết quả thực tế.",
   "market": [
     { "title": "Trà thảo mộc tiện lợi", "body": "Tài liệu nhận định nhu cầu sản phẩm dễ pha, phù hợp nhịp sống bận rộn là một cơ hội cho sản phẩm.", "page": 13 },
     { "title": "Thương mại xã hội", "body": "TikTok Shop, KOC và livestream được đề xuất là những điểm chạm để tiếp cận và giải thích sản phẩm.", "page": 14 },
     { "title": "Rào cản niềm tin", "body": "Giá ở phân khúc cao và thắc mắc về tỷ lệ 3% lá Sâm Ngọc Linh đòi hỏi thông tin minh bạch trước lời hứa quảng cáo.", "page": 12 }
   ],
   "swot": [
-    { "key": "S", "title": "Điểm mạnh", "items": ["Di sản nghiên cứu dược liệu được nêu trong kế hoạch", "Công thức bảy thành phần; 3% lá Sâm Ngọc Linh", "Dạng túi lọc thuận tiện"] },
-    { "key": "W", "title": "Điểm yếu", "items": ["Giá cao hơn trà phổ thông", "Định kiến sâm chỉ dành cho dịp đặc biệt", "Thương hiệu còn mới với một bộ phận người dùng"] },
-    { "key": "O", "title": "Cơ hội", "items": ["Nhu cầu trà thảo mộc dễ dùng", "Kênh social commerce mở rộng tiếp cận", "Quan tâm đến lối sống chủ động"] },
-    { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh về giá", "Lo ngại nguồn gốc và chất lượng", "Giới hạn pháp lý với tuyên bố công dụng"] }
+    { "key": "S", "title": "Điểm mạnh", "items": ["Di sản hơn 20 năm của Trường Sinh Group theo thông tin doanh nghiệp", "Công thức bảy thành phần được nêu trong file chỉnh sửa", "Túi lọc tiện sử dụng; hồ sơ pháp lý cần đối chiếu"] },
+    { "key": "W", "title": "Điểm yếu", "items": ["Mức giá kế hoạch 390.000 đồng/hộp cao hơn trà phổ thông", "Định kiến sâm chỉ dành cho dịp đặc biệt hoặc người lớn tuổi", "Thương hiệu còn mới với một bộ phận người dùng"] },
+    { "key": "O", "title": "Cơ hội", "items": ["Sự phát triển của thương mại xã hội", "Quan tâm đến việc chăm sóc bản thân chủ động"] },
+    { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh về giá", "Lo ngại về nguồn gốc sâm trên mạng", "Giới hạn pháp lý đối với tuyên bố công dụng"] }
   ],
   "tows": [
-    { "key": "SO", "title": "Khai thác thế mạnh", "body": "Đưa câu chuyện nguyên liệu và sự thuận tiện lên video ngắn, KOC và các kênh số." },
-    { "key": "WO", "title": "Giảm rào cản", "body": "Giải thích công thức rõ ràng; dùng trải nghiệm thử và ưu đãi phù hợp để người mới dễ bắt đầu." },
+    { "key": "SO", "title": "Khai thác thế mạnh", "body": "Phủ sóng video ngắn, KOC và livestream để giới thiệu sản phẩm, thành phần và hình thức túi lọc tiện lợi." },
+    { "key": "WO", "title": "Minh bạch trước lời hứa", "body": "Giải thích nguồn gốc, công thức và hồ sơ sản phẩm trước khi đưa ra lời hứa về giá trị sử dụng." },
     { "key": "ST", "title": "Chứng minh trước lời hứa", "body": "Ưu tiên nguồn gốc, thông tin nhãn và hướng dẫn pha thay cho tuyên bố lợi ích chưa được kiểm chứng." },
-    { "key": "WT", "title": "Xây niềm tin", "body": "Trình bày giá và quy cách minh bạch; tránh giảm giá sâu làm mờ giá trị sản phẩm." }
+    { "key": "WT", "title": "Nghi thức dùng trà", "body": "Hướng dẫn pha một túi trà với khoảng 300 ml nước nóng, chờ 5–7 phút theo tài liệu; đối chiếu hướng dẫn trên bao bì thực tế." }
   ],
   "sevenPs": [
-    { "key": "Product", "title": "Sản phẩm", "body": "Trà túi lọc 15 × 2 g, bảy nguyên liệu theo trang 18; gợi ý pha khoảng 300 ml trong 5–7 phút." },
-    { "key": "Price", "title": "Giá", "body": "Định vị premium; mức 380.000–390.000 đồng/hộp chỉ là tham khảo trong kế hoạch, không phải giá hiện hành." },
-    { "key": "Place", "title": "Phân phối", "body": "Đề xuất TikTok Shop là kênh chủ đạo, Shopee bổ trợ, website cung cấp thông tin minh bạch. Chưa có URL mua hàng được xác minh." },
-    { "key": "Promotion", "title": "Xúc tiến", "body": "Nội dung giải thích sản phẩm, câu chuyện cá nhân, KOC và livestream. Mọi tuyên bố công dụng cần được kiểm duyệt." },
-    { "key": "People", "title": "Con người", "body": "Creator, đội ngũ tư vấn và người tham gia thật tạo các điểm chạm; không giả lập phản hồi khách hàng." },
-    { "key": "Process", "title": "Quy trình", "body": "Hành trình đề xuất đi từ nhận thức, tìm hiểu, cân nhắc, mua hàng tới chăm sóc sau mua." },
-    { "key": "Physical evidence", "title": "Bằng chứng hữu hình", "body": "Bao bì, nhãn, nguồn gốc, trang sản phẩm và đánh giá thật cần được đối chiếu với hồ sơ chính thức." }
+    { "key": "Product", "title": "Sản phẩm", "body": "Trà túi lọc hộp 30 g (15 túi × 2 g), pha với khoảng 300 ml nước nóng trong 5–7 phút. File chỉnh sửa nêu bảy thành phần: Táo đỏ 25%, Lá đinh lăng 17%, Đẳng sâm 15%, Cam thảo 15%, Kỷ tử 15%, Nhân sâm tươi 10% và Lá Sâm Ngọc Linh 3%. Định hướng là sản phẩm dễ tiếp cận trong danh mục; ý tưởng bán chéo sang Dịch chiết Sâm Ngọc Linh thuộc kế hoạch." },
+    { "key": "Price", "title": "Giá", "body": "File chỉnh sửa đề xuất giá niêm yết 390.000 đồng/hộp, tương đương 26.000 đồng/túi. Đây là giá trong kế hoạch, chưa xác nhận giá bán hiện hành. Định vị premium; duy trì giá trị thương hiệu, tránh giảm giá sâu. Voucher khách mới, ưu đãi livestream, freeship và combo là các đề xuất kích thích dùng thử." },
+    { "key": "Place", "title": "Phân phối", "body": "Kế hoạch lấy TikTok Shop làm kênh chủ lực, Shopee bổ trợ; website cung cấp thành phần, hướng dẫn và hồ sơ sản phẩm. Nhà thuốc, cửa hàng và điểm bán phù hợp là kênh offline dự kiến. Chưa có URL mua hàng chính thức được xác minh." },
+    { "key": "Promotion", "title": "Xúc tiến", "body": "Đề xuất TikTok Ads, Facebook Ads, Reels Ads; nội dung giải thích sản phẩm, thành phần và cách dùng; KOC/creator đánh giá thực tế; voucher, combo, freeship, livestream và UGC. Nội dung tài trợ cần được công bố và mọi tuyên bố công dụng phải được kiểm duyệt." },
+    { "key": "People", "title": "Con người", "body": "KOC/creator chuyển tải thông tin dễ hiểu; livestream host giải đáp về giá và thành phần; đội tư vấn nắm rõ công thức, quy cách và cách pha. Chăm sóc khách hàng trước, trong và sau mua cần chính xác, không phóng đại công dụng." },
+    { "key": "Process", "title": "Quy trình", "body": "Tiếp cận qua TikTok, Facebook và KOC; tìm hiểu thành phần, giá và cách dùng trên website; chuyển đổi qua gian hàng được xác minh; kiểm tra bao bì khi nhận; hỗ trợ sau mua qua Zalo OA; khuyến khích đánh giá thật và mua lại khi có nhu cầu." },
+    { "key": "Physical evidence", "title": "Bằng chứng hữu hình", "body": "Bao bì, bảng thành phần và tỷ lệ 3% lá Sâm Ngọc Linh cần được đối chiếu. Hình vùng nguyên liệu, nhà máy GMP, hồ sơ pháp lý và số tự công bố 03/TRUONGNHAN/2026 được nêu trong file chỉnh sửa nhưng cần kiểm tra tài liệu xác nhận trước khi công bố như bằng chứng. Website, mã QR và đánh giá thật là các điểm chạm số dự kiến." }
   ],
   "journey": [
     { "step": "Khám phá", "touchpoint": "Video ngắn, nội dung đồng cảm" },
@@ -33,11 +33,19 @@
     { "step": "Mua thử", "touchpoint": "Gian hàng chính thức khi được xác minh" },
     { "step": "Duy trì", "touchpoint": "7 phút cho mình, lời nhắc và cộng đồng" }
   ],
+  "channelRoles": [
+    { "channel": "Thu hút", "role": "TikTok Ads và Facebook Reels dẫn người xem về microsite hoặc gian hàng được xác minh." },
+    { "channel": "Tạo niềm tin", "role": "KOC và UGC chia sẻ trải nghiệm thực tế, có công bố hợp tác khi phù hợp." },
+    { "channel": "Minh bạch", "role": "Microsite trình bày thành phần, hồ sơ công bố và FAQ sau khi đối chiếu." },
+    { "channel": "Chốt đơn", "role": "TikTok Shop là kênh bán hàng chủ lực; Shopee hỗ trợ người chủ động tìm mua." },
+    { "channel": "Bổ trợ", "role": "Website và Facebook cung cấp thông tin và hướng dẫn đến kênh phù hợp." },
+    { "channel": "Giữ chân", "role": "Zalo OA dự kiến hỗ trợ chăm sóc sau mua và nhắc khi có nhu cầu mua lại." }
+  ],
   "pillars": [
-    { "title": "Chạm cảm xúc", "body": "Câu chuyện trì hoãn, Hóa đơn chờ đợi", "page": 23 },
-    { "title": "Minh bạch", "body": "Giải thích tỷ lệ 3%, nhãn và cách pha", "page": 23 },
-    { "title": "Hành động", "body": "Khoảng dừng 7 phút, trải nghiệm sản phẩm", "page": 23 },
-    { "title": "Lan tỏa", "body": "UGC có duyệt và lời nhắc quan tâm", "page": 23 }
+    { "title": "Chạm cảm xúc", "body": "Video về cách mỗi người dành thời gian cho bản thân", "page": 23 },
+    { "title": "Minh bạch", "body": "Thành phần, nguồn gốc và cách pha có thể đối chiếu", "page": 23 },
+    { "title": "Hành động", "body": "KOC review, video mở hộp, phản hồi thực tế và livestream", "page": 23 },
+    { "title": "Lan tỏa", "body": "Câu chuyện người tham gia và lời nhắc quan tâm", "page": 23 }
   ],
   "budget": [
     { "name": "Paid Ads", "millionVnd": 135 },
@@ -52,8 +60,10 @@
     { "name": "Dự phòng", "millionVnd": 100 }
   ],
   "risks": [
-    { "title": "Phát ngôn KOC", "response": "Chọn người hợp định vị, hướng dẫn công bố hợp tác và kiểm duyệt nội dung.", "page": 37 },
-    { "title": "Hiểu nhầm công dụng", "response": "Công khai thành phần và kiểm tra mọi tuyên bố với bằng chứng phù hợp.", "page": 37 },
-    { "title": "Sự cố nền tảng", "response": "Kiểm thử trước khi triển khai và chuẩn bị kênh thay thế.", "page": 37 }
+    { "title": "Khủng hoảng phát ngôn KOC · Trung bình/Cao", "response": "Kế hoạch: duyệt toàn bộ clip trước đăng và ban hành hướng dẫn nội dung. Dự phòng: tạm dừng hợp tác, ẩn clip và yêu cầu đính chính." },
+    { "title": "Thông tin công dụng gây hiểu nhầm · Thấp/Rất cao", "response": "Kế hoạch: kiểm tra mọi tuyên bố công dụng theo quy định quảng cáo và hồ sơ được xác nhận; không dùng lời hứa sức khỏe chưa chứng minh. Dự phòng: đính chính trên kênh đã đăng và cập nhật mô tả sản phẩm." },
+    { "title": "Sự cố kỹ thuật microsite hoặc sàn · Trung bình/Trung bình", "response": "Kế hoạch: kiểm thử tải trước chiến dịch. Dự phòng: chuyển liên kết điều hướng sang kênh bán hàng hoặc hỗ trợ đã được xác minh." },
+    { "title": "Thiếu hàng hoặc giao trễ · Trung bình/Cao", "response": "Kế hoạch: dự báo nhu cầu theo tuần và đề xuất mức tồn kho an toàn 30%. Dự phòng: giảm quảng cáo, chủ động thông báo và hỗ trợ đơn hàng trễ." },
+    { "title": "Chuyển đổi thấp, hoàn đơn cao · Cao/Trung bình", "response": "Kế hoạch: công khai thông tin, dùng video mở hộp thật. Dự phòng: xem lại quà tặng kèm và xác nhận đơn hàng theo quy trình phù hợp." }
   ]
 }

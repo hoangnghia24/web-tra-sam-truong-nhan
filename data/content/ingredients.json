@@ -1,12 +1,12 @@
 {
   "ingredients": [
-    { "id": "tao-do", "name": "Táo đỏ", "description": "Một trong bảy thành phần được liệt kê trong tài liệu chiến dịch.", "percent": null },
-    { "id": "la-dinh-lang", "name": "Lá đinh lăng", "description": "Thành phần thảo mộc có trong công thức theo tài liệu chiến dịch.", "percent": null },
-    { "id": "dang-sam", "name": "Đẳng sâm", "description": "Thành phần được liệt kê trong công thức trà.", "percent": null },
-    { "id": "cam-thao", "name": "Cam thảo", "description": "Thành phần được liệt kê trong công thức trà.", "percent": null },
-    { "id": "ky-tu", "name": "Kỷ tử", "description": "Thành phần được liệt kê trong công thức trà.", "percent": null },
-    { "id": "nhan-sam", "name": "Nhân sâm", "description": "Thành phần được liệt kê trong công thức trà.", "percent": null },
-    { "id": "la-sam-ngoc-linh", "name": "Lá Sâm Ngọc Linh", "description": "Chiếm 3% công thức theo tài liệu chiến dịch; không diễn giải thành hàm lượng dược chất hay công dụng y khoa.", "percent": 3 }
+    { "id": "tao-do", "name": "Táo đỏ", "description": "Chiếm 25% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 25 },
+    { "id": "la-dinh-lang", "name": "Lá đinh lăng", "description": "Chiếm 17% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 17 },
+    { "id": "dang-sam", "name": "Đẳng sâm", "description": "Chiếm 15% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 15 },
+    { "id": "cam-thao", "name": "Cam thảo", "description": "Chiếm 15% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 15 },
+    { "id": "ky-tu", "name": "Kỷ tử", "description": "Chiếm 15% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 15 },
+    { "id": "nhan-sam", "name": "Nhân sâm tươi", "description": "Chiếm 10% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 10 },
+    { "id": "la-sam-ngoc-linh", "name": "Lá Sâm Ngọc Linh", "description": "Chiếm 3% công thức theo file nội dung chỉnh sửa. Tỷ lệ nguyên liệu không chứng minh công dụng y khoa.", "percent": 3 }
   ],
-  "verificationNote": "Tỷ lệ của các thành phần khác đang chờ đối chiếu nhãn và hồ sơ chính thức."
+  "verificationNote": "Các tỷ lệ được chép từ file nội dung chỉnh sửa, chưa đối chiếu nhãn và hồ sơ sản phẩm chính thức."
 }

@@ -552,6 +552,34 @@ img { display: block; max-width: 100%; }
 .admin-utm-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
 .admin-utm-table th, .admin-utm-table td { padding: .7rem; border-bottom: 1px solid #d1dbc9; text-align: left; }
 
+/* Softer edges without changing the page grids or spacing. */
+.site-menu .menu-feature, .button-primary, .timer-controls button, .receipt-tools button, .reminder-tools button, .admin-logout, .admin-export, .admin-login-form button, .admin-json-editor button, .admin-record-actions button { border-radius: 999px; }
+.mobile-menu-button, .time-fields input, .challenge-form input:not([type="checkbox"]), .challenge-form textarea, .contact-form input:not([type="checkbox"]), .contact-form textarea, .admin-login-form input, .admin-json-editor textarea { border-radius: 10px; }
+.receipt-preview, .product-feature-visual, .reminder-art, .receipt-output-panel, .receipt-empty, .receipt-paper-real, .timer-card, .product-page-image, .product-gallery-art, .product-gallery-notes > div, .ingredient-detail, .challenge-page-steps li, .challenge-form, .challenge-empty, .story-card, .reminder-card, .report-bigidea, .report-card-grid article, .swot-grid button, .swot-detail, .tows-grid article, .sevenps-panel, .journey-line article, .phase-track article, .budget-summary > div, .budget-plot, .kpi-grid article, .report-actual, .team-card, .contact-form, .admin-stat-grid article, .admin-panel, .admin-empty, .admin-login-card, .admin-record-list article, .admin-json-editor { border-radius: 18px; }
+.image-seal, .ingredient-list button, .sevenps-tabs button, .admin-nav a, .admin-record-head span { border-radius: 10px; }
+.reminder-art::before { border-radius: 12px; }
+.form-progress, .timer-linear-track { border-radius: 999px; }
+.form-progress span, .timer-linear-track span { border-radius: inherit; }
+
+.challenge-rules-link { margin: 1.5rem 0 0; }
+.challenge-rules-link a { display: inline-flex; align-items: center; gap: .4rem; color: var(--brand-forest); font-size: .9rem; font-weight: 700; text-underline-offset: .3rem; }
+.report-persona { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-bottom: 1.4rem; }
+.report-persona p { margin: 0; padding: 1.2rem; border: 1px solid #cbd8c4; border-radius: 14px; color: var(--text-secondary); font-size: .86rem; }
+.report-persona strong { color: var(--brand-forest); }
+.channel-role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: -1.5rem 0 3rem; }
+.channel-role-grid article { padding: 1.4rem; border: 1px solid #cad6c2; border-radius: 16px; background: var(--brand-ivory); }
+.channel-role-grid h4 { margin: 0 0 .5rem; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.3rem; }
+.channel-role-grid p { margin: 0; color: var(--text-secondary); font-size: .84rem; }
+.phase-weekly { margin-top: 1.6rem; padding-top: 1rem; border-top: 1px solid #58715b; }
+.phase-weekly summary { color: var(--brand-gold-light); font-size: .85rem; font-weight: 700; cursor: pointer; }
+.phase-weekly > div { margin-top: 1.2rem; padding-top: .8rem; border-top: 1px solid #58715b; }
+.phase-weekly h4 { margin: 0; font-family: var(--type-display); font-size: 1.25rem; }
+.phase-weekly ul { margin: .5rem 0; }
+.phase-weekly p { margin: .6rem 0 0; color: #c9d7c6; font-size: .82rem; }
+
+@media (max-width: 1050px) { .report-persona, .channel-role-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .report-persona, .channel-role-grid { grid-template-columns: 1fr; } }
+
 .state-page { min-height: 65vh; display: grid; place-items: center; padding: 5rem 1.5rem; background: radial-gradient(circle at 80% 20%, #e3e9d6, transparent 38%), var(--brand-ivory); }
 .state-page > div { width: min(100%, 700px); }
 .state-page h1 { margin: 0 0 1.4rem; color: var(--brand-forest); font-family: var(--type-display); font-size: var(--text-h1); font-weight: 600; letter-spacing: -.04em; line-height: 1.08; }

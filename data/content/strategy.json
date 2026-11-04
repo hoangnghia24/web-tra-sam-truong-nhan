@@ -2,17 +2,25 @@
   "reportTitle": "Chiến lược Digital Marketing — Trà Sâm Trường Nhân",
   "source": "Tra_Sam_Truong_Nhan_SWOT_TOWS_7Ps.pptx.pdf, 38 trang",
   "bigIdea": "Sâm không đợi dịp. Bạn đợi gì?",
-  "customerInsight": "Tôi biết mình cũng cần được chăm sóc, chỉ là tôi luôn nghĩ mình có thể chờ thêm một chút.",
-  "primaryAudience": "Người trưởng thành đô thị 25–40 tuổi, bận rộn và quan tâm chăm sóc bản thân chủ động.",
+  "customerInsight": "Tôi cố gắng hoàn thành công việc, chăm lo cho người thân; còn bản thân thường được xếp sau vì nghĩ rằng ngày mai vẫn kịp.",
+  "primaryAudience": "Dân văn phòng 25–40 tuổi tại đô thị, bận rộn, có thu nhập ổn định và thường trì hoãn chăm sóc bản thân.",
   "secondaryAudience": "Người 45–60 tuổi quan tâm sức khỏe bản thân và gia đình.",
+  "persona": {
+    "belief": "Càng quý, tôi càng để dành cho những dịp đặc biệt. Nhưng quan tâm đến sức khỏe thì đâu cần đợi đến những dịp đặc biệt.",
+    "pain": "Biết sức khỏe quan trọng nhưng thường ưu tiên công việc và người thân; lo ngại việc chăm sóc bản thân phức tạp, khó duy trì; chưa hiểu sự khác biệt của sản phẩm và cần thêm thông tin để đánh giá mức giá khoảng 380.000–390.000 đồng/hộp trong kế hoạch.",
+    "motivation": "Tìm một lựa chọn đơn giản, thuận tiện, đáng tin cậy và phù hợp khả năng chi trả. Thông tin thành phần, nguồn gốc, quy cách, đánh giá thực tế và tư vấn đáng tin cậy có thể hỗ trợ quyết định mua."
+  },
   "plannedBudgetVnd": 500000000,
   "plannedExecutionBudgetVnd": 400000000,
   "plannedReserveVnd": 100000000,
   "plannedWeeks": 12,
   "plannedKpis": [
-    { "label": "Lượt xem Hero Video", "target": 350000, "unit": "lượt", "sourcePage": 12 },
-    { "label": "UGC hợp lệ", "target": 250, "unit": "bài", "sourcePage": 12 },
-    { "label": "Đơn hàng hợp lệ", "target": 400, "unit": "đơn", "sourcePage": 36 }
+    { "label": "Lượt xem Hero Video", "target": 350000, "displayTarget": "350.000", "unit": "lượt xem", "sourcePage": 12 },
+    { "label": "UGC hợp lệ", "target": 250, "displayTarget": "≥250", "unit": "bài tham gia", "sourcePage": 12 },
+    { "label": "Đơn hàng trực tuyến lũy kế đến tuần 11", "target": 400, "displayTarget": ">400", "unit": "đơn", "sourcePage": 36 },
+    { "label": "ROAS Paid Ads tại tuần 11", "target": 3.5, "displayTarget": "3,5%", "unit": "theo file Word; cần xác nhận cách tính" },
+    { "label": "Tỷ lệ chuyển đổi Microsite", "target": 18, "displayTarget": "≥18%", "unit": "CVR" },
+    { "label": "NPS tại tuần 12", "target": 45, "displayTarget": "≥45%", "unit": "theo file Word; cần xác nhận thang đo" }
   ],
   "actualResultsAvailable": false
 }

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 const footerLinks = [
+  { href: '/ve-du-an', label: 'Về Trường Sinh Group' },
   { href: '/hoa-don-cho-doi', label: 'Hóa đơn chờ đợi' },
   { href: '/7-phut-cho-minh', label: '7 phút cho mình' },
   { href: '/san-pham', label: 'Trà Sâm Trường Nhân' },

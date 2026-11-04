@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowUpRight, Droplets, Hourglass, Package } from 'lucide-react';
+import { ArrowUpRight, Hourglass, Package } from 'lucide-react';
 import { PageBanner } from '@/components/site/PageBanner';
 import { IngredientExplorer } from '@/components/product/IngredientExplorer';
 import { TrackedLink } from '@/components/site/TrackedLink';
@@ -44,7 +44,7 @@ export default async function ProductPage() {
         <div className="product-container">
           <p className="section-index"><span /> 02 · Góc nhìn sản phẩm</p>
           <h2 id="product-gallery-title" className="section-title">Từ hộp trà đến <em>một tách trà ấm.</em></h2>
-          <div className="product-gallery"><div className="product-gallery-art"><Image src="/images/truong-nhan-cover.png" alt="Toàn bộ ảnh bìa gốc, không cắt hoặc phủ chữ" width={1920} height={1080} sizes="(max-width: 850px) 100vw, 60vw" /></div><div className="product-gallery-notes"><div><Package size={26} strokeWidth={1.4} /><span>01</span><h3>Hộp trà</h3><p>Quy cách nêu trong tài liệu: {product.packCount} túi lọc, tổng {product.netWeightGrams} g.</p></div><div><Droplets size={26} strokeWidth={1.4} /><span>02</span><h3>Một tách trà</h3><p>Ảnh tham chiếu cho thấy nước trà màu hổ phách; hình ảnh chỉ mang tính minh họa.</p></div></div></div>
+          <div className="product-gallery"><div className="product-gallery-art"><Image src="/images/truong-nhan-cover.png" alt="Toàn bộ ảnh bìa gốc, không cắt hoặc phủ chữ" width={1920} height={1080} sizes="(max-width: 850px) 100vw, 60vw" /></div><div className="product-gallery-notes"><div><Package size={26} strokeWidth={1.4} /><span>01</span><h3>Hộp trà</h3><p>Quy cách nêu trong tài liệu: {product.packCount} túi lọc, tổng {product.netWeightGrams} g.</p></div></div></div>
           <p className="gallery-disclosure">Hiện chỉ có một ảnh sản phẩm do nhóm cung cấp. Các góc chụp cận cảnh cần được bổ sung từ ảnh chính thức.</p>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default async function ProductPage() {
         <div className="product-container">
           <p className="section-index"><span /> 03 · Khám phá thành phần</p>
           <h2 id="product-ingredients-title" className="section-title">Bảy nét thảo mộc <em>trong một công thức.</em></h2>
-          <p className="product-section-lead">Chọn từng thành phần để đọc thông tin trong tài liệu. Tên nguyên liệu và tỷ lệ công thức không tự động chứng minh công dụng đối với sức khỏe.</p>
+          <p className="product-section-lead">Chọn từng thành phần để xem tỷ lệ ghi trong file nội dung chỉnh sửa. Các tỷ lệ cần đối chiếu nhãn chính thức; tên nguyên liệu và tỷ lệ không tự động chứng minh công dụng đối với sức khỏe.</p>
           <IngredientExplorer data={ingredients} />
         </div>
       </section>
