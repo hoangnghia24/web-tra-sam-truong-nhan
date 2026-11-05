@@ -110,3 +110,8 @@
 
 - The user clarified that each screenshot immediately above `BỎ` marks the entire shown website element for removal. `image3.png` shows the homepage challenge introduction paragraph; remove that full paragraph. `image6.png` shows the second product gallery note titled `Một tách trà`; that note was already absent, so retain the single `Hộp trà` note.
 - Keep submission moderation and its disclosure on the separate challenge form because the screenshot refers to the homepage paragraph, while visitors still need accurate information about when a submitted story becomes public.
+
+## CP-15 homepage story removal (2026-11-05)
+
+- Interpret “phần câu chuyện” as the standalone homepage section labeled `01 Câu chuyện`, between the introductory CTA and receipt feature. Keep the separate community challenge and its participant stories.
+- Point the introductory scroll link to the receipt section and number the six remaining homepage feature sections 01–06. Remove CSS used only by the deleted section.

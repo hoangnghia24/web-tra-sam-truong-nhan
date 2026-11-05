@@ -30,28 +30,14 @@ export default async function HomePage() {
             <Link href="/hoa-don-cho-doi" className="button-primary">Khám phá hóa đơn của tôi <ArrowUpRight size={17} aria-hidden="true" /></Link>
             <TrackedLink href="/san-pham" type="product_clicked" className="button-text">Tìm hiểu trà sâm <ArrowUpRight size={17} aria-hidden="true" /></TrackedLink>
           </div>
-          <a className="intro-scroll" href="#cau-chuyen" aria-label="Cuộn đến câu chuyện"><ArrowDown size={17} aria-hidden="true" /></a>
+          <a className="intro-scroll" href="#hoa-don" aria-label="Cuộn đến hóa đơn chờ đợi"><ArrowDown size={17} aria-hidden="true" /></a>
         </div>
       </section>
 
-      <section className="home-story home-section" id="cau-chuyen" aria-labelledby="home-story-title">
-        <div className="home-container story-layout">
-          <div>
-            <p className="section-index">01 <span></span> Câu chuyện</p>
-            <h2 className="section-title" id="home-story-title">Cho mọi người một chút.<br /><em>Cho mình thì để mai.</em></h2>
-          </div>
-          <div className="story-column">
-            <p className="story-quote">“Tôi cố gắng hoàn thành công việc, chăm lo cho người thân; còn bản thân thường được xếp sau vì nghĩ rằng ngày mai vẫn kịp.”</p>
-            <p>Giữa những việc cần hoàn thành, một cuộc hẹn với bản thân rất dễ bị đẩy xuống cuối ngày. Chiến dịch mời bạn nhìn lại khoảng thời gian ấy và bắt đầu bằng điều nhỏ nhất có thể làm ngay.</p>
-            <Link className="editorial-link" href="/ve-du-an">Tìm hiểu Trường Sinh Group <ArrowUpRight size={16} aria-hidden="true" /></Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="home-receipt home-section" aria-labelledby="home-receipt-title">
+      <section className="home-receipt home-section" id="hoa-don" aria-labelledby="home-receipt-title">
         <div className="home-container receipt-feature">
           <div className="receipt-feature-copy">
-            <p className="section-index light">02 <span></span> Bấm hoãn</p>
+            <p className="section-index light">01 <span></span> Bấm hoãn</p>
             <h2 className="section-title" id="home-receipt-title">Nếu hôm nay có một hóa đơn cho thời gian, <em>nó sẽ kể điều gì?</em></h2>
             <p>Nhập thời gian bạn dành cho công việc, gia đình, giải trí và chính mình. Hóa đơn được tính từ câu trả lời của bạn, không áp đặt một kết quả có sẵn.</p>
             <Link className="button-primary button-on-dark" href="/hoa-don-cho-doi">Tạo hóa đơn của tôi <ArrowUpRight size={17} aria-hidden="true" /></Link>
@@ -73,7 +59,7 @@ export default async function HomePage() {
         <div className="home-container pause-feature">
           <div className="pause-art" aria-hidden="true"><div className="pause-orbit orbit-one"></div><div className="pause-orbit orbit-two"></div><div className="pause-center"><Clock3 size={28} strokeWidth={1.3} /><strong>07:00</strong><span>Một khoảng dừng</span></div></div>
           <div className="pause-feature-copy">
-            <p className="section-index">03 <span></span> Làm ngay</p>
+            <p className="section-index">02 <span></span> Làm ngay</p>
             <h2 className="section-title" id="home-pause-title">Bảy phút.<br /><em>Chỉ dành cho bạn.</em></h2>
             <p>Đặt mọi thứ xuống một lúc. Pha trà, hít thở, nhìn ra cửa sổ — hoặc chỉ cần ngồi yên. Trải nghiệm này luôn mở cho bạn, không cần mua sản phẩm.</p>
             <Link className="editorial-link" href="/7-phut-cho-minh">Bắt đầu 7 phút cho mình <ArrowUpRight size={16} aria-hidden="true" /></Link>
@@ -84,7 +70,7 @@ export default async function HomePage() {
       <section className="home-product home-section" aria-labelledby="home-product-title">
         <div className="home-container product-feature">
           <div className="product-feature-copy">
-            <p className="section-index">04 <span></span> Tinh hoa thảo mộc</p>
+            <p className="section-index">03 <span></span> Tinh hoa thảo mộc</p>
             <h2 className="section-title" id="home-product-title">Một tách trà cho <em>nhịp sống hôm nay.</em></h2>
             <p>{product.name} kết hợp {product.ingredientCount} thành phần trong dạng túi lọc tiện pha. Tài liệu chiến dịch ghi nhận {product.ngocLinhLeafPercent}% lá Sâm Ngọc Linh — một tỷ lệ cần được nói rõ, không phóng đại.</p>
             <div className="product-feature-facts"><div><strong>{product.packCount} × {product.gramsPerBag}g</strong><span>Mỗi hộp</span></div><div><strong>{product.brewMinutesMin}–{product.brewMinutesMax} phút</strong><span>Thời gian pha gợi ý</span></div></div>
@@ -96,17 +82,17 @@ export default async function HomePage() {
 
       <section className="home-challenge home-section" aria-labelledby="home-challenge-title">
         <div className="home-container">
-          <div className="challenge-heading"><div><p className="section-index">05 <span></span> Câu chuyện cộng đồng</p><h2 className="section-title" id="home-challenge-title">Hóa đơn của bạn.<br /><em>Câu chuyện của bạn.</em></h2></div></div>
+          <div className="challenge-heading"><div><p className="section-index">04 <span></span> Câu chuyện cộng đồng</p><h2 className="section-title" id="home-challenge-title">Hóa đơn của bạn.<br /><em>Câu chuyện của bạn.</em></h2></div></div>
           <ol className="challenge-steps"><li><span>01</span><strong>Quay video</strong><p>Kể câu chuyện của bạn.</p></li><li><span>02</span><strong>Đăng TikTok</strong><p>Kèm hashtag theo thể lệ.</p></li><li><span>03</span><strong>Gửi thông tin</strong><p>Điền thông tin dự thi.</p></li><li><span>04</span><strong>Chờ kết quả</strong><p>Theo dõi kết quả và thông tin nhận quà.</p></li></ol>
           <Link className="editorial-link" href="/thu-thach">Xem thể lệ và tham gia <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </div>
       </section>
 
       <section className="home-reminder home-section" aria-labelledby="home-reminder-title">
-        <div className="home-container reminder-feature"><div><p className="section-index light">06 <span></span> Gửi lời nhắc</p><h2 className="section-title" id="home-reminder-title">Một lời quan tâm<br /><em>cũng không nên đợi dịp.</em></h2><p>Tạo một tấm thiệp mang lời nhắn của riêng bạn cho bản thân hoặc người thương. Bạn chọn nội dung và tự quyết định khi nào chia sẻ.</p><Link className="button-primary button-on-dark" href="/gui-loi-nhac">Tạo thiệp lời nhắc <ArrowUpRight size={17} aria-hidden="true" /></Link></div><div className="reminder-art" aria-hidden="true"><Sparkles size={25} strokeWidth={1.2} /><p>“Hôm nay, hãy dành một chút thời gian cho mình nhé.”</p><span>Trường Nhân · Lời nhắc dịu dàng</span></div></div>
+        <div className="home-container reminder-feature"><div><p className="section-index light">05 <span></span> Gửi lời nhắc</p><h2 className="section-title" id="home-reminder-title">Một lời quan tâm<br /><em>cũng không nên đợi dịp.</em></h2><p>Tạo một tấm thiệp mang lời nhắn của riêng bạn cho bản thân hoặc người thương. Bạn chọn nội dung và tự quyết định khi nào chia sẻ.</p><Link className="button-primary button-on-dark" href="/gui-loi-nhac">Tạo thiệp lời nhắc <ArrowUpRight size={17} aria-hidden="true" /></Link></div><div className="reminder-art" aria-hidden="true"><Sparkles size={25} strokeWidth={1.2} /><p>“Hôm nay, hãy dành một chút thời gian cho mình nhé.”</p><span>Trường Nhân · Lời nhắc dịu dàng</span></div></div>
       </section>
 
-      <section className="home-team home-section" aria-labelledby="home-team-title"><div className="home-container team-feature"><div><p className="section-index">07 <span></span> Nhóm thực hiện</p><h2 className="section-title" id="home-team-title">Những người đứng sau <em>câu chuyện này.</em></h2><p>Một dự án kết nối góc nhìn thương hiệu, trải nghiệm số và mong muốn chăm sóc bản thân chủ động.</p><Link className="editorial-link" href="/lien-he">Kết nối cùng chúng tôi <ArrowUpRight size={16} aria-hidden="true" /></Link></div><ul className="team-preview">{team.members.map((member, index) => <li key={member.id}><span>{String(index + 1).padStart(2, '0')}</span><strong>{member.name}</strong><Mail size={16} aria-hidden="true" /></li>)}</ul></div></section>
+      <section className="home-team home-section" aria-labelledby="home-team-title"><div className="home-container team-feature"><div><p className="section-index">06 <span></span> Nhóm thực hiện</p><h2 className="section-title" id="home-team-title">Những người đứng sau <em>câu chuyện này.</em></h2><p>Một dự án kết nối góc nhìn thương hiệu, trải nghiệm số và mong muốn chăm sóc bản thân chủ động.</p><Link className="editorial-link" href="/lien-he">Kết nối cùng chúng tôi <ArrowUpRight size={16} aria-hidden="true" /></Link></div><ul className="team-preview">{team.members.map((member, index) => <li key={member.id}><span>{String(index + 1).padStart(2, '0')}</span><strong>{member.name}</strong><Mail size={16} aria-hidden="true" /></li>)}</ul></div></section>
 
       <section className="home-closing" aria-label="Thông điệp chiến dịch"><div className="home-container"><p><Leaf size={17} aria-hidden="true" /> {brand.tagline}</p><h2>{campaign.title}</h2><Link href="/hoa-don-cho-doi">Bắt đầu từ hôm nay <ArrowUpRight size={18} aria-hidden="true" /></Link></div></section>
     </main>

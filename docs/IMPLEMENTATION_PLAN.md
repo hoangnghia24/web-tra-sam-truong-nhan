@@ -19,5 +19,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-12 Typography update | Self-host Inter for copy and Fraunces for headings as the user-approved temporary replacement for licensed Bogart; verify Vietnamese glyphs, build, and mobile/desktop layout. Embed Bogart when a web-licensed asset or Adobe Fonts kit is supplied. |
 | CP-13 Revised Word content | Incorporate the new brand role, microsite proposal, measurement cadence and trigger rules into the existing sections; restore the requested product menu item, keep the current receipt interaction and layout, validate and inspect responsive views. |
 | CP-14 Word deletion clarification | Match each `BỎ` caption to the preceding screenshot, remove any screenshot content still present on the website, and verify the relevant sections. |
+| CP-15 Homepage story removal | Remove the standalone “Câu chuyện” section, retarget the intro scroll link to the receipt, renumber remaining sections, and verify lint, typecheck, build, and source links. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

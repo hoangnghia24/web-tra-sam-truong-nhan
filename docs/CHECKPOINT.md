@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-14
+Current checkpoint: CP-15
 Status: DONE
-Last completed checkpoint: CP-14 (Word screenshot deletion clarification, verified in this commit). CP-13 was committed as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-15 (standalone homepage story section removed). CP-14 was committed as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -32,6 +32,7 @@ Last completed checkpoint: CP-14 (Word screenshot deletion clarification, verifi
 - Completed CP-12 self-hosted Inter for body/interface copy and Fraunces for headings as the user-approved temporary substitute for Bogart. Checked Vietnamese glyphs, production build and responsive rendering.
 - Completed CP-13 revised Word positioning, receipt concept, monitoring cadence and trigger scenarios in the existing pages. Restored the product navigation link and corrected its intermediate-width breakpoint.
 - Completed CP-14 removal of the homepage challenge introduction marked by the screenshot above `BỎ`; confirmed the product gallery note marked by the other `BỎ` was already absent.
+- Completed CP-15 removal of the standalone homepage story section, retargeted the intro scroll control to the receipt, renumbered remaining sections, and removed unused story CSS.
 
 ## Current Task
 

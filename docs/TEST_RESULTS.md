@@ -200,3 +200,11 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Removal | Deleted the entire homepage paragraph, including its previously retained opening sentences. Search found no remaining copy of the removed product-gallery caption; the gallery contains only the `Hộp trà` note. |
 | Code gates | Lint, typecheck and production build passed. |
 | Browser | Homepage challenge section showed the heading and four steps with no paragraph beside the heading; document width 1265 px within a 1280 px viewport. Product gallery had only the `Hộp trà` note and no removed caption. |
+
+## CP-15 — Homepage story removal (2026-11-05)
+
+| Check | Observed result |
+| --- | --- |
+| Source review | The standalone `home-story` section and `#cau-chuyen` target are absent. The intro scroll link points to existing `#hoa-don`; remaining feature labels run 01–06. Community challenge content remains. |
+| CSS review | Selectors used only by the removed story section were deleted. |
+| Code gates | `npm run lint`, `npm run typecheck`, and `npm run build` passed on Next.js 16.4.4. |
