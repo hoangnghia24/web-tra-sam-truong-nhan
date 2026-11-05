@@ -302,7 +302,13 @@ img { display: block; max-width: 100%; }
 
 .challenge-page-section, .challenge-stories-section, .reminder-creator { padding: clamp(5rem, 8vw, 8rem) 0; }
 .challenge-page-section { background: var(--brand-ivory); }
-.challenge-page-steps { display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; gap: 1rem; margin: 3rem 0 0; padding: 0; }
+.challenge-guide-intro { max-width: 720px; color: var(--text-secondary); }
+.challenge-guide-layout { display: grid; grid-template-columns: minmax(0, 330px) minmax(0, 1fr); align-items: start; gap: clamp(2rem, 5vw, 4rem); margin-top: 3rem; }
+.challenge-guide-video { margin: 0; }
+.challenge-guide-video video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 18px; background: var(--brand-dark); }
+.challenge-guide-video figcaption { margin-top: .75rem; color: var(--text-secondary); font-size: .82rem; }
+.challenge-guide-note { max-width: 820px; margin: 2rem 0 0; padding-left: 1rem; border-left: 2px solid var(--brand-gold); color: var(--text-secondary); font-size: .86rem; }
+.challenge-page-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; gap: 1rem; margin: 0; padding: 0; }
 .challenge-page-steps li { min-height: 245px; padding: 1.7rem; border: 1px solid #d4dccd; background: #f1f0e7; }
 .challenge-page-steps span { color: var(--brand-tea); font-family: var(--type-display); font-size: 1.3rem; }
 .challenge-page-steps h3 { margin: 2.4rem 0 .4rem; font-family: var(--type-display); font-size: 1.6rem; line-height: 1.2; }
@@ -619,6 +625,8 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 1050px) {
+  .challenge-guide-layout { grid-template-columns: 1fr; }
+  .challenge-guide-video { width: min(100%, 330px); margin-inline: auto; }
   .footer-main { grid-template-columns: 1.2fr 1fr; }
   .footer-contact { grid-column: 2; }
   .receipt-feature, .pause-feature, .product-feature, .reminder-feature, .team-feature { gap: 3rem; }

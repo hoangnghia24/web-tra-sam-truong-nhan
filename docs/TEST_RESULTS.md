@@ -233,3 +233,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | --- | --- |
 | Code gates | `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
 | Browser check | At 390 px in headless Chrome, no “Hình minh họa do nhóm cung cấp” label or matching lead phrase appeared. Táo đỏ and lá Sâm Ngọc Linh images still loaded after tab selection; document width equaled the viewport width. |
+
+## CP-19 — Challenge guide video (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Supplied media | `4-Step Joining Guide Video.mp4` is 23,295,557 bytes, 20.015 seconds, 1080 × 1920, H.264 video and AAC audio. Representative frames from each step were inspected. |
+| Code gates | `npm run lint`, `npm run typecheck`, and `npm run build` passed on Next.js 16.4.4. |
+| Browser layout | At 390 px and 1440 px in headless Chrome, the poster and four cards rendered; document width equaled viewport width with no horizontal overflow. Screenshots were inspected. |
+| Browser playback | The video reported 20.015-second metadata and 1080 × 1920 dimensions. Calling `play()` advanced `currentTime` to 0.57 seconds with no media error. |
+| External page | The supplied Vercel URL could not be opened by the web tool; verification used the corresponding local `/thu-thach` route. |

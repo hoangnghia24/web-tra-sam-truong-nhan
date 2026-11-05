@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-18
+Current checkpoint: CP-19
 Status: DONE
-Last completed checkpoint: CP-18 (ingredient illustration label removed). CP-17 was committed as `09de756`; CP-16 as `7d7041f`; CP-15 as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-19 (challenge guide video integrated). CP-18 was committed as `974d1e5`; CP-17 as `09de756`; CP-16 as `7d7041f`; CP-15 as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -36,6 +36,7 @@ Last completed checkpoint: CP-18 (ingredient illustration label removed). CP-17 
 - Completed CP-16 product ingredient imagery for the three matching files in `anhweb`, with source labeling and placeholders for four ingredients without images.
 - Completed CP-17 with four additional supplied ingredient photos and a full-card image treatment with readable overlaid copy on the product page.
 - Completed CP-18 removal of the ingredient illustration label, matching lead phrase, and unused label styling while retaining ingredient selection and verification notes.
+- Completed CP-19 with the supplied four-step video, a poster frame, aligned written instructions, and mobile/desktop playback and layout checks on `/thu-thach`.
 
 ## Current Task
 

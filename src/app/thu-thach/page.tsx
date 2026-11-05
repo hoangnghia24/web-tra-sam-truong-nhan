@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { PageBanner } from '@/components/site/PageBanner';
 import { ChallengeForm } from '@/components/community/ChallengeForm';
@@ -13,7 +14,32 @@ export default async function ChallengePage() {
   const approved = submissions.filter((item) => item.status === 'approved');
   return <main id="main">
     <PageBanner eyebrow="Cùng nhau làm ngay" title="Hóa đơn của bạn" description="Một việc nhỏ cho mình hôm nay có thể mở đầu cho nhiều ngày dịu dàng hơn. Nếu muốn, hãy kể lại câu chuyện của bạn." tone="forest" />
-    <section className="challenge-page-section"><div className="product-container"><p className="section-index"><span /> 01 · Bốn bước tham gia</p><h2 className="section-title">Từ câu chuyện của bạn <em>đến một video chia sẻ.</em></h2><ol className="challenge-page-steps"><li><span>01</span><h3>Quay video</h3><p>Kể câu chuyện chăm sóc bản thân của bạn.</p></li><li><span>02</span><h3>Đăng TikTok</h3><p>Đăng video kèm hashtag theo thể lệ do nhóm cung cấp.</p></li><li><span>03</span><h3>Gửi thông tin</h3><p>Điền thông tin dự thi và liên kết video vào biểu mẫu bên dưới.</p></li><li><span>04</span><h3>Chờ kết quả</h3><p>Theo dõi kết quả và thông tin nhận quà từ ban tổ chức.</p></li></ol><p className="challenge-rules-link"><a href="https://drive.google.com/file/d/1ccnlxFdhOhbHj8bEBnMV57rCxjJL_Q4Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">Xem file thể lệ do nhóm cung cấp <ArrowUpRight size={16} aria-hidden="true" /></a></p></div></section>
+    <section className="challenge-page-section" aria-labelledby="challenge-steps-title">
+      <div className="product-container">
+        <p className="section-index"><span /> 01 · Bốn bước tham gia</p>
+        <h2 id="challenge-steps-title" className="section-title">Từ câu chuyện của bạn <em>đến một video chia sẻ.</em></h2>
+        <p className="challenge-guide-intro">Xem video hướng dẫn, sau đó làm theo các bước và đối chiếu file thể lệ trước khi đăng bài.</p>
+        <div className="challenge-guide-layout">
+          <figure className="challenge-guide-video">
+            <video controls playsInline preload="none" poster="/images/huong-dan-tham-gia-poster.jpg" width={1080} height={1920} aria-label="Video hướng dẫn bốn bước tham gia thử thách">
+              <source src="/videos/huong-dan-tham-gia.mp4" type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ phát video. <a href="/videos/huong-dan-tham-gia.mp4">Tải video hướng dẫn</a>.
+            </video>
+            <figcaption>Video hướng dẫn tham gia · 20 giây</figcaption>
+          </figure>
+          <div>
+            <ol className="challenge-page-steps">
+              <li><span>01</span><h3>Tạo hóa đơn</h3><p><Link href="/hoa-don-cho-doi">Tạo hóa đơn thời gian</Link> từ dữ liệu của bạn và chọn một việc nhỏ cho mình.</p></li>
+              <li><span>02</span><h3>Quay video</h3><p>Kể lại việc bạn đã làm cho bản thân.</p></li>
+              <li><span>03</span><h3>Đăng TikTok</h3><p>Đăng video kèm hashtag theo file thể lệ của nhóm.</p></li>
+              <li><span>04</span><h3>Gửi thông tin</h3><p>Dán liên kết bài đăng vào biểu mẫu bên dưới và theo dõi kết quả.</p></li>
+            </ol>
+            <p className="challenge-rules-link"><a href="https://drive.google.com/file/d/1ccnlxFdhOhbHj8bEBnMV57rCxjJL_Q4Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">Xem file thể lệ do nhóm cung cấp <ArrowUpRight size={16} aria-hidden="true" /></a></p>
+          </div>
+        </div>
+        <p className="challenge-guide-note">Một số màn hình trong video mang tính minh họa. Hóa đơn trên website được tính từ thời gian bạn nhập; hãy dùng biểu mẫu và file thể lệ hiện có để hoàn tất bài dự thi.</p>
+      </div>
+    </section>
     <section className="challenge-submit-section" aria-labelledby="challenge-form-title"><div className="product-container challenge-submit-layout"><div><p className="section-index light"><span /> 02 · Lời kể của bạn</p><h2 id="challenge-form-title">Chia sẻ khi <em>bạn muốn.</em></h2><p>Bài gửi mới ở trạng thái chờ duyệt. Chỉ tên hiển thị, liên kết video và câu chuyện đã được duyệt mới xuất hiện công khai. Hãy bảo đảm video của bạn có quyền chia sẻ và không chứa thông tin riêng tư của người khác.</p></div><ChallengeForm /></div></section>
     <section className="challenge-stories-section" aria-labelledby="stories-title"><div className="product-container"><p className="section-index"><span /> 03 · Câu chuyện cộng đồng</p><h2 id="stories-title" className="section-title">Những lời nhắc <em>đã được chia sẻ.</em></h2>{approved.length === 0 ? <div className="challenge-empty"><span aria-hidden="true">✳</span><p>Chưa có bài dự thi nào được duyệt để hiển thị. Bạn có thể bắt đầu bằng câu chuyện của mình.</p></div> : <div className="story-card-grid">{approved.map((item) => <article key={item.id} className="story-card"><p className="eyebrow">Hóa đơn của bạn</p><h3>{item.displayName}</h3><p>{item.story}</p><a href={item.videoUrl} target="_blank" rel="noopener noreferrer">Xem video <ArrowUpRight size={15} /></a></article>)}</div>}</div></section>
   </main>;

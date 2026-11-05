@@ -131,3 +131,9 @@
 ## CP-18 ingredient label removal (2026-11-06)
 
 - The user's later request removes the “Hình minh họa do nhóm cung cấp” overlay from the ingredient card. Remove the matching wording from the product lead and image alternative text as well. Keep the existing source and percentage verification notes.
+
+## CP-19 challenge guide video (2026-11-06)
+
+- The user supplied `anhweb/4-Step Joining Guide Video.mp4`, a 20-second vertical H.264/AAC video. Copy it to `public/videos/` under a stable URL-safe name and derive a poster from its first step; keep the source file untouched.
+- Place a native HTML video player beside the four written steps on desktop and above them on mobile. Use controls, inline playback, and deferred loading.
+- The video depicts a conceptual checklist-style receipt and four activities: create a receipt, record a moment, post with the required hashtag, and share the link. Align the website cards to the available receipt and submission flows without asserting an unverified hashtag. State that some video screens are illustrative and direct visitors to the linked rules and current form.
