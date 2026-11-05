@@ -36,6 +36,7 @@ export default async function ProductPage() {
             <p className="section-index"><span /> 01 · Câu chuyện sản phẩm</p>
             <h2 id="product-intro-title">Một khoảng lặng <em>được nâng niu.</em></h2>
             <p>Hình thức túi lọc giúp việc pha trà gọn hơn trong nhịp sống bận rộn. Thương hiệu gợi ý một khoảng dừng 7 phút để bạn chủ động dành thời gian cho mình. Bên dưới là công thức bảy thành phần và các bước pha trà.</p>
+            <p className="product-positioning-summary">Trà túi lọc tiện pha với bảy thành phần, gợi mở một khoảng dừng 7 phút cho người bận rộn.</p>
             <dl className="product-facts"><div><dt>Quy cách</dt><dd>{product.packCount} túi lọc × {product.gramsPerBag} g</dd></div><div><dt>Khối lượng</dt><dd>{product.netWeightGrams} g / hộp</dd></div><div><dt>Thành phần</dt><dd>{product.ingredientCount} loại thảo mộc</dd></div></dl>
           </div>
         </div>

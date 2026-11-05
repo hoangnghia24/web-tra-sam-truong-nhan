@@ -171,3 +171,9 @@
 - Store the visitor introduction, action, and video slots in `campaign.json` with schema validation. A `null` video source displays a clear waiting state; a valid local MP4 path displays native controls. `docs/PHASE_VIDEOS.md` explains how to add future assets.
 - Keep the three phase pages visibly labeled as a campaign plan. Do not imply that planned videos, community submissions, or campaign outcomes already exist.
 - The user requested local review and will update production personally. Do not push, deploy, or inspect the production site for CP-25.
+
+## CP-26 positioning and USP copy (2026-11-06)
+
+- Preserve the user's supplied wording verbatim in a structured `positioningDraft` object in `strategy-report.json` and display it after the persona in the strategy overview. Retain the existing three brand-role cards and the user's unrelated working-tree edits.
+- Label this block as proposed strategic copy. Its health-effect and price statements are not treated as verified product facts. Add only a separate, factual convenience/ingredient/7-minute summary on the product page.
+- Verify locally. The user's prior instruction to review and update production personally still applies; do not push or inspect production.

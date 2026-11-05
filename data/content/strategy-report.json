@@ -1,5 +1,24 @@
 {
   "sourceNote": "Các thông tin trong báo cáo chiến lược được tổng hợp từ các nguồn công khai, bao gồm: website Trường Sinh Group, hồ sơ quảng cáo TikTok Shop, Shopee, Facebook và các bài viết trên mạng xã hội. Các thông tin về thành phần, tỷ lệ và công dụng được trích dẫn từ nhãn sản phẩm và hồ sơ quảng cáo đã được xác nhận. Báo cáo không đưa ra lời khẳng định về hiệu quả sức khỏe của sản phẩm.",
+  "positioningDraft": {
+    "title": "ĐỊNH VỊ SẢN PHẨM & BRAND ROLE & USP",
+    "uspHeading": "💎 UNIQUE SELLING PROPOSITION (USP)",
+    "uspStatement": "Giải pháp chăm sóc sức khỏe tiện lợi hằng ngày cho người bận rộn.",
+    "uspExplanation": "Phá vỡ rào cản thời gian và định kiến về sâm truyền thống, mang đến một khoảng dừng phục hồi năng lượng tức thì.",
+    "pillarsHeading": "Bộ ba hoàn thiện trải nghiệm chăm sóc:",
+    "pillars": [
+      { "label": "Tiện lợi tối đa:", "body": "Trà túi lọc dễ dàng pha chế, tạo khoảng dừng 7 phút trọn vẹn mà không lích kích hầm sắc." },
+      { "label": "Công thức thực chứng:", "body": "Chứa 3% Lá Sâm Ngọc Linh kết hợp 6 đa dược liệu, giúp thanh lọc và giải độc hiệu quả từ bên trong." },
+      { "label": "Chi phí hợp lý (Accessible Premium):", "body": "Chỉ ~26.000đ/ngày (390k/hộp 15 túi) – Mức giá lý tưởng để chuyển đổi sâm thành thức uống chăm sóc bản thân hằng ngày." }
+    ],
+    "brandRoleHeading": "🤝 BRAND ROLE (VAI TRÒ THƯƠNG HIỆU)",
+    "roles": [
+      { "label": "FUNCTIONAL ROLE (Vai trò Lý tính):", "body": "Thanh lọc cơ thể, giải nhiệt, hỗ trợ thư giãn và phục hồi sức khỏe từ sâu bên trong mỗi ngày." },
+      { "label": "EMOTIONAL ROLE (Vai trò Cảm tính):", "body": "Trở thành \"chiếc đồng hồ báo thức tâm lý\" – tạo ra cái cớ hợp lý để khách hàng tự cho phép bản thân tạm dừng 7 phút, thả lỏng và yêu thương chính mình mà không thấy áy náy với công việc." }
+    ],
+    "highlightHeading": "📌 HIGHLIGHT BOX:",
+    "highlight": ["Khoảng dừng 7 phút.", "Chăm sóc trọn vẹn.", "Tái tạo năng lượng cả ngày."]
+  },
   "brandRole": [
     { "title": "Tiện lợi mỗi ngày", "body": "Trà túi lọc dễ pha, được đề xuất như một cách tạo khoảng dừng 7 phút cho người bận rộn. Đây là định vị thương hiệu trong kế hoạch, không phải lời khẳng định hiệu quả sức khỏe." },
     { "title": "Công thức được nêu rõ", "body": "Công thức gồm bảy thành phần, trong đó lá Sâm Ngọc Linh chiếm 3%. Thành phần không tự chứng minh công dụng thanh lọc, giải độc hoặc phục hồi." },

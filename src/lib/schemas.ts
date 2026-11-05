@@ -64,6 +64,14 @@ export const strategySchema = z.object({
 
 const strategyEntry = z.object({ title: safeText(120), body: safeText(500), page: z.number().int().positive().optional() });
 export const strategyReportSchema = z.object({
+  positioningDraft: z.object({
+    title: safeText(140), uspHeading: safeText(120), uspStatement: safeText(250),
+    uspExplanation: safeText(350), pillarsHeading: safeText(120),
+    pillars: z.array(z.object({ label: safeText(100), body: safeText(350) })).length(3),
+    brandRoleHeading: safeText(120),
+    roles: z.array(z.object({ label: safeText(120), body: safeText(450) })).length(2),
+    highlightHeading: safeText(100), highlight: z.array(safeText(100)).length(3),
+  }),
   brandRole: z.array(strategyEntry).length(3),
   market: z.array(strategyEntry),
   swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),

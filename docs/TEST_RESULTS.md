@@ -301,3 +301,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Visual review | Reviewed mobile `Bấm hoãn` full-page and desktop `Làm ngay` hero and homepage phase cards. Text, decorative illustrations and card layout were readable at both sizes. |
 | Navigation | Clicking a homepage phase card and a phase switcher link navigated to the intended local route. |
 | Production | Intentionally not checked or changed, as requested by the user. |
+
+## CP-26 — Positioning and USP copy (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Content preservation | All supplied headings, statements, three USP pillars, two brand roles, and three highlight lines were stored in `strategy-report.json` and found in the local strategy page's rendered text. Existing brand-role cards remained. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | Headless Chrome at 390 px and 1440 px loaded `/chien-luoc` and `/san-pham` with HTTP 200, no horizontal overflow, and no page errors. The product summary rendered on both sizes. |
+| Visual review | Reviewed strategy positioning block screenshots at 390 px and 1440 px. Headings, copy, cards, and highlight were readable. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-25
+Current checkpoint: CP-26
 Status: DONE (local verification; user handles production)
-Last completed checkpoint: CP-25 (three campaign phase pages and homepage entry cards verified locally). CP-24 source was committed as `123de96`. Earlier checkpoint records remain in Git history.
+Last completed checkpoint: CP-26 (positioning, USP, brand roles, and highlight copy preserved and verified locally). CP-25 source was committed as `6f23ea0`. Earlier checkpoint records remain in Git history.
 
 ## Completed Work
 
@@ -43,10 +43,11 @@ Last completed checkpoint: CP-25 (three campaign phase pages and homepage entry 
 - Completed CP-23 with a four-scene product journey, supplied photos, animated ingredient gathering and brewing, and start/skip/replay controls. Local and live mobile/desktop checks passed.
 - Completed CP-24 by removing visitor-facing source citations from the home, product, company, and strategy pages while retaining plan/actual labels. Local and live mobile checks passed, including interactive product and strategy content.
 - Completed CP-25 with three homepage cards, dedicated pages for Bấm hoãn, Làm ngay and Gửi lời nhắc, four-week plans, video slots and local MP4 instructions. Local mobile and desktop checks passed; production was not inspected or updated at the user's request.
+- Completed CP-26 by adding the user's positioning and USP copy verbatim to the strategy overview, clearly identifying it as proposed copy, and adding a separate short product summary. Local mobile and desktop checks passed; production was not inspected or updated.
 
 ## Current Task
 
-CP-25 is complete locally. The user will review and update production. Unrelated user edits remain in the working tree. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
+CP-26 is complete locally. The user will review and update production. Unrelated user edits remain in the working tree. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
 
 ## Completed Files
 
@@ -125,4 +126,4 @@ CP-25 is complete locally. The user will review and update production. Unrelated
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. Do not deploy CP-25 unless the user asks.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. Do not deploy CP-25 or CP-26 unless the user asks.
