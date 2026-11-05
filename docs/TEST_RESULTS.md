@@ -243,3 +243,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Browser layout | At 390 px and 1440 px in headless Chrome, the poster and four cards rendered; document width equaled viewport width with no horizontal overflow. Screenshots were inspected. |
 | Browser playback | The video reported 20.015-second metadata and 1080 × 1920 dimensions. Calling `play()` advanced `currentTime` to 0.57 seconds with no media error. |
 | External page | The supplied Vercel URL could not be opened by the web tool; verification used the corresponding local `/thu-thach` route. |
+
+## CP-20 — Read-only runtime reads and live verification (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Failure before fix | After CP-19 deployed, Vercel marked deployment successful but `/thu-thach` streamed an error digest; GET `/api/ugc` returned 500. The route read a missing runtime JSON file, which attempted a write in the read-only deployment. |
+| Code gates | `npm run test` passed 9 tests, including a read-without-file-creation assertion; lint, typecheck, and production build passed. |
+| Live page after fix | Vercel status for `a060d8f` was successful. The public `/thu-thach` HTML contained the video source with no streamed error digest; GET `/api/ugc` returned 200 with `{"items":[]}`. |
+| Live playback | Headless Chrome opened the public URL at 390 px; all four steps rendered, document width equaled viewport width, and the 20.015-second video advanced to 1.02 seconds with no media error. |

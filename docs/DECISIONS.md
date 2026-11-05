@@ -137,3 +137,8 @@
 - The user supplied `anhweb/4-Step Joining Guide Video.mp4`, a 20-second vertical H.264/AAC video. Copy it to `public/videos/` under a stable URL-safe name and derive a poster from its first step; keep the source file untouched.
 - Place a native HTML video player beside the four written steps on desktop and above them on mobile. Use controls, inline playback, and deferred loading.
 - The video depicts a conceptual checklist-style receipt and four activities: create a receipt, record a moment, post with the required hashtag, and share the link. Align the website cards to the available receipt and submission flows without asserting an unverified hashtag. State that some video screens are illustrative and direct visitors to the linked rules and current form.
+
+## CP-20 read-only runtime reads (2026-11-06)
+
+- On Vercel, `/thu-thach` and GET `/api/ugc` failed because reading a missing runtime JSON file attempted to create it in the read-only application directory. A read now returns validated seed data (or an empty array when no seed is present) without writing. Mutations still create runtime files on writable local hosts; `ensureJsonFile` retains explicit initialization behavior.
+- This change makes the hosted page and public read endpoint available. It does not make file-backed submissions durable on Vercel. A writable single-process Node host or a separately approved storage change is required for hosted submission persistence.
