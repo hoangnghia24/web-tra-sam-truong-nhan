@@ -289,4 +289,5 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Text audit | Visitor code and content JSON had no remaining “tài liệu”, “file Word”, “file nội dung”, “file chỉnh sửa”, “Nguồn:”, or rendered document-page citations. Internal provenance was retained. |
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
 | Local browser | Headless Chrome at 390 px opened `/`, `/san-pham`, `/ve-du-an`, `/chien-luoc`, and `/thu-thach` with HTTP 200, no visible source-citation phrases, no horizontal overflow, and no page errors. |
-| Live deployment | Pending source commit and Vercel verification. |
+| Live deployment | Vercel reported source commit `123de96` successful. |
+| Live browser | Headless Chrome at 390 px opened `/`, `/san-pham`, `/ve-du-an`, `/chien-luoc`, and `/thu-thach` with HTTP 200, no visible source-citation phrases, no horizontal overflow, and no page errors. Clicking all 12 product and 25 strategy controls revealed no source-citation phrases or page errors. |
