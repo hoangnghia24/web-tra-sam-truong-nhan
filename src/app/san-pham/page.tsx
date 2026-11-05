@@ -26,7 +26,7 @@ export default async function ProductPage() {
 
   return (
     <main id="main">
-      <PageBanner eyebrow="Tinh hoa từ núi Ngọc Linh" title={product.name} description="Một tách trà như lời mời dành thời gian cho chính mình. Khám phá công thức được nêu trong tài liệu chiến dịch và những thông tin còn cần xác minh." tone="forest" />
+      <PageBanner eyebrow="Tinh hoa từ núi Ngọc Linh" title={product.name} description="Trà túi lọc tiện pha cho một khoảng dừng 7 phút giữa ngày bận rộn. Khám phá công thức được nêu trong tài liệu chiến dịch và những thông tin còn cần xác minh." tone="forest" />
 
       <section className="product-page-intro" aria-labelledby="product-intro-title">
         <div className="product-page-layout">
@@ -34,7 +34,7 @@ export default async function ProductPage() {
           <div className="product-page-copy">
             <p className="section-index"><span /> 01 · Câu chuyện sản phẩm</p>
             <h2 id="product-intro-title">Một khoảng lặng <em>được nâng niu.</em></h2>
-            <p>Hình ảnh trong tài liệu gợi nhắc vùng núi Ngọc Linh và một thói quen chăm mình thật giản dị. Thông tin dưới đây được trích từ kế hoạch chiến dịch; hãy đối chiếu bao bì thật trước khi sử dụng sản phẩm.</p>
+            <p>Hình thức túi lọc giúp việc pha trà gọn hơn trong nhịp sống bận rộn. Thương hiệu gợi ý một khoảng dừng 7 phút để bạn chủ động dành thời gian cho mình. Thành phần và cách pha dưới đây được trích từ kế hoạch chiến dịch; hãy đối chiếu bao bì thật trước khi sử dụng.</p>
             <dl className="product-facts"><div><dt>Quy cách</dt><dd>{product.packCount} túi lọc × {product.gramsPerBag} g</dd></div><div><dt>Khối lượng</dt><dd>{product.netWeightGrams} g / hộp</dd></div><div><dt>Thành phần</dt><dd>{product.ingredientCount} loại thảo mộc</dd></div></dl>
           </div>
         </div>

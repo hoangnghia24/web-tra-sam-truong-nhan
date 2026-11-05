@@ -179,3 +179,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Build and lint | `npm run build` passed on Next.js 16.4.4 after the font change; TypeScript compiled and all routes generated. `npm run lint` passed without warnings. |
 | Mobile browser, 390 × 844 | Home plus receipt, timer, product, contact, strategy and company pages used computed Fraunces headings and Inter body text. All six checked routes had H1 width within its box and document scroll width 375 px, below the 390 px viewport. Screenshots showed legible Vietnamese and no clipped headings. |
 | Desktop browser, 1440 × 900 | Homepage used the new computed fonts; H1 and navigation had no internal overflow and document scroll width was 1425 px. |
+
+## CP-13 — Revised Word content (2026-11-05)
+
+| Check | Observed result |
+| --- | --- |
+| Revised Word source | Extracted 251 nonempty paragraphs and reviewed 19 embedded images. The additions cover brand role/USP, a four-step receipt microsite proposal, monitoring cadence and six response scenarios. |
+| Content and schema | `npm run validate:json` passed for 10 content files and 5 seed arrays. New strategy data has three brand-role cards, four receipt concept steps, four monitoring groups and six trigger rules. |
+| Code gates | `npm run lint`, `npm run typecheck`, `npm run test` (9 tests) and `npm run build` passed on Next.js 16.4.4. |
+| Browser at 1280 px | Strategy page rendered the new copy. Navigation displayed the restored product link in the requested order. Computed body font was Inter and heading font was Fraunces. Document width 1265 px stayed within the 1280 px viewport. |
+| Browser at 390 px | Strategy and product pages rendered with document width 375 px against a 390 px viewport. The mobile menu opened and showed all seven links, and product copy displayed the revised convenience/7-minute positioning. |
+| Browser at 1100 px | The added menu item initially caused 13 px of horizontal overflow. Moving the menu breakpoint to 1200 px reduced document width to the 1085 px client width; the page then had no horizontal overflow. |
+| Claims and plan labeling | The receipt quiz and voucher are labeled as proposed, while the current receipt remains based on entered time. Unverified effects and shop links were not added. The ROAS unit conflict is visible next to its trigger rules. |

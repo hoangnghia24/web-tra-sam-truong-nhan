@@ -61,14 +61,18 @@ export const strategySchema = z.object({
 const strategyEntry = z.object({ title: safeText(120), body: safeText(500), page: z.number().int().positive().optional() });
 export const strategyReportSchema = z.object({
   sourceNote: safeText(350),
+  brandRole: z.array(strategyEntry).length(3),
   market: z.array(strategyEntry),
   swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),
   tows: z.array(z.object({ key: z.enum(['SO', 'WO', 'ST', 'WT']), title: safeText(100), body: safeText(500) })).length(4),
   sevenPs: z.array(z.object({ key: safeText(50), title: safeText(100), body: safeText(1200) })).length(7),
   journey: z.array(z.object({ step: safeText(100), touchpoint: safeText(200) })).length(5),
+  receiptConcept: z.array(strategyEntry).length(4),
   channelRoles: z.array(z.object({ channel: safeText(100), role: safeText(240) })).length(6),
   pillars: z.array(strategyEntry).length(4),
   budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(10),
+  monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(200) })).length(4),
+  triggerRules: z.array(z.object({ title: safeText(120), signal: safeText(200), response: safeText(500) })).length(6),
   risks: z.array(z.object({ title: safeText(100), response: safeText(500), page: z.number().int().positive().optional() })),
 });
 

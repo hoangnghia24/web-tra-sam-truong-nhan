@@ -386,6 +386,7 @@ img { display: block; max-width: 100%; }
 .report-market { background: #ececde; }
 .report-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.3rem; margin: 3rem 0 1.5rem; }
 .report-card-grid article { min-height: 260px; padding: 2rem; background: var(--brand-ivory); }
+.report-overview .report-card-grid article { min-height: 0; background: #ececde; }
 .report-card-grid svg { color: var(--brand-gold); }
 .report-card-grid h3, .tows-grid h3 { margin: 1.4rem 0 .8rem; font-family: var(--type-display); font-size: 1.55rem; font-weight: 600; line-height: 1.2; }
 .report-card-grid p, .tows-grid p { color: var(--text-secondary); font-size: .9rem; }
@@ -611,13 +612,16 @@ img { display: block; max-width: 100%; }
 .footer-contact a { display: flex; align-items: center; gap: .4rem; margin-top: 1.2rem; overflow-wrap: anywhere; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.15); padding: 1.2rem max(1.5rem, calc((100vw - 1240px) / 2)); display: flex; justify-content: space-between; gap: 2rem; color: #a9bca9; font-size: .76rem; line-height: 1.5; }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   .site-header-inner { width: min(100% - 2rem, 1240px); }
   .mobile-menu-button { display: inline-flex; }
   .site-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 1rem max(1rem, calc((100vw - 760px) / 2)) 1.4rem; background: var(--brand-ivory); border-bottom: 1px solid rgba(23, 62, 41, .15); box-shadow: 0 1.3rem 2rem rgba(16, 43, 30, .1); flex-direction: column; align-items: stretch; gap: 0; }
   .site-menu.is-open { display: flex; }
   .site-menu a { padding: .7rem 0; }
   .site-menu .menu-feature { justify-content: space-between; margin-top: .4rem; padding: .8rem 1rem; }
+}
+
+@media (max-width: 1050px) {
   .footer-main { grid-template-columns: 1.2fr 1fr; }
   .footer-contact { grid-column: 2; }
   .story-layout, .receipt-feature, .pause-feature, .product-feature, .reminder-feature, .team-feature { gap: 3rem; }

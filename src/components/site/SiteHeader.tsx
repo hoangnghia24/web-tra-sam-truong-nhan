@@ -7,9 +7,10 @@ import { useState } from 'react';
 
 const primaryLinks = [
   { href: '/', label: 'Trang chủ' },
-  { href: '/ve-du-an', label: 'Về công ty' },
+  { href: '/ve-du-an', label: 'Doanh nghiệp' },
   { href: '/hoa-don-cho-doi', label: 'Hóa đơn chờ đợi' },
   { href: '/7-phut-cho-minh', label: '7 phút cho mình' },
+  { href: '/san-pham', label: 'Sản phẩm' },
   { href: '/chien-luoc', label: 'Chiến lược' },
   { href: '/lien-he', label: 'Liên hệ' },
 ];

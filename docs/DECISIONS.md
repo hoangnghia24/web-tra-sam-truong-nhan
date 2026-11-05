@@ -97,3 +97,11 @@
 - The user requested Bogart headings and Inter copy, then confirmed no licensed Bogart font file or Adobe Fonts kit is available and chose Fraunces as the temporary heading font. Bogart is offered by Zetafonts under a separate web embedding license; do not bundle the trial font into this website.
 - Downloaded Inter and Fraunces variable font files and OFL license texts from the official Google Fonts repository. `next/font/local` self-hosts both; the site makes no external font request. Kept earlier Spectral/Mulish files in the repository as unused historical assets.
 - Use Fraunces for all semantic headings and existing display typography, Inter for body and interface text. Switch the display font to licensed Bogart once the user supplies its asset or kit; retain Inter.
+
+## CP-13 revised Word content (2026-11-05)
+
+- Treat `F:\NỘI DUNG SỬA WEBSITE.docx` as the user's revised content reference. The document's mockup steps and operational suggestions describe proposed campaign work; they do not authorize invented product effects, an active voucher, an official shop URL, or claims of measured results.
+- Add the new positioning, four-step receipt concept, monitoring cadence and six trigger rules inside the existing strategy sections. Keep the working receipt calculation and page layout because the user requested a content update while retaining the earlier layout.
+- State that the Word's 3% ingredient figure and 390.000 ₫ price are source claims needing label or price verification. Do not publish its detoxification, recovery or relaxation statements as proven effects.
+- Restore `Sản phẩm` in the navigation after `7 phút cho mình`, as listed in the revised Word. Use `Doanh nghiệp` for the second link to the existing Trường Sinh Group page. Switch to the mobile menu at 1200 px so the longer navigation does not overflow at intermediate widths.
+- The Word labels the ROAS KPI as 3,5% but uses 2,5× and 3,5× in a trigger rule. Preserve both with a visible unit clarification request; do not silently reconcile them.

@@ -1,5 +1,10 @@
 {
-  "sourceNote": "Tóm lược từ tài liệu kế hoạch Digital Marketing 38 trang và file nội dung chỉnh sửa. Ngân sách, hoạt động và KPI là kế hoạch, chưa phải kết quả thực tế.",
+  "sourceNote": "Tóm lược từ tài liệu kế hoạch Digital Marketing 38 trang và bản Word nội dung mới. Định vị, ý tưởng microsite, ngân sách, hoạt động và KPI là kế hoạch, chưa phải kết quả thực tế.",
+  "brandRole": [
+    { "title": "Tiện lợi mỗi ngày", "body": "Trà túi lọc dễ pha, được đề xuất như một cách tạo khoảng dừng 7 phút cho người bận rộn. Đây là định vị thương hiệu trong kế hoạch, không phải lời khẳng định hiệu quả sức khỏe." },
+    { "title": "Công thức được nêu rõ", "body": "File Word ghi 3% lá Sâm Ngọc Linh cùng sáu thành phần khác. Tỷ lệ cần đối chiếu nhãn chính thức; thành phần không tự chứng minh công dụng thanh lọc, giải độc hoặc phục hồi." },
+    { "title": "Lời nhắc dành cho mình", "body": "Vai trò cảm xúc của thương hiệu là nhắc người xem cho phép bản thân nghỉ một lúc mà không thấy áy náy. Giá đề xuất 390.000 đồng/hộp 15 túi, khoảng 26.000 đồng/túi, cần xác nhận trước khi mua." }
+  ],
   "market": [
     { "title": "Trà thảo mộc tiện lợi", "body": "Tài liệu nhận định nhu cầu sản phẩm dễ pha, phù hợp nhịp sống bận rộn là một cơ hội cho sản phẩm.", "page": 13 },
     { "title": "Thương mại xã hội", "body": "TikTok Shop, KOC và livestream được đề xuất là những điểm chạm để tiếp cận và giải thích sản phẩm.", "page": 14 },
@@ -33,6 +38,12 @@
     { "step": "Mua thử", "touchpoint": "Gian hàng chính thức khi được xác minh" },
     { "step": "Duy trì", "touchpoint": "7 phút cho mình, lời nhắc và cộng đồng" }
   ],
+  "receiptConcept": [
+    { "title": "01 · Gợi mở", "body": "Bản Word đề xuất màn vào với đồng hồ 7:00, ô nhập tên và lời mời nhìn lại thời gian dành cho bản thân. Đây là ý tưởng cho phiên bản microsite tiếp theo." },
+    { "title": "02 · Câu hỏi nhanh", "body": "Ba câu hỏi ngắn về thời gian họp hoặc chạy hạn, những lần hẹn lại việc cho mình và lần nghỉ 7 phút gần nhất được đề xuất để cá nhân hóa trải nghiệm." },
+    { "title": "03 · Hóa đơn cá nhân", "body": "Hóa đơn và ảnh story khổ dọc dự kiến được tính từ câu trả lời thật của từng người. Không mặc định kết quả 0 phút hoặc gán một khoản ‘nợ’ không có dữ liệu." },
+    { "title": "04 · Tìm hiểu sản phẩm", "body": "Điểm chạm cuối giới thiệu tỷ lệ 3% lá Sâm Ngọc Linh và thông tin sản phẩm đã đối chiếu. Voucher và liên kết mua chỉ hiển thị khi chương trình và gian hàng chính thức được xác nhận." }
+  ],
   "channelRoles": [
     { "channel": "Thu hút", "role": "TikTok Ads và Facebook Reels dẫn người xem về microsite hoặc gian hàng được xác minh." },
     { "channel": "Tạo niềm tin", "role": "KOC và UGC chia sẻ trải nghiệm thực tế, có công bố hợp tác khi phù hợp." },
@@ -58,6 +69,20 @@
     { "name": "Livestream nội bộ", "millionVnd": 10 },
     { "name": "Đo lường & tối ưu", "millionVnd": 21 },
     { "name": "Dự phòng", "millionVnd": 100 }
+  ],
+  "monitoring": [
+    { "title": "Truyền thông", "metrics": "Lượt hiển thị, lượt xem video, CPM, CTR", "cadence": "Hằng ngày", "sources": "Meta Ads Manager, TikTok Ads Manager, GA4" },
+    { "title": "Tương tác", "metrics": "Lượt truy cập, CVR microsite, số hóa đơn", "cadence": "Hằng tuần", "sources": "GA4, Hotjar, dashboard kế hoạch" },
+    { "title": "Chuyển đổi", "metrics": "Số đơn, GMV, ROAS, CPA, AOV", "cadence": "Hằng ngày và hằng tuần", "sources": "TikTok Shop Seller Center, Shopee Partner" },
+    { "title": "Cộng đồng và giữ chân", "metrics": "UGC hợp lệ, lượt dùng hashtag, NPS, tỷ lệ Zalo OA", "cadence": "Cuối mỗi giai đoạn", "sources": "TikTok Analytics, Zalo OA" }
+  ],
+  "triggerRules": [
+    { "title": "Phát ngôn KOC gây tranh cãi", "signal": "Rủi ro trung bình, tác động cao theo bản Word", "response": "Đề xuất duyệt nội dung trước đăng; khi có sự cố, tạm dừng nội dung, yêu cầu đính chính và rà soát hợp tác." },
+    { "title": "Thông tin công dụng gây hiểu nhầm", "signal": "Rủi ro thấp, tác động rất cao theo bản Word", "response": "Chỉ dùng thông tin đã được xác nhận trên nhãn và hồ sơ quảng cáo. Nếu có sai lệch, đính chính trên kênh đã đăng và sửa mô tả sản phẩm." },
+    { "title": "CVR microsite dưới 15%", "signal": "Thấp hơn mục tiêu kế hoạch ít nhất 18%", "response": "Với phiên bản quiz đề xuất, xem xét rút ba câu hỏi còn hai và thử ưu đãi 10% sau khi chương trình được phê duyệt. Trải nghiệm hóa đơn hiện tại chưa dùng quiz hay ưu đãi này." },
+    { "title": "UGC dưới 100 video cuối tuần 6", "signal": "So với mục tiêu 250 bài hợp lệ", "response": "Kế hoạch đề xuất dùng 20% quỹ dự phòng cho 10 micro KOC và quà cho 50 bài hợp lệ đầu tiên; điều kiện và ngân sách cần xác nhận trước khi công bố." },
+    { "title": "ROAS dưới 2,5× ở tuần 7", "signal": "Bản Word ghi ngưỡng ứng phó theo lần nhưng KPI mục tiêu lại ghi 3,5%", "response": "Kế hoạch đề xuất giảm 30% ngân sách nhóm quảng cáo rộng và ưu tiên tiếp thị lại. Cần xác nhận cùng một đơn vị đo ROAS trước khi áp dụng ngưỡng." },
+    { "title": "Thiếu hàng hoặc giao trễ trên 5%", "signal": "Đơn hàng vượt dự báo hoặc tỷ lệ giao trễ tăng", "response": "Tạm giảm quảng cáo, cập nhật trạng thái đơn và cân nhắc chuyển sang gian hàng dự phòng đã xác minh. Tin nhắn bù đắp chỉ gửi khi chính sách được duyệt." }
   ],
   "risks": [
     { "title": "Khủng hoảng phát ngôn KOC · Trung bình/Cao", "response": "Kế hoạch: duyệt toàn bộ clip trước đăng và ban hành hướng dẫn nội dung. Dự phòng: tạm dừng hợp tác, ẩn clip và yêu cầu đính chính." },
