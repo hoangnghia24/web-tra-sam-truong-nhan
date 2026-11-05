@@ -109,8 +109,14 @@ export const strategyReportSchema = z.object({
   pillars: z.array(strategyEntry).length(4),
   budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(10),
   monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(200) })).length(4),
-  triggerRules: z.array(z.object({ title: safeText(120), signal: safeText(200), response: safeText(500) })).length(6),
-  risks: z.array(z.object({ title: safeText(100), response: safeText(500), page: z.number().int().positive().optional() })),
+  riskPlan: z.array(z.object({
+    title: safeText(120),
+    target: safeText(60).optional(),
+    signal: safeText(200),
+    signalTarget: safeText(60).optional(),
+    action: safeText(500),
+    fallback: safeText(250).optional(),
+  })).length(6),
 });
 
 export const faqsSchema = z.object({ items: z.array(z.object({ question: safeText(200), answer: safeText(900) })) });

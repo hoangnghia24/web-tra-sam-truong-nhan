@@ -238,3 +238,9 @@
 
 - Keep the existing four-card monitoring layout and update only the four data rows with the user's supplied wording. Render the previously hidden `sources` field alongside each cadence so every tool name appears.
 - Preserve the user's uncommitted strategy heading and other working-tree edits. Verify locally and leave production to the user.
+
+## CP-37 risk response table (2026-11-06)
+
+- Replace the two overlapping risk lists with one semantic table matching the user's three columns and six scenarios. Store titles, triggers, responses, and italicized targets/fallback text in structured JSON.
+- Preserve the user's wording, including the supplied proposed thresholds, channel names, and response actions. Keep the existing note that these plans are not automatically implemented.
+- Preserve unrelated working-tree edits and verify only on a local build; deployment remains with the user.

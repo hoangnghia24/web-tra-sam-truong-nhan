@@ -214,19 +214,41 @@
     { "title": "Chuyển đổi (Performance):", "metrics": "Số đơn hàng, GMV, ROAS, CPA, AOV", "cadence": "HẰNG NGÀY & HẰNG TUẦN", "sources": "TikTok Shop Seller Center, Shopee Partner." },
     { "title": "Cộng đồng & Giữ chân (Retention):", "metrics": "Số UGC hợp lệ, Lượt xài Hashtag, NPS, Tỷ lệ Zalo OA", "cadence": "CUỐI MỖI PHASE", "sources": "TikTok Analytics, Zalo OA." }
   ],
-  "triggerRules": [
-    { "title": "Phát ngôn KOC gây tranh cãi", "signal": "Rủi ro trung bình, tác động cao", "response": "Đề xuất duyệt nội dung trước đăng; khi có sự cố, tạm dừng nội dung, yêu cầu đính chính và rà soát hợp tác." },
-    { "title": "Thông tin công dụng gây hiểu nhầm", "signal": "Rủi ro thấp, tác động rất cao", "response": "Chỉ dùng thông tin đã được xác nhận trên nhãn và hồ sơ quảng cáo. Nếu có sai lệch, đính chính trên kênh đã đăng và sửa mô tả sản phẩm." },
-    { "title": "CVR microsite dưới 15%", "signal": "Thấp hơn mục tiêu kế hoạch ít nhất 18%", "response": "Với phiên bản quiz đề xuất, xem xét rút ba câu hỏi còn hai và thử ưu đãi 10% sau khi chương trình được phê duyệt. Trải nghiệm hóa đơn hiện tại chưa dùng quiz hay ưu đãi này." },
-    { "title": "UGC dưới 100 video cuối tuần 6", "signal": "So với mục tiêu 250 bài hợp lệ", "response": "Kế hoạch đề xuất dùng 20% quỹ dự phòng cho 10 micro KOC và quà cho 50 bài hợp lệ đầu tiên; điều kiện và ngân sách cần xác nhận trước khi công bố." },
-    { "title": "ROAS dưới 2,5× ở tuần 7", "signal": "Ngưỡng ứng phó dùng đơn vị lần, còn KPI mục tiêu hiển thị 3,5%", "response": "Kế hoạch đề xuất giảm 30% ngân sách nhóm quảng cáo rộng và ưu tiên tiếp thị lại. Cần xác nhận cùng một đơn vị đo ROAS trước khi áp dụng ngưỡng." },
-    { "title": "Thiếu hàng hoặc giao trễ trên 5%", "signal": "Đơn hàng vượt dự báo hoặc tỷ lệ giao trễ tăng", "response": "Tạm giảm quảng cáo, cập nhật trạng thái đơn và cân nhắc chuyển sang gian hàng dự phòng đã xác minh. Tin nhắn bù đắp chỉ gửi khi chính sách được duyệt." }
-  ],
-  "risks": [
-    { "title": "Khủng hoảng phát ngôn KOC · Trung bình/Cao", "response": "Kế hoạch: duyệt toàn bộ clip trước đăng và ban hành hướng dẫn nội dung. Dự phòng: tạm dừng hợp tác, ẩn clip và yêu cầu đính chính." },
-    { "title": "Thông tin công dụng gây hiểu nhầm · Thấp/Rất cao", "response": "Kế hoạch: kiểm tra mọi tuyên bố công dụng theo quy định quảng cáo và hồ sơ được xác nhận; không dùng lời hứa sức khỏe chưa chứng minh. Dự phòng: đính chính trên kênh đã đăng và cập nhật mô tả sản phẩm." },
-    { "title": "Sự cố kỹ thuật microsite hoặc sàn · Trung bình/Trung bình", "response": "Kế hoạch: kiểm thử tải trước chiến dịch. Dự phòng: chuyển liên kết điều hướng sang kênh bán hàng hoặc hỗ trợ đã được xác minh." },
-    { "title": "Thiếu hàng hoặc giao trễ · Trung bình/Cao", "response": "Kế hoạch: dự báo nhu cầu theo tuần và đề xuất mức tồn kho an toàn 30%. Dự phòng: giảm quảng cáo, chủ động thông báo và hỗ trợ đơn hàng trễ." },
-    { "title": "Chuyển đổi thấp, hoàn đơn cao · Cao/Trung bình", "response": "Kế hoạch: công khai thông tin, dùng video mở hộp thật. Dự phòng: xem lại quà tặng kèm và xác nhận đơn hàng theo quy trình phù hợp." }
+  "riskPlan": [
+    {
+      "title": "Khủng hoảng phát ngôn KOC",
+      "signal": "Mức độ: Trung bình / Hậu quả: Cao",
+      "action": "Duyệt 100% clip trước khi đăng, ban hành Briefing Guideline nghiêm ngặt.",
+      "fallback": "Dự phòng: Tạm dừng hợp đồng, ẩn clip, yêu cầu đính chính."
+    },
+    {
+      "title": "Thông tin công dụng gây hiểu nhầm",
+      "signal": "Mức độ: Thấp / Hậu quả: Rất cao",
+      "action": "Tuân thủ Luật Quảng cáo, chỉ dùng từ \"hỗ trợ thanh nhiệt, giải độc, thư giãn\".",
+      "fallback": "Dự phòng: Đính chính truyền thông, cập nhật mô tả sản phẩm."
+    },
+    {
+      "title": "Microsite CVR < 15%",
+      "target": "(Mục tiêu ≥ 18%)",
+      "signal": "Tỷ lệ chuyển đổi web thấp hơn kỳ vọng",
+      "action": "Bổ sung Pop-up tặng Voucher mồi 10% khi vuốt tới màn hình Hóa đơn; rút ngắn trắc nghiệm từ 3 câu xuống 2 câu để giảm tỷ lệ thoát trang."
+    },
+    {
+      "title": "Thiếu hụt bài dự thi UGC",
+      "signal": "Hết W6 đạt < 100 video",
+      "signalTarget": "(Mục tiêu 250)",
+      "action": "Trích 20% ngân sách dự phòng book gấp 10 Micro-KOCs vệt dưới; tặng ngay 1 hộp Trà Sâm dùng thử cho 50 bài đăng hợp lệ đầu tiên."
+    },
+    {
+      "title": "ROAS Paid Ads < 2.5x",
+      "target": "(Mục tiêu ≥ 3.5x)",
+      "signal": "Hiệu quả quảng cáo tụt ở W7",
+      "action": "Cắt 30% ngân sách ở các Ad sets chạy diện rộng; dồn toàn bộ tiền Ads còn lại vào Retargeting tệp người dùng đã vào Microsite."
+    },
+    {
+      "title": "Đứt gãy tồn kho / Giao trễ > 5%",
+      "signal": "Tốc độ đơn hàng vượt dự báo",
+      "action": "Chuyển ngay CTA trên Ads và Bio sang gian hàng Shopee Mall dự phòng; gửi tin nhắn Zalo ZNS tự động kèm voucher đền bù cho đơn chậm."
+    }
   ]
 }

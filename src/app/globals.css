@@ -668,12 +668,24 @@ img { display: block; max-width: 100%; }
 .report-actual { margin-top: 2rem; padding: 1.5rem; border-left: 3px solid var(--brand-gold); background: #f1f3e9; }
 .report-actual p { margin: .3rem 0 0; color: var(--text-secondary); }
 .report-risks { background: #ececde; }
-.risk-list { max-width: 800px; margin: 2rem 0 3rem; }
-.risk-list details { border-top: 1px solid #b9c6b3; }
-.risk-list details:last-child { border-bottom: 1px solid #b9c6b3; }
-.risk-list summary { padding: 1rem 0; font-family: var(--type-display); font-size: 1.35rem; cursor: pointer; }
-.risk-list p { max-width: 640px; color: var(--text-secondary); }
-.risk-list small { color: var(--brand-leaf); }
+.risk-table-scroll { margin: 2rem 0 3rem; overflow-x: auto; }
+.risk-table { width: 100%; border-collapse: collapse; text-align: left; }
+.risk-table th, .risk-table td { padding: 1rem; border-bottom: 1px solid #b9c6b3; vertical-align: top; }
+.risk-table thead th { color: var(--brand-leaf); font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; }
+.risk-table tbody th { width: 27%; font-family: var(--type-display); font-size: 1.15rem; font-weight: 600; }
+.risk-table tbody td:nth-child(2) { width: 23%; }
+.risk-table tbody td { color: var(--text-secondary); line-height: 1.55; }
+.risk-table em { font-style: italic; }
+@media (max-width: 700px) {
+  .risk-table thead { display: none; }
+  .risk-table, .risk-table tbody, .risk-table tr, .risk-table th, .risk-table td { display: block; width: 100%; }
+  .risk-table tr { padding: .4rem 0 1rem; border-top: 1px solid #b9c6b3; }
+  .risk-table th, .risk-table td { padding: .45rem 0; border: 0; }
+  .risk-table tbody th, .risk-table tbody td:nth-child(2) { width: 100%; }
+  .risk-table td::before { display: block; margin-bottom: .2rem; color: var(--brand-leaf); font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+  .risk-table td:nth-child(2)::before { content: 'Dấu hiệu (Trigger)'; }
+  .risk-table td:nth-child(3)::before { content: 'Kịch bản ứng phó ngay (Action Plan B)'; }
+}
 .report-conclusion { max-width: 750px; font-family: var(--type-display); font-size: 1.4rem; line-height: 1.4; }
 
 .contact-team-section, .about-story-section, .about-team-section, .policy-section { padding: clamp(5rem, 8vw, 8rem) 0; background: var(--brand-ivory); }
