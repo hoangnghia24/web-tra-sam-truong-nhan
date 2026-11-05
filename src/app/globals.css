@@ -566,8 +566,6 @@ img { display: block; max-width: 100%; }
 .form-progress, .timer-linear-track { border-radius: 999px; }
 .form-progress span, .timer-linear-track span { border-radius: inherit; }
 
-.challenge-rules-link { margin: 1.5rem 0 0; }
-.challenge-rules-link a { display: inline-flex; align-items: center; gap: .4rem; color: var(--brand-forest); font-size: .9rem; font-weight: 700; text-underline-offset: .3rem; }
 .report-persona { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-bottom: 1.4rem; }
 .report-persona p { margin: 0; padding: 1.2rem; border: 1px solid #cbd8c4; border-radius: 14px; color: var(--text-secondary); font-size: .86rem; }
 .report-persona strong { color: var(--brand-forest); }
