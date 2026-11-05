@@ -407,3 +407,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 with all three table headers and six numbered scenarios. No page errors or horizontal overflow occurred. |
 | Content | The local page showed the supplied CVR, UGC, ROAS, and delivery thresholds; the final response text matched the supplied Shopee Mall and Zalo ZNS action. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-38 — Revised risk accordion (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 with five risk summaries. The first action was hidden until its summary was clicked; no table, page errors, or horizontal overflow occurred. |
+| Content | Checked all five revised titles and the first and last action/fallback text in local Chrome. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

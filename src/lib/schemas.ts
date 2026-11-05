@@ -111,12 +111,9 @@ export const strategyReportSchema = z.object({
   monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(200) })).length(4),
   riskPlan: z.array(z.object({
     title: safeText(120),
-    target: safeText(60).optional(),
-    signal: safeText(200),
-    signalTarget: safeText(60).optional(),
     action: safeText(500),
-    fallback: safeText(250).optional(),
-  })).length(6),
+    fallback: safeText(250),
+  })).length(5),
 });
 
 export const faqsSchema = z.object({ items: z.array(z.object({ question: safeText(200), answer: safeText(900) })) });

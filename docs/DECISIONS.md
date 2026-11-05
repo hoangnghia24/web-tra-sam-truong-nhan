@@ -244,3 +244,9 @@
 - Replace the two overlapping risk lists with one semantic table matching the user's three columns and six scenarios. Store titles, triggers, responses, and italicized targets/fallback text in structured JSON.
 - Preserve the user's wording, including the supplied proposed thresholds, channel names, and response actions. Keep the existing note that these plans are not automatically implemented.
 - Preserve unrelated working-tree edits and verify only on a local build; deployment remains with the user.
+
+## CP-38 risk accordion correction (2026-11-06)
+
+- The user clarified that the original click-to-read layout should remain. Replace the CP-37 table with five native `details` items and show each supplied title in the summary.
+- Use the user's revised action and fallback wording exactly; italicize only the supplied “Dự phòng:” label. Keep unrelated strategy content and the user's working-tree edits unchanged.
+- Verify only on a local build; deployment remains with the user.

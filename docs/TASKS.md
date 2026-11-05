@@ -43,6 +43,7 @@
 | DONE | CP-35: updated all twelve weekly phase plans to the supplied copy, added seventeen single-video slots and two video-series lists, and documented how to add MP4 files; verified locally. |
 | DONE | CP-36: updated the four monitoring cards to the supplied labels, metrics, cadence, and tools; verified locally. |
 | DONE | CP-37: replaced overlapping risk lists with the supplied six-row risk, trigger, and response table; verified locally without deployment. |
+| DONE | CP-38: restored the click-to-read risk list and updated it to the user's five revised scenarios; verified locally without deployment. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

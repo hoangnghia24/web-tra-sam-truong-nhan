@@ -42,5 +42,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-35 Exact weekly phase plan and media slots | Replace W1–W12 activity and goal copy with the user's three tables without rewriting it. Put a single video slot under each Video activity and an expandable video list under each Chuỗi video activity; document MP4 setup and verify locally. |
 | CP-36 Monitoring cadence copy | Replace the four monitoring groups with the user's exact labels, metrics, measurement cadence, and tools. Display all fields in the existing cards; verify locally and leave production to the user. |
 | CP-37 Risk response table | Replace the overlapping risk lists with the user's six three-column scenarios, preserving supplied wording and emphasis. Validate the data, check the responsive table locally, and leave production to the user. |
+| CP-38 Risk accordion correction | Restore the original click-to-read presentation and replace the risk copy with the user's revised five scenarios and fallback actions. Verify locally without deploying. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

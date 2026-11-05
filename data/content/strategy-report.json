@@ -216,39 +216,29 @@
   ],
   "riskPlan": [
     {
-      "title": "Khủng hoảng phát ngôn KOC",
-      "signal": "Mức độ: Trung bình / Hậu quả: Cao",
+      "title": "Khủng hoảng phát ngôn KOC (Trung bình/Cao):",
       "action": "Duyệt 100% clip trước khi đăng, ban hành Briefing Guideline nghiêm ngặt.",
-      "fallback": "Dự phòng: Tạm dừng hợp đồng, ẩn clip, yêu cầu đính chính."
+      "fallback": "Tạm dừng hợp đồng, ẩn clip, yêu cầu đính chính."
     },
     {
-      "title": "Thông tin công dụng gây hiểu nhầm",
-      "signal": "Mức độ: Thấp / Hậu quả: Rất cao",
-      "action": "Tuân thủ Luật Quảng cáo, chỉ dùng từ \"hỗ trợ thanh nhiệt, giải độc, thư giãn\".",
-      "fallback": "Dự phòng: Đính chính truyền thông, cập nhật mô tả sản phẩm."
+      "title": "Thông tin công dụng gây hiểu nhầm (Thấp/Rất cao):",
+      "action": "Tuân thủ Luật Quảng cáo, chỉ dùng từ \"hỗ trợ thanh nhiệt, giải độc\".",
+      "fallback": "Đính chính trên báo chí/fanpage, cập nhật mô tả sản phẩm."
     },
     {
-      "title": "Microsite CVR < 15%",
-      "target": "(Mục tiêu ≥ 18%)",
-      "signal": "Tỷ lệ chuyển đổi web thấp hơn kỳ vọng",
-      "action": "Bổ sung Pop-up tặng Voucher mồi 10% khi vuốt tới màn hình Hóa đơn; rút ngắn trắc nghiệm từ 3 câu xuống 2 câu để giảm tỷ lệ thoát trang."
+      "title": "Sự cố kỹ thuật Microsite/Sàn (Trung bình/Trung bình):",
+      "action": "Stress-test kỹ thuật trước khi bấm máy.",
+      "fallback": "Đổi link Bio sang TikTok Shop hoặc Zalo OA."
     },
     {
-      "title": "Thiếu hụt bài dự thi UGC",
-      "signal": "Hết W6 đạt < 100 video",
-      "signalTarget": "(Mục tiêu 250)",
-      "action": "Trích 20% ngân sách dự phòng book gấp 10 Micro-KOCs vệt dưới; tặng ngay 1 hộp Trà Sâm dùng thử cho 50 bài đăng hợp lệ đầu tiên."
+      "title": "Thiếu hụt tồn kho / Giao trễ (Trung bình/Cao):",
+      "action": "Dự báo nhu cầu theo tuần, trữ kho an toàn 30%.",
+      "fallback": "Giảm tiền Ads, nhắn tin xin lỗi kèm voucher cho đơn trễ."
     },
     {
-      "title": "ROAS Paid Ads < 2.5x",
-      "target": "(Mục tiêu ≥ 3.5x)",
-      "signal": "Hiệu quả quảng cáo tụt ở W7",
-      "action": "Cắt 30% ngân sách ở các Ad sets chạy diện rộng; dồn toàn bộ tiền Ads còn lại vào Retargeting tệp người dùng đã vào Microsite."
-    },
-    {
-      "title": "Đứt gãy tồn kho / Giao trễ > 5%",
-      "signal": "Tốc độ đơn hàng vượt dự báo",
-      "action": "Chuyển ngay CTA trên Ads và Bio sang gian hàng Shopee Mall dự phòng; gửi tin nhắn Zalo ZNS tự động kèm voucher đền bù cho đơn chậm."
+      "title": "Chuyển đổi thấp, hoàn đơn cao (Cao/Trung bình):",
+      "action": "Minh bạch thông tin, làm video unboxing thật.",
+      "fallback": "Tối ưu quà tặng kèm, gọi điện xác nhận đơn hàng."
     }
   ]
 }
