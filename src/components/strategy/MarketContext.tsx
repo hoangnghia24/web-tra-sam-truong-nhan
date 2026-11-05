@@ -24,6 +24,5 @@ export function MarketContext({ content }: { content: MarketContextContent }) {
       <div><h4>Các yếu tố có thể thúc đẩy quyết định mua:</h4><ul>{content.drivers.map((driver) => <li key={driver}>{driver}</li>)}</ul></div>
     </div>
 
-    <p className="market-context-note">Đây là góc nhìn khách hàng trong kế hoạch, chưa phải kết quả khảo sát. Khoảng giá nêu trên cần đối chiếu với giá bán hiện hành trước khi công bố.</p>
-  </div>;
+   </div>;
 }

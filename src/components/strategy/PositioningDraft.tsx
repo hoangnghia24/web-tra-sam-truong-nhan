@@ -8,7 +8,7 @@ export function PositioningDraft({ content }: { content: PositioningContent }) {
     <div className="positioning-heading">
       <p className="positioning-eyebrow">NỘI DUNG ĐỊNH VỊ ĐỀ XUẤT</p>
       <h3 id="positioning-title">{content.title}</h3>
-      <p className="positioning-disclosure">Phần dưới đây giữ nguyên nội dung định vị do nhóm cung cấp. Các câu về công dụng sức khỏe và mức giá là đề xuất truyền thông, chưa phải thông tin sản phẩm đã được xác nhận.</p>
+
     </div>
 
     <div className="positioning-usp">
@@ -28,7 +28,7 @@ export function PositioningDraft({ content }: { content: PositioningContent }) {
     </div>
 
     <aside className="positioning-highlight" aria-label="Thông điệp nổi bật">
-      <p>{content.highlight.map((line) => <strong key={line}>{line}</strong>)}</p>
+      <p><strong>{content.highlight.join(' - ')}</strong></p>
     </aside>
   </section>;
 }

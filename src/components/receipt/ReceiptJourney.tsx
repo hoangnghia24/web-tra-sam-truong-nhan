@@ -161,7 +161,6 @@ export function ReceiptJourney({ purchaseLinks, voucher15 }: Props) {
           <input id="quiz-name" value={name} onChange={(event) => { setName(event.target.value); setError(''); }} maxLength={40} autoComplete="given-name" placeholder="Tên của bạn" />
           <button type="button" className="button-primary" onClick={begin}>BẤM VÀO ĐỂ TÍNH TIỀN THỜI GIAN <ArrowRight size={18} aria-hidden="true" /></button>
           {error && <p className="form-error" role="alert">{error}</p>}
-          <small>Tên không được gửi lên máy chủ trong trải nghiệm này.</small>
         </div>
       </div>}
 
