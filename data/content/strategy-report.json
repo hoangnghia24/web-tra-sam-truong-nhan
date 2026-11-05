@@ -40,13 +40,75 @@
     { "key": "W-T", "title": "Phòng ngừa", "body": "Hướng dẫn nghi thức hãm trà 7 phút đúng chuẩn để cảm nhận giá trị tương ứng chi phí." }
   ],
   "sevenPs": [
-    { "key": "Product", "title": "Sản phẩm", "body": "Trà túi lọc hộp 30 g (15 túi × 2 g), pha với khoảng 300 ml nước nóng trong 5–7 phút. Bảy thành phần gồm: Táo đỏ 25%, Lá đinh lăng 17%, Đẳng sâm 15%, Cam thảo 15%, Kỷ tử 15%, Nhân sâm tươi 10% và Lá Sâm Ngọc Linh 3%. Ý tưởng bán chéo sang Dịch chiết Sâm Ngọc Linh thuộc kế hoạch." },
-    { "key": "Price", "title": "Giá", "body": "Giá dự kiến 390.000 đồng/hộp, tương đương 26.000 đồng/túi; chưa phải giá bán hiện hành. Định vị premium; duy trì giá trị thương hiệu, tránh giảm giá sâu. Voucher khách mới, ưu đãi livestream, freeship và combo là các đề xuất kích thích dùng thử." },
-    { "key": "Place", "title": "Phân phối", "body": "Kế hoạch lấy TikTok Shop làm kênh chủ lực, Shopee bổ trợ; website cung cấp thành phần, hướng dẫn và hồ sơ sản phẩm. Nhà thuốc, cửa hàng và điểm bán phù hợp là kênh offline dự kiến. Chưa có URL mua hàng chính thức được xác minh." },
-    { "key": "Promotion", "title": "Xúc tiến", "body": "Đề xuất TikTok Ads, Facebook Ads, Reels Ads; nội dung giải thích sản phẩm, thành phần và cách dùng; KOC/creator đánh giá thực tế; voucher, combo, freeship, livestream và UGC. Nội dung tài trợ cần được công bố và mọi tuyên bố công dụng phải được kiểm duyệt." },
-    { "key": "People", "title": "Con người", "body": "KOC/creator chuyển tải thông tin dễ hiểu; livestream host giải đáp về giá và thành phần; đội tư vấn nắm rõ công thức, quy cách và cách pha. Chăm sóc khách hàng trước, trong và sau mua cần chính xác, không phóng đại công dụng." },
-    { "key": "Process", "title": "Quy trình", "body": "Tiếp cận qua TikTok, Facebook và KOC; tìm hiểu thành phần, giá và cách dùng trên website; chuyển đổi qua gian hàng được xác minh; kiểm tra bao bì khi nhận; hỗ trợ sau mua qua Zalo OA; khuyến khích đánh giá thật và mua lại khi có nhu cầu." },
-    { "key": "Physical evidence", "title": "Bằng chứng hữu hình", "body": "Bao bì, bảng thành phần, thông tin nhãn, mã QR và đánh giá thật là các điểm chạm giúp khách hàng tìm hiểu sản phẩm. Các hình ảnh vùng nguyên liệu và quy trình sản xuất chỉ nên công bố khi có tư liệu phù hợp." }
+    {
+      "key": "Product", "title": "PRODUCT – CHÍNH SÁCH SẢN PHẨM", "subtitle": "Sản phẩm tiện lợi – Giá trị dược liệu truyền thống",
+      "points": [
+        { "label": "Quy cách:", "body": "Hộp 30g (15 túi lọc × 2g), pha với 300ml nước sôi trong 5–7 phút." },
+        { "label": "Thành phần:", "body": "7 loại thảo dược gồm Táo đỏ (25%), Đinh lăng (17%), Đẳng sâm (15%), Cam thảo (15%), Kỷ tử (15%), Nhân sâm (10%) và Lá Sâm Ngọc Linh (3%)." },
+        { "label": "Định vị:", "body": "Sản phẩm Entry Point, giúp khách hàng tiếp cận giá trị dược liệu thông qua hình thức trà túi lọc tiện lợi." },
+        { "label": "Vai trò danh mục:", "body": "Mở rộng tệp khách hàng mới, tạo cơ hội trải nghiệm thương hiệu và bán chéo sang Dịch chiết Sâm Ngọc Linh." }
+      ]
+    },
+    {
+      "key": "Price", "title": "PRICE – CHÍNH SÁCH GIÁ", "subtitle": "Premium Pricing – Định giá theo giá trị sản phẩm",
+      "points": [
+        { "label": "Giá niêm yết:", "body": "390.000 VNĐ/hộp, tương đương 26.000 VNĐ/túi lọc." },
+        { "label": "Định vị giá:", "body": "Phân khúc Premium, phản ánh giá trị công thức phối hợp 7 loại thảo dược và định vị sản phẩm." },
+        { "label": "Chính sách giá:", "body": "Duy trì giá trị thương hiệu, không cạnh tranh bằng chiến lược giảm giá sâu." },
+        { "label": "Kích thích dùng thử:", "body": "Voucher khách hàng mới, Livestream Deal và hỗ trợ Freeship." },
+        { "label": "Gia tăng giá trị đơn hàng:", "body": "Đề xuất combo nhiều hộp và ưu đãi mua theo gói." }
+      ]
+    },
+    {
+      "key": "Place", "title": "PLACE – CHÍNH SÁCH PHÂN PHỐI", "subtitle": "Omnichannel Distribution – Lấy Digital Commerce làm trọng tâm",
+      "points": [
+        { "label": "TikTok Shop – Chủ lực:", "body": "Kết nối video ngắn, KOC và Livestream với hoạt động bán hàng trực tiếp." },
+        { "label": "Shopee – Bổ trợ:", "body": "Đáp ứng nhu cầu tìm kiếm, so sánh, tham khảo đánh giá và mua hàng chủ động." },
+        { "label": "Website/Microsite:", "body": "Cung cấp thông tin sản phẩm, thành phần và hồ sơ công bố." },
+        { "label": "Kênh Offline:", "body": "Nhà thuốc, cửa hàng và các điểm bán phù hợp hỗ trợ tiếp cận trực tiếp, củng cố uy tín thương hiệu." }
+      ]
+    },
+    {
+      "key": "Promotion", "title": "PROMOTION – CHÍNH SÁCH XÚC TIẾN", "subtitle": "Integrated Marketing Communications – Truyền thông tích hợp",
+      "points": [
+        { "label": "Advertising:", "body": "TikTok Ads, Facebook Ads và Reels Ads nhằm tiếp cận khách hàng mục tiêu." },
+        { "label": "Content Marketing:", "body": "Nội dung giáo dục về sản phẩm, thành phần và cách sử dụng." },
+        { "label": "KOC/Creator Marketing:", "body": "Trải nghiệm thực tế, đánh giá sản phẩm và chia sẻ góc nhìn người dùng." },
+        { "label": "Sales Promotion:", "body": "Voucher, combo ưu đãi, Freeship và Livestream Deal." },
+        { "label": "Livestream Commerce:", "body": "Giới thiệu sản phẩm, giải đáp thắc mắc và hỗ trợ chuyển đổi." },
+        { "label": "UGC Marketing:", "body": "Khuyến khích khách hàng chia sẻ trải nghiệm để gia tăng tương tác và niềm tin." }
+      ]
+    },
+    {
+      "key": "People", "title": "PEOPLE – CHÍNH SÁCH CON NGƯỜI", "subtitle": "Product Knowledge – Customer Experience",
+      "points": [
+        { "label": "KOC/Creator:", "body": "Chuyển tải thông tin sản phẩm thành nội dung gần gũi, dễ tiếp cận." },
+        { "label": "Livestream Host:", "body": "Giới thiệu sản phẩm, giải đáp thắc mắc và xử lý những băn khoăn về giá, thành phần." },
+        { "label": "Đội ngũ tư vấn:", "body": "Am hiểu công thức, quy cách, cách pha và thông tin sản phẩm." },
+        { "label": "Customer Service:", "body": "Hỗ trợ khách hàng trước, trong và sau mua; đảm bảo tư vấn chính xác, không phóng đại công dụng." }
+      ]
+    },
+    {
+      "key": "Process", "title": "PROCESS – CHÍNH SÁCH QUY TRÌNH", "subtitle": "Customer Journey Optimization – Tối ưu hành trình khách hàng",
+      "points": [
+        { "label": "Tiếp cận:", "body": "Khách hàng xem nội dung trên TikTok, Facebook hoặc KOC." },
+        { "label": "Tìm hiểu:", "body": "Truy cập trang sản phẩm, kiểm tra thành phần, giá bán và hướng dẫn sử dụng." },
+        { "label": "Chuyển đổi:", "body": "Áp dụng ưu đãi phù hợp và đặt hàng trên TikTok Shop hoặc Shopee." },
+        { "label": "Trải nghiệm:", "body": "Nhận sản phẩm, kiểm tra bao bì và sử dụng theo hướng dẫn." },
+        { "label": "Chăm sóc:", "body": "Kết nối Zalo OA để nhận hướng dẫn, giải đáp và hỗ trợ sau mua." },
+        { "label": "Duy trì:", "body": "Khuyến khích đánh giá, chia sẻ trải nghiệm và mua lại khi có nhu cầu." }
+      ]
+    },
+    {
+      "key": "Physical evidence", "title": "PHYSICAL EVIDENCE – BẰNG CHỨNG HỮU HÌNH", "subtitle": "Trust & Transparency – Minh bạch để tạo niềm tin",
+      "points": [
+        { "label": "Product Packaging:", "body": "Bao bì thể hiện nhận diện thương hiệu, quy cách và thông tin sản phẩm." },
+        { "label": "Ingredient Transparency:", "body": "Công khai 7 thành phần và tỷ lệ 3% lá Sâm Ngọc Linh." },
+        { "label": "Manufacturing Evidence:", "body": "Hình ảnh vùng nguyên liệu, nhà máy GMP và quy trình sản xuất theo tài liệu được xác nhận." },
+        { "label": "Legal Evidence:", "body": "Số tự công bố sản phẩm 03/TRUONGNHAN/2026." },
+        { "label": "Digital Evidence:", "body": "Website, Microsite, QR Code và hệ thống đánh giá thực tế từ khách hàng" }
+      ]
+    }
   ],
   "journey": [
     { "step": "Khám phá", "touchpoint": "Video ngắn, nội dung đồng cảm" },

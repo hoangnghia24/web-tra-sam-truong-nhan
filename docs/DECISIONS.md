@@ -189,3 +189,10 @@
 - Use the user's three requested entries in S-O, W-O, W-T order. Remove S-T entirely from the strategy report and require exactly three entries in the schema.
 - Present each key and parenthesized title on one heading line, followed by the requested sentence. Change the desktop grid to three columns and retain responsive stacking.
 - Keep unrelated working-tree edits in campaign, strategy report, strategy page, and positioning component separate from this checkpoint. Verify locally and leave production to the user.
+
+## CP-29 detailed 7Ps copy (2026-11-06)
+
+- Store each supplied 7P as its full policy title, subtitle, and labeled points in `strategy-report.json`; validate four to six points per tab. Preserve the user's substantive wording while normalizing pasted whitespace.
+- Retain the accessible seven-tab interaction and keyboard navigation. Present the longer text as a readable numbered policy panel, with responsive bullet columns.
+- Place a separate plan-status note before the tabs. The supplied price, self-declaration number, GMP, and manufacturing text are proposal content, not independently verified current product facts.
+- Preserve unrelated working-tree edits and leave production review and deployment to the user.

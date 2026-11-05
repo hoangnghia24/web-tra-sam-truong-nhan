@@ -503,13 +503,18 @@ img { display: block; max-width: 100%; }
 .report-swot .report-disclosure, .report-phases .report-disclosure { color: #b9cdb8; }
 .report-sevenps { background: var(--brand-ivory); }
 .sevenps-tabs { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 3rem; }
+.sevenps-plan-note + .sevenps-tabs { margin-top: 1.3rem; }
 .sevenps-tabs button { padding: .7rem 1rem; border: 1px solid #cbd7c4; background: transparent; color: var(--brand-forest); font-size: .82rem; font-weight: 700; cursor: pointer; }
 .sevenps-tabs button[aria-selected="true"], .sevenps-tabs button:hover { background: var(--brand-forest); border-color: var(--brand-forest); color: white; }
-.sevenps-panel { display: grid; grid-template-columns: 110px 1fr; column-gap: 2rem; min-height: 230px; margin-top: 1rem; padding: 2.5rem; background: #e8ecdf; }
-.sevenps-panel > span { grid-row: span 3; color: var(--brand-gold); font-family: var(--type-display); font-size: 2rem; }
-.sevenps-panel h3 { margin: 0 0 .6rem; font-family: var(--type-display); font-size: 2rem; line-height: 1.15; }
-.sevenps-panel p { max-width: 650px; margin: 0 0 1rem; color: var(--text-secondary); }
-.sevenps-panel small { color: var(--brand-leaf); }
+.sevenps-panel { min-height: 420px; margin-top: 1rem; padding: clamp(1.7rem, 4vw, 3rem); background: #e8ecdf; }
+.sevenps-panel-head { display: grid; grid-template-columns: 120px 1fr; gap: 1.5rem; padding-bottom: 1.7rem; border-bottom: 1px solid #bfcdb7; }
+.sevenps-panel-head > span { color: var(--brand-gold-text); font-family: var(--type-display); font-size: 1.8rem; line-height: 1; white-space: nowrap; }
+.sevenps-panel h3 { margin: 0; font-family: var(--type-display); font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.15; }
+.sevenps-panel-head p { margin: .7rem 0 0; color: var(--brand-leaf); font-family: var(--type-display); font-size: 1.25rem; font-style: italic; }
+.sevenps-points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.sevenps-points li { padding: 1rem 0; border-bottom: 1px solid #c6d3c0; color: var(--text-secondary); font-size: .9rem; }
+.sevenps-points strong { color: var(--brand-forest); }
+.sevenps-plan-note { max-width: 860px; margin: 2rem 0 0; color: var(--text-secondary); font-size: .8rem; }
 .report-journey { background: #ececde; }
 .journey-line { display: grid; grid-template-columns: repeat(5, 1fr); gap: .7rem; margin: 3rem 0 4rem; }
 .journey-line article { min-height: 185px; padding: 1.2rem; border-top: 2px solid var(--brand-gold); background: var(--brand-ivory); }
@@ -800,8 +805,9 @@ img { display: block; max-width: 100%; }
   .strategy-local-nav { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; white-space: nowrap; }
   .report-card-grid, .phase-track, .kpi-grid, .tows-grid, .pillar-grid, .journey-line, .budget-summary, .report-audience { grid-template-columns: 1fr; }
   .swot-grid button { min-height: 120px; }
-  .sevenps-panel { grid-template-columns: 1fr; padding: 1.8rem; }
-  .sevenps-panel > span { grid-row: auto; }
+  .sevenps-panel { padding: 1.8rem; }
+  .sevenps-panel-head, .sevenps-points { grid-template-columns: 1fr; }
+  .sevenps-panel-head { gap: .65rem; }
   .budget-plot { overflow: hidden; }
   .team-card-grid, .about-team-section ul, .contact-form-row { grid-template-columns: 1fr; }
   .admin-main { padding-inline: 1.25rem; }

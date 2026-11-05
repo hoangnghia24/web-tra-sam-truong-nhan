@@ -17,7 +17,14 @@ export function SwotExplorer({ items }: { items: Report['swot'] }) {
 export function SevenPsExplorer({ items }: { items: Report['sevenPs'] }) {
   const [selected, setSelected] = useState(0);
   const current = items[selected];
-  return <div className="sevenps-explorer"><div className="sevenps-tabs" role="tablist" aria-label="Bảy yếu tố marketing">{items.map((item, index) => <button key={item.key} type="button" role="tab" id={`sevenps-${index}`} aria-controls="sevenps-panel" aria-selected={selected === index} tabIndex={selected === index ? 0 : -1} onKeyDown={(event) => handleTabKey(event, index, items.length, setSelected)} onClick={() => setSelected(index)}>{item.key}</button>)}</div><div id="sevenps-panel" role="tabpanel" aria-labelledby={`sevenps-${selected}`} className="sevenps-panel"><span>0{selected + 1} / 07</span><h3>{current.title}</h3><p>{current.body}</p></div></div>;
+  return <div className="sevenps-explorer">
+    <p className="sevenps-plan-note">Nội dung 7Ps là kế hoạch đề xuất. Giá bán, hồ sơ pháp lý, nhà máy GMP và tư liệu sản xuất cần được xác minh trước khi công bố như thông tin sản phẩm hiện hành.</p>
+    <div className="sevenps-tabs" role="tablist" aria-label="Bảy yếu tố marketing">{items.map((item, index) => <button key={item.key} type="button" role="tab" id={`sevenps-${index}`} aria-controls="sevenps-panel" aria-selected={selected === index} tabIndex={selected === index ? 0 : -1} onKeyDown={(event) => handleTabKey(event, index, items.length, setSelected)} onClick={() => setSelected(index)}>{item.key}</button>)}</div>
+    <div id="sevenps-panel" role="tabpanel" aria-labelledby={`sevenps-${selected}`} className="sevenps-panel">
+      <div className="sevenps-panel-head"><span>0{selected + 1} / 07</span><div><h3>{selected + 1}. {current.title}</h3><p>{current.subtitle}</p></div></div>
+      <ul className="sevenps-points">{current.points.map((point) => <li key={point.label}><strong>{point.label}</strong> {point.body}</li>)}</ul>
+    </div>
+  </div>;
 }
 
 export function BudgetChart({ items }: { items: Report['budget'] }) {

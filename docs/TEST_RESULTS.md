@@ -328,3 +328,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed with exactly three TOWS records. |
 | Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 and displayed S-O (Tận dụng), W-O (Khắc phục), and W-T (Phòng ngừa) with the requested sentences. S-T was absent; no page errors or horizontal overflow occurred. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-29 — Detailed 7Ps (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed after the 7Ps data and component change. |
+| Local browser | Headless Chrome at 390 px and 1440 px opened `/chien-luoc` with HTTP 200. All seven tabs showed their full title, subtitle, and 4–6 requested points; ArrowRight selected the next tab. No page errors or horizontal overflow occurred. |
+| Visual review | Reviewed desktop Product and mobile Physical Evidence panels. The detailed content remained readable and the plan-status note distinguished unverified price/legal/manufacturing copy. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |
