@@ -267,7 +267,6 @@ img { display: block; max-width: 100%; }
 .ingredient-detail { position: relative; display: flex; align-items: flex-end; min-height: 460px; overflow: hidden; background: var(--brand-forest); color: var(--brand-ivory); }
 .ingredient-detail::after { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(8,28,17,.08) 5%, rgba(8,28,17,.2) 38%, rgba(8,28,17,.84) 70%, rgba(8,28,17,.98) 100%); pointer-events: none; }
 .ingredient-photo { object-fit: cover; }
-.ingredient-image-note { position: absolute; top: 1rem; right: 1rem; z-index: 2; max-width: calc(100% - 2rem); padding: .45rem .7rem; background: rgba(16,43,30,.88); color: var(--brand-ivory); font-size: .72rem; line-height: 1.4; }
 .ingredient-orbit { position: absolute; top: 50%; left: 50%; width: 320px; height: 320px; display: grid; place-items: center; border: 1px solid rgba(226,199,124,.32); border-radius: 50%; transform: translate(-50%, -50%); }
 .ingredient-orbit::before, .ingredient-orbit::after { content: ''; position: absolute; inset: 2rem; border: 1px solid rgba(226,199,124,.24); border-radius: 50%; }
 .ingredient-orbit::after { inset: 4.5rem; }

@@ -127,3 +127,7 @@
 - Match the new `anhweb` files `đinh lăng.jpg`, `kỉ tử.jpg`, `Nhân sâm.jpg`, and `Lá Sâm Ngọc Linh.jpg` to the four remaining ingredient entries. Leave the unrelated `xxx.jpg` unused.
 - Use each selected photo as a full-card image with `object-fit: cover`, a dark lower gradient, and the ingredient name, description, and source-stated percentage over it. Keep the illustration label and the fallback for a future missing image.
 - Update the product lead copy to reflect that all seven ingredient illustrations are now present. Do not claim that these photos verify packaged contents or medical effects.
+
+## CP-18 ingredient label removal (2026-11-06)
+
+- The user's later request removes the “Hình minh họa do nhóm cung cấp” overlay from the ingredient card. Remove the matching wording from the product lead and image alternative text as well. Keep the existing source and percentage verification notes.

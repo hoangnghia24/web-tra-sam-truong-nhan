@@ -23,6 +23,7 @@
 | DONE | CP-15: remove the standalone “Câu chuyện” section from the homepage and keep the remaining section navigation in order. |
 | DONE | CP-16: add supplied táo đỏ, đẳng sâm, and cam thảo images to the product ingredient explorer; keep accurate placeholders for four missing ingredients. |
 | DONE | CP-17: add the remaining four ingredient images and display each selected ingredient as a full-card photo with text overlay. |
+| DONE | CP-18: remove the “Hình minh họa do nhóm cung cấp” label from ingredient images and product lead copy. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

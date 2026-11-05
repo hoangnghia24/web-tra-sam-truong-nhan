@@ -226,3 +226,10 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Data and code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed on Next.js 16.4.4. |
 | Interactive browser check | Headless Chrome selected all seven ingredient tabs at 390 px and 1440 px. Every selected image loaded (`naturalWidth > 0`), filled the detail card, and had its text over the image. |
 | Responsive review | At both widths, document width equaled viewport width with no horizontal overflow. Screenshots for táo đỏ and lá Sâm Ngọc Linh showed readable title, description, percentage, and illustration label over the full-card image. |
+
+## CP-18 — Ingredient label removal (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Browser check | At 390 px in headless Chrome, no “Hình minh họa do nhóm cung cấp” label or matching lead phrase appeared. Táo đỏ and lá Sâm Ngọc Linh images still loaded after tab selection; document width equaled the viewport width. |
