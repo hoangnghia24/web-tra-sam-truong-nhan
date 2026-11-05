@@ -202,3 +202,7 @@
 - Replace the old `market` array with structured `marketContext` data for the supplied truth, four pain points, motivation, and four decision drivers. Normalize pasted whitespace while preserving the user's substantive wording, including the supplied “nghỉ rằng”.
 - Keep the existing “Càng quý…” headline exactly as requested. Use separate visual groups for truth, pain cards, and motivation/decision factors.
 - Add a distinct note that these are proposed customer insights, not survey findings, and the cited price range is not confirmed current pricing. Preserve unrelated working-tree edits and leave production to the user.
+
+## CP-31 truth label spacing (2026-11-06)
+
+- Size the desktop label column to its text and use a 1rem gap, so the quote begins near “Sự thật:”. Keep the existing one-column mobile layout and .75rem vertical gap. Preserve unrelated edits and leave production to the user.

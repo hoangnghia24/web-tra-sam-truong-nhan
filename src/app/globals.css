@@ -477,7 +477,7 @@ img { display: block; max-width: 100%; }
 .positioning-highlight strong { font-family: var(--type-display); font-size: clamp(1.1rem, 2vw, 1.45rem); font-weight: 600; }
 .report-market { background: #ececde; }
 .market-context { margin-top: 3rem; }
-.market-truth { display: grid; grid-template-columns: 180px 1fr; gap: 2rem; align-items: start; padding: 2rem 0; border-block: 1px solid #b9c8b2; }
+.market-truth { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 1rem; align-items: start; padding: 2rem 0; border-block: 1px solid #b9c8b2; }
 .market-truth > span { color: var(--brand-gold-text); font-size: .88rem; font-weight: 800; }
 .market-truth blockquote { max-width: 850px; margin: 0; color: var(--brand-forest); font-family: var(--type-display); font-size: clamp(1.4rem, 2.4vw, 2rem); font-style: italic; line-height: 1.35; }
 .market-pains { margin-top: clamp(3rem, 6vw, 5rem); }

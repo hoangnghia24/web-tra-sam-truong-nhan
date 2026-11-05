@@ -346,3 +346,10 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200. The section displayed the supplied truth, all four pains, motivation and four drivers; the “Càng quý…” quote remained and the old three market cards were absent. No page errors or horizontal overflow. |
 | Visual review | Reviewed the full context section at mobile and desktop widths. The layout stayed readable and the plan/price note was visible. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-31 — Truth label spacing (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Local browser | At 1440 px, the quote began 16 px after the “Sự thật:” label. At 390 px, it remained stacked 12 px below. `/chien-luoc` returned HTTP 200 at both widths with no page errors or horizontal overflow. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

@@ -36,6 +36,7 @@
 | DONE | CP-28: revised three TOWS entries, removed S-T, and verified the local strategy page without deployment. |
 | DONE | CP-29: replaced short 7Ps summaries with the user's seven detailed policies and verified tabs locally without deployment. |
 | DONE | CP-30: replaced market cards with the supplied customer truth, pains, motivation, and decision drivers while preserving the existing quote; verified locally. |
+| DONE | CP-31: tightened spacing between the customer-truth label and quote; verified desktop and mobile layout locally. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.
