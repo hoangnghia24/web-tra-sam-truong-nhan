@@ -7,16 +7,12 @@
       "intro": "Có những việc ta luôn hẹn để sau, kể cả một khoảng nghỉ cho chính mình. Giai đoạn mở đầu đặt câu hỏi về cách mỗi người đang dùng thời gian và mời họ nhìn lại nhịp sống thường ngày.",
       "invitation": "Bắt đầu bằng một câu hỏi nhỏ: trong ngày hôm nay, bạn đã dành bao nhiêu thời gian cho chính mình?",
       "action": { "label": "Tạo hóa đơn thời gian", "href": "/hoa-don-cho-doi" },
-      "videos": [
-        { "title": "Nhắc tôi sau", "description": "Ý tưởng video về những lần ta trì hoãn một khoảng nghỉ.", "src": null },
-        { "title": "Hóa đơn thời gian dành cho bản thân", "description": "Ý tưởng video dẫn vào trải nghiệm hóa đơn thời gian.", "src": null }
-      ],
       "focus": ["Poster và video khơi gợi đồng cảm", "Trải nghiệm hóa đơn thời gian và đồng hồ 7 phút", "Giới thiệu thành phần, cách pha trà"],
       "weeklyPlan": [
-        { "week": 1, "activities": ["Poster chính thức chiến dịch", "Video Teaser Coming Soon", "Video Nhắc tôi sau"], "goal": "Xây dựng nhận diện, khơi gợi tò mò và đồng cảm với việc trì hoãn chăm sóc bản thân." },
-        { "week": 2, "activities": ["Video chủ đạo: Hóa Đơn Thời Gian Dành Cho Bản Thân", "TikTok Photo Mode: Để dành đến bao giờ?"], "goal": "Tạo điểm nhấn sáng tạo, kích hoạt minigame, tăng tương tác và thu hút lượt truy cập website." },
-        { "week": 3, "activities": ["Ra mắt web bấm hóa đơn trì hoãn và đồng hồ đếm ngược 7 phút", "Video giới thiệu sản phẩm, thành phần và cách pha trà"], "goal": "Thúc đẩy trải nghiệm website, lan tỏa thói quen 7 phút và tăng nhận biết sản phẩm." },
-        { "week": 4, "activities": ["Video tương tác: Bạn thường dành thời gian cho ai nhiều nhất?"], "goal": "Khuyến khích tự nhìn nhận, tổng kết tương tác và chuẩn bị chuyển sang thử thách UGC." }
+        { "week": 1, "activities": ["Poster chính thức chiến dịch.", "Video Teaser Coming Soon.", "Video Nhắc tôi sau."], "goal": "Xây dựng nhận diện, khơi gợi sự tò mò và tạo đồng cảm với vấn đề trì hoãn chăm sóc bản thân.", "media": [{ "activityIndex": 1, "kind": "video", "src": null }, { "activityIndex": 2, "kind": "video", "src": null }] },
+        { "week": 2, "activities": ["Video chủ đạo: Hóa Đơn Thời Gian Dành Cho Bản Thân.", "TikTok Photo Mode: Để dành đến bao giờ?"], "goal": "Tạo điểm nhấn sáng tạo, kích hoạt minigame, tăng tương tác và thu hút traffic về website.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }] },
+        { "week": 3, "activities": ["Ra mắt Web Bấm Hóa Đơn Trì Hoãn và Đồng Hồ Đếm Ngược 7 Phút.", "Video giới thiệu Trà Sâm Trường Nhân, thành phần và cách pha trà."], "goal": "Thúc đẩy trải nghiệm website, lan tỏa thói quen 7 phút và tăng nhận biết sản phẩm.", "media": [{ "activityIndex": 1, "kind": "video", "src": null }] },
+        { "week": 4, "activities": ["Video tương tác: Bạn thường dành thời gian cho ai nhiều nhất?"], "goal": "Khuyến khích người xem tự nhìn nhận, tổng kết tương tác và chuẩn bị chuyển sang thử thách UGC.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }] }
       ]
     },
     {
@@ -24,16 +20,12 @@
       "intro": "Sau khi nhận ra mình thường chờ đợi, điều tiếp theo là thử dành một khoảng dừng ngắn ngay hôm nay. Giai đoạn này kết nối trải nghiệm 7 phút với thử thách kể lại một việc nhỏ bạn đã làm cho mình.",
       "invitation": "Bạn có thể bắt đầu 7 phút theo cách riêng: pha trà, hít thở, nhìn ra cửa sổ hoặc đơn giản là ngồi yên.",
       "action": { "label": "Bắt đầu 7 phút cho mình", "href": "/7-phut-cho-minh" },
-      "videos": [
-        { "title": "Câu chuyện dành cho bản thân", "description": "Video mẫu cho cách kể lại một khoảng dừng của chính mình.", "src": null },
-        { "title": "Những câu chuyện đầu tiên", "description": "Không gian dự kiến cho video tổng hợp khi có nội dung được phép chia sẻ.", "src": null }
-      ],
       "focus": ["Hướng dẫn thử thách và video mẫu", "KOL/KOC, nội dung giải đáp", "Livestream và câu chuyện tham gia"],
       "weeklyPlan": [
-        { "week": 5, "activities": ["Video hướng dẫn 4 bước tham gia thử thách", "Video mẫu Câu Chuyện Dành Cho Bản Thân", "TikTok LIVE giới thiệu thử thách và minigame web"], "goal": "Hướng dẫn tham gia, giúp hình dung bài dự thi và kích hoạt UGC." },
-        { "week": 6, "activities": ["Bộ ảnh hướng dẫn Câu Chuyện Của Tôi", "Chuỗi video KOL/KOC tham gia thử thách", "Chuỗi video trả lời câu hỏi thường gặp"], "goal": "Giảm rào cản sáng tạo, tạo động lực tham gia và giải đáp thắc mắc." },
-        { "week": 7, "activities": ["Video Những câu chuyện đầu tiên đã xuất hiện", "TikTok LIVE 7 Phút Trà Đàm Cùng Trường Nhân, kết hợp Flash Deal 7 phút"], "goal": "Tạo bằng chứng cộng đồng, tăng quan tâm sản phẩm và thúc đẩy chuyển đổi." },
-        { "week": 8, "activities": ["Video Checklist 5 điều cần kiểm tra trước khi gửi bài", "Video đếm ngược kết thúc thử thách"], "goal": "Tăng tỷ lệ bài dự thi hợp lệ và thúc đẩy hoàn tất tham gia trước hạn cuối." }
+        { "week": 5, "activities": ["Video hướng dẫn 4 bước tham gia thử thách.", "Video mẫu Câu Chuyện Dành Cho Bản Thân.", "TikTok LIVE giới thiệu thử thách và Minigame Web."], "goal": "Hướng dẫn cách tham gia, giúp người xem hình dung nội dung dự thi và kích hoạt UGC.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }, { "activityIndex": 1, "kind": "video", "src": null }] },
+        { "week": 6, "activities": ["Bộ ảnh hướng dẫn Câu Chuyện Của Tôi.", "Chuỗi video KOL/KOC tham gia thử thách.", "Chuỗi video trả lời câu hỏi thường gặp."], "goal": "Giảm rào cản sáng tạo, tạo động lực tham gia và giải đáp thắc mắc của người dùng.", "media": [{ "activityIndex": 1, "kind": "series", "videos": [] }, { "activityIndex": 2, "kind": "series", "videos": [] }] },
+        { "week": 7, "activities": ["Video Những câu chuyện đầu tiên đã xuất hiện.", "TikTok LIVE 7 Phút Trà Đàm Cùng Trường Nhân, kết hợp Flash Deal 7 phút."], "goal": "Tạo bằng chứng cộng đồng, tăng quan tâm sản phẩm và thúc đẩy chuyển đổi đơn hàng.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }] },
+        { "week": 8, "activities": ["Video Checklist 5 điều cần kiểm tra trước khi gửi bài.", "Video đếm ngược kết thúc thử thách."], "goal": "Tăng tỷ lệ bài dự thi hợp lệ, thúc đẩy hoàn tất tham gia và tạo sự khẩn trương trước hạn cuối.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }, { "activityIndex": 1, "kind": "video", "src": null }] }
       ]
     },
     {
@@ -41,16 +33,12 @@
       "intro": "Một khoảng dừng có thể tiếp tục bằng một lời quan tâm. Giai đoạn cuối mời mỗi người giữ lại thói quen nhỏ và gửi lời nhắc dịu dàng đến người thân hoặc bạn bè.",
       "invitation": "Viết một điều bạn muốn nhớ vào ngày mai, hoặc gửi lời nhắn ấy đến một người bạn quan tâm.",
       "action": { "label": "Tạo thiệp lời nhắc", "href": "/gui-loi-nhac" },
-      "videos": [
-        { "title": "Lần này mình nhắc bạn", "description": "Ý tưởng video chuyển lời nhắc chăm sóc bản thân thành sự quan tâm dành cho người khác.", "src": null },
-        { "title": "Bạn đã thôi chờ chưa?", "description": "Ý tưởng video khép lại hành trình 12 tuần và gợi mở một thói quen tiếp nối.", "src": null }
-      ],
       "focus": ["Tổng hợp câu chuyện cộng đồng", "Thiệp quan tâm và lời nhắn", "Công bố kết quả, duy trì tiện ích website"],
       "weeklyPlan": [
-        { "week": 9, "activities": ["Video Những câu chuyện dành cho bản thân (tổng hợp UGC)", "Poster Mỗi người một câu chuyện, mỗi người một cách bắt đầu"], "goal": "Tôn vinh người tham gia, lan tỏa câu chuyện tích cực và củng cố thông điệp." },
-        { "week": 10, "activities": ["Video Lần này mình nhắc bạn", "Video Một hộp trà, một lời nhắn", "Ra mắt tính năng viết lời nhắc và tạo thiệp quan tâm"], "goal": "Mở rộng thông điệp đến người thân, cá nhân hóa trải nghiệm và gợi ý nhu cầu quà tặng." },
-        { "week": 11, "activities": ["Video công bố kết quả thử thách", "Video Khoảnh khắc nhận quà và lời cảm ơn"], "goal": "Ghi nhận cộng đồng và củng cố niềm tin qua việc công bố minh bạch." },
-        { "week": 12, "activities": ["Video Bạn đã thôi chờ chưa?", "Video Lời nhắc dành cho ngày mai", "Duy trì đồng hồ 7 phút và tính năng tạo thiệp trên website"], "goal": "Tổng kết hành trình 12 tuần và duy trì tương tác sau chiến dịch." }
+        { "week": 9, "activities": ["Video Những câu chuyện dành cho bản thân (tổng hợp UGC).", "Poster Mỗi người một câu chuyện, mỗi người một cách bắt đầu."], "goal": "Tôn vinh người tham gia, lan tỏa câu chuyện tích cực và củng cố thông điệp chiến dịch.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }] },
+        { "week": 10, "activities": ["Video Lần này mình nhắc bạn.", "Video Một hộp trà, một lời nhắn.", "Ra mắt tính năng Website Viết Lời Nhắc – Tạo Thiệp Quan Tâm."], "goal": "Mở rộng thông điệp đến người thân, cá nhân hóa trải nghiệm và thúc đẩy nhu cầu mua quà tặng.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }, { "activityIndex": 1, "kind": "video", "src": null }] },
+        { "week": 11, "activities": ["Video công bố kết quả thử thách.", "Video Khoảnh khắc nhận quà và lời cảm ơn."], "goal": "Đảm bảo tính minh bạch, ghi nhận đóng góp của cộng đồng và củng cố niềm tin thương hiệu.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }, { "activityIndex": 1, "kind": "video", "src": null }] },
+        { "week": 12, "activities": ["Video Bạn đã thôi chờ chưa?", "Video Lời nhắc dành cho ngày mai.", "Duy trì các tiện ích Đồng Hồ 7 Phút và Tạo Thiệp trên Website."], "goal": "Tổng kết hành trình 12 tuần, ghi nhớ Big Idea và duy trì tương tác sau chiến dịch.", "media": [{ "activityIndex": 0, "kind": "video", "src": null }, { "activityIndex": 1, "kind": "video", "src": null }] }
       ]
     }
   ],

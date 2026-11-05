@@ -46,8 +46,21 @@ export const campaignSchema = z.object({
     weeks: safeText(30), message: safeText(180), intro: safeText(500), invitation: safeText(250),
     focus: z.array(safeText(100)).min(1),
     action: z.object({ label: safeText(80), href: z.enum(['/hoa-don-cho-doi', '/7-phut-cho-minh', '/gui-loi-nhac']) }),
-    videos: z.array(z.object({ title: safeText(120), description: safeText(250), src: z.string().regex(/^\/videos\/phases\/[a-z0-9-]+\.mp4$/).nullable() })).min(1).max(3),
-    weeklyPlan: z.array(z.object({ week: z.number().int().min(1).max(12), activities: z.array(safeText(200)).min(1), goal: safeText(300) })).length(4),
+    weeklyPlan: z.array(z.object({
+      week: z.number().int().min(1).max(12),
+      activities: z.array(safeText(220)).min(1),
+      goal: safeText(350),
+      media: z.array(z.discriminatedUnion('kind', [
+        z.object({ activityIndex: z.number().int().nonnegative(), kind: z.literal('video'), src: z.string().regex(/^\/videos\/phases\/[a-z0-9-]+\.mp4$/).nullable() }),
+        z.object({ activityIndex: z.number().int().nonnegative(), kind: z.literal('series'), videos: z.array(z.object({ title: safeText(120), src: z.string().regex(/^\/videos\/phases\/[a-z0-9-]+\.mp4$/) })).max(30) }),
+      ])).refine((media) => new Set(media.map((item) => item.activityIndex)).size === media.length, 'Mỗi hoạt động chỉ có một vị trí video'),
+    }).refine((week) => week.media.every((item) => item.activityIndex < week.activities.length), 'Vị trí video phải trùng hoạt động trong tuần')
+      .refine((week) => week.activities.every((activity, index) => {
+        const media = week.media.find((item) => item.activityIndex === index);
+        if (activity.startsWith('Chuỗi video')) return media?.kind === 'series';
+        if (activity.startsWith('Video')) return media?.kind === 'video';
+        return !media;
+      }), 'Mỗi hoạt động Video hoặc Chuỗi video cần đúng loại vị trí chờ')).length(4),
   })).length(3),
   statusNote: safeText(250),
 });

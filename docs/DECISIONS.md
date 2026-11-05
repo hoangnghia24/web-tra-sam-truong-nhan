@@ -226,3 +226,10 @@
 - Generate a 1080 × 1920 PNG from a 9:16 Story layout. Use the native image share sheet when available, otherwise download the image for manual TikTok posting.
 - Keep purchase CTAs disabled until official platform URLs are supplied. Present 15% voucher as a planned idea until an active code is configured. Document the settings in `docs/RECEIPT_JOURNEY.md`.
 - Preserve unrelated user edits; verify locally and leave production to the user.
+
+## CP-35 weekly phase content and videos (2026-11-06)
+
+- Replace only the W1–W12 activities and goals with the user's supplied wording, normalizing pasted layout whitespace. Keep phase names, descriptions, focus, invitations, actions, and the user's uncommitted status note unchanged.
+- Attach media metadata to each weekly activity by zero-based `activityIndex`. A Video activity has one nullable MP4 source; a Chuỗi video activity has an ordered list that starts empty. Other activities, including TikTok LIVE, remain text as specified.
+- Show media directly under its activity in the week card and remove the outdated phase-level video gallery. Keep planned work visibly distinct from completed work and document file paths and JSON examples in `docs/PHASE_VIDEOS.md`.
+- Preserve unrelated working-tree edits and leave production review and deployment to the user.

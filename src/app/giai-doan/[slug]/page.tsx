@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft, ArrowRight, ArrowUpRight, Clock3, Film, Leaf, Mail, Play } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUpRight, Clock3, Leaf, Mail, Play } from 'lucide-react';
+import type { z } from 'zod';
 import { readJson } from '@/lib/json-store';
 import { campaignSchema } from '@/lib/schemas';
 
@@ -38,6 +39,21 @@ function PhaseVisual({ number }: { number: number }) {
   </div>;
 }
 
+type WeekMedia = z.infer<typeof campaignSchema>['phases'][number]['weeklyPlan'][number]['media'][number];
+
+function PhaseVideo({ title, src }: { title: string; src: string | null }) {
+  if (src) return <video controls playsInline preload="metadata" aria-label={title}><source src={src} type="video/mp4" />Trình duyệt của bạn không hỗ trợ video.</video>;
+  return <div className="phase-media-placeholder"><Play size={18} aria-hidden="true" /><span>Video sẽ được bổ sung</span></div>;
+}
+
+function WeekActivityMedia({ activity, media }: { activity: string; media: WeekMedia }) {
+  if (media.kind === 'video') return <div className="phase-activity-media"><PhaseVideo title={activity} src={media.src} /></div>;
+  return <div className="phase-activity-media phase-series">
+    <span>Danh sách video</span>
+    {media.videos.length ? <ol>{media.videos.map((video) => <li key={video.src}><h4>{video.title}</h4><PhaseVideo title={video.title} src={video.src} /></li>)}</ol> : <p>Danh sách video sẽ được bổ sung.</p>}
+  </div>;
+}
+
 export default async function PhasePage({ params }: PhaseParams) {
   const { campaign, phase } = await getPhase((await params).slug);
   if (!phase) notFound();
@@ -70,17 +86,15 @@ export default async function PhasePage({ params }: PhaseParams) {
       <div className="phase-focus"><span>ĐIỂM CHẠM DỰ KIẾN</span><ol>{phase.focus.map((item, index) => <li key={item}><b>{String(index + 1).padStart(2, '0')}</b><p>{item}</p></li>)}</ol></div>
     </div></section>
 
-    <section className="phase-media phase-section" aria-labelledby="phase-media-title"><div className="phase-container">
-      <div className="phase-section-heading"><div><p className="phase-section-label"><Film size={17} aria-hidden="true" /> NỘI DUNG HÌNH ẢNH</p><h2 id="phase-media-title">Những câu chuyện <em>sẽ được kể.</em></h2></div><p>Không gian dành cho video của giai đoạn này. Nội dung sẽ xuất hiện tại đây khi được bổ sung.</p></div>
-      <div className="phase-video-grid">{phase.videos.map((video, index) => <article className="phase-video-card" key={video.title}>
-        {video.src ? <video controls playsInline preload="metadata" aria-label={video.title}><source src={video.src} type="video/mp4" />Trình duyệt của bạn không hỗ trợ video.</video> : <div className="phase-video-poster"><Play size={31} aria-hidden="true" /><span>VIDEO SẼ ĐƯỢC BỔ SUNG</span></div>}
-        <div className="phase-video-caption"><span>PHIM 0{index + 1} · GIAI ĐOẠN 0{phase.number}</span><h3>{video.title}</h3><p>{video.description}</p></div>
-      </article>)}</div>
-    </div></section>
-
     <section className="phase-weeks phase-section" aria-labelledby="phase-weeks-title"><div className="phase-container">
       <div className="phase-section-heading"><div><p className="phase-section-label"><Clock3 size={17} aria-hidden="true" /> LỘ TRÌNH TRIỂN KHAI</p><h2 id="phase-weeks-title">Bốn tuần, <em>một chuyển động.</em></h2></div><p>Các hoạt động và mục tiêu bên dưới thuộc kế hoạch chiến dịch.</p></div>
-      <div className="phase-week-grid">{phase.weeklyPlan.map((week) => <article key={week.week} className="phase-week-card"><div className="phase-week-top"><span>TUẦN</span><strong>{String(week.week).padStart(2, '0')}</strong></div><div><h3>{week.goal}</h3><ul>{week.activities.map((activity) => <li key={activity}>{activity}</li>)}</ul></div></article>)}</div>
+      <div className="phase-week-grid">{phase.weeklyPlan.map((week) => <article key={week.week} className="phase-week-card">
+        <div className="phase-week-top"><span>TUẦN</span><strong>{String(week.week).padStart(2, '0')}</strong></div>
+        <div className="phase-week-main"><h3>Hoạt động trong tuần</h3><ul className="phase-week-activities">{week.activities.map((activity, index) => {
+          const media = week.media.find((item) => item.activityIndex === index);
+          return <li key={activity}><p>{activity}</p>{media && <WeekActivityMedia activity={activity} media={media} />}</li>;
+        })}</ul><div className="phase-week-goal"><strong>Mục tiêu</strong><p>{week.goal}</p></div></div>
+      </article>)}</div>
     </div></section>
 
     <section className="phase-finale"><div className="phase-container phase-finale-grid"><div><p className="phase-section-label">LỜI NHẮC DÀNH CHO BẠN</p><h2>{phase.invitation}</h2><Link className="button-primary button-on-dark" href={phase.action.href}>{phase.action.label} <ArrowUpRight size={17} aria-hidden="true" /></Link></div><div className="phase-next-links">{previousPhase && <Link href={`/giai-doan/${previousPhase.slug}`}><ArrowLeft size={18} aria-hidden="true" /><span>GIAI ĐOẠN TRƯỚC<strong>{previousPhase.name}</strong></span></Link>}{nextPhase && <Link href={`/giai-doan/${nextPhase.slug}`}><span>GIAI ĐOẠN TIẾP THEO<strong>{nextPhase.name}</strong></span><ArrowRight size={18} aria-hidden="true" /></Link>}<Link href="/#cac-giai-doan"><span>XEM TOÀN BỘ<strong>Ba giai đoạn</strong></span><ArrowUpRight size={18} aria-hidden="true" /></Link></div></div></section>

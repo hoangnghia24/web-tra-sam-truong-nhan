@@ -1048,28 +1048,29 @@ img { display: block; max-width: 100%; }
 .phase-focus li { display: grid; grid-template-columns: 2rem 1fr; gap: 1rem; padding: 1rem 0; border-top: 1px solid #c9d5c4; }
 .phase-focus li b { color: var(--brand-gold-text); font-family: var(--type-display); font-size: 1.3rem; }
 .phase-focus li p { margin: 0; font-size: .9rem; }
-.phase-media { background: #e7ecdf; }
 .phase-section-heading h2 em { color: var(--brand-leaf); font-weight: 400; }
-.phase-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; margin-top: 2.2rem; }
-.phase-video-card { overflow: hidden; border: 1px solid #c8d4c2; background: var(--brand-ivory); }
-.phase-video-card video, .phase-video-poster { display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 16 / 9; background: radial-gradient(circle at 65% 35%, #5d7b5a, #173e29 68%); color: var(--brand-ivory); }
-.phase-video-card video { object-fit: contain; }
-.phase-video-poster { position: relative; flex-direction: column; gap: 1rem; overflow: hidden; }
-.phase-video-poster::before { content: ''; position: absolute; width: 48%; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.23); border-radius: 50%; }
-.phase-video-poster svg { z-index: 1; box-sizing: content-box; padding: 1rem; border: 1px solid rgba(255,255,255,.6); border-radius: 50%; }
-.phase-video-poster > span:last-child { z-index: 1; font-size: .66rem; font-weight: 800; letter-spacing: .13em; }
-.phase-video-caption { padding: 1.5rem 1.7rem 1.8rem; }
-.phase-video-caption > span { color: var(--brand-gold-text); font-size: .68rem; font-weight: 800; letter-spacing: .1em; }
-.phase-video-caption h3 { margin: .55rem 0; font-size: 1.55rem; line-height: 1.2; }
-.phase-video-caption p { margin: 0; color: var(--text-secondary); font-size: .86rem; }
 .phase-weeks { background: var(--brand-ivory); }
 .phase-week-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin-top: 2.5rem; border: 1px solid #d2ddcd; background: #d2ddcd; }
-.phase-week-card { display: grid; grid-template-columns: 5rem 1fr; gap: 1.5rem; min-height: 290px; padding: 2rem; background: var(--brand-ivory); }
+.phase-week-card { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 1.5rem; padding: 2rem; background: var(--brand-ivory); }
 .phase-week-top span { display: block; color: var(--brand-leaf); font-size: .67rem; font-weight: 800; letter-spacing: .1em; }
 .phase-week-top strong { color: var(--brand-gold-text); font-family: var(--type-display); font-size: 3.8rem; font-weight: 500; line-height: 1; }
-.phase-week-card h3 { margin: 0 0 1.3rem; font-size: 1.35rem; font-weight: 600; line-height: 1.25; }
-.phase-week-card ul { margin: 0; padding-left: 1.1rem; color: var(--text-secondary); font-size: .82rem; }
-.phase-week-card li + li { margin-top: .45rem; }
+.phase-week-main { min-width: 0; }
+.phase-week-card h3 { margin: 0 0 1rem; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.45rem; font-weight: 600; line-height: 1.25; }
+.phase-week-activities { margin: 0; padding: 0; list-style: none; }
+.phase-week-activities > li { padding: 1rem 0; border-top: 1px solid #d2ddcd; }
+.phase-week-activities > li > p { margin: 0; color: var(--text-primary); font-size: .9rem; line-height: 1.5; }
+.phase-activity-media { margin-top: .8rem; }
+.phase-activity-media video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--brand-forest); object-fit: contain; }
+.phase-media-placeholder { display: flex; align-items: center; gap: .7rem; min-height: 62px; padding: .8rem 1rem; border: 1px dashed #aebfa7; border-radius: 10px; background: #edf1e7; color: var(--brand-leaf); font-size: .8rem; font-weight: 700; }
+.phase-series { padding: 1rem; border: 1px dashed #aebfa7; border-radius: 10px; background: #edf1e7; }
+.phase-series > span { color: var(--brand-forest); font-size: .76rem; font-weight: 800; letter-spacing: .05em; }
+.phase-series > p { margin: .4rem 0 0; color: var(--text-secondary); font-size: .8rem; }
+.phase-series ol { display: grid; gap: 1rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.phase-series li { min-width: 0; }
+.phase-series h4 { margin: 0 0 .5rem; color: var(--brand-forest); font-size: .9rem; }
+.phase-week-goal { margin-top: 1.4rem; padding: 1rem; border-left: 3px solid var(--brand-gold); background: #e9eee2; }
+.phase-week-goal strong { color: var(--brand-tea); font-size: .74rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.phase-week-goal p { margin: .4rem 0 0; color: var(--text-primary); font-size: .88rem; line-height: 1.5; }
 .phase-finale { padding: clamp(4.5rem, 8vw, 8rem) 0; background: var(--brand-forest); color: var(--brand-ivory); }
 .phase-finale-grid { display: grid; grid-template-columns: 1fr .6fr; gap: clamp(3rem, 9vw, 9rem); align-items: end; }
 .phase-finale .phase-section-label { color: var(--brand-gold-light); }
@@ -1113,7 +1114,7 @@ img { display: block; max-width: 100%; }
   .phase-switcher a svg { display: none; }
   .phase-section { padding: 4.5rem 0; }
   .phase-focus { padding: 1.5rem; }
-  .phase-video-grid, .phase-week-grid { grid-template-columns: 1fr; }
+  .phase-week-grid { grid-template-columns: 1fr; }
   .phase-week-card { min-height: 0; grid-template-columns: 4rem 1fr; gap: .9rem; padding: 1.5rem 1rem; }
   .phase-week-top strong { font-size: 3.2rem; }
   .phase-finale-grid { gap: 3rem; }

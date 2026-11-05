@@ -380,3 +380,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Homepage | `/` returned HTTP 200 at both widths, displayed the four-step summary, and had no horizontal overflow. |
 | Detailed receipt | Expanded the original form and found all 16 hour/minute fields. In print media, the quiz and form controls were hidden as intended for the detailed receipt print view. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-35 — Weekly phase plan and video slots (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed after updating W1–W12 and the media schema. |
+| Local browser | Each phase route returned HTTP 200 at 390 px and 1440 px. Each showed four weeks. Activity counts were 3/2/2/1, 3/3/2/2, and 2/3/2/3. Single-video placeholders numbered 5, 5, and 7; phase 2 also showed two distinct empty series lists in W6. No page errors or horizontal overflow occurred. |
+| Visual review | Reviewed the first week card of each phase and the W6 series card on mobile; activity text, media placeholders, and goals stayed readable. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |
