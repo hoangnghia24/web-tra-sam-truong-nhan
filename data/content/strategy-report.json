@@ -35,10 +35,9 @@
     { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh giá gay gắt", "khủng hoảng niềm tin nguồn gốc sâm trên mạng"] }
   ],
   "tows": [
-    { "key": "S-O", "title": "Khai thác thế mạnh", "body": "Phủ sóng video ngắn, KOC, livestream đẩy mạnh kênh số" },
-    { "key": "W-O", "title": "Minh bạch trước lời hứa", "body": "Truyền thông \"Proof before promise\" (Minh bạch nguồn gốc, công thức)" },
-    { "key": "S-T", "title": "Chứng minh trước lời hứa", "body": "Ưu tiên nguồn gốc, thông tin nhãn và hướng dẫn pha thay cho tuyên bố lợi ích chưa được kiểm chứng" },
-    { "key": "W-T", "title": "Nghi thức dùng trà", "body": "Hướng dẫn nghi thức hãm trà 7 phút đúng chuẩn để cảm nhận giá trị tương ứng chi phí" }
+    { "key": "S-O", "title": "Tận dụng", "body": "Phủ sóng video ngắn, KOC, livestream đẩy mạnh kênh số." },
+    { "key": "W-O", "title": "Khắc phục", "body": "Truyền thông \"Proof before promise\" (Minh bạch nguồn gốc, công thức)." },
+    { "key": "W-T", "title": "Phòng ngừa", "body": "Hướng dẫn nghi thức hãm trà 7 phút đúng chuẩn để cảm nhận giá trị tương ứng chi phí." }
   ],
   "sevenPs": [
     { "key": "Product", "title": "Sản phẩm", "body": "Trà túi lọc hộp 30 g (15 túi × 2 g), pha với khoảng 300 ml nước nóng trong 5–7 phút. Bảy thành phần gồm: Táo đỏ 25%, Lá đinh lăng 17%, Đẳng sâm 15%, Cam thảo 15%, Kỷ tử 15%, Nhân sâm tươi 10% và Lá Sâm Ngọc Linh 3%. Ý tưởng bán chéo sang Dịch chiết Sâm Ngọc Linh thuộc kế hoạch." },

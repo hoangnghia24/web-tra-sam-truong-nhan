@@ -75,7 +75,7 @@ export const strategyReportSchema = z.object({
   brandRole: z.array(strategyEntry).length(3),
   market: z.array(strategyEntry),
   swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),
-  tows: z.array(z.object({ key: z.enum(['SO', 'WO', 'ST', 'WT', 'S-O', 'W-O', 'S-T', 'W-T']), title: safeText(100), body: safeText(500) })).length(4),
+  tows: z.array(z.object({ key: z.enum(['S-O', 'W-O', 'W-T']), title: safeText(100), body: safeText(500) })).length(3),
   sevenPs: z.array(z.object({ key: safeText(50), title: safeText(100), body: safeText(1200) })).length(7),
   journey: z.array(z.object({ step: safeText(100), touchpoint: safeText(200) })).length(5),
   receiptConcept: z.array(strategyEntry).length(4),

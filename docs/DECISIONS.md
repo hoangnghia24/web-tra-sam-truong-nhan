@@ -183,3 +183,9 @@
 - Remove only `highlightHeading` from the strategy JSON and UI. Keep the three `highlight` lines, with a non-visible accessible label for the aside.
 - The in-progress schema edit removed both fields, but the component still read both, causing TypeScript property errors. Restore the `highlight` array in the schema and remove the stale `highlightHeading` references.
 - Continue local-only verification and preserve the user's unrelated campaign and strategy-page edits.
+
+## CP-28 TOWS copy and layout (2026-11-06)
+
+- Use the user's three requested entries in S-O, W-O, W-T order. Remove S-T entirely from the strategy report and require exactly three entries in the schema.
+- Present each key and parenthesized title on one heading line, followed by the requested sentence. Change the desktop grid to three columns and retain responsive stacking.
+- Keep unrelated working-tree edits in campaign, strategy report, strategy page, and positioning component separate from this checkpoint. Verify locally and leave production to the user.

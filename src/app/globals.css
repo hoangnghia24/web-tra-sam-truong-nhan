@@ -495,10 +495,10 @@ img { display: block; max-width: 100%; }
 .swot-detail ul { padding-left: 1.3rem; font-family: var(--type-display); font-size: 1.25rem; line-height: 1.4; }
 .swot-detail li + li { margin-top: .8rem; }
 .swot-detail small { color: var(--text-secondary); }
-.tows-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 3rem; }
+.tows-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
 .tows-grid article { padding: 1.6rem; border-top: 1px solid var(--brand-gold-light); background: #1b3828; }
-.tows-grid article > span { display: flex; align-items: center; justify-content: space-between; color: var(--brand-gold-light); font-family: var(--type-display); font-size: 1.25rem; }
-.tows-grid h3 { margin: 1.8rem 0 .6rem; }
+.tows-grid h3 { display: flex; align-items: start; justify-content: space-between; gap: .8rem; margin: 0 0 .8rem; }
+.tows-grid h3 svg { flex-shrink: 0; color: var(--brand-gold-light); }
 .tows-grid p { margin-bottom: 0; color: #ccd9c8; }
 .report-swot .report-disclosure, .report-phases .report-disclosure { color: #b9cdb8; }
 .report-sevenps { background: var(--brand-ivory); }

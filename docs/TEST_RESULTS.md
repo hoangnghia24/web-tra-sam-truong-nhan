@@ -320,3 +320,11 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Fix and code gates | Removed the JSON/UI heading, retained the three highlight lines, and restored the typed `highlight` array. `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
 | Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 with all three highlight lines, no “HIGHLIGHT BOX” label, no horizontal overflow, and no page errors. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-28 — TOWS revision (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed with exactly three TOWS records. |
+| Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 and displayed S-O (Tận dụng), W-O (Khắc phục), and W-T (Phòng ngừa) with the requested sentences. S-T was absent; no page errors or horizontal overflow occurred. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |
