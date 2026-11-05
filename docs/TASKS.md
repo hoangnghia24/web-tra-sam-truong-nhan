@@ -27,6 +27,7 @@
 | DONE | CP-19: add the supplied four-step guide video to `/thu-thach`, update the written steps, and verify playback and responsive layout. |
 | DONE | CP-20: fix read-only runtime JSON reads so the Vercel challenge page and public UGC GET can render; verify the live video. |
 | DONE | CP-21: remove the unavailable challenge rules-file link and every visitor-facing reference to it; update the homepage challenge CTA and steps. |
+| DONE | CP-22: display all seven formula percentages in the product ingredient selector and add the supplied Lá Sâm Ngọc Linh phrase. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

@@ -147,3 +147,8 @@
 
 - The user confirmed that there is currently no rules file for the video-led challenge page. Remove the Drive rules link and all page copy that asks visitors to consult that file.
 - Keep the four actionable steps and video. Do not supply or infer a required hashtag. Update the homepage challenge steps to match the video-led flow and change its CTA to “Xem hướng dẫn và tham gia”.
+
+## CP-22 ingredient list percentages (2026-11-06)
+
+- The seven percentages already exist in `data/content/ingredients.json` and appear in the selected ingredient detail. Show them next to each ingredient name in the selector so visitors can see the complete formula without selecting every image.
+- Add the user's “Quốc bảo Nam Trà My” wording after Lá Sâm Ngọc Linh in that selector. Treat it as user-provided presentation copy, not independent product or medical verification. Retain the existing label-verification note.

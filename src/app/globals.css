@@ -263,7 +263,8 @@ img { display: block; max-width: 100%; }
 .ingredient-list button { display: flex; align-items: center; gap: 1.5rem; min-height: 62px; border: 0; border-bottom: 1px solid #d7dece; padding: .7rem 1rem; background: transparent; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.35rem; text-align: left; cursor: pointer; }
 .ingredient-list button:hover, .ingredient-list button[aria-selected="true"] { background: #e8eddf; }
 .ingredient-list button[aria-selected="true"] { border-left: 3px solid var(--brand-gold); }
-.ingredient-list button span { color: var(--brand-tea); font-family: var(--type-body); font-size: .76rem; font-weight: 700; }
+.ingredient-list button .ingredient-index { flex: none; color: var(--brand-tea); font-family: var(--type-body); font-size: .76rem; font-weight: 700; }
+.ingredient-list button .ingredient-name { min-width: 0; }
 .ingredient-detail { position: relative; display: flex; align-items: flex-end; min-height: 460px; overflow: hidden; background: var(--brand-forest); color: var(--brand-ivory); }
 .ingredient-detail::after { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(8,28,17,.08) 5%, rgba(8,28,17,.2) 38%, rgba(8,28,17,.84) 70%, rgba(8,28,17,.98) 100%); pointer-events: none; }
 .ingredient-photo { object-fit: cover; }

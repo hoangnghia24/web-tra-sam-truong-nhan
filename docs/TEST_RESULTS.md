@@ -261,3 +261,10 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | At 390 px, the challenge page retained one video and four steps, had no old Drive link or rules block, and fit the viewport. The homepage CTA read “Xem hướng dẫn và tham gia”. |
 | Live deployment | Vercel reported successful deployment of `3af1a57`. The public `/thu-thach` HTML contained the video, no old Drive link, and no streamed error digest. |
 | Live browser | At 390 px, the challenge page showed one video and four steps, no rules-file phrase or Drive link, and no horizontal overflow. The homepage CTA matched the new wording. |
+
+## CP-22 — Ingredient percentages in product list (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Data and code gates | The seven requested percentages matched existing `ingredients.json` values. `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Product browser check | Headless Chrome at 390 px and 1440 px showed all seven ingredient names with their percentages; the final label read “Lá Sâm Ngọc Linh (3%) – Quốc bảo Nam Trà My”. Document width equaled viewport width at both sizes. |
