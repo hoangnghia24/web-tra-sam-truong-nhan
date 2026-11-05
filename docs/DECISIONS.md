@@ -263,3 +263,9 @@
 - Make the mobile menu a rounded floating panel under the sticky header. Preserve all existing navigation links and menu behavior.
 - In the strategy report, show only phase number, week range, and title on each linked card. The existing `/giai-doan/[slug]` pages retain messages, activities, goals, and video slots.
 - Preserve unrelated working-tree edits and verify locally without deploying.
+
+## CP-41 receipt summary and scroll depth (2026-11-06)
+
+- Remove the footer's negative top margin because it covered the last interactive control on `/hoa-don-cho-doi`. Keep the rounded top corners.
+- Use a small scale and brightness change as a section leaves the viewport; the following rounded section retains its upward overlap. Gate the scroll animation on browser support and the user's no-preference motion setting.
+- Preserve unrelated working-tree edits, especially active receipt and strategy work. Verify local interaction and layout without deploying.

@@ -1133,7 +1133,6 @@ img { display: block; max-width: 100%; }
 
   .site-footer {
     position: relative;
-    margin-top: -2.5rem;
     border-radius: 2.5rem 2.5rem 0 0;
   }
 
@@ -1169,12 +1168,30 @@ img { display: block; max-width: 100%; }
 }
 
 @media screen and (max-width: 640px) {
-  main > section + section, .site-footer {
+  main > section + section {
     margin-top: -1.5rem;
     border-radius: 1.5rem 1.5rem 0 0;
   }
 
+  .site-footer { border-radius: 1.5rem 1.5rem 0 0; }
+
   .home-phase-card, .phase-week-card, .challenge-steps li {
     border-radius: 20px;
+  }
+}
+
+@keyframes section-recede {
+  from { transform: scale(1); filter: brightness(1); }
+  to { transform: scale(.965); filter: brightness(.94); }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    main > section {
+      transform-origin: center top;
+      animation: section-recede linear both;
+      animation-timeline: view(block);
+      animation-range: exit 0% exit 100%;
+    }
   }
 }

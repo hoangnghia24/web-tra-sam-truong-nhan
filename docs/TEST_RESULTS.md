@@ -434,3 +434,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | At 390 px and 1440 px, the header stayed at viewport top after scrolling. The mobile menu opened, three compact phase cards rendered without child details, and clicking phase one reached `/giai-doan/bam-hoan`. No page errors or horizontal overflow occurred. |
 | Visual review | Reviewed sticky header and strategy phase cards at both widths. Header corners and cards remained readable, and adjacent report sections did not overlap card content. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-41 — Receipt summary and scroll depth (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Receipt page | At 390 px and 1440 px, `/hoa-don-cho-doi` returned HTTP 200. The detailed receipt summary was fully visible, its center was the topmost clickable element, and the footer started below it. Clicking opened the detailed receipt form. No page errors or horizontal overflow occurred. |
+| Scroll behavior | On `/`, outgoing section scale progressed from about 0.995 to 0.965 as it left the viewport in local Chrome. A homepage phase link remained clickable. With reduced motion enabled, the scroll animation was absent. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |
