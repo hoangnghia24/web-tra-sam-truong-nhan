@@ -311,3 +311,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | Headless Chrome at 390 px and 1440 px loaded `/chien-luoc` and `/san-pham` with HTTP 200, no horizontal overflow, and no page errors. The product summary rendered on both sizes. |
 | Visual review | Reviewed strategy positioning block screenshots at 390 px and 1440 px. Headings, copy, cards, and highlight were readable. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-27 — Highlight label removal and project repair (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Reproduced failure | `npm run typecheck` failed with three missing-property errors for `highlightHeading` and `highlight` in `PositioningDraft.tsx`, plus an implicit-any error for `line`. The schema had removed both fields while the component still used them. |
+| Fix and code gates | Removed the JSON/UI heading, retained the three highlight lines, and restored the typed `highlight` array. `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 with all three highlight lines, no “HIGHLIGHT BOX” label, no horizontal overflow, and no page errors. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

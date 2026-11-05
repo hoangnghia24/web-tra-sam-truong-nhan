@@ -177,3 +177,9 @@
 - Preserve the user's supplied wording verbatim in a structured `positioningDraft` object in `strategy-report.json` and display it after the persona in the strategy overview. Retain the existing three brand-role cards and the user's unrelated working-tree edits.
 - Label this block as proposed strategic copy. Its health-effect and price statements are not treated as verified product facts. Add only a separate, factual convenience/ingredient/7-minute summary on the product page.
 - Verify locally. The user's prior instruction to review and update production personally still applies; do not push or inspect production.
+
+## CP-27 highlight label and type repair (2026-11-06)
+
+- Remove only `highlightHeading` from the strategy JSON and UI. Keep the three `highlight` lines, with a non-visible accessible label for the aside.
+- The in-progress schema edit removed both fields, but the component still read both, causing TypeScript property errors. Restore the `highlight` array in the schema and remove the stale `highlightHeading` references.
+- Continue local-only verification and preserve the user's unrelated campaign and strategy-page edits.

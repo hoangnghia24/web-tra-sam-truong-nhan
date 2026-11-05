@@ -70,7 +70,7 @@ export const strategyReportSchema = z.object({
     pillars: z.array(z.object({ label: safeText(100), body: safeText(350) })).length(3),
     brandRoleHeading: safeText(120),
     roles: z.array(z.object({ label: safeText(120), body: safeText(450) })).length(2),
-    highlightHeading: safeText(100), highlight: z.array(safeText(100)).length(3),
+    highlight: z.array(safeText(100)).length(3),
   }),
   brandRole: z.array(strategyEntry).length(3),
   market: z.array(strategyEntry),

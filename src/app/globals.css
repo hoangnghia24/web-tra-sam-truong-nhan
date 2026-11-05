@@ -472,9 +472,8 @@ img { display: block; max-width: 100%; }
 .positioning-roles article { padding: 1.7rem; border-top: 3px solid var(--brand-gold); background: var(--brand-ivory); }
 .positioning-roles article strong { color: var(--brand-forest); font-size: .88rem; }
 .positioning-roles article p { margin: .8rem 0 0; color: var(--text-secondary); font-size: .9rem; }
-.positioning-highlight { display: flex; justify-content: space-between; align-items: center; gap: 2rem; margin-top: 2.5rem; padding: 1.5rem 2rem; background: #e7d4a8; color: var(--brand-dark); }
-.positioning-highlight > span { flex-shrink: 0; font-size: .75rem; font-weight: 800; letter-spacing: .08em; }
-.positioning-highlight p { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: .35rem 1.2rem; margin: 0; }
+.positioning-highlight { display: flex; justify-content: center; align-items: center; margin-top: 2.5rem; padding: 1.5rem 2rem; background: #e7d4a8; color: var(--brand-dark); }
+.positioning-highlight p { display: flex; justify-content: center; flex-wrap: wrap; gap: .35rem 1.2rem; margin: 0; }
 .positioning-highlight strong { font-family: var(--type-display); font-size: clamp(1.1rem, 2vw, 1.45rem); font-weight: 600; }
 .report-market { background: #ececde; }
 .report-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.3rem; margin: 3rem 0 1.5rem; }

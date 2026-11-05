@@ -32,6 +32,7 @@
 | DONE | CP-24: removed visitor-facing source citations across the site; local checks and live deployment verification passed. |
 | DONE | CP-25: added three homepage phase cards and dedicated campaign chapter pages with video slots; verified locally, with production review and deployment reserved for the user. |
 | DONE | CP-26: added the user's positioning, USP, brand roles, and highlight copy verbatim to the strategy page, plus a separate product summary; verified locally without deployment. |
+| DONE | CP-27: removed the highlight label and fixed the schema/component mismatch that broke TypeScript; verified locally without deployment. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

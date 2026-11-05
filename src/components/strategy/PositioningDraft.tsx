@@ -27,8 +27,7 @@ export function PositioningDraft({ content }: { content: PositioningContent }) {
       <div>{content.roles.map((item) => <article key={item.label}><strong>{item.label}</strong><p>{item.body}</p></article>)}</div>
     </div>
 
-    <aside className="positioning-highlight" aria-label={content.highlightHeading}>
-      <span>{content.highlightHeading}</span>
+    <aside className="positioning-highlight" aria-label="Thông điệp nổi bật">
       <p>{content.highlight.map((line) => <strong key={line}>{line}</strong>)}</p>
     </aside>
   </section>;
