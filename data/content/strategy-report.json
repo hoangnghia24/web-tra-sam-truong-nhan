@@ -1,17 +1,16 @@
 {
-  "sourceNote": "Tóm lược từ tài liệu kế hoạch Digital Marketing 38 trang và bản Word nội dung mới. Định vị, ý tưởng microsite, ngân sách, hoạt động và KPI là kế hoạch, chưa phải kết quả thực tế.",
   "brandRole": [
     { "title": "Tiện lợi mỗi ngày", "body": "Trà túi lọc dễ pha, được đề xuất như một cách tạo khoảng dừng 7 phút cho người bận rộn. Đây là định vị thương hiệu trong kế hoạch, không phải lời khẳng định hiệu quả sức khỏe." },
-    { "title": "Công thức được nêu rõ", "body": "File Word ghi 3% lá Sâm Ngọc Linh cùng sáu thành phần khác. Tỷ lệ cần đối chiếu nhãn chính thức; thành phần không tự chứng minh công dụng thanh lọc, giải độc hoặc phục hồi." },
+    { "title": "Công thức được nêu rõ", "body": "Công thức gồm bảy thành phần, trong đó lá Sâm Ngọc Linh chiếm 3%. Thành phần không tự chứng minh công dụng thanh lọc, giải độc hoặc phục hồi." },
     { "title": "Lời nhắc dành cho mình", "body": "Vai trò cảm xúc của thương hiệu là nhắc người xem cho phép bản thân nghỉ một lúc mà không thấy áy náy. Giá đề xuất 390.000 đồng/hộp 15 túi, khoảng 26.000 đồng/túi, cần xác nhận trước khi mua." }
   ],
   "market": [
-    { "title": "Trà thảo mộc tiện lợi", "body": "Tài liệu nhận định nhu cầu sản phẩm dễ pha, phù hợp nhịp sống bận rộn là một cơ hội cho sản phẩm.", "page": 13 },
+    { "title": "Trà thảo mộc tiện lợi", "body": "Trà túi lọc dễ pha, phù hợp với người muốn dành một khoảng dừng ngắn trong ngày bận rộn.", "page": 13 },
     { "title": "Thương mại xã hội", "body": "TikTok Shop, KOC và livestream được đề xuất là những điểm chạm để tiếp cận và giải thích sản phẩm.", "page": 14 },
     { "title": "Rào cản niềm tin", "body": "Giá ở phân khúc cao và thắc mắc về tỷ lệ 3% lá Sâm Ngọc Linh đòi hỏi thông tin minh bạch trước lời hứa quảng cáo.", "page": 12 }
   ],
   "swot": [
-    { "key": "S", "title": "Điểm mạnh", "items": ["Di sản hơn 20 năm của Trường Sinh Group theo thông tin doanh nghiệp", "Công thức bảy thành phần được nêu trong file chỉnh sửa", "Túi lọc tiện sử dụng; hồ sơ pháp lý cần đối chiếu"] },
+    { "key": "S", "title": "Điểm mạnh", "items": ["Hoạt động từ năm 2004 trong lĩnh vực dược liệu thiên nhiên", "Công thức bảy thành phần", "Túi lọc tiện sử dụng"] },
     { "key": "W", "title": "Điểm yếu", "items": ["Mức giá kế hoạch 390.000 đồng/hộp cao hơn trà phổ thông", "Định kiến sâm chỉ dành cho dịp đặc biệt hoặc người lớn tuổi", "Thương hiệu còn mới với một bộ phận người dùng"] },
     { "key": "O", "title": "Cơ hội", "items": ["Sự phát triển của thương mại xã hội", "Quan tâm đến việc chăm sóc bản thân chủ động"] },
     { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh về giá", "Lo ngại về nguồn gốc sâm trên mạng", "Giới hạn pháp lý đối với tuyên bố công dụng"] }
@@ -20,16 +19,16 @@
     { "key": "SO", "title": "Khai thác thế mạnh", "body": "Phủ sóng video ngắn, KOC và livestream để giới thiệu sản phẩm, thành phần và hình thức túi lọc tiện lợi." },
     { "key": "WO", "title": "Minh bạch trước lời hứa", "body": "Giải thích nguồn gốc, công thức và hồ sơ sản phẩm trước khi đưa ra lời hứa về giá trị sử dụng." },
     { "key": "ST", "title": "Chứng minh trước lời hứa", "body": "Ưu tiên nguồn gốc, thông tin nhãn và hướng dẫn pha thay cho tuyên bố lợi ích chưa được kiểm chứng." },
-    { "key": "WT", "title": "Nghi thức dùng trà", "body": "Hướng dẫn pha một túi trà với khoảng 300 ml nước nóng, chờ 5–7 phút theo tài liệu; đối chiếu hướng dẫn trên bao bì thực tế." }
+    { "key": "WT", "title": "Nghi thức dùng trà", "body": "Hướng dẫn pha một túi trà với khoảng 300 ml nước nóng và chờ 5–7 phút." }
   ],
   "sevenPs": [
-    { "key": "Product", "title": "Sản phẩm", "body": "Trà túi lọc hộp 30 g (15 túi × 2 g), pha với khoảng 300 ml nước nóng trong 5–7 phút. File chỉnh sửa nêu bảy thành phần: Táo đỏ 25%, Lá đinh lăng 17%, Đẳng sâm 15%, Cam thảo 15%, Kỷ tử 15%, Nhân sâm tươi 10% và Lá Sâm Ngọc Linh 3%. Định hướng là sản phẩm dễ tiếp cận trong danh mục; ý tưởng bán chéo sang Dịch chiết Sâm Ngọc Linh thuộc kế hoạch." },
-    { "key": "Price", "title": "Giá", "body": "File chỉnh sửa đề xuất giá niêm yết 390.000 đồng/hộp, tương đương 26.000 đồng/túi. Đây là giá trong kế hoạch, chưa xác nhận giá bán hiện hành. Định vị premium; duy trì giá trị thương hiệu, tránh giảm giá sâu. Voucher khách mới, ưu đãi livestream, freeship và combo là các đề xuất kích thích dùng thử." },
+    { "key": "Product", "title": "Sản phẩm", "body": "Trà túi lọc hộp 30 g (15 túi × 2 g), pha với khoảng 300 ml nước nóng trong 5–7 phút. Bảy thành phần gồm: Táo đỏ 25%, Lá đinh lăng 17%, Đẳng sâm 15%, Cam thảo 15%, Kỷ tử 15%, Nhân sâm tươi 10% và Lá Sâm Ngọc Linh 3%. Ý tưởng bán chéo sang Dịch chiết Sâm Ngọc Linh thuộc kế hoạch." },
+    { "key": "Price", "title": "Giá", "body": "Giá dự kiến 390.000 đồng/hộp, tương đương 26.000 đồng/túi; chưa phải giá bán hiện hành. Định vị premium; duy trì giá trị thương hiệu, tránh giảm giá sâu. Voucher khách mới, ưu đãi livestream, freeship và combo là các đề xuất kích thích dùng thử." },
     { "key": "Place", "title": "Phân phối", "body": "Kế hoạch lấy TikTok Shop làm kênh chủ lực, Shopee bổ trợ; website cung cấp thành phần, hướng dẫn và hồ sơ sản phẩm. Nhà thuốc, cửa hàng và điểm bán phù hợp là kênh offline dự kiến. Chưa có URL mua hàng chính thức được xác minh." },
     { "key": "Promotion", "title": "Xúc tiến", "body": "Đề xuất TikTok Ads, Facebook Ads, Reels Ads; nội dung giải thích sản phẩm, thành phần và cách dùng; KOC/creator đánh giá thực tế; voucher, combo, freeship, livestream và UGC. Nội dung tài trợ cần được công bố và mọi tuyên bố công dụng phải được kiểm duyệt." },
     { "key": "People", "title": "Con người", "body": "KOC/creator chuyển tải thông tin dễ hiểu; livestream host giải đáp về giá và thành phần; đội tư vấn nắm rõ công thức, quy cách và cách pha. Chăm sóc khách hàng trước, trong và sau mua cần chính xác, không phóng đại công dụng." },
     { "key": "Process", "title": "Quy trình", "body": "Tiếp cận qua TikTok, Facebook và KOC; tìm hiểu thành phần, giá và cách dùng trên website; chuyển đổi qua gian hàng được xác minh; kiểm tra bao bì khi nhận; hỗ trợ sau mua qua Zalo OA; khuyến khích đánh giá thật và mua lại khi có nhu cầu." },
-    { "key": "Physical evidence", "title": "Bằng chứng hữu hình", "body": "Bao bì, bảng thành phần và tỷ lệ 3% lá Sâm Ngọc Linh cần được đối chiếu. Hình vùng nguyên liệu, nhà máy GMP, hồ sơ pháp lý và số tự công bố 03/TRUONGNHAN/2026 được nêu trong file chỉnh sửa nhưng cần kiểm tra tài liệu xác nhận trước khi công bố như bằng chứng. Website, mã QR và đánh giá thật là các điểm chạm số dự kiến." }
+    { "key": "Physical evidence", "title": "Bằng chứng hữu hình", "body": "Bao bì, bảng thành phần, thông tin nhãn, mã QR và đánh giá thật là các điểm chạm giúp khách hàng tìm hiểu sản phẩm. Các hình ảnh vùng nguyên liệu và quy trình sản xuất chỉ nên công bố khi có tư liệu phù hợp." }
   ],
   "journey": [
     { "step": "Khám phá", "touchpoint": "Video ngắn, nội dung đồng cảm" },
@@ -39,22 +38,22 @@
     { "step": "Duy trì", "touchpoint": "7 phút cho mình, lời nhắc và cộng đồng" }
   ],
   "receiptConcept": [
-    { "title": "01 · Gợi mở", "body": "Bản Word đề xuất màn vào với đồng hồ 7:00, ô nhập tên và lời mời nhìn lại thời gian dành cho bản thân. Đây là ý tưởng cho phiên bản microsite tiếp theo." },
+    { "title": "01 · Gợi mở", "body": "Ý tưởng mở rộng gồm màn vào với đồng hồ 7:00, ô nhập tên và lời mời nhìn lại thời gian dành cho bản thân." },
     { "title": "02 · Câu hỏi nhanh", "body": "Ba câu hỏi ngắn về thời gian họp hoặc chạy hạn, những lần hẹn lại việc cho mình và lần nghỉ 7 phút gần nhất được đề xuất để cá nhân hóa trải nghiệm." },
     { "title": "03 · Hóa đơn cá nhân", "body": "Hóa đơn và ảnh story khổ dọc dự kiến được tính từ câu trả lời thật của từng người. Không mặc định kết quả 0 phút hoặc gán một khoản ‘nợ’ không có dữ liệu." },
-    { "title": "04 · Tìm hiểu sản phẩm", "body": "Điểm chạm cuối giới thiệu tỷ lệ 3% lá Sâm Ngọc Linh và thông tin sản phẩm đã đối chiếu. Voucher và liên kết mua chỉ hiển thị khi chương trình và gian hàng chính thức được xác nhận." }
+    { "title": "04 · Tìm hiểu sản phẩm", "body": "Điểm chạm cuối giới thiệu tỷ lệ 3% lá Sâm Ngọc Linh và thông tin sản phẩm. Voucher và liên kết mua chỉ hiển thị khi chương trình và gian hàng chính thức được xác nhận." }
   ],
   "channelRoles": [
     { "channel": "Thu hút", "role": "TikTok Ads và Facebook Reels dẫn người xem về microsite hoặc gian hàng được xác minh." },
     { "channel": "Tạo niềm tin", "role": "KOC và UGC chia sẻ trải nghiệm thực tế, có công bố hợp tác khi phù hợp." },
-    { "channel": "Minh bạch", "role": "Microsite trình bày thành phần, hồ sơ công bố và FAQ sau khi đối chiếu." },
+    { "channel": "Minh bạch", "role": "Microsite trình bày thành phần, thông tin sản phẩm và FAQ." },
     { "channel": "Chốt đơn", "role": "TikTok Shop là kênh bán hàng chủ lực; Shopee hỗ trợ người chủ động tìm mua." },
     { "channel": "Bổ trợ", "role": "Website và Facebook cung cấp thông tin và hướng dẫn đến kênh phù hợp." },
     { "channel": "Giữ chân", "role": "Zalo OA dự kiến hỗ trợ chăm sóc sau mua và nhắc khi có nhu cầu mua lại." }
   ],
   "pillars": [
     { "title": "Chạm cảm xúc", "body": "Video về cách mỗi người dành thời gian cho bản thân", "page": 23 },
-    { "title": "Minh bạch", "body": "Thành phần, nguồn gốc và cách pha có thể đối chiếu", "page": 23 },
+    { "title": "Minh bạch", "body": "Thành phần, nguồn gốc và cách pha được trình bày rõ ràng", "page": 23 },
     { "title": "Hành động", "body": "KOC review, video mở hộp, phản hồi thực tế và livestream", "page": 23 },
     { "title": "Lan tỏa", "body": "Câu chuyện người tham gia và lời nhắc quan tâm", "page": 23 }
   ],
@@ -77,11 +76,11 @@
     { "title": "Cộng đồng và giữ chân", "metrics": "UGC hợp lệ, lượt dùng hashtag, NPS, tỷ lệ Zalo OA", "cadence": "Cuối mỗi giai đoạn", "sources": "TikTok Analytics, Zalo OA" }
   ],
   "triggerRules": [
-    { "title": "Phát ngôn KOC gây tranh cãi", "signal": "Rủi ro trung bình, tác động cao theo bản Word", "response": "Đề xuất duyệt nội dung trước đăng; khi có sự cố, tạm dừng nội dung, yêu cầu đính chính và rà soát hợp tác." },
-    { "title": "Thông tin công dụng gây hiểu nhầm", "signal": "Rủi ro thấp, tác động rất cao theo bản Word", "response": "Chỉ dùng thông tin đã được xác nhận trên nhãn và hồ sơ quảng cáo. Nếu có sai lệch, đính chính trên kênh đã đăng và sửa mô tả sản phẩm." },
+    { "title": "Phát ngôn KOC gây tranh cãi", "signal": "Rủi ro trung bình, tác động cao", "response": "Đề xuất duyệt nội dung trước đăng; khi có sự cố, tạm dừng nội dung, yêu cầu đính chính và rà soát hợp tác." },
+    { "title": "Thông tin công dụng gây hiểu nhầm", "signal": "Rủi ro thấp, tác động rất cao", "response": "Chỉ dùng thông tin đã được xác nhận trên nhãn và hồ sơ quảng cáo. Nếu có sai lệch, đính chính trên kênh đã đăng và sửa mô tả sản phẩm." },
     { "title": "CVR microsite dưới 15%", "signal": "Thấp hơn mục tiêu kế hoạch ít nhất 18%", "response": "Với phiên bản quiz đề xuất, xem xét rút ba câu hỏi còn hai và thử ưu đãi 10% sau khi chương trình được phê duyệt. Trải nghiệm hóa đơn hiện tại chưa dùng quiz hay ưu đãi này." },
     { "title": "UGC dưới 100 video cuối tuần 6", "signal": "So với mục tiêu 250 bài hợp lệ", "response": "Kế hoạch đề xuất dùng 20% quỹ dự phòng cho 10 micro KOC và quà cho 50 bài hợp lệ đầu tiên; điều kiện và ngân sách cần xác nhận trước khi công bố." },
-    { "title": "ROAS dưới 2,5× ở tuần 7", "signal": "Bản Word ghi ngưỡng ứng phó theo lần nhưng KPI mục tiêu lại ghi 3,5%", "response": "Kế hoạch đề xuất giảm 30% ngân sách nhóm quảng cáo rộng và ưu tiên tiếp thị lại. Cần xác nhận cùng một đơn vị đo ROAS trước khi áp dụng ngưỡng." },
+    { "title": "ROAS dưới 2,5× ở tuần 7", "signal": "Ngưỡng ứng phó dùng đơn vị lần, còn KPI mục tiêu hiển thị 3,5%", "response": "Kế hoạch đề xuất giảm 30% ngân sách nhóm quảng cáo rộng và ưu tiên tiếp thị lại. Cần xác nhận cùng một đơn vị đo ROAS trước khi áp dụng ngưỡng." },
     { "title": "Thiếu hàng hoặc giao trễ trên 5%", "signal": "Đơn hàng vượt dự báo hoặc tỷ lệ giao trễ tăng", "response": "Tạm giảm quảng cáo, cập nhật trạng thái đơn và cân nhắc chuyển sang gian hàng dự phòng đã xác minh. Tin nhắn bù đắp chỉ gửi khi chính sách được duyệt." }
   ],
   "risks": [

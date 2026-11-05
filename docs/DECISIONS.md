@@ -158,3 +158,9 @@
 - Replace only the “Góc nhìn sản phẩm” gallery with a click-started sequence: supplied box and sachet photo, seven existing ingredient photos converging into a drawn tea bag, animated brewing using the existing water and steeping values, and a supplied finished-tea photo.
 - Use `anhweb` photos `1793720638162_...jpg` and `1793720638189_...jpg` under stable public paths; keep the originals untouched. The animation is a visual explanation of the campaign formula and brewing directions, not evidence of the manufacturing process or product effects.
 - Provide a visible start, skip, and replay control. Keep stage text readable, support reduced motion, and preserve the user's other uncommitted content edits.
+
+## CP-24 visitor-facing source citation removal (2026-11-06)
+
+- Interpret the request as removing citations and source-attribution copy shown to visitors: file/Word labels, document page numbers, “Nguồn:” notes, and repeated “theo tài liệu” language on home, product, company, and strategy pages.
+- Keep internal provenance in repository documentation and non-rendered JSON metadata. Keep budget, KPI, and activity copy marked as planned or proposed; do not present unverified medical, legal, or price statements as established facts.
+- Incorporate the user's in-progress removals of source-note fields, but leave unrelated uncommitted content and styling edits out of the commit. Accept both existing and in-progress TOWS key spellings so local JSON validation remains usable.

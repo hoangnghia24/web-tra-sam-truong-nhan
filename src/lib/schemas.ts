@@ -10,7 +10,7 @@ export const brandSchema = z.object({
 });
 
 export const companySchema = z.object({
-  name: safeText(100), overview: safeText(900), connection: safeText(700), verificationNote: safeText(350),
+  name: safeText(100), overview: safeText(900), connection: safeText(700),
   facts: z.array(z.object({ label: safeText(100), detail: safeText(350) })).length(3),
 });
 
@@ -35,8 +35,7 @@ export const ingredientsSchema = z.object({
     id: safeText(60), name: safeText(100), description: safeText(350),
     percent: z.number().min(0).max(100).nullable(),
     image: z.string().regex(/^\/images\/ingredients\/[a-z0-9-]+\.jpg$/).optional(),
-  })).length(7),
-  verificationNote: safeText(250),
+  })).length(7)
 });
 
 export const campaignSchema = z.object({
@@ -61,11 +60,10 @@ export const strategySchema = z.object({
 
 const strategyEntry = z.object({ title: safeText(120), body: safeText(500), page: z.number().int().positive().optional() });
 export const strategyReportSchema = z.object({
-  sourceNote: safeText(350),
   brandRole: z.array(strategyEntry).length(3),
   market: z.array(strategyEntry),
   swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),
-  tows: z.array(z.object({ key: z.enum(['SO', 'WO', 'ST', 'WT']), title: safeText(100), body: safeText(500) })).length(4),
+  tows: z.array(z.object({ key: z.enum(['SO', 'WO', 'ST', 'WT', 'S-O', 'W-O', 'S-T', 'W-T']), title: safeText(100), body: safeText(500) })).length(4),
   sevenPs: z.array(z.object({ key: safeText(50), title: safeText(100), body: safeText(1200) })).length(7),
   journey: z.array(z.object({ step: safeText(100), touchpoint: safeText(200) })).length(5),
   receiptConcept: z.array(strategyEntry).length(4),

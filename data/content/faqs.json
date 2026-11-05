@@ -1,8 +1,8 @@
 {
   "items": [
-    { "question": "Một hộp có bao nhiêu túi trà?", "answer": "Theo tài liệu chiến dịch, một hộp có 15 túi lọc, mỗi túi 2 g; tổng khối lượng 30 g." },
-    { "question": "Bảy thành phần có tỷ lệ ra sao?", "answer": "File nội dung chỉnh sửa nêu Táo đỏ 25%, Lá đinh lăng 17%, Đẳng sâm 15%, Cam thảo 15%, Kỷ tử 15%, Nhân sâm tươi 10% và Lá Sâm Ngọc Linh 3%. Các tỷ lệ này cần đối chiếu bao bì và hồ sơ chính thức." },
-    { "question": "Pha trà như thế nào?", "answer": "Gợi ý trong tài liệu là pha một túi với khoảng 300 ml nước nóng và chờ 5–7 phút. Ưu tiên hướng dẫn trên bao bì thực tế." },
+    { "question": "Một hộp có bao nhiêu túi trà?", "answer": "Một hộp có 15 túi lọc, mỗi túi 2 g; tổng khối lượng 30 g." },
+    { "question": "Bảy thành phần có tỷ lệ ra sao?", "answer": "Táo đỏ 25%, Lá đinh lăng 17%, Đẳng sâm 15%, Cam thảo 15%, Kỷ tử 15%, Nhân sâm tươi 10% và Lá Sâm Ngọc Linh 3%." },
+    { "question": "Pha trà như thế nào?", "answer": "Pha một túi với khoảng 300 ml nước nóng và chờ 5–7 phút. Ưu tiên hướng dẫn trên bao bì thực tế." },
     { "question": "Trà có thay thế thuốc không?", "answer": "Không. Đây là sản phẩm trà và nội dung trang không đưa ra lời khuyên điều trị." }
   ]
 }

@@ -342,7 +342,6 @@ img { display: block; max-width: 100%; }
 .ingredient-detail h3 { margin: 0 0 1rem; font-family: var(--type-display); font-size: clamp(2rem, 3vw, 3rem); font-weight: 600; line-height: 1.1; }
 .ingredient-copy > p:not(.eyebrow) { max-width: 440px; margin: 0 0 1rem; color: #dce8da; }
 .ingredient-detail .ingredient-measure { color: var(--brand-gold-light) !important; font-size: .82rem; font-weight: 700; }
-.ingredient-verification { grid-column: 1/-1; margin: 0; color: var(--text-secondary); font-size: .8rem; }
 .product-brewing-section { position: relative; overflow: hidden; padding: clamp(5rem, 8vw, 8rem) 0; background: var(--brand-dark); color: var(--brand-ivory); }
 .product-brewing-layout { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; }
 .product-brewing-section h2 em { color: var(--brand-gold-light); font-weight: 400; }
@@ -443,7 +442,7 @@ img { display: block; max-width: 100%; }
 .report-overview-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(3rem, 7vw, 7rem); align-items: center; }
 .report-overview h2 { max-width: 650px; margin: 0 0 1.4rem; font-family: var(--type-display); font-size: var(--text-h2); font-weight: 600; letter-spacing: -.04em; line-height: 1.12; }
 .report-overview h2 em { color: var(--brand-leaf); font-weight: 400; }
-.report-overview-grid > div:first-child > p:last-child, .report-source-note, .report-disclosure { color: var(--text-secondary); font-size: .83rem; }
+.report-overview-grid > div:first-child > p:last-child, .report-disclosure { color: var(--text-secondary); font-size: .83rem; }
 .report-lead { font-family: var(--type-display); font-size: clamp(1.4rem, 2.2vw, 2rem); font-style: italic; line-height: 1.35; }
 .report-bigidea { display: grid; min-height: 320px; align-content: space-between; padding: 2.5rem; background: radial-gradient(circle at 80% 0%, #416948, transparent 55%), var(--brand-forest); color: var(--brand-ivory); }
 .report-bigidea span, .report-bigidea small { color: var(--brand-gold-light); font-size: .76rem; font-weight: 700; letter-spacing: .06em; }
@@ -710,7 +709,6 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 800px) {
   .ingredient-explorer { grid-template-columns: 1fr; }
-  .ingredient-verification { grid-column: 1; }
   .receipt-feature, .pause-feature, .product-feature, .reminder-feature, .team-feature { grid-template-columns: 1fr; }
   .receipt-feature, .product-feature, .team-feature { gap: 3.5rem; }
   .pause-art { order: 2; }

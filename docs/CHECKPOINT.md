@@ -4,8 +4,8 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-23
-Status: DONE
+Current checkpoint: CP-24
+Status: IN_PROGRESS
 Last completed checkpoint: CP-23 (interactive product journey verified on the live product page). CP-23 source was committed as `e96ebe7`. CP-22 source and local verification were committed as `8ba5553`, with its pending-deployment record in `0dce7ad`. CP-21 documentation was committed as `6c08c23` and source as `3af1a57`; CP-20 documentation as `ab9fc6d` and source fix as `a060d8f`; CP-19 as `ed8a39e`; CP-18 as `974d1e5`; CP-17 as `09de756`; CP-16 as `7d7041f`; CP-15 as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
@@ -41,10 +41,11 @@ Last completed checkpoint: CP-23 (interactive product journey verified on the li
 - Completed CP-21 by removing the absent rules-file link and references from the challenge page, updating the homepage challenge entry point, and verifying both live routes.
 - Completed CP-22 by displaying each supplied formula percentage in the product ingredient selector and adding the requested Ngọc Linh phrase; local and live mobile checks passed.
 - Completed CP-23 with a four-scene product journey, supplied photos, animated ingredient gathering and brewing, and start/skip/replay controls. Local and live mobile/desktop checks passed.
+- Implemented CP-24 locally by removing visitor-facing source citations from the home, product, company, and strategy pages while retaining plan/actual labels. Live verification remains pending.
 
 ## Current Task
 
-CP-23 is complete. Vercel deployed the four-scene `/san-pham` journey, and live browser checks passed at 390 px and 1440 px. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
+CP-24 awaits a focused commit, deployment, and live verification. Local JSON validation, lint, typecheck, build, and five-page mobile checks passed. Unrelated user edits remain in the working tree. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
 
 ## Completed Files
 
@@ -123,4 +124,4 @@ CP-23 is complete. Vercel deployed the four-scene `/san-pham` journey, and live 
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-23. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Commit only CP-24 changes, preserve unrelated user edits, then verify the live visitor pages before marking DONE.

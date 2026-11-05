@@ -72,7 +72,7 @@ export default async function HomePage() {
           <div className="product-feature-copy">
             <p className="section-index">03 <span></span> Tinh hoa thảo mộc</p>
             <h2 className="section-title" id="home-product-title">Một tách trà cho <em>nhịp sống hôm nay.</em></h2>
-            <p>{product.name} kết hợp {product.ingredientCount} thành phần trong dạng túi lọc tiện pha. Tài liệu chiến dịch ghi nhận {product.ngocLinhLeafPercent}% lá Sâm Ngọc Linh — một tỷ lệ cần được nói rõ, không phóng đại.</p>
+            <p>{product.name} kết hợp {product.ingredientCount} thành phần trong dạng túi lọc tiện pha, trong đó lá Sâm Ngọc Linh chiếm {product.ngocLinhLeafPercent}% công thức.</p>
             <div className="product-feature-facts"><div><strong>{product.packCount} × {product.gramsPerBag}g</strong><span>Mỗi hộp</span></div><div><strong>{product.brewMinutesMin}–{product.brewMinutesMax} phút</strong><span>Thời gian pha gợi ý</span></div></div>
             <TrackedLink className="editorial-link" href="/san-pham" type="product_clicked">Khám phá sản phẩm <ArrowUpRight size={16} aria-hidden="true" /></TrackedLink>
           </div>

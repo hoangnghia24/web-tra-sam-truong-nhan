@@ -281,3 +281,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Reduced motion | With `prefers-reduced-motion: reduce`, the sequence reached the finished cup, skip worked, and no page errors occurred. |
 | Live deployment | Vercel reported `e96ebe7` successful. The public `/san-pham` page contained the new journey and no old gallery. |
 | Live browser | At 390 px and 1440 px, clicking the start control moved the journey from `package` to `cup`; both supplied photos loaded, document width matched viewport width, and there were no page errors. |
+
+## CP-24 — Remove visitor-facing source citations (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Text audit | Visitor code and content JSON had no remaining “tài liệu”, “file Word”, “file nội dung”, “file chỉnh sửa”, “Nguồn:”, or rendered document-page citations. Internal provenance was retained. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | Headless Chrome at 390 px opened `/`, `/san-pham`, `/ve-du-an`, `/chien-luoc`, and `/thu-thach` with HTTP 200, no visible source-citation phrases, no horizontal overflow, and no page errors. |
+| Live deployment | Pending source commit and Vercel verification. |

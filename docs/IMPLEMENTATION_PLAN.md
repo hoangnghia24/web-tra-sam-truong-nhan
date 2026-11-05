@@ -28,5 +28,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-21 Remove unavailable rules file | Remove the challenge page's rules-file link and related copy, align the homepage entry point with the video guide, then verify the live routes. |
 | CP-22 Ingredient percentages in list | Show the seven existing percentages directly in the product ingredient list, add the user-supplied Ngọc Linh phrase, and verify mobile and desktop layout. |
 | CP-23 Interactive product journey | Replace the static product gallery with a click-started sequence from box and sachets through seven ingredients and brewing to a finished cup. Use supplied photos, provide skip/replay and reduced-motion behavior, then verify locally and live. |
+| CP-24 Remove visitor-facing source citations | Remove file names, page references, and source-attribution notes from visitor pages and their content JSON. Keep planned-versus-actual labels and internal evidence records; verify routes and deployment. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

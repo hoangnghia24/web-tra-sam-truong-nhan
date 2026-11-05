@@ -23,10 +23,9 @@ export function IngredientExplorer({ data }: { data: IngredientData }) {
           <p className="eyebrow">Thành phần {String(selected + 1).padStart(2, '0')} / 07</p>
           <h3>{ingredient.name}</h3>
           <p>{ingredient.description}</p>
-          <p className="ingredient-measure">{ingredient.percent === null ? 'Tỷ lệ: chờ xác minh' : `Tỷ lệ ghi trong tài liệu: ${ingredient.percent}%`}</p>
+          <p className="ingredient-measure">{ingredient.percent === null ? 'Tỷ lệ chưa cập nhật' : `Tỷ lệ: ${ingredient.percent}%`}</p>
         </div>
       </div>
-      <p className="ingredient-verification">{data.verificationNote}</p>
     </div>
   );
 }
