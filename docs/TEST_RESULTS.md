@@ -268,3 +268,4 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | --- | --- |
 | Data and code gates | The seven requested percentages matched existing `ingredients.json` values. `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
 | Product browser check | Headless Chrome at 390 px and 1440 px showed all seven ingredient names with their percentages; the final label read “Lá Sâm Ngọc Linh (3%) – Quốc bảo Nam Trà My”. Document width equaled viewport width at both sizes. |
+| Live deployment | Commit `8ba5553` was pushed to `origin/main`, but GitHub still showed no Vercel status and the public `/san-pham` HTML served the prior ingredient list at the time of this check. Live verification remains pending. |

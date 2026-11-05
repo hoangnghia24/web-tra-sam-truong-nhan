@@ -5,8 +5,8 @@ Project: Truong Nhan Digital Campaign
 ## Current Status
 
 Current checkpoint: CP-22
-Status: DONE
-Last completed checkpoint: CP-22 (ingredient percentages visible in the product list). CP-21 documentation was committed as `6c08c23` and source as `3af1a57`; CP-20 documentation as `ab9fc6d` and source fix as `a060d8f`; CP-19 as `ed8a39e`; CP-18 as `974d1e5`; CP-17 as `09de756`; CP-16 as `7d7041f`; CP-15 as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Status: IN_PROGRESS
+Last completed checkpoint: CP-21 (unavailable rules link removed from live site). CP-22 source and local verification were committed as `8ba5553`, pending live deployment. CP-21 documentation was committed as `6c08c23` and source as `3af1a57`; CP-20 documentation as `ab9fc6d` and source fix as `a060d8f`; CP-19 as `ed8a39e`; CP-18 as `974d1e5`; CP-17 as `09de756`; CP-16 as `7d7041f`; CP-15 as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -39,11 +39,11 @@ Last completed checkpoint: CP-22 (ingredient percentages visible in the product 
 - Completed CP-19 with the supplied four-step video, a poster frame, aligned written instructions, and mobile/desktop playback and layout checks on `/thu-thach`.
 - Completed CP-20 by making runtime JSON reads side-effect free and verifying that the deployed challenge page renders and plays the guide video.
 - Completed CP-21 by removing the absent rules-file link and references from the challenge page, updating the homepage challenge entry point, and verifying both live routes.
-- Completed CP-22 by displaying each supplied formula percentage in the product ingredient selector, adding the requested Ngọc Linh phrase, and checking mobile and desktop layout.
+- Implemented CP-22 source by displaying each supplied formula percentage in the product ingredient selector and adding the requested Ngọc Linh phrase; local mobile and desktop checks passed. Live verification remains pending.
 
 ## Current Task
 
-CP-22 is complete. The product ingredient list now displays all seven formula percentages and the user-supplied Ngọc Linh phrase. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
+CP-22 awaits live verification. Commit `8ba5553` is on `origin/main`, but GitHub has no Vercel status for it yet and the public `/san-pham` route still serves the prior ingredient list. Recheck deployment status and the public route, then mark CP-22 DONE when the seven percentages appear. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
 
 ## Completed Files
 
@@ -122,4 +122,4 @@ CP-22 is complete. The product ingredient list now displays all seven formula pe
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-22. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Recheck the Vercel status for CP-22 commit `8ba5553` and the public `/san-pham` list. Mark CP-22 DONE only after the seven percentages appear; do not repeat completed source work.
