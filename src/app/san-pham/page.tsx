@@ -53,7 +53,7 @@ export default async function ProductPage() {
         <div className="product-container">
           <p className="section-index"><span /> 03 · Khám phá thành phần</p>
           <h2 id="product-ingredients-title" className="section-title">Bảy nét thảo mộc <em>trong một công thức.</em></h2>
-          <p className="product-section-lead">Chọn từng thành phần để xem tỷ lệ ghi trong file nội dung chỉnh sửa. Hiện có hình minh họa cho táo đỏ, đẳng sâm và cam thảo; bốn nguyên liệu còn lại chưa có ảnh riêng. Các tỷ lệ cần đối chiếu nhãn chính thức; tên nguyên liệu và tỷ lệ không tự động chứng minh công dụng đối với sức khỏe.</p>
+          <p className="product-section-lead">Chọn từng thành phần để xem hình minh họa do nhóm cung cấp và tỷ lệ ghi trong file nội dung chỉnh sửa. Các tỷ lệ cần đối chiếu nhãn chính thức; tên nguyên liệu và tỷ lệ không tự động chứng minh công dụng đối với sức khỏe.</p>
           <IngredientExplorer data={ingredients} />
         </div>
       </section>

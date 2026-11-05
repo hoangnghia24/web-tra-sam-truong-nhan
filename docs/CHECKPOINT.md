@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-16
+Current checkpoint: CP-17
 Status: DONE
-Last completed checkpoint: CP-16 (three supplied ingredient photos added). CP-15 was committed as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-17 (all seven ingredient images fill their detail cards with text overlays). CP-16 was committed as `7d7041f`; CP-15 as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -34,6 +34,7 @@ Last completed checkpoint: CP-16 (three supplied ingredient photos added). CP-15
 - Completed CP-14 removal of the homepage challenge introduction marked by the screenshot above `BỎ`; confirmed the product gallery note marked by the other `BỎ` was already absent.
 - Completed CP-15 removal of the standalone homepage story section, retargeted the intro scroll control to the receipt, renumbered remaining sections, and removed unused story CSS.
 - Completed CP-16 product ingredient imagery for the three matching files in `anhweb`, with source labeling and placeholders for four ingredients without images.
+- Completed CP-17 with four additional supplied ingredient photos and a full-card image treatment with readable overlaid copy on the product page.
 
 ## Current Task
 

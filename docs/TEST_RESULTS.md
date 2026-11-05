@@ -217,3 +217,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Data and code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed on Next.js 16.4.4. |
 | Interactive browser check | In headless Chrome, selecting táo đỏ, đẳng sâm, and cam thảo loaded their images (`naturalWidth > 0`). Selecting lá đinh lăng showed the placeholder without an image. |
 | Responsive browser check | At 390 px and 1440 px, the ingredient section rendered with document width equal to viewport width and no horizontal overflow. Screenshots reviewed for layout and readable labels. |
+
+## CP-17 — Full ingredient image cards (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| New image review | Inspected the four newly named ingredient photos in `anhweb` and copied them to `public/images/ingredients/`; unrelated `xxx.jpg` was excluded. |
+| Data and code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed on Next.js 16.4.4. |
+| Interactive browser check | Headless Chrome selected all seven ingredient tabs at 390 px and 1440 px. Every selected image loaded (`naturalWidth > 0`), filled the detail card, and had its text over the image. |
+| Responsive review | At both widths, document width equaled viewport width with no horizontal overflow. Screenshots for táo đỏ and lá Sâm Ngọc Linh showed readable title, description, percentage, and illustration label over the full-card image. |

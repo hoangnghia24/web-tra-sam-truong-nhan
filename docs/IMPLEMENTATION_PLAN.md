@@ -21,5 +21,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-14 Word deletion clarification | Match each `BỎ` caption to the preceding screenshot, remove any screenshot content still present on the website, and verify the relevant sections. |
 | CP-15 Homepage story removal | Remove the standalone “Câu chuyện” section, retarget the intro scroll link to the receipt, renumber remaining sections, and verify lint, typecheck, build, and source links. |
 | CP-16 Ingredient imagery | Inspect `anhweb`, add matching supplied ingredient photos to the product explorer, label them as illustrations, preserve placeholders for missing photos, and verify data, build, interaction, and responsive layout. |
+| CP-17 Full ingredient image cards | Add the four newly supplied ingredient photos, make the selected photo fill the detail card with readable text over the image, and verify all seven tabs at mobile and desktop widths. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

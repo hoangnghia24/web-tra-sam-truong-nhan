@@ -121,3 +121,9 @@
 - Visual inspection of `anhweb` found three ingredient-specific files: `Táo đỏ.jpg`, `ĐẲNG SÂM.jpg`, and `CAM THẢO.jpg`. The other eight files show packaging, brewing, or people, so they are not assigned to other ingredient names.
 - Copy the three matching files into `public/images/ingredients/` with stable URL-safe names and link them in `ingredients.json`. Keep the original `anhweb` directory untouched. Label the photos as illustrations supplied by the group, without claiming they depict the exact ingredients in the packaged tea.
 - Keep a neutral “Chưa có ảnh nguyên liệu” visual for lá đinh lăng, kỷ tử, nhân sâm tươi, and lá Sâm Ngọc Linh until matching images are supplied.
+
+## CP-17 full ingredient image cards (2026-11-06)
+
+- Match the new `anhweb` files `đinh lăng.jpg`, `kỉ tử.jpg`, `Nhân sâm.jpg`, and `Lá Sâm Ngọc Linh.jpg` to the four remaining ingredient entries. Leave the unrelated `xxx.jpg` unused.
+- Use each selected photo as a full-card image with `object-fit: cover`, a dark lower gradient, and the ingredient name, description, and source-stated percentage over it. Keep the illustration label and the fallback for a future missing image.
+- Update the product lead copy to reflect that all seven ingredient illustrations are now present. Do not claim that these photos verify packaged contents or medical effects.
