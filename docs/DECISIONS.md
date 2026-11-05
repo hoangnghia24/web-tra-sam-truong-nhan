@@ -105,3 +105,8 @@
 - State that the Word's 3% ingredient figure and 390.000 ₫ price are source claims needing label or price verification. Do not publish its detoxification, recovery or relaxation statements as proven effects.
 - Restore `Sản phẩm` in the navigation after `7 phút cho mình`, as listed in the revised Word. Use `Doanh nghiệp` for the second link to the existing Trường Sinh Group page. Switch to the mobile menu at 1200 px so the longer navigation does not overflow at intermediate widths.
 - The Word labels the ROAS KPI as 3,5% but uses 2,5× and 3,5× in a trigger rule. Preserve both with a visible unit clarification request; do not silently reconcile them.
+
+## CP-14 deletion clarification (2026-11-05)
+
+- The user clarified that each screenshot immediately above `BỎ` marks the entire shown website element for removal. `image3.png` shows the homepage challenge introduction paragraph; remove that full paragraph. `image6.png` shows the second product gallery note titled `Một tách trà`; that note was already absent, so retain the single `Hộp trà` note.
+- Keep submission moderation and its disclosure on the separate challenge form because the screenshot refers to the homepage paragraph, while visitors still need accurate information about when a submitted story becomes public.

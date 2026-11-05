@@ -191,3 +191,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Browser at 390 px | Strategy and product pages rendered with document width 375 px against a 390 px viewport. The mobile menu opened and showed all seven links, and product copy displayed the revised convenience/7-minute positioning. |
 | Browser at 1100 px | The added menu item initially caused 13 px of horizontal overflow. Moving the menu breakpoint to 1200 px reduced document width to the 1085 px client width; the page then had no horizontal overflow. |
 | Claims and plan labeling | The receipt quiz and voucher are labeled as proposed, while the current receipt remains based on entered time. Unverified effects and shop links were not added. The ROAS unit conflict is visible next to its trigger rules. |
+
+## CP-14 — Word deletion clarification (2026-11-05)
+
+| Check | Observed result |
+| --- | --- |
+| Word image mapping | There are two `BỎ` captions: one after `image3.png` (homepage challenge paragraph) and one after `image6.png` (product gallery note `Một tách trà`). |
+| Removal | Deleted the entire homepage paragraph, including its previously retained opening sentences. Search found no remaining copy of the removed product-gallery caption; the gallery contains only the `Hộp trà` note. |
+| Code gates | Lint, typecheck and production build passed. |
+| Browser | Homepage challenge section showed the heading and four steps with no paragraph beside the heading; document width 1265 px within a 1280 px viewport. Product gallery had only the `Hộp trà` note and no removed caption. |

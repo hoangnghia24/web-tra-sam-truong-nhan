@@ -96,7 +96,7 @@ export default async function HomePage() {
 
       <section className="home-challenge home-section" aria-labelledby="home-challenge-title">
         <div className="home-container">
-          <div className="challenge-heading"><div><p className="section-index">05 <span></span> Câu chuyện cộng đồng</p><h2 className="section-title" id="home-challenge-title">Hóa đơn của bạn.<br /><em>Câu chuyện của bạn.</em></h2></div><p>Không cần một thay đổi lớn. Hãy kể về một việc bạn đã thôi trì hoãn cho bản thân và chia sẻ câu chuyện theo thể lệ của thử thách.</p></div>
+          <div className="challenge-heading"><div><p className="section-index">05 <span></span> Câu chuyện cộng đồng</p><h2 className="section-title" id="home-challenge-title">Hóa đơn của bạn.<br /><em>Câu chuyện của bạn.</em></h2></div></div>
           <ol className="challenge-steps"><li><span>01</span><strong>Quay video</strong><p>Kể câu chuyện của bạn.</p></li><li><span>02</span><strong>Đăng TikTok</strong><p>Kèm hashtag theo thể lệ.</p></li><li><span>03</span><strong>Gửi thông tin</strong><p>Điền thông tin dự thi.</p></li><li><span>04</span><strong>Chờ kết quả</strong><p>Theo dõi kết quả và thông tin nhận quà.</p></li></ol>
           <Link className="editorial-link" href="/thu-thach">Xem thể lệ và tham gia <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </div>

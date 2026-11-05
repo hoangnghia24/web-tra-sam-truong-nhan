@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-13
+Current checkpoint: CP-14
 Status: DONE
-Last completed checkpoint: CP-13 (revised Word content and responsive navigation, verified in this commit). CP-12 was committed as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Last completed checkpoint: CP-14 (Word screenshot deletion clarification, verified in this commit). CP-13 was committed as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -31,10 +31,11 @@ Last completed checkpoint: CP-13 (revised Word content and responsive navigation
 - Completed CP-11 content revisions from the supplied Word file: company overview, navigation order, challenge instructions, ingredient ratios, strategy details, weekly activities, KPI targets and risks. Rounded rectangular UI elements while retaining the site grids and full hero image.
 - Completed CP-12 self-hosted Inter for body/interface copy and Fraunces for headings as the user-approved temporary substitute for Bogart. Checked Vietnamese glyphs, production build and responsive rendering.
 - Completed CP-13 revised Word positioning, receipt concept, monitoring cadence and trigger scenarios in the existing pages. Restored the product navigation link and corrected its intermediate-width breakpoint.
+- Completed CP-14 removal of the homepage challenge introduction marked by the screenshot above `BỎ`; confirmed the product gallery note marked by the other `BỎ` was already absent.
 
 ## Current Task
 
-CP-13 is complete. Bogart remains pending a web-licensed font file or Adobe Fonts kit from the user; Fraunces is the approved temporary heading font. A later deployment should confirm company/product statements, the exact challenge rules and KPI definitions (especially the conflicting ROAS units), set the real site origin and administrator secrets, and run manual checks on a physical phone and regular Chrome.
+CP-14 is complete. Bogart remains pending a web-licensed font file or Adobe Fonts kit from the user; Fraunces is the approved temporary heading font. A later deployment should confirm company/product statements, the exact challenge rules and KPI definitions (especially the conflicting ROAS units), set the real site origin and administrator secrets, and run manual checks on a physical phone and regular Chrome.
 
 ## Completed Files
 
@@ -93,6 +94,7 @@ CP-13 is complete. Bogart remains pending a web-licensed font file or Adobe Font
 - CP-11: 10 content JSON files and 5 seed arrays validated; 9 tests, lint, typecheck and build passed. At 390 px, five edited pages had no horizontal overflow; the weekly disclosure opened. At 1440 px, the navigation fit and the hero kept its 16:9 ratio.
 - CP-12: Inter, Fraunces upright and Fraunces italic contained the checked Vietnamese glyphs. Production build passed. Mobile browser checks on home and six routes found Inter body/Fraunces H1, no H1 or horizontal overflow; desktop homepage header and H1 also fit.
 - CP-13: Revised Word content mapped to the existing product and strategy pages. JSON validation, 9 tests, lint, typecheck and production build passed. Browser review confirmed all new content groups and no page overflow at 390 px, 1100 px and 1280 px after the menu breakpoint adjustment.
+- CP-14: Mapped both `BỎ` captions to their preceding screenshots. Removed the remaining homepage paragraph, confirmed the product note was already gone, and passed lint, typecheck, build and desktop browser inspection.
 
 ## Known Issues
 
@@ -111,4 +113,4 @@ CP-13 is complete. Bogart remains pending a web-licensed font file or Adobe Font
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-13. Do not repeat completed work.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-14. Do not repeat completed work.
