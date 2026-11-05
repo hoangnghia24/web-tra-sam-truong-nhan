@@ -42,7 +42,11 @@ export const campaignSchema = z.object({
   title: safeText(140), currentPhase: z.number().int().min(1).max(3),
   phases: z.array(z.object({
     number: z.number().int().min(1).max(3), name: safeText(50),
-    weeks: safeText(30), message: safeText(180), focus: z.array(safeText(100)).min(1),
+    slug: z.enum(['bam-hoan', 'lam-ngay', 'gui-loi-nhac']),
+    weeks: safeText(30), message: safeText(180), intro: safeText(500), invitation: safeText(250),
+    focus: z.array(safeText(100)).min(1),
+    action: z.object({ label: safeText(80), href: z.enum(['/hoa-don-cho-doi', '/7-phut-cho-minh', '/gui-loi-nhac']) }),
+    videos: z.array(z.object({ title: safeText(120), description: safeText(250), src: z.string().regex(/^\/videos\/phases\/[a-z0-9-]+\.mp4$/).nullable() })).min(1).max(3),
     weeklyPlan: z.array(z.object({ week: z.number().int().min(1).max(12), activities: z.array(safeText(200)).min(1), goal: safeText(300) })).length(4),
   })).length(3),
   statusNote: safeText(250),

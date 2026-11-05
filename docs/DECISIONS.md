@@ -164,3 +164,10 @@
 - Interpret the request as removing citations and source-attribution copy shown to visitors: file/Word labels, document page numbers, “Nguồn:” notes, and repeated “theo tài liệu” language on home, product, company, and strategy pages.
 - Keep internal provenance in repository documentation and non-rendered JSON metadata. Keep budget, KPI, and activity copy marked as planned or proposed; do not present unverified medical, legal, or price statements as established facts.
 - Incorporate the user's in-progress removals of source-note fields, but leave unrelated uncommitted content and styling edits out of the commit. Accept both existing and in-progress TOWS key spellings so local JSON validation remains usable.
+
+## CP-25 campaign phase pages (2026-11-06)
+
+- Add a distinct `/giai-doan/[slug]` page for each phase and a three-card entry point on the homepage. Use the existing four-week plan in `campaign.json` rather than duplicating it in page code.
+- Store the visitor introduction, action, and video slots in `campaign.json` with schema validation. A `null` video source displays a clear waiting state; a valid local MP4 path displays native controls. `docs/PHASE_VIDEOS.md` explains how to add future assets.
+- Keep the three phase pages visibly labeled as a campaign plan. Do not imply that planned videos, community submissions, or campaign outcomes already exist.
+- The user requested local review and will update production personally. Do not push, deploy, or inspect the production site for CP-25.

@@ -3,7 +3,14 @@
   "currentPhase": 1,
   "phases": [
     {
-      "number": 1, "name": "Bấm hoãn", "weeks": "1–4", "message": "Thấu hiểu sự trì hoãn",
+      "number": 1, "name": "Bấm hoãn", "slug": "bam-hoan", "weeks": "1–4", "message": "Thấu hiểu sự trì hoãn",
+      "intro": "Có những việc ta luôn hẹn để sau, kể cả một khoảng nghỉ cho chính mình. Giai đoạn mở đầu đặt câu hỏi về cách mỗi người đang dùng thời gian và mời họ nhìn lại nhịp sống thường ngày.",
+      "invitation": "Bắt đầu bằng một câu hỏi nhỏ: trong ngày hôm nay, bạn đã dành bao nhiêu thời gian cho chính mình?",
+      "action": { "label": "Tạo hóa đơn thời gian", "href": "/hoa-don-cho-doi" },
+      "videos": [
+        { "title": "Nhắc tôi sau", "description": "Ý tưởng video về những lần ta trì hoãn một khoảng nghỉ.", "src": null },
+        { "title": "Hóa đơn thời gian dành cho bản thân", "description": "Ý tưởng video dẫn vào trải nghiệm hóa đơn thời gian.", "src": null }
+      ],
       "focus": ["Poster và video khơi gợi đồng cảm", "Trải nghiệm hóa đơn thời gian và đồng hồ 7 phút", "Giới thiệu thành phần, cách pha trà"],
       "weeklyPlan": [
         { "week": 1, "activities": ["Poster chính thức chiến dịch", "Video Teaser Coming Soon", "Video Nhắc tôi sau"], "goal": "Xây dựng nhận diện, khơi gợi tò mò và đồng cảm với việc trì hoãn chăm sóc bản thân." },
@@ -13,7 +20,14 @@
       ]
     },
     {
-      "number": 2, "name": "Làm ngay", "weeks": "5–8", "message": "Bắt đầu khoảng dừng 7 phút",
+      "number": 2, "name": "Làm ngay", "slug": "lam-ngay", "weeks": "5–8", "message": "Bắt đầu khoảng dừng 7 phút",
+      "intro": "Sau khi nhận ra mình thường chờ đợi, điều tiếp theo là thử dành một khoảng dừng ngắn ngay hôm nay. Giai đoạn này kết nối trải nghiệm 7 phút với thử thách kể lại một việc nhỏ bạn đã làm cho mình.",
+      "invitation": "Bạn có thể bắt đầu 7 phút theo cách riêng: pha trà, hít thở, nhìn ra cửa sổ hoặc đơn giản là ngồi yên.",
+      "action": { "label": "Bắt đầu 7 phút cho mình", "href": "/7-phut-cho-minh" },
+      "videos": [
+        { "title": "Câu chuyện dành cho bản thân", "description": "Video mẫu cho cách kể lại một khoảng dừng của chính mình.", "src": null },
+        { "title": "Những câu chuyện đầu tiên", "description": "Không gian dự kiến cho video tổng hợp khi có nội dung được phép chia sẻ.", "src": null }
+      ],
       "focus": ["Hướng dẫn thử thách và video mẫu", "KOL/KOC, nội dung giải đáp", "Livestream và câu chuyện tham gia"],
       "weeklyPlan": [
         { "week": 5, "activities": ["Video hướng dẫn 4 bước tham gia thử thách", "Video mẫu Câu Chuyện Dành Cho Bản Thân", "TikTok LIVE giới thiệu thử thách và minigame web"], "goal": "Hướng dẫn tham gia, giúp hình dung bài dự thi và kích hoạt UGC." },
@@ -23,7 +37,14 @@
       ]
     },
     {
-      "number": 3, "name": "Gửi lời nhắc", "weeks": "9–12", "message": "Duy trì và chia sẻ thói quen",
+      "number": 3, "name": "Gửi lời nhắc", "slug": "gui-loi-nhac", "weeks": "9–12", "message": "Duy trì & Chia sẻ thói quen",
+      "intro": "Một khoảng dừng có thể tiếp tục bằng một lời quan tâm. Giai đoạn cuối mời mỗi người giữ lại thói quen nhỏ và gửi lời nhắc dịu dàng đến người thân hoặc bạn bè.",
+      "invitation": "Viết một điều bạn muốn nhớ vào ngày mai, hoặc gửi lời nhắn ấy đến một người bạn quan tâm.",
+      "action": { "label": "Tạo thiệp lời nhắc", "href": "/gui-loi-nhac" },
+      "videos": [
+        { "title": "Lần này mình nhắc bạn", "description": "Ý tưởng video chuyển lời nhắc chăm sóc bản thân thành sự quan tâm dành cho người khác.", "src": null },
+        { "title": "Bạn đã thôi chờ chưa?", "description": "Ý tưởng video khép lại hành trình 12 tuần và gợi mở một thói quen tiếp nối.", "src": null }
+      ],
       "focus": ["Tổng hợp câu chuyện cộng đồng", "Thiệp quan tâm và lời nhắn", "Công bố kết quả, duy trì tiện ích website"],
       "weeklyPlan": [
         { "week": 9, "activities": ["Video Những câu chuyện dành cho bản thân (tổng hợp UGC)", "Poster Mỗi người một câu chuyện, mỗi người một cách bắt đầu"], "goal": "Tôn vinh người tham gia, lan tỏa câu chuyện tích cực và củng cố thông điệp." },

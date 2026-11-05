@@ -291,3 +291,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | Headless Chrome at 390 px opened `/`, `/san-pham`, `/ve-du-an`, `/chien-luoc`, and `/thu-thach` with HTTP 200, no visible source-citation phrases, no horizontal overflow, and no page errors. |
 | Live deployment | Vercel reported source commit `123de96` successful. |
 | Live browser | Headless Chrome at 390 px opened `/`, `/san-pham`, `/ve-du-an`, `/chien-luoc`, and `/thu-thach` with HTTP 200, no visible source-citation phrases, no horizontal overflow, and no page errors. Clicking all 12 product and 25 strategy controls revealed no source-citation phrases or page errors. |
+
+## CP-25 — Campaign phase pages (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. The build included `/giai-doan/[slug]`. |
+| Local routes | Headless Chrome at 390 px and 1440 px loaded the homepage and all three phase routes with HTTP 200, three homepage cards, four weekly panels and two video slots per phase, three switcher links, no horizontal overflow and no page errors. |
+| Visual review | Reviewed mobile `Bấm hoãn` full-page and desktop `Làm ngay` hero and homepage phase cards. Text, decorative illustrations and card layout were readable at both sizes. |
+| Navigation | Clicking a homepage phase card and a phase switcher link navigated to the intended local route. |
+| Production | Intentionally not checked or changed, as requested by the user. |
