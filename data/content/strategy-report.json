@@ -1,4 +1,5 @@
 {
+  "sourceNote": "Các thông tin trong báo cáo chiến lược được tổng hợp từ các nguồn công khai, bao gồm: website Trường Sinh Group, hồ sơ quảng cáo TikTok Shop, Shopee, Facebook và các bài viết trên mạng xã hội. Các thông tin về thành phần, tỷ lệ và công dụng được trích dẫn từ nhãn sản phẩm và hồ sơ quảng cáo đã được xác nhận. Báo cáo không đưa ra lời khẳng định về hiệu quả sức khỏe của sản phẩm.",
   "brandRole": [
     { "title": "Tiện lợi mỗi ngày", "body": "Trà túi lọc dễ pha, được đề xuất như một cách tạo khoảng dừng 7 phút cho người bận rộn. Đây là định vị thương hiệu trong kế hoạch, không phải lời khẳng định hiệu quả sức khỏe." },
     { "title": "Công thức được nêu rõ", "body": "Công thức gồm bảy thành phần, trong đó lá Sâm Ngọc Linh chiếm 3%. Thành phần không tự chứng minh công dụng thanh lọc, giải độc hoặc phục hồi." },
@@ -10,16 +11,16 @@
     { "title": "Rào cản niềm tin", "body": "Giá ở phân khúc cao và thắc mắc về tỷ lệ 3% lá Sâm Ngọc Linh đòi hỏi thông tin minh bạch trước lời hứa quảng cáo.", "page": 12 }
   ],
   "swot": [
-    { "key": "S", "title": "Điểm mạnh", "items": ["Hoạt động từ năm 2004 trong lĩnh vực dược liệu thiên nhiên", "Công thức bảy thành phần", "Túi lọc tiện sử dụng"] },
-    { "key": "W", "title": "Điểm yếu", "items": ["Mức giá kế hoạch 390.000 đồng/hộp cao hơn trà phổ thông", "Định kiến sâm chỉ dành cho dịp đặc biệt hoặc người lớn tuổi", "Thương hiệu còn mới với một bộ phận người dùng"] },
-    { "key": "O", "title": "Cơ hội", "items": ["Sự phát triển của thương mại xã hội", "Quan tâm đến việc chăm sóc bản thân chủ động"] },
-    { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh về giá", "Lo ngại về nguồn gốc sâm trên mạng", "Giới hạn pháp lý đối với tuyên bố công dụng"] }
+    { "key": "S", "title": "Điểm mạnh", "items": ["Di sản 20 năm từ Trường Sinh Group","Công thức 7 vị chuẩn y học","Túi lọc tiện lợi","Pháp lý rõ ràng"] },
+    { "key": "W", "title": "Điểm yếu", "items": ["Mức giá cao (390k)","Định kiến \"Sâm chỉ dành cho dịp đặc biệt/người già\"","Thương hiệu mới"] },
+    { "key": "O", "title": "Cơ hội", "items": ["Bùng nổ Social Commerce","Xu hướng chăm sóc sức khỏe chủ động"] },
+    { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh giá gay gắt", "khủng hoảng niềm tin nguồn gốc sâm trên mạng"] }
   ],
   "tows": [
-    { "key": "SO", "title": "Khai thác thế mạnh", "body": "Phủ sóng video ngắn, KOC và livestream để giới thiệu sản phẩm, thành phần và hình thức túi lọc tiện lợi." },
-    { "key": "WO", "title": "Minh bạch trước lời hứa", "body": "Giải thích nguồn gốc, công thức và hồ sơ sản phẩm trước khi đưa ra lời hứa về giá trị sử dụng." },
-    { "key": "ST", "title": "Chứng minh trước lời hứa", "body": "Ưu tiên nguồn gốc, thông tin nhãn và hướng dẫn pha thay cho tuyên bố lợi ích chưa được kiểm chứng." },
-    { "key": "WT", "title": "Nghi thức dùng trà", "body": "Hướng dẫn pha một túi trà với khoảng 300 ml nước nóng và chờ 5–7 phút." }
+    { "key": "S-O", "title": "Khai thác thế mạnh", "body": "Phủ sóng video ngắn, KOC, livestream đẩy mạnh kênh số" },
+    { "key": "W-O", "title": "Minh bạch trước lời hứa", "body": "Truyền thông \"Proof before promise\" (Minh bạch nguồn gốc, công thức)" },
+    { "key": "S-T", "title": "Chứng minh trước lời hứa", "body": "Ưu tiên nguồn gốc, thông tin nhãn và hướng dẫn pha thay cho tuyên bố lợi ích chưa được kiểm chứng" },
+    { "key": "W-T", "title": "Nghi thức dùng trà", "body": "Hướng dẫn nghi thức hãm trà 7 phút đúng chuẩn để cảm nhận giá trị tương ứng chi phí" }
   ],
   "sevenPs": [
     { "key": "Product", "title": "Sản phẩm", "body": "Trà túi lọc hộp 30 g (15 túi × 2 g), pha với khoảng 300 ml nước nóng trong 5–7 phút. Bảy thành phần gồm: Táo đỏ 25%, Lá đinh lăng 17%, Đẳng sâm 15%, Cam thảo 15%, Kỷ tử 15%, Nhân sâm tươi 10% và Lá Sâm Ngọc Linh 3%. Ý tưởng bán chéo sang Dịch chiết Sâm Ngọc Linh thuộc kế hoạch." },

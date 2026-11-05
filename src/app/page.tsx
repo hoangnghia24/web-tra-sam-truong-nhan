@@ -57,7 +57,7 @@ export default async function HomePage() {
 
       <section className="home-pause home-section" aria-labelledby="home-pause-title">
         <div className="home-container pause-feature">
-          <div className="pause-art" aria-hidden="true"><div className="pause-orbit orbit-one"></div><div className="pause-orbit orbit-two"></div><div className="pause-center"><Clock3 size={28} strokeWidth={1.3} /><strong>07:00</strong><span>Một khoảng dừng</span></div></div>
+          <div className="pause-art" aria-hidden="true"><div className="pause-orbit orbit-one"></div><div className="pause-orbit orbit-two"></div><div className="pause-center"><Clock3 size={28} strokeWidth={1.3} /><strong>0 7 : 0 0</strong><span>Một khoảng dừng</span></div></div>
           <div className="pause-feature-copy">
             <p className="section-index">02 <span></span> Làm ngay</p>
             <h2 className="section-title" id="home-pause-title">Bảy phút.<br /><em>Chỉ dành cho bạn.</em></h2>
