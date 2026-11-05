@@ -47,6 +47,7 @@
 | DONE | CP-39: softened section transitions and selected card layouts across the site; verified locally without deployment. |
 | DONE | CP-40: softened and pinned the header; linked compact strategy phase cards to their detail pages; verified locally without deployment. |
 | DONE | CP-41: exposed the detailed receipt summary above the footer and added subtle scroll depth; verified locally without deployment. |
+| DONE | CP-42: pushed current work to `origin/main`, confirmed Vercel success, and checked key public routes and interactions on production. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

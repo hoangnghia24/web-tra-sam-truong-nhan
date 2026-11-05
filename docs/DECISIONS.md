@@ -269,3 +269,9 @@
 - Remove the footer's negative top margin because it covered the last interactive control on `/hoa-don-cho-doi`. Keep the rounded top corners.
 - Use a small scale and brightness change as a section leaves the viewport; the following rounded section retains its upward overlap. Gate the scroll animation on browser support and the user's no-preference motion setting.
 - Preserve unrelated working-tree edits, especially active receipt and strategy work. Verify local interaction and layout without deploying.
+
+## CP-42 production deployment (2026-11-06)
+
+- The user explicitly authorized production deployment. Include their eight pending content and presentation edits with the 17 local commits that had not reached `origin/main`.
+- Correct invalid `strong > p` nesting in the edited positioning highlight without changing its visible wording before deployment.
+- Use the repository's existing GitHub to Vercel deployment path. Verify the Vercel commit status and public site after the push. The existing read-only Vercel storage limitation remains for JSON-backed submissions.

@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-41
-Status: DONE (local verification; user handles production)
-Last completed checkpoint: CP-41 (receipt summary and scroll depth verified locally). Earlier checkpoint records remain in Git history.
+Current checkpoint: CP-42
+Status: DONE (production deployment verified)
+Last completed checkpoint: CP-42 (commit `bf5eecb` deployed through Vercel and public routes verified). Earlier checkpoint records remain in Git history.
 
 ## Completed Work
 
@@ -57,7 +57,7 @@ Last completed checkpoint: CP-41 (receipt summary and scroll depth verified loca
 
 ## Current Task
 
-CP-36 is complete locally. The user will review and update production. Phase video files can be added using `docs/PHASE_VIDEOS.md`. Official purchase URLs and an active 15% voucher code are still needed to enable the receipt purchase CTAs and offer; see `docs/RECEIPT_JOURNEY.md`. Unrelated user edits remain in the working tree. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
+CP-42 is deployed on the public Vercel site. Phase video files can be added using `docs/PHASE_VIDEOS.md`. Official purchase URLs and an active 15% voucher code are still needed to enable the receipt purchase CTAs and offer; see `docs/RECEIPT_JOURNEY.md`. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
 
 ## Completed Files
 
@@ -130,10 +130,10 @@ CP-36 is complete locally. The user will review and update production. Phase vid
 
 ## Next Actions
 
-1. For a real deployment, configure `NEXT_PUBLIC_SITE_URL`, `ADMIN_PASSWORD_HASH` and `SESSION_SECRET` outside Git; use a writable single-process Node host or replace JSON storage.
+1. For writable form submissions and admin operations, configure the required environment variables outside Git and use a writable persistent host or replace JSON storage.
 2. Manually verify downloaded PNG files, the seven-minute completion screen, keyboard tab interaction and native Chrome/physical phone rendering before public launch.
 3. When licensed Bogart files or an Adobe Fonts kit become available, replace the Fraunces display font and repeat glyph/build/browser checks.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. Do not deploy CP-25 through CP-41 unless the user asks.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. CP-25 through CP-42 are deployed; deploy future changes only when the user asks.

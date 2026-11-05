@@ -443,3 +443,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Receipt page | At 390 px and 1440 px, `/hoa-don-cho-doi` returned HTTP 200. The detailed receipt summary was fully visible, its center was the topmost clickable element, and the footer started below it. Clicking opened the detailed receipt form. No page errors or horizontal overflow occurred. |
 | Scroll behavior | On `/`, outgoing section scale progressed from about 0.995 to 0.965 as it left the viewport in local Chrome. A homepage phase link remained clickable. With reduced motion enabled, the scroll animation was absent. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-42 — Production deployment (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Pre-deployment gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build`, and `git diff --check` passed for commit `bf5eecb`. |
+| Source | `bf5eecb` and the preceding 17 local commits were pushed to `origin/main`. GitHub Vercel status for `bf5eecb` changed from pending to success with “Deployment has completed.” |
+| Production routes | At 390 px and 1440 px, `/`, `/san-pham`, `/chien-luoc`, `/hoa-don-cho-doi`, and `/giai-doan/bam-hoan` each returned HTTP 200 with no page errors or horizontal overflow. |
+| Production interactions | Header stayed at the viewport top on the strategy page; all three phase cards and five risk items rendered; phase one opened its detail route; the detailed receipt summary was unobscured and opened on click. |
+| Remaining limitation | Vercel's read-only application directory does not persist JSON-backed form submissions. A writable host or persistent storage is still needed for live submissions. |
