@@ -25,5 +25,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-18 Ingredient label removal | Remove the supplied-illustration label from the product ingredient images and the matching lead copy; verify rendering and interaction. |
 | CP-19 Challenge guide video | Add the supplied vertical joining-guide video and poster to `/thu-thach`, align the written steps with the guide and live form, label mock screens accurately, and verify build, playback, and responsive layout. |
 | CP-20 Read-only runtime reads | Let public JSON reads use seed data without writing to the application directory, preserve explicit file initialization for writable hosts, and verify the live challenge page after deployment. |
+| CP-21 Remove unavailable rules file | Remove the challenge page's rules-file link and related copy, align the homepage entry point with the video guide, then verify the live routes. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

@@ -252,3 +252,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run test` passed 9 tests, including a read-without-file-creation assertion; lint, typecheck, and production build passed. |
 | Live page after fix | Vercel status for `a060d8f` was successful. The public `/thu-thach` HTML contained the video source with no streamed error digest; GET `/api/ugc` returned 200 with `{"items":[]}`. |
 | Live playback | Headless Chrome opened the public URL at 390 px; all four steps rendered, document width equaled viewport width, and the 20.015-second video advanced to 1.02 seconds with no media error. |
+
+## CP-21 — Remove unavailable rules file (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Source and code gates | No visitor-facing `thể lệ` reference remained in `src` or `data/content`. `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | At 390 px, the challenge page retained one video and four steps, had no old Drive link or rules block, and fit the viewport. The homepage CTA read “Xem hướng dẫn và tham gia”. |
+| Live deployment | Vercel reported successful deployment of `3af1a57`. The public `/thu-thach` HTML contained the video, no old Drive link, and no streamed error digest. |
+| Live browser | At 390 px, the challenge page showed one video and four steps, no rules-file phrase or Drive link, and no horizontal overflow. The homepage CTA matched the new wording. |

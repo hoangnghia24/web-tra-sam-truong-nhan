@@ -142,3 +142,8 @@
 
 - On Vercel, `/thu-thach` and GET `/api/ugc` failed because reading a missing runtime JSON file attempted to create it in the read-only application directory. A read now returns validated seed data (or an empty array when no seed is present) without writing. Mutations still create runtime files on writable local hosts; `ensureJsonFile` retains explicit initialization behavior.
 - This change makes the hosted page and public read endpoint available. It does not make file-backed submissions durable on Vercel. A writable single-process Node host or a separately approved storage change is required for hosted submission persistence.
+
+## CP-21 unavailable challenge rules file (2026-11-06)
+
+- The user confirmed that there is currently no rules file for the video-led challenge page. Remove the Drive rules link and all page copy that asks visitors to consult that file.
+- Keep the four actionable steps and video. Do not supply or infer a required hashtag. Update the homepage challenge steps to match the video-led flow and change its CTA to “Xem hướng dẫn và tham gia”.
