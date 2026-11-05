@@ -256,3 +256,10 @@
 - Keep the cover artwork full width. Round the upper corners of adjacent public sections and overlap them slightly, using a smaller curve on mobile. Give the footer the same visual transition.
 - Turn the homepage challenge steps and weekly phase tiles from joined, ruled grids into separated rounded cards. Soften shadows on selected visual frames without changing copy, navigation, or interaction.
 - Preserve concurrent user edits in the working tree. Verify the local build and responsive layout; leave production to the user.
+
+## CP-40 sticky header and strategy phases (2026-11-06)
+
+- Use a sticky header with a soft cream surface, blur, lower corner radius, and subtle shadow. Keep its place in normal document flow and add scroll padding so anchor targets remain visible.
+- Make the mobile menu a rounded floating panel under the sticky header. Preserve all existing navigation links and menu behavior.
+- In the strategy report, show only phase number, week range, and title on each linked card. The existing `/giai-doan/[slug]` pages retain messages, activities, goals, and video slots.
+- Preserve unrelated working-tree edits and verify locally without deploying.

@@ -425,3 +425,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | `/`, `/san-pham`, `/chien-luoc`, and `/giai-doan/bam-hoan` returned HTTP 200 at 390 px and 1440 px. Section upper corners measured 24 px and 40 px respectively; no page errors or horizontal overflow. |
 | Visual review | Reviewed the cover-to-intro transition, challenge cards, product introduction, and weekly phase cards at both widths. Text and media placeholders remained readable. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-40 — Sticky header and strategy phase links (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | At 390 px and 1440 px, the header stayed at viewport top after scrolling. The mobile menu opened, three compact phase cards rendered without child details, and clicking phase one reached `/giai-doan/bam-hoan`. No page errors or horizontal overflow occurred. |
+| Visual review | Reviewed sticky header and strategy phase cards at both widths. Header corners and cards remained readable, and adjacent report sections did not overlap card content. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

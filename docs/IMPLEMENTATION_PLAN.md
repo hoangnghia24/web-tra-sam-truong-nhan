@@ -44,5 +44,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-37 Risk response table | Replace the overlapping risk lists with the user's six three-column scenarios, preserving supplied wording and emphasis. Validate the data, check the responsive table locally, and leave production to the user. |
 | CP-38 Risk accordion correction | Restore the original click-to-read presentation and replace the risk copy with the user's revised five scenarios and fallback actions. Verify locally without deploying. |
 | CP-39 Softer section design | Round the transitions between public page sections, give phase and activity cards breathing room, and soften selected visual frames. Preserve the cover artwork and all content; verify desktop and mobile locally. |
+| CP-40 Sticky header and strategy phase links | Soften and pin the site header while scrolling. Replace the strategy report's expanded phase cards with links that show only the phase name and week range, using the existing detail routes. Verify desktop and mobile navigation locally. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.
