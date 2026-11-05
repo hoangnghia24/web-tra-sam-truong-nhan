@@ -196,3 +196,9 @@
 - Retain the accessible seven-tab interaction and keyboard navigation. Present the longer text as a readable numbered policy panel, with responsive bullet columns.
 - Place a separate plan-status note before the tabs. The supplied price, self-declaration number, GMP, and manufacturing text are proposal content, not independently verified current product facts.
 - Preserve unrelated working-tree edits and leave production review and deployment to the user.
+
+## CP-30 customer context (2026-11-06)
+
+- Replace the old `market` array with structured `marketContext` data for the supplied truth, four pain points, motivation, and four decision drivers. Normalize pasted whitespace while preserving the user's substantive wording, including the supplied “nghỉ rằng”.
+- Keep the existing “Càng quý…” headline exactly as requested. Use separate visual groups for truth, pain cards, and motivation/decision factors.
+- Add a distinct note that these are proposed customer insights, not survey findings, and the cited price range is not confirmed current pricing. Preserve unrelated working-tree edits and leave production to the user.

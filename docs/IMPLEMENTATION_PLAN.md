@@ -34,5 +34,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-27 Remove highlight label and repair schema mismatch | Remove the visible highlight heading while retaining the three supplied highlight lines. Align JSON, schema, and component; reproduce and resolve the TypeScript failure, then verify local build and browser output. |
 | CP-28 TOWS revision | Replace S-O, W-O, and W-T titles and copy with the user's supplied wording; remove S-T. Render the key and parenthesized title together, update validation and three-column layout, and verify locally without deployment. |
 | CP-29 Detailed 7Ps | Replace the seven short strategy-tab summaries and old heading with the user's full Product, Price, Place, Promotion, People, Process, and Physical Evidence copy. Keep tab navigation, mark unverified price/legal/manufacturing claims as plan content, and verify locally. |
+| CP-30 Customer context | Replace the old market cards with the user's truth, four pain points, purchase motivation, and four decision drivers. Preserve the existing “Càng quý…” quote, label insight and price as plan assumptions, and verify locally. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

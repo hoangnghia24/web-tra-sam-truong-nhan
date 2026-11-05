@@ -337,3 +337,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | Headless Chrome at 390 px and 1440 px opened `/chien-luoc` with HTTP 200. All seven tabs showed their full title, subtitle, and 4–6 requested points; ArrowRight selected the next tab. No page errors or horizontal overflow occurred. |
 | Visual review | Reviewed desktop Product and mobile Physical Evidence panels. The detailed content remained readable and the plan-status note distinguished unverified price/legal/manufacturing copy. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-30 — Customer context (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run typecheck`, `npm run lint`, and `npm run build` passed after replacing the market cards. |
+| Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200. The section displayed the supplied truth, all four pains, motivation and four drivers; the “Càng quý…” quote remained and the old three market cards were absent. No page errors or horizontal overflow. |
+| Visual review | Reviewed the full context section at mobile and desktop widths. The layout stayed readable and the plan/price note was visible. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

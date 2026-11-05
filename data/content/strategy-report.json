@@ -23,11 +23,22 @@
     { "title": "Công thức được nêu rõ", "body": "Công thức gồm bảy thành phần, trong đó lá Sâm Ngọc Linh chiếm 3%. Thành phần không tự chứng minh công dụng thanh lọc, giải độc hoặc phục hồi." },
     { "title": "Lời nhắc dành cho mình", "body": "Vai trò cảm xúc của thương hiệu là nhắc người xem cho phép bản thân nghỉ một lúc mà không thấy áy náy. Giá đề xuất 390.000 đồng/hộp 15 túi, khoảng 26.000 đồng/túi, cần xác nhận trước khi mua." }
   ],
-  "market": [
-    { "title": "Trà thảo mộc tiện lợi", "body": "Trà túi lọc dễ pha, phù hợp với người muốn dành một khoảng dừng ngắn trong ngày bận rộn.", "page": 13 },
-    { "title": "Thương mại xã hội", "body": "TikTok Shop, KOC và livestream được đề xuất là những điểm chạm để tiếp cận và giải thích sản phẩm.", "page": 14 },
-    { "title": "Rào cản niềm tin", "body": "Giá ở phân khúc cao và thắc mắc về tỷ lệ 3% lá Sâm Ngọc Linh đòi hỏi thông tin minh bạch trước lời hứa quảng cáo.", "page": 12 }
-  ],
+  "marketContext": {
+    "truth": "Tôi cố gắng hoàn thành công việc, chăm lo cho người thân; còn bản thân thường được xếp sau vì nghỉ rằng ngày mai vẫn kịp.",
+    "pains": [
+      { "label": "Trì hoãn", "body": "Biết sức khỏe quan trọng nhưng thường ưu tiên công việc và nhu cầu của người thân trước, tự nhủ rằng mình có thể bắt đầu vào ngày mai." },
+      { "label": "Thiếu tính duy trì", "body": "Lo ngại việc chăm sóc bản thân trở thành một nhiệm vụ phức tạp, khó duy trì trong lịch trình bận rộn." },
+      { "label": "Thiếu thông tin", "body": "Chưa hiểu rõ sự khác biệt giữa Trà Sâm Trường Nhân và các loại trà thảo mộc khác." },
+      { "label": "Cân nhắc giá trị", "body": "Cần thêm thông tin về thành phần, nguồn gốc và quy cách sản phẩm để đánh giá mức giá khoảng 380.000–390.000 đồng/hộp có phù hợp hay không." }
+    ],
+    "motivation": "Khách hàng mong muốn tìm được một lựa chọn chăm sóc bản thân đơn giản, thuận tiện và đáng tin cậy, phù hợp với nhu cầu cũng như khả năng chi trả.",
+    "drivers": [
+      "Cách sử dụng thuận tiện, dễ tìm hiểu.",
+      "Thông tin thành phần và nguồn gốc minh bạch.",
+      "Mô tả sản phẩm rõ ràng, giúp khách hàng hiểu mình đang mua gì.",
+      "Đánh giá thực tế, tư vấn đáng tin cậy và giá bán dễ đối chiếu."
+    ]
+  },
   "swot": [
     { "key": "S", "title": "Điểm mạnh", "items": ["Di sản 20 năm từ Trường Sinh Group","Công thức 7 vị chuẩn y học","Túi lọc tiện lợi","Pháp lý rõ ràng"] },
     { "key": "W", "title": "Điểm yếu", "items": ["Mức giá cao (390k)","Định kiến \"Sâm chỉ dành cho dịp đặc biệt/người già\"","Thương hiệu mới"] },

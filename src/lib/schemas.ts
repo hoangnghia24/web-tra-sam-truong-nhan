@@ -73,7 +73,12 @@ export const strategyReportSchema = z.object({
     highlight: z.array(safeText(100)).length(3),
   }),
   brandRole: z.array(strategyEntry).length(3),
-  market: z.array(strategyEntry),
+  marketContext: z.object({
+    truth: safeText(500),
+    pains: z.array(z.object({ label: safeText(100), body: safeText(450) })).length(4),
+    motivation: safeText(450),
+    drivers: z.array(safeText(250)).length(4),
+  }),
   swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),
   tows: z.array(z.object({ key: z.enum(['S-O', 'W-O', 'W-T']), title: safeText(100), body: safeText(500) })).length(3),
   sevenPs: z.array(z.object({
