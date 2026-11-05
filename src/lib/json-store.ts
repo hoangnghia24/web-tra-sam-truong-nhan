@@ -71,9 +71,9 @@ export function createJsonStore(root = join(process.cwd(), 'data')) {
     if (await exists(file)) return parseFile(file, schema);
     if (!relativePath.startsWith('runtime/')) throw new JsonStoreError(`Thiếu file nội dung: ${relativePath}`, 'MISSING');
     const seed = pathFor(`seed/${relativePath.slice('runtime/'.length)}`);
-    const initial = (await exists(seed)) ? await parseFile(seed, schema) : schema.parse([]);
-    await writeInternal(file, initial, schema, false);
-    return initial;
+    // A read must also work on deployments where the application directory is read-only.
+    // The first mutation creates the runtime file through writeInternal.
+    return (await exists(seed)) ? parseFile(seed, schema) : schema.parse([]);
   }
 
   function readJson<T>(relativePath: string, schema: z.ZodType<T>): Promise<T> {
@@ -82,7 +82,12 @@ export function createJsonStore(root = join(process.cwd(), 'data')) {
   }
 
   function ensureJsonFile<T>(relativePath: string, schema: z.ZodType<T>): Promise<T> {
-    return readJson(relativePath, schema);
+    const file = pathFor(relativePath);
+    return serialize(file, async () => {
+      const value = await ensureInternal(relativePath, schema);
+      if (!(await exists(file)) && relativePath.startsWith('runtime/')) await writeInternal(file, value, schema, false);
+      return value;
+    });
   }
 
   function writeJsonAtomic<T>(relativePath: string, value: T, schema: z.ZodType<T>): Promise<void> {

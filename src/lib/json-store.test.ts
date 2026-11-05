@@ -23,6 +23,7 @@ describe('JSON storage', () => {
   it('initializes from seed, serializes concurrent appends, and survives a new store instance', async () => {
     const store = createJsonStore(root);
     expect(await store.readJson('runtime/records.json', recordSchema.array())).toEqual([]);
+    await expect(readFile(join(root, 'runtime', 'records.json'), 'utf8')).rejects.toMatchObject({ code: 'ENOENT' });
     const records = Array.from({ length: 25 }, (_, value) => ({ id: randomUUID(), value }));
     await Promise.all(records.map((record) => store.appendRecord('runtime/records.json', record, recordSchema)));
     const freshStore = createJsonStore(root);
