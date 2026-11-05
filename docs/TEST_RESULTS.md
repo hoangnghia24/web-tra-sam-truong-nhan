@@ -370,3 +370,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
 | Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 and showed all four restored pillars after the three measurement paths. The six channel cards remained visible; no page errors or horizontal overflow occurred. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-34 — Receipt quiz journey (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed after adding the quiz and settings. |
+| Local browser | At 390 px and 1440 px, Chrome completed the entry, all three questions, result, PNG download, and product touchpoint with no page errors or horizontal overflow. Inputs of 0 self-care minutes and 3 delays produced 0 and 21; inputs of 15 self-care minutes and 0 delays produced 15 and 0. The PNG header reported 1080 × 1920 px. The share fallback downloaded the PNG. Both purchase buttons remained disabled while official URLs were null; the detailed receipt section remained available. |
+| Homepage | `/` returned HTTP 200 at both widths, displayed the four-step summary, and had no horizontal overflow. |
+| Detailed receipt | Expanded the original form and found all 16 hour/minute fields. In print media, the quiz and form controls were hidden as intended for the detailed receipt print view. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

@@ -53,8 +53,9 @@ export default async function HomePage() {
           <div className="receipt-feature-copy">
             <p className="section-index light">01 <span></span> Bấm hoãn</p>
             <h2 className="section-title" id="home-receipt-title">Nếu hôm nay có một hóa đơn cho thời gian, <em>nó sẽ kể điều gì?</em></h2>
-            <p>Nhập thời gian bạn dành cho công việc, gia đình, giải trí và chính mình. Hóa đơn được tính từ câu trả lời của bạn, không áp đặt một kết quả có sẵn.</p>
-            <Link className="button-primary button-on-dark" href="/hoa-don-cho-doi">Tạo hóa đơn của tôi <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <p>Bắt đầu bằng ba câu hỏi ngắn về công việc, những lần “để mai tính” và khoảng nghỉ cho mình. Xem hóa đơn cá nhân, tải ảnh Story rồi tìm hiểu thành phần trà.</p>
+            <ol className="home-receipt-steps"><li>Trang chủ</li><li>Quiz 30s</li><li>Trả hóa đơn</li><li>Chốt đơn</li></ol>
+            <Link className="button-primary button-on-dark" href="/hoa-don-cho-doi">Bắt đầu hóa đơn của tôi <ArrowUpRight size={17} aria-hidden="true" /></Link>
           </div>
           <div className="receipt-preview" aria-label="Minh họa hóa đơn chờ đợi">
             <div className="receipt-preview-head"><span>TRƯỜNG NHÂN</span><span>✳</span></div>

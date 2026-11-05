@@ -39,6 +39,7 @@
 | DONE | CP-31: tightened spacing between the customer-truth label and quote; verified desktop and mobile layout locally. |
 | DONE | CP-32: replaced the strategy journey section with six channel duties and three measurement paths; verified locally without deployment. |
 | DONE | CP-33: restored the four content pillars inadvertently removed in CP-32; verified locally without deployment. |
+| DONE | CP-34: added the four-step receipt quiz, personalized 9:16 Story export, product touchpoint, and preserved detailed receipt; verified locally without deployment. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

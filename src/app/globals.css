@@ -148,6 +148,88 @@ img { display: block; max-width: 100%; }
 .home-closing h2 { margin: 0 0 1.2rem; color: var(--brand-dark); font-family: var(--type-display); font-size: clamp(2.1rem, 4vw, 3.8rem); font-weight: 600; letter-spacing: -.035em; line-height: 1.13; }
 .home-closing a { display: inline-flex; align-items: center; gap: .7rem; color: var(--brand-forest); font-size: .9rem; font-weight: 700; text-decoration: underline; text-underline-offset: .4rem; }
 
+.receipt-journey { padding: clamp(4rem, 7vw, 7rem) 0; background: #e8eddd; }
+.home-receipt-steps { display: flex; flex-wrap: wrap; gap: .4rem .7rem; margin: 1.5rem 0; padding: 0; list-style: none; }
+.home-receipt-steps li { color: var(--brand-ivory); font-size: .79rem; font-weight: 700; }
+.home-receipt-steps li + li::before { content: '→'; margin-right: .7rem; color: var(--brand-gold-light); }
+.receipt-journey-inner { width: min(100% - 3rem, 1180px); margin: auto; }
+.receipt-journey-head { max-width: 760px; }
+.receipt-journey-head h2 { margin: .6rem 0 1rem; color: var(--brand-forest); font-family: var(--type-display); font-size: clamp(2.2rem, 4.6vw, 4.5rem); font-weight: 600; letter-spacing: -.04em; line-height: 1.08; }
+.receipt-journey-head > p:last-child { max-width: 630px; color: var(--text-secondary); }
+.receipt-journey-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .7rem; margin: 2.5rem 0 1.5rem; padding: 0; list-style: none; }
+.receipt-journey-steps li { display: flex; align-items: center; gap: .6rem; min-width: 0; padding: .8rem .6rem; border-top: 2px solid #b9c9b2; color: var(--brand-leaf); font-size: .82rem; font-weight: 700; }
+.receipt-journey-steps li.is-current { border-color: var(--brand-gold); color: var(--brand-forest); }
+.receipt-journey-steps span { color: var(--brand-gold-text); font-family: var(--type-display); font-size: 1.35rem; }
+.receipt-journey-clock { display: inline-flex; align-items: center; gap: .55rem; margin-bottom: 1.5rem; color: var(--brand-forest); }
+.receipt-journey-clock > span { font-family: var(--type-display); font-size: 2.2rem; font-variant-numeric: tabular-nums; }
+.receipt-journey-clock small { max-width: 200px; margin-left: .4rem; color: var(--text-secondary); font-size: .72rem; line-height: 1.25; }
+.receipt-journey-entry { min-height: 510px; display: flex; align-items: center; padding: clamp(1.3rem, 5vw, 4rem); border-radius: 22px; background: linear-gradient(90deg, rgba(17,51,34,.96), rgba(20,60,37,.83) 53%, rgba(20,60,37,.32)), url('/images/truong-nhan-cover.png') center / cover; color: var(--brand-ivory); }
+.receipt-journey-entry-copy { width: min(100%, 570px); }
+.receipt-journey-entry-copy > p:first-child, .receipt-quiz-count { color: var(--brand-gold-light); font-size: .76rem; font-weight: 800; letter-spacing: .11em; }
+.receipt-journey-entry h3 { margin: .8rem 0 2rem; font-family: var(--type-display); font-size: clamp(2rem, 4vw, 3.8rem); font-weight: 600; line-height: 1.1; }
+.receipt-journey-entry label, .receipt-quiz-card label { display: block; margin-bottom: .5rem; font-size: .83rem; font-weight: 700; }
+.receipt-journey-entry input, .receipt-quiz-card input { display: block; width: min(100%, 340px); min-height: 50px; padding: .7rem .9rem; border: 1px solid #afc2aa; border-radius: 9px; background: var(--brand-ivory); color: var(--brand-dark); font: inherit; }
+.receipt-journey-entry .button-primary { display: inline-flex; align-items: center; gap: .6rem; margin-top: 1rem; border: 0; cursor: pointer; }
+.receipt-journey-entry small { display: block; margin-top: 1rem; color: #e0eadc; }
+.receipt-journey-entry .form-error { color: #ffe0c9; }
+.receipt-quiz { max-width: 740px; margin: 0 auto; }
+.receipt-quiz-card { min-height: 430px; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid #c9d4c3; border-top: 4px solid var(--brand-gold); border-radius: 22px; background: var(--brand-ivory); box-shadow: 0 24px 55px rgba(23,62,41,.08); animation: receipt-card-in .32s ease both; }
+@keyframes receipt-card-in { from { opacity: 0; transform: translateX(22px); } to { opacity: 1; transform: translateX(0); } }
+.receipt-quiz-card .receipt-quiz-count { color: var(--brand-tea); }
+.receipt-quiz-card h3 { max-width: 610px; margin: 1.2rem 0 2rem; color: var(--brand-forest); font-family: var(--type-display); font-size: clamp(1.8rem, 3vw, 2.7rem); font-weight: 600; line-height: 1.14; }
+.receipt-quiz-card input { width: min(100%, 220px); }
+.receipt-quiz-options { display: flex; flex-wrap: wrap; gap: .55rem; margin-bottom: 1.4rem; }
+.receipt-quiz-options button { padding: .7rem .9rem; border: 1px solid #b8c9b0; border-radius: 100px; background: transparent; color: var(--brand-forest); font-weight: 700; cursor: pointer; }
+.receipt-quiz-options button.is-selected { border-color: var(--brand-forest); background: var(--brand-forest); color: white; }
+.receipt-quiz-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2rem; }
+.receipt-quiz-actions button { display: inline-flex; justify-content: center; align-items: center; gap: .5rem; min-height: 46px; padding: .65rem 1rem; border: 1px solid var(--brand-forest); border-radius: 100px; background: transparent; color: var(--brand-forest); font-size: .82rem; font-weight: 800; cursor: pointer; }
+.receipt-quiz-actions button.button-primary { background: var(--brand-forest); color: white; }
+.receipt-quiz-swipe { margin: 1.5rem 0 0; color: var(--text-secondary); font-size: .76rem; }
+.receipt-quiz-result { display: grid; grid-template-columns: minmax(0, 1fr) minmax(270px, 380px); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.receipt-quiz-result-copy h3, .receipt-quiz-offer h3 { margin: .8rem 0 1.6rem; color: var(--brand-forest); font-family: var(--type-display); font-size: clamp(2rem, 3.6vw, 3.4rem); font-weight: 600; line-height: 1.12; }
+.receipt-quiz-result-copy > p { max-width: 520px; color: var(--text-primary); line-height: 1.6; }
+.receipt-quiz-result-copy .receipt-quiz-caveat { color: var(--text-secondary); font-size: .83rem; }
+.receipt-quiz-continue { display: inline-flex; align-items: center; gap: .6rem; margin-top: 1.8rem; border: 0; cursor: pointer; }
+.receipt-quiz-restart { display: flex; align-items: center; gap: .4rem; margin-top: 1.5rem; padding: 0; border: 0; background: none; color: var(--brand-forest); font-size: .83rem; font-weight: 700; text-decoration: underline; text-underline-offset: .25rem; cursor: pointer; }
+.receipt-story-preview { width: min(100%, 360px); margin: 0 auto; container-type: inline-size; }
+.receipt-story-export { position: absolute; left: -9999px; top: 0; width: 540px; height: 960px; container-type: inline-size; pointer-events: none; }
+.quiz-story { display: flex; flex-direction: column; width: 100%; aspect-ratio: 9 / 16; padding: 5cqw; background: radial-gradient(circle at 85% 10%, #426e43, #173e29 55%, #102e20); color: var(--brand-ivory); }
+.quiz-story-top { display: flex; justify-content: space-between; align-items: center; padding-bottom: 3cqw; color: #e5c17a; font-size: 2.2cqw; font-weight: 800; letter-spacing: .08em; }
+.quiz-story-paper { display: flex; flex-direction: column; flex: 1; min-height: 0; padding: 5cqw 4cqw; background: #fbf7ed; color: #173e29; box-shadow: 1.5cqw 1.5cqw 0 rgba(255,255,255,.12); }
+.quiz-story-kicker { margin: 0 0 2cqw; color: #80621c; font-size: 2.4cqw; font-weight: 800; letter-spacing: .1em; }
+.quiz-story-paper h3 { margin: 0 0 3cqw; font-family: var(--type-display); font-size: 5.8cqw; font-weight: 600; line-height: 1.08; }
+.quiz-story-name { margin: 0 0 3cqw; padding-bottom: 2cqw; border-bottom: 1px dashed #aabb9f; font-size: 2.8cqw; overflow-wrap: anywhere; }
+.quiz-story-row { display: flex; justify-content: space-between; gap: 2cqw; margin: 1.3cqw 0; font-size: 2.7cqw; }
+.quiz-story-row strong { text-align: right; }
+.quiz-story-total, .quiz-story-debt { display: flex; justify-content: space-between; align-items: baseline; gap: 2cqw; padding: 2.3cqw 0; border-top: 1px solid #aabb9f; font-size: 2.5cqw; }
+.quiz-story-total { margin-top: 3cqw; }
+.quiz-story-total strong, .quiz-story-debt strong { flex: none; color: #926a1f; font-family: var(--type-display); font-size: 4cqw; }
+.quiz-story-message { margin: 3cqw 0 1.5cqw; font-family: var(--type-display); font-size: 3.5cqw; font-style: italic; line-height: 1.25; }
+.quiz-story-note { margin: 0; color: #526a57; font-size: 2.05cqw; line-height: 1.35; }
+.quiz-story-rest { display: grid; justify-items: center; gap: 1cqw; margin-top: auto; padding-top: 3cqw; border-top: 1px solid #c8d2c1; color: #a38139; }
+.quiz-story-rest span { font-family: var(--type-display); font-size: 10cqw; line-height: 1; }
+.quiz-story-rest small { font-size: 2.1cqw; font-weight: 800; letter-spacing: .12em; }
+.quiz-story-footer { margin: 0; padding-top: 3cqw; color: #e5c17a; font-size: 2.4cqw; font-weight: 800; letter-spacing: .08em; text-align: center; }
+.receipt-quiz-offer { max-width: 800px; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid #c9d4c3; border-radius: 22px; background: var(--brand-ivory); }
+.receipt-quiz-offer .receipt-quiz-count { color: var(--brand-tea); }
+.receipt-quiz-ingredient { padding: 1.5rem; border-left: 4px solid var(--brand-gold); background: #e8eddd; }
+.receipt-quiz-ingredient > span { display: block; color: var(--brand-tea); font-size: .72rem; font-weight: 800; letter-spacing: .1em; }
+.receipt-quiz-ingredient > strong { display: block; margin: .4rem 0; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.8rem; }
+.receipt-quiz-ingredient p, .receipt-quiz-voucher p, .receipt-quiz-shop-note { color: var(--text-secondary); font-size: .86rem; line-height: 1.5; }
+.receipt-quiz-ingredient a { display: inline-flex; align-items: center; gap: .4rem; color: var(--brand-forest); font-size: .86rem; font-weight: 800; text-underline-offset: .3rem; }
+.receipt-quiz-voucher { margin: 1.2rem 0; padding: 1.2rem 1.5rem; border: 1px dashed #b59a58; }
+.receipt-quiz-voucher strong { color: var(--brand-forest); font-family: var(--type-display); font-size: 1.4rem; }
+.receipt-quiz-voucher p { margin: .3rem 0 0; }
+.receipt-quiz-shops { display: flex; flex-wrap: wrap; gap: .7rem; }
+.receipt-quiz-shops a, .receipt-quiz-shops button { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 48px; padding: .7rem 1rem; border: 1px solid var(--brand-forest); border-radius: 100px; background: var(--brand-forest); color: white; font-size: .8rem; font-weight: 800; text-decoration: none; }
+.receipt-quiz-shops button:disabled { border-color: #b8c8b2; background: #d9e1d3; color: #607260; cursor: not-allowed; }
+.receipt-detailed { background: #e8eddd; }
+.receipt-detailed > summary { width: min(100% - 3rem, 1180px); margin: 0 auto; padding: 1.4rem 0; border-top: 1px solid #b9c9b2; color: var(--brand-forest); font-family: var(--type-display); font-size: clamp(1.2rem, 2vw, 1.7rem); font-weight: 600; cursor: pointer; }
+.receipt-detailed .receipt-experience { padding-top: 2rem; }
+@media (max-width: 700px) { .receipt-journey-inner { width: min(100% - 2rem, 520px); } .receipt-journey-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } .receipt-journey-entry { min-height: 470px; background: linear-gradient(90deg, rgba(17,51,34,.94), rgba(20,60,37,.67)), url('/images/truong-nhan-cover.png') center / cover; } .receipt-quiz-result { grid-template-columns: 1fr; } .receipt-story-preview { width: min(100%, 330px); } }
+@media (max-width: 420px) { .receipt-journey-clock small { max-width: 140px; } .receipt-journey-steps li { font-size: .75rem; } .receipt-quiz-actions button, .receipt-quiz-shops a, .receipt-quiz-shops button { width: 100%; } }
+@media (prefers-reduced-motion: reduce) { .receipt-quiz-card { animation: none; } }
+
 .receipt-experience { padding: clamp(4rem, 7vw, 7rem) 0; background: #e8eddd; }
 .receipt-experience-inner { width: min(100% - 3rem, 1280px); margin: auto; display: grid; grid-template-columns: 1fr .92fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
 .receipt-lead > p:not(.section-index) { max-width: 650px; color: var(--text-secondary); }
@@ -881,7 +963,7 @@ img { display: block; max-width: 100%; }
 @media print {
   @page { size: A4; margin: 18mm; }
   body { background: white; }
-  .site-header, .site-footer, .page-banner, .receipt-form-panel, .receipt-tools, .receipt-next, .receipt-status, .skip-link { display: none !important; }
+  .site-header, .site-footer, .page-banner, .receipt-journey, .receipt-detailed > summary, .receipt-form-panel, .receipt-tools, .receipt-next, .receipt-status, .skip-link { display: none !important; }
   .receipt-experience { padding: 0; background: white; }
   .receipt-experience-inner { display: block; width: 100%; }
   .receipt-output-panel { padding: 0; border: 0; background: white; }

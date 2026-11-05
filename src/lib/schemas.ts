@@ -103,6 +103,8 @@ export const strategyReportSchema = z.object({
 export const faqsSchema = z.object({ items: z.array(z.object({ question: safeText(200), answer: safeText(900) })) });
 export const siteSettingsSchema = z.object({
   officialShopUrl: publicUrl.nullable(),
+  purchaseLinks: z.object({ tiktokShop: publicUrl.nullable(), shopee: publicUrl.nullable() }),
+  voucher15: z.object({ active: z.boolean(), code: safeText(40).nullable() }),
   socialLinks: z.object({ tiktok: publicUrl.nullable(), facebook: publicUrl.nullable(), shopee: publicUrl.nullable(), zalo: publicUrl.nullable() }),
   analyticsEnabled: z.boolean(), contactFormEnabled: z.boolean(),
 });

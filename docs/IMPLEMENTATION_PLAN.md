@@ -38,5 +38,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-31 Truth spacing | Reduce the desktop gap between the “Sự thật:” label and its quote while keeping the mobile stacked layout; verify both locally. |
 | CP-32 Channel roles and measurement | Replace the old strategy journey section with the user's six channel duties and three measurement paths. Keep copy as supplied, validate the new JSON structure, and verify the local responsive page without deploying. |
 | CP-33 Restore four content pillars | Restore the user's four content pillars beneath the channel roles and measurement paths, preserving their prior wording; verify locally and leave production to the user. |
+| CP-34 Receipt quiz journey | Add the four-step receipt experience with a name entry, 7:00 reminder, three-card quiz, personalized 9:16 Story image, and product touchpoint. Keep the detailed eight-activity receipt, show symbolic debt as a labeled formula, and require verified URLs and an active code before purchase/voucher actions. Verify locally only. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

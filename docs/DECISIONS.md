@@ -218,3 +218,11 @@
 - CP-32 removed the existing four content pillars when replacing section 05. Restore them after the measurement paths; retain the six channel duties and three paths.
 - Recover the four titles and bodies from the section's prior data, including the user's wording for the action pillar. Keep the existing responsive `pillar-grid` presentation.
 - Preserve unrelated working-tree edits. Verify locally and leave production review and deployment to the user.
+
+## CP-34 receipt quiz journey (2026-11-06)
+
+- Add the user's entry, three-card quiz, personalized receipt, and product touchpoint above the existing eight-activity receipt. Keep the detailed form accessible in an expandable section to satisfy the original receipt specification.
+- Ask for today's actual self-care minutes within the third quiz card. Show 0 only when the visitor enters 0; compute the symbolic “debt” as seven minutes per self-reported delay and label it as a campaign metaphor.
+- Generate a 1080 × 1920 PNG from a 9:16 Story layout. Use the native image share sheet when available, otherwise download the image for manual TikTok posting.
+- Keep purchase CTAs disabled until official platform URLs are supplied. Present 15% voucher as a planned idea until an active code is configured. Document the settings in `docs/RECEIPT_JOURNEY.md`.
+- Preserve unrelated user edits; verify locally and leave production to the user.

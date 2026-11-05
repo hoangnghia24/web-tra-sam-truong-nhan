@@ -1,5 +1,7 @@
 {
   "officialShopUrl": null,
+  "purchaseLinks": { "tiktokShop": null, "shopee": null },
+  "voucher15": { "active": false, "code": null },
   "socialLinks": { "tiktok": null, "facebook": null, "shopee": null, "zalo": null },
   "analyticsEnabled": true,
   "contactFormEnabled": true
