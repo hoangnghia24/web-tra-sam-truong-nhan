@@ -152,3 +152,9 @@
 
 - The seven percentages already exist in `data/content/ingredients.json` and appear in the selected ingredient detail. Show them next to each ingredient name in the selector so visitors can see the complete formula without selecting every image.
 - Add the user's “Quốc bảo Nam Trà My” wording after Lá Sâm Ngọc Linh in that selector. Treat it as user-provided presentation copy, not independent product or medical verification. Retain the existing label-verification note.
+
+## CP-23 interactive product journey (2026-11-06)
+
+- Replace only the “Góc nhìn sản phẩm” gallery with a click-started sequence: supplied box and sachet photo, seven existing ingredient photos converging into a drawn tea bag, animated brewing using the existing water and steeping values, and a supplied finished-tea photo.
+- Use `anhweb` photos `1793720638162_...jpg` and `1793720638189_...jpg` under stable public paths; keep the originals untouched. The animation is a visual explanation of the campaign formula and brewing directions, not evidence of the manufacturing process or product effects.
+- Provide a visible start, skip, and replay control. Keep stage text readable, support reduced motion, and preserve the user's other uncommitted content edits.

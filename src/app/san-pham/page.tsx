@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowUpRight, Hourglass, Package } from 'lucide-react';
+import { ArrowUpRight, Hourglass } from 'lucide-react';
 import { PageBanner } from '@/components/site/PageBanner';
 import { IngredientExplorer } from '@/components/product/IngredientExplorer';
+import { ProductJourney } from '@/components/product/ProductJourney';
 import { TrackedLink } from '@/components/site/TrackedLink';
 import { readJson } from '@/lib/json-store';
 import { faqsSchema, ingredientsSchema, productSchema, siteSettingsSchema } from '@/lib/schemas';
@@ -44,8 +45,7 @@ export default async function ProductPage() {
         <div className="product-container">
           <p className="section-index"><span /> 02 · Góc nhìn sản phẩm</p>
           <h2 id="product-gallery-title" className="section-title">Từ hộp trà đến <em>một tách trà ấm.</em></h2>
-          <div className="product-gallery"><div className="product-gallery-art"><Image src="/images/truong-nhan-cover.png" alt="Toàn bộ ảnh bìa gốc, không cắt hoặc phủ chữ" width={1920} height={1080} sizes="(max-width: 850px) 100vw, 60vw" /></div><div className="product-gallery-notes"><div><Package size={26} strokeWidth={1.4} /><span>01</span><h3>Hộp trà</h3><p>Quy cách nêu trong tài liệu: {product.packCount} túi lọc, tổng {product.netWeightGrams} g.</p></div></div></div>
-          <p className="gallery-disclosure">Góc nhìn này đang dùng ảnh bìa gốc. Ảnh chụp cận cảnh bao bì cần được đối chiếu với sản phẩm thực tế.</p>
+          <ProductJourney ingredients={ingredients.ingredients} packCount={product.packCount} waterMl={product.brewWaterMl} brewMinutesMin={product.brewMinutesMin} brewMinutesMax={product.brewMinutesMax} />
         </div>
       </section>
 

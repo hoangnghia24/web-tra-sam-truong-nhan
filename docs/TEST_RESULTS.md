@@ -269,3 +269,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Data and code gates | The seven requested percentages matched existing `ingredients.json` values. `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
 | Product browser check | Headless Chrome at 390 px and 1440 px showed all seven ingredient names with their percentages; the final label read “Lá Sâm Ngọc Linh (3%) – Quốc bảo Nam Trà My”. Document width equaled viewport width at both sizes. |
 | Live deployment | Commit `8ba5553` was pushed to `origin/main`, but GitHub still showed no Vercel status and the public `/san-pham` HTML served the prior ingredient list at the time of this check. Live verification remains pending. |
+| Later live verification | Vercel status for `0dce7ad` became successful. Headless Chrome at 390 px read all seven requested labels from the public `/san-pham` list, including “Lá Sâm Ngọc Linh (3%) – Quốc bảo Nam Trà My”; document width equaled viewport width. |
+
+## CP-23 — Interactive product journey (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Supplied images | Reviewed the source cover and `anhweb` photos. Copied the matching box/sachet and finished-tea images to stable public paths without changing the originals. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Interactive browser | Headless Chrome at 390 px and 1440 px showed package, gathering, brewing, and finished-cup scenes in order. Ingredient images, tea-bag filling, water/tea animation, skip, and replay worked. No horizontal overflow at either width. Screenshots reviewed for all four scenes. |
+| Reduced motion | With `prefers-reduced-motion: reduce`, the sequence reached the finished cup, skip worked, and no page errors occurred. |
+| Live deployment | Pending source commit and Vercel verification. |

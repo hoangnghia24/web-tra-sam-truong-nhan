@@ -27,5 +27,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-20 Read-only runtime reads | Let public JSON reads use seed data without writing to the application directory, preserve explicit file initialization for writable hosts, and verify the live challenge page after deployment. |
 | CP-21 Remove unavailable rules file | Remove the challenge page's rules-file link and related copy, align the homepage entry point with the video guide, then verify the live routes. |
 | CP-22 Ingredient percentages in list | Show the seven existing percentages directly in the product ingredient list, add the user-supplied Ngọc Linh phrase, and verify mobile and desktop layout. |
+| CP-23 Interactive product journey | Replace the static product gallery with a click-started sequence from box and sachets through seven ingredients and brewing to a finished cup. Use supplied photos, provide skip/replay and reduced-motion behavior, then verify locally and live. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.
