@@ -1,9 +1,9 @@
 {
   "ingredients": [
-    { "id": "tao-do", "name": "Táo đỏ", "description": "Chiếm 25% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 25 },
+    { "id": "tao-do", "name": "Táo đỏ", "description": "Chiếm 25% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 25, "image": "/images/ingredients/tao-do.jpg" },
     { "id": "la-dinh-lang", "name": "Lá đinh lăng", "description": "Chiếm 17% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 17 },
-    { "id": "dang-sam", "name": "Đẳng sâm", "description": "Chiếm 15% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 15 },
-    { "id": "cam-thao", "name": "Cam thảo", "description": "Chiếm 15% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 15 },
+    { "id": "dang-sam", "name": "Đẳng sâm", "description": "Chiếm 15% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 15, "image": "/images/ingredients/dang-sam.jpg" },
+    { "id": "cam-thao", "name": "Cam thảo", "description": "Chiếm 15% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 15, "image": "/images/ingredients/cam-thao.jpg" },
     { "id": "ky-tu", "name": "Kỷ tử", "description": "Chiếm 15% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 15 },
     { "id": "nhan-sam", "name": "Nhân sâm tươi", "description": "Chiếm 10% công thức theo file nội dung chỉnh sửa do nhóm cung cấp.", "percent": 10 },
     { "id": "la-sam-ngoc-linh", "name": "Lá Sâm Ngọc Linh", "description": "Chiếm 3% công thức theo file nội dung chỉnh sửa. Tỷ lệ nguyên liệu không chứng minh công dụng y khoa.", "percent": 3 }

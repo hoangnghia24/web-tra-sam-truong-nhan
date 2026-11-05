@@ -115,3 +115,9 @@
 
 - Interpret “phần câu chuyện” as the standalone homepage section labeled `01 Câu chuyện`, between the introductory CTA and receipt feature. Keep the separate community challenge and its participant stories.
 - Point the introductory scroll link to the receipt section and number the six remaining homepage feature sections 01–06. Remove CSS used only by the deleted section.
+
+## CP-16 ingredient imagery (2026-11-05)
+
+- Visual inspection of `anhweb` found three ingredient-specific files: `Táo đỏ.jpg`, `ĐẲNG SÂM.jpg`, and `CAM THẢO.jpg`. The other eight files show packaging, brewing, or people, so they are not assigned to other ingredient names.
+- Copy the three matching files into `public/images/ingredients/` with stable URL-safe names and link them in `ingredients.json`. Keep the original `anhweb` directory untouched. Label the photos as illustrations supplied by the group, without claiming they depict the exact ingredients in the packaged tea.
+- Keep a neutral “Chưa có ảnh nguyên liệu” visual for lá đinh lăng, kỷ tử, nhân sâm tươi, and lá Sâm Ngọc Linh until matching images are supplied.

@@ -34,6 +34,7 @@ export const ingredientsSchema = z.object({
   ingredients: z.array(z.object({
     id: safeText(60), name: safeText(100), description: safeText(350),
     percent: z.number().min(0).max(100).nullable(),
+    image: z.string().regex(/^\/images\/ingredients\/[a-z0-9-]+\.jpg$/).optional(),
   })).length(7),
   verificationNote: safeText(250),
 });

@@ -208,3 +208,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Source review | The standalone `home-story` section and `#cau-chuyen` target are absent. The intro scroll link points to existing `#hoa-don`; remaining feature labels run 01–06. Community challenge content remains. |
 | CSS review | Selectors used only by the removed story section were deleted. |
 | Code gates | `npm run lint`, `npm run typecheck`, and `npm run build` passed on Next.js 16.4.4. |
+
+## CP-16 — Ingredient imagery (2026-11-05)
+
+| Check | Observed result |
+| --- | --- |
+| Source image review | Inspected all 11 files in `anhweb`: three clearly labeled ingredient photos and eight packaging, brewing, or lifestyle images. Copied only the three matching photos to `public/images/ingredients/`. |
+| Data and code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed on Next.js 16.4.4. |
+| Interactive browser check | In headless Chrome, selecting táo đỏ, đẳng sâm, and cam thảo loaded their images (`naturalWidth > 0`). Selecting lá đinh lăng showed the placeholder without an image. |
+| Responsive browser check | At 390 px and 1440 px, the ingredient section rendered with document width equal to viewport width and no horizontal overflow. Screenshots reviewed for layout and readable labels. |
