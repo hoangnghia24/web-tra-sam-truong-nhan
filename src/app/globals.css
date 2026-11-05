@@ -533,11 +533,26 @@ img { display: block; max-width: 100%; }
 .sevenps-points strong { color: var(--brand-forest); }
 .sevenps-plan-note { max-width: 860px; margin: 2rem 0 0; color: var(--text-secondary); font-size: .8rem; }
 .report-journey { background: #ececde; }
-.journey-line { display: grid; grid-template-columns: repeat(5, 1fr); gap: .7rem; margin: 3rem 0 4rem; }
-.journey-line article { min-height: 185px; padding: 1.2rem; border-top: 2px solid var(--brand-gold); background: var(--brand-ivory); }
-.journey-line span { color: var(--brand-tea); font-family: var(--type-display); font-size: 1.25rem; }
-.journey-line h3 { margin: 1.4rem 0 .5rem; font-family: var(--type-display); font-size: 1.3rem; }
-.journey-line p { margin: 0; color: var(--text-secondary); font-size: .8rem; }
+.channel-journey-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
+.channel-journey-grid article { min-width: 0; padding: 1.6rem; border: 1px solid #cbd8c4; border-top: 3px solid var(--brand-gold); border-radius: 18px; background: var(--brand-ivory); }
+.channel-journey-number { color: var(--brand-gold-text); font-family: var(--type-display); font-size: 1.35rem; }
+.channel-journey-grid h3 { margin: .6rem 0 1.4rem; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.5rem; line-height: 1.15; }
+.channel-journey-grid p { margin: 0; color: var(--text-primary); font-size: .9rem; line-height: 1.55; }
+.channel-journey-grid p strong, .channel-journey-task > strong, .channel-journey-task li strong { color: var(--brand-forest); }
+.channel-journey-task { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #d6dfd1; font-size: .9rem; line-height: 1.55; }
+.channel-journey-task p { margin-top: .3rem; }
+.channel-journey-task ul { margin: .35rem 0 0; padding-left: 1.15rem; }
+.channel-journey-task li + li { margin-top: .35rem; }
+.channel-measurement { margin-top: 3.5rem; }
+.channel-measurement h3 { margin: 0 0 1.4rem; color: var(--brand-forest); font-family: var(--type-display); font-size: clamp(1.6rem, 2.5vw, 2rem); }
+.channel-measurement-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.channel-measurement-grid article { min-width: 0; padding: 1.4rem; border: 1px solid #cbd8c4; border-radius: 18px; background: #f6f2e7; }
+.channel-measurement-grid h4 { margin: 0 0 1rem; color: var(--brand-tea); font-size: .8rem; font-weight: 800; letter-spacing: .09em; }
+.channel-measurement-grid ol { display: flex; align-items: center; flex-wrap: wrap; gap: .35rem; margin: 0; padding: 0; list-style: none; }
+.channel-measurement-grid li { color: var(--brand-forest); font-size: .88rem; font-weight: 700; }
+.channel-measurement-grid li + li::before { content: '→'; margin-right: .35rem; color: var(--brand-gold-text); }
+@media (max-width: 900px) { .channel-journey-grid, .channel-measurement-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .channel-journey-grid, .channel-measurement-grid { grid-template-columns: 1fr; } .channel-journey-grid { margin-top: 2rem; } }
 .report-subtitle { margin: 2.5rem 0 1.3rem; font-family: var(--type-display); font-size: var(--text-h3); line-height: 1.2; font-weight: 600; }
 .pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
 .pillar-grid article { padding: 1.3rem 0; border-top: 1px solid #aebda8; }
@@ -671,7 +686,7 @@ img { display: block; max-width: 100%; }
 /* Softer edges without changing the page grids or spacing. */
 .site-menu .menu-feature, .button-primary, .timer-controls button, .receipt-tools button, .reminder-tools button, .admin-logout, .admin-export, .admin-login-form button, .admin-json-editor button, .admin-record-actions button { border-radius: 999px; }
 .mobile-menu-button, .time-fields input, .challenge-form input:not([type="checkbox"]), .challenge-form textarea, .contact-form input:not([type="checkbox"]), .contact-form textarea, .admin-login-form input, .admin-json-editor textarea { border-radius: 10px; }
-.receipt-preview, .product-feature-visual, .reminder-art, .receipt-output-panel, .receipt-empty, .receipt-paper-real, .timer-card, .product-page-image, .ingredient-detail, .challenge-page-steps li, .challenge-form, .challenge-empty, .story-card, .reminder-card, .report-bigidea, .report-card-grid article, .swot-grid button, .swot-detail, .tows-grid article, .sevenps-panel, .journey-line article, .phase-track article, .budget-summary > div, .budget-plot, .kpi-grid article, .report-actual, .team-card, .contact-form, .admin-stat-grid article, .admin-panel, .admin-empty, .admin-login-card, .admin-record-list article, .admin-json-editor { border-radius: 18px; }
+.receipt-preview, .product-feature-visual, .reminder-art, .receipt-output-panel, .receipt-empty, .receipt-paper-real, .timer-card, .product-page-image, .ingredient-detail, .challenge-page-steps li, .challenge-form, .challenge-empty, .story-card, .reminder-card, .report-bigidea, .report-card-grid article, .swot-grid button, .swot-detail, .tows-grid article, .sevenps-panel, .phase-track article, .budget-summary > div, .budget-plot, .kpi-grid article, .report-actual, .team-card, .contact-form, .admin-stat-grid article, .admin-panel, .admin-empty, .admin-login-card, .admin-record-list article, .admin-json-editor { border-radius: 18px; }
 .image-seal, .ingredient-list button, .sevenps-tabs button, .admin-nav a, .admin-record-head span { border-radius: 10px; }
 .reminder-art::before { border-radius: 12px; }
 .form-progress, .timer-linear-track { border-radius: 999px; }
@@ -680,10 +695,6 @@ img { display: block; max-width: 100%; }
 .report-persona { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-bottom: 1.4rem; }
 .report-persona p { margin: 0; padding: 1.2rem; border: 1px solid #cbd8c4; border-radius: 14px; color: var(--text-secondary); font-size: .86rem; }
 .report-persona strong { color: var(--brand-forest); }
-.channel-role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: -1.5rem 0 3rem; }
-.channel-role-grid article { padding: 1.4rem; border: 1px solid #cad6c2; border-radius: 16px; background: var(--brand-ivory); }
-.channel-role-grid h4 { margin: 0 0 .5rem; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.3rem; }
-.channel-role-grid p { margin: 0; color: var(--text-secondary); font-size: .84rem; }
 .phase-weekly { margin-top: 1.6rem; padding-top: 1rem; border-top: 1px solid #58715b; }
 .phase-weekly summary { color: var(--brand-gold-light); font-size: .85rem; font-weight: 700; cursor: pointer; }
 .phase-weekly > div { margin-top: 1.2rem; padding-top: .8rem; border-top: 1px solid #58715b; }
@@ -691,8 +702,8 @@ img { display: block; max-width: 100%; }
 .phase-weekly ul { margin: .5rem 0; }
 .phase-weekly p { margin: .6rem 0 0; color: #c9d7c6; font-size: .82rem; }
 
-@media (max-width: 1050px) { .report-persona, .channel-role-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 640px) { .report-persona, .channel-role-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1050px) { .report-persona { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .report-persona { grid-template-columns: 1fr; } }
 
 .state-page { min-height: 65vh; display: grid; place-items: center; padding: 5rem 1.5rem; background: radial-gradient(circle at 80% 20%, #e3e9d6, transparent 38%), var(--brand-ivory); }
 .state-page > div { width: min(100%, 700px); }
@@ -746,7 +757,7 @@ img { display: block; max-width: 100%; }
   .challenge-page-steps, .story-card-grid { grid-template-columns: repeat(2, 1fr); }
   .report-overview-grid, .swot-explorer, .budget-chart { grid-template-columns: 1fr; }
   .report-card-grid, .phase-track, .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-  .tows-grid, .pillar-grid, .journey-line { grid-template-columns: repeat(2, 1fr); }
+  .tows-grid, .pillar-grid { grid-template-columns: repeat(2, 1fr); }
   .team-card-grid { grid-template-columns: repeat(2, 1fr); }
   .admin-stat-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-page-layout, .about-story-layout, .policy-layout { grid-template-columns: 1fr; }
@@ -823,7 +834,7 @@ img { display: block; max-width: 100%; }
   .challenge-empty { align-items: flex-start; }
   .reminder-card { min-height: 430px; }
   .strategy-local-nav { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; white-space: nowrap; }
-  .report-card-grid, .phase-track, .kpi-grid, .tows-grid, .pillar-grid, .journey-line, .budget-summary, .report-audience { grid-template-columns: 1fr; }
+  .report-card-grid, .phase-track, .kpi-grid, .tows-grid, .pillar-grid, .budget-summary, .report-audience { grid-template-columns: 1fr; }
   .swot-grid button { min-height: 120px; }
   .sevenps-panel { padding: 1.8rem; }
   .sevenps-panel-head, .sevenps-points { grid-template-columns: 1fr; }

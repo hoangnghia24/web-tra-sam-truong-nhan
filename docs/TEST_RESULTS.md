@@ -353,3 +353,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | --- | --- |
 | Local browser | At 1440 px, the quote began 16 px after the “Sự thật:” label. At 390 px, it remained stacked 12 px below. `/chien-luoc` returned HTTP 200 at both widths with no page errors or horizontal overflow. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-32 — Channel roles and measurement (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | Headless Chrome opened `/chien-luoc` with HTTP 200 at 390 px and 1440 px. The new heading, all six channel cards, and all three measurement paths rendered. No page errors or horizontal overflow occurred. |
+| Visual review | Reviewed section screenshots at both widths; the cards and paths remained legible. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

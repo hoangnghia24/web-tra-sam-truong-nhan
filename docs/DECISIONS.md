@@ -206,3 +206,9 @@
 ## CP-31 truth label spacing (2026-11-06)
 
 - Size the desktop label column to its text and use a 1rem gap, so the quote begins near “Sự thật:”. Keep the existing one-column mobile layout and .75rem vertical gap. Preserve unrelated edits and leave production to the user.
+
+## CP-32 channel roles and measurement (2026-11-06)
+
+- Replace the old journey, receipt concept, channel summary, and content pillars in section 05 with the supplied six channel duties and three measurement paths. Keep the user's wording and the two separate duties under TikTok Shop and Shopee.
+- Store this copy in one validated `channelJourney` object. Present the six duties as numbered cards and the three paths as arrow sequences, with responsive one-column mobile layout.
+- Preserve unrelated working-tree edits. Verify locally and leave production review and deployment to the user.

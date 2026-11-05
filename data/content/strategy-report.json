@@ -121,33 +121,75 @@
       ]
     }
   ],
-  "journey": [
-    { "step": "Khám phá", "touchpoint": "Video ngắn, nội dung đồng cảm" },
-    { "step": "Tìm hiểu", "touchpoint": "Hóa đơn chờ đợi, trang thành phần" },
-    { "step": "Đánh giá", "touchpoint": "FAQ, giá và nguồn gốc minh bạch" },
-    { "step": "Mua thử", "touchpoint": "Gian hàng chính thức khi được xác minh" },
-    { "step": "Duy trì", "touchpoint": "7 phút cho mình, lời nhắc và cộng đồng" }
-  ],
-  "receiptConcept": [
-    { "title": "01 · Gợi mở", "body": "Ý tưởng mở rộng gồm màn vào với đồng hồ 7:00, ô nhập tên và lời mời nhìn lại thời gian dành cho bản thân." },
-    { "title": "02 · Câu hỏi nhanh", "body": "Ba câu hỏi ngắn về thời gian họp hoặc chạy hạn, những lần hẹn lại việc cho mình và lần nghỉ 7 phút gần nhất được đề xuất để cá nhân hóa trải nghiệm." },
-    { "title": "03 · Hóa đơn cá nhân", "body": "Hóa đơn và ảnh story khổ dọc dự kiến được tính từ câu trả lời thật của từng người. Không mặc định kết quả 0 phút hoặc gán một khoản ‘nợ’ không có dữ liệu." },
-    { "title": "04 · Tìm hiểu sản phẩm", "body": "Điểm chạm cuối giới thiệu tỷ lệ 3% lá Sâm Ngọc Linh và thông tin sản phẩm. Voucher và liên kết mua chỉ hiển thị khi chương trình và gian hàng chính thức được xác nhận." }
-  ],
-  "channelRoles": [
-    { "channel": "Thu hút", "role": "TikTok Ads và Facebook Reels dẫn người xem về microsite hoặc gian hàng được xác minh." },
-    { "channel": "Tạo niềm tin", "role": "KOC và UGC chia sẻ trải nghiệm thực tế, có công bố hợp tác khi phù hợp." },
-    { "channel": "Minh bạch", "role": "Microsite trình bày thành phần, thông tin sản phẩm và FAQ." },
-    { "channel": "Chốt đơn", "role": "TikTok Shop là kênh bán hàng chủ lực; Shopee hỗ trợ người chủ động tìm mua." },
-    { "channel": "Bổ trợ", "role": "Website và Facebook cung cấp thông tin và hướng dẫn đến kênh phù hợp." },
-    { "channel": "Giữ chân", "role": "Zalo OA dự kiến hỗ trợ chăm sóc sau mua và nhắc khi có nhu cầu mua lại." }
-  ],
-  "pillars": [
-    { "title": "Chạm cảm xúc", "body": "Video về cách mỗi người dành thời gian cho bản thân", "page": 23 },
-    { "title": "Minh bạch", "body": "Thành phần, nguồn gốc và cách pha được trình bày rõ ràng", "page": 23 },
-    { "title": "Hành động", "body": "KOC review, video mở hộp, phản hồi thực tế và livestream", "page": 23 },
-    { "title": "Lan tỏa", "body": "Câu chuyện người tham gia và lời nhắc quan tâm", "page": 23 }
-  ],
+  "channelJourney": {
+    "stages": [
+      {
+        "title": "THU HÚT",
+        "channel": "TikTok Ads, Facebook Reels.",
+        "task": "Dẫn về microsite / gian hàng."
+      },
+      {
+        "title": "TẠO NIỀM TIN",
+        "channel": "KOC, UGC.",
+        "task": "Chia sẻ trải nghiệm thật."
+      },
+      {
+        "title": "MINH BẠCH",
+        "channel": "Microsite.",
+        "task": "Thành phần, công bố, FAQ."
+      },
+      {
+        "title": "CHỐT ĐƠN",
+        "channel": "TikTok Shop, Shopee.",
+        "details": [
+          {
+            "label": "TikTok Shop:",
+            "body": "Kênh bán hàng chính."
+          },
+          {
+            "label": "Shopee:",
+            "body": "Lựa chọn mua thay thế."
+          }
+        ]
+      },
+      {
+        "title": "BỔ TRỢ",
+        "channel": "Website, Facebook.",
+        "task": "Các nền tảng khác như Website, Facebook."
+      },
+      {
+        "title": "GIỮ CHÂN",
+        "channel": "Zalo OA.",
+        "task": "Chăm sóc, nhắn mua lại."
+      }
+    ],
+    "measurement": [
+      {
+        "title": "LỐI 1:",
+        "steps": [
+          "Microsite",
+          "Click gian hàng",
+          "Đơn"
+        ]
+      },
+      {
+        "title": "LỐI 2:",
+        "steps": [
+          "KOC/Livestream",
+          "Click",
+          "Đơn"
+        ]
+      },
+      {
+        "title": "SAU MUA:",
+        "steps": [
+          "QR",
+          "Theo dõi OA",
+          "Mua lại"
+        ]
+      }
+    ]
+  },
   "budget": [
     { "name": "Paid Ads", "millionVnd": 135 },
     { "name": "KOC / Creator", "millionVnd": 105 },

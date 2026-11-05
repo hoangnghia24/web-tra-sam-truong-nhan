@@ -85,10 +85,14 @@ export const strategyReportSchema = z.object({
     key: safeText(50), title: safeText(120), subtitle: safeText(160),
     points: z.array(z.object({ label: safeText(100), body: safeText(400) })).min(4).max(6),
   })).length(7),
-  journey: z.array(z.object({ step: safeText(100), touchpoint: safeText(200) })).length(5),
-  receiptConcept: z.array(strategyEntry).length(4),
-  channelRoles: z.array(z.object({ channel: safeText(100), role: safeText(240) })).length(6),
-  pillars: z.array(strategyEntry).length(4),
+  channelJourney: z.object({
+    stages: z.array(z.object({
+      title: safeText(100), channel: safeText(160),
+      task: safeText(240).optional(),
+      details: z.array(z.object({ label: safeText(100), body: safeText(240) })).optional(),
+    })).length(6),
+    measurement: z.array(z.object({ title: safeText(100), steps: z.array(safeText(100)).length(3) })).length(3),
+  }),
   budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(10),
   monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(200) })).length(4),
   triggerRules: z.array(z.object({ title: safeText(120), signal: safeText(200), response: safeText(500) })).length(6),
