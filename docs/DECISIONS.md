@@ -250,3 +250,9 @@
 - The user clarified that the original click-to-read layout should remain. Replace the CP-37 table with five native `details` items and show each supplied title in the summary.
 - Use the user's revised action and fallback wording exactly; italicize only the supplied “Dự phòng:” label. Keep unrelated strategy content and the user's working-tree edits unchanged.
 - Verify only on a local build; deployment remains with the user.
+
+## CP-39 softer section design (2026-11-06)
+
+- Keep the cover artwork full width. Round the upper corners of adjacent public sections and overlap them slightly, using a smaller curve on mobile. Give the footer the same visual transition.
+- Turn the homepage challenge steps and weekly phase tiles from joined, ruled grids into separated rounded cards. Soften shadows on selected visual frames without changing copy, navigation, or interaction.
+- Preserve concurrent user edits in the working tree. Verify the local build and responsive layout; leave production to the user.

@@ -43,5 +43,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-36 Monitoring cadence copy | Replace the four monitoring groups with the user's exact labels, metrics, measurement cadence, and tools. Display all fields in the existing cards; verify locally and leave production to the user. |
 | CP-37 Risk response table | Replace the overlapping risk lists with the user's six three-column scenarios, preserving supplied wording and emphasis. Validate the data, check the responsive table locally, and leave production to the user. |
 | CP-38 Risk accordion correction | Restore the original click-to-read presentation and replace the risk copy with the user's revised five scenarios and fallback actions. Verify locally without deploying. |
+| CP-39 Softer section design | Round the transitions between public page sections, give phase and activity cards breathing room, and soften selected visual frames. Preserve the cover artwork and all content; verify desktop and mobile locally. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

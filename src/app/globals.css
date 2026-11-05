@@ -1120,3 +1120,60 @@ img { display: block; max-width: 100%; }
   .phase-week-top strong { font-size: 3.2rem; }
   .phase-finale-grid { gap: 3rem; }
 }
+
+/* Curved section seams and quieter surfaces across the public pages. */
+@media screen {
+  main > section + section {
+    position: relative;
+    margin-top: -2.5rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    box-shadow: 0 -12px 30px rgba(16, 43, 30, .045);
+  }
+
+  .site-footer {
+    position: relative;
+    margin-top: -2.5rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+  }
+
+  .home-phase-card, .phase-week-card, .challenge-steps li {
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(23, 62, 41, .065);
+  }
+
+  .phase-week-grid, .challenge-steps {
+    gap: 1rem;
+    border: 0;
+    background: transparent;
+  }
+
+  .phase-week-card {
+    border: 1px solid #d2ddcd;
+    background: #fffdf7;
+  }
+
+  .challenge-steps li,
+  .challenge-steps li + li,
+  .challenge-steps li:nth-child(3),
+  .challenge-steps li:nth-child(4) {
+    padding: 1.5rem;
+    border: 1px solid #d3d9c7;
+    background: rgba(255, 253, 247, .78);
+  }
+
+  .product-feature-visual, .reminder-art, .phase-focus {
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(23, 62, 41, .12);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main > section + section, .site-footer {
+    margin-top: -1.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .home-phase-card, .phase-week-card, .challenge-steps li {
+    border-radius: 20px;
+  }
+}

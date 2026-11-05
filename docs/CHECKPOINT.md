@@ -4,9 +4,9 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-38
+Current checkpoint: CP-39
 Status: DONE (local verification; user handles production)
-Last completed checkpoint: CP-38 (revised risk accordion verified locally). Earlier checkpoint records remain in Git history.
+Last completed checkpoint: CP-39 (softer section design verified locally). Earlier checkpoint records remain in Git history.
 
 ## Completed Work
 
@@ -136,4 +136,4 @@ CP-36 is complete locally. The user will review and update production. Phase vid
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. Do not deploy CP-25 through CP-38 unless the user asks.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. Do not deploy CP-25 through CP-39 unless the user asks.

@@ -416,3 +416,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 with five risk summaries. The first action was hidden until its summary was clicked; no table, page errors, or horizontal overflow occurred. |
 | Content | Checked all five revised titles and the first and last action/fallback text in local Chrome. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-39 — Softer section design (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | `/`, `/san-pham`, `/chien-luoc`, and `/giai-doan/bam-hoan` returned HTTP 200 at 390 px and 1440 px. Section upper corners measured 24 px and 40 px respectively; no page errors or horizontal overflow. |
+| Visual review | Reviewed the cover-to-intro transition, challenge cards, product introduction, and weekly phase cards at both widths. Text and media placeholders remained readable. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |
