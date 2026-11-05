@@ -279,4 +279,5 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
 | Interactive browser | Headless Chrome at 390 px and 1440 px showed package, gathering, brewing, and finished-cup scenes in order. Ingredient images, tea-bag filling, water/tea animation, skip, and replay worked. No horizontal overflow at either width. Screenshots reviewed for all four scenes. |
 | Reduced motion | With `prefers-reduced-motion: reduce`, the sequence reached the finished cup, skip worked, and no page errors occurred. |
-| Live deployment | Pending source commit and Vercel verification. |
+| Live deployment | Vercel reported `e96ebe7` successful. The public `/san-pham` page contained the new journey and no old gallery. |
+| Live browser | At 390 px and 1440 px, clicking the start control moved the journey from `package` to `cup`; both supplied photos loaded, document width matched viewport width, and there were no page errors. |

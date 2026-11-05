@@ -5,8 +5,8 @@ Project: Truong Nhan Digital Campaign
 ## Current Status
 
 Current checkpoint: CP-23
-Status: IN_PROGRESS
-Last completed checkpoint: CP-22 (ingredient percentages verified on the live product page). CP-22 source and local verification were committed as `8ba5553`, with its pending-deployment record in `0dce7ad`. CP-21 documentation was committed as `6c08c23` and source as `3af1a57`; CP-20 documentation as `ab9fc6d` and source fix as `a060d8f`; CP-19 as `ed8a39e`; CP-18 as `974d1e5`; CP-17 as `09de756`; CP-16 as `7d7041f`; CP-15 as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
+Status: DONE
+Last completed checkpoint: CP-23 (interactive product journey verified on the live product page). CP-23 source was committed as `e96ebe7`. CP-22 source and local verification were committed as `8ba5553`, with its pending-deployment record in `0dce7ad`. CP-21 documentation was committed as `6c08c23` and source as `3af1a57`; CP-20 documentation as `ab9fc6d` and source fix as `a060d8f`; CP-19 as `ed8a39e`; CP-18 as `974d1e5`; CP-17 as `09de756`; CP-16 as `7d7041f`; CP-15 as `cbaa4c5`; CP-14 as `d5b7019`; CP-13 as `6c91f58`; CP-12 as `0395d75`; CP-11 as `9358149`; CP-10 as `0d8ca95`; CP-09 as `5cb6783`; CP-08 as `3ce1dc5`; CP-07 as `8a356ce`; CP-06 as `8a0ddec`; CP-05 as `c7ead3e`; CP-04 as `53be588`; CP-03 as `ef29d26`; CP-02 as `dec7abc`; CP-01 as `d2022cd`; CP-00 as `d8a6b16`.
 
 ## Completed Work
 
@@ -40,11 +40,11 @@ Last completed checkpoint: CP-22 (ingredient percentages verified on the live pr
 - Completed CP-20 by making runtime JSON reads side-effect free and verifying that the deployed challenge page renders and plays the guide video.
 - Completed CP-21 by removing the absent rules-file link and references from the challenge page, updating the homepage challenge entry point, and verifying both live routes.
 - Completed CP-22 by displaying each supplied formula percentage in the product ingredient selector and adding the requested Ngọc Linh phrase; local and live mobile checks passed.
-- Implemented CP-23 locally with a four-scene product journey, supplied photos, animated ingredient gathering and brewing, and start/skip/replay controls. Live verification remains pending.
+- Completed CP-23 with a four-scene product journey, supplied photos, animated ingredient gathering and brewing, and start/skip/replay controls. Local and live mobile/desktop checks passed.
 
 ## Current Task
 
-CP-23 awaits source commit, deployment, and live verification. The local `/san-pham` journey passes code and browser checks at 390 px and 1440 px. CP-22 is live. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
+CP-23 is complete. Vercel deployed the four-scene `/san-pham` journey, and live browser checks passed at 390 px and 1440 px. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
 
 ## Completed Files
 
@@ -123,4 +123,4 @@ CP-23 awaits source commit, deployment, and live verification. The local `/san-p
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Commit the focused CP-23 files without unrelated user edits, deploy, and verify the public `/san-pham` journey. Mark CP-23 DONE only after live verification.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Inspect source and continue from CP-23. Do not repeat completed work.
