@@ -233,3 +233,8 @@
 - Attach media metadata to each weekly activity by zero-based `activityIndex`. A Video activity has one nullable MP4 source; a Chuỗi video activity has an ordered list that starts empty. Other activities, including TikTok LIVE, remain text as specified.
 - Show media directly under its activity in the week card and remove the outdated phase-level video gallery. Keep planned work visibly distinct from completed work and document file paths and JSON examples in `docs/PHASE_VIDEOS.md`.
 - Preserve unrelated working-tree edits and leave production review and deployment to the user.
+
+## CP-36 monitoring cadence copy (2026-11-06)
+
+- Keep the existing four-card monitoring layout and update only the four data rows with the user's supplied wording. Render the previously hidden `sources` field alongside each cadence so every tool name appears.
+- Preserve the user's uncommitted strategy heading and other working-tree edits. Verify locally and leave production to the user.

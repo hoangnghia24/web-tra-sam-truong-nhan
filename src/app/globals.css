@@ -641,6 +641,7 @@ img { display: block; max-width: 100%; }
 .pillar-grid h4 { margin: 0; font-family: var(--type-display); font-size: 1.35rem; }
 .pillar-grid p { color: var(--text-secondary); font-size: .86rem; }
 .pillar-grid small { color: var(--brand-leaf); }
+.report-budget .pillar-grid small { display: block; margin-top: .7rem; font-size: .8rem; font-style: italic; line-height: 1.5; }
 .phase-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin: 3rem 0 1.5rem; }
 .phase-track article { padding: 2rem; border: 1px solid #58715b; }
 .phase-track span { color: var(--brand-gold-light); font-size: .74rem; font-weight: 700; }

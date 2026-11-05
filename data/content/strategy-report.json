@@ -209,10 +209,10 @@
     { "name": "Dự phòng", "millionVnd": 100 }
   ],
   "monitoring": [
-    { "title": "Truyền thông", "metrics": "Lượt hiển thị, lượt xem video, CPM, CTR", "cadence": "Hằng ngày", "sources": "Meta Ads Manager, TikTok Ads Manager, GA4" },
-    { "title": "Tương tác", "metrics": "Lượt truy cập, CVR microsite, số hóa đơn", "cadence": "Hằng tuần", "sources": "GA4, Hotjar, dashboard kế hoạch" },
-    { "title": "Chuyển đổi", "metrics": "Số đơn, GMV, ROAS, CPA, AOV", "cadence": "Hằng ngày và hằng tuần", "sources": "TikTok Shop Seller Center, Shopee Partner" },
-    { "title": "Cộng đồng và giữ chân", "metrics": "UGC hợp lệ, lượt dùng hashtag, NPS, tỷ lệ Zalo OA", "cadence": "Cuối mỗi giai đoạn", "sources": "TikTok Analytics, Zalo OA" }
+    { "title": "Truyền thông (Awareness):", "metrics": "Impressions, Video Views, CPM, CTR", "cadence": "HẰNG NGÀY", "sources": "Meta Ads Manager, TikTok Ads Manager, GA4." },
+    { "title": "Tương tác (Engagement):", "metrics": "Lượt truy cập, CVR Microsite, Số Hóa đơn", "cadence": "HẰNG TUẦN", "sources": "GA4, Hotjar, Dashboard." },
+    { "title": "Chuyển đổi (Performance):", "metrics": "Số đơn hàng, GMV, ROAS, CPA, AOV", "cadence": "HẰNG NGÀY & HẰNG TUẦN", "sources": "TikTok Shop Seller Center, Shopee Partner." },
+    { "title": "Cộng đồng & Giữ chân (Retention):", "metrics": "Số UGC hợp lệ, Lượt xài Hashtag, NPS, Tỷ lệ Zalo OA", "cadence": "CUỐI MỖI PHASE", "sources": "TikTok Analytics, Zalo OA." }
   ],
   "triggerRules": [
     { "title": "Phát ngôn KOC gây tranh cãi", "signal": "Rủi ro trung bình, tác động cao", "response": "Đề xuất duyệt nội dung trước đăng; khi có sự cố, tạm dừng nội dung, yêu cầu đính chính và rà soát hợp tác." },
