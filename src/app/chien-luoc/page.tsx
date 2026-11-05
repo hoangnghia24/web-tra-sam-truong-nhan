@@ -37,6 +37,8 @@ export default async function StrategyPage() {
         <p className="section-index"><span /> 05 · Kênh & đo lường</p>
         <h2 className="section-title">MỖI KÊNH MỘT NHIỆM VỤ</h2>
         <ChannelJourney content={report.channelJourney} />
+        <h3 className="report-subtitle">Bốn trụ cột nội dung</h3>
+        <div className="pillar-grid">{report.pillars.map((item) => <article key={item.title}><h4>{item.title}</h4><p>{item.body}</p></article>)}</div>
       </div>
     </section>
     <section id="trien-khai" className="report-section report-phases"><div className="product-container"><p className="section-index light"><span /> 06 · Lộ trình 12 tuần</p><h2 className="section-title">Bấm hoãn. Làm ngay. <em>Gửi lời nhắc.</em></h2><div className="phase-track">{campaign.phases.map((phase) => <article key={phase.number}><span>GIAI ĐOẠN 0{phase.number} · TUẦN {phase.weeks}</span><h3>{phase.name}</h3><blockquote>“{phase.message}”</blockquote><ul>{phase.focus.map((focus) => <li key={focus}>{focus}</li>)}</ul><details className="phase-weekly"><summary>Video và ấn phẩm theo tuần</summary>{phase.weeklyPlan.map((week) => <div key={week.week}><h4>Tuần {week.week}</h4><ul>{week.activities.map((activity) => <li key={activity}>{activity}</li>)}</ul><p><strong>Mục tiêu:</strong> {week.goal}</p></div>)}</details></article>)}</div><p className="report-disclosure">{campaign.statusNote}</p></div></section>

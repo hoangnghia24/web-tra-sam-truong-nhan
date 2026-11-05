@@ -362,3 +362,11 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | Headless Chrome opened `/chien-luoc` with HTTP 200 at 390 px and 1440 px. The new heading, all six channel cards, and all three measurement paths rendered. No page errors or horizontal overflow occurred. |
 | Visual review | Reviewed section screenshots at both widths; the cards and paths remained legible. |
 | Production | Not checked, pushed, or deployed, as requested by the user. |
+
+## CP-33 — Restore four content pillars (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, and `npm run build` passed. |
+| Local browser | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 and showed all four restored pillars after the three measurement paths. The six channel cards remained visible; no page errors or horizontal overflow occurred. |
+| Production | Not checked, pushed, or deployed, as requested by the user. |

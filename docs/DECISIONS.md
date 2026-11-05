@@ -212,3 +212,9 @@
 - Replace the old journey, receipt concept, channel summary, and content pillars in section 05 with the supplied six channel duties and three measurement paths. Keep the user's wording and the two separate duties under TikTok Shop and Shopee.
 - Store this copy in one validated `channelJourney` object. Present the six duties as numbered cards and the three paths as arrow sequences, with responsive one-column mobile layout.
 - Preserve unrelated working-tree edits. Verify locally and leave production review and deployment to the user.
+
+## CP-33 restore content pillars (2026-11-06)
+
+- CP-32 removed the existing four content pillars when replacing section 05. Restore them after the measurement paths; retain the six channel duties and three paths.
+- Recover the four titles and bodies from the section's prior data, including the user's wording for the action pillar. Keep the existing responsive `pillar-grid` presentation.
+- Preserve unrelated working-tree edits. Verify locally and leave production review and deployment to the user.

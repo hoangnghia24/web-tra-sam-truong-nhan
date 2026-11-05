@@ -93,6 +93,7 @@ export const strategyReportSchema = z.object({
     })).length(6),
     measurement: z.array(z.object({ title: safeText(100), steps: z.array(safeText(100)).length(3) })).length(3),
   }),
+  pillars: z.array(strategyEntry).length(4),
   budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(10),
   monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(200) })).length(4),
   triggerRules: z.array(z.object({ title: safeText(120), signal: safeText(200), response: safeText(500) })).length(6),

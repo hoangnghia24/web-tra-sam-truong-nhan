@@ -37,5 +37,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-30 Customer context | Replace the old market cards with the user's truth, four pain points, purchase motivation, and four decision drivers. Preserve the existing “Càng quý…” quote, label insight and price as plan assumptions, and verify locally. |
 | CP-31 Truth spacing | Reduce the desktop gap between the “Sự thật:” label and its quote while keeping the mobile stacked layout; verify both locally. |
 | CP-32 Channel roles and measurement | Replace the old strategy journey section with the user's six channel duties and three measurement paths. Keep copy as supplied, validate the new JSON structure, and verify the local responsive page without deploying. |
+| CP-33 Restore four content pillars | Restore the user's four content pillars beneath the channel roles and measurement paths, preserving their prior wording; verify locally and leave production to the user. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

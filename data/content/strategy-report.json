@@ -190,6 +190,12 @@
       }
     ]
   },
+  "pillars": [
+    { "title": "Chạm cảm xúc", "body": "Video về cách mỗi người dành thời gian cho bản thân", "page": 23 },
+    { "title": "Minh bạch", "body": "Thành phần, nguồn gốc và cách pha được trình bày rõ ràng", "page": 23 },
+    { "title": "Hành động", "body": "KOC Review unboxing, feedback thực tế, Livestream ", "page": 23 },
+    { "title": "Lan tỏa", "body": "Câu chuyện người tham gia và lời nhắc quan tâm", "page": 23 }
+  ],
   "budget": [
     { "name": "Paid Ads", "millionVnd": 135 },
     { "name": "KOC / Creator", "millionVnd": 105 },
