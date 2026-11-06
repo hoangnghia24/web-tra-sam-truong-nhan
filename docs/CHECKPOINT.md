@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-56
-Status: DONE (cross-device video codec fix deployed and browser playback verified)
-Last completed checkpoint: CP-56 (commit `1884949` is deployed; W3 now serves H.264/AAC MP4 and shows video frames on the public site).
+Current checkpoint: CP-57
+Status: DONE (latest contact portrait asset deployed and verified)
+Last completed checkpoint: CP-57 (commit `5bc739f` is deployed; the cropped portrait loads on the public contact page).
 
 ## Completed Work
 
+- Completed CP-57: deployed the current cropped Trần Thị Tường Vy portrait, removed its unused JPG predecessor, and verified production image loading.
 - Completed CP-56: found HEVC video in W3 among the ten public MP4s, transcoded it to H.264 while retaining AAC audio and its URL, and verified local and production playback with visible frames.
 - Completed CP-55: pushed the locally validated source and pending avatar and ingredient-label edits, resolved Git LFS pointers during the Vercel build, and verified all nine full video responses and representative playback on production.
 - Completed CP-54: ordered poster and video media in the rendered week grid, keeping mixed weeks poster-first and single items on the left.
@@ -71,7 +72,7 @@ Last completed checkpoint: CP-56 (commit `1884949` is deployed; W3 now serves H.
 
 ## Current Task
 
-CP-56 is deployed on the public Vercel site. Phase video setup and H.264/AAC export requirements are documented in `docs/PHASE_VIDEOS.md`; native Git LFS can be enabled in Vercel Project Settings → Git to avoid build-time downloads. Official purchase URLs and an active 15% voucher code are still needed to enable the receipt purchase CTAs and offer; see `docs/RECEIPT_JOURNEY.md`. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
+CP-57 is deployed on the public Vercel site. Phase video setup and H.264/AAC export requirements are documented in `docs/PHASE_VIDEOS.md`; native Git LFS can be enabled in Vercel Project Settings → Git to avoid build-time downloads. Official purchase URLs and an active 15% voucher code are still needed to enable the receipt purchase CTAs and offer; see `docs/RECEIPT_JOURNEY.md`. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
 
 ## Completed Files
 
@@ -150,4 +151,4 @@ CP-56 is deployed on the public Vercel site. Phase video setup and H.264/AAC exp
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. CP-25 through CP-56 are deployed; deploy future changes only when the user asks.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. CP-25 through CP-57 are deployed; deploy future changes only when the user asks.

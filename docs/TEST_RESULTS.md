@@ -588,3 +588,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Deployment | Commit `1884949` and its 8.1 MB Git LFS object were pushed to `origin/main`; GitHub's Vercel status reported success and “Deployment has completed.” |
 | Production media | W3 returned HTTP 206 with `Content-Type: video/mp4` and a total length of 8,053,723 bytes. A full download had the same SHA-256 as the local transcoded file. |
 | Production playback | Mobile-width Chrome opened `/giai-doan/bam-hoan` with HTTP 200, loaded W3 at 718 × 1280, advanced to 1.67 seconds without a media error, and yielded a nonblank rendered frame. Physical devices with the original symptom were not available for direct testing. |
+
+## CP-57 — Latest production assets (2026-11-07)
+
+| Check | Observed result |
+| --- | --- |
+| Scope | The tracked website diff was a new 1086 × 1141 PNG crop for Trần Thị Tường Vy and deletion of an unused JPG. Team JSON already referenced the PNG. Untracked `anhweb/` source assets were left outside the release. |
+| Local gates | `npm run validate:json`, `npm run lint`, `npm run build` including TypeScript, and `git diff --check` passed. Local Chrome at 390 px and 1440 px returned HTTP 200 for `/lien-he`; the portrait loaded and neither viewport overflowed horizontally. |
+| Deployment | Commit `5bc739f` was pushed to `origin/main`; Vercel status reached success with “Deployment has completed.” |
+| Production | The PNG URL returned HTTP 200 with 1,451,068 bytes. Mobile-width Chrome loaded the optimized portrait at 88 × 92 px on `/lien-he` with HTTP 200. The removed JPG URL returned HTTP 404. |
