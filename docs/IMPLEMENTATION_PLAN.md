@@ -61,5 +61,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-54 Weekly media order | Render posters before videos when both are available, leave single media items at the start of the grid, preserve the W5 series, and verify the affected weeks on mobile and desktop. |
 | CP-55 Production deployment | Include the pending avatar and ingredient-label edits, push CP-43–CP-54 to `origin/main`, resolve Git LFS pointers during Vercel builds if needed, and verify deployment status, public routes, media bytes and playback. |
 | CP-56 Cross-device phase video playback | Identify incompatible source codec, re-encode affected phase video to H.264/AAC MP4, verify every video stream and full decode, deploy through the existing GitHub/Vercel path, and check the public media response and browser playback. |
+| CP-57 Latest production assets | Deploy the current tracked contact portrait crop, remove its unused JPG predecessor, keep untracked source assets outside the release, and verify the contact page and image on production. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

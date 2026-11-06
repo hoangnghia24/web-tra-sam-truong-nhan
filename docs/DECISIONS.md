@@ -350,3 +350,8 @@
 - Inspect all ten public MP4 files before changing the player. Nine have H.264 video and AAC-LC audio; only W3 uses HEVC (`hvc1`) video with AAC-LC audio. Its container is valid, but HEVC playback support varies by device and browser, matching the reported audio-only symptom.
 - Re-encode only W3 to H.264 High Level 4.0, 8-bit `yuv420p`, keep its AAC audio stream, and move MP4 metadata to the front. Preserve the existing public URL and campaign content mapping.
 - Keep the supplied source assets under `anhweb/` untouched. Document the required export format for future clips.
+
+## CP-57 latest production assets (2026-11-07)
+
+- The current website diff contains a shorter crop of Trần Thị Tường Vy's public PNG and deletion of its unused JPG predecessor. `data/content/team.json` already points to the PNG, and no source references the JPG.
+- Deploy these tracked public asset changes. Keep the untracked `anhweb/` source photos, logo, and videos out of the commit because their site-ready copies were handled in earlier checkpoints.
