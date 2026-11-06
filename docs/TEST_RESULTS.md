@@ -513,3 +513,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
 | Local browser | At 390 px and 1440 px, S and T selections reported `list-style-type: disc`, all list items fit their panels, and neither viewport overflowed horizontally. Screenshots showed a visible gold bullet beside each T item. |
 | Production | Not pushed or deployed. |
+
+## CP-50 — Contact avatars (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Source mapping | Four supplied portrait filenames matched the four team-member names; copies were placed under `public/images/team/` and referenced from team JSON. |
+| Code gates | `npm run validate:json` passed all ten content and five seed files; `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
+| Local browser | At 390 px and 1440 px, `/lien-he` returned 200. All four cards showed loaded portraits whose alternative text matched each member's name. No horizontal overflow; contact-grid screenshots reviewed. |
+| Production | Not pushed or deployed. |

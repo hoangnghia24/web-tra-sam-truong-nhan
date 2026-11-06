@@ -308,3 +308,8 @@
 ## CP-49 SWOT bullets (2026-11-06)
 
 - Keep the semantic `ul`/`li` structure and explicitly restore disc markers, which the CSS reset otherwise hides. Use muted gold markers to separate the points without changing their wording.
+
+## CP-50 contact avatars (2026-11-06)
+
+- Map the supplied portrait files to team members by their matching filenames. Copy them to stable ASCII public paths and keep those paths in `data/content/team.json` rather than duplicating member data in the contact component.
+- Use circular cropped Next Image avatars with the member's name in alternative text. Preserve the previous initial avatar when an optional image path is absent.

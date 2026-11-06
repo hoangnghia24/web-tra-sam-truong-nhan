@@ -17,6 +17,7 @@ export const companySchema = z.object({
 export const teamMemberSchema = z.object({
   id: safeText(40), name: safeText(100), email,
   phone: z.string().regex(/^0\d{9}$/, 'Số điện thoại phải có 10 chữ số'),
+  avatar: z.string().regex(/^\/images\/team\/[a-z0-9-]+\.(?:jpe?g|png|webp)$/).optional(),
 });
 export const teamSchema = z.object({ teamEmail: email, members: z.array(teamMemberSchema).length(4) });
 

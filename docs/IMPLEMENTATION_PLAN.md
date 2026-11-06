@@ -54,5 +54,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-47 Product introduction image | Use the supplied square product image with correct intrinsic dimensions; remove the 16:9 constraint, inspect mobile and desktop layouts, and verify lint/build. |
 | CP-48 SWOT sizing | Reduce empty space in the SWOT detail panel and four selector cards, place labels near the S/W/O/T keys, and verify short and long tab content on mobile and desktop. |
 | CP-49 SWOT bullets | Restore list markers for the SWOT detail items, style them within the existing palette, and verify mobile and desktop rendering. |
+| CP-50 Contact avatars | Copy the four supplied portraits into public assets, map paths in team JSON, show them in contact cards with accessible alternative text and initials fallback, and verify data, build and responsive layout. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

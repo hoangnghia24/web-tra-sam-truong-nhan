@@ -687,7 +687,8 @@ img { display: block; max-width: 100%; }
 .team-card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 3rem; }
 .team-card { min-width: 0; padding: 1.5rem; border: 1px solid #d4ddcc; background: #f2f1e7; }
 .team-card > span { color: var(--brand-tea); font-size: .72rem; font-weight: 700; }
-.team-avatar { width: 76px; height: 76px; display: grid; place-items: center; margin: 2rem 0 1.6rem; border-radius: 50%; background: #dce7d0; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.7rem; }
+.team-avatar { position: relative; width: 88px; height: 88px; display: grid; place-items: center; overflow: hidden; margin: 1.6rem 0 1.3rem; border: 2px solid var(--brand-gold-light); border-radius: 50%; background: #dce7d0; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.7rem; }
+.team-avatar img { object-fit: cover; object-position: center 25%; }
 .team-card h3 { min-height: 2.3em; margin: 0 0 1rem; font-family: var(--type-display); font-size: 1.4rem; font-weight: 600; line-height: 1.15; }
 .team-card a { display: flex; align-items: center; gap: .4rem; margin-top: .6rem; color: var(--brand-forest); font-size: .72rem; overflow-wrap: anywhere; text-decoration: none; }
 .team-card a:hover { text-decoration: underline; }

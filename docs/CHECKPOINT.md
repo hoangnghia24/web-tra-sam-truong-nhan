@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-49
-Status: DONE (local SWOT bullets verified)
-Last completed checkpoint: CP-49 (SWOT detail items now have visible bullet markers). CP-42 remains the latest production deployment.
+Current checkpoint: CP-50
+Status: DONE (local contact avatars verified)
+Last completed checkpoint: CP-50 (four supplied portraits appear on their matching contact cards). CP-42 remains the latest production deployment.
 
 ## Completed Work
 
+- Completed CP-50: added the four supplied portraits to the contact cards, kept their paths in team content data, and preserved initial avatars as a fallback.
 - Completed CP-49: restored visible bullet markers for each SWOT detail item and verified mobile and desktop rendering.
 - Completed CP-48: reduced the SWOT panel and tab heights, moved each label nearer its S/W/O/T key, and verified all content still fits.
 - Completed CP-47: used the supplied square product photo at its native aspect ratio so the box appears larger without cropping.
