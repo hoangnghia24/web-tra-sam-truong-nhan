@@ -337,3 +337,9 @@
 
 - Order poster entries before other media when rendering each week. This keeps poster on the left and video on the right in the two-column grid, while a single item naturally starts in the left column. Keep the order in source JSON unchanged and preserve the W5 series.
 - Use the same document order as visual order so mobile stacking and assistive reading follow poster then video.
+
+## CP-55 production media recovery (2026-11-07)
+
+- Include the user's pending portrait-path and ingredient-label edits in the production source commit. Keep original `anhweb/` files untracked.
+- GitHub and Vercel accepted the production commit, but Vercel served the 133-byte Git LFS pointer as `video/mp4`. The dashboard was unavailable through the computer-use connection. Add a build-time resolver that only acts on pointer files, downloads the exact commit's public GitHub media, verifies its declared size and SHA-256, and leaves already materialized local videos untouched.
+- Continue to recommend Vercel's native Git LFS setting; the resolver lets the current Git deployment serve full files without requiring dashboard access.

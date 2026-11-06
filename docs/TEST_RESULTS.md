@@ -563,3 +563,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Single and series weeks | W3, W8, W10 and W12 rendered their lone video at the grid's left edge. W5 remained one two-video series. |
 | Code gates | `npm run lint` and `npm run build` passed, including TypeScript. |
 | Production | Not pushed or deployed. |
+
+## CP-55 — Production deployment (in progress, 2026-11-07)
+
+| Check | Observed result |
+| --- | --- |
+| Pre-deployment gates | `npm run validate:json`, `npm run lint`, `npm run test` (9 tests), `npm run build`, `npm audit --omit=dev --audit-level=moderate` (0 vulnerabilities), and `git diff --check` passed. |
+| Initial push | `13e6629` and the preceding local commits were pushed to `origin/main`; nine Git LFS objects totaling 435 MB uploaded. Vercel status reached success. Seven public routes returned 200, and the new avatar and poster assets returned image responses. |
+| Media defect | Public W10 and W5 video responses were 133-byte Git LFS pointers, despite HTTP 206 and `video/mp4`; the W10 response contained the pointer's SHA-256 and declared 39,122,476-byte size. |
+| Resolver check | A copied W5 pointer was resolved to a 23,295,557-byte MP4 with matching SHA-256. `npm run lint` and the updated `npm run build` passed locally. |
+| Resume step | Push the resolver and verify Vercel deployment, full video content ranges and browser playback. |

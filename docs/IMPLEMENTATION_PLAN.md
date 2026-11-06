@@ -59,5 +59,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-52 W10 media correction | Apply the supplier's corrected week for “Lần này mình nhắc bạn”: rename the public MP4, move its media entry from W11 to W10, preserve activity text, and verify the week cards and playback. |
 | CP-53 Weekly phase layout | Present each week as a full-width two-column card with a sticky week indicator, separated activities, a two-column media grid and a highlighted goal; stack the content and media on narrow screens, then verify all three phase routes. |
 | CP-54 Weekly media order | Render posters before videos when both are available, leave single media items at the start of the grid, preserve the W5 series, and verify the affected weeks on mobile and desktop. |
+| CP-55 Production deployment | Include the pending avatar and ingredient-label edits, push CP-43–CP-54 to `origin/main`, resolve Git LFS pointers during Vercel builds if needed, and verify deployment status, public routes, media bytes and playback. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

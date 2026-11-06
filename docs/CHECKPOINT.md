@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-54
-Status: DONE (weekly media order verified locally)
-Last completed checkpoint: CP-54 (poster-left and video-right placement for mixed weeks; single items start on the left). CP-42 remains the latest production deployment.
+Current checkpoint: CP-55
+Status: IN_PROGRESS (production video bytes pending)
+Last completed checkpoint: CP-54 (poster-left and video-right placement for mixed weeks; single items start on the left). CP-55 source commit `13e6629` is deployed, but MP4 URLs still serve Git LFS pointers.
 
 ## Completed Work
 
+- CP-55 in progress: pushed the locally validated source and the user's pending avatar and ingredient-label edits; the Vercel status succeeded, but the public video URLs need full MP4 bytes. A verified build-time Git LFS resolver is ready for redeployment.
 - Completed CP-54: ordered poster and video media in the rendered week grid, keeping mixed weeks poster-first and single items on the left.
 - Completed CP-53: expanded the weekly phase cards to full width, used a sticky desktop week indicator, separated activities, enlarged the media grid, and highlighted the goal in a cream callout.
 - Completed CP-52: moved the mislabeled video from W11 to W10, corrected its public filename, and kept the planned activity text unchanged.

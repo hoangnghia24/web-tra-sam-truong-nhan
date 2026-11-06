@@ -7,14 +7,14 @@ Kế hoạch W1–W12 nằm trong `data/content/campaign.json`, trường `phase
 - Chép MP4 vào `public/videos/phases/` và poster vào `public/images/phases/`.
 - Dùng tên tệp chữ thường, không dấu, ngăn từ bằng dấu gạch ngang. `src` trong JSON bắt đầu bằng `/videos/phases/` hoặc `/images/phases/`.
 - Video dùng khung dọc 9:16 trên trang. Poster giữ nguyên tỷ lệ ảnh; người xem có thể mở ảnh gốc từ thẻ poster.
-- MP4 trong `public/videos/phases/` được theo dõi bằng Git LFS qua `.gitattributes`. Sau khi clone, chạy `git lfs pull` nếu tệp video chưa được tải về. Trước khi triển khai qua Git trên Vercel, bật Git LFS trong **Project Settings → Git** để Vercel lấy tệp thật; [Vercel hướng dẫn thiết lập](https://vercel.com/docs/project-configuration/git-settings#git-large-file-storage-lfs).
+- MP4 trong `public/videos/phases/` được theo dõi bằng Git LFS qua `.gitattributes`. Sau khi clone, chạy `git lfs pull` nếu tệp video chưa được tải về. Vercel có thể lấy tệp thật khi bật Git LFS trong **Project Settings → Git**; [Vercel hướng dẫn thiết lập](https://vercel.com/docs/project-configuration/git-settings#git-large-file-storage-lfs). Nếu bản build chỉ nhận tệp con trỏ, `npm run build` sẽ tải tệp thật từ kho GitHub công khai và kiểm tra kích thước cùng SHA-256 trước khi build.
 
 ## Quy tắc theo tuần
 
 - Một MP4 có cùng mã W: một đối tượng `kind: "video"` với `title` và `src`.
 - Từ hai MP4 cùng mã W: một đối tượng `kind: "series"`, gồm `title` và mảng `videos` có ít nhất hai phần tử. W5 hiện có hai video trong một chuỗi.
 - Poster là đối tượng `kind: "poster"` riêng, có `title`, `src`, `width` và `height` theo ảnh gốc. Video đơn và poster có thể thêm `note` khi chứa nội dung mô phỏng hoặc cần xác minh.
-- Mỗi tuần có tối đa một video đơn **hoặc** một chuỗi; có thể có thêm poster. Thứ tự trong `media` là thứ tự hiển thị.
+- Mỗi tuần có tối đa một video đơn **hoặc** một chuỗi; có thể có thêm poster. Khi hiển thị, poster được đặt trước video; tư liệu đơn bắt đầu ở cột trái.
 
 Ví dụ video đơn và poster W1:
 
