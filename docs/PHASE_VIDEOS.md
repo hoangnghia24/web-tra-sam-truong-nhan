@@ -7,6 +7,7 @@ Kế hoạch W1–W12 nằm trong `data/content/campaign.json`, trường `phase
 - Chép MP4 vào `public/videos/phases/` và poster vào `public/images/phases/`.
 - Dùng tên tệp chữ thường, không dấu, ngăn từ bằng dấu gạch ngang. `src` trong JSON bắt đầu bằng `/videos/phases/` hoặc `/images/phases/`.
 - Video dùng khung dọc 9:16 trên trang. Poster giữ nguyên tỷ lệ ảnh; người xem có thể mở ảnh gốc từ thẻ poster.
+- Xuất video MP4 với hình H.264/AVC (`avc1`, 8-bit `yuv420p`, tối đa Level 4.0) và tiếng AAC-LC. Bật `faststart` để trình duyệt có thể đọc thông tin phát sớm. MP4 chứa HEVC/H.265 (`hvc1`) có thể phát tiếng nhưng không hiện hình trên một số thiết bị; kiểm tra codec của từng tệp trước khi đưa lên production.
 - MP4 trong `public/videos/phases/` được theo dõi bằng Git LFS qua `.gitattributes`. Sau khi clone, chạy `git lfs pull` nếu tệp video chưa được tải về. Vercel có thể lấy tệp thật khi bật Git LFS trong **Project Settings → Git**; [Vercel hướng dẫn thiết lập](https://vercel.com/docs/project-configuration/git-settings#git-large-file-storage-lfs). Nếu bản build chỉ nhận tệp con trỏ, `npm run build` sẽ tải tệp thật từ kho GitHub công khai và kiểm tra kích thước cùng SHA-256 trước khi build.
 
 ## Quy tắc theo tuần

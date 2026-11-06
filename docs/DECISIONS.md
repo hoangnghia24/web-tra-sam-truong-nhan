@@ -344,3 +344,9 @@
 - GitHub and Vercel accepted the production commit, but Vercel served the 133-byte Git LFS pointer as `video/mp4`. The dashboard was unavailable through the computer-use connection. Add a build-time resolver that only acts on pointer files, downloads the exact commit's public GitHub media, verifies its declared size and SHA-256, and leaves already materialized local videos untouched.
 - Continue to recommend Vercel's native Git LFS setting; the resolver lets the current Git deployment serve full files without requiring dashboard access.
 - The resolver deployment `d2ed383` completed successfully. Keep the local video paths in content JSON so the site serves MP4 files from its own production domain; the build fetches from GitHub only when the checkout contains pointers.
+
+## CP-56 cross-device phase video codec (2026-11-07)
+
+- Inspect all ten public MP4 files before changing the player. Nine have H.264 video and AAC-LC audio; only W3 uses HEVC (`hvc1`) video with AAC-LC audio. Its container is valid, but HEVC playback support varies by device and browser, matching the reported audio-only symptom.
+- Re-encode only W3 to H.264 High Level 4.0, 8-bit `yuv420p`, keep its AAC audio stream, and move MP4 metadata to the front. Preserve the existing public URL and campaign content mapping.
+- Keep the supplied source assets under `anhweb/` untouched. Document the required export format for future clips.
