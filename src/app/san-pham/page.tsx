@@ -31,7 +31,7 @@ export default async function ProductPage() {
 
       <section className="product-page-intro" aria-labelledby="product-intro-title">
         <div className="product-page-layout">
-          <div className="product-page-image"><Image src="/images/truong-nhan-cover.png" alt="Ảnh gốc Trà Sâm Trường Nhân: hộp trà, túi lọc, tách trà và cảnh núi" width={1920} height={1080} sizes="(max-width: 850px) 100vw, 55vw" priority /></div>
+          <div className="product-page-image"><Image src="/images/sanpham.jpg" alt="Hộp Trà Sâm Trường Nhân với họa tiết cây sâm và lá xanh" width={1254} height={1254} sizes="(max-width: 1200px) 100vw, 55vw" priority /></div>
           <div className="product-page-copy">
             <p className="section-index"><span /> 01 · Câu chuyện sản phẩm</p>
             <h2 id="product-intro-title">Một khoảng lặng <em>được nâng niu.</em></h2>

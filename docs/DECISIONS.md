@@ -294,3 +294,8 @@
 ## CP-46 TOWS card arrows (2026-11-06)
 
 - Remove only the decorative ArrowDownRight icons from the TOWS cards. Keep their headings and explanatory text as static content, without implying a click interaction.
+
+## CP-47 product introduction image (2026-11-06)
+
+- Keep the user-supplied `sanpham.jpg` as the product introduction image. Its 1254 × 1254 dimensions match the square source; removing the inherited 16:9 CSS constraint lets the full photo fill its frame without cropping the package.
+- Update the alternative text to describe the actual photo. Keep the existing responsive layout and frame treatment.

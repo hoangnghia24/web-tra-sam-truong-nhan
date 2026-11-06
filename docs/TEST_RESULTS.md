@@ -487,3 +487,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
 | Local rendering | GET `/chien-luoc` showed three TOWS cards and no SVG within the TOWS grid. All three heading and body texts remained in the rendered HTML. |
 | Production | Not pushed or deployed. |
+
+## CP-47 — Product introduction image (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Asset | `sanpham.jpg` is 1254 × 1254 px; the displayed image uses the same square ratio. |
+| Code gates | `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
+| Local browser | At 390 px, the image rendered at 318 × 318 px inside a 350 × 350 px frame. At 1440 px, it rendered at 626 × 626 px inside a 659 × 659 px frame. The image loaded, no horizontal overflow occurred, and both screenshots showed the full package. |
+| Production | Not pushed or deployed. |

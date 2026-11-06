@@ -320,7 +320,7 @@ img { display: block; max-width: 100%; }
 .product-page-intro { background: var(--brand-ivory); }
 .product-page-layout { width: min(100% - 3rem, 1280px); margin: auto; display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: clamp(3rem, 6vw, 7rem); }
 .product-page-image { padding: 1rem; background: #e5e8d9; transform: rotate(-1.3deg); box-shadow: 20px 20px 0 #d9dfce; }
-.product-page-image img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: contain; }
+.product-page-image img { width: 100%; height: auto; }
 .product-page-copy h2, .product-brewing-section h2, .product-shop-section h2 { margin: 0 0 1.5rem; font-family: var(--type-display); font-size: var(--text-h2); font-weight: 600; line-height: 1.12; letter-spacing: -.04em; }
 .product-page-copy h2 em, .product-shop-section h2 em { color: var(--brand-leaf); font-weight: 400; }
 .product-page-copy > p:not(.section-index), .product-section-lead, .product-faq-layout > div:first-child > p:last-child { color: var(--text-secondary); }

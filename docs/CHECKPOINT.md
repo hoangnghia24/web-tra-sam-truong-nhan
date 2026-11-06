@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-46
-Status: DONE (local TOWS card change verified)
-Last completed checkpoint: CP-46 (removed arrows from all three TOWS cards; local build and rendered markup checks passed). CP-42 remains the latest production deployment.
+Current checkpoint: CP-47
+Status: DONE (local product image sizing verified)
+Last completed checkpoint: CP-47 (square product photo fills its frame at mobile and desktop widths). CP-42 remains the latest production deployment.
 
 ## Completed Work
 
+- Completed CP-47: used the supplied square product photo at its native aspect ratio so the box appears larger without cropping.
 - Completed CP-46: removed the decorative down-right arrows from the three TOWS cards without changing their text or layout.
 - Completed CP-45: matched the two market-context columns' body typography and heading levels, aligned their desktop content, and stacked them at narrower widths.
 - Completed CP-44: replaced the browser tab icon metadata with the supplied logo PNG and verified the rendered icon link and asset response locally.
