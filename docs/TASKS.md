@@ -54,6 +54,7 @@
 | DONE | CP-46: removed the decorative arrows from all three TOWS cards and verified local rendering. |
 | DONE | CP-47: enlarged the supplied product photo in the introduction frame by matching its square aspect ratio; verified mobile and desktop locally. |
 | DONE | CP-48: reduced SWOT detail and selector heights and tightened each key-to-label gap; verified responsive selection locally. |
+| DONE | CP-49: added visible bullet markers to each SWOT detail item and verified mobile and desktop rendering. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

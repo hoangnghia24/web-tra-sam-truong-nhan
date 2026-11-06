@@ -505,3 +505,11 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | At 390 px, 900 px, and 1440 px, all four cards measured 110 px high with a 9 px key-to-label gap. The short T panel measured 232 px; switching to S expanded the panel as needed and its four entries fit. No horizontal overflow occurred. |
 | Visual review | Inspected mobile and desktop T-state screenshots; keys, labels, and detail text remained readable. |
 | Production | Not pushed or deployed. |
+
+## CP-49 — SWOT bullets (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
+| Local browser | At 390 px and 1440 px, S and T selections reported `list-style-type: disc`, all list items fit their panels, and neither viewport overflowed horizontally. Screenshots showed a visible gold bullet beside each T item. |
+| Production | Not pushed or deployed. |

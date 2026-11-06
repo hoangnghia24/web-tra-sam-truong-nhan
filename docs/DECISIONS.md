@@ -304,3 +304,7 @@
 
 - Keep the four SWOT tabs in a two-by-two grid at a compact 110 px row height. Use a fixed small gap between the key and title instead of spacing them to opposite ends of the card.
 - Reduce the detail panel's minimum height to 232 px and let it grow for longer entries. Align both columns at the top so panel growth does not stretch the selector cards.
+
+## CP-49 SWOT bullets (2026-11-06)
+
+- Keep the semantic `ul`/`li` structure and explicitly restore disc markers, which the CSS reset otherwise hides. Use muted gold markers to separate the points without changing their wording.

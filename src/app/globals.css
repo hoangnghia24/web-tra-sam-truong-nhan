@@ -599,7 +599,8 @@ img { display: block; max-width: 100%; }
 .swot-grid button span { color: var(--brand-gold-light); font-family: var(--type-display); font-size: 2rem; line-height: 1; }
 .swot-grid button strong { font-family: var(--type-display); font-size: 1.25rem; font-weight: 600; }
 .swot-detail { min-height: 232px; padding: clamp(1.5rem, 2.5vw, 2.25rem); background: var(--brand-ivory); color: var(--brand-forest); }
-.swot-detail ul { padding-left: 1.3rem; font-family: var(--type-display); font-size: 1.25rem; line-height: 1.4; }
+.swot-detail ul { padding-left: 1.5rem; list-style-type: disc; font-family: var(--type-display); font-size: 1.25rem; line-height: 1.4; }
+.swot-detail li::marker { color: var(--brand-gold); }
 .swot-detail li + li { margin-top: .8rem; }
 .swot-detail small { color: var(--text-secondary); }
 .tows-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
