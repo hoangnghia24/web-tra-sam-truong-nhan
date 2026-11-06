@@ -604,8 +604,7 @@ img { display: block; max-width: 100%; }
 .swot-detail small { color: var(--text-secondary); }
 .tows-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
 .tows-grid article { padding: 1.6rem; border-top: 1px solid var(--brand-gold-light); background: #1b3828; }
-.tows-grid h3 { display: flex; align-items: start; justify-content: space-between; gap: .8rem; margin: 0 0 .8rem; }
-.tows-grid h3 svg { flex-shrink: 0; color: var(--brand-gold-light); }
+.tows-grid h3 { margin: 0 0 .8rem; }
 .tows-grid p { margin-bottom: 0; color: #ccd9c8; }
 .report-swot .report-disclosure, .report-phases .report-disclosure { color: #b9cdb8; }
 .report-sevenps { background: var(--brand-ivory); }

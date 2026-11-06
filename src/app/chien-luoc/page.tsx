@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { ArrowDownRight } from 'lucide-react';
 import { PageBanner } from '@/components/site/PageBanner';
 import { ChannelJourney } from '@/components/strategy/ChannelJourney';
 import { MarketContext } from '@/components/strategy/MarketContext';
@@ -32,7 +31,7 @@ export default async function StrategyPage() {
         <MarketContext content={report.marketContext} />
       </div>
     </section>
-    <section id="swot" className="report-section report-swot"><div className="product-container"><p className="section-index light"><span /> 03 · SWOT & TOWS</p><h2 className="section-title">Từ quan sát đến <em>hướng hành động.</em></h2><SwotExplorer items={report.swot} /><div className="tows-grid">{report.tows.map((item) => <article key={item.key}><h3><span>{item.key} ({item.title}):</span><ArrowDownRight size={19} aria-hidden="true" /></h3><p>{item.body}</p></article>)}</div></div></section>
+    <section id="swot" className="report-section report-swot"><div className="product-container"><p className="section-index light"><span /> 03 · SWOT & TOWS</p><h2 className="section-title">Từ quan sát đến <em>hướng hành động.</em></h2><SwotExplorer items={report.swot} /><div className="tows-grid">{report.tows.map((item) => <article key={item.key}><h3>{item.key} ({item.title}):</h3><p>{item.body}</p></article>)}</div></div></section>
     <section id="sevenps" className="report-section report-sevenps"><div className="product-container"><p className="section-index"><span /> 04 · Marketing mix</p><h2 className="section-title">Bảy chính sách <em>Marketing Mix.</em></h2><SevenPsExplorer items={report.sevenPs} /></div></section>
     <section id="hanh-trinh" className="report-section report-journey">
       <div className="product-container">

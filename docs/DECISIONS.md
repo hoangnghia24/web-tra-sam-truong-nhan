@@ -290,3 +290,7 @@
 
 - Use the established Inter body font at the same size and line height in both columns, while preserving the existing Fraunces heading style and all content.
 - Align heading and body starts in equal-height desktop columns. Stack the columns at 1050 px and below so long Vietnamese copy remains readable.
+
+## CP-46 TOWS card arrows (2026-11-06)
+
+- Remove only the decorative ArrowDownRight icons from the TOWS cards. Keep their headings and explanatory text as static content, without implying a click interaction.

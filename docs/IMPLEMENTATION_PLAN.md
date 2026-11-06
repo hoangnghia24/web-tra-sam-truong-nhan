@@ -50,5 +50,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-43 Header logo | Copy the supplied transparent logo into public assets; replace the shared header wordmark; verify lint, build and responsive rendering, then commit locally. |
 | CP-44 Browser tab icon | Point metadata icons to the supplied public logo PNG; verify the generated icon link, asset response, lint and build, then commit locally. |
 | CP-45 Market context balance | Match heading semantics and body typography in the motivation/driver panel, align equal-height desktop columns, stack at narrower widths, and verify local build and browser layout. |
+| CP-46 TOWS arrows | Remove the down-right arrow icon from each TOWS card and its unused CSS; verify that all three cards and their copy still render. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.
