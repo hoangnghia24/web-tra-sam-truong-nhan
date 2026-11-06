@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-42
-Status: DONE (production deployment verified)
-Last completed checkpoint: CP-42 (commit `bf5eecb` deployed through Vercel and public routes verified). Earlier checkpoint records remain in Git history.
+Current checkpoint: CP-43
+Status: DONE (local logo replacement verified)
+Last completed checkpoint: CP-43 (supplied logo in the shared header, local build and responsive check passed). CP-42 remains the latest production deployment.
 
 ## Completed Work
 
+- Completed CP-43: copied the supplied transparent logo into public assets and replaced the shared header wordmark with it; verified mobile and desktop locally.
 - Verified cover image at the requested path and reviewed its contents.
 - Found the 38-page strategy PDF at `public/references/`, rather than the requested `references/` path; extracted and inspected representative pages.
 - Created a first checkpoint system and committed source audit (`d43d066`).

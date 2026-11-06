@@ -47,5 +47,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-40 Sticky header and strategy phase links | Soften and pin the site header while scrolling. Replace the strategy report's expanded phase cards with links that show only the phase name and week range, using the existing detail routes. Verify desktop and mobile navigation locally. |
 | CP-41 Receipt summary and scroll depth | Stop the footer from covering the detailed receipt summary, then add a restrained scroll-driven receding effect to the outgoing sections where supported. Verify receipt controls, responsive layout, and reduced-motion behavior locally. |
 | CP-42 Production deployment | Commit current user content refinements, push the locally verified CP-25–CP-41 work to `origin/main`, and verify Vercel deployment status and key public routes in production. Record any remaining hosting limitations. |
+| CP-43 Header logo | Copy the supplied transparent logo into public assets; replace the shared header wordmark; verify lint, build and responsive rendering, then commit locally. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

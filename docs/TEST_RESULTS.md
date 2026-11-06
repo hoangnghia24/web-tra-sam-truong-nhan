@@ -453,3 +453,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Production routes | At 390 px and 1440 px, `/`, `/san-pham`, `/chien-luoc`, `/hoa-don-cho-doi`, and `/giai-doan/bam-hoan` each returned HTTP 200 with no page errors or horizontal overflow. |
 | Production interactions | Header stayed at the viewport top on the strategy page; all three phase cards and five risk items rendered; phase one opened its detail route; the detailed receipt summary was unobscured and opened on click. |
 | Remaining limitation | Vercel's read-only application directory does not persist JSON-backed form submissions. A writable host or persistent storage is still needed for live submissions. |
+
+## CP-43 — Header logo (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Asset | Supplied `logo.png` is a 1299 × 1211 RGBA image. Its public copy loaded through Next Image. |
+| Code gates | `npm run lint` and `npm run build` passed; the production build also completed its TypeScript check. |
+| Local browser | Chrome at 390 px and 1440 px showed the new header logo at 58 px and 72 px high respectively. The image loaded and neither viewport had horizontal overflow. Header screenshots were reviewed. |
+| Production | Not pushed or deployed; this user request concerned the local site. |

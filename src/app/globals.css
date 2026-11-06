@@ -37,9 +37,8 @@ img { display: block; max-width: 100%; }
 
 .site-header { position: sticky; top: 0; z-index: 80; margin-bottom: -.85rem; border: 1px solid rgba(23, 62, 41, .1); border-top: 0; border-radius: 0 0 24px 24px; background: rgba(250, 247, 238, .96); box-shadow: 0 10px 28px rgba(16, 43, 30, .1); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
 .site-header-inner { width: min(100% - 3rem, 1340px); min-height: 82px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-.site-wordmark { display: inline-flex; flex-direction: column; flex-shrink: 0; color: var(--brand-forest); text-decoration: none; line-height: 1; }
-.site-wordmark span { font-size: .69rem; font-weight: 700; letter-spacing: .15em; }
-.site-wordmark strong { font-family: var(--type-display); font-size: 1.62rem; font-weight: 700; letter-spacing: -.035em; line-height: 1.15; }
+.site-wordmark { display: inline-flex; align-items: center; flex-shrink: 0; text-decoration: none; }
+.site-wordmark img { width: auto; height: 72px; }
 .site-menu { display: flex; align-items: center; gap: clamp(.95rem, 1.6vw, 1.8rem); }
 .site-menu a { color: var(--brand-forest); font-size: .875rem; font-weight: 700; white-space: nowrap; text-decoration: none; text-underline-offset: .4rem; transition: color .2s; }
 .site-menu a:hover, .site-menu a.is-current { color: var(--brand-tea); text-decoration: underline; }
@@ -942,7 +941,7 @@ img { display: block; max-width: 100%; }
   .home-closing { padding: 4rem 0; }
   .site-header-inner { min-height: 68px; }
   .site-header { margin-bottom: -.65rem; border-radius: 0 0 18px 18px; }
-  .site-wordmark strong { font-size: 1.42rem; }
+  .site-wordmark img { height: 58px; }
   .site-menu { padding-inline: 1.25rem; }
   .page-banner { padding: 3.5rem 1.25rem; }
   .footer-main { width: min(100% - 2.5rem, 480px); grid-template-columns: 1fr; gap: 2.2rem; }

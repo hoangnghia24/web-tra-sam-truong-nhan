@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -23,8 +24,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-header-inner">
         <Link href="/" className="site-wordmark" onClick={() => setMenuOpen(false)} aria-label="Trà Sâm Trường Nhân, về trang chủ">
-          <span>TRÀ SÂM</span>
-          <strong>Trường Nhân</strong>
+          <Image src="/images/logo-truong-nhan.png" alt="" width={1299} height={1211} priority />
         </Link>
         <button
           className="mobile-menu-button"

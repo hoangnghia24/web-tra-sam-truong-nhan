@@ -275,3 +275,8 @@
 - The user explicitly authorized production deployment. Include their eight pending content and presentation edits with the 17 local commits that had not reached `origin/main`.
 - Correct invalid `strong > p` nesting in the edited positioning highlight without changing its visible wording before deployment.
 - Use the repository's existing GitHub to Vercel deployment path. Verify the Vercel commit status and public site after the push. The existing read-only Vercel storage limitation remains for JSON-backed submissions.
+
+## CP-43 header logo (2026-11-06)
+
+- Use the user-supplied transparent PNG in the shared header, so every public page inherits the same mark. Retain the existing accessible home-link label; the image itself is decorative within that labeled link.
+- Keep the original `anhweb` file untouched and commit the public copy. Do not deploy without a new user request.
