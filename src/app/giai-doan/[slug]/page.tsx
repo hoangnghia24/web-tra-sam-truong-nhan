@@ -48,7 +48,7 @@ function PhaseVideo({ title, src }: { title: string; src: string }) {
 
 function WeekMediaItem({ media }: { media: WeekMedia }) {
   if (media.kind === 'poster') return <figure className="phase-media-item phase-media-poster">
-    <a href={media.src} target="_blank" rel="noopener noreferrer" aria-label={`Mở poster ${media.title} ở kích thước đầy đủ`}><Image src={media.src} alt={media.title} width={media.width} height={media.height} sizes="(max-width: 700px) 75vw, 260px" /></a>
+    <a href={media.src} target="_blank" rel="noopener noreferrer" aria-label={`Mở poster ${media.title} ở kích thước đầy đủ`}><Image src={media.src} alt={media.title} width={media.width} height={media.height} sizes="(max-width: 768px) min(90vw, 420px), (max-width: 1200px) 35vw, 410px" /></a>
     <figcaption><strong>{media.title}</strong>{media.note && <small>{media.note}</small>}</figcaption>
   </figure>;
   if (media.kind === 'video') return <figure className="phase-media-item phase-media-video">

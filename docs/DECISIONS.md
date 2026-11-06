@@ -326,3 +326,9 @@
 
 - The supplier clarified that the file labeled W11, “Lần này mình nhắc bạn”, was misnamed and belongs to W10. This supersedes CP-51's filename-based placement for this one clip.
 - Rename the public MP4 to `w10-lan-nay-minh-nhac-ban.mp4`, attach its media entry to W10, and leave W11 without a supplied video. Keep the weekly activity wording unchanged.
+
+## CP-53 weekly phase layout (2026-11-06)
+
+- Give each week its own full-width card with a one-to-four indicator/content grid. Keep the indicator sticky below the existing sticky header on wide screens and place it above content on narrow screens.
+- Display media in two equal columns on wide screens and one column at 768 px and below. Show supplied posters in full so their text and QR details are not cropped; preserve the 9:16 video frame and the W5 two-video series.
+- Keep the existing activity, media and goal text, with activity separators and a cream goal callout. Update poster responsive image sizes to match the wider cards.

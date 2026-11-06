@@ -58,6 +58,7 @@
 | DONE | CP-50: added the four supplied member portraits to the contact page, matched by filename and team data, and verified responsive rendering. |
 | DONE | CP-51: added supplied phase videos and posters by W code, grouped the two W5 videos into one series, and verified media loading and playback locally. |
 | DONE | CP-52: corrected the mislabeled “Lần này mình nhắc bạn” video from W11 to W10 and verified the phase page locally. |
+| DONE | CP-53: rebuilt weekly phase cards with a sticky desktop week indicator, two-column media and mobile stacking; verified all phase routes locally. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

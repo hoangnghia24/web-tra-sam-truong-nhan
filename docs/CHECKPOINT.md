@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-52
-Status: DONE (W10 media correction verified locally)
-Last completed checkpoint: CP-52 (the mislabeled “Lần này mình nhắc bạn” video now appears in W10 instead of W11). CP-42 remains the latest production deployment.
+Current checkpoint: CP-53
+Status: DONE (weekly phase layout verified locally)
+Last completed checkpoint: CP-53 (full-width weekly cards with responsive media and goals). CP-42 remains the latest production deployment.
 
 ## Completed Work
 
+- Completed CP-53: expanded the weekly phase cards to full width, used a sticky desktop week indicator, separated activities, enlarged the media grid, and highlighted the goal in a cream callout.
 - Completed CP-52: moved the mislabeled video from W11 to W10, corrected its public filename, and kept the planned activity text unchanged.
 - Completed CP-51: added nine videos and four posters to the phase pages, grouped repeated W5 videos into one series, and kept the planned weekly activity text unchanged.
 - Completed CP-50: added the four supplied portraits to the contact cards, kept their paths in team content data, and preserved initial avatars as a fallback.

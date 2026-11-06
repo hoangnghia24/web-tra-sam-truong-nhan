@@ -57,5 +57,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-50 Contact avatars | Copy the four supplied portraits into public assets, map paths in team JSON, show them in contact cards with accessible alternative text and initials fallback, and verify data, build and responsive layout. |
 | CP-51 Phase media | Map supplied MP4s and posters by W code; represent one clip as a video and repeated W5 clips as one series; show available media beneath each week's plan, preserve the supplied activity text, and verify assets, playback and responsive pages. |
 | CP-52 W10 media correction | Apply the supplier's corrected week for “Lần này mình nhắc bạn”: rename the public MP4, move its media entry from W11 to W10, preserve activity text, and verify the week cards and playback. |
+| CP-53 Weekly phase layout | Present each week as a full-width two-column card with a sticky week indicator, separated activities, a two-column media grid and a highlighted goal; stack the content and media on narrow screens, then verify all three phase routes. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.
