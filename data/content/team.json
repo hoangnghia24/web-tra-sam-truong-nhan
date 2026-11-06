@@ -4,6 +4,6 @@
     { "id": "member-01", "name": "Phạm Thị Hoàng Mai", "email": "24126128@student.hcmute.edu.vn", "phone": "0826134510", "avatar": "/images/team/pham-thi-hoang-mai.png" },
     { "id": "member-02", "name": "Nguyễn Lê Đông Xuân", "email": "24126283@student.hcmute.edu.vn", "phone": "0772199336", "avatar": "/images/team/nguyen-le-dong-xuan.jpg" },
     { "id": "member-03", "name": "Lê Nguyễn Xuân Nhi", "email": "24126163@student.hcmute.edu.vn", "phone": "0938742571", "avatar": "/images/team/le-nguyen-xuan-nhi.jpg" },
-    { "id": "member-04", "name": "Trần Thị Tường Vy", "email": "24126280@student.hcmute.edu.vn", "phone": "0867080518", "avatar": "/images/team/tran-thi-tuong-vy.jpg" }
+    { "id": "member-04", "name": "Trần Thị Tường Vy", "email": "24126280@student.hcmute.edu.vn", "phone": "0867080518", "avatar": "/images/team/tran-thi-tuong-vy.png" }
   ]
 }
