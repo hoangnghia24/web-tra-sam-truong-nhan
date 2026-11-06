@@ -332,3 +332,8 @@
 - Give each week its own full-width card with a one-to-four indicator/content grid. Keep the indicator sticky below the existing sticky header on wide screens and place it above content on narrow screens.
 - Display media in two equal columns on wide screens and one column at 768 px and below. Show supplied posters in full so their text and QR details are not cropped; preserve the 9:16 video frame and the W5 two-video series.
 - Keep the existing activity, media and goal text, with activity separators and a cream goal callout. Update poster responsive image sizes to match the wider cards.
+
+## CP-54 weekly media order (2026-11-07)
+
+- Order poster entries before other media when rendering each week. This keeps poster on the left and video on the right in the two-column grid, while a single item naturally starts in the left column. Keep the order in source JSON unchanged and preserve the W5 series.
+- Use the same document order as visual order so mobile stacking and assistive reading follow poster then video.

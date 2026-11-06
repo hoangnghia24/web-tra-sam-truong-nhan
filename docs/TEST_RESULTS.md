@@ -554,3 +554,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Routes | `/giai-doan/bam-hoan`, `/giai-doan/lam-ngay` and `/giai-doan/gui-loi-nhac` returned 200 at 390 px and 1440 px. Each had four week cards, expected media columns, and no horizontal overflow. Representative first-week cards were visually reviewed at 390 px, 768 px and 1440 px. |
 | Content | Existing weekly activities, media mapping, W5 series and goals were retained. Posters remain uncropped and keep their full-size links. |
 | Production | Not pushed or deployed. |
+
+## CP-54 — Weekly media order (2026-11-07)
+
+| Check | Observed result |
+| --- | --- |
+| Mixed weeks | At 390 px and 1440 px, W1, W2 and W6 rendered poster then video. Poster appeared above video on mobile and to its left on desktop. |
+| Single and series weeks | W3, W8, W10 and W12 rendered their lone video at the grid's left edge. W5 remained one two-video series. |
+| Code gates | `npm run lint` and `npm run build` passed, including TypeScript. |
+| Production | Not pushed or deployed. |

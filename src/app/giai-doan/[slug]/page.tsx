@@ -42,6 +42,10 @@ function PhaseVisual({ number }: { number: number }) {
 
 type WeekMedia = z.infer<typeof campaignSchema>['phases'][number]['weeklyPlan'][number]['media'][number];
 
+function orderedWeekMedia(media: readonly WeekMedia[]) {
+  return [...media].sort((a, b) => Number(b.kind === 'poster') - Number(a.kind === 'poster'));
+}
+
 function PhaseVideo({ title, src }: { title: string; src: string }) {
   return <video controls playsInline preload="metadata" aria-label={title}><source src={src} type="video/mp4" />Trình duyệt của bạn không hỗ trợ video.</video>;
 }
@@ -98,7 +102,7 @@ export default async function PhasePage({ params }: PhaseParams) {
       <div className="phase-week-grid">{phase.weeklyPlan.map((week) => <article key={week.week} className="phase-week-card">
         <div className="phase-week-top"><span>TUẦN</span><strong>{String(week.week).padStart(2, '0')}</strong></div>
         <div className="phase-week-main"><h3>Hoạt động trong tuần</h3><ul className="phase-week-activities">{week.activities.map((activity) => <li key={activity}><p>{activity}</p></li>)}</ul>
-          {week.media.length > 0 && <div className="phase-week-media"><h4>Tư liệu tuần {week.week}</h4><div className="phase-week-media-items">{week.media.map((media) => <WeekMediaItem key={media.kind === 'series' ? media.title : media.src} media={media} />)}</div></div>}
+          {week.media.length > 0 && <div className="phase-week-media"><h4>Tư liệu tuần {week.week}</h4><div className="phase-week-media-items">{orderedWeekMedia(week.media).map((media) => <WeekMediaItem key={media.kind === 'series' ? media.title : media.src} media={media} />)}</div></div>}
           <div className="phase-week-goal"><strong>Mục tiêu</strong><p>{week.goal}</p></div>
         </div>
       </article>)}</div>
