@@ -38,6 +38,6 @@ Ví dụ chuỗi W5:
 }]
 ```
 
-Tệp “Lần này mình nhắc bạn” được đặt ở W11 theo mã trong tên tệp cung cấp, dù hoạt động cùng tên nằm ở W10 trong kế hoạch. Không đổi lịch hoạt động khi chỉ thêm tư liệu.
+Tệp “Lần này mình nhắc bạn” ban đầu mang mã W11 do đặt tên nhầm. Theo xác nhận của người cung cấp, video này thuộc W10; đường dẫn công khai và mục media của W10 đã được sửa cho khớp với kế hoạch. Nội dung hoạt động các tuần không thay đổi.
 
 Sau khi cập nhật, chạy `npm run validate:json`, `npm run build`, rồi mở ba route `/giai-doan/bam-hoan`, `/giai-doan/lam-ngay` và `/giai-doan/gui-loi-nhac` để kiểm tra ảnh và phát video.

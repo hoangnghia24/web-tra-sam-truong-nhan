@@ -532,6 +532,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json` passed ten content and five seed files; `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
 | Local routes | At 390 px and 1440 px, all three phase routes returned 200 with four weeks each. Phase media counts were 3/2 video/poster for Bấm hoãn, 4/1 with one series for Làm ngay, and 2/1 for Gửi lời nhắc. All posters loaded; no page errors or horizontal overflow. |
 | Playback | On mobile Chrome, the first video in each phase exposed 1080 × 1920 metadata and advanced to 0.64–0.76 seconds after `play()`, with no media error. Representative week screenshots were reviewed at mobile and desktop widths. |
-| Content caveat | W11 file placement follows its filename, while the unchanged plan names that activity in W10. W9 poster displays a visible note that its stories, QR code and link are unverified. |
+| Content caveat at CP-51 | The clip was initially placed at W11 according to its supplied filename; CP-52 records the supplier's correction to W10. W9 poster displays a visible note that its stories, QR code and link are unverified. |
 | AI clip note | W6 video is visibly labeled as AI-simulated because the supplied filename identifies it as such; the page does not treat it as verified KOL/KOC participation. |
+| Production | Not pushed or deployed. |
+
+## CP-52 — W10 media correction (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Data and asset | The W10 media entry points to `/videos/phases/w10-lan-nay-minh-nhac-ban.mp4`; W11 has no media entry. The public MP4 was renamed with `git mv` and still matches the Git LFS rule. Planned activities are unchanged. |
+| Code gates | `npm run validate:json`, `npm run lint` and `npm run build` passed. |
+| Local browser | `/giai-doan/gui-loi-nhac` returned 200. W10 rendered exactly the corrected video source; W11 rendered no video. In mobile Chrome, the W10 clip loaded 1080 × 1920 metadata and advanced to 0.34 seconds after `play()` with no media error. |
 | Production | Not pushed or deployed. |

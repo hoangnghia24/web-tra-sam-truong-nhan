@@ -321,3 +321,8 @@
 - Preserve portrait video ratio and poster ratio. Offer a full-size poster link. Label the W9 poster's stories, QR code and link as unverified so supplied illustrative material is not presented as confirmed evidence.
 - Label the W6 KOL/KOC clip as an AI simulation, as indicated by the supplied filename, rather than suggesting verified participation or endorsement.
 - Track the nine MP4s in Git LFS because their combined size is over 430 MB. A future Vercel Git deployment needs Git LFS support enabled in project settings; local builds use the full working-tree files.
+
+## CP-52 W10 media correction (2026-11-06)
+
+- The supplier clarified that the file labeled W11, “Lần này mình nhắc bạn”, was misnamed and belongs to W10. This supersedes CP-51's filename-based placement for this one clip.
+- Rename the public MP4 to `w10-lan-nay-minh-nhac-ban.mp4`, attach its media entry to W10, and leave W11 without a supplied video. Keep the weekly activity wording unchanged.
