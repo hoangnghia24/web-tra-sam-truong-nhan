@@ -592,13 +592,13 @@ img { display: block; max-width: 100%; }
 .report-card-grid small { color: var(--brand-leaf); font-size: .75rem; }
 .report-swot, .report-phases { background: var(--brand-dark); color: var(--brand-ivory); }
 .report-swot .section-title em, .report-phases .section-title em { color: var(--brand-gold-light); }
-.swot-explorer { display: grid; grid-template-columns: .9fr 1.1fr; gap: 1.3rem; margin-top: 3rem; }
-.swot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
-.swot-grid button { display: flex; flex-direction: column; justify-content: space-between; min-height: 145px; padding: 1.3rem; border: 1px solid #56715a; background: #1e3d2d; color: var(--brand-ivory); text-align: left; cursor: pointer; }
+.swot-explorer { display: grid; grid-template-columns: .9fr 1.1fr; align-items: start; gap: 1.3rem; margin-top: 3rem; }
+.swot-grid { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 110px; gap: .7rem; }
+.swot-grid button { display: flex; flex-direction: column; justify-content: flex-start; gap: .55rem; padding: 1rem 1.3rem; border: 1px solid #56715a; background: #1e3d2d; color: var(--brand-ivory); text-align: left; cursor: pointer; }
 .swot-grid button[aria-selected="true"], .swot-grid button:hover { background: #346548; border-color: var(--brand-gold-light); }
 .swot-grid button span { color: var(--brand-gold-light); font-family: var(--type-display); font-size: 2rem; line-height: 1; }
 .swot-grid button strong { font-family: var(--type-display); font-size: 1.25rem; font-weight: 600; }
-.swot-detail { min-height: 310px; padding: clamp(1.5rem, 3vw, 3rem); background: var(--brand-ivory); color: var(--brand-forest); }
+.swot-detail { min-height: 232px; padding: clamp(1.5rem, 2.5vw, 2.25rem); background: var(--brand-ivory); color: var(--brand-forest); }
 .swot-detail ul { padding-left: 1.3rem; font-family: var(--type-display); font-size: 1.25rem; line-height: 1.4; }
 .swot-detail li + li { margin-top: .8rem; }
 .swot-detail small { color: var(--text-secondary); }
@@ -924,7 +924,6 @@ img { display: block; max-width: 100%; }
   .reminder-card { min-height: 430px; }
   .strategy-local-nav { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; white-space: nowrap; }
   .report-card-grid, .phase-track, .kpi-grid, .tows-grid, .pillar-grid, .budget-summary, .report-audience { grid-template-columns: 1fr; }
-  .swot-grid button { min-height: 120px; }
   .sevenps-panel { padding: 1.8rem; }
   .sevenps-panel-head, .sevenps-points { grid-template-columns: 1fr; }
   .sevenps-panel-head { gap: .65rem; }

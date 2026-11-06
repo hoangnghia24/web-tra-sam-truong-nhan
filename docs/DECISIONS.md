@@ -299,3 +299,8 @@
 
 - Keep the user-supplied `sanpham.jpg` as the product introduction image. Its 1254 × 1254 dimensions match the square source; removing the inherited 16:9 CSS constraint lets the full photo fill its frame without cropping the package.
 - Update the alternative text to describe the actual photo. Keep the existing responsive layout and frame treatment.
+
+## CP-48 SWOT sizing (2026-11-06)
+
+- Keep the four SWOT tabs in a two-by-two grid at a compact 110 px row height. Use a fixed small gap between the key and title instead of spacing them to opposite ends of the card.
+- Reduce the detail panel's minimum height to 232 px and let it grow for longer entries. Align both columns at the top so panel growth does not stretch the selector cards.

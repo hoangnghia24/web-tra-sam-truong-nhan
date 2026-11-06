@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-47
-Status: DONE (local product image sizing verified)
-Last completed checkpoint: CP-47 (square product photo fills its frame at mobile and desktop widths). CP-42 remains the latest production deployment.
+Current checkpoint: CP-48
+Status: DONE (local SWOT sizing verified)
+Last completed checkpoint: CP-48 (SWOT detail and selection cards are shorter, with tighter key-to-label spacing). CP-42 remains the latest production deployment.
 
 ## Completed Work
 
+- Completed CP-48: reduced the SWOT panel and tab heights, moved each label nearer its S/W/O/T key, and verified all content still fits.
 - Completed CP-47: used the supplied square product photo at its native aspect ratio so the box appears larger without cropping.
 - Completed CP-46: removed the decorative down-right arrows from the three TOWS cards without changing their text or layout.
 - Completed CP-45: matched the two market-context columns' body typography and heading levels, aligned their desktop content, and stacked them at narrower widths.
