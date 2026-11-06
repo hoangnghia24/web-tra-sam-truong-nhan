@@ -462,3 +462,11 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run lint` and `npm run build` passed; the production build also completed its TypeScript check. |
 | Local browser | Chrome at 390 px and 1440 px showed the new header logo at 58 px and 72 px high respectively. The image loaded and neither viewport had horizontal overflow. Header screenshots were reviewed. |
 | Production | Not pushed or deployed; this user request concerned the local site. |
+
+## CP-44 — Browser tab icon (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
+| Local HTTP | GET `/` returned 200 with `<link rel="icon" href="/images/logo-truong-nhan.png" type="image/png"/>`; HEAD for that PNG returned 200 with `Content-Type: image/png`. |
+| Production | Not pushed or deployed. |

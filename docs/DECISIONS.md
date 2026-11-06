@@ -280,3 +280,8 @@
 
 - Use the user-supplied transparent PNG in the shared header, so every public page inherits the same mark. Retain the existing accessible home-link label; the image itself is decorative within that labeled link.
 - Keep the original `anhweb` file untouched and commit the public copy. Do not deploy without a new user request.
+
+## CP-44 browser tab icon (2026-11-06)
+
+- Reuse the public logo PNG from CP-43 for the browser tab icon. Keeping its distinct URL lets browsers load it in place of the old SVG icon.
+- Keep the page title text unchanged; the requested change concerns the icon shown beside it.

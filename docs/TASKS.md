@@ -49,6 +49,7 @@
 | DONE | CP-41: exposed the detailed receipt summary above the footer and added subtle scroll depth; verified locally without deployment. |
 | DONE | CP-42: pushed current work to `origin/main`, confirmed Vercel success, and checked key public routes and interactions on production. |
 | DONE | CP-43: replaced the shared header wordmark with the supplied logo PNG and verified its local responsive rendering. |
+| DONE | CP-44: replaced the browser tab icon beside the page title with the supplied logo PNG and verified local metadata and asset responses. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: process.env.NEXT_PUBLIC_SITE_URL ? [{ url: new URL('/images/truong-nhan-cover.png', process.env.NEXT_PUBLIC_SITE_URL).toString(), width: 1920, height: 1080, alt: 'Trà Sâm Trường Nhân' }] : undefined,
   },
   robots: { index: true, follow: true },
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: { url: '/images/logo-truong-nhan.png', type: 'image/png' } },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
