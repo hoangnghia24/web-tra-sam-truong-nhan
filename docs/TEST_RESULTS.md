@@ -470,3 +470,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
 | Local HTTP | GET `/` returned 200 with `<link rel="icon" href="/images/logo-truong-nhan.png" type="image/png"/>`; HEAD for that PNG returned 200 with `Content-Type: image/png`. |
 | Production | Not pushed or deployed. |
+
+## CP-45 — Market context balance (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Code gates | `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
+| Desktop browser | At 1440 px, both columns measured 224 px high. Their headings and body text started at matching vertical positions; body text used the same Inter font, 16 px size, and 25.6 px line height. |
+| Responsive browser | At 900 px and 390 px the columns stacked. All three checked widths had no horizontal overflow; screenshots were reviewed. |
+| Production | Not pushed or deployed. |

@@ -285,3 +285,8 @@
 
 - Reuse the public logo PNG from CP-43 for the browser tab icon. Keeping its distinct URL lets browsers load it in place of the old SVG icon.
 - Keep the page title text unchanged; the requested change concerns the icon shown beside it.
+
+## CP-45 market context balance (2026-11-06)
+
+- Use the established Inter body font at the same size and line height in both columns, while preserving the existing Fraunces heading style and all content.
+- Align heading and body starts in equal-height desktop columns. Stack the columns at 1050 px and below so long Vietnamese copy remains readable.

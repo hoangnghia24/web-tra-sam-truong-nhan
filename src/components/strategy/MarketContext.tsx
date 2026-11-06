@@ -21,7 +21,7 @@ export function MarketContext({ content }: { content: MarketContextContent }) {
 
     <div className="market-motivation">
       <div><h3>Động cơ mua hàng:</h3><p>{content.motivation}</p></div>
-      <div><h4>Các yếu tố có thể thúc đẩy quyết định mua:</h4><ul>{content.drivers.map((driver) => <li key={driver}>{driver}</li>)}</ul></div>
+      <div><h3>Các yếu tố có thể thúc đẩy quyết định mua:</h3><ul>{content.drivers.map((driver) => <li key={driver}>{driver}</li>)}</ul></div>
     </div>
 
    </div>;
