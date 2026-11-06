@@ -39,6 +39,14 @@ export const ingredientsSchema = z.object({
   })).length(7)
 });
 
+const phaseVideoSource = z.string().regex(/^\/videos\/phases\/[a-z0-9-]+\.mp4$/);
+const phasePosterSource = z.string().regex(/^\/images\/phases\/[a-z0-9-]+\.(?:png|jpe?g|webp)$/);
+const phaseMediaSchema = z.discriminatedUnion('kind', [
+  z.object({ kind: z.literal('video'), title: safeText(120), src: phaseVideoSource, note: safeText(250).optional() }),
+  z.object({ kind: z.literal('series'), title: safeText(120), videos: z.array(z.object({ title: safeText(120), src: phaseVideoSource })).min(2).max(30) }),
+  z.object({ kind: z.literal('poster'), title: safeText(120), src: phasePosterSource, width: z.number().int().positive(), height: z.number().int().positive(), note: safeText(250).optional() }),
+]);
+
 export const campaignSchema = z.object({
   title: safeText(140), currentPhase: z.number().int().min(1).max(3),
   phases: z.array(z.object({
@@ -51,17 +59,11 @@ export const campaignSchema = z.object({
       week: z.number().int().min(1).max(12),
       activities: z.array(safeText(220)).min(1),
       goal: safeText(350),
-      media: z.array(z.discriminatedUnion('kind', [
-        z.object({ activityIndex: z.number().int().nonnegative(), kind: z.literal('video'), src: z.string().regex(/^\/videos\/phases\/[a-z0-9-]+\.mp4$/).nullable() }),
-        z.object({ activityIndex: z.number().int().nonnegative(), kind: z.literal('series'), videos: z.array(z.object({ title: safeText(120), src: z.string().regex(/^\/videos\/phases\/[a-z0-9-]+\.mp4$/) })).max(30) }),
-      ])).refine((media) => new Set(media.map((item) => item.activityIndex)).size === media.length, 'Mỗi hoạt động chỉ có một vị trí video'),
-    }).refine((week) => week.media.every((item) => item.activityIndex < week.activities.length), 'Vị trí video phải trùng hoạt động trong tuần')
-      .refine((week) => week.activities.every((activity, index) => {
-        const media = week.media.find((item) => item.activityIndex === index);
-        if (activity.startsWith('Chuỗi video')) return media?.kind === 'series';
-        if (activity.startsWith('Video')) return media?.kind === 'video';
-        return !media;
-      }), 'Mỗi hoạt động Video hoặc Chuỗi video cần đúng loại vị trí chờ')).length(4),
+      media: z.array(phaseMediaSchema).max(8).refine(
+        (media) => media.filter((item) => item.kind === 'video' || item.kind === 'series').length <= 1,
+        'Mỗi tuần chỉ có một video hoặc một chuỗi video',
+      ),
+    })).length(4),
   })).length(3),
   statusNote: safeText(250),
 });

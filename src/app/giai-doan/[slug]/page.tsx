@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft, ArrowRight, ArrowUpRight, Clock3, Leaf, Mail, Play } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUpRight, Clock3, Leaf, Mail } from 'lucide-react';
 import type { z } from 'zod';
 import { readJson } from '@/lib/json-store';
 import { campaignSchema } from '@/lib/schemas';
@@ -41,16 +42,22 @@ function PhaseVisual({ number }: { number: number }) {
 
 type WeekMedia = z.infer<typeof campaignSchema>['phases'][number]['weeklyPlan'][number]['media'][number];
 
-function PhaseVideo({ title, src }: { title: string; src: string | null }) {
-  if (src) return <video controls playsInline preload="metadata" aria-label={title}><source src={src} type="video/mp4" />Trình duyệt của bạn không hỗ trợ video.</video>;
-  return <div className="phase-media-placeholder"><Play size={18} aria-hidden="true" /><span>Video sẽ được bổ sung</span></div>;
+function PhaseVideo({ title, src }: { title: string; src: string }) {
+  return <video controls playsInline preload="metadata" aria-label={title}><source src={src} type="video/mp4" />Trình duyệt của bạn không hỗ trợ video.</video>;
 }
 
-function WeekActivityMedia({ activity, media }: { activity: string; media: WeekMedia }) {
-  if (media.kind === 'video') return <div className="phase-activity-media"><PhaseVideo title={activity} src={media.src} /></div>;
-  return <div className="phase-activity-media phase-series">
-    <span>Danh sách video</span>
-    {media.videos.length ? <ol>{media.videos.map((video) => <li key={video.src}><h4>{video.title}</h4><PhaseVideo title={video.title} src={video.src} /></li>)}</ol> : <p>Danh sách video sẽ được bổ sung.</p>}
+function WeekMediaItem({ media }: { media: WeekMedia }) {
+  if (media.kind === 'poster') return <figure className="phase-media-item phase-media-poster">
+    <a href={media.src} target="_blank" rel="noopener noreferrer" aria-label={`Mở poster ${media.title} ở kích thước đầy đủ`}><Image src={media.src} alt={media.title} width={media.width} height={media.height} sizes="(max-width: 700px) 75vw, 260px" /></a>
+    <figcaption><strong>{media.title}</strong>{media.note && <small>{media.note}</small>}</figcaption>
+  </figure>;
+  if (media.kind === 'video') return <figure className="phase-media-item phase-media-video">
+    <PhaseVideo title={media.title} src={media.src} />
+    <figcaption><strong>{media.title}</strong>{media.note && <small>{media.note}</small>}</figcaption>
+  </figure>;
+  return <div className="phase-media-item phase-media-series">
+    <h4>{media.title} · {media.videos.length} video</h4>
+    <ol>{media.videos.map((video) => <li key={video.src}><PhaseVideo title={video.title} src={video.src} /><p>{video.title}</p></li>)}</ol>
   </div>;
 }
 
@@ -90,10 +97,10 @@ export default async function PhasePage({ params }: PhaseParams) {
       <div className="phase-section-heading"><div><p className="phase-section-label"><Clock3 size={17} aria-hidden="true" /> LỘ TRÌNH TRIỂN KHAI</p><h2 id="phase-weeks-title">Bốn tuần, <em>một chuyển động.</em></h2></div><p>Các hoạt động và mục tiêu bên dưới thuộc kế hoạch chiến dịch.</p></div>
       <div className="phase-week-grid">{phase.weeklyPlan.map((week) => <article key={week.week} className="phase-week-card">
         <div className="phase-week-top"><span>TUẦN</span><strong>{String(week.week).padStart(2, '0')}</strong></div>
-        <div className="phase-week-main"><h3>Hoạt động trong tuần</h3><ul className="phase-week-activities">{week.activities.map((activity, index) => {
-          const media = week.media.find((item) => item.activityIndex === index);
-          return <li key={activity}><p>{activity}</p>{media && <WeekActivityMedia activity={activity} media={media} />}</li>;
-        })}</ul><div className="phase-week-goal"><strong>Mục tiêu</strong><p>{week.goal}</p></div></div>
+        <div className="phase-week-main"><h3>Hoạt động trong tuần</h3><ul className="phase-week-activities">{week.activities.map((activity) => <li key={activity}><p>{activity}</p></li>)}</ul>
+          {week.media.length > 0 && <div className="phase-week-media"><h4>Tư liệu tuần {week.week}</h4><div className="phase-week-media-items">{week.media.map((media) => <WeekMediaItem key={media.kind === 'series' ? media.title : media.src} media={media} />)}</div></div>}
+          <div className="phase-week-goal"><strong>Mục tiêu</strong><p>{week.goal}</p></div>
+        </div>
       </article>)}</div>
     </div></section>
 

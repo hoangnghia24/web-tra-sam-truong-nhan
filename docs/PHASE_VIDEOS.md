@@ -1,40 +1,43 @@
-# Thêm video cho ba trang giai đoạn
+# Tư liệu video và poster cho ba giai đoạn
 
-Nội dung W1–W12 nằm trong `data/content/campaign.json`, trường `phases[].weeklyPlan`. Mỗi tuần có `activities` (giữ nguyên câu chữ trong bảng) và `media`. `media[].activityIndex` là vị trí hoạt động trong mảng `activities`, **bắt đầu từ 0**. Chỉ các hoạt động ghi “Video” hoặc “Chuỗi video” có vị trí chờ. Poster, TikTok Photo Mode, TikTok LIVE và hoạt động Website vẫn được trình bày bằng chữ theo đúng kế hoạch.
+Kế hoạch W1–W12 nằm trong `data/content/campaign.json`, trường `phases[].weeklyPlan`. Mỗi tuần giữ nguyên `activities` và `goal`; `media` chứa **tư liệu đã được cung cấp** cho đúng mã W trên tên tệp. Tuần chưa có tệp dùng `"media": []` và vẫn hiển thị kế hoạch bằng chữ.
 
-## Chuẩn bị file
+## Chuẩn bị tệp
 
-1. Tạo thư mục `public/videos/phases/` nếu chưa có.
-2. Chép MP4 vào thư mục này. Tên file viết chữ thường, không dấu, dùng dấu gạch ngang, ví dụ `w1-video-nhac-toi-sau.mp4`.
-3. Dùng đường dẫn web bắt đầu bằng `/videos/phases/`, ví dụ `/videos/phases/w1-video-nhac-toi-sau.mp4`.
+- Chép MP4 vào `public/videos/phases/` và poster vào `public/images/phases/`.
+- Dùng tên tệp chữ thường, không dấu, ngăn từ bằng dấu gạch ngang. `src` trong JSON bắt đầu bằng `/videos/phases/` hoặc `/images/phases/`.
+- Video dùng khung dọc 9:16 trên trang. Poster giữ nguyên tỷ lệ ảnh; người xem có thể mở ảnh gốc từ thẻ poster.
+- MP4 trong `public/videos/phases/` được theo dõi bằng Git LFS qua `.gitattributes`. Sau khi clone, chạy `git lfs pull` nếu tệp video chưa được tải về. Trước khi triển khai qua Git trên Vercel, bật Git LFS trong **Project Settings → Git** để Vercel lấy tệp thật; [Vercel hướng dẫn thiết lập](https://vercel.com/docs/project-configuration/git-settings#git-large-file-storage-lfs).
 
-## Một video
+## Quy tắc theo tuần
 
-Tìm đúng `week`, rồi tìm mục trong `media` có `kind: "video"` và `activityIndex` trỏ đến hoạt động cần chèn. Đổi `src` từ `null` thành đường dẫn MP4. Giữ nguyên `activities` và `goal`.
+- Một MP4 có cùng mã W: một đối tượng `kind: "video"` với `title` và `src`.
+- Từ hai MP4 cùng mã W: một đối tượng `kind: "series"`, gồm `title` và mảng `videos` có ít nhất hai phần tử. W5 hiện có hai video trong một chuỗi.
+- Poster là đối tượng `kind: "poster"` riêng, có `title`, `src`, `width` và `height` theo ảnh gốc. Video đơn và poster có thể thêm `note` khi chứa nội dung mô phỏng hoặc cần xác minh.
+- Mỗi tuần có tối đa một video đơn **hoặc** một chuỗi; có thể có thêm poster. Thứ tự trong `media` là thứ tự hiển thị.
 
-Ví dụ với hoạt động thứ ba của W1 (chỉ số 2):
+Ví dụ video đơn và poster W1:
 
 ```json
-{ "activityIndex": 2, "kind": "video", "src": "/videos/phases/w1-video-nhac-toi-sau.mp4" }
+"media": [
+  { "kind": "poster", "title": "Poster chính thức chiến dịch", "src": "/images/phases/w1-poster-chien-dich.png", "width": 940, "height": 788 },
+  { "kind": "video", "title": "Video Teaser Coming Soon", "src": "/videos/phases/w1-coming-soon.mp4" }
+]
 ```
 
-## Chuỗi video
-
-W6 có hai hoạt động `kind: "series"`. Mỗi hoạt động bắt đầu với `"videos": []`. Để thêm danh sách, chèn từng đối tượng `{ "title", "src" }` vào mảng `videos` tương ứng. Có thể thêm nhiều video; thứ tự trong mảng là thứ tự hiển thị.
-
-Ví dụ cho “Chuỗi video KOL/KOC tham gia thử thách.” (hoạt động thứ hai W6, chỉ số 1):
+Ví dụ chuỗi W5:
 
 ```json
-{
-  "activityIndex": 1,
+"media": [{
   "kind": "series",
+  "title": "Chuỗi video tuần 5",
   "videos": [
-    { "title": "Tập 1", "src": "/videos/phases/w6-koc-tap-1.mp4" },
-    { "title": "Tập 2", "src": "/videos/phases/w6-koc-tap-2.mp4" }
+    { "title": "Hướng dẫn 4 bước tham gia", "src": "/videos/phases/w5-huong-dan-bon-buoc.mp4" },
+    { "title": "Video mẫu Câu Chuyện Dành Cho Bản Thân", "src": "/videos/phases/w5-video-mau-cau-chuyen.mp4" }
   ]
-}
+}]
 ```
 
-Hai tên “Tập 1”, “Tập 2” trong ví dụ chỉ minh họa cấu trúc; khi thêm video thật, đặt `title` theo tên bạn chọn. Để trống mảng thì trang hiển thị thông báo chờ danh sách.
+Tệp “Lần này mình nhắc bạn” được đặt ở W11 theo mã trong tên tệp cung cấp, dù hoạt động cùng tên nằm ở W10 trong kế hoạch. Không đổi lịch hoạt động khi chỉ thêm tư liệu.
 
-Sau khi chỉnh, chạy `npm run validate:json`, `npm run dev`, rồi mở một trong ba trang `/giai-doan/bam-hoan`, `/giai-doan/lam-ngay`, `/giai-doan/gui-loi-nhac` để thử phát video. Chỉ bổ sung video khi bạn có file và quyền sử dụng; nội dung theo tuần vẫn được ghi là kế hoạch.
+Sau khi cập nhật, chạy `npm run validate:json`, `npm run build`, rồi mở ba route `/giai-doan/bam-hoan`, `/giai-doan/lam-ngay` và `/giai-doan/gui-loi-nhac` để kiểm tra ảnh và phát video.

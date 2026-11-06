@@ -55,5 +55,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-48 SWOT sizing | Reduce empty space in the SWOT detail panel and four selector cards, place labels near the S/W/O/T keys, and verify short and long tab content on mobile and desktop. |
 | CP-49 SWOT bullets | Restore list markers for the SWOT detail items, style them within the existing palette, and verify mobile and desktop rendering. |
 | CP-50 Contact avatars | Copy the four supplied portraits into public assets, map paths in team JSON, show them in contact cards with accessible alternative text and initials fallback, and verify data, build and responsive layout. |
+| CP-51 Phase media | Map supplied MP4s and posters by W code; represent one clip as a video and repeated W5 clips as one series; show available media beneath each week's plan, preserve the supplied activity text, and verify assets, playback and responsive pages. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

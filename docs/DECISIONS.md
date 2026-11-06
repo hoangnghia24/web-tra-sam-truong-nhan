@@ -313,3 +313,11 @@
 
 - Map the supplied portrait files to team members by their matching filenames. Copy them to stable ASCII public paths and keep those paths in `data/content/team.json` rather than duplicating member data in the contact component.
 - Use circular cropped Next Image avatars with the member's name in alternative text. Preserve the previous initial avatar when an optional image path is absent.
+
+## CP-51 phase media (2026-11-06)
+
+- Treat the W code in each supplied filename as the authoritative media placement. W5 has two MP4s, so it is one series; each other supplied W has at most one MP4 and uses a single-video entry. Poster files stay as separate media entries.
+- Store available media at the week level, separate from the planned activity wording. This accommodates W11's “Lần này mình nhắc bạn” file even though that activity title is in W10 of the unchanged plan. Weeks without supplied files have an empty media array rather than a fake video.
+- Preserve portrait video ratio and poster ratio. Offer a full-size poster link. Label the W9 poster's stories, QR code and link as unverified so supplied illustrative material is not presented as confirmed evidence.
+- Label the W6 KOL/KOC clip as an AI simulation, as indicated by the supplied filename, rather than suggesting verified participation or endorsement.
+- Track the nine MP4s in Git LFS because their combined size is over 430 MB. A future Vercel Git deployment needs Git LFS support enabled in project settings; local builds use the full working-tree files.

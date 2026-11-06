@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-50
-Status: DONE (local contact avatars verified)
-Last completed checkpoint: CP-50 (four supplied portraits appear on their matching contact cards). CP-42 remains the latest production deployment.
+Current checkpoint: CP-51
+Status: DONE (local phase media verified)
+Last completed checkpoint: CP-51 (nine supplied videos and four posters appear in their W1–W12 phase weeks; W5 is one two-video series). CP-42 remains the latest production deployment.
 
 ## Completed Work
 
+- Completed CP-51: added nine videos and four posters to the phase pages, grouped repeated W5 videos into one series, and kept the planned weekly activity text unchanged.
 - Completed CP-50: added the four supplied portraits to the contact cards, kept their paths in team content data, and preserved initial avatars as a fallback.
 - Completed CP-49: restored visible bullet markers for each SWOT detail item and verified mobile and desktop rendering.
 - Completed CP-48: reduced the SWOT panel and tab heights, moved each label nearer its S/W/O/T key, and verified all content still fits.

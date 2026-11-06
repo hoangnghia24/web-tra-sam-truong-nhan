@@ -522,3 +522,16 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json` passed all ten content and five seed files; `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
 | Local browser | At 390 px and 1440 px, `/lien-he` returned 200. All four cards showed loaded portraits whose alternative text matched each member's name. No horizontal overflow; contact-grid screenshots reviewed. |
 | Production | Not pushed or deployed. |
+
+## CP-51 — Phase media (2026-11-06)
+
+| Check | Observed result |
+| --- | --- |
+| Source mapping | Inspected nine vertical MP4s and four posters. W1, W2, W3, W5 (two clips), W6, W8, W11 and W12 have video; W1, W2, W6 and W9 have posters. All thirteen configured asset paths exist; W5 is the only two-video series. |
+| Storage | The thirteen copied assets total 440,109,382 bytes. The nine MP4s are tracked through Git LFS; poster images are regular Git assets. |
+| Code gates | `npm run validate:json` passed ten content and five seed files; `npm run lint` and `npm run build` passed, including the build's TypeScript check. |
+| Local routes | At 390 px and 1440 px, all three phase routes returned 200 with four weeks each. Phase media counts were 3/2 video/poster for Bấm hoãn, 4/1 with one series for Làm ngay, and 2/1 for Gửi lời nhắc. All posters loaded; no page errors or horizontal overflow. |
+| Playback | On mobile Chrome, the first video in each phase exposed 1080 × 1920 metadata and advanced to 0.64–0.76 seconds after `play()`, with no media error. Representative week screenshots were reviewed at mobile and desktop widths. |
+| Content caveat | W11 file placement follows its filename, while the unchanged plan names that activity in W10. W9 poster displays a visible note that its stories, QR code and link are unverified. |
+| AI clip note | W6 video is visibly labeled as AI-simulated because the supplied filename identifies it as such; the page does not treat it as verified KOL/KOC participation. |
+| Production | Not pushed or deployed. |
