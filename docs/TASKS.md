@@ -61,6 +61,7 @@
 | DONE | CP-53: rebuilt weekly phase cards with a sticky desktop week indicator, two-column media and mobile stacking; verified all phase routes locally. |
 | DONE | CP-54: placed posters to the left of videos in mixed weeks and kept lone media items on the left; verified W1, W2, W6 and single-video weeks locally. |
 | DONE | CP-55: pushed the current site, recovered Git LFS video files during the Vercel build, and verified all nine full media responses and representative browser playback on production. |
+| DONE | CP-56: re-encoded the W3 HEVC clip to H.264/AAC, deployed the existing URL, and verified full decode, file integrity and visible browser frames on production. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

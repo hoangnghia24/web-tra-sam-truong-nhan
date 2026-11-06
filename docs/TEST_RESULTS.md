@@ -577,3 +577,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Browser playback | Mobile Chrome loaded each of the three phase pages with four weeks, no page errors or horizontal overflow. The first video in W1, W5 and W10 reported 1080 × 1920 metadata and advanced to 0.61–0.66 seconds after `play()` with no media error. |
 | Pending edits on production | `/san-pham` showed the revised “Lá Sâm Ngọc Linh (3%)” tab label; `/lien-he` loaded the new `tran-thi-tuong-vy.png` portrait. Both returned 200. |
 | Remaining limitation | JSON-backed form submissions cannot persist on Vercel's read-only application directory; this deployment did not change storage. |
+
+## CP-56 — Cross-device phase video codec (2026-11-07)
+
+| Check | Observed result |
+| --- | --- |
+| Codec audit | Inspected all ten public MP4 files. Nine used H.264/AVC High Level 4.0 with AAC-LC audio; W3 alone used HEVC (`hvc1`) with AAC-LC, explaining the reported audio-only behavior on devices without HEVC video support. |
+| Conversion | W3 changed from HEVC to H.264 High Level 4.0, 8-bit `yuv420p`, with AAC audio copied and fast-start metadata. It kept its 718 × 1280 dimensions, 29.8-second duration and all 894 decodable video frames. The new file is 8,053,723 bytes. |
+| Local gates | `npm run validate:json`, `npm run lint`, `npm run test` (9 tests), `npm run build` (including TypeScript), and `git diff --check` passed. Local Chrome at 390 px loaded W3, advanced to 1.70 seconds with no media error and produced a nonblank canvas frame. |
+| Deployment | Commit `1884949` and its 8.1 MB Git LFS object were pushed to `origin/main`; GitHub's Vercel status reported success and “Deployment has completed.” |
+| Production media | W3 returned HTTP 206 with `Content-Type: video/mp4` and a total length of 8,053,723 bytes. A full download had the same SHA-256 as the local transcoded file. |
+| Production playback | Mobile-width Chrome opened `/giai-doan/bam-hoan` with HTTP 200, loaded W3 at 718 × 1280, advanced to 1.67 seconds without a media error, and yielded a nonblank rendered frame. Physical devices with the original symptom were not available for direct testing. |
