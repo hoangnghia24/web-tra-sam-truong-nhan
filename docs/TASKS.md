@@ -60,7 +60,7 @@
 | DONE | CP-52: corrected the mislabeled “Lần này mình nhắc bạn” video from W11 to W10 and verified the phase page locally. |
 | DONE | CP-53: rebuilt weekly phase cards with a sticky desktop week indicator, two-column media and mobile stacking; verified all phase routes locally. |
 | DONE | CP-54: placed posters to the left of videos in mixed weeks and kept lone media items on the left; verified W1, W2, W6 and single-video weeks locally. |
-| IN_PROGRESS | CP-55: production code is pushed and Vercel reports success, but video URLs currently serve Git LFS pointers. Deploy the build-time resolver, verify full MP4 responses and playback, then record final evidence. |
+| DONE | CP-55: pushed the current site, recovered Git LFS video files during the Vercel build, and verified all nine full media responses and representative browser playback on production. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

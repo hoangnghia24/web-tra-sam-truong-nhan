@@ -5,12 +5,12 @@ Project: Truong Nhan Digital Campaign
 ## Current Status
 
 Current checkpoint: CP-55
-Status: IN_PROGRESS (production video bytes pending)
-Last completed checkpoint: CP-54 (poster-left and video-right placement for mixed weeks; single items start on the left). CP-55 source commit `13e6629` is deployed, but MP4 URLs still serve Git LFS pointers.
+Status: DONE (production deployment and video playback verified)
+Last completed checkpoint: CP-55 (commit `d2ed383` is deployed; all nine phase videos serve full MP4 files and representative clips play on the public site).
 
 ## Completed Work
 
-- CP-55 in progress: pushed the locally validated source and the user's pending avatar and ingredient-label edits; the Vercel status succeeded, but the public video URLs need full MP4 bytes. A verified build-time Git LFS resolver is ready for redeployment.
+- Completed CP-55: pushed the locally validated source and pending avatar and ingredient-label edits, resolved Git LFS pointers during the Vercel build, and verified all nine full video responses and representative playback on production.
 - Completed CP-54: ordered poster and video media in the rendered week grid, keeping mixed weeks poster-first and single items on the left.
 - Completed CP-53: expanded the weekly phase cards to full width, used a sticky desktop week indicator, separated activities, enlarged the media grid, and highlighted the goal in a cream callout.
 - Completed CP-52: moved the mislabeled video from W11 to W10, corrected its public filename, and kept the planned activity text unchanged.
@@ -70,7 +70,7 @@ Last completed checkpoint: CP-54 (poster-left and video-right placement for mixe
 
 ## Current Task
 
-CP-42 is deployed on the public Vercel site. Phase video files can be added using `docs/PHASE_VIDEOS.md`. Official purchase URLs and an active 15% voucher code are still needed to enable the receipt purchase CTAs and offer; see `docs/RECEIPT_JOURNEY.md`. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
+CP-55 is deployed on the public Vercel site. Phase video setup is documented in `docs/PHASE_VIDEOS.md`; native Git LFS can be enabled in Vercel Project Settings → Git to avoid build-time downloads. Official purchase URLs and an active 15% voucher code are still needed to enable the receipt purchase CTAs and offer; see `docs/RECEIPT_JOURNEY.md`. File-backed submissions still require a writable persistent host; Vercel's application directory is read-only. Bogart remains pending a web-licensed font file or Adobe Fonts kit. KPI definitions remain to be confirmed before a full public launch.
 
 ## Completed Files
 
@@ -149,4 +149,4 @@ CP-42 is deployed on the public Vercel site. Phase video files can be added usin
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. CP-25 through CP-42 are deployed; deploy future changes only when the user asks.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. CP-25 through CP-55 are deployed; deploy future changes only when the user asks.

@@ -343,3 +343,4 @@
 - Include the user's pending portrait-path and ingredient-label edits in the production source commit. Keep original `anhweb/` files untracked.
 - GitHub and Vercel accepted the production commit, but Vercel served the 133-byte Git LFS pointer as `video/mp4`. The dashboard was unavailable through the computer-use connection. Add a build-time resolver that only acts on pointer files, downloads the exact commit's public GitHub media, verifies its declared size and SHA-256, and leaves already materialized local videos untouched.
 - Continue to recommend Vercel's native Git LFS setting; the resolver lets the current Git deployment serve full files without requiring dashboard access.
+- The resolver deployment `d2ed383` completed successfully. Keep the local video paths in content JSON so the site serves MP4 files from its own production domain; the build fetches from GitHub only when the checkout contains pointers.

@@ -564,7 +564,7 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run lint` and `npm run build` passed, including TypeScript. |
 | Production | Not pushed or deployed. |
 
-## CP-55 — Production deployment (in progress, 2026-11-07)
+## CP-55 — Production deployment (2026-11-07)
 
 | Check | Observed result |
 | --- | --- |
@@ -572,4 +572,8 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Initial push | `13e6629` and the preceding local commits were pushed to `origin/main`; nine Git LFS objects totaling 435 MB uploaded. Vercel status reached success. Seven public routes returned 200, and the new avatar and poster assets returned image responses. |
 | Media defect | Public W10 and W5 video responses were 133-byte Git LFS pointers, despite HTTP 206 and `video/mp4`; the W10 response contained the pointer's SHA-256 and declared 39,122,476-byte size. |
 | Resolver check | A copied W5 pointer was resolved to a 23,295,557-byte MP4 with matching SHA-256. `npm run lint` and the updated `npm run build` passed locally. |
-| Resume step | Push the resolver and verify Vercel deployment, full video content ranges and browser playback. |
+| Resolver deployment | Commit `d2ed383` was pushed to `origin/main`; the Vercel status reached success with “Deployment has completed.” |
+| Full video files | All nine public MP4 URLs returned HTTP 206 for byte ranges, with total lengths matching their full local files (23,295,557–90,377,562 bytes). W10, W5 and W2 returned 1,024 real video bytes for 0–1023 requests. |
+| Browser playback | Mobile Chrome loaded each of the three phase pages with four weeks, no page errors or horizontal overflow. The first video in W1, W5 and W10 reported 1080 × 1920 metadata and advanced to 0.61–0.66 seconds after `play()` with no media error. |
+| Pending edits on production | `/san-pham` showed the revised “Lá Sâm Ngọc Linh (3%)” tab label; `/lien-he` loaded the new `tran-thi-tuong-vy.png` portrait. Both returned 200. |
+| Remaining limitation | JSON-backed form submissions cannot persist on Vercel's read-only application directory; this deployment did not change storage. |
