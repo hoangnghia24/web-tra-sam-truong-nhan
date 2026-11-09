@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-58
-Status: DONE (corrected 8-week Word data implemented and verified locally)
-Last completed checkpoint: CP-58 (source commit `3cea900`; production deployment was not requested).
+Current checkpoint: CP-59
+Status: DONE (market pain card 04 price corrected and validated locally)
+Last completed checkpoint: CP-59 (source commit `7c15cfd`; production deployment was not requested).
 
 ## Completed Work
 
+- Completed CP-59: changed the value-consideration card to the single 390,000 VND per box price and passed JSON and lint checks.
 - Completed CP-58: replaced the obsolete 12-week values with the corrected 8-week phase plan, production statuses, budget allocation, KPI milestones and media week mapping; passed local code and responsive browser checks.
 - Completed CP-57: deployed the current cropped Trần Thị Tường Vy portrait, removed its unused JPG predecessor, and verified production image loading.
 - Completed CP-56: found HEVC video in W3 among the ten public MP4s, transcoded it to H.264 while retaining AAC audio and its URL, and verified local and production playback with visible frames.
@@ -152,4 +153,4 @@ CP-57 is deployed on the public Vercel site. Phase video setup and H.264/AAC exp
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. CP-25 through CP-57 are deployed; CP-58 is committed locally and not deployed. Deploy future changes only when the user asks.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. CP-25 through CP-57 are deployed; CP-58 and CP-59 are committed locally and not deployed. Deploy future changes only when the user asks.

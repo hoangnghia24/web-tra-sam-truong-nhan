@@ -364,3 +364,8 @@
 - Model the 400-million implementation budget as ten categories, with the additional 40-million operations/coordination row, and keep the 100-million reserve separate. Show the 2–3–3 phase allocation, reserve uses and approval condition.
 - Replace the six obsolete KPI cards with the nine Word-supported planning indicators. Present ROAS as a tracked multiple without a committed threshold, Microsite 15% as interaction completion rather than purchase conversion, and NPS as a score reported only with at least 30 valid responses.
 - Keep production deployment outside this checkpoint. Source commit `3cea900` contains the locally verified website changes.
+
+## CP-59 fixed value-consideration price (2026-11-09)
+
+- In market pain card 04 only, replace the approximate 380,000–390,000 VND range with the confirmed display value 390,000 VND per box. Preserve the surrounding wording and all other price references unless separately requested.
+- Source commit `7c15cfd` contains this local content correction. Production deployment was not requested.

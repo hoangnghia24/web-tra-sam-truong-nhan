@@ -608,3 +608,11 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Strategy page | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 with no page errors or document overflow. It rendered 10 implementation bars, 11 budget rows including reserve, 10 phase-budget rows, 9 KPI cards and 3 KPI milestone rows. The horizontally wide budget table remained contained in its scroll region on mobile. |
 | Phase pages | At 390 px, all three routes returned HTTP 200 with 2, 3 and 3 week cards, headings “Hai tuần” or “Ba tuần”, 8/10/9 activity status labels, no page errors and no horizontal overflow. Mobile and desktop screenshots of the changed sections were reviewed. |
 | Production | Not pushed or deployed; this checkpoint was verified locally. |
+
+## CP-59 — Fixed value-consideration price (2026-11-09)
+
+| Check | Observed result |
+| --- | --- |
+| Content | Market pain card 04 now states “390.000 đồng/hộp”; its title and surrounding sentence remain unchanged. |
+| Code gates | `npm run validate:json`, `npm run lint` and `git diff --check` passed. |
+| Production | Not pushed or deployed. |
