@@ -627,3 +627,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Campaign content | Live `/api/campaign` data deeply matched the local JSON; phase ranges were W1–W2, W3–W5 and W6–W8 with 2, 3 and 3 weeks. The live strategy HTML contained the revised 390,000 VND per box card copy. |
 | Media | W1, W4, W7 and W8 MP4 range requests returned HTTP 206, 1,024 bytes with MP4 headers, and full-file lengths rather than Git LFS pointers. |
 | Remaining limitation | Vercel's read-only application directory still prevents persistent JSON-backed form submissions. This release did not change storage. |
+
+## CP-61 — Final Word campaign corrections (2026-11-09)
+
+| Check | Observed result |
+| --- | --- |
+| Source extraction | Read the three W1–W8 tables (28 activity rows) and inspected both embedded KPI screenshots in `F:\final.docx`. No tracked changes or comments were present. |
+| Content reconciliation | All 28 activity statuses match the document. After edits, 26 visitor-facing titles match exactly; the W1 and W2 titles intentionally omit internal week-transfer notes. The W6 website card feature is present as the first activity in that week. |
+| KPI | The P2 milestone renders “Hero Video W2 ≥ 150.000 lượt xem lũy kế”; the existing separate Hero Video KPI card already states publication in W2 and measurement through W5. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build` and `git diff --check` passed. |
+| Local browser | Chrome at 390 px and 1440 px returned HTTP 200 for `/chien-luoc` and all three phase routes. The KPI table displayed the W2 target, phase pages had 2/3/3 week cards, W6 had three activities, and no document overflow occurred. KPI and W6 screenshots were reviewed. |
+| Production | Not pushed or deployed; this checkpoint was verified locally. |

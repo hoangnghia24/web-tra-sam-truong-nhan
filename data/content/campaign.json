@@ -66,7 +66,7 @@
           "activities": [
             { "title": "Video hướng dẫn 4 bước tham gia", "status": "done" },
             { "title": "Video mẫu Câu Chuyện Dành Cho Bản Thân", "status": "done" },
-            { "title": "TikTok LIVE giới thiệu thử thách (5 triệu)", "status": "not_done" }
+            { "title": "TikTok LIVE giới thiệu thử thách", "status": "not_done" }
           ],
           "goal": "Hướng dẫn cách tham gia, giúp người xem hình dung nội dung dự thi và kích hoạt UGC.",
           "media": [
@@ -86,7 +86,7 @@
           "activities": [
             { "title": "Bộ ảnh hướng dẫn Câu Chuyện Của Tôi", "status": "not_done" },
             { "title": "Chuỗi video KOL/KOC tham gia thử thách", "status": "not_done" },
-            { "title": "Chuỗi video/poster trả lời câu hỏi thường gặp (FAQ)", "status": "done" },
+            { "title": "Poster chuỗi video trả lời câu hỏi thường gặp", "status": "done" },
             { "title": "Video Những Câu Chuyện Đầu Tiên Đã Xuất Hiện", "status": "not_done" }
           ],
           "goal": "Giảm rào cản sáng tạo, giải đáp thắc mắc và tạo động lực tham gia thử thách.",
@@ -97,9 +97,9 @@
         {
           "week": 5,
           "activities": [
-            { "title": "TikTok LIVE Một Khoảng Dừng Cùng Trà Sâm (5 triệu)", "status": "done" },
-            { "title": "Video Checklist điều cần kiểm tra trước khi gửi bài", "status": "done" },
-            { "title": "Video Đếm Ngược Kết Thúc Thử Thách (hạn nhận bài cuối W5)", "status": "not_done" }
+            { "title": "TikTok LIVE Một Khoảng Dừng Cùng Trà Sâm", "status": "done" },
+            { "title": "Video Checklist 4 điều cần kiểm tra trước khi gửi bài", "status": "done" },
+            { "title": "Video Đếm Ngược Kết Thúc Thử Thách", "status": "not_done" }
           ],
           "goal": "Tăng tỷ lệ bài hợp lệ và thúc đẩy người tham gia nộp bài đúng hạn vào cuối W5.",
           "media": [
@@ -122,7 +122,8 @@
         {
           "week": 6,
           "activities": [
-            { "title": "Video Những Câu Chuyện Dành Cho Bản Thân (tổng hợp UGC đã xin phép)", "status": "not_done" },
+            { "title": "Ra mắt tính năng Website Viết Lời Nhắn - Tạo Thiệp Quan Tâm", "status": "done" },
+            { "title": "Video Những Câu Chuyện Dành Cho Bản Thân", "status": "not_done" },
             { "title": "Poster Mỗi Người Một Câu Chuyện, Mỗi Người Một Cách Bắt Đầu", "status": "done" }
           ],
           "goal": "Tôn vinh các bài đã nộp đúng hạn, lan tỏa câu chuyện tích cực và củng cố thông điệp chiến dịch.",

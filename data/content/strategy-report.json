@@ -232,7 +232,7 @@
   ],
   "kpiMilestones": [
     { "phase": "P1 – Bấm hoãn", "weeks": "W1–W2", "metrics": "1.500 phiên; 225 lượt hoàn tất tương tác (15%); CTR theo dõi, ngưỡng cảnh báo 1,5%; 80 người quan tâm Zalo OA" },
-    { "phase": "P2 – Làm ngay", "weeks": "W3–W5", "metrics": "Hero Video ≥ 150.000 lượt xem; ≥60 đơn lũy kế; ≥40 UGC hợp lệ; ≥100 bài nộp đúng hạn; 200 người quan tâm Zalo OA" },
+    { "phase": "P2 – Làm ngay", "weeks": "W3–W5", "metrics": "Hero Video W2 ≥ 150.000 lượt xem lũy kế; ≥60 đơn lũy kế; ≥40 UGC hợp lệ; ≥100 bài nộp đúng hạn; 200 người quan tâm Zalo OA" },
     { "phase": "P3 – Gửi lời nhắc", "weeks": "W6–W8", "metrics": "≥100 đơn lũy kế; ≥80 UGC hợp lệ; 300 người quan tâm Zalo OA; NPS ≥ +30 nếu đủ mẫu" }
   ],
   "orderSourceMix": [

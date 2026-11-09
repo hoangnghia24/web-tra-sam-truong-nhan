@@ -374,3 +374,10 @@
 
 - Deploy the already committed CP-58 and CP-59 changes through `origin/main` and the existing Vercel integration. The deployed source head is `6f274a4`.
 - Keep the untracked `anhweb/` source folders outside the release. Preserve the existing Vercel hosting limitation for JSON-backed writes; this release only updates the public campaign content and assets.
+
+## CP-61 final Word campaign corrections (2026-11-09)
+
+- Use the three W1–W8 tables in `F:\final.docx` as campaign content evidence and its two images as the KPI wording reference. The conversational note at the end of the document is interpreted only through the supporting KPI image, which specifies “Hero Video W2 ≥ 150.000 lượt xem lũy kế” for P2.
+- Keep the existing W1 website launch and W2 product video in their correct weeks. Omit the document's internal transfer notes from visitor-facing activity titles.
+- Match the remaining activity labels and statuses, including the W6 website card feature as “Đã làm”. Preserve the distinction between production status and publication or KPI achievement, and keep the W4 AI-simulated clip disclosure.
+- This checkpoint changes local content only. The user did not request a production deployment in this turn.
