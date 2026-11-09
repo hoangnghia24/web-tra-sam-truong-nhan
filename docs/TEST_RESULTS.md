@@ -616,3 +616,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Content | Market pain card 04 now states “390.000 đồng/hộp”; its title and surrounding sentence remain unchanged. |
 | Code gates | `npm run validate:json`, `npm run lint` and `git diff --check` passed. |
 | Production | Not pushed or deployed. |
+
+## CP-60 — Production deployment (2026-11-09)
+
+| Check | Observed result |
+| --- | --- |
+| Release gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build`, `npm audit --omit=dev --audit-level=moderate` (0 vulnerabilities), and `git diff --check` passed. |
+| Source and deployment | Pushed `4634bf0..6f274a4` to `origin/main`. GitHub's Vercel status for `6f274a4` reached success with “Deployment has completed.” |
+| Production routes | `/`, `/chien-luoc`, all three `/giai-doan/*` pages, `/san-pham`, `/lien-he`, and `/hoa-don-cho-doi` each returned HTTP 200 on `https://web-tra-sam-truong-nhan.vercel.app`. |
+| Campaign content | Live `/api/campaign` data deeply matched the local JSON; phase ranges were W1–W2, W3–W5 and W6–W8 with 2, 3 and 3 weeks. The live strategy HTML contained the revised 390,000 VND per box card copy. |
+| Media | W1, W4, W7 and W8 MP4 range requests returned HTTP 206, 1,024 bytes with MP4 headers, and full-file lengths rather than Git LFS pointers. |
+| Remaining limitation | Vercel's read-only application directory still prevents persistent JSON-backed form submissions. This release did not change storage. |

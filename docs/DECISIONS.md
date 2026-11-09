@@ -369,3 +369,8 @@
 
 - In market pain card 04 only, replace the approximate 380,000–390,000 VND range with the confirmed display value 390,000 VND per box. Preserve the surrounding wording and all other price references unless separately requested.
 - Source commit `7c15cfd` contains this local content correction. Production deployment was not requested.
+
+## CP-60 production deployment (2026-11-09)
+
+- Deploy the already committed CP-58 and CP-59 changes through `origin/main` and the existing Vercel integration. The deployed source head is `6f274a4`.
+- Keep the untracked `anhweb/` source folders outside the release. Preserve the existing Vercel hosting limitation for JSON-backed writes; this release only updates the public campaign content and assets.

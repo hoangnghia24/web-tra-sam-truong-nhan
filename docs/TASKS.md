@@ -65,6 +65,7 @@
 | DONE | CP-57: deployed the current cropped Trần Thị Tường Vy portrait, removed its unused JPG, and verified the public contact page. |
 | DONE | CP-58: replaced the obsolete 12-week plan with the corrected 8-week Word data, updated budget and KPI reporting, remapped phase media, and verified the affected routes locally. |
 | DONE | CP-59: changed market pain card 04 from the 380,000–390,000 VND range to 390,000 VND per box and validated the content. |
+| DONE | CP-60: pushed CP-58 and CP-59 to production, verified Vercel success, public routes, eight-week campaign data and phase MP4 responses. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.

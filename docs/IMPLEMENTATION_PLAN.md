@@ -64,5 +64,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-57 Latest production assets | Deploy the current tracked contact portrait crop, remove its unused JPG predecessor, keep untracked source assets outside the release, and verify the contact page and image on production. |
 | CP-58 Corrected 8-week campaign data | Apply the supplied Word corrections to the 2–3–3 week phases, production status, media week mapping, 400-million execution budget, 100-million reserve, KPI targets and W2/W5/W8 evaluation milestones. Validate JSON, lint, typecheck, tests, build and responsive rendering locally. |
 | CP-59 Fixed value-consideration price | Replace the price range in market pain card 04 with the single 390,000 VND per box value; validate content JSON and lint. |
+| CP-60 Production deployment | Push the locally verified CP-58 and CP-59 commits through the existing GitHub/Vercel production path, then verify deployment status, public routes, campaign data, price copy, and representative MP4 responses. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.
