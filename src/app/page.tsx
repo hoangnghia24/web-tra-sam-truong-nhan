@@ -36,7 +36,7 @@ export default async function HomePage() {
 
       <section className="home-phases home-section" id="cac-giai-doan" aria-labelledby="home-phases-title">
         <div className="home-container">
-          <div className="home-phases-heading"><div><p className="section-index"><span /> Hành trình 12 tuần</p><h2 className="section-title" id="home-phases-title">Từ “bấm hoãn” đến <em>một lời nhắc để bắt đầu.</em></h2></div><p>Ba giai đoạn trong kế hoạch chiến dịch. Chọn một giai đoạn để khám phá câu chuyện, hoạt động theo tuần và các video sẽ được bổ sung.</p></div>
+          <div className="home-phases-heading"><div><p className="section-index"><span /> Hành trình 8 tuần</p><h2 className="section-title" id="home-phases-title">Từ “bấm hoãn” đến <em>một lời nhắc để bắt đầu.</em></h2></div><p>Ba giai đoạn trong kế hoạch chiến dịch. Chọn một giai đoạn để khám phá câu chuyện, hoạt động theo tuần và các tư liệu đã có.</p></div>
           <div className="home-phase-grid">{campaign.phases.map((phase) => <Link className={`home-phase-card home-phase-card-${phase.number}`} href={`/giai-doan/${phase.slug}`} key={phase.number} aria-label={`Khám phá giai đoạn ${phase.number}: ${phase.name}`}>
             <span className="home-phase-meta">GIAI ĐOẠN 0{phase.number} <span>TUẦN {phase.weeks}</span></span>
             <span className="home-phase-number" aria-hidden="true">0{phase.number}</span>

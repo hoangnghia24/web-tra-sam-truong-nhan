@@ -197,16 +197,49 @@
     { "title": "Lan tỏa", "body": "Câu chuyện người tham gia và lời nhắc quan tâm", "page": 23 }
   ],
   "budget": [
-    { "name": "Paid Ads", "millionVnd": 135 },
-    { "name": "KOC / Creator", "millionVnd": 105 },
+    { "name": "Paid Ads", "millionVnd": 110 },
+    { "name": "KOC / Creator", "millionVnd": 90 },
     { "name": "Content Production", "millionVnd": 45 },
-    { "name": "Microsite", "millionVnd": 30 },
+    { "name": "Microsite", "millionVnd": 25 },
     { "name": "CRM / Zalo OA", "millionVnd": 10 },
-    { "name": "UGC & Seeding", "millionVnd": 22 },
-    { "name": "Samples & Gifts", "millionVnd": 22 },
+    { "name": "UGC & Seeding", "millionVnd": 25 },
+    { "name": "Samples & Gifts", "millionVnd": 25 },
     { "name": "Livestream nội bộ", "millionVnd": 10 },
-    { "name": "Đo lường & tối ưu", "millionVnd": 21 },
+    { "name": "Đo lường & tối ưu", "millionVnd": 20 },
+    { "name": "Vận hành / điều phối", "millionVnd": 40 },
     { "name": "Dự phòng", "millionVnd": 100 }
+  ],
+  "budgetByPhase": {
+    "phaseLabels": ["P1 (W1–W2)", "P2 (W3–W5)", "P3 (W6–W8)"],
+    "rows": [
+      { "name": "Paid Ads", "p1": 25, "p2": 45, "p3": 40, "total": 110 },
+      { "name": "KOC / Creator", "p1": 0, "p2": 50, "p3": 40, "total": 90 },
+      { "name": "Content Production", "p1": 15, "p2": 20, "p3": 10, "total": 45 },
+      { "name": "Microsite", "p1": 20, "p2": 5, "p3": 0, "total": 25 },
+      { "name": "UGC & Seeding", "p1": 2, "p2": 15, "p3": 8, "total": 25 },
+      { "name": "Samples & Gifts", "p1": 3, "p2": 15, "p3": 7, "total": 25 },
+      { "name": "Đo lường & tối ưu", "p1": 0, "p2": 10, "p3": 10, "total": 20 },
+      { "name": "CRM / Zalo OA", "p1": 2, "p2": 3, "p3": 5, "total": 10 },
+      { "name": "Livestream nội bộ", "p1": 0, "p2": 10, "p3": 0, "total": 10 },
+      { "name": "Vận hành / điều phối", "p1": 0, "p2": 19, "p3": 21, "total": 40 }
+    ],
+    "totals": { "p1": 67, "p2": 192, "p3": 141, "total": 400 }
+  },
+  "reserveBreakdown": [
+    { "name": "Xử lý khủng hoảng / thay KOC", "millionVnd": 40 },
+    { "name": "Tăng ngân sách kênh hiệu quả", "millionVnd": 40 },
+    { "name": "Sự cố kỹ thuật, vận hành, quà tặng", "millionVnd": 20 }
+  ],
+  "kpiMilestones": [
+    { "phase": "P1 – Bấm hoãn", "weeks": "W1–W2", "metrics": "1.500 phiên; 225 lượt hoàn tất tương tác (15%); CTR theo dõi, ngưỡng cảnh báo 1,5%; 80 người quan tâm Zalo OA" },
+    { "phase": "P2 – Làm ngay", "weeks": "W3–W5", "metrics": "Hero Video ≥ 150.000 lượt xem; ≥60 đơn lũy kế; ≥40 UGC hợp lệ; ≥100 bài nộp đúng hạn; 200 người quan tâm Zalo OA" },
+    { "phase": "P3 – Gửi lời nhắc", "weeks": "W6–W8", "metrics": "≥100 đơn lũy kế; ≥80 UGC hợp lệ; 300 người quan tâm Zalo OA; NPS ≥ +30 nếu đủ mẫu" }
+  ],
+  "orderSourceMix": [
+    { "source": "KOC / Livestream", "orders": 35 },
+    { "source": "Paid Ads", "orders": 30 },
+    { "source": "Microsite / tự nhiên", "orders": 25 },
+    { "source": "Zalo OA / mua lại", "orders": 10 }
   ],
   "monitoring": [
     { "title": "Truyền thông (Awareness):", "metrics": "Impressions, Video Views, CPM, CTR", "cadence": "HẰNG NGÀY", "sources": "Meta Ads Manager, TikTok Ads Manager, GA4." },

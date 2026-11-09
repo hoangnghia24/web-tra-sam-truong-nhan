@@ -56,14 +56,17 @@ export const campaignSchema = z.object({
     focus: z.array(safeText(100)).min(1),
     action: z.object({ label: safeText(80), href: z.enum(['/hoa-don-cho-doi', '/7-phut-cho-minh', '/gui-loi-nhac']) }),
     weeklyPlan: z.array(z.object({
-      week: z.number().int().min(1).max(12),
-      activities: z.array(safeText(220)).min(1),
+      week: z.number().int().min(1).max(8),
+      activities: z.array(z.object({
+        title: safeText(220),
+        status: z.enum(['done', 'not_done']),
+      })).min(1),
       goal: safeText(350),
       media: z.array(phaseMediaSchema).max(8).refine(
         (media) => media.filter((item) => item.kind === 'video' || item.kind === 'series').length <= 1,
         'Mỗi tuần chỉ có một video hoặc một chuỗi video',
       ),
-    })).length(4),
+    })).min(2).max(3),
   })).length(3),
   statusNote: safeText(250),
 });
@@ -74,7 +77,7 @@ export const strategySchema = z.object({
   secondaryAudience: safeText(400), persona: z.object({ belief: safeText(400), pain: safeText(900), motivation: safeText(700) }), plannedBudgetVnd: z.number().nonnegative(),
   plannedExecutionBudgetVnd: z.number().nonnegative(), plannedReserveVnd: z.number().nonnegative(),
   plannedWeeks: z.number().int().positive(),
-  plannedKpis: z.array(z.object({ label: safeText(100), target: z.number().nonnegative(), displayTarget: safeText(30).optional(), unit: safeText(100), sourcePage: z.number().int().positive().optional() })),
+  plannedKpis: z.array(z.object({ label: safeText(120), target: z.number().nonnegative(), displayTarget: safeText(60).optional(), unit: safeText(280), sourcePage: z.number().int().positive().optional() })),
   actualResultsAvailable: z.boolean(),
 });
 
@@ -110,7 +113,18 @@ export const strategyReportSchema = z.object({
     measurement: z.array(z.object({ title: safeText(100), steps: z.array(safeText(100)).length(3) })).length(3),
   }),
   pillars: z.array(strategyEntry).length(4),
-  budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(10),
+  budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(11),
+  budgetByPhase: z.object({
+    phaseLabels: z.tuple([safeText(50), safeText(50), safeText(50)]),
+    rows: z.array(z.object({
+      name: safeText(100), p1: z.number().nonnegative(), p2: z.number().nonnegative(),
+      p3: z.number().nonnegative(), total: z.number().nonnegative(),
+    })).length(10),
+    totals: z.object({ p1: z.number().nonnegative(), p2: z.number().nonnegative(), p3: z.number().nonnegative(), total: z.number().nonnegative() }),
+  }),
+  reserveBreakdown: z.array(z.object({ name: safeText(140), millionVnd: z.number().nonnegative() })).length(3),
+  kpiMilestones: z.array(z.object({ phase: safeText(100), weeks: safeText(30), metrics: safeText(500) })).length(3),
+  orderSourceMix: z.array(z.object({ source: safeText(100), orders: z.number().int().nonnegative() })).length(4),
   monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(200) })).length(4),
   riskPlan: z.array(z.object({
     title: safeText(120),

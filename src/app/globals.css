@@ -667,6 +667,22 @@ img { display: block; max-width: 100%; }
 .budget-chart caption { margin-bottom: .8rem; color: var(--text-secondary); text-align: left; }
 .budget-chart th, .budget-chart td { padding: .45rem .3rem; border-bottom: 1px solid #d8dfd1; text-align: left; }
 .budget-chart th:last-child, .budget-chart td:last-child { text-align: right; white-space: nowrap; }
+.budget-chart tfoot th { padding-top: .7rem; color: var(--brand-forest); border-bottom: 0; }
+.strategy-table-wrap { margin-top: 1.5rem; overflow-x: auto; border: 1px solid #d8dfd1; border-radius: 18px; background: #fffdf7; }
+.strategy-data-table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: .82rem; line-height: 1.5; }
+.strategy-data-table caption { padding: 1rem; color: var(--text-secondary); font-weight: 700; text-align: left; }
+.strategy-data-table th, .strategy-data-table td { padding: .75rem 1rem; border-top: 1px solid #d8dfd1; text-align: right; }
+.strategy-data-table th:first-child, .strategy-data-table td:first-child { text-align: left; }
+.strategy-kpi-table th:last-child, .strategy-kpi-table td:last-child { text-align: left; }
+.strategy-data-table thead th { color: var(--brand-ivory); background: var(--brand-forest); }
+.strategy-data-table tbody tr:nth-child(even) { background: #f1f3e9; }
+.strategy-data-table tfoot th { color: var(--brand-forest); background: #e1e8d8; }
+.budget-reserve, .order-source-mix { margin-top: 2rem; padding: 1.5rem; border: 1px solid #d8dfd1; border-radius: 18px; background: #fffdf7; }
+.budget-reserve h3, .order-source-mix h3 { margin: 0 0 1rem; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.25rem; }
+.budget-reserve ul, .order-source-mix ul { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; }
+.budget-reserve li, .order-source-mix li { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .65rem; border-bottom: 1px solid #e3e6dc; }
+.budget-reserve p { margin: 1rem 0 0; color: var(--text-secondary); font-size: .82rem; font-style: italic; }
+.kpi-detail { color: var(--text-secondary); font-size: .82rem; line-height: 1.5; }
 .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .kpi-grid article { padding: 1.8rem; background: #e8ecdf; }
 .kpi-grid strong { display: block; margin: 1rem 0 .3rem; font-family: var(--type-display); font-size: 2.5rem; line-height: 1; }
@@ -1069,6 +1085,9 @@ img { display: block; max-width: 100%; }
 .phase-week-activities { margin: 0; padding: 0; list-style: none; }
 .phase-week-activities > li { padding: 1rem 0; border-bottom: 1px solid #d8ded2; }
 .phase-week-activities > li > p { margin: 0; color: var(--text-primary); font-size: 1rem; line-height: 1.6; }
+.phase-activity-status { display: inline-block; margin-top: .45rem; padding: .22rem .55rem; border-radius: 999px; font-size: .72rem; font-weight: 800; }
+.phase-activity-status-done { color: #245331; background: #dce9d8; }
+.phase-activity-status-not_done { color: #75521c; background: #f2e5c7; }
 .phase-week-media { margin-top: 2rem; }
 .phase-week-media > h4 { margin: 0 0 1.25rem; color: var(--brand-leaf); font-family: var(--type-body); font-size: .8rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .phase-week-media-items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 1.25rem; }

@@ -71,6 +71,7 @@ export default async function PhasePage({ params }: PhaseParams) {
 
   const nextPhase = campaign.phases.find((item) => item.number === phase.number + 1);
   const previousPhase = campaign.phases.find((item) => item.number === phase.number - 1);
+  const weekCountLabel = phase.weeklyPlan.length === 2 ? 'Hai tuần' : 'Ba tuần';
 
   return <main id="main" className={`phase-page phase-page-${phase.number}`}>
     <section className="phase-hero" aria-labelledby="phase-title">
@@ -98,10 +99,10 @@ export default async function PhasePage({ params }: PhaseParams) {
     </div></section>
 
     <section className="phase-weeks phase-section" aria-labelledby="phase-weeks-title"><div className="phase-container">
-      <div className="phase-section-heading"><div><p className="phase-section-label"><Clock3 size={17} aria-hidden="true" /> LỘ TRÌNH TRIỂN KHAI</p><h2 id="phase-weeks-title">Bốn tuần, <em>một chuyển động.</em></h2></div><p>Các hoạt động và mục tiêu bên dưới thuộc kế hoạch chiến dịch.</p></div>
+      <div className="phase-section-heading"><div><p className="phase-section-label"><Clock3 size={17} aria-hidden="true" /> LỘ TRÌNH TRIỂN KHAI</p><h2 id="phase-weeks-title">{weekCountLabel}, <em>một chuyển động.</em></h2></div><p>Các hoạt động, trạng thái sản xuất và mục tiêu bên dưới thuộc kế hoạch chiến dịch.</p></div>
       <div className="phase-week-grid">{phase.weeklyPlan.map((week) => <article key={week.week} className="phase-week-card">
         <div className="phase-week-top"><span>TUẦN</span><strong>{String(week.week).padStart(2, '0')}</strong></div>
-        <div className="phase-week-main"><h3>Hoạt động trong tuần</h3><ul className="phase-week-activities">{week.activities.map((activity) => <li key={activity}><p>{activity}</p></li>)}</ul>
+        <div className="phase-week-main"><h3>Hoạt động trong tuần</h3><ul className="phase-week-activities">{week.activities.map((activity) => <li key={activity.title}><p>{activity.title}</p><span className={`phase-activity-status phase-activity-status-${activity.status}`}>Trạng thái: {activity.status === 'done' ? 'Đã làm' : 'Chưa làm'}</span></li>)}</ul>
           {week.media.length > 0 && <div className="phase-week-media"><h4>Tư liệu tuần {week.week}</h4><div className="phase-week-media-items">{orderedWeekMedia(week.media).map((media) => <WeekMediaItem key={media.kind === 'series' ? media.title : media.src} media={media} />)}</div></div>}
           <div className="phase-week-goal"><strong>Mục tiêu</strong><p>{week.goal}</p></div>
         </div>

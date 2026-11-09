@@ -3,44 +3,160 @@
   "currentPhase": 1,
   "phases": [
     {
-      "number": 1, "name": "Bấm hoãn", "slug": "bam-hoan", "weeks": "1–4", "message": "Thấu hiểu sự trì hoãn",
+      "number": 1,
+      "name": "Bấm hoãn",
+      "slug": "bam-hoan",
+      "weeks": "1–2",
+      "message": "Thấu hiểu sự trì hoãn",
       "intro": "Có những việc ta luôn hẹn để sau, kể cả một khoảng nghỉ cho chính mình. Giai đoạn mở đầu đặt câu hỏi về cách mỗi người đang dùng thời gian và mời họ nhìn lại nhịp sống thường ngày.",
       "invitation": "Bắt đầu bằng một câu hỏi nhỏ: trong ngày hôm nay, bạn đã dành bao nhiêu thời gian cho chính mình?",
       "action": { "label": "Tạo hóa đơn thời gian", "href": "/hoa-don-cho-doi" },
       "focus": ["Poster và video khơi gợi đồng cảm", "Trải nghiệm hóa đơn thời gian và đồng hồ 7 phút", "Giới thiệu thành phần, cách pha trà"],
       "weeklyPlan": [
-        { "week": 1, "activities": ["Poster chính thức chiến dịch.", "Video Teaser Coming Soon.", "Video Nhắc tôi sau."], "goal": "Xây dựng nhận diện, khơi gợi sự tò mò và tạo đồng cảm với vấn đề trì hoãn chăm sóc bản thân.", "media": [{ "kind": "poster", "title": "Poster chính thức chiến dịch", "src": "/images/phases/w1-poster-chien-dich.png", "width": 940, "height": 788 }, { "kind": "video", "title": "Video Teaser Coming Soon", "src": "/videos/phases/w1-coming-soon.mp4" }] },
-        { "week": 2, "activities": ["Video chủ đạo: Hóa Đơn Thời Gian Dành Cho Bản Thân.", "TikTok Photo Mode: Để dành đến bao giờ?"], "goal": "Tạo điểm nhấn sáng tạo, kích hoạt minigame, tăng tương tác và thu hút traffic về website.", "media": [{ "kind": "video", "title": "Hóa Đơn Thời Gian Dành Cho Bản Thân", "src": "/videos/phases/w2-hoa-don-thoi-gian.mp4" }, { "kind": "poster", "title": "Để dành đến bao giờ?", "src": "/images/phases/w2-de-danh-den-bao-gio.jpg", "width": 1400, "height": 2000 }] },
-        { "week": 3, "activities": ["Ra mắt Web Bấm Hóa Đơn Trì Hoãn và Đồng Hồ Đếm Ngược 7 Phút.", "Video giới thiệu Trà Sâm Trường Nhân, thành phần và cách pha trà."], "goal": "Thúc đẩy trải nghiệm website, lan tỏa thói quen 7 phút và tăng nhận biết sản phẩm.", "media": [{ "kind": "video", "title": "Giới thiệu Trà Sâm Trường Nhân", "src": "/videos/phases/w3-gioi-thieu-tra-sam.mp4" }] },
-        { "week": 4, "activities": ["Video tương tác: Bạn thường dành thời gian cho ai nhiều nhất?"], "goal": "Khuyến khích người xem tự nhìn nhận, tổng kết tương tác và chuẩn bị chuyển sang thử thách UGC.", "media": [] }
+        {
+          "week": 1,
+          "activities": [
+            { "title": "Poster chính thức chiến dịch", "status": "done" },
+            { "title": "Video teaser Coming Soon", "status": "done" },
+            { "title": "Video Nhắc Tôi Sau", "status": "not_done" },
+            { "title": "Ra mắt Web Bấm Hóa Đơn Trì Hoãn và Đồng Hồ Đếm Ngược 7 Phút", "status": "not_done" }
+          ],
+          "goal": "Xây dựng nhận diện, khơi gợi đồng cảm và mở điểm chạm website cho hành vi chăm sóc bản thân.",
+          "media": [
+            { "kind": "poster", "title": "Poster chính thức chiến dịch", "src": "/images/phases/w1-poster-chien-dich.png", "width": 940, "height": 788 },
+            { "kind": "video", "title": "Video teaser Coming Soon", "src": "/videos/phases/w1-coming-soon.mp4" }
+          ]
+        },
+        {
+          "week": 2,
+          "activities": [
+            { "title": "Video Hóa Đơn Thời Gian Dành Cho Bản Thân (Hero Video)", "status": "done" },
+            { "title": "TikTok Photo Mode/Slideshow “Để Dành Đến Bao Giờ?”", "status": "done" },
+            { "title": "Video giới thiệu Trà Sâm (thành phần, cách pha)", "status": "done" },
+            { "title": "Video tương tác “Bạn Thường Dành Thời Gian Cho Ai Nhiều Nhất?”", "status": "not_done" }
+          ],
+          "goal": "Tạo điểm nhấn sáng tạo, tăng tương tác và giúp người xem hiểu trải nghiệm cũng như sản phẩm.",
+          "media": [
+            { "kind": "poster", "title": "Để Dành Đến Bao Giờ?", "src": "/images/phases/w2-de-danh-den-bao-gio.jpg", "width": 1400, "height": 2000 },
+            {
+              "kind": "series",
+              "title": "Video tuần 2",
+              "videos": [
+                { "title": "Hóa Đơn Thời Gian Dành Cho Bản Thân", "src": "/videos/phases/w2-hoa-don-thoi-gian.mp4" },
+                { "title": "Giới thiệu Trà Sâm", "src": "/videos/phases/w2-gioi-thieu-tra-sam.mp4" }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "number": 2, "name": "Làm ngay", "slug": "lam-ngay", "weeks": "5–8", "message": "Bắt đầu khoảng dừng 7 phút",
+      "number": 2,
+      "name": "Làm ngay",
+      "slug": "lam-ngay",
+      "weeks": "3–5",
+      "message": "Bắt đầu khoảng dừng 7 phút",
       "intro": "Sau khi nhận ra mình thường chờ đợi, điều tiếp theo là thử dành một khoảng dừng ngắn ngay hôm nay. Giai đoạn này kết nối trải nghiệm 7 phút với thử thách kể lại một việc nhỏ bạn đã làm cho mình.",
       "invitation": "Bạn có thể bắt đầu 7 phút theo cách riêng: pha trà, hít thở, nhìn ra cửa sổ hoặc đơn giản là ngồi yên.",
       "action": { "label": "Bắt đầu 7 phút cho mình", "href": "/7-phut-cho-minh" },
-      "focus": ["Hướng dẫn thử thách và video mẫu", "KOL/KOC, nội dung giải đáp", "Livestream và câu chuyện tham gia"],
+      "focus": ["Hướng dẫn thử thách và video mẫu", "KOL/KOC và nội dung giải đáp", "Hai buổi livestream tại W3 và W5"],
       "weeklyPlan": [
-        { "week": 5, "activities": ["Video hướng dẫn 4 bước tham gia thử thách.", "Video mẫu Câu Chuyện Dành Cho Bản Thân.", "TikTok LIVE giới thiệu thử thách và Minigame Web."], "goal": "Hướng dẫn cách tham gia, giúp người xem hình dung nội dung dự thi và kích hoạt UGC.", "media": [{ "kind": "series", "title": "Chuỗi video tuần 5", "videos": [{ "title": "Hướng dẫn 4 bước tham gia", "src": "/videos/phases/w5-huong-dan-bon-buoc.mp4" }, { "title": "Video mẫu Câu Chuyện Dành Cho Bản Thân", "src": "/videos/phases/w5-video-mau-cau-chuyen.mp4" }] }] },
-        { "week": 6, "activities": ["Bộ ảnh hướng dẫn Câu Chuyện Của Tôi.", "Chuỗi video KOL/KOC tham gia thử thách.", "Chuỗi video trả lời câu hỏi thường gặp."], "goal": "Giảm rào cản sáng tạo, tạo động lực tham gia và giải đáp thắc mắc của người dùng.", "media": [{ "kind": "video", "title": "Video mô phỏng KOL/KOC bằng AI", "src": "/videos/phases/w6-kol-koc.mp4", "note": "Tệp do nhóm cung cấp ghi là video tạo bằng AI; không phải lời chứng thực đã được xác minh." }, { "kind": "poster", "title": "Poster hướng dẫn 4 bước tham gia", "src": "/images/phases/w6-huong-dan-bon-buoc.jpg", "width": 718, "height": 1024 }] },
-        { "week": 7, "activities": ["Video Những câu chuyện đầu tiên đã xuất hiện.", "TikTok LIVE 7 Phút Trà Đàm Cùng Trường Nhân, kết hợp Flash Deal 7 phút."], "goal": "Tạo bằng chứng cộng đồng, tăng quan tâm sản phẩm và thúc đẩy chuyển đổi đơn hàng.", "media": [] },
-        { "week": 8, "activities": ["Video Checklist 5 điều cần kiểm tra trước khi gửi bài.", "Video đếm ngược kết thúc thử thách."], "goal": "Tăng tỷ lệ bài dự thi hợp lệ, thúc đẩy hoàn tất tham gia và tạo sự khẩn trương trước hạn cuối.", "media": [{ "kind": "video", "title": "Checklist trước khi gửi bài", "src": "/videos/phases/w8-checklist.mp4" }] }
+        {
+          "week": 3,
+          "activities": [
+            { "title": "Video hướng dẫn 4 bước tham gia", "status": "done" },
+            { "title": "Video mẫu Câu Chuyện Dành Cho Bản Thân", "status": "done" },
+            { "title": "TikTok LIVE giới thiệu thử thách (5 triệu)", "status": "not_done" }
+          ],
+          "goal": "Hướng dẫn cách tham gia, giúp người xem hình dung nội dung dự thi và kích hoạt UGC.",
+          "media": [
+            { "kind": "poster", "title": "Poster hướng dẫn 4 bước tham gia", "src": "/images/phases/w3-huong-dan-bon-buoc.jpg", "width": 718, "height": 1024 },
+            {
+              "kind": "series",
+              "title": "Video tuần 3",
+              "videos": [
+                { "title": "Hướng dẫn 4 bước tham gia", "src": "/videos/phases/w3-huong-dan-bon-buoc.mp4" },
+                { "title": "Video mẫu Câu Chuyện Dành Cho Bản Thân", "src": "/videos/phases/w3-video-mau-cau-chuyen.mp4" }
+              ]
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "activities": [
+            { "title": "Bộ ảnh hướng dẫn Câu Chuyện Của Tôi", "status": "not_done" },
+            { "title": "Chuỗi video KOL/KOC tham gia thử thách", "status": "not_done" },
+            { "title": "Chuỗi video/poster trả lời câu hỏi thường gặp (FAQ)", "status": "done" },
+            { "title": "Video Những Câu Chuyện Đầu Tiên Đã Xuất Hiện", "status": "not_done" }
+          ],
+          "goal": "Giảm rào cản sáng tạo, giải đáp thắc mắc và tạo động lực tham gia thử thách.",
+          "media": [
+            { "kind": "video", "title": "Video mô phỏng KOL/KOC bằng AI", "src": "/videos/phases/w4-kol-koc.mp4", "note": "Tư liệu mô phỏng bằng AI; không phải KOL/KOC đã tham gia và không thay đổi trạng thái Chưa làm của ấn phẩm." }
+          ]
+        },
+        {
+          "week": 5,
+          "activities": [
+            { "title": "TikTok LIVE Một Khoảng Dừng Cùng Trà Sâm (5 triệu)", "status": "done" },
+            { "title": "Video Checklist điều cần kiểm tra trước khi gửi bài", "status": "done" },
+            { "title": "Video Đếm Ngược Kết Thúc Thử Thách (hạn nhận bài cuối W5)", "status": "not_done" }
+          ],
+          "goal": "Tăng tỷ lệ bài hợp lệ và thúc đẩy người tham gia nộp bài đúng hạn vào cuối W5.",
+          "media": [
+            { "kind": "video", "title": "Checklist trước khi gửi bài", "src": "/videos/phases/w5-checklist.mp4" }
+          ]
+        }
       ]
     },
     {
-      "number": 3, "name": "Gửi lời nhắc", "slug": "gui-loi-nhac", "weeks": "9–12", "message": "Duy trì & Chia sẻ thói quen",
+      "number": 3,
+      "name": "Gửi lời nhắc",
+      "slug": "gui-loi-nhac",
+      "weeks": "6–8",
+      "message": "Duy trì và chia sẻ thói quen",
       "intro": "Một khoảng dừng có thể tiếp tục bằng một lời quan tâm. Giai đoạn cuối mời mỗi người giữ lại thói quen nhỏ và gửi lời nhắc dịu dàng đến người thân hoặc bạn bè.",
       "invitation": "Viết một điều bạn muốn nhớ vào ngày mai, hoặc gửi lời nhắn ấy đến một người bạn quan tâm.",
       "action": { "label": "Tạo thiệp lời nhắc", "href": "/gui-loi-nhac" },
-      "focus": ["Tổng hợp câu chuyện cộng đồng", "Thiệp quan tâm và lời nhắn", "Công bố kết quả, duy trì tiện ích website"],
+      "focus": ["Tổng hợp UGC đã nộp đúng hạn", "Thiệp quan tâm và lời nhắn", "Công bố kết quả và lời cảm ơn"],
       "weeklyPlan": [
-        { "week": 9, "activities": ["Video Những câu chuyện dành cho bản thân (tổng hợp UGC).", "Poster Mỗi người một câu chuyện, mỗi người một cách bắt đầu."], "goal": "Tôn vinh người tham gia, lan tỏa câu chuyện tích cực và củng cố thông điệp chiến dịch.", "media": [{ "kind": "poster", "title": "Mỗi người một câu chuyện, mỗi người một cách bắt đầu", "src": "/images/phases/w9-moi-nguoi-mot-cau-chuyen.png", "width": 1086, "height": 1448, "note": "Poster minh họa do nhóm cung cấp; câu chuyện, mã QR và liên kết trong ảnh chưa được xác minh." }] },
-        { "week": 10, "activities": ["Video Lần này mình nhắc bạn.", "Video Một hộp trà, một lời nhắn.", "Ra mắt tính năng Website Viết Lời Nhắc – Tạo Thiệp Quan Tâm."], "goal": "Mở rộng thông điệp đến người thân, cá nhân hóa trải nghiệm và thúc đẩy nhu cầu mua quà tặng.", "media": [{ "kind": "video", "title": "Lần này mình nhắc bạn", "src": "/videos/phases/w10-lan-nay-minh-nhac-ban.mp4" }] },
-        { "week": 11, "activities": ["Video công bố kết quả thử thách.", "Video Khoảnh khắc nhận quà và lời cảm ơn."], "goal": "Đảm bảo tính minh bạch, ghi nhận đóng góp của cộng đồng và củng cố niềm tin thương hiệu.", "media": [] },
-        { "week": 12, "activities": ["Video Bạn đã thôi chờ chưa?", "Video Lời nhắc dành cho ngày mai.", "Duy trì các tiện ích Đồng Hồ 7 Phút và Tạo Thiệp trên Website."], "goal": "Tổng kết hành trình 12 tuần, ghi nhớ Big Idea và duy trì tương tác sau chiến dịch.", "media": [{ "kind": "video", "title": "Bạn đã thôi chờ chưa?", "src": "/videos/phases/w12-ban-da-thoi-cho-chua.mp4" }] }
+        {
+          "week": 6,
+          "activities": [
+            { "title": "Video Những Câu Chuyện Dành Cho Bản Thân (tổng hợp UGC đã xin phép)", "status": "not_done" },
+            { "title": "Poster Mỗi Người Một Câu Chuyện, Mỗi Người Một Cách Bắt Đầu", "status": "done" }
+          ],
+          "goal": "Tôn vinh các bài đã nộp đúng hạn, lan tỏa câu chuyện tích cực và củng cố thông điệp chiến dịch.",
+          "media": [
+            { "kind": "poster", "title": "Mỗi Người Một Câu Chuyện, Mỗi Người Một Cách Bắt Đầu", "src": "/images/phases/w6-moi-nguoi-mot-cau-chuyen.png", "width": 1086, "height": 1448, "note": "Poster minh họa do nhóm cung cấp; câu chuyện, mã QR và liên kết trong ảnh chưa được xác minh." }
+          ]
+        },
+        {
+          "week": 7,
+          "activities": [
+            { "title": "Video Lần Này Mình Nhắc Bạn", "status": "done" },
+            { "title": "Video Một Hộp Trà, Một Lời Nhắn", "status": "not_done" },
+            { "title": "Video KOL/KOC “Lo Cho Nhau, Đừng Quên Lo Cho Mình”", "status": "done" }
+          ],
+          "goal": "Mở rộng thông điệp đến người thân và duy trì hành vi gửi lời nhắc quan tâm.",
+          "media": [
+            { "kind": "video", "title": "Lần Này Mình Nhắc Bạn", "src": "/videos/phases/w7-lan-nay-minh-nhac-ban.mp4" }
+          ]
+        },
+        {
+          "week": 8,
+          "activities": [
+            { "title": "Video công bố kết quả thử thách", "status": "not_done" },
+            { "title": "Video Khoảnh Khắc Nhận Quà Và Lời Cảm Ơn", "status": "not_done" },
+            { "title": "Video Bạn Đã Thôi Chờ Chưa?", "status": "done" },
+            { "title": "Video Lời Nhắc Dành Cho Ngày Mai", "status": "not_done" }
+          ],
+          "goal": "Tổng kết hành trình 8 tuần, công bố kết quả minh bạch và duy trì lời nhắc sau chiến dịch.",
+          "media": [
+            { "kind": "video", "title": "Bạn Đã Thôi Chờ Chưa?", "src": "/videos/phases/w8-ban-da-thoi-cho-chua.mp4" }
+          ]
+        }
       ]
     }
   ],
-  "statusNote": "Đây là kế hoạch chiến dịch"
+  "statusNote": "Đây là kế hoạch chiến dịch. Trạng thái “Đã làm” chỉ xác nhận ấn phẩm đã sản xuất xong, không đồng nghĩa đã đăng hoặc đạt KPI."
 }
