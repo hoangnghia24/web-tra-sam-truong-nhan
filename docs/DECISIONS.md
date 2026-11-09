@@ -381,3 +381,9 @@
 - Keep the existing W1 website launch and W2 product video in their correct weeks. Omit the document's internal transfer notes from visitor-facing activity titles.
 - Match the remaining activity labels and statuses, including the W6 website card feature as “Đã làm”. Preserve the distinction between production status and publication or KPI achievement, and keep the W4 AI-simulated clip disclosure.
 - This checkpoint changes local content only. The user did not request a production deployment in this turn.
+
+## CP-62 revised final Word table (2026-11-09)
+
+- The updated `F:\final.docx` changes four table entries from the prior version: the W1 transfer note is removed, the W2 Hero Video suffix and product-video description are removed, and the W6 website card launch status changes from “Đã làm” to “Chưa làm”. The embedded KPI images are unchanged.
+- Apply the W2 title and W6 status changes. The W1 title already matches without its former internal note. Keep the Phase 2 KPI wording “Hero Video W2 ≥ 150.000 lượt xem lũy kế” because the revised document's KPI image still shows it.
+- Treat “Chưa làm” as the document's ấn phẩm production status for the W6 launch item; the existence of the website's card feature does not establish that the campaign launch ấn phẩm is complete. Keep this checkpoint local pending an explicit deployment request.

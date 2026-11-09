@@ -30,9 +30,9 @@
         {
           "week": 2,
           "activities": [
-            { "title": "Video Hóa Đơn Thời Gian Dành Cho Bản Thân (Hero Video)", "status": "done" },
+            { "title": "Video Hóa Đơn Thời Gian Dành Cho Bản Thân", "status": "done" },
             { "title": "TikTok Photo Mode/Slideshow “Để Dành Đến Bao Giờ?”", "status": "done" },
-            { "title": "Video giới thiệu Trà Sâm (thành phần, cách pha)", "status": "done" },
+            { "title": "Video giới thiệu Trà Sâm", "status": "done" },
             { "title": "Video tương tác “Bạn Thường Dành Thời Gian Cho Ai Nhiều Nhất?”", "status": "not_done" }
           ],
           "goal": "Tạo điểm nhấn sáng tạo, tăng tương tác và giúp người xem hiểu trải nghiệm cũng như sản phẩm.",
@@ -122,7 +122,7 @@
         {
           "week": 6,
           "activities": [
-            { "title": "Ra mắt tính năng Website Viết Lời Nhắn - Tạo Thiệp Quan Tâm", "status": "done" },
+            { "title": "Ra mắt tính năng Website Viết Lời Nhắn - Tạo Thiệp Quan Tâm", "status": "not_done" },
             { "title": "Video Những Câu Chuyện Dành Cho Bản Thân", "status": "not_done" },
             { "title": "Poster Mỗi Người Một Câu Chuyện, Mỗi Người Một Cách Bắt Đầu", "status": "done" }
           ],

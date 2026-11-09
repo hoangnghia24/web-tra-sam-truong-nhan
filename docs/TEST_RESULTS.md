@@ -638,3 +638,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build` and `git diff --check` passed. |
 | Local browser | Chrome at 390 px and 1440 px returned HTTP 200 for `/chien-luoc` and all three phase routes. The KPI table displayed the W2 target, phase pages had 2/3/3 week cards, W6 had three activities, and no document overflow occurred. KPI and W6 screenshots were reviewed. |
 | Production | Not pushed or deployed; this checkpoint was verified locally. |
+
+## CP-62 — Revised final Word table (2026-11-09)
+
+| Check | Observed result |
+| --- | --- |
+| Source revision | The updated `F:\final.docx` had a new modification time and SHA-256 `AF039AE4C2B7D591F7AE5D385645E487F4E281D75877FF3E01E84BE514CF5185`. Text comparison found four changed table rows; both KPI images had the same hashes as in CP-61. |
+| Content comparison | All 28 revised Word rows now match the local campaign JSON exactly in week, title, order and status. The W2 Hero Video suffix and product-video description are removed; the W6 website launch entry is “Chưa làm”. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build` and `git diff --check` passed. |
+| Local browser | Chrome at 390 px and 1440 px returned HTTP 200 for phase 1 and phase 3. All W2 activity titles matched the revised JSON; the W6 launch row used the `not_done` status class, and neither page had horizontal document overflow. |
+| Production | Not pushed or deployed; this checkpoint was verified locally. |
