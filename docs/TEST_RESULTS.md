@@ -597,3 +597,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local gates | `npm run validate:json`, `npm run lint`, `npm run build` including TypeScript, and `git diff --check` passed. Local Chrome at 390 px and 1440 px returned HTTP 200 for `/lien-he`; the portrait loaded and neither viewport overflowed horizontally. |
 | Deployment | Commit `5bc739f` was pushed to `origin/main`; Vercel status reached success with “Deployment has completed.” |
 | Production | The PNG URL returned HTTP 200 with 1,451,068 bytes. Mobile-width Chrome loaded the optimized portrait at 88 × 92 px on `/lien-he` with HTTP 200. The removed JPG URL returned HTTP 404. |
+
+## CP-58 — Corrected 8-week campaign data (2026-11-09)
+
+| Check | Observed result |
+| --- | --- |
+| Word extraction | Read all 295 non-empty document paragraphs, including the 8-week split, ten implementation budget rows, three phase totals, nine KPI targets/milestones and W1–W8 asset statuses. |
+| Code gates | `npm run validate:json`, `npm run typecheck`, `npm run lint`, `npm run test` (9 tests), `npm run build` and `git diff --check` passed. |
+| Content regression | Repository search outside historical docs and binary references found no visitor-facing “12 tuần”, W11/W12, 350.000 Hero views, 250 UGC, 3,5% ROAS, 18% Microsite CVR or 45% NPS values. All configured phase media paths exist. |
+| Strategy page | At 390 px and 1440 px, `/chien-luoc` returned HTTP 200 with no page errors or document overflow. It rendered 10 implementation bars, 11 budget rows including reserve, 10 phase-budget rows, 9 KPI cards and 3 KPI milestone rows. The horizontally wide budget table remained contained in its scroll region on mobile. |
+| Phase pages | At 390 px, all three routes returned HTTP 200 with 2, 3 and 3 week cards, headings “Hai tuần” or “Ba tuần”, 8/10/9 activity status labels, no page errors and no horizontal overflow. Mobile and desktop screenshots of the changed sections were reviewed. |
+| Production | Not pushed or deployed; this checkpoint was verified locally. |

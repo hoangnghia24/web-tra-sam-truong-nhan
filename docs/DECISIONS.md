@@ -355,3 +355,12 @@
 
 - The current website diff contains a shorter crop of Trần Thị Tường Vy's public PNG and deletion of its unused JPG predecessor. `data/content/team.json` already points to the PNG, and no source references the JPG.
 - Deploy these tracked public asset changes. Keep the untracked `anhweb/` source photos, logo, and videos out of the commit because their site-ready copies were handled in earlier checkpoints.
+
+## CP-58 corrected 8-week campaign data (2026-11-09)
+
+- Treat `F:\Tong_hop_so_lieu_chuan_chinh_web_v2.docx` as the correction source for campaign duration, budget, KPI targets and weekly production status. The campaign is eight weeks split W1–W2, W3–W5 and W6–W8; this supersedes the historical 12-week values recorded in CP-35 and CP-51–CP-54.
+- Keep “Đã làm” as a production status only. Display it beside each activity and state that it does not mean the asset was published or reached a KPI.
+- Remap the existing public media to the corrected visible week and rename its stable public path accordingly. Keep the W4 AI KOL/KOC clip labeled as a simulation and preserve the source note that it does not change the activity's “Chưa làm” status.
+- Model the 400-million implementation budget as ten categories, with the additional 40-million operations/coordination row, and keep the 100-million reserve separate. Show the 2–3–3 phase allocation, reserve uses and approval condition.
+- Replace the six obsolete KPI cards with the nine Word-supported planning indicators. Present ROAS as a tracked multiple without a committed threshold, Microsite 15% as interaction completion rather than purchase conversion, and NPS as a score reported only with at least 30 valid responses.
+- Keep production deployment outside this checkpoint. Source commit `3cea900` contains the locally verified website changes.
