@@ -67,5 +67,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-60 Production deployment | Push the locally verified CP-58 and CP-59 commits through the existing GitHub/Vercel production path, then verify deployment status, public routes, campaign data, price copy, and representative MP4 responses. |
 | CP-61 Final Word campaign corrections | Compare all W1–W8 rows and statuses in `F:\final.docx` against the current content model, align differing activity labels, add the W6 website feature row, and clarify the Phase 2 Hero Video W2 KPI. Validate data/build and inspect mobile/desktop pages locally. |
 | CP-62 Revised final Word table | Recheck the updated `F:\final.docx` against CP-61, apply the changed W2 activity titles and W6 launch status, compare all 28 rows exactly, and verify local production build and responsive pages. |
+| CP-63 Production deployment | Push the verified CP-61 and CP-62 commits to `origin/main`, confirm Vercel success, and verify public routes, exact campaign JSON, W2 KPI, W6 status, representative video bytes and responsive production rendering. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

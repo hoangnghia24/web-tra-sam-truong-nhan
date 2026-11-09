@@ -648,3 +648,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build` and `git diff --check` passed. |
 | Local browser | Chrome at 390 px and 1440 px returned HTTP 200 for phase 1 and phase 3. All W2 activity titles matched the revised JSON; the W6 launch row used the `not_done` status class, and neither page had horizontal document overflow. |
 | Production | Not pushed or deployed; this checkpoint was verified locally. |
+
+## CP-63 — Production deployment (2026-11-09)
+
+| Check | Observed result |
+| --- | --- |
+| Release gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build`, `npm audit --omit=dev --audit-level=moderate` (0 vulnerabilities) and `git diff --check` passed. |
+| Source and deployment | Pushed `6f41075..4291b1b` to `origin/main`; GitHub's Vercel status for `4291b1b` reached success with “Deployment has completed.” |
+| Production content | `/`, `/chien-luoc` and all three phase routes returned HTTP 200. Live `/api/campaign` deeply matched the local JSON, including revised W2 titles and the W6 `not_done` status. The strategy page retained “Hero Video W2”. |
+| Production media | W7 video returned HTTP 206 for a 1,024-byte range with MP4 header and a 39,122,476-byte total length, rather than a Git LFS pointer. |
+| Responsive browser | Chrome at 390 px and 1440 px returned HTTP 200 for the strategy, phase 1 and phase 3 pages. The KPI W2 label and W6 `not_done` status rendered at both widths, with no horizontal overflow. |
+| Remaining limitation | Vercel's read-only application directory still does not persist JSON-backed form submissions. |

@@ -387,3 +387,8 @@
 - The updated `F:\final.docx` changes four table entries from the prior version: the W1 transfer note is removed, the W2 Hero Video suffix and product-video description are removed, and the W6 website card launch status changes from “Đã làm” to “Chưa làm”. The embedded KPI images are unchanged.
 - Apply the W2 title and W6 status changes. The W1 title already matches without its former internal note. Keep the Phase 2 KPI wording “Hero Video W2 ≥ 150.000 lượt xem lũy kế” because the revised document's KPI image still shows it.
 - Treat “Chưa làm” as the document's ấn phẩm production status for the W6 launch item; the existence of the website's card feature does not establish that the campaign launch ấn phẩm is complete. Keep this checkpoint local pending an explicit deployment request.
+
+## CP-63 production deployment (2026-11-09)
+
+- The user's request to push to “product” is interpreted as production, consistent with the existing GitHub/Vercel deployment path. Deploy source head `4291b1b`, which includes the locally verified CP-61 and CP-62 content changes.
+- Keep untracked `anhweb/` source folders outside the release. Continue to treat file-backed form submissions as nonpersistent on Vercel's read-only application directory.

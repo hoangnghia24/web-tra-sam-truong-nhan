@@ -68,6 +68,7 @@
 | DONE | CP-60: pushed CP-58 and CP-59 to production, verified Vercel success, public routes, eight-week campaign data and phase MP4 responses. |
 | DONE | CP-61: aligned the W1–W8 activity table with `F:\final.docx`, added the W6 card feature, clarified the Phase 2 Hero Video W2 KPI, and verified locally without deployment. |
 | DONE | CP-62: applied the revised Word table's W2 title changes and W6 “Chưa làm” status; verified all 28 rows and local rendering. |
+| DONE | CP-63: deployed CP-61 and CP-62 through GitHub/Vercel and verified the revised campaign content and responsive production pages. |
 | PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
 
 Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.
