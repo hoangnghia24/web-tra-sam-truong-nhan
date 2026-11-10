@@ -12,7 +12,7 @@ export class JsonStoreError extends Error {
   }
 }
 
-export function createJsonStore(root = process.cwd()) {
+export function createJsonStore(root = join(process.cwd(), 'data')) {
   // The root is explicitly the local data directory (or an isolated test directory).
   // Suppress broad output tracing of unrelated workspace files, including the PDF reference.
   const rootPath = resolve(/*turbopackIgnore: true*/ root);
