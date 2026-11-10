@@ -659,3 +659,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Production media | W7 video returned HTTP 206 for a 1,024-byte range with MP4 header and a 39,122,476-byte total length, rather than a Git LFS pointer. |
 | Responsive browser | Chrome at 390 px and 1440 px returned HTTP 200 for the strategy, phase 1 and phase 3 pages. The KPI W2 label and W6 `not_done` status rendered at both widths, with no horizontal overflow. |
 | Remaining limitation | Vercel's read-only application directory still does not persist JSON-backed form submissions. |
+
+## CP-64 — Strategy production repair (2026-11-10)
+
+| Check | Observed result |
+| --- | --- |
+| Reproduction | Production `/chien-luoc` returned HTTP 200 but rendered the global error page at 390 px and 1440 px. Chrome logged React server-render error #441; the response included an error digest. |
+| Root cause | After fetching 11 newer remote commits, `npm run validate:json` failed on `data/content/strategy-report.json`: its new `salesScenarios` replaced `orderSourceMix`, which the schema still required. |
+| Local gates | After aligning the schema and UI, `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build` (now including JSON validation) and `git diff --check` passed. |
+| Local browser | Chrome at 390 px and 1440 px displayed the strategy H1 and all four sales scenarios, with no console/page errors and no horizontal overflow. |
+| Deployment | Pushed source commit `a6829c4` to `origin/main`; GitHub's Vercel status reached success with “Deployment has completed.” |
+| Production browser | Chrome at 390 px and 1440 px returned HTTP 200, displayed the strategy H1 and all four sales scenarios, logged no console/page errors, and had document width equal to viewport width. |

@@ -392,3 +392,9 @@
 
 - The user's request to push to “product” is interpreted as production, consistent with the existing GitHub/Vercel deployment path. Deploy source head `4291b1b`, which includes the locally verified CP-61 and CP-62 content changes.
 - Keep untracked `anhweb/` source folders outside the release. Continue to treat file-backed form submissions as nonpersistent on Vercel's read-only application directory.
+
+## CP-64 strategy production repair (2026-11-10)
+
+- The production error was caused by `strategy-report.json` replacing `orderSourceMix` with `salesScenarios` while `strategyReportSchema` still required the removed field. `readJson` rejected the file and the dynamic strategy route fell into the global error page.
+- Retain the new four sales scenarios from the remote commits and render them as planned, hypothetical figures. Remove the obsolete source-mix requirement and UI. Keep report data in JSON storage; a static import is unnecessary once schema and content match.
+- Run `validate:json` as the first build step so this class of mismatch fails deployment before Next.js compiles. Deploy through the existing GitHub/Vercel path under the user's production-fix request. Leave untracked `anhweb/` assets outside the release.
