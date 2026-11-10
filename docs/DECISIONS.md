@@ -411,3 +411,9 @@
 - Keep the W2 product-introduction video's existing H.264 conversion because the supplied original is HEVC; its duration and content remain aligned while browser support is broader. Use the newly supplied W8 file because it is a distinct 49.04-second revision.
 - Render independent media entries in campaign activity order. Multiple videos can appear in one week without forcing them into a full-width series; the `series` type remains available for a genuinely grouped set.
 - Keep the source folder untracked and commit only the site-ready public copies, campaign data, code and documentation. Verify locally; the user did not request production deployment.
+
+## CP-67 production deployment (2026-11-10)
+
+- Deploy CP-66 commit `6490f0e` through `origin/main` and the existing GitHub/Vercel integration under the user's explicit production request.
+- Keep `DBC_ND2_BỘ ẤN PHẨM TRUYỀN THÔNG` and the existing `anhweb` source folders untracked. Only the site-ready public media from CP-66 belongs in the release.
+- Treat successful range responses with full declared lengths and browser playback as the production check that Vercel resolved the Git LFS assets rather than serving pointer files.

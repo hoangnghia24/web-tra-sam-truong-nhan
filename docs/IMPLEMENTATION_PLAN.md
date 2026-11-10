@@ -71,5 +71,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-64 Strategy production repair | Reproduce the live strategy error, reconcile the changed sales-scenario JSON with its schema and UI, require JSON validation during builds, and verify local and production rendering at mobile and desktop widths. |
 | CP-65 Single strategy price | Find any remaining visitor-facing 380,000–390,000 VND range, replace it with 390,000 VND per box, validate the content and build, deploy, and verify the live strategy page and API. |
 | CP-66 Source-folder phase media | Reconcile every supplied asset in `DBC_ND2_BỘ ẤN PHẨM TRUYỀN THÔNG` against W1–W8, replace stale poster copies, move the KOL/KOC clip from W4 to W7, add missing W4/W5/W7 media, render media in campaign activity order, and verify JSON, build, playback metadata, and all three phase pages locally. |
+| CP-67 Production deployment | Push the verified CP-66 source through the existing GitHub/Vercel path, wait for deployment success, then verify live campaign JSON, all three phase routes, optimized posters, MP4 byte ranges, playback and responsive media order. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

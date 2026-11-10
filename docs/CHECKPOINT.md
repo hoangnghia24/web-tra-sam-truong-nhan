@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-66
-Status: DONE (source-folder phase media reconciled and verified locally)
-Last completed checkpoint: CP-66 (local source and documentation; not deployed).
+Current checkpoint: CP-67
+Status: DONE (source-folder phase media deployed and verified)
+Last completed checkpoint: CP-67 (production source commit `6490f0e`).
 
 ## Completed Work
 
+- Completed CP-67: pushed CP-66 to `origin/main`, observed Vercel success, and verified live campaign data, phase routes, poster loading, MP4 byte ranges, responsive order and playback of all nine videos.
 - Completed CP-66: reconciled all 14 supplied phase assets with W1–W8, added missing W4/W5 posters and the second W7 video, moved the KOL/KOC clip from W4 to W7, replaced stale W2/W6/W8 assets, and rendered all media in activity order.
 - Completed CP-65: replaced the remaining visitor-facing 380,000–390,000 VND range in the strategy persona with 390,000 VND per box, deployed `3a7df87`, and verified the live page and API.
 - Completed CP-64: reconciled the new sales-scenario data with the strategy schema and UI, added JSON validation to the build command, deployed `a6829c4`, and confirmed the live strategy report renders without browser errors at mobile and desktop widths.
@@ -81,7 +82,7 @@ Last completed checkpoint: CP-66 (local source and documentation; not deployed).
 
 ## Current Task
 
-CP-66 is complete locally. All 14 supplied assets are represented under the correct W1–W8 week, except that the W2 product-introduction clip intentionally uses the compatible H.264 conversion of the supplied HEVC original. JSON, lint, TypeScript, 9 tests and production build passed; mobile/desktop route order, poster loading and playback of all nine videos were verified. The source folder remains untracked. Do not deploy unless the user asks.
+CP-67 is complete on the public Vercel site. All 14 supplied assets are represented under the correct W1–W8 week, except that the W2 product-introduction clip intentionally uses the compatible H.264 conversion of the supplied HEVC original. Release gates, responsive browser checks and playback of all nine production videos passed. The source folders remain untracked.
 
 ## Completed Files
 

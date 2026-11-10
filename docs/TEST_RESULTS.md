@@ -691,3 +691,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Images | After scrolling into view, all five optimized poster images completed with nonzero natural dimensions. Mobile and desktop screenshots of W2, W5, W6 and W7 were reviewed; images retained their full aspect ratios and stacked in the same document order on mobile. |
 | Video playback | All nine configured MP4s exposed nonzero metadata and advanced to 0.49–0.62 seconds after `play()` in mobile-width Chrome, with no media error. Eight are 1080 × 1920; the compatible W2 introduction is 718 × 1280. |
 | Production | Not pushed or deployed; this checkpoint was verified locally. |
+
+## CP-67 — Production deployment (2026-11-10)
+
+| Check | Observed result |
+| --- | --- |
+| Release gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build`, `npm audit --omit=dev --audit-level=moderate` (0 vulnerabilities) and `git diff --check` passed. |
+| Source and deployment | Pushed `5e2fc46..6490f0e` to `origin/main`; GitHub's Vercel status reached success with “Deployment has completed.” |
+| Production routes and data | All three `/giai-doan/*` routes returned HTTP 200. Live `/api/campaign` contained the exact configured 2/3, 2/1/2 and 1/2/1 W1–W8 media counts and activity order. |
+| Posters | The W2, W4, W5 and W6 public poster URLs returned HTTP 200 with the expected image content types and source-file lengths. Optimized images completed with nonzero natural dimensions at 390 px and 1440 px. |
+| Video delivery | W7 KOL/KOC and the revised W8 MP4 returned HTTP 206 for 1,024-byte ranges with full lengths of 47,631,266 and 60,861,216 bytes. The removed W4 KOL/KOC and generated W3 poster URLs returned HTTP 404. |
+| Responsive browser | At 390 px and 1440 px, all three routes matched the configured media order, logged no console/page errors and had document width equal to viewport width. Production screenshots of W5 and W7 were reviewed. |
+| Playback | All nine live videos loaded nonzero dimensions and advanced after `play()` in mobile-width Chrome without a media error. |
