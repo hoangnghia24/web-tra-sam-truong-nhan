@@ -69,5 +69,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-62 Revised final Word table | Recheck the updated `F:\final.docx` against CP-61, apply the changed W2 activity titles and W6 launch status, compare all 28 rows exactly, and verify local production build and responsive pages. |
 | CP-63 Production deployment | Push the verified CP-61 and CP-62 commits to `origin/main`, confirm Vercel success, and verify public routes, exact campaign JSON, W2 KPI, W6 status, representative video bytes and responsive production rendering. |
 | CP-64 Strategy production repair | Reproduce the live strategy error, reconcile the changed sales-scenario JSON with its schema and UI, require JSON validation during builds, and verify local and production rendering at mobile and desktop widths. |
+| CP-65 Single strategy price | Find any remaining visitor-facing 380,000–390,000 VND range, replace it with 390,000 VND per box, validate the content and build, deploy, and verify the live strategy page and API. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

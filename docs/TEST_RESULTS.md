@@ -670,3 +670,12 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | Chrome at 390 px and 1440 px displayed the strategy H1 and all four sales scenarios, with no console/page errors and no horizontal overflow. |
 | Deployment | Pushed source commit `a6829c4` to `origin/main`; GitHub's Vercel status reached success with “Deployment has completed.” |
 | Production browser | Chrome at 390 px and 1440 px returned HTTP 200, displayed the strategy H1 and all four sales scenarios, logged no console/page errors, and had document width equal to viewport width. |
+
+## CP-65 — Single strategy price (2026-11-10)
+
+| Check | Observed result |
+| --- | --- |
+| Content search | `src`, `data` and `public` contained one remaining visitor-facing 380,000–390,000 range, in `strategy.json` persona pain. After the edit, a search for `380.000` and equivalent range patterns returned no matches in those directories. The Master Prompt still contains the historical reference. |
+| Local gates | `npm run validate:json`, `npm run lint`, `npm run build` including JSON validation and TypeScript, and `git diff --check` passed. |
+| Deployment | Pushed source commit `3a7df87` to `origin/main`; GitHub's Vercel status reached success with “Deployment has completed.” |
+| Production | `/chien-luoc` returned HTTP 200, contained “mức giá 390.000 đồng/hộp”, contained no “380.000” or global error heading; `/api/strategy` returned the updated persona copy. |

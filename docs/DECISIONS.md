@@ -398,3 +398,8 @@
 - The production error was caused by `strategy-report.json` replacing `orderSourceMix` with `salesScenarios` while `strategyReportSchema` still required the removed field. `readJson` rejected the file and the dynamic strategy route fell into the global error page.
 - Retain the new four sales scenarios from the remote commits and render them as planned, hypothetical figures. Remove the obsolete source-mix requirement and UI. Keep report data in JSON storage; a static import is unnecessary once schema and content match.
 - Run `validate:json` as the first build step so this class of mismatch fails deployment before Next.js compiles. Deploy through the existing GitHub/Vercel path under the user's production-fix request. Leave untracked `anhweb/` assets outside the release.
+
+## CP-65 single strategy price (2026-11-10)
+
+- Use 390,000 VND per box in the strategy persona, matching the existing product data and market and 7Ps copy. Preserve its “in the plan” qualifier and do not present the figure as a verified current selling price.
+- Keep the original 380,000–390,000 reference in `docs/MASTER_PROMPT.md` as historical source text; it is not visitor-facing content. Deploy the content correction under the user's explicit production request.
