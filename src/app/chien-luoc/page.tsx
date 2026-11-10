@@ -57,7 +57,7 @@ export default async function StrategyPage() {
         <div className="kpi-grid">{strategy.plannedKpis.map((kpi) => <article key={kpi.label}><span>KẾ HOẠCH</span><strong>{kpi.displayTarget ?? money(kpi.target)}</strong><p>{kpi.label}</p><p className="kpi-detail">{kpi.unit}</p><small>Thực tế: chưa có dữ liệu xác thực</small></article>)}</div>
         <h3 className="report-subtitle">KPI theo giai đoạn</h3>
         <KpiMilestoneTable items={report.kpiMilestones} />
-        <div className="order-source-mix"><h3>Cơ cấu nguồn của 100 đơn (giả định)</h3><ul>{report.orderSourceMix.map((item) => <li key={item.source}><span>{item.source}</span><strong>{item.orders} đơn</strong></li>)}</ul></div>
+        <div className="sales-scenarios"><h3>Kịch bản doanh số (giả định)</h3><ul>{report.salesScenarios.map((item) => <li key={item.scenario}><span>{item.scenario}</span><strong>{item.orders} đơn</strong><span>Doanh số gộp: {item.grossSales} ₫</span></li>)}</ul></div>
         <h3 className="report-subtitle">Khung Giám sát Chỉ số (Monitoring Cadence)</h3>
         <div className="pillar-grid">{report.monitoring.map((item) => <article key={item.title}><h4>{item.title}</h4><p>{item.metrics}</p><small>Đo lường {item.cadence} qua {item.sources}</small></article>)}</div>
         <div className="report-actual"><strong>Kết quả thực tế</strong><p>{strategy.actualResultsAvailable ? 'Dữ liệu thực tế sẽ được cập nhật sau khi kiểm tra.' : 'Chưa có dữ liệu thực tế. Dashboard quản trị chỉ hiển thị tương tác phát sinh từ website này.'}</p></div>

@@ -677,10 +677,16 @@ img { display: block; max-width: 100%; }
 .strategy-data-table thead th { color: var(--brand-ivory); background: var(--brand-forest); }
 .strategy-data-table tbody tr:nth-child(even) { background: #f1f3e9; }
 .strategy-data-table tfoot th { color: var(--brand-forest); background: #e1e8d8; }
-.budget-reserve, .order-source-mix { margin-top: 2rem; padding: 1.5rem; border: 1px solid #d8dfd1; border-radius: 18px; background: #fffdf7; }
-.budget-reserve h3, .order-source-mix h3 { margin: 0 0 1rem; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.25rem; }
-.budget-reserve ul, .order-source-mix ul { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; }
-.budget-reserve li, .order-source-mix li { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .65rem; border-bottom: 1px solid #e3e6dc; }
+.budget-reserve, .sales-scenarios { margin-top: 2rem; padding: 1.5rem; border: 1px solid #d8dfd1; border-radius: 18px; background: #fffdf7; }
+.budget-reserve h3, .sales-scenarios h3 { margin: 0 0 1rem; color: var(--brand-forest); font-family: var(--type-display); font-size: 1.25rem; }
+.budget-reserve ul, .sales-scenarios ul { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; }
+.budget-reserve li { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .65rem; border-bottom: 1px solid #e3e6dc; }
+.sales-scenarios ul { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+.sales-scenarios li { display: grid; gap: .4rem; padding: 1rem; border: 1px solid #e3e6dc; border-radius: 12px; background: #f8f8f0; }
+.sales-scenarios li strong { color: var(--brand-forest); font-family: var(--type-display); font-size: 1.4rem; }
+.sales-scenarios li span:last-child { color: var(--text-secondary); font-size: .82rem; }
+@media (max-width: 700px) { .sales-scenarios ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .sales-scenarios ul { grid-template-columns: 1fr; } }
 .budget-reserve p { margin: 1rem 0 0; color: var(--text-secondary); font-size: .82rem; font-style: italic; }
 .kpi-detail { color: var(--text-secondary); font-size: .82rem; line-height: 1.5; }
 .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
