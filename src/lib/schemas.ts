@@ -124,6 +124,7 @@ export const strategyReportSchema = z.object({
   }),
   reserveBreakdown: z.array(z.object({ name: safeText(140), millionVnd: z.number().nonnegative() })).length(3),
   kpiMilestones: z.array(z.object({ phase: safeText(100), weeks: safeText(30), metrics: safeText(500) })).length(3),
+  salesScenarios: z.array(z.object({scenario: safeText(100),orders: z.number().int().nonnegative(),grossSales: safeText(100),})).length(4),
   orderSourceMix: z.array(z.object({ source: safeText(100), orders: z.number().int().nonnegative() })).length(4),
   monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(200) })).length(4),
   riskPlan: z.array(z.object({
