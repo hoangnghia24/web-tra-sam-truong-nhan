@@ -240,7 +240,6 @@
   { "scenario": "Cơ sở (KPI)", "orders": 100, "grossSales": "39 triệu" },
   { "scenario": "Tích cực", "orders": 300, "grossSales": "117 triệu" },
   { "scenario": "Vượt kỳ vọng", "orders": 500, "grossSales": "195 triệu" }
-]
   ],
   "monitoring": [
     { "title": "Truyền thông (Awareness):", "metrics": "Impressions, Video Views, CPM, CTR", "cadence": "HẰNG NGÀY", "sources": "Meta Ads Manager, TikTok Ads Manager, GA4." },
