@@ -37,15 +37,9 @@
           ],
           "goal": "Tạo điểm nhấn sáng tạo, tăng tương tác và giúp người xem hiểu trải nghiệm cũng như sản phẩm.",
           "media": [
-            { "kind": "poster", "title": "Để Dành Đến Bao Giờ?", "src": "/images/phases/w2-de-danh-den-bao-gio.jpg", "width": 1400, "height": 2000 },
-            {
-              "kind": "series",
-              "title": "Video tuần 2",
-              "videos": [
-                { "title": "Hóa Đơn Thời Gian Dành Cho Bản Thân", "src": "/videos/phases/w2-hoa-don-thoi-gian.mp4" },
-                { "title": "Giới thiệu Trà Sâm", "src": "/videos/phases/w2-gioi-thieu-tra-sam.mp4" }
-              ]
-            }
+            { "kind": "video", "title": "Hóa Đơn Thời Gian Dành Cho Bản Thân", "src": "/videos/phases/w2-hoa-don-thoi-gian.mp4" },
+            { "kind": "poster", "title": "Để Dành Đến Bao Giờ?", "src": "/images/phases/w2-de-danh-den-bao-gio.jpg", "width": 2000, "height": 2000 },
+            { "kind": "video", "title": "Giới thiệu Trà Sâm", "src": "/videos/phases/w2-gioi-thieu-tra-sam.mp4" }
           ]
         }
       ]
@@ -70,15 +64,8 @@
           ],
           "goal": "Hướng dẫn cách tham gia, giúp người xem hình dung nội dung dự thi và kích hoạt UGC.",
           "media": [
-            { "kind": "poster", "title": "Poster hướng dẫn 4 bước tham gia", "src": "/images/phases/w3-huong-dan-bon-buoc.jpg", "width": 718, "height": 1024 },
-            {
-              "kind": "series",
-              "title": "Video tuần 3",
-              "videos": [
-                { "title": "Hướng dẫn 4 bước tham gia", "src": "/videos/phases/w3-huong-dan-bon-buoc.mp4" },
-                { "title": "Video mẫu Câu Chuyện Dành Cho Bản Thân", "src": "/videos/phases/w3-video-mau-cau-chuyen.mp4" }
-              ]
-            }
+            { "kind": "video", "title": "Hướng dẫn 4 bước tham gia", "src": "/videos/phases/w3-huong-dan-bon-buoc.mp4" },
+            { "kind": "video", "title": "Video mẫu Câu Chuyện Dành Cho Bản Thân", "src": "/videos/phases/w3-video-mau-cau-chuyen.mp4" }
           ]
         },
         {
@@ -91,7 +78,7 @@
           ],
           "goal": "Giảm rào cản sáng tạo, giải đáp thắc mắc và tạo động lực tham gia thử thách.",
           "media": [
-            { "kind": "video", "title": "Video mô phỏng KOL/KOC bằng AI", "src": "/videos/phases/w4-kol-koc.mp4", "note": "Tư liệu mô phỏng bằng AI; không phải KOL/KOC đã tham gia và không thay đổi trạng thái Chưa làm của ấn phẩm." }
+            { "kind": "poster", "title": "Poster chuỗi video trả lời câu hỏi thường gặp", "src": "/images/phases/w4-cau-hoi-thuong-gap.png", "width": 940, "height": 788 }
           ]
         },
         {
@@ -103,6 +90,7 @@
           ],
           "goal": "Tăng tỷ lệ bài hợp lệ và thúc đẩy người tham gia nộp bài đúng hạn vào cuối W5.",
           "media": [
+            { "kind": "poster", "title": "TikTok LIVE Một Khoảng Dừng Cùng Trà Sâm", "src": "/images/phases/w5-tiktok-live.png", "width": 2048, "height": 2048 },
             { "kind": "video", "title": "Checklist trước khi gửi bài", "src": "/videos/phases/w5-checklist.mp4" }
           ]
         }
@@ -128,7 +116,7 @@
           ],
           "goal": "Tôn vinh các bài đã nộp đúng hạn, lan tỏa câu chuyện tích cực và củng cố thông điệp chiến dịch.",
           "media": [
-            { "kind": "poster", "title": "Mỗi Người Một Câu Chuyện, Mỗi Người Một Cách Bắt Đầu", "src": "/images/phases/w6-moi-nguoi-mot-cau-chuyen.png", "width": 1086, "height": 1448, "note": "Poster minh họa do nhóm cung cấp; câu chuyện, mã QR và liên kết trong ảnh chưa được xác minh." }
+            { "kind": "poster", "title": "Mỗi Người Một Câu Chuyện, Mỗi Người Một Cách Bắt Đầu", "src": "/images/phases/w6-moi-nguoi-mot-cau-chuyen.png", "width": 940, "height": 788, "note": "Poster minh họa do nhóm cung cấp; câu chuyện, mã QR và liên kết trong ảnh chưa được xác minh." }
           ]
         },
         {
@@ -140,7 +128,8 @@
           ],
           "goal": "Mở rộng thông điệp đến người thân và duy trì hành vi gửi lời nhắc quan tâm.",
           "media": [
-            { "kind": "video", "title": "Lần Này Mình Nhắc Bạn", "src": "/videos/phases/w7-lan-nay-minh-nhac-ban.mp4" }
+            { "kind": "video", "title": "Lần Này Mình Nhắc Bạn", "src": "/videos/phases/w7-lan-nay-minh-nhac-ban.mp4" },
+            { "kind": "video", "title": "KOL/KOC “Lo Cho Nhau, Đừng Quên Lo Cho Mình”", "src": "/videos/phases/w7-kol-koc.mp4" }
           ]
         },
         {

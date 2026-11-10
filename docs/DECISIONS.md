@@ -403,3 +403,11 @@
 
 - Use 390,000 VND per box in the strategy persona, matching the existing product data and market and 7Ps copy. Preserve its “in the plan” qualifier and do not present the figure as a verified current selling price.
 - Keep the original 380,000–390,000 reference in `docs/MASTER_PROMPT.md` as historical source text; it is not visitor-facing content. Deploy the content correction under the user's explicit production request.
+
+## CP-66 source-folder phase media (2026-11-10)
+
+- Treat the phase and W code in `DBC_ND2_BỘ ẤN PHẨM TRUYỀN THÔNG` as the authoritative placement for the current 8-week campaign. This corrects the KOL/KOC clip from W4 to W7 and supersedes the earlier filename mappings recorded before the 8-week folder was supplied.
+- Copy the five supplied posters exactly, replace the stale W2 and W6 public copies, remove the generated W3 poster that is absent from the source folder, and add the missing W4 and W5 posters.
+- Keep the W2 product-introduction video's existing H.264 conversion because the supplied original is HEVC; its duration and content remain aligned while browser support is broader. Use the newly supplied W8 file because it is a distinct 49.04-second revision.
+- Render independent media entries in campaign activity order. Multiple videos can appear in one week without forcing them into a full-width series; the `series` type remains available for a genuinely grouped set.
+- Keep the source folder untracked and commit only the site-ready public copies, campaign data, code and documentation. Verify locally; the user did not request production deployment.

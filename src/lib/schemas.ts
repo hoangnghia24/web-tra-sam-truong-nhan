@@ -62,10 +62,7 @@ export const campaignSchema = z.object({
         status: z.enum(['done', 'not_done']),
       })).min(1),
       goal: safeText(350),
-      media: z.array(phaseMediaSchema).max(8).refine(
-        (media) => media.filter((item) => item.kind === 'video' || item.kind === 'series').length <= 1,
-        'Mỗi tuần chỉ có một video hoặc một chuỗi video',
-      ),
+      media: z.array(phaseMediaSchema).max(8),
     })).min(2).max(3),
   })).length(3),
   statusNote: safeText(250),

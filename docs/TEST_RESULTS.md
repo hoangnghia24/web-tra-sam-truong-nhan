@@ -679,3 +679,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local gates | `npm run validate:json`, `npm run lint`, `npm run build` including JSON validation and TypeScript, and `git diff --check` passed. |
 | Deployment | Pushed source commit `3a7df87` to `origin/main`; GitHub's Vercel status reached success with “Deployment has completed.” |
 | Production | `/chien-luoc` returned HTTP 200, contained “mức giá 390.000 đồng/hộp”, contained no “380.000” or global error heading; `/api/strategy` returned the updated persona copy. |
+
+## CP-66 — Source-folder phase media (2026-11-10)
+
+| Check | Observed result |
+| --- | --- |
+| Source audit | Inspected all 14 supplied files across W1–W8: five posters and nine MP4s. W4 and W5 posters were missing from the site, the W7 KOL/KOC clip was incorrectly at W4, W7 lacked its second video, W2/W6 posters were stale copies, and the supplied W8 video was a newer 49.04-second file. |
+| Asset integrity | All five public posters, the moved W7 KOL/KOC video and the replaced W8 video match their source SHA-256 exactly. The W2 introduction video intentionally remains the prior H.264 conversion of the supplied 29.8-second HEVC source for browser compatibility. Git attributes report `filter: lfs` for the moved and replaced MP4 paths. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build` and `git diff --check` passed. |
+| Media order | Automated DOM checks at 390 px and 1440 px matched the configured order for every week: 2/3 media in W1/W2, 2/1/2 in W3/W4/W5, and 1/2/1 in W6/W7/W8. All three routes returned HTTP 200 with no console/page errors or horizontal overflow. |
+| Images | After scrolling into view, all five optimized poster images completed with nonzero natural dimensions. Mobile and desktop screenshots of W2, W5, W6 and W7 were reviewed; images retained their full aspect ratios and stacked in the same document order on mobile. |
+| Video playback | All nine configured MP4s exposed nonzero metadata and advanced to 0.49–0.62 seconds after `play()` in mobile-width Chrome, with no media error. Eight are 1080 × 1920; the compatible W2 introduction is 718 × 1280. |
+| Production | Not pushed or deployed; this checkpoint was verified locally. |
