@@ -16,9 +16,9 @@ const money = (value: number) => new Intl.NumberFormat('vi-VN').format(value);
 
 export default async function StrategyPage() {
   const [strategy, report, campaign] = await Promise.all([
-    readJson('./content/strategy.json', strategySchema),
-    readJson('./content/strategy-report.json', strategyReportSchema),
-    readJson('./content/campaign.json', campaignSchema),
+    readJson('content/strategy.json', strategySchema),
+    readJson('content/strategy-report.json', strategyReportSchema),
+    readJson('content/campaign.json', campaignSchema),
   ]);
   return <main id="main" className="strategy-page">
     <PageBanner eyebrow="Báo cáo chiến lược" title="Chiến lược marketing" description="Một hành trình biến câu hỏi ‘Bạn đợi gì?’ thành những điểm chạm có thể trải nghiệm. Toàn bộ ngân sách và KPI bên dưới là mục tiêu kế hoạch." tone="forest" />
