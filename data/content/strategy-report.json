@@ -235,11 +235,12 @@
     { "phase": "P2 – Làm ngay", "weeks": "W3–W5", "metrics": "Hero Video W2 ≥ 150.000 lượt xem lũy kế; ≥60 đơn lũy kế; ≥40 UGC hợp lệ; ≥100 bài nộp đúng hạn; 200 người quan tâm Zalo OA" },
     { "phase": "P3 – Gửi lời nhắc", "weeks": "W6–W8", "metrics": "≥100 đơn lũy kế; ≥80 UGC hợp lệ; 300 người quan tâm Zalo OA; NPS ≥ +30 nếu đủ mẫu" }
   ],
-  "orderSourceMix": [
-    { "source": "KOC / Livestream", "orders": 35 },
-    { "source": "Paid Ads", "orders": 30 },
-    { "source": "Microsite / tự nhiên", "orders": 25 },
-    { "source": "Zalo OA / mua lại", "orders": 10 }
+ "salesScenarios": [
+  { "scenario": "Thận trọng", "orders": 80, "grossSales": "31.2 triệu" },
+  { "scenario": "Cơ sở (KPI)", "orders": 100, "grossSales": "39 triệu" },
+  { "scenario": "Tích cực", "orders": 300, "grossSales": "117 triệu" },
+  { "scenario": "Vượt kỳ vọng", "orders": 500, "grossSales": "195 triệu" }
+]
   ],
   "monitoring": [
     { "title": "Truyền thông (Awareness):", "metrics": "Impressions, Video Views, CPM, CTR", "cadence": "HẰNG NGÀY", "sources": "Meta Ads Manager, TikTok Ads Manager, GA4." },
