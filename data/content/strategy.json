@@ -25,5 +25,5 @@
     { "label": "Phiên microsite trong W1–W2", "target": 1500, "displayTarget": "1.500", "unit": "phiên" },
     { "label": "Người quan tâm Zalo OA tại W8", "target": 300, "displayTarget": "≈ 300", "unit": "người; mốc W2: 80 và W5: 200" }
   ],
-  "actualResultsAvailable": true
+  "actualResultsAvailable": false
 }
