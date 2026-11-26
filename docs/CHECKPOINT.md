@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-86
-Status: COMPLETE (round-one artwork, weekly plan and unified typography deployed and verified)
-Last completed checkpoint: CP-86.
+Current checkpoint: CP-88
+Status: IN_PROGRESS (strategy JSON reconciliation verified locally; production deployment pending)
+Last completed checkpoint: CP-87.
 
 ## Completed Work
 
+- Completed CP-87: reconciled the edited strategy JSON with its schema and page consumers, removed the obsolete TOWS summary read, rendered four updated actions in every quadrant, and passed all local gates plus responsive browser verification.
 - Completed CP-86: pushed `b63e18a`, observed the new campaign data and all 14 image paths become active on Vercel, proved exact production image hashes and verified all three phase pages at desktop/mobile widths with Mulish typography, bottom captions, no overflow, no media errors and a clean console.
 - Completed CP-85: replaced all 14 phase images with the adjusted round-one files, preserved all 18 video bytes, aligned 28 activity titles/statuses with the supplied W1–W8 tables, moved every media title below its visual, removed platform suffixes and unified the site on self-hosted Mulish; all local gates and responsive browser checks passed.
 - Completed CP-84: pushed `027d537`, observed the exact LỐI 1, LỐI 2 and SAU MUA paths become active on Vercel, and verified three-column desktop plus single-column mobile rendering without overflow or console warnings.
@@ -35,7 +36,7 @@ Last completed checkpoint: CP-86.
 - Completed CP-64: reconciled the new sales-scenario data with the strategy schema and UI, added JSON validation to the build command, deployed `a6829c4`, and confirmed the live strategy report renders without browser errors at mobile and desktop widths.
 - Completed CP-63: pushed the two outstanding Word-content commits to `origin/main`, observed Vercel success, and verified live campaign data, route responses, media bytes and responsive pages.
 - Completed CP-62: re-read the revised Word table, shortened two W2 titles, changed the W6 website launch status to “Chưa làm”, and verified all 28 rows against local content.
-- Completed CP-61: reconciled all 28 Word table rows against the eight-week campaign data, corrected the differing labels, added W6 website card launch, and specified the W2 Hero Video milestone in the P2 KPI table.
+- Completed CP-61: reconciled all 28 Word table rows against the eight-week campaign data, corrected the differing labels, added W6 website card launch, and specified the W2 Video chính milestone in the P2 KPI table.
 - Completed CP-60: pushed the four outstanding CP-58/CP-59 source and record commits to `origin/main`, observed Vercel success, and verified the live eight-week campaign data, price card and representative video bytes.
 - Completed CP-59: changed the value-consideration card to the single 390,000 VND per box price and passed JSON and lint checks.
 - Completed CP-58: replaced the obsolete 12-week values with the corrected 8-week phase plan, production statuses, budget allocation, KPI milestones and media week mapping; passed local code and responsive browser checks.

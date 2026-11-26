@@ -103,8 +103,7 @@ export const strategyReportSchema = z.object({
   tows: z.array(z.object({
     key: z.enum(['S-O', 'W-O', 'S-T', 'W-T']),
     title: safeText(100),
-    summary: safeText(250),
-    items: z.array(safeText(400)).min(2).max(3),
+    items: z.array(safeText(400)).min(2).max(4),
   })).length(4),
   sevenPs: z.array(z.object({
     key: safeText(50), title: safeText(120), subtitle: safeText(160),

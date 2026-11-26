@@ -7,29 +7,69 @@
     "uspExplanation": "Phá vỡ rào cản thời gian và định kiến về sâm truyền thống, mang đến một khoảng dừng phục hồi năng lượng tức thì.",
     "pillarsHeading": "Bộ ba hoàn thiện trải nghiệm chăm sóc:",
     "pillars": [
-      { "label": "Tiện lợi tối đa:", "body": "Trà túi lọc dễ dàng pha chế, tạo khoảng dừng 7 phút trọn vẹn mà không lích kích hầm sắc." },
-      { "label": "Công thức thực chứng:", "body": "Chứa 3% Lá Sâm Ngọc Linh kết hợp 6 đa dược liệu, giúp thanh lọc và giải độc hiệu quả từ bên trong." },
-      { "label": "Chi phí hợp lý (Accessible Premium):", "body": "Chỉ ~26.000đ/ngày (390k/hộp 15 túi) – Mức giá lý tưởng để chuyển đổi sâm thành thức uống chăm sóc bản thân hằng ngày." }
+      {
+        "label": "Tiện lợi tối đa:",
+        "body": "Trà túi lọc dễ dàng pha chế, tạo khoảng dừng 7 phút trọn vẹn mà không lích kích hầm sắc."
+      },
+      {
+        "label": "Công thức thực chứng:",
+        "body": "Chứa 3% Lá Sâm Ngọc Linh kết hợp 6 đa dược liệu, giúp thanh lọc và giải độc hiệu quả từ bên trong."
+      },
+      {
+        "label": "Chi phí hợp lý (Accessible Premium):",
+        "body": "Chỉ ~26.000đ/ngày (390k/hộp 15 túi) – Mức giá lý tưởng để chuyển đổi sâm thành thức uống chăm sóc bản thân hằng ngày."
+      }
     ],
     "brandRoleHeading": "BRAND ROLE (VAI TRÒ THƯƠNG HIỆU)",
     "roles": [
-      { "label": "FUNCTIONAL ROLE (Vai trò Lý tính):", "body": "Thanh lọc cơ thể, giải nhiệt, hỗ trợ thư giãn và phục hồi sức khỏe từ sâu bên trong mỗi ngày." },
-      { "label": "EMOTIONAL ROLE (Vai trò Cảm tính):", "body": "Trở thành \"chiếc đồng hồ báo thức tâm lý\" – tạo ra cái cớ hợp lý để khách hàng tự cho phép bản thân tạm dừng 7 phút, thả lỏng và yêu thương chính mình mà không thấy áy náy với công việc." }
+      {
+        "label": "FUNCTIONAL ROLE (Vai trò Lý tính):",
+        "body": "Thanh lọc cơ thể, giải nhiệt, hỗ trợ thư giãn và phục hồi sức khỏe từ sâu bên trong mỗi ngày."
+      },
+      {
+        "label": "EMOTIONAL ROLE (Vai trò Cảm tính):",
+        "body": "Trở thành \"chiếc đồng hồ báo thức tâm lý\" – tạo ra cái cớ hợp lý để khách hàng tự cho phép bản thân tạm dừng 7 phút, thả lỏng và yêu thương chính mình mà không thấy áy náy với công việc."
+      }
     ],
-    "highlight": ["Khoảng dừng 7 phút", "Chăm sóc trọn vẹn", "Tái tạo năng lượng cả ngày"]
+    "highlight": [
+      "Khoảng dừng 7 phút",
+      "Chăm sóc trọn vẹn",
+      "Tái tạo năng lượng cả ngày"
+    ]
   },
   "brandRole": [
-    { "title": "Tiện lợi mỗi ngày", "body": "Trà túi lọc dễ pha, được đề xuất như một cách tạo khoảng dừng 7 phút cho người bận rộn. Đây là định vị thương hiệu trong kế hoạch, không phải lời khẳng định hiệu quả sức khỏe." },
-    { "title": "Công thức được nêu rõ", "body": "Công thức gồm bảy thành phần, trong đó lá Sâm Ngọc Linh chiếm 3%. Thành phần không tự chứng minh công dụng thanh lọc, giải độc hoặc phục hồi." },
-    { "title": "Lời nhắc dành cho mình", "body": "Vai trò cảm xúc của thương hiệu là nhắc người xem cho phép bản thân nghỉ một lúc mà không thấy áy náy. Giá đề xuất 390.000 đồng/hộp 15 túi, khoảng 26.000 đồng/túi, cần xác nhận trước khi mua." }
+    {
+      "title": "Tiện lợi mỗi ngày",
+      "body": "Trà túi lọc dễ pha, được đề xuất như một cách tạo khoảng dừng 7 phút cho người bận rộn. Đây là định vị thương hiệu trong kế hoạch, không phải lời khẳng định hiệu quả sức khỏe."
+    },
+    {
+      "title": "Công thức được nêu rõ",
+      "body": "Công thức gồm bảy thành phần, trong đó lá Sâm Ngọc Linh chiếm 3%. Thành phần không tự chứng minh công dụng thanh lọc, giải độc hoặc phục hồi."
+    },
+    {
+      "title": "Lời nhắc dành cho mình",
+      "body": "Vai trò cảm xúc của thương hiệu là nhắc người xem cho phép bản thân nghỉ một lúc mà không thấy áy náy. Giá đề xuất 390.000 đồng/hộp 15 túi, khoảng 26.000 đồng/túi, cần xác nhận trước khi mua."
+    }
   ],
   "marketContext": {
     "truth": "Tôi cố gắng hoàn thành công việc, chăm lo cho người thân; còn bản thân thường được xếp sau vì nghỉ rằng ngày mai vẫn kịp.",
     "pains": [
-      { "label": "Trì hoãn chăm sóc bản thân", "body": "Bận rộn, luôn ưu tiên công việc và những việc khác hơn sức khỏe bản thân." },
-      { "label": "Khó duy trì thói quen sử dụng", "body": "Khách hàng cần sản phẩm tiện lợi, dễ pha và dễ duy trì trong lịch trình bận rộn." },
-      { "label": "Hoài nghi về chất lượng sản phẩm", "body": "Lo ngại nguồn gốc dược liệu, tỷ lệ 3% lá Sâm Ngọc Linh và mức giá sản phẩm." },
-      { "label": "Thiếu niềm tin khi mua hàng online", "body": "Thiếu đánh giá đáng tin cậy và cơ hội trải nghiệm sản phẩm trước khi mua." }
+      {
+        "label": "Trì hoãn chăm sóc bản thân",
+        "body": "Bận rộn, luôn ưu tiên công việc và những việc khác hơn sức khỏe bản thân."
+      },
+      {
+        "label": "Khó duy trì thói quen sử dụng",
+        "body": "Khách hàng cần sản phẩm tiện lợi, dễ pha và dễ duy trì trong lịch trình bận rộn."
+      },
+      {
+        "label": "Hoài nghi về chất lượng sản phẩm",
+        "body": "Lo ngại nguồn gốc dược liệu, tỷ lệ 3% lá Sâm Ngọc Linh và mức giá sản phẩm."
+      },
+      {
+        "label": "Thiếu niềm tin khi mua hàng online",
+        "body": "Thiếu đánh giá đáng tin cậy và cơ hội trải nghiệm sản phẩm trước khi mua."
+      }
     ],
     "motivation": "Khách hàng cần đủ thông tin và trải nghiệm để cân nhắc sản phẩm theo nhu cầu, mức giá và độ tin cậy.",
     "drivers": [
@@ -41,144 +81,387 @@
     ]
   },
   "pestel": [
-    { "key": "P", "title": "Chính trị", "items": ["QĐ 611/QĐ-TTg ngày 01/06/2023 phê duyệt Chương trình phát triển Sâm Việt Nam đến 2030, định hướng 2045; đây là cơ sở thuận lợi để kể câu chuyện nguồn gốc và phát triển ngành sâm.", "QĐ 645/QĐ-TTg ngày 15/05/2020 về Kế hoạch tổng thể phát triển thương mại điện tử quốc gia giai đoạn 2021–2025 cùng NĐ 52/2013/NĐ-CP, được sửa đổi bởi NĐ 85/2021/NĐ-CP, tạo điều kiện bán trực tuyến nhưng yêu cầu minh bạch thông tin và bảo vệ người tiêu dùng."] },
-    { "key": "E", "title": "Kinh tế", "items": ["Theo Metric, doanh số năm 2024 trên năm sàn Shopee, TikTok Shop, Lazada, Tiki và Sendo đạt khoảng 318,9 nghìn tỷ đồng, tăng 37,36%; số liệu này khác phạm vi với GMV bốn sàn 13,82 tỷ USD nên không dùng chung.", "Theo Tổng cục Thống kê, thu nhập bình quân năm 2024 khoảng 5,4 triệu đồng/người/tháng, tăng 9,1%; đây là mức toàn quốc, không phải thu nhập của riêng nhóm mục tiêu.", "Giá 390.000 đồng/hộp, tương đương 26.000 đồng/túi, thuộc phân khúc trung–cao; khảo sát kế hoạch cho thấy 74,0% ở đợt 1 và 68,6% ở đợt 2 cho rằng giá cao, vì vậy cần tập trung nhóm thu nhập ổn định và giải thích giá trị."] },
-    { "key": "S", "title": "Xã hội", "items": ["Tỷ lệ trì hoãn chăm sóc bản thân trong dữ liệu kế hoạch tăng từ 69,3% lên 75,9%, tạo khoảng trống cho hành động nhỏ hằng ngày.", "Theo mô hình TPB trong tài liệu kế hoạch, chuẩn chủ quan tác động mạnh nhất đến ý định mua; 56,8% người trả lời ở đợt 2 cân nhắc mua làm quà, mở ra nhóm mua tặng.", "Mẫu đợt 1 có 150 người: nữ 60,0%; nhóm 25–40 tuổi 62,7%; TP.HCM 44,0%; nhân viên văn phòng 44,0%; kinh doanh hoặc tự doanh 27,3%; thu nhập 8–15 triệu đồng 38,0%. Các tỷ lệ này chỉ đại diện cho mẫu khảo sát, không phải toàn thị trường."] },
-    { "key": "T", "title": "Công nghệ", "items": ["DataReportal (Digital 2026: Vietnam) ước tính quảng cáo TikTok có thể tiếp cận khoảng 76,1 triệu người từ 18 tuổi trở lên vào cuối năm 2025; đây là mức tiếp cận quảng cáo tiềm năng, không phải số người dùng hoạt động.", "Video ngắn, livestream và UGC hỗ trợ tiếp cận nhưng phụ thuộc thuật toán, vì vậy nội dung cần được thử nghiệm và điều chỉnh liên tục.", "GA4, UTM và dashboard có thể theo dõi hành trình từ nội dung đến đơn hàng khi tracking được thiết lập đúng."] },
-    { "key": "E", "title": "Môi trường", "items": ["Khảo sát của PRO Việt Nam và TGM Research năm 2025 với 1.925 người cho thấy khoảng 87% thường xuyên tìm thông tin về tính thân thiện môi trường của bao bì; đây là cơ hội xây dựng hình ảnh gần thiên nhiên, nhưng người mua vẫn cân nhắc giá, tiện dụng và chất lượng.", "Sản phẩm sâm và thảo mộc cần công bố rõ thành phần, tỷ lệ và xuất xứ để giảm hoài nghi; mọi thông tin về vật liệu hoặc tác động môi trường của bao bì cần có căn cứ."] },
-    { "key": "L", "title": "Pháp lý", "items": ["Nội dung phải khớp hồ sơ công bố và nhãn; không tuyên bố chữa bệnh hoặc công dụng thiếu căn cứ.", "Dữ liệu từ microsite, Zalo OA và UGC cần có mục đích rõ ràng, sự đồng ý, bảo mật và tôn trọng quyền của chủ thể dữ liệu.", "Giá, ưu đãi, điều kiện nhận quà, thanh toán và đổi trả cần được công khai chính xác."] }
+    {
+      "key": "P",
+      "title": "Chính trị",
+      "items": [
+        "QĐ 611/QĐ-TTg ngày 01/06/2023 phê duyệt Chương trình phát triển Sâm Việt Nam đến 2030, định hướng 2045; đây là cơ sở thuận lợi để kể câu chuyện nguồn gốc và phát triển ngành sâm.",
+        "QĐ 645/QĐ-TTg ngày 15/05/2020 về Kế hoạch tổng thể phát triển thương mại điện tử quốc gia giai đoạn 2021–2025 cùng NĐ 52/2013/NĐ-CP, được sửa đổi bởi NĐ 85/2021/NĐ-CP, tạo điều kiện bán trực tuyến nhưng yêu cầu minh bạch thông tin và bảo vệ người tiêu dùng."
+      ]
+    },
+    {
+      "key": "E",
+      "title": "Kinh tế",
+      "items": [
+        "Theo Metric, doanh số năm 2024 trên năm sàn Shopee, TikTok Shop, Lazada, Tiki và Sendo đạt khoảng 318,9 nghìn tỷ đồng, tăng 37,36%; số liệu này khác phạm vi với GMV bốn sàn 13,82 tỷ USD nên không dùng chung.",
+        "Theo Tổng cục Thống kê, thu nhập bình quân năm 2024 khoảng 5,4 triệu đồng/người/tháng, tăng 9,1%; đây là mức toàn quốc, không phải thu nhập của riêng nhóm mục tiêu.",
+        "Giá 390.000 đồng/hộp, tương đương 26.000 đồng/túi, thuộc phân khúc trung–cao; khảo sát kế hoạch cho thấy 74,0% ở đợt 1 và 68,6% ở đợt 2 cho rằng giá cao, vì vậy cần tập trung nhóm thu nhập ổn định và giải thích giá trị."
+      ]
+    },
+    {
+      "key": "S",
+      "title": "Xã hội",
+      "items": [
+        "Tỷ lệ trì hoãn chăm sóc bản thân trong dữ liệu kế hoạch tăng từ 69,3% lên 75,9%, tạo khoảng trống cho hành động nhỏ hằng ngày.",
+        "Theo mô hình TPB trong tài liệu kế hoạch, chuẩn chủ quan tác động mạnh nhất đến ý định mua; 56,8% người trả lời ở đợt 2 cân nhắc mua làm quà, mở ra nhóm mua tặng.",
+        "Mẫu đợt 1 có 150 người: nữ 60,0%; nhóm 25–40 tuổi 62,7%; TP.HCM 44,0%; nhân viên văn phòng 44,0%; kinh doanh hoặc tự doanh 27,3%; thu nhập 8–15 triệu đồng 38,0%. Các tỷ lệ này chỉ đại diện cho mẫu khảo sát, không phải toàn thị trường."
+      ]
+    },
+    {
+      "key": "T",
+      "title": "Công nghệ",
+      "items": [
+        "DataReportal (Digital 2026: Vietnam) ước tính quảng cáo TikTok có thể tiếp cận khoảng 76,1 triệu người từ 18 tuổi trở lên vào cuối năm 2025; đây là mức tiếp cận quảng cáo tiềm năng, không phải số người dùng hoạt động.",
+        "Video ngắn, livestream và UGC hỗ trợ tiếp cận nhưng phụ thuộc thuật toán, vì vậy nội dung cần được thử nghiệm và điều chỉnh liên tục.",
+        "GA4, UTM và dashboard có thể theo dõi hành trình từ nội dung đến đơn hàng khi tracking được thiết lập đúng."
+      ]
+    },
+    {
+      "key": "E",
+      "title": "Môi trường",
+      "items": [
+        "Khảo sát của PRO Việt Nam và TGM Research năm 2025 với 1.925 người cho thấy khoảng 87% thường xuyên tìm thông tin về tính thân thiện môi trường của bao bì; đây là cơ hội xây dựng hình ảnh gần thiên nhiên, nhưng người mua vẫn cân nhắc giá, tiện dụng và chất lượng.",
+        "Sản phẩm sâm và thảo mộc cần công bố rõ thành phần, tỷ lệ và xuất xứ để giảm hoài nghi; mọi thông tin về vật liệu hoặc tác động môi trường của bao bì cần có căn cứ."
+      ]
+    },
+    {
+      "key": "L",
+      "title": "Pháp lý",
+      "items": [
+        "Nội dung phải khớp hồ sơ công bố và nhãn; không tuyên bố chữa bệnh hoặc công dụng thiếu căn cứ.",
+        "Dữ liệu từ microsite, Zalo OA và UGC cần có mục đích rõ ràng, sự đồng ý, bảo mật và tôn trọng quyền của chủ thể dữ liệu.",
+        "Giá, ưu đãi, điều kiện nhận quà, thanh toán và đổi trả cần được công khai chính xác."
+      ]
+    }
   ],
   "legalFramework": [
-    { "document": "Luật An toàn thực phẩm 2010; NĐ 15/2018/NĐ-CP", "requirements": "Thông tin khớp hồ sơ công bố và nhãn, đúng tỷ lệ 3% lá Sâm Ngọc Linh; nội dung quảng cáo phải tuân thủ đúng phân loại sản phẩm." },
-    { "document": "Luật Quảng cáo 2012; Luật 75/2025/QH15 (hiệu lực 01/01/2026)", "requirements": "Kiểm duyệt trung thực, minh bạch; kiểm soát KOC/KOL; không tuyên bố chữa bệnh hoặc công dụng thiếu căn cứ." },
-    { "document": "Luật Bảo vệ quyền lợi người tiêu dùng 19/2023/QH15 (hiệu lực 01/07/2024)", "requirements": "Công khai chính xác giá, thành phần, ưu đãi, điều kiện nhận quà, thanh toán và đổi trả." },
-    { "document": "Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 (hiệu lực 01/01/2026)", "requirements": "Dữ liệu từ microsite, Zalo OA và UGC phải có mục đích, sự đồng ý, bảo mật và tôn trọng quyền chủ thể." },
-    { "document": "Luật Thương mại điện tử 122/2025/QH15 (hiệu lực 01/07/2026)", "requirements": "Thực hiện trách nhiệm người bán trên nền tảng số; công khai giao dịch và bảo vệ người mua." },
-    { "document": "NĐ 52/2013/NĐ-CP, NĐ 85/2021/NĐ-CP; NĐ 248/2026/NĐ-CP", "requirements": "Tuân thủ quy định về thương mại điện tử và trách nhiệm của các bên trên nền tảng." },
-    { "document": "Luật Sở hữu trí tuệ; quy định về khuyến mại", "requirements": "Đảm bảo quyền sử dụng hình ảnh, nhạc, video và UGC; công khai thể lệ, thời hạn và điều kiện nhận quà." }
+    {
+      "document": "Luật An toàn thực phẩm 2010; NĐ 15/2018/NĐ-CP",
+      "requirements": "Thông tin khớp hồ sơ công bố và nhãn, đúng tỷ lệ 3% lá Sâm Ngọc Linh; nội dung quảng cáo phải tuân thủ đúng phân loại sản phẩm."
+    },
+    {
+      "document": "Luật Quảng cáo 2012; Luật 75/2025/QH15 (hiệu lực 01/01/2026)",
+      "requirements": "Kiểm duyệt trung thực, minh bạch; kiểm soát KOC/KOL; không tuyên bố chữa bệnh hoặc công dụng thiếu căn cứ."
+    },
+    {
+      "document": "Luật Bảo vệ quyền lợi người tiêu dùng 19/2023/QH15 (hiệu lực 01/07/2024)",
+      "requirements": "Công khai chính xác giá, thành phần, ưu đãi, điều kiện nhận quà, thanh toán và đổi trả."
+    },
+    {
+      "document": "Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 (hiệu lực 01/01/2026)",
+      "requirements": "Dữ liệu từ microsite, Zalo OA và UGC phải có mục đích, sự đồng ý, bảo mật và tôn trọng quyền chủ thể."
+    },
+    {
+      "document": "Luật Thương mại điện tử 122/2025/QH15 (hiệu lực 01/07/2026)",
+      "requirements": "Thực hiện trách nhiệm người bán trên nền tảng số; công khai giao dịch và bảo vệ người mua."
+    },
+    {
+      "document": "NĐ 52/2013/NĐ-CP, NĐ 85/2021/NĐ-CP; NĐ 248/2026/NĐ-CP",
+      "requirements": "Tuân thủ quy định về thương mại điện tử và trách nhiệm của các bên trên nền tảng."
+    },
+    {
+      "document": "Luật Sở hữu trí tuệ; quy định về khuyến mại",
+      "requirements": "Đảm bảo quyền sử dụng hình ảnh, nhạc, video và UGC; công khai thể lệ, thời hạn và điều kiện nhận quà."
+    }
   ],
   "externalFactors": [
-    { "opportunity": "O1. Chính sách phát triển ngành sâm: khai thác giá trị nguyên liệu và câu chuyện thương hiệu.", "threat": "T1. Rào cản giá: 74,0% và 68,6% trong hai đợt khảo sát cho là giá cao." },
-    { "opportunity": "O2. Thương mại điện tử phát triển: chuyển đổi trực tiếp trên TikTok Shop và Shopee.", "threat": "T2. Cạnh tranh nền tảng số tạo áp lực chi phí video, KOC, livestream và quảng cáo." },
-    { "opportunity": "O3. Xu hướng chăm sóc bản thân: 69,3–75,9% trì hoãn trong hai đợt khảo sát.", "threat": "T3. Rào cản niềm tin: hoài nghi chất lượng, nguồn gốc và hàm lượng sâm." },
-    { "opportunity": "O4. Nhu cầu quà tặng: 56,8% ở đợt 2 cân nhắc mua làm quà.", "threat": "T4. Rủi ro KOC/KOL nói sai công dụng nếu không kiểm soát." },
-    { "opportunity": "O5. Công nghệ số hỗ trợ video ngắn, livestream, microsite và công cụ phân tích.", "threat": "T5. Yêu cầu pháp lý về quảng cáo, thương mại điện tử và dữ liệu cá nhân tăng trách nhiệm kiểm duyệt." },
-    { "opportunity": "O6. Tiêu dùng xanh tạo cơ hội cho bao bì thân thiện môi trường.", "threat": "T6. Áp lực minh bạch nguồn gốc, vật liệu bao bì và thông tin môi trường." }
+    {
+      "opportunity": "O1. Chính sách phát triển ngành sâm: khai thác giá trị nguyên liệu và câu chuyện thương hiệu.",
+      "threat": "T1. Rào cản giá: 74,0% và 68,6% trong hai đợt khảo sát cho là giá cao."
+    },
+    {
+      "opportunity": "O2. Thương mại điện tử phát triển: chuyển đổi trực tiếp trên TikTok Shop và Shopee.",
+      "threat": "T2. Cạnh tranh nền tảng số tạo áp lực chi phí video, KOC, livestream và quảng cáo."
+    },
+    {
+      "opportunity": "O3. Xu hướng chăm sóc bản thân: 69,3–75,9% trì hoãn trong hai đợt khảo sát.",
+      "threat": "T3. Rào cản niềm tin: hoài nghi chất lượng, nguồn gốc và hàm lượng sâm."
+    },
+    {
+      "opportunity": "O4. Nhu cầu quà tặng: 56,8% ở đợt 2 cân nhắc mua làm quà.",
+      "threat": "T4. Rủi ro KOC/KOL nói sai công dụng nếu không kiểm soát."
+    },
+    {
+      "opportunity": "O5. Công nghệ số hỗ trợ video ngắn, livestream, microsite và công cụ phân tích.",
+      "threat": "T5. Yêu cầu pháp lý về quảng cáo, thương mại điện tử và dữ liệu cá nhân tăng trách nhiệm kiểm duyệt."
+    },
+    {
+      "opportunity": "O6. Tiêu dùng xanh tạo cơ hội cho bao bì thân thiện môi trường.",
+      "threat": "T6. Áp lực minh bạch nguồn gốc, vật liệu bao bì và thông tin môi trường."
+    }
   ],
   "swot": [
-    { "key": "S", "title": "Điểm mạnh", "items": ["Kế thừa di sản 20 năm nghiên cứu dược liệu của Trường Sinh Group.", "Có 7 loại thảo dược, nổi bật với 3% lá Sâm Ngọc Linh.", "Trà túi lọc tiện lợi, dễ sử dụng; nguồn gốc có thể truy xuất rõ ràng."] },
-    { "key": "W", "title": "Điểm yếu", "items": ["Thương hiệu còn mới, ra mắt tháng 08/2024.", "Nhận biết thương hiệu thấp: 71,3% ở đợt 1 và 60,5% ở đợt 2 chưa biết thương hiệu; chỉ 2,3% nhớ tự phát.", "Giá thuộc phân khúc cao, tạo rào cản mua hàng.", "Định kiến “Sâm = cao cấp/truyền thống” khó thay đổi trong thời gian ngắn.", "Tỷ lệ 3% lá Sâm Ngọc Linh trong công thức dễ bị khách hàng đánh giá thấp giá trị."] },
-    { "key": "O", "title": "Cơ hội", "items": ["Xu hướng chú trọng sức khỏe và lối sống chủ động.", "Thương mại xã hội, gồm TikTok Shop, KOC và livestream, ngày càng phát triển.", "Nhu cầu trà thảo mộc tiện lợi, hiện đại trong đời sống bận rộn.", "Mùa 12.12 và quà Tết: 56,8% khách hàng trong đợt khảo sát 2 cân nhắc mua làm quà.", "Công nghệ số hỗ trợ video ngắn, livestream, microsite và phân tích dữ liệu.", "Xu hướng tiêu dùng xanh, quan tâm bao bì thân thiện môi trường."] },
-    { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh gay gắt về giá từ trà thảo mộc và thực phẩm chức năng cùng phân khúc.", "Rủi ro niềm tin về hàng giả, xuất xứ và chất lượng.", "Giới hạn pháp lý về quảng cáo và tuyên bố công dụng.", "Cạnh tranh trên nền tảng số, áp lực chi phí quảng cáo.", "Rủi ro truyền thông từ nội dung KOC/KOL sai công dụng hoặc gây hiểu nhầm.", "Áp lực minh bạch nguồn gốc và tính bền vững."] }
+    {
+      "key": "S",
+      "title": "Điểm mạnh",
+      "items": [
+        "Nền tảng chuyên môn: Kế thừa 20 năm nghiên cứu dược liệu của Trường Sinh Group.",
+        "Nguồn gốc nguyên liệu: Sâm Ngọc Linh có giá trị cao, nguồn gốc rõ ràng.",
+        "Công thức sản phẩm: Kết hợp 7 loại thảo dược, chứa 3% lá Sâm Ngọc Linh.",
+        "Tính tiện dụng: Trà túi lọc định lượng sẵn, dễ pha và sử dụng hằng ngày.",
+        "Giá trị sản phẩm kép: Bao bì phù hợp sử dụng cá nhân và biếu tặng."
+      ]
+    },
+    {
+      "key": "W",
+      "title": "Điểm yếu",
+      "items": [
+        "Nhận diện thấp: Thương hiệu mới từ 08/2024; 60,5–71,3% chưa biết đến.",
+        "Bất lợi về giá: 390.000đ/hộp, tương đương 26.000đ/túi.",
+        "Rào cản thành phần: Tỷ lệ 3% lá sâm chưa tạo được giá trị cảm nhận thuyết phục.",
+        "Khác biệt mờ nhạt: Chưa có thuộc tính vượt trội được chứng minh so với đối thủ.",
+        "Sức hút thương hiệu thấp: Ý định mua cá nhân 34,5%; NPS -48."
+      ]
+    },
+    {
+      "key": "O",
+      "title": "Cơ hội",
+      "items": [
+        "Xu hướng sống khỏe: Nhu cầu chăm sóc sức khỏe chủ động ngày càng được chú trọng.",
+        "Thay đổi lối sống: Nhu cầu dược liệu tiện lợi, phù hợp nhịp sống bận rộn.",
+        "Thị trường quà tặng: 56,8% người khảo sát cân nhắc mua làm quà.",
+        "Phát triển TMĐT: Mở rộng khả năng tiếp cận và phân phối trực tiếp.",
+        "Giá trị dược liệu Việt: Chính sách phát triển ngành sâm và xu hướng quan tâm nguồn gốc."
+      ]
+    },
+    {
+      "key": "T",
+      "title": "Thách thức",
+      "items": [
+        "Cạnh tranh trực tiếp: Đối thủ có sản phẩm tương đồng với mức giá thấp hơn.",
+        "Áp lực thay thế: Trà thảo mộc, trà quà tặng và thực phẩm bổ sung đa dạng.",
+        "Định kiến tiêu dùng: Sâm gắn với người lớn tuổi, quà biếu và chi phí cao.",
+        "Khủng hoảng niềm tin: Lo ngại hàng giả, xuất xứ và hàm lượng sâm.",
+        "Rào cản pháp lý: Giới hạn quảng cáo và tuyên bố công dụng sản phẩm."
+      ]
+    }
   ],
   "tows": [
     {
       "key": "S-O",
       "title": "Leverage",
-      "summary": "Dùng điểm mạnh để tận dụng cơ hội",
       "items": [
-        "Khai thác nội dung về sức khỏe chủ động, lối sống hiện đại.",
-        "Ứng dụng video ngắn, KOC, livestream để truyền tải sản phẩm đơn giản, dễ hiểu.",
-        "Tận dụng 12.12 và Tết với thông điệp “Quà tặng sức khỏe – gửi lời nhắc”."
+        "Khác biệt hóa bằng chuyên môn và bản sắc dược liệu Việt",
+        "Định vị trà sâm hiện đại, hướng đến tiêu dùng hằng ngày",
+        "Khai thác đồng thời thị trường tiêu dùng cá nhân và quà tặng",
+        "Mở rộng hệ sinh thái phân phối chính hãng"
       ]
     },
     {
       "key": "W-O",
       "title": "Transform",
-      "summary": "Tận dụng cơ hội để khắc phục điểm yếu",
       "items": [
-        "Đẩy mạnh kênh số và thương mại xã hội để tiếp cận khách hàng mới.",
-        "Sử dụng ưu đãi dùng thử, voucher và livestream nhằm giảm rào cản với thương hiệu mới, nâng cao nhận biết."
+        "Gia tăng tài sản thương hiệu trên nền tảng số",
+        "Thu hẹp khoảng cách giữa giá bán và giá trị cảm nhận",
+        "Mở rộng tệp khách hàng tiêu dùng sâm thường xuyên",
+        "Đa dạng hóa quy cách và danh mục sản phẩm"
       ]
     },
     {
       "key": "S-T",
       "title": "Prove",
-      "summary": "Dùng điểm mạnh để đối phó thách thức",
       "items": [
-        "Truyền thông theo hướng “Proof before promise”: minh bạch nguồn gốc nguyên liệu, công thức và thông tin sản phẩm.",
-        "Xây dựng niềm tin để cải thiện ý định mua và khả năng giới thiệu."
+        "Củng cố niềm tin bằng bằng chứng chất lượng và nguồn gốc",
+        "Cạnh tranh bằng giá trị thay vì giá thấp",
+        "Phá bỏ định kiến về độ tuổi và hoàn cảnh sử dụng sâm",
+        "Khác biệt hóa quà tặng bằng bản sắc dược liệu Việt"
       ]
     },
     {
       "key": "W-T",
       "title": "Lower barrier",
-      "summary": "Giảm điểm yếu để hạn chế thách thức",
       "items": [
-        "Ưu đãi dùng thử, quà tặng nhỏ kèm thông điệp giá minh bạch.",
-        "Hướng dẫn pha trà đúng chuẩn thay vì chỉ giảm giá sâu.",
-        "Ưu tiên dùng thử và trải nghiệm thực tế để cải thiện NPS và ý định mua."
+        "Giảm rào cản giá và khả năng tiếp cận sản phẩm",
+        "Nâng cao trải nghiệm và lòng trung thành của khách hàng",
+        "Tập trung phân khúc coi trọng nguồn gốc, chất lượng",
+        "Chuẩn hóa thông tin và kiểm soát rủi ro truyền thông"
       ]
     }
   ],
   "sevenPs": [
     {
-      "key": "Product", "title": "PRODUCT – CHÍNH SÁCH SẢN PHẨM", "subtitle": "Sản phẩm tiện lợi – Giá trị dược liệu truyền thống",
+      "key": "Product",
+      "title": "PRODUCT – CHÍNH SÁCH SẢN PHẨM",
+      "subtitle": "Sản phẩm tiện lợi – Giá trị dược liệu truyền thống",
       "points": [
-        { "label": "Quy cách:", "body": "Hộp 30g (15 túi lọc × 2g), pha với 300ml nước sôi trong 5–7 phút." },
-        { "label": "Thành phần:", "body": "7 loại thảo dược gồm Táo đỏ (25%), Đinh lăng (17%), Đẳng sâm (15%), Cam thảo (15%), Kỷ tử (15%), Nhân sâm (10%) và Lá Sâm Ngọc Linh (3%)." },
-        { "label": "Định vị:", "body": "Sản phẩm Entry Point, giúp khách hàng tiếp cận giá trị dược liệu thông qua hình thức trà túi lọc tiện lợi." },
-        { "label": "Vai trò danh mục:", "body": "Mở rộng tệp khách hàng mới, tạo cơ hội trải nghiệm thương hiệu và bán chéo sang Dịch chiết Sâm Ngọc Linh." }
+        {
+          "label": "Quy cách:",
+          "body": "Hộp 30g (15 túi lọc × 2g), pha với 300ml nước sôi trong 5–7 phút."
+        },
+        {
+          "label": "Thành phần:",
+          "body": "7 loại thảo dược gồm Táo đỏ (25%), Đinh lăng (17%), Đẳng sâm (15%), Cam thảo (15%), Kỷ tử (15%), Nhân sâm (10%) và Lá Sâm Ngọc Linh (3%)."
+        },
+        {
+          "label": "Định vị:",
+          "body": "Sản phẩm Entry Point, giúp khách hàng tiếp cận giá trị dược liệu thông qua hình thức trà túi lọc tiện lợi."
+        },
+        {
+          "label": "Vai trò danh mục:",
+          "body": "Mở rộng tệp khách hàng mới, tạo cơ hội trải nghiệm thương hiệu và bán chéo sang Dịch chiết Sâm Ngọc Linh."
+        }
       ]
     },
     {
-      "key": "Price", "title": "PRICE – CHÍNH SÁCH GIÁ", "subtitle": "Premium Pricing – Định giá theo giá trị sản phẩm",
+      "key": "Price",
+      "title": "PRICE – CHÍNH SÁCH GIÁ",
+      "subtitle": "Premium Pricing – Định giá theo giá trị sản phẩm",
       "points": [
-        { "label": "Giá niêm yết:", "body": "390.000 VNĐ/hộp, tương đương 26.000 VNĐ/túi lọc." },
-        { "label": "Định vị giá:", "body": "Phân khúc Premium, phản ánh giá trị công thức phối hợp 7 loại thảo dược và định vị sản phẩm." },
-        { "label": "Chính sách giá:", "body": "Duy trì giá trị thương hiệu, không cạnh tranh bằng chiến lược giảm giá sâu." },
-        { "label": "Kích thích dùng thử:", "body": "Voucher khách hàng mới, Livestream Deal và hỗ trợ Freeship." },
-        { "label": "Gia tăng giá trị đơn hàng:", "body": "Đề xuất combo nhiều hộp và ưu đãi mua theo gói." }
+        {
+          "label": "Giá niêm yết:",
+          "body": "390.000 VNĐ/hộp, tương đương 26.000 VNĐ/túi lọc."
+        },
+        {
+          "label": "Định vị giá:",
+          "body": "Phân khúc Premium, phản ánh giá trị công thức phối hợp 7 loại thảo dược và định vị sản phẩm."
+        },
+        {
+          "label": "Chính sách giá:",
+          "body": "Duy trì giá trị thương hiệu, không cạnh tranh bằng chiến lược giảm giá sâu."
+        },
+        {
+          "label": "Kích thích dùng thử:",
+          "body": "Voucher khách hàng mới, Livestream Deal và hỗ trợ Freeship."
+        },
+        {
+          "label": "Gia tăng giá trị đơn hàng:",
+          "body": "Đề xuất combo nhiều hộp và ưu đãi mua theo gói."
+        }
       ]
     },
     {
-      "key": "Place", "title": "PLACE – CHÍNH SÁCH PHÂN PHỐI", "subtitle": "Omnichannel Distribution – Lấy Digital Commerce làm trọng tâm",
+      "key": "Place",
+      "title": "PLACE – CHÍNH SÁCH PHÂN PHỐI",
+      "subtitle": "Omnichannel Distribution – Lấy Digital Commerce làm trọng tâm",
       "points": [
-        { "label": "TikTok Shop – Chủ lực:", "body": "Kết nối video ngắn, KOC và Livestream với hoạt động bán hàng trực tiếp." },
-        { "label": "Shopee – Bổ trợ:", "body": "Đáp ứng nhu cầu tìm kiếm, so sánh, tham khảo đánh giá và mua hàng chủ động." },
-        { "label": "Website/Microsite:", "body": "Cung cấp thông tin sản phẩm, thành phần và hồ sơ công bố." },
-        { "label": "Kênh Offline:", "body": "Nhà thuốc, cửa hàng và các điểm bán phù hợp hỗ trợ tiếp cận trực tiếp, củng cố uy tín thương hiệu." }
+        {
+          "label": "TikTok Shop – Chủ lực:",
+          "body": "Kết nối video ngắn, KOC và Livestream với hoạt động bán hàng trực tiếp."
+        },
+        {
+          "label": "Shopee – Bổ trợ:",
+          "body": "Đáp ứng nhu cầu tìm kiếm, so sánh, tham khảo đánh giá và mua hàng chủ động."
+        },
+        {
+          "label": "Website/Microsite:",
+          "body": "Cung cấp thông tin sản phẩm, thành phần và hồ sơ công bố."
+        },
+        {
+          "label": "Kênh Offline:",
+          "body": "Nhà thuốc, cửa hàng và các điểm bán phù hợp hỗ trợ tiếp cận trực tiếp, củng cố uy tín thương hiệu."
+        }
       ]
     },
     {
-      "key": "Promotion", "title": "PROMOTION – CHÍNH SÁCH XÚC TIẾN", "subtitle": "Integrated Marketing Communications – Truyền thông tích hợp",
+      "key": "Promotion",
+      "title": "PROMOTION – CHÍNH SÁCH XÚC TIẾN",
+      "subtitle": "Integrated Marketing Communications – Truyền thông tích hợp",
       "points": [
-        { "label": "Advertising:", "body": "TikTok Ads, Facebook Ads và Reels Ads nhằm tiếp cận khách hàng mục tiêu." },
-        { "label": "Content Marketing:", "body": "Nội dung giáo dục về sản phẩm, thành phần và cách sử dụng." },
-        { "label": "KOC/Creator Marketing:", "body": "Trải nghiệm thực tế, đánh giá sản phẩm và chia sẻ góc nhìn người dùng." },
-        { "label": "Sales Promotion:", "body": "Voucher, combo ưu đãi, Freeship và Livestream Deal." },
-        { "label": "Livestream Commerce:", "body": "Giới thiệu sản phẩm, giải đáp thắc mắc và hỗ trợ chuyển đổi." },
-        { "label": "UGC Marketing:", "body": "Khuyến khích khách hàng chia sẻ trải nghiệm để gia tăng tương tác và niềm tin." }
+        {
+          "label": "Advertising:",
+          "body": "TikTok Ads, Facebook Ads và Reels Ads nhằm tiếp cận khách hàng mục tiêu."
+        },
+        {
+          "label": "Content Marketing:",
+          "body": "Nội dung giáo dục về sản phẩm, thành phần và cách sử dụng."
+        },
+        {
+          "label": "KOC/Creator Marketing:",
+          "body": "Trải nghiệm thực tế, đánh giá sản phẩm và chia sẻ góc nhìn người dùng."
+        },
+        {
+          "label": "Sales Promotion:",
+          "body": "Voucher, combo ưu đãi, Freeship và Livestream Deal."
+        },
+        {
+          "label": "Livestream Commerce:",
+          "body": "Giới thiệu sản phẩm, giải đáp thắc mắc và hỗ trợ chuyển đổi."
+        },
+        {
+          "label": "UGC Marketing:",
+          "body": "Khuyến khích khách hàng chia sẻ trải nghiệm để gia tăng tương tác và niềm tin."
+        }
       ]
     },
     {
-      "key": "People", "title": "PEOPLE – CHÍNH SÁCH CON NGƯỜI", "subtitle": "Product Knowledge – Customer Experience",
+      "key": "People",
+      "title": "PEOPLE – CHÍNH SÁCH CON NGƯỜI",
+      "subtitle": "Product Knowledge – Customer Experience",
       "points": [
-        { "label": "KOC/Creator:", "body": "Chuyển tải thông tin sản phẩm thành nội dung gần gũi, dễ tiếp cận." },
-        { "label": "Livestream Host:", "body": "Giới thiệu sản phẩm, giải đáp thắc mắc và xử lý những băn khoăn về giá, thành phần." },
-        { "label": "Đội ngũ tư vấn:", "body": "Am hiểu công thức, quy cách, cách pha và thông tin sản phẩm." },
-        { "label": "Customer Service:", "body": "Hỗ trợ khách hàng trước, trong và sau mua; đảm bảo tư vấn chính xác, không phóng đại công dụng." }
+        {
+          "label": "KOC/Creator:",
+          "body": "Chuyển tải thông tin sản phẩm thành nội dung gần gũi, dễ tiếp cận."
+        },
+        {
+          "label": "Livestream Host:",
+          "body": "Giới thiệu sản phẩm, giải đáp thắc mắc và xử lý những băn khoăn về giá, thành phần."
+        },
+        {
+          "label": "Đội ngũ tư vấn:",
+          "body": "Am hiểu công thức, quy cách, cách pha và thông tin sản phẩm."
+        },
+        {
+          "label": "Customer Service:",
+          "body": "Hỗ trợ khách hàng trước, trong và sau mua; đảm bảo tư vấn chính xác, không phóng đại công dụng."
+        }
       ]
     },
     {
-      "key": "Process", "title": "PROCESS – CHÍNH SÁCH QUY TRÌNH", "subtitle": "Customer Journey Optimization – Tối ưu hành trình khách hàng",
+      "key": "Process",
+      "title": "PROCESS – CHÍNH SÁCH QUY TRÌNH",
+      "subtitle": "Customer Journey Optimization – Tối ưu hành trình khách hàng",
       "points": [
-        { "label": "Tiếp cận:", "body": "Khách hàng xem nội dung trên TikTok, Facebook hoặc KOC." },
-        { "label": "Tìm hiểu:", "body": "Truy cập trang sản phẩm, kiểm tra thành phần, giá bán và hướng dẫn sử dụng." },
-        { "label": "Chuyển đổi:", "body": "Áp dụng ưu đãi phù hợp và đặt hàng trên TikTok Shop hoặc Shopee." },
-        { "label": "Trải nghiệm:", "body": "Nhận sản phẩm, kiểm tra bao bì và sử dụng theo hướng dẫn." },
-        { "label": "Chăm sóc:", "body": "Kết nối Zalo OA để nhận hướng dẫn, giải đáp và hỗ trợ sau mua." },
-        { "label": "Duy trì:", "body": "Khuyến khích đánh giá, chia sẻ trải nghiệm và mua lại khi có nhu cầu." }
+        {
+          "label": "Tiếp cận:",
+          "body": "Khách hàng xem nội dung trên TikTok, Facebook hoặc KOC."
+        },
+        {
+          "label": "Tìm hiểu:",
+          "body": "Truy cập trang sản phẩm, kiểm tra thành phần, giá bán và hướng dẫn sử dụng."
+        },
+        {
+          "label": "Chuyển đổi:",
+          "body": "Áp dụng ưu đãi phù hợp và đặt hàng trên TikTok Shop hoặc Shopee."
+        },
+        {
+          "label": "Trải nghiệm:",
+          "body": "Nhận sản phẩm, kiểm tra bao bì và sử dụng theo hướng dẫn."
+        },
+        {
+          "label": "Chăm sóc:",
+          "body": "Kết nối Zalo OA để nhận hướng dẫn, giải đáp và hỗ trợ sau mua."
+        },
+        {
+          "label": "Duy trì:",
+          "body": "Khuyến khích đánh giá, chia sẻ trải nghiệm và mua lại khi có nhu cầu."
+        }
       ]
     },
     {
-      "key": "Physical evidence", "title": "PHYSICAL EVIDENCE – BẰNG CHỨNG HỮU HÌNH", "subtitle": "Trust & Transparency – Minh bạch để tạo niềm tin",
+      "key": "Physical evidence",
+      "title": "PHYSICAL EVIDENCE – BẰNG CHỨNG HỮU HÌNH",
+      "subtitle": "Trust & Transparency – Minh bạch để tạo niềm tin",
       "points": [
-        { "label": "Product Packaging:", "body": "Bao bì thể hiện nhận diện thương hiệu, quy cách và thông tin sản phẩm." },
-        { "label": "Ingredient Transparency:", "body": "Công khai 7 thành phần và tỷ lệ 3% lá Sâm Ngọc Linh." },
-        { "label": "Manufacturing Evidence:", "body": "Hình ảnh vùng nguyên liệu, nhà máy GMP và quy trình sản xuất theo tài liệu được xác nhận." },
-        { "label": "Legal Evidence:", "body": "Số tự công bố sản phẩm 03/TRUONGNHAN/2026." },
-        { "label": "Digital Evidence:", "body": "Website, Microsite, QR Code và hệ thống đánh giá thực tế từ khách hàng" }
+        {
+          "label": "Product Packaging:",
+          "body": "Bao bì thể hiện nhận diện thương hiệu, quy cách và thông tin sản phẩm."
+        },
+        {
+          "label": "Ingredient Transparency:",
+          "body": "Công khai 7 thành phần và tỷ lệ 3% lá Sâm Ngọc Linh."
+        },
+        {
+          "label": "Manufacturing Evidence:",
+          "body": "Hình ảnh vùng nguyên liệu, nhà máy GMP và quy trình sản xuất theo tài liệu được xác nhận."
+        },
+        {
+          "label": "Legal Evidence:",
+          "body": "Số tự công bố sản phẩm 03/TRUONGNHAN/2026."
+        },
+        {
+          "label": "Digital Evidence:",
+          "body": "Website, Microsite, QR Code và hệ thống đánh giá thực tế từ khách hàng"
+        }
       ]
     }
   ],
@@ -252,70 +535,300 @@
     ]
   },
   "pillars": [
-    { "title": "Chạm cảm xúc", "body": "Video về cách mỗi người dành thời gian cho bản thân", "page": 23 },
-    { "title": "Minh bạch", "body": "Thành phần, nguồn gốc và cách pha được trình bày rõ ràng", "page": 23 },
-    { "title": "Hành động", "body": "KOC Review unboxing, feedback thực tế, Livestream ", "page": 23 },
-    { "title": "Lan tỏa", "body": "Câu chuyện người tham gia và lời nhắc quan tâm", "page": 23 }
+    {
+      "title": "Chạm cảm xúc",
+      "body": "Video về cách mỗi người dành thời gian cho bản thân",
+      "page": 23
+    },
+    {
+      "title": "Minh bạch",
+      "body": "Thành phần, nguồn gốc và cách pha được trình bày rõ ràng",
+      "page": 23
+    },
+    {
+      "title": "Hành động",
+      "body": "KOC Review unboxing, feedback thực tế, Livestream ",
+      "page": 23
+    },
+    {
+      "title": "Lan tỏa",
+      "body": "Câu chuyện người tham gia và lời nhắc quan tâm",
+      "page": 23
+    }
   ],
   "budget": [
-    { "name": "Paid Ads", "millionVnd": 110 },
-    { "name": "KOC / Creator", "millionVnd": 90 },
-    { "name": "Content Production", "millionVnd": 45 },
-    { "name": "Microsite", "millionVnd": 25 },
-    { "name": "CRM / Zalo OA", "millionVnd": 10 },
-    { "name": "UGC & Seeding", "millionVnd": 25 },
-    { "name": "Samples & Gifts", "millionVnd": 25 },
-    { "name": "Livestream nội bộ", "millionVnd": 10 },
-    { "name": "Đo lường & tối ưu", "millionVnd": 20 },
-    { "name": "Vận hành / điều phối", "millionVnd": 40 },
-    { "name": "Dự phòng", "millionVnd": 100 }
+    {
+      "name": "Paid Ads",
+      "millionVnd": 110
+    },
+    {
+      "name": "KOC / Creator",
+      "millionVnd": 90
+    },
+    {
+      "name": "Content Production",
+      "millionVnd": 45
+    },
+    {
+      "name": "Microsite",
+      "millionVnd": 25
+    },
+    {
+      "name": "CRM / Zalo OA",
+      "millionVnd": 10
+    },
+    {
+      "name": "UGC & Seeding",
+      "millionVnd": 25
+    },
+    {
+      "name": "Samples & Gifts",
+      "millionVnd": 25
+    },
+    {
+      "name": "Livestream nội bộ",
+      "millionVnd": 10
+    },
+    {
+      "name": "Đo lường & tối ưu",
+      "millionVnd": 20
+    },
+    {
+      "name": "Vận hành / điều phối",
+      "millionVnd": 40
+    },
+    {
+      "name": "Dự phòng",
+      "millionVnd": 100
+    }
   ],
   "budgetByPhase": {
-    "phaseLabels": ["P1 (W1–W2)", "P2 (W3–W5)", "P3 (W6–W8)"],
-    "rows": [
-      { "name": "Paid Ads", "p1": 25, "p2": 45, "p3": 40, "total": 110 },
-      { "name": "KOC / Creator", "p1": 0, "p2": 50, "p3": 40, "total": 90 },
-      { "name": "Content Production", "p1": 15, "p2": 20, "p3": 10, "total": 45 },
-      { "name": "Microsite", "p1": 20, "p2": 5, "p3": 0, "total": 25 },
-      { "name": "UGC & Seeding", "p1": 2, "p2": 15, "p3": 8, "total": 25 },
-      { "name": "Samples & Gifts", "p1": 3, "p2": 15, "p3": 7, "total": 25 },
-      { "name": "Đo lường & tối ưu", "p1": 0, "p2": 10, "p3": 10, "total": 20 },
-      { "name": "CRM / Zalo OA", "p1": 2, "p2": 3, "p3": 5, "total": 10 },
-      { "name": "Livestream nội bộ", "p1": 5, "p2": 5, "p3": 0, "total": 10 },
-      { "name": "Vận hành / điều phối", "p1": 0, "p2": 19, "p3": 21, "total": 40 }
+    "phaseLabels": [
+      "P1 (W1–W2)",
+      "P2 (W3–W5)",
+      "P3 (W6–W8)"
     ],
-    "totals": { "p1": 72, "p2": 187, "p3": 141, "total": 400 }
+    "rows": [
+      {
+        "name": "Paid Ads",
+        "p1": 25,
+        "p2": 45,
+        "p3": 40,
+        "total": 110
+      },
+      {
+        "name": "KOC / Creator",
+        "p1": 0,
+        "p2": 50,
+        "p3": 40,
+        "total": 90
+      },
+      {
+        "name": "Content Production",
+        "p1": 15,
+        "p2": 20,
+        "p3": 10,
+        "total": 45
+      },
+      {
+        "name": "Microsite",
+        "p1": 20,
+        "p2": 5,
+        "p3": 0,
+        "total": 25
+      },
+      {
+        "name": "UGC & Seeding",
+        "p1": 2,
+        "p2": 15,
+        "p3": 8,
+        "total": 25
+      },
+      {
+        "name": "Samples & Gifts",
+        "p1": 3,
+        "p2": 15,
+        "p3": 7,
+        "total": 25
+      },
+      {
+        "name": "Đo lường & tối ưu",
+        "p1": 0,
+        "p2": 10,
+        "p3": 10,
+        "total": 20
+      },
+      {
+        "name": "CRM / Zalo OA",
+        "p1": 2,
+        "p2": 3,
+        "p3": 5,
+        "total": 10
+      },
+      {
+        "name": "Livestream nội bộ",
+        "p1": 5,
+        "p2": 5,
+        "p3": 0,
+        "total": 10
+      },
+      {
+        "name": "Vận hành / điều phối",
+        "p1": 0,
+        "p2": 19,
+        "p3": 21,
+        "total": 40
+      }
+    ],
+    "totals": {
+      "p1": 72,
+      "p2": 187,
+      "p3": 141,
+      "total": 400
+    }
   },
   "reserveBreakdown": [
-    { "name": "Xử lý khủng hoảng, thay thế KOC/nội dung — ứng phó phản ứng tiêu cực và rủi ro truyền thông", "millionVnd": 40 },
-    { "name": "Tăng ngân sách kênh hiệu quả — mở rộng nhóm quảng cáo chuyển đổi tốt sau đánh giá", "millionVnd": 40 },
-    { "name": "Sự cố kỹ thuật, vận hành, quà tặng — xử lý phát sinh trong triển khai", "millionVnd": 20 }
+    {
+      "name": "Xử lý khủng hoảng, thay thế KOC/nội dung — ứng phó phản ứng tiêu cực và rủi ro truyền thông",
+      "millionVnd": 40
+    },
+    {
+      "name": "Tăng ngân sách kênh hiệu quả — mở rộng nhóm quảng cáo chuyển đổi tốt sau đánh giá",
+      "millionVnd": 40
+    },
+    {
+      "name": "Sự cố kỹ thuật, vận hành, quà tặng — xử lý phát sinh trong triển khai",
+      "millionVnd": 20
+    }
   ],
   "funnelKpis": [
-    { "stage": "Awareness – Nhận biết", "primary": "Tổng lượt xem ≥ 400.000, gồm TikTok 320.000 và Reels 80.000; Hero Video ≥ 150.000", "support": "Reach, tỷ lệ xem hết, thời gian xem trung bình", "source": "TikTok Analytics, Meta Business Suite" },
-    { "stage": "Interest – Quan tâm", "primary": "1.500 phiên microsite trong W1–W2; CTR ≥ 1,5%", "support": "Click FAQ, click gian hàng, brand search", "source": "GA4, Ads Manager" },
-    { "stage": "Consideration – Cân nhắc", "primary": "225 hoàn tất Hóa đơn chờ đợi; ≥100 bài nộp đúng hạn; 80 UGC hợp lệ; 300 người quan tâm Zalo OA", "support": "Add-to-cart, câu hỏi LIVE, lượt lưu", "source": "GA4 + backend, sổ UGC, Zalo OA Manager" },
-    { "stage": "Conversion – Chuyển đổi", "primary": "3.100 đơn lũy kế, gồm TikTok Shop 2.015 và Shopee 1.085; CPA Paid ≈ 118.280 đồng; CPO ≈ 129.032 đồng", "support": "AOV 390.000 đồng, CVR gian hàng, GMV 1,209 tỷ, hủy/hoàn ≤5%", "source": "Seller Center, Ads Manager" },
-    { "stage": "Retention – Giữ chân", "primary": "NPS ≥ +30 với ≥30 phản hồi hợp lệ; 310 đơn Zalo OA/mua lại", "support": "Tỷ lệ mua lại, lượt quét QR, đánh giá gian hàng ≥4,5/5", "source": "Zalo OA, khảo sát, Seller Center" }
+    {
+      "stage": "Awareness – Nhận biết",
+      "primary": "Tổng lượt xem ≥ 400.000, gồm TikTok 320.000 và Reels 80.000; Video chính ≥ 150.000",
+      "support": "Reach, tỷ lệ xem hết, thời gian xem trung bình",
+      "source": "TikTok Analytics, Meta Business Suite"
+    },
+    {
+      "stage": "Interest – Quan tâm",
+      "primary": "1.500 phiên microsite trong W1–W2; CTR ≥ 1,5%",
+      "support": "Click FAQ, click gian hàng, brand search",
+      "source": "GA4, Ads Manager"
+    },
+    {
+      "stage": "Consideration – Cân nhắc",
+      "primary": "225 hoàn tất Hóa đơn chờ đợi; ≥100 bài nộp đúng hạn; 80 UGC hợp lệ; 300 người quan tâm Zalo OA",
+      "support": "Add-to-cart, câu hỏi LIVE, lượt lưu",
+      "source": "GA4 + backend, sổ UGC, Zalo OA Manager"
+    },
+    {
+      "stage": "Conversion – Chuyển đổi",
+      "primary": "3.100 đơn lũy kế, gồm TikTok Shop 2.015 và Shopee 1.085; CPA Paid ≈ 118.280 đồng; CPO ≈ 129.032 đồng",
+      "support": "AOV 390.000 đồng, CVR gian hàng, GMV 1,209 tỷ, hủy/hoàn ≤5%",
+      "source": "Seller Center, Ads Manager"
+    },
+    {
+      "stage": "Retention – Giữ chân",
+      "primary": "NPS ≥ +30 với ≥30 phản hồi hợp lệ; 310 đơn Zalo OA/mua lại",
+      "support": "Tỷ lệ mua lại, lượt quét QR, đánh giá gian hàng ≥4,5/5",
+      "source": "Zalo OA, khảo sát, Seller Center"
+    }
   ],
   "kpiMilestones": [
-    { "phase": "P1 – Bấm hoãn", "weeks": "W1–W2 · 01/12–14/12/2026", "metrics": "1.500 phiên; ≥225 lượt hoàn tất (15%); CTR theo dõi, cảnh báo 1,5%; 80 người quan tâm Zalo OA; ≥400 đơn từ LIVE và ưu đãi 12.12" },
-    { "phase": "P2 – Làm ngay", "weeks": "W3–W5 · 15/12/2026–04/01/2027", "metrics": "Hero Video ≥150.000 lượt xem lũy kế; ≥1.800 đơn lũy kế; ≥40 UGC hợp lệ; ≥100 bài nộp đúng hạn; 200 người quan tâm Zalo OA" },
-    { "phase": "P3 – Gửi lời nhắc", "weeks": "W6–W8 · 05/01–25/01/2027", "metrics": "≥3.100 đơn lũy kế; ≥80 UGC hợp lệ; 300 người quan tâm Zalo OA; NPS ≥+30 nếu đủ mẫu; tổng kết ROAS/CPA" }
+    {
+      "phase": "P1 – Bấm hoãn",
+      "weeks": "W1–W2 · 01/12–14/12/2026",
+      "metrics": "1.500 phiên; ≥225 lượt hoàn tất (15%); CTR theo dõi, cảnh báo 1,5%; 80 người quan tâm Zalo OA; ≥400 đơn từ LIVE và ưu đãi 12.12"
+    },
+    {
+      "phase": "P2 – Làm ngay",
+      "weeks": "W3–W5 · 15/12/2026–04/01/2027",
+      "metrics": "Video chính ≥150.000 lượt xem lũy kế; ≥1.800 đơn lũy kế; ≥40 UGC hợp lệ; ≥100 bài nộp đúng hạn; 200 người quan tâm Zalo OA"
+    },
+    {
+      "phase": "P3 – Gửi lời nhắc",
+      "weeks": "W6–W8 · 05/01–25/01/2027",
+      "metrics": "≥3.100 đơn lũy kế; ≥80 UGC hợp lệ; 300 người quan tâm Zalo OA; NPS ≥+30 nếu đủ mẫu; tổng kết ROAS/CPA"
+    }
   ],
- "salesScenarios": [
-  { "scenario": "Thận trọng", "orders": 2200, "paidOrders": 660, "paidGrossMillion": 257.4, "paidRoas": 2.34, "grossSalesMillion": 858, "mer": 2.15, "cpo": 181818 },
-  { "scenario": "Cơ sở (KPI)", "orders": 3100, "paidOrders": 930, "paidGrossMillion": 362.7, "paidRoas": 3.3, "grossSalesMillion": 1209, "mer": 3.02, "cpo": 129032 },
-  { "scenario": "Tích cực", "orders": 3600, "paidOrders": 1080, "paidGrossMillion": 421.2, "paidRoas": 3.83, "grossSalesMillion": 1404, "mer": 3.51, "cpo": 111111 },
-  { "scenario": "Vượt kỳ vọng", "orders": 4200, "paidOrders": 1260, "paidGrossMillion": 491.4, "paidRoas": 4.47, "grossSalesMillion": 1638, "mer": 4.1, "cpo": 95238 }
+  "salesScenarios": [
+    {
+      "scenario": "Thận trọng",
+      "orders": 2200,
+      "paidOrders": 660,
+      "paidGrossMillion": 257.4,
+      "paidRoas": 2.34,
+      "grossSalesMillion": 858,
+      "mer": 2.15,
+      "cpo": 181818
+    },
+    {
+      "scenario": "Cơ sở (KPI)",
+      "orders": 3100,
+      "paidOrders": 930,
+      "paidGrossMillion": 362.7,
+      "paidRoas": 3.3,
+      "grossSalesMillion": 1209,
+      "mer": 3.02,
+      "cpo": 129032
+    },
+    {
+      "scenario": "Tích cực",
+      "orders": 3600,
+      "paidOrders": 1080,
+      "paidGrossMillion": 421.2,
+      "paidRoas": 3.83,
+      "grossSalesMillion": 1404,
+      "mer": 3.51,
+      "cpo": 111111
+    },
+    {
+      "scenario": "Vượt kỳ vọng",
+      "orders": 4200,
+      "paidOrders": 1260,
+      "paidGrossMillion": 491.4,
+      "paidRoas": 4.47,
+      "grossSalesMillion": 1638,
+      "mer": 4.1,
+      "cpo": 95238
+    }
   ],
   "monitoring": [
-    { "title": "Nhận biết", "metrics": "Hero Video ≥150.000 lượt xem; tổng video ≥400.000", "cadence": "Hero: cuối W5; tổng: W8", "sources": "TikTok Analytics/Meta Insights; lượt xem không phải người duy nhất" },
-    { "title": "Tương tác/lan tỏa", "metrics": "≥80 UGC hợp lệ", "cadence": "Đến W8", "sources": "Sổ URL, tài khoản, thời điểm, quyền sử dụng; loại trùng/repost" },
-    { "title": "Chuyển đổi", "metrics": "≥3.100 đơn lũy kế sơ bộ", "cadence": "Đến W8", "sources": "Seller Center; đối soát giao thành công, hủy/hoàn" },
-    { "title": "Hiệu quả quảng cáo", "metrics": "ROAS, CPA, CPC; CPA Paid ≈118.280 đồng; ROAS Paid ≈3,30×", "cadence": "W2, W5, W8", "sources": "Doanh thu thuần quy nguồn Paid ÷ chi Paid thực chi cùng kỳ" },
-    { "title": "Trải nghiệm", "metrics": "NPS ≥+30", "cadence": "W8 hoặc 5–7 ngày sau nhận hàng", "sources": "Khảo sát sau mua; công bố số người được mời và phản hồi hợp lệ" },
-    { "title": "Microsite", "metrics": "1.500 phiên; 225 lượt hoàn tất; CVR tương tác ≥15%", "cadence": "Cuối W2", "sources": "Phiên có invoice_complete ÷ tổng phiên hợp lệ; không phải mua hàng" }
+    {
+      "title": "Nhận biết",
+      "metrics": "Video chính ≥150.000 lượt xem; tổng video ≥400.000",
+      "cadence": "Hero: cuối W5; tổng: W8",
+      "sources": "TikTok Analytics/Meta Insights; lượt xem không phải người duy nhất"
+    },
+    {
+      "title": "Tương tác/lan tỏa",
+      "metrics": "≥80 UGC hợp lệ",
+      "cadence": "Đến W8",
+      "sources": "Sổ URL, tài khoản, thời điểm, quyền sử dụng; loại trùng/repost"
+    },
+    {
+      "title": "Chuyển đổi",
+      "metrics": "≥3.100 đơn lũy kế sơ bộ",
+      "cadence": "Đến W8",
+      "sources": "Seller Center; đối soát giao thành công, hủy/hoàn"
+    },
+    {
+      "title": "Hiệu quả quảng cáo",
+      "metrics": "ROAS, CPA, CPC; CPA Paid ≈118.280 đồng; ROAS Paid ≈3,02×",
+      "cadence": "W2, W5, W8",
+      "sources": "Doanh thu thuần quy nguồn Paid ÷ chi Paid thực chi cùng kỳ"
+    },
+    {
+      "title": "Trải nghiệm",
+      "metrics": "NPS ≥+30",
+      "cadence": "W8 hoặc 5–7 ngày sau nhận hàng",
+      "sources": "Khảo sát sau mua; công bố số người được mời và phản hồi hợp lệ"
+    },
+    {
+      "title": "Microsite",
+      "metrics": "1.500 phiên; 225 lượt hoàn tất; CVR tương tác ≥15%",
+      "cadence": "Cuối W2",
+      "sources": "Phiên có invoice_complete ÷ tổng phiên hợp lệ; không phải mua hàng"
+    }
   ],
   "riskPlan": [
     {

@@ -634,7 +634,7 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | --- | --- |
 | Source extraction | Read the three W1–W8 tables (28 activity rows) and inspected both embedded KPI screenshots in `F:\final.docx`. No tracked changes or comments were present. |
 | Content reconciliation | All 28 activity statuses match the document. After edits, 26 visitor-facing titles match exactly; the W1 and W2 titles intentionally omit internal week-transfer notes. The W6 website card feature is present as the first activity in that week. |
-| KPI | The P2 milestone renders “Hero Video W2 ≥ 150.000 lượt xem lũy kế”; the existing separate Hero Video KPI card already states publication in W2 and measurement through W5. |
+| KPI | The P2 milestone renders “Video chính W2 ≥ 150.000 lượt xem lũy kế”; the existing separate Video chính KPI card already states publication in W2 and measurement through W5. |
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build` and `git diff --check` passed. |
 | Local browser | Chrome at 390 px and 1440 px returned HTTP 200 for `/chien-luoc` and all three phase routes. The KPI table displayed the W2 target, phase pages had 2/3/3 week cards, W6 had three activities, and no document overflow occurred. KPI and W6 screenshots were reviewed. |
 | Production | Not pushed or deployed; this checkpoint was verified locally. |
@@ -644,7 +644,7 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Check | Observed result |
 | --- | --- |
 | Source revision | The updated `F:\final.docx` had a new modification time and SHA-256 `AF039AE4C2B7D591F7AE5D385645E487F4E281D75877FF3E01E84BE514CF5185`. Text comparison found four changed table rows; both KPI images had the same hashes as in CP-61. |
-| Content comparison | All 28 revised Word rows now match the local campaign JSON exactly in week, title, order and status. The W2 Hero Video suffix and product-video description are removed; the W6 website launch entry is “Chưa làm”. |
+| Content comparison | All 28 revised Word rows now match the local campaign JSON exactly in week, title, order and status. The W2 Video chính suffix and product-video description are removed; the W6 website launch entry is “Chưa làm”. |
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build` and `git diff --check` passed. |
 | Local browser | Chrome at 390 px and 1440 px returned HTTP 200 for phase 1 and phase 3. All W2 activity titles matched the revised JSON; the W6 launch row used the `not_done` status class, and neither page had horizontal document overflow. |
 | Production | Not pushed or deployed; this checkpoint was verified locally. |
@@ -655,7 +655,7 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | --- | --- |
 | Release gates | `npm run validate:json`, `npm run lint`, `npm run typecheck`, `npm run test` (9 tests), `npm run build`, `npm audit --omit=dev --audit-level=moderate` (0 vulnerabilities) and `git diff --check` passed. |
 | Source and deployment | Pushed `6f41075..4291b1b` to `origin/main`; GitHub's Vercel status for `4291b1b` reached success with “Deployment has completed.” |
-| Production content | `/`, `/chien-luoc` and all three phase routes returned HTTP 200. Live `/api/campaign` deeply matched the local JSON, including revised W2 titles and the W6 `not_done` status. The strategy page retained “Hero Video W2”. |
+| Production content | `/`, `/chien-luoc` and all three phase routes returned HTTP 200. Live `/api/campaign` deeply matched the local JSON, including revised W2 titles and the W6 `not_done` status. The strategy page retained “Video chính W2”. |
 | Production media | W7 video returned HTTP 206 for a 1,024-byte range with MP4 header and a 39,122,476-byte total length, rather than a Git LFS pointer. |
 | Responsive browser | Chrome at 390 px and 1440 px returned HTTP 200 for the strategy, phase 1 and phase 3 pages. The KPI W2 label and W6 `not_done` status rendered at both widths, with no horizontal overflow. |
 | Remaining limitation | Vercel's read-only application directory still does not persist JSON-backed form submissions. |
@@ -921,3 +921,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At 1280 px, phases rendered 8/10/10 activities and 7/8/10 media groups. Every status was “Đã làm”, every caption followed its visual, body/H1 computed to Mulish, no platform suffix remained and document scroll width equaled client width 1265. |
 | Mobile browser | At 390 × 844, the same activity/media counts, caption ordering and Mulish typography held. Document scroll width equaled client width 375 on all three phase routes. |
 | Console and media | All 18 videos remained configured and no video element reported a media error. The final production console contained no warnings or errors, and the temporary viewport override was reset. |
+
+## CP-87 — Strategy JSON reconciliation (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Root cause | The edited TOWS JSON removed `summary` and expanded every quadrant to four actions, while the page still read `item.summary`; TypeScript correctly failed with `TS2339`, preventing this data revision from being released. |
+| Data audit | Semantic comparison against `HEAD` found the intended changes in all four SWOT groups, all four TOWS groups, Video chính naming, and the paid ROAS display/monitoring value. Every changed field has a rendering consumer on `/chien-luoc`. |
+| Schema and rendering | The schema accepts two to four TOWS items with no summary. The page now renders exact headings `SO — S–O LEVERAGE`, `WO — W–O TRANSFORM`, `ST — S–T PROVE`, and `WT — W–T LOWER BARRIER`, with four semantic list items each. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
+| Local browser | The default-width page showed the revised SWOT text, all four exact TOWS headings, 4/4/4/4 action counts and `≈ 3,02×`; old TOWS copy was absent and there was no horizontal overflow. |
+| Mobile browser | At 390 × 844, the TOWS cards stacked with complete copy, document width remained 375 px, no horizontal overflow occurred, and the browser console had no warnings or errors. The temporary viewport override was reset. |
+| Production state | CP-87 is locally verified and ready for CP-88 deployment. |

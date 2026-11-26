@@ -377,15 +377,15 @@
 
 ## CP-61 final Word campaign corrections (2026-11-09)
 
-- Use the three W1–W8 tables in `F:\final.docx` as campaign content evidence and its two images as the KPI wording reference. The conversational note at the end of the document is interpreted only through the supporting KPI image, which specifies “Hero Video W2 ≥ 150.000 lượt xem lũy kế” for P2.
+- Use the three W1–W8 tables in `F:\final.docx` as campaign content evidence and its two images as the KPI wording reference. The conversational note at the end of the document is interpreted only through the supporting KPI image, which specifies “Video chính W2 ≥ 150.000 lượt xem lũy kế” for P2.
 - Keep the existing W1 website launch and W2 product video in their correct weeks. Omit the document's internal transfer notes from visitor-facing activity titles.
 - Match the remaining activity labels and statuses, including the W6 website card feature as “Đã làm”. Preserve the distinction between production status and publication or KPI achievement, and keep the W4 AI-simulated clip disclosure.
 - This checkpoint changes local content only. The user did not request a production deployment in this turn.
 
 ## CP-62 revised final Word table (2026-11-09)
 
-- The updated `F:\final.docx` changes four table entries from the prior version: the W1 transfer note is removed, the W2 Hero Video suffix and product-video description are removed, and the W6 website card launch status changes from “Đã làm” to “Chưa làm”. The embedded KPI images are unchanged.
-- Apply the W2 title and W6 status changes. The W1 title already matches without its former internal note. Keep the Phase 2 KPI wording “Hero Video W2 ≥ 150.000 lượt xem lũy kế” because the revised document's KPI image still shows it.
+- The updated `F:\final.docx` changes four table entries from the prior version: the W1 transfer note is removed, the W2 Video chính suffix and product-video description are removed, and the W6 website card launch status changes from “Đã làm” to “Chưa làm”. The embedded KPI images are unchanged.
+- Apply the W2 title and W6 status changes. The W1 title already matches without its former internal note. Keep the Phase 2 KPI wording “Video chính W2 ≥ 150.000 lượt xem lũy kế” because the revised document's KPI image still shows it.
 - Treat “Chưa làm” as the document's ấn phẩm production status for the W6 launch item; the existence of the website's card feature does not establish that the campaign launch ấn phẩm is complete. Keep this checkpoint local pending an explicit deployment request.
 
 ## CP-63 production deployment (2026-11-09)
@@ -548,3 +548,17 @@
 
 - Publish only the CP-85 phase/media/typography work and checkpoint evidence. Preserve unrelated untracked source folders and pre-existing strategy changes outside this release.
 - Use the live campaign API plus representative direct image hashes as the deployment signal, then verify all three phase routes at desktop and 390 × 844 mobile widths.
+
+## CP-87 strategy JSON reconciliation (2026-11-27)
+
+- Treat the current edited `data/content/strategy.json` and `data/content/strategy-report.json` files as the authoritative strategy content requested for production.
+- The revised TOWS model intentionally removes `summary` and allows four action items. Update the page consumer together with the schema instead of restoring obsolete summary text.
+- Format quadrant headings from both the compact and hyphenated keys, yielding the requested `SO — S–O LEVERAGE`, `WO — W–O TRANSFORM`, `ST — S–T PROVE`, and `WT — W–T LOWER BARRIER` labels.
+- Preserve the existing force-dynamic route behavior. Production still requires a new deployment because content JSON is packaged with the application filesystem; dynamic rendering does not pull uncommitted local files into Vercel.
+- Include the improved JSON-store validation diagnostics so a future schema mismatch identifies whether parsing or Zod validation failed instead of reporting both as a generic malformed-JSON error.
+
+## CP-88 strategy data production deployment (2026-11-27)
+
+- Publish the complete reconciled strategy data, schema, consumer, print treatment and supporting checkpoint corrections through the existing `origin/main` and Vercel integration.
+- Use simultaneous presence of the new four-item TOWS groups, five-item SWOT groups, `Video chính` labels and `≈ 3,02×` KPI value as the production activation signal.
+- Require responsive production rendering without horizontal overflow and a clean browser console before closing the checkpoint.

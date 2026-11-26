@@ -15,15 +15,60 @@
   "plannedReserveVnd": 100000000,
   "plannedWeeks": 8,
   "plannedKpis": [
-    { "label": "Lượt xem Hero Video", "target": 150000, "displayTarget": "≥ 150.000", "unit": "lượt xem; đăng ở W2 và đo đến W5" },
-    { "label": "Tổng lượt xem video toàn chiến dịch", "target": 400000, "displayTarget": "≥ 400.000", "unit": "lượt xem đến W8; không cộng trùng với Hero Video" },
-    { "label": "UGC hợp lệ đến W8", "target": 80, "displayTarget": "≥ 80", "unit": "bài; mốc W5: ≥40 hợp lệ và ≥100 bài nộp đúng hạn" },
-    { "label": "Đơn hàng trực tuyến lũy kế tại W8", "target": 3100, "displayTarget": "≥ 3.100", "unit": "đơn; TikTok Shop 2.015, Shopee 1.085; GMV kế hoạch 1,209 tỷ đồng" },
-    { "label": "ROAS Paid Ads", "target": 3.3, "displayTarget": "≈ 3,30×", "unit": "mốc W2/W5/W8; CPA Paid tham chiếu ≈ 118.280 đồng, CPO ≈ 129.032 đồng" },
-    { "label": "Tỷ lệ hoàn tất tương tác Hóa đơn chờ đợi", "target": 15, "displayTarget": "15%", "unit": "225/1.500 phiên trong W1–W2; không phải tỷ lệ mua hàng" },
-    { "label": "NPS tại W8", "target": 30, "displayTarget": "≥ +30", "unit": "điểm; chỉ báo cáo khi có tối thiểu 30 phản hồi hợp lệ" },
-    { "label": "Phiên microsite trong W1–W2", "target": 1500, "displayTarget": "1.500", "unit": "phiên" },
-    { "label": "Người quan tâm Zalo OA tại W8", "target": 300, "displayTarget": "≈ 300", "unit": "người; mốc W2: 80 và W5: 200" }
+    {
+      "label": "Lượt xem Video chính",
+      "target": 150000,
+      "displayTarget": "≥ 150.000",
+      "unit": "lượt xem; đăng ở W2 và đo đến W5"
+    },
+    {
+      "label": "Tổng lượt xem video toàn chiến dịch",
+      "target": 400000,
+      "displayTarget": "≥ 400.000",
+      "unit": "lượt xem đến W8; không cộng trùng với Video chính"
+    },
+    {
+      "label": "UGC hợp lệ đến W8",
+      "target": 80,
+      "displayTarget": "≥ 80",
+      "unit": "bài; mốc W5: ≥40 hợp lệ và ≥100 bài nộp đúng hạn"
+    },
+    {
+      "label": "Đơn hàng trực tuyến lũy kế tại W8",
+      "target": 3100,
+      "displayTarget": "≥ 3.100",
+      "unit": "đơn; TikTok Shop 2.015, Shopee 1.085; GMV kế hoạch 1,209 tỷ đồng"
+    },
+    {
+      "label": "ROAS Paid Ads",
+      "target": 3.3,
+      "displayTarget": "≈ 3,02×",
+      "unit": "mốc W2/W5/W8; CPA Paid tham chiếu ≈ 118.280 đồng, CPO ≈ 129.032 đồng"
+    },
+    {
+      "label": "Tỷ lệ hoàn tất tương tác Hóa đơn chờ đợi",
+      "target": 15,
+      "displayTarget": "15%",
+      "unit": "225/1.500 phiên trong W1–W2; không phải tỷ lệ mua hàng"
+    },
+    {
+      "label": "NPS tại W8",
+      "target": 30,
+      "displayTarget": "≥ +30",
+      "unit": "điểm; chỉ báo cáo khi có tối thiểu 30 phản hồi hợp lệ"
+    },
+    {
+      "label": "Phiên microsite trong W1–W2",
+      "target": 1500,
+      "displayTarget": "1.500",
+      "unit": "phiên"
+    },
+    {
+      "label": "Người quan tâm Zalo OA tại W8",
+      "target": 300,
+      "displayTarget": "≈ 300",
+      "unit": "người; mốc W2: 80 và W5: 200"
+    }
   ],
   "actualResultsAvailable": false
 }

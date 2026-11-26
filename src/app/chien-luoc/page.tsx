@@ -22,6 +22,115 @@ export default async function StrategyPage() {
     readJson('content/campaign.json', campaignSchema),
   ]);
   return <main id="main" className="strategy-page">
+    <style>{`
+      /* Bản in riêng cho báo cáo chiến lược: không làm thay đổi giao diện màn hình. */
+      @media print {
+        @page { size: A4 portrait; margin: 12mm; }
+
+        html,
+        body {
+          background: #fff !important;
+          color: #17251f !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+
+        .strategy-page {
+          width: 100% !important;
+          max-width: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+          background: #fff !important;
+          color: #17251f !important;
+        }
+
+        .strategy-local-nav { display: none !important; }
+
+        .strategy-page .report-swot,
+        .strategy-page .report-swot .product-container {
+          height: auto !important;
+          min-height: 0 !important;
+          max-width: none !important;
+          overflow: visible !important;
+          transform: none !important;
+        }
+
+        .strategy-page .report-swot {
+          padding: 8mm 0 !important;
+          break-inside: auto !important;
+          page-break-inside: auto !important;
+          background: #fff !important;
+          color: #17251f !important;
+        }
+
+        .strategy-page .report-swot .section-index,
+        .strategy-page .report-swot .section-title {
+          color: #17251f !important;
+          text-shadow: none !important;
+        }
+
+        .strategy-page .report-swot .tows-grid {
+          display: grid !important;
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          align-items: stretch !important;
+          gap: 7mm !important;
+          width: 100% !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          margin: 7mm 0 0 !important;
+          padding: 0 !important;
+        }
+
+        .strategy-page .report-swot .tows-grid > article {
+          display: block !important;
+          min-width: 0 !important;
+          width: auto !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          box-sizing: border-box !important;
+          padding: 6mm !important;
+          border: 1px solid #cbd5cf !important;
+          border-radius: 3mm !important;
+          background: #fff !important;
+          color: #17251f !important;
+          box-shadow: none !important;
+          opacity: 1 !important;
+          break-inside: avoid !important;
+          page-break-inside: avoid !important;
+        }
+
+        .strategy-page .report-swot .tows-grid > article h3 {
+          margin: 0 0 3mm !important;
+          color: #174c38 !important;
+          font-size: 12pt !important;
+          line-height: 1.3 !important;
+          overflow-wrap: anywhere !important;
+        }
+
+        .strategy-page .report-swot .tows-grid ul {
+          margin: 0 !important;
+          padding-left: 5mm !important;
+          list-style: disc outside !important;
+        }
+
+        .strategy-page .report-swot .tows-grid li {
+          display: list-item !important;
+          margin: 0 0 2mm !important;
+          padding: 0 !important;
+          color: #26372f !important;
+          font-size: 9.5pt !important;
+          line-height: 1.45 !important;
+          overflow-wrap: anywhere !important;
+          break-inside: avoid !important;
+          page-break-inside: avoid !important;
+        }
+
+        .strategy-page .report-swot .tows-grid li:last-child { margin-bottom: 0 !important; }
+      }
+    `}</style>
     <PageBanner eyebrow="Báo cáo chiến lược" title="Chiến lược marketing" description="Một hành trình biến câu hỏi ‘Bạn đợi gì?’ thành những điểm chạm có thể trải nghiệm. Toàn bộ ngân sách và KPI bên dưới là mục tiêu kế hoạch." tone="forest" />
     <nav className="strategy-local-nav" aria-label="Mục lục báo cáo"><a href="#tong-quan">Tổng quan</a><a href="#boi-canh">Bối cảnh</a><a href="#pestel">PESTEL</a><a href="#swot">SWOT & TOWS</a><a href="#sevenps">7Ps</a><a href="#hanh-trinh">Kênh & đo lường</a><a href="#trien-khai">Triển khai</a><a href="#do-luong">Đo lường</a></nav>
     <section id="tong-quan" className="report-section report-overview"><div className="product-container"><p className="section-index"><span /> 01 · Tổng quan dự án</p><div className="report-overview-grid"><div><h2>Chăm sóc <em>bản thân không cần chờ dịp đặc biệt</em></h2><p className="report-lead">{strategy.customerInsight}</p></div><div className="report-bigidea"><span>BIG IDEA</span><strong>{strategy.bigIdea}</strong><p></p></div></div><div className="report-audience"><div><span>ĐỐI TƯỢNG CHÍNH</span><p>{strategy.primaryAudience}</p></div><div><span>ĐỐI TƯỢNG PHỤ</span><p>{strategy.secondaryAudience}</p></div></div><div className="report-persona"><p><strong>Góc nhìn:</strong> {strategy.persona.belief}</p><p><strong>Điểm đau:</strong> {strategy.persona.pain}</p><p><strong>Động cơ:</strong> {strategy.persona.motivation}</p></div><PositioningDraft content={report.positioningDraft} /><h3 className="report-subtitle">Định vị sản phẩm và vai trò thương hiệu</h3><div className="report-card-grid">{report.brandRole.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.body}</p></article>)}</div></div></section>
@@ -33,7 +142,7 @@ export default async function StrategyPage() {
       </div>
     </section>
     <section id="pestel" className="report-section report-pestel"><div className="product-container"><p className="section-index"><span /> 03 · PESTEL & pháp lý</p><h2 className="section-title">Bối cảnh vận hành cần được nhìn <em>từ nhiều phía.</em></h2><p className="report-disclosure">Số liệu khảo sát và thị trường dưới đây thuộc tài liệu kế hoạch; nội dung pháp lý là bản tóm tắt phục vụ chiến lược, không thay thế tư vấn pháp lý.</p><PestelOverview pestel={report.pestel} legalFramework={report.legalFramework} externalFactors={report.externalFactors} /></div></section>
-    <section id="swot" className="report-section report-swot"><div className="product-container"><p className="section-index light"><span /> 04 · SWOT & TOWS</p><h2 className="section-title">Từ quan sát đến <em>hướng hành động.</em></h2><SwotExplorer items={report.swot} /><div className="tows-grid">{report.tows.map((item) => <article key={item.key}><h3>{item.key.replace('-', '')} – {item.title.toUpperCase()}</h3><p className="tows-summary"><strong>{item.summary}</strong></p><ul>{item.items.map((point) => <li key={point}>{point}</li>)}</ul></article>)}</div></div></section>
+    <section id="swot" className="report-section report-swot"><div className="product-container"><p className="section-index light"><span /> 04 · SWOT & TOWS</p><h2 className="section-title">Từ quan sát đến <em>hướng hành động.</em></h2><SwotExplorer items={report.swot} /><div className="tows-grid" aria-label="Ma trận chiến lược TOWS">{report.tows.map((item) => <article key={item.key} data-tows-quadrant={item.key}><h3>{item.key.replace('-', '')} — {item.key.replace('-', '–')} {item.title.toUpperCase()}</h3><ul>{item.items.map((point, index) => <li key={`${item.key}-${index}`}>{point}</li>)}</ul></article>)}</div></div></section>
     <section id="sevenps" className="report-section report-sevenps"><div className="product-container"><p className="section-index"><span /> 05 · Marketing mix</p><h2 className="section-title">Bảy chính sách <em>Marketing Mix.</em></h2><SevenPsExplorer items={report.sevenPs} /></div></section>
     <section id="hanh-trinh" className="report-section report-journey">
       <div className="product-container">

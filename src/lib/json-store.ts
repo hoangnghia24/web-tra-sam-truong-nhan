@@ -44,8 +44,29 @@ export function createJsonStore(root = join(process.cwd(), 'data')) {
     let text: string;
     try { text = await readFile(file, 'utf8'); }
     catch { throw new JsonStoreError(`Không đọc được ${file}`, 'IO'); }
-    try { return schema.parse(JSON.parse(text)); }
-    catch { throw new JsonStoreError(`JSON không hợp lệ tại ${file}; file đã được giữ nguyên`, 'INVALID'); }
+    let parsed: unknown;
+
+    try {
+      parsed = JSON.parse(text);
+    } catch {
+      throw new JsonStoreError(
+        `Cú pháp JSON không hợp lệ tại ${file}; file đã được giữ nguyên`,
+        'INVALID'
+      );
+    }
+
+    try {
+      return schema.parse(parsed);
+    } catch (error) {
+      const detail = error instanceof Error
+        ? error.message
+        : String(error);
+
+      throw new JsonStoreError(
+        `Dữ liệu JSON không khớp schema tại ${file}: ${detail}; file đã được giữ nguyên`,
+        'INVALID'
+      );
+    }
   }
 
   async function writeInternal<T>(file: string, value: T, schema: z.ZodType<T>, checkExisting = true) {

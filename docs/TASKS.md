@@ -209,7 +209,7 @@
 | DONE | CP-58: replaced the obsolete 12-week plan with the corrected 8-week Word data, updated budget and KPI reporting, remapped phase media, and verified the affected routes locally. |
 | DONE | CP-59: changed market pain card 04 from the 380,000–390,000 VND range to 390,000 VND per box and validated the content. |
 | DONE | CP-60: pushed CP-58 and CP-59 to production, verified Vercel success, public routes, eight-week campaign data and phase MP4 responses. |
-| DONE | CP-61: aligned the W1–W8 activity table with `F:\final.docx`, added the W6 card feature, clarified the Phase 2 Hero Video W2 KPI, and verified locally without deployment. |
+| DONE | CP-61: aligned the W1–W8 activity table with `F:\final.docx`, added the W6 card feature, clarified the Phase 2 Video chính W2 KPI, and verified locally without deployment. |
 | DONE | CP-62: applied the revised Word table's W2 title changes and W6 “Chưa làm” status; verified all 28 rows and local rendering. |
 | DONE | CP-63: deployed CP-61 and CP-62 through GitHub/Vercel and verified the revised campaign content and responsive production pages. |
 | DONE | CP-64: fixed the strategy route after sales scenarios replaced order-source data, added build-time JSON validation, and verified the deployed page at mobile and desktop widths. |
@@ -219,5 +219,7 @@
 | SUPERSEDED | The prior Bogart/Fraunces display-font task is no longer required because CP-85 standardizes the site on Mulish. |
 | DONE | CP-85: replaced all 14 phase images from the adjusted round-one set, preserved the 18 videos, applied the supplied 28-row weekly plan as “Đã làm”, moved titles below media and unified the site on Mulish; verified locally. |
 | DONE | CP-86: pushed CP-85 to production and verified live campaign data, exact image hashes, captions, Mulish typography and responsive phase pages. |
+| DONE | CP-87: reconciled the edited strategy JSON with its schema and page, removed the stale TOWS summary read, rendered four updated actions per quadrant, and passed local data/code/build/browser checks. |
+| IN_PROGRESS | CP-88: deploy the reconciled strategy data and verify the production strategy page. |
 
 Typography amendment: the latest user brief supersedes the prior two-font treatment. The public site now uses self-hosted Mulish for display and interface copy, minimizing font variation while retaining Vietnamese glyph coverage.
