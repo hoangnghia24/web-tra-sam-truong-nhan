@@ -841,3 +841,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | All 4/5/9 videos on phases 1–3 loaded from `vong-loai-*` URLs to ready state 4 with nonzero 720×1280 or 1080×1920 metadata and no media errors. Representative phase 2 and phase 3 layouts were visually reviewed. |
 | Mobile browser | At 390 × 844, all phase videos again reached ready state 4 from versioned URLs, document scroll width equaled client width 375, and the console reported no warnings/errors. |
 | Production state | CP-79 is locally verified and ready for CP-80 deployment. |
+
+## CP-80 — Round-one video production deployment (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed commit `c65cd36` to `origin/main`; Git recorded 18 exact-content video renames and retained all new MP4s under Git LFS. Unrelated source folders remained untracked. |
+| Deployment signal | Live campaign data changed to 18/18 `vong-loai-*` video references. W2 exposed the exact activity and media title “Hóa Đơn Của Những Lần Để Mai”. |
+| New video responses | All 18 new production MP4 URLs returned HTTP 206 to byte-range requests. |
+| Retired paths | No campaign API record, rendered phase page or tracked public file references an old video path. Eight retired URLs returned 404; ten remained readable only through Vercel's immutable edge cache and are not linked by the deployed application. |
+| Desktop browser | Production phases 1–3 rendered 4, 5 and 9 videos respectively. Every video loaded from a `vong-loai-*` URL, reached ready state 4, exposed nonzero 720×1280 or 1080×1920 metadata and reported no media error. |
+| Mobile browser | At 390 × 844, the same 4/5/9 videos reached ready state 4 from the new paths. Document scroll width equaled client width 375 on all three routes; W2 showed the corrected title. |
+| Console | The final mobile production review reported no warnings or errors. The temporary viewport override was reset after testing. |

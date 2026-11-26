@@ -501,3 +501,10 @@
 - Use descriptive source-aligned filenames; replace the ambiguous W2 “Hóa Đơn Thời Gian Dành Cho Bản Thân” label with “Hóa Đơn Của Những Lần Để Mai”.
 - Delete all 18 prior public video paths only after the new copies pass exact SHA-256 comparison and all campaign references point to the new set. The removals remain recoverable from Git history.
 - Publish through the existing `origin/main` and Vercel integration in CP-80, following the Sites workflow.
+
+## CP-80 round-one video production deployment (2026-11-26)
+
+- Use the live campaign API and the three rendered phase pages as the authoritative proof of retirement: all 18 configured and rendered video references use the new `vong-loai-*` paths, and no old path remains in application source or page output.
+- Verify every new URL with an HTTP byte-range request instead of sampling. All 18 must return HTTP 206 before browser QA is accepted.
+- Record direct old-URL behavior accurately: eight retired URLs returned 404 immediately, while ten immutable Vercel edge-cache entries still returned their prior bytes. They are unreachable from current navigation and are not application references; do not misstate CDN cache retention as a failed source removal.
+- Require all 4/5/9 videos to reach ready state 4 with nonzero dimensions and no media error on desktop and 390 × 844 mobile layouts. Reset the temporary browser viewport after verification.

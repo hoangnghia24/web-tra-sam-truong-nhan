@@ -105,12 +105,11 @@
 
 ## CP-80 — Deploy reimported round-one videos
 
-- [ ] Commit and push the verified CP-79 source and Git LFS pointers.
-- [ ] Wait for all 18 new `vong-loai-*` URLs to become active on production.
-- [ ] Verify representative new MP4 range responses, retired old URLs, exact live campaign references and responsive browser playback.
-- [ ] Wait for the Vercel production build to become active.
-- [ ] Verify the five cards, exact copy and responsive layout on production.
-- [ ] Record and push the final production evidence.
+- [x] Commit and push the verified CP-79 source and Git LFS pointers.
+- [x] Wait for all 18 new `vong-loai-*` URLs to become active on production.
+- [x] Verify all new MP4 range responses, exact live campaign references and absence of old paths from rendered pages.
+- [x] Verify 4/5/9 responsive browser playback at desktop and mobile widths without media errors or horizontal overflow.
+- [x] Record and push the final production evidence.
 
 | Status | Task |
 | --- | --- |
