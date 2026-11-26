@@ -79,5 +79,7 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-72 Production deployment | Push the verified CP-70 and CP-71 source through the existing GitHub/Vercel path, then verify the versioned cover, detailed Word content, typography and responsive behavior on production. |
 | CP-73 Five purchase factors interface | Replace the two-column purchase-motivation panel with a focused five-card interface using the exact supplied labels and descriptions, preserve brand styling, and verify desktop/mobile layout locally. |
 | CP-74 Production deployment | Push CP-73 through the existing GitHub/Vercel path, wait for the new strategy interface to become active, and verify exact copy, five-card layout, responsive behavior and console state on production. |
+| CP-75 Structured TOWS action cards | Replace the four compressed TOWS paragraphs with the supplied SO/WO/ST/WT headings, bold lead statements and semantic bullet lists; preserve brand styling and verify desktop/mobile readability locally. |
+| CP-76 Production deployment | Push CP-75 through the existing GitHub/Vercel path, wait for the structured TOWS cards to become active, and verify both the five-factor and TOWS interfaces on production. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

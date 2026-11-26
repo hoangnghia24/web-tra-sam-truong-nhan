@@ -462,3 +462,15 @@
 - Use a six-column desktop grid so cards 01–03 occupy equal thirds and cards 04–05 occupy equal halves; collapse to two columns at intermediate widths and one column below 800 px.
 - Keep the visitor copy data-backed in `strategy-report.json`; split the existing title/description delimiter only for presentation.
 - Publish the completed interface through the existing `origin/main` and Vercel integration in CP-74, following the Sites workflow for requested website edits.
+
+## CP-74 five-factor production deployment (2026-11-26)
+
+- Commit `40b70f4` is the production source for the five-factor interface. The deployment signal is the presence of the exact section heading plus all five new descriptions and the absence of the former motivation paragraph.
+- Complete the final visual production review together with CP-76 so the latest strategy page is checked once after both requested edits are live.
+
+## CP-75 structured TOWS action cards (2026-11-26)
+
+- Model each TOWS strategy as `key`, `title`, `summary` and a two- or three-item array instead of embedding several ideas in one body string.
+- Render the supplied lead statement in bold and every action as a semantic list item. Use an explicit gold `::before` bullet so global list resets cannot hide the requested markers.
+- Preserve the existing two-column desktop grid and single-column mobile flow; allow card heights to follow content instead of truncating or compressing lines.
+- Publish through the existing `origin/main` and Vercel integration in CP-76, following the user's continuing edit request and the Sites publication workflow.

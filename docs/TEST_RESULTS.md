@@ -779,3 +779,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At 1280 px, the section measured 1180 × 663 px with no horizontal overflow. Cards 01–03 measured 340 × 170 px; cards 04–05 measured 518 × 170 px. The reviewed screenshot showed clean alignment and readable copy. |
 | Mobile browser | At 390 × 844, document width was 375 and the section measured approximately 335 × 917 px. All five cards stacked in one column at 271 px wide with no clipping, overflow, console warnings or errors. |
 | Production state | CP-73 is locally verified and ready for CP-74 deployment. |
+
+## CP-75 — Structured TOWS action cards (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Copy and structure | All four cards render the exact SO – LEVERAGE, WO – TRANSFORM, ST – PROVE and WT – LOWER BARRIER headings, the supplied bold lead statements, and 3/2/2/3 separate bullet items. |
+| Data validation | The TOWS schema now requires `summary` plus two or three `items`; the strategy JSON passes validation with no compressed legacy `body` values. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js security-reminder retry. A final lint and build also passed after the explicit bullet-marker rule was added. |
+| Desktop browser | At 1280 px, the TOWS grid measured 1180 × 494 px. Cards rendered in two columns with visible gold bullet dots, full line wrapping, no horizontal overflow and no browser warnings/errors. |
+| Mobile browser | At 390 × 844, the four cards stacked at approximately 335 px wide. All 10 gold bullet dots were present, long lines wrapped inside the cards, document width remained 375 px and the console reported no warnings/errors. |
+| Production state | CP-75 is locally verified and ready for CP-76 deployment. |

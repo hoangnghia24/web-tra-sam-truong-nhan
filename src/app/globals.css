@@ -629,8 +629,12 @@ img { display: block; max-width: 100%; }
 .swot-detail small { color: var(--text-secondary); }
 .tows-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
 .tows-grid article { padding: 1.6rem; border-top: 1px solid var(--brand-gold-light); background: #1b3828; }
-.tows-grid h3 { margin: 0 0 .8rem; }
-.tows-grid p { margin-bottom: 0; color: #ccd9c8; }
+.tows-grid h3 { margin: 0 0 1rem; color: var(--brand-gold-light); }
+.tows-grid .tows-summary { margin: 0; color: var(--brand-ivory); font-size: 1rem; line-height: 1.5; }
+.tows-grid ul { margin: 1rem 0 0; padding: 0; color: #ccd9c8; font-size: .95rem; line-height: 1.55; list-style: none; }
+.tows-grid li { position: relative; padding-left: 1.2rem; }
+.tows-grid li + li { margin-top: .6rem; }
+.tows-grid li::before { position: absolute; left: 0; color: var(--brand-gold-light); content: "•"; }
 .report-swot .report-disclosure, .report-phases .report-disclosure { color: #b9cdb8; }
 .report-sevenps { background: var(--brand-ivory); }
 .sevenps-tabs { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 3rem; }

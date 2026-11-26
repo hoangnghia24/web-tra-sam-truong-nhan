@@ -72,10 +72,44 @@
     { "key": "T", "title": "Thách thức", "items": ["Cạnh tranh gay gắt về giá từ trà thảo mộc và thực phẩm chức năng cùng phân khúc.", "Rủi ro niềm tin về hàng giả, xuất xứ và chất lượng.", "Giới hạn pháp lý về quảng cáo và tuyên bố công dụng.", "Cạnh tranh trên nền tảng số, áp lực chi phí quảng cáo.", "Rủi ro truyền thông từ nội dung KOC/KOL sai công dụng hoặc gây hiểu nhầm.", "Áp lực minh bạch nguồn gốc và tính bền vững."] }
   ],
   "tows": [
-    { "key": "S-O", "title": "Leverage", "body": "Dùng điểm mạnh để tận dụng cơ hội: khai thác nội dung về sức khỏe chủ động, dùng video ngắn, KOC và livestream, đồng thời tận dụng 12.12 và Tết với thông điệp quà tặng sức khỏe." },
-    { "key": "W-O", "title": "Transform", "body": "Tận dụng cơ hội để khắc phục điểm yếu: đẩy mạnh kênh số, thương mại xã hội, ưu đãi dùng thử, voucher và livestream nhằm giảm rào cản với thương hiệu mới." },
-    { "key": "S-T", "title": "Prove", "body": "Dùng điểm mạnh để đối phó thách thức: truyền thông theo hướng “Proof before promise”, minh bạch nguồn gốc nguyên liệu, công thức và thông tin sản phẩm; xây dựng niềm tin để cải thiện ý định mua và khả năng giới thiệu." },
-    { "key": "W-T", "title": "Lower barrier", "body": "Giảm điểm yếu để hạn chế thách thức: ưu đãi dùng thử, quà tặng nhỏ, giá minh bạch, hướng dẫn pha trà đúng chuẩn và ưu tiên trải nghiệm thực tế." }
+    {
+      "key": "S-O",
+      "title": "Leverage",
+      "summary": "Dùng điểm mạnh để tận dụng cơ hội",
+      "items": [
+        "Khai thác nội dung về sức khỏe chủ động, lối sống hiện đại.",
+        "Ứng dụng video ngắn, KOC, livestream để truyền tải sản phẩm đơn giản, dễ hiểu.",
+        "Tận dụng 12.12 và Tết với thông điệp “Quà tặng sức khỏe – gửi lời nhắc”."
+      ]
+    },
+    {
+      "key": "W-O",
+      "title": "Transform",
+      "summary": "Tận dụng cơ hội để khắc phục điểm yếu",
+      "items": [
+        "Đẩy mạnh kênh số và thương mại xã hội để tiếp cận khách hàng mới.",
+        "Sử dụng ưu đãi dùng thử, voucher và livestream nhằm giảm rào cản với thương hiệu mới, nâng cao nhận biết."
+      ]
+    },
+    {
+      "key": "S-T",
+      "title": "Prove",
+      "summary": "Dùng điểm mạnh để đối phó thách thức",
+      "items": [
+        "Truyền thông theo hướng “Proof before promise”: minh bạch nguồn gốc nguyên liệu, công thức và thông tin sản phẩm.",
+        "Xây dựng niềm tin để cải thiện ý định mua và khả năng giới thiệu."
+      ]
+    },
+    {
+      "key": "W-T",
+      "title": "Lower barrier",
+      "summary": "Giảm điểm yếu để hạn chế thách thức",
+      "items": [
+        "Ưu đãi dùng thử, quà tặng nhỏ kèm thông điệp giá minh bạch.",
+        "Hướng dẫn pha trà đúng chuẩn thay vì chỉ giảm giá sâu.",
+        "Ưu tiên dùng thử và trải nghiệm thực tế để cải thiện NPS và ý định mua."
+      ]
+    }
   ],
   "sevenPs": [
     {

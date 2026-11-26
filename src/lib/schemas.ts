@@ -100,7 +100,12 @@ export const strategyReportSchema = z.object({
   legalFramework: z.array(z.object({ document: safeText(220), requirements: safeText(700) })).length(7),
   externalFactors: z.array(z.object({ opportunity: safeText(500), threat: safeText(500) })).length(6),
   swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),
-  tows: z.array(z.object({ key: z.enum(['S-O', 'W-O', 'S-T', 'W-T']), title: safeText(100), body: safeText(500) })).length(4),
+  tows: z.array(z.object({
+    key: z.enum(['S-O', 'W-O', 'S-T', 'W-T']),
+    title: safeText(100),
+    summary: safeText(250),
+    items: z.array(safeText(400)).min(2).max(3),
+  })).length(4),
   sevenPs: z.array(z.object({
     key: safeText(50), title: safeText(120), subtitle: safeText(160),
     points: z.array(z.object({ label: safeText(100), body: safeText(400) })).min(4).max(6),

@@ -59,7 +59,23 @@
 
 ## CP-74 — Deploy five purchase factors interface
 
-- [ ] Commit and push the verified CP-73 source.
+- [x] Commit and push the verified CP-73 source.
+- [x] Wait for the five-factor interface to become active on production.
+- [ ] Complete final production browser verification together with CP-76.
+
+## CP-75 — Structured TOWS action cards
+
+- [x] Replace each compressed TOWS body with the exact supplied lead statement and bullet items.
+- [x] Render SO/WO/ST/WT titles consistently with an en dash and uppercase action word.
+- [x] Add explicit visible gold bullet markers and preserve full line breaks.
+- [x] Pass JSON, lint, typecheck, test and production-build gates.
+- [x] Verify desktop and mobile rendering locally without horizontal overflow or console errors.
+
+## CP-76 — Deploy structured TOWS cards
+
+- [ ] Commit and push the verified CP-75 source.
+- [ ] Wait for the structured TOWS copy and bullet markers to become active on production.
+- [ ] Verify exact copy, responsive layout, the previously deployed five-factor cards and console state on production.
 - [ ] Wait for the Vercel production build to become active.
 - [ ] Verify the five cards, exact copy and responsive layout on production.
 - [ ] Record and push the final production evidence.

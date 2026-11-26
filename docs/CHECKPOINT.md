@@ -4,12 +4,14 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-73
-Status: COMPLETE (five purchase-factor cards verified locally; deployment pending)
-Last completed checkpoint: CP-73 (local source commit pending).
+Current checkpoint: CP-75
+Status: COMPLETE (structured TOWS cards verified locally; deployment pending)
+Last completed checkpoint: CP-75 (local source commit pending).
 
 ## Completed Work
 
+- Completed CP-75: replaced four compressed TOWS paragraphs with exact bold lead statements and 3/2/2/3 visible bullet lists; verified desktop and mobile layout without overflow or console errors.
+- Completed CP-74 deployment signal: pushed commit `40b70f4` and observed the exact five-factor interface become active on production; final production browser verification will be completed together with CP-76.
 - Completed CP-73: replaced the former purchase-motivation split panel with an exact five-factor card interface and verified balanced desktop rows plus a single-column mobile layout without overflow or console errors.
 - Completed CP-72: pushed the CP-70/CP-71 source through `origin/main`, observed the versioned cover and detailed strategy copy become active on Vercel, and verified mobile/desktop production rendering with no console errors.
 - Completed CP-71: re-read all 109 Word paragraphs, nine tables and 11 embedded screenshots, found four groups of overly compressed strategy copy, restored the supplied detail, and verified the versioned cover plus strategy page at mobile and desktop widths.
@@ -88,7 +90,7 @@ Last completed checkpoint: CP-73 (local source commit pending).
 
 ## Current Task
 
-CP-73 is complete locally. The exact five-factor interface is ready for the CP-74 production deployment.
+CP-75 is complete locally. The structured TOWS cards are ready for the CP-76 production deployment; CP-76 will also complete the final browser verification for CP-74.
 
 ## Completed Files
 
@@ -168,4 +170,4 @@ CP-73 is complete locally. The exact five-factor interface is ready for the CP-7
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-74 deployment from the verified local source; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-76 deployment from the verified local source; preserve unrelated untracked source folders.
