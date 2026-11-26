@@ -895,3 +895,18 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | Production rendered the exact heading, labels and 3 × 3 steps in three equal 382.667 px columns. Document scroll width equaled client width 1265. |
 | Mobile browser | At 390 × 844, the three cards stacked in one 334.667 px column with all arrows and text present. Document scroll width equaled client width 375. |
 | Console | The final production mobile review reported no warnings or errors. The temporary viewport override was reset after testing. |
+
+## CP-85 — Round-one artwork, weekly plan and unified typography (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Source parity | Configured 14 unique images and 18 unique videos. Every file exists and every SHA-256 belongs to the 14-image/18-video source set in `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)`. No file under `public/videos/phases` was modified. |
+| Artwork replacement | Imported all 14 adjusted vertical images to new `vong-loai-*` paths and removed 14 obsolete tracked square/Facebook images after repository search found no remaining references. Deletions are recoverable from Git history. |
+| Weekly content | Campaign data contains exactly 28 supplied W1–W8 activities and all 28 use `done`. Media titles match the supplied ấn phẩm names without Facebook/TikTok suffixes; TikTok remains only in the two supplied LIVE activity names. |
+| Caption placement | All single poster/video titles render in `figcaption` below their visual. The eight-image W3 sequence renders one supplied title beneath the complete gallery and uses numbered accessible alt text per image. |
+| Typography | Both body and H1 computed to self-hosted Mulish. The root layout no longer loads Spectral, so public pages use one font family for display and interface copy. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
+| Desktop browser | At 1280 px, phases rendered 8/10/10 activities and 7/8/10 media groups with 3/10/1 images and 4/5/9 videos. Every activity was “Đã làm”, every measured caption followed its visual and document scroll width equaled client width 1265. |
+| Mobile browser | At 390 × 844, the same activity/media counts and caption ordering held. The W3 carousel loaded all ten images on the page, its supplied title appeared beneath the final row, and document scroll width equaled client width 375 on all three routes. |
+| Visual review | The adjusted vertical artwork and bottom gallery caption were visually inspected. The browser reported no media errors; the temporary responsive viewport was reset. |
+| Production state | CP-85 is locally verified and ready for CP-86 deployment. |

@@ -13,7 +13,7 @@
   --brand-tea: #af6b22;
   --text-primary: #233a29;
   --text-secondary: #65735d;
-  --type-display: var(--font-spectral), Georgia, serif;
+  --type-display: var(--font-mulish), Arial, sans-serif;
   --type-body: var(--font-mulish), Arial, sans-serif;
   --text-h1: clamp(2.125rem, 5vw, 4.75rem);
   --text-h2: clamp(1.75rem, 3.8vw, 3.25rem);
@@ -1152,10 +1152,12 @@ img { display: block; max-width: 100%; }
 .phase-media-item figcaption strong { display: block; color: #59665b; }
 .phase-media-item figcaption small { display: block; margin-top: .35rem; font-size: .76rem; }
 .phase-media-series, .phase-media-gallery { grid-column: 1 / -1; padding: 1rem; border: 1px solid #cbd8c4; border-radius: 12px; background: #edf1e7; }
-.phase-media-series h4, .phase-media-gallery h4 { margin: 0 0 1rem; color: var(--brand-forest); font-size: .95rem; }
 .phase-media-series ol, .phase-media-gallery ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin: 0; padding: 0; list-style: none; }
 .phase-media-series li, .phase-media-gallery li { min-width: 0; }
 .phase-media-gallery img { display: block; width: 100%; height: auto; border-radius: 8px; object-fit: contain; }
+.phase-media-caption { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1rem !important; padding-top: .9rem; border-top: 1px solid #cbd8c4; }
+.phase-media-caption strong { color: var(--brand-forest); font-size: .95rem; }
+.phase-media-caption span { flex: none; font-size: .76rem; font-weight: 700; }
 .phase-week-goal { margin-top: 2rem; padding: 1.25rem 1.5rem; border-left: 4px solid var(--brand-gold-text); background: #f5efe0; }
 .phase-week-goal strong { color: var(--brand-gold-text); font-size: .76rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .phase-week-goal p { margin: .5rem 0 0; color: var(--text-primary); font-size: 1rem; line-height: 1.6; }

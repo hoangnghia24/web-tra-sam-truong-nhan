@@ -4,16 +4,6 @@ import { SiteFooter } from '@/components/site/SiteFooter';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import './globals.css';
 
-const spectral = localFont({
-  src: [
-    { path: '../../public/fonts/spectral-regular.ttf', weight: '400', style: 'normal' },
-    { path: '../../public/fonts/spectral-semibold.ttf', weight: '600', style: 'normal' },
-    { path: '../../public/fonts/spectral-bold.ttf', weight: '700', style: 'normal' },
-  ],
-  variable: '--font-spectral',
-  display: 'swap',
-});
-
 const mulish = localFont({
   src: [
     { path: '../../public/fonts/mulish-regular.ttf', weight: '400', style: 'normal' },
@@ -40,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="vi" className={`${spectral.variable} ${mulish.variable}`}>
+    <html lang="vi" className={mulish.variable}>
       <body>
         <a href="#main" className="skip-link">Bỏ qua điều hướng</a>
         <SiteHeader />

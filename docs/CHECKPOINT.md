@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-84
-Status: COMPLETE (simplified measurement paths deployed and verified on production)
-Last completed checkpoint: CP-84.
+Current checkpoint: CP-85
+Status: COMPLETE (round-one artwork, weekly plan and unified typography verified locally)
+Last completed checkpoint: CP-85.
 
 ## Completed Work
 
+- Completed CP-85: replaced all 14 phase images with the adjusted round-one files, preserved all 18 video bytes, aligned 28 activity titles/statuses with the supplied W1–W8 tables, moved every media title below its visual, removed platform suffixes and unified the site on self-hosted Mulish; all local gates and responsive browser checks passed.
 - Completed CP-84: pushed `027d537`, observed the exact LỐI 1, LỐI 2 and SAU MUA paths become active on Vercel, and verified three-column desktop plus single-column mobile rendering without overflow or console warnings.
 - Completed CP-83: replaced the detailed measurement flows with the exact LỐI 1, LỐI 2 and SAU MUA copy, passed all gates and verified desktop/mobile cards, arrows, overflow and console state locally.
 - Completed CP-82: pushed `2999002`, observed all five grouped risks become active on Vercel, expanded every accordion at desktop/mobile widths and verified exact signal counts, conclusion copy, no overflow and a clean console.
@@ -167,7 +168,7 @@ CP-84 is complete. Production now shows the exact simplified “Đo lường hi�
 - PNG button reported success, but the in-app browser did not expose a download event; verify actual file delivery in a regular browser during final QA.
 - Full dependency audit reports 16 moderate advisories in the ESLint/minimatch development toolchain; production-only audit found 0. `npm audit fix --force` proposes a breaking ESLint downgrade, so no forced change was made.
 - Official purchase URL is not supplied, so no buy link should be shown.
-- Bogart is not bundled: a web-licensed font file or Adobe Fonts kit is needed before replacing the temporary Fraunces headings.
+- The latest typography brief intentionally standardizes public pages on self-hosted Mulish; no external display-font license is required.
 - Vercel can now generate receipts without writing to its read-only application directory, but those receipt records are explicitly ephemeral. Other JSON-backed form/admin mutations still require a writable persistent Node host or a different storage service.
 - `npm audit --omit=dev --audit-level=moderate` reports one moderate advisory group affecting Next.js 16.4.4; an upgrade is available and is intentionally kept outside CP-68 so it can be handled as a separate security change.
 
@@ -175,8 +176,8 @@ CP-84 is complete. Production now shows the exact simplified “Đo lường hi�
 
 1. For writable form submissions and admin operations, configure the required environment variables outside Git and use a writable persistent host or replace JSON storage.
 2. Manually verify downloaded PNG files, the seven-minute completion screen, keyboard tab interaction and native Chrome/physical phone rendering before public launch.
-3. When licensed Bogart files or an Adobe Fonts kit become available, replace the Fraunces display font and repeat glyph/build/browser checks.
+3. Upgrade Next.js from 16.4.4 to a patched release in a separate security change.
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Resume after completed CP-84 from source commit `027d537` plus its documentation follow-up; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Resume at CP-86: commit and push the staged CP-85 release, verify Vercel production, then record live evidence. Preserve unrelated untracked source folders and the pre-existing strategy edits held outside this checkpoint.

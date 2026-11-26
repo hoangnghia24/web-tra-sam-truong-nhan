@@ -534,3 +534,17 @@
 
 - Use the simultaneous presence of the four exact strings “LỐI 1:”, “Click gian hàng”, “KOC/Livestream” and “Theo dõi OA” in production HTML as the activation signal.
 - Require the production grid to retain three equal desktop columns and one mobile column, with scroll width equal to client width and no console warnings/errors.
+
+## CP-85 round-one artwork, weekly plan and typography (2026-11-27)
+
+- Treat the typed W1–W8 tables as authoritative for visitor-facing activity and media titles. Parenthetical type labels describe the asset format and are not part of the displayed title; retain “TikTok” only where it is intrinsic to a supplied LIVE event title, not as a platform suffix.
+- Replace the 14 former square/Facebook phase images with direct copies of the 14 adjusted images in `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)`. Use new `vong-loai-*` URLs to prevent production image-cache ambiguity, and remove the obsolete tracked copies only after all references are switched and SHA-256 parity is proven.
+- Preserve all 18 configured MP4 files byte-for-byte because the user explicitly excluded video replacement. Hash-audit every configured video against the source folder and require zero modified files under `public/videos/phases`.
+- Model all 28 supplied activity rows as `done`. Livestream and “Chuỗi Video Lan Tỏa Thử Thách” rows remain visible activities even when the source folder contains no standalone media file for them.
+- Render single-media captions below each poster/video and the carousel title below the complete image sequence. Remove individual carousel slide captions so only the supplied ấn phẩm title is visitor-facing.
+- The latest request to use one consistent font supersedes the prior two-family presentation. Keep the existing self-hosted Mulish files and map both display and body tokens to Mulish; remove the unused Spectral runtime load.
+
+## CP-86 production deployment (2026-11-27)
+
+- Publish only the CP-85 phase/media/typography work and checkpoint evidence. Preserve unrelated untracked source folders and pre-existing strategy changes outside this release.
+- Use the live campaign API plus representative direct image hashes as the deployment signal, then verify all three phase routes at desktop and 390 × 844 mobile widths.

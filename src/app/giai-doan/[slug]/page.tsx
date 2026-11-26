@@ -56,12 +56,12 @@ function WeekMediaItem({ media }: { media: WeekMedia }) {
     <figcaption><strong>{media.title}</strong>{media.note && <small>{media.note}</small>}</figcaption>
   </figure>;
   if (media.kind === 'gallery') return <div className="phase-media-item phase-media-gallery">
-    <h4>{media.title} · {media.images.length} ảnh</h4>
-    <ol>{media.images.map((image) => <li key={image.src}><a href={image.src} target="_blank" rel="noopener noreferrer" aria-label={`Mở ${image.title} ở kích thước đầy đủ`}><Image src={image.src} alt={image.title} width={image.width} height={image.height} sizes="(max-width: 768px) 78vw, 320px" /></a><p>{image.title}</p></li>)}</ol>
+    <ol>{media.images.map((image, index) => <li key={image.src}><a href={image.src} target="_blank" rel="noopener noreferrer" aria-label={`Mở ảnh ${index + 1} của ${media.title} ở kích thước đầy đủ`}><Image src={image.src} alt={`${media.title} – ảnh ${index + 1}`} width={image.width} height={image.height} sizes="(max-width: 768px) 78vw, 320px" /></a></li>)}</ol>
+    <p className="phase-media-caption"><strong>{media.title}</strong><span>{media.images.length} ảnh</span></p>
   </div>;
   return <div className="phase-media-item phase-media-series">
-    <h4>{media.title} · {media.videos.length} video</h4>
     <ol>{media.videos.map((video) => <li key={video.src}><PhaseVideo title={video.title} src={video.src} /><p>{video.title}</p></li>)}</ol>
+    <p className="phase-media-caption"><strong>{media.title}</strong><span>{media.videos.length} video</span></p>
   </div>;
 }
 

@@ -216,6 +216,8 @@
 | DONE | CP-65: changed the remaining strategy persona price range to 390,000 VND per box, deployed it, and verified the live page and API. |
 | DONE | CP-66: reconciled all media from `DBC_ND2_BỘ ẤN PHẨM TRUYỀN THÔNG` with W1–W8, corrected week placement and render order, and verified the three phase pages locally. |
 | DONE | CP-67: pushed CP-66 to production and verified Vercel success, live W1–W8 media order, poster loading, full MP4 responses and playback. |
-| PENDING_EXTERNAL_ASSET | Replace Fraunces with Bogart after a valid web font license/file or Adobe Fonts kit is supplied. |
+| SUPERSEDED | The prior Bogart/Fraunces display-font task is no longer required because CP-85 standardizes the site on Mulish. |
+| DONE | CP-85: replaced all 14 phase images from the adjusted round-one set, preserved the 18 videos, applied the supplied 28-row weekly plan as “Đã làm”, moved titles below media and unified the site on Mulish; verified locally. |
+| IN_PROGRESS | CP-86: push CP-85 to production and verify live campaign data, image hashes, captions, typography and responsive phase pages. |
 
-Typography amendment: Spectral/Mulish and Vietnamese glyph coverage DONE; the six requested pages were visually checked in the in-app Chromium browser at 390 px and 1440 px. Native Chrome and a physical phone remain outside this session's verified scope, as recorded in `docs/TEST_RESULTS.md`.
+Typography amendment: the latest user brief supersedes the prior two-font treatment. The public site now uses self-hosted Mulish for display and interface copy, minimizing font variation while retaining Vietnamese glyph coverage.
