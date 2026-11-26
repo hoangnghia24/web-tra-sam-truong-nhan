@@ -5,11 +5,12 @@ Project: Truong Nhan Digital Campaign
 ## Current Status
 
 Current checkpoint: CP-69
-Status: IN_PROGRESS (production deployment and verification)
-Last completed checkpoint: CP-68 (locally verified receipt repair, Word revisions, certificates and phase assets).
+Status: COMPLETE (production deployment and verification)
+Last completed checkpoint: CP-69 (production source commit `0900c5d`).
 
 ## Completed Work
 
+- Completed CP-69: pushed `0900c5d` and 390 MB of Git LFS media to `origin/main`, observed the live receipt endpoint switch from HTTP 500 to 201, and verified production routes, exact campaign data, certificates, media ranges, mobile receipt creation, strategy content and responsive layout.
 - Completed CP-68: repaired receipt creation on Vercel with an explicit ephemeral response, applied the supplied Word revisions, added four prominent certificate/document images, mapped all latest phase assets, and passed the complete local gate and responsive browser review.
 - Completed CP-67: pushed CP-66 to `origin/main`, observed Vercel success, and verified live campaign data, phase routes, poster loading, MP4 byte ranges, responsive order and playback of all nine videos.
 - Completed CP-66: reconciled all 14 supplied phase assets with W1–W8, added missing W4/W5 posters and the second W7 video, moved the KOL/KOC clip from W4 to W7, replaced stale W2/W6/W8 assets, and rendered all media in activity order.
@@ -83,7 +84,7 @@ Last completed checkpoint: CP-68 (locally verified receipt repair, Word revision
 
 ## Current Task
 
-CP-68 is complete. CP-69 is in progress: commit and push the locally verified receipt repair, Word revisions, certificates and phase media, wait for the Vercel deployment, then verify the same flows on production.
+CP-69 is complete. Production source commit `0900c5d` is live at `https://web-tra-sam-truong-nhan.vercel.app`; continue from the next user request.
 
 ## Completed Files
 
@@ -163,4 +164,4 @@ CP-68 is complete. CP-69 is in progress: commit and push the locally verified re
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue CP-69 from the current source tree: commit CP-68, push `main`, wait for Vercel success, verify receipt creation, certificates, phase media and strategy content in production, then record the deployment evidence. Preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated untracked source folders. CP-69 is deployed and verified on production.

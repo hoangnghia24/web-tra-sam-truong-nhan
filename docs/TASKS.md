@@ -12,6 +12,16 @@
 - [x] Run JSON, tests, typecheck, lint, build and responsive browser QA.
 - [x] Update checkpoint evidence and continue deployment in CP-69.
 
+## CP-69 — Production deployment and verification
+
+- [x] Commit CP-68 source and documentation.
+- [x] Push `main` and all new Git LFS objects to GitHub.
+- [x] Observe the production receipt endpoint switch from HTTP 500 to HTTP 201 with ephemeral storage.
+- [x] Verify seven public routes, four certificate images and representative MP4 byte ranges.
+- [x] Compare live campaign data recursively with the local JSON.
+- [x] Verify mobile homepage, receipt creation, strategy content and phase-video metadata in the production browser.
+- [x] Record deployment evidence and leave original source-asset directories untracked.
+
 | Status | Task |
 | --- | --- |
 | DONE | Verify both requested asset paths, inspect source image and 38-page PDF. |

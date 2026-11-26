@@ -717,3 +717,16 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Security audit | `npm audit --omit=dev --audit-level=moderate` reports one moderate Next.js 16.4.4 advisory group with an upgrade available. The dependency upgrade remains a separate follow-up to avoid mixing it into this content/production repair. |
 | Local HTTP | `/`, `/san-pham`, `/chien-luoc`, `/hoa-don-cho-doi` and all three phase routes returned HTTP 200 from the production-mode local server. A receipt POST returned HTTP 201 with 75 total minutes, 15 self-care minutes and ephemeral storage. |
 | Responsive browser | At 390 px, the homepage certificates, receipt flow and strategy page had no horizontal overflow; the detailed receipt created successfully and displayed the storage disclosure. At 1440 px, all four certificates loaded with nonzero dimensions and no broken images. Five representative phase videos loaded metadata with no media errors. |
+
+## CP-69 — Production deployment (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source and LFS | Pushed `2d5ac33..0900c5d` to `origin/main`. Git LFS uploaded 10/10 objects (390 MB) successfully. Original `anh_moi_nhat`, `DBC_ND2_BỘ ẤN PHẨM TRUYỀN THÔNG` and `anhweb` source folders remained untracked. |
+| Deployment signal | Production `POST /api/receipts` returned HTTP 500 for the previous build, then changed to HTTP 201 with `storage: "ephemeral"`, proving the source deployment was active. The returned receipt totaled 75 minutes with 15 self-care minutes. |
+| Public routes | `/`, `/san-pham`, `/chien-luoc`, `/hoa-don-cho-doi` and all three phase routes returned HTTP 200. |
+| Campaign data | A recursive local-versus-live comparison found no value, shape or array-order differences. The earlier string comparison differed only because parsed schema output reordered JSON object keys. |
+| Certificates | All four public certificate/document URLs returned HTTP 200, `image/png` and exact source-copy byte lengths: 625,894; 399,059; 880,748; and 906,327 bytes. |
+| Video delivery | Representative W1, W4, W6 and W8 MP4s returned HTTP 206, `video/mp4`, 1,024-byte ranges and full-file lengths rather than Git LFS pointer text. |
+| Production browser | At 390 px, the homepage used Mulish body/Spectral display type, showed four intact certificate images and had no horizontal overflow. The detailed receipt created a TN code and displayed the nonpersistent-production notice. Strategy rendered six PESTEL cards, four TOWS entries, five funnel rows and six monitoring rows without the global error page. |
+| Production media | Five videos on `/giai-doan/lam-ngay` loaded to ready state 4 with nonzero 1080×1920 or 720×1280 metadata and no media errors. Browser console QA found no warnings or errors. |

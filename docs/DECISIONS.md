@@ -426,3 +426,9 @@
 - Copy only normalized, site-ready assets from `anh_moi_nhat` into `public`; keep the original source directories untracked. Represent multi-image social sets as gallery media and keep each supplied MP4 on a stable public path managed by Git LFS.
 - Restore Spectral for display type and Mulish for interface/body copy, matching the current workspace guidance and the Word typography amendment.
 - Record the moderate Next.js advisory found by the production dependency audit, but handle the framework upgrade separately from this user-facing repair and deployment.
+
+## CP-69 production deployment (2026-11-26)
+
+- Deploy CP-68 commit `0900c5d` through `origin/main` and the existing Vercel integration under the user's explicit production request. Treat the live receipt transition from HTTP 500 to a 201 response containing `storage: "ephemeral"` as the authoritative deployment signal when the unauthenticated GitHub status API is rate-limited.
+- Verify media in two layers: HTTP 200/206 responses with real byte lengths for certificate images and representative MP4s, then responsive browser checks for visual rendering and video metadata.
+- Keep the source folders untracked and push only normalized public assets. Record the Git LFS upload count and total because this release adds 10 changed video objects.
