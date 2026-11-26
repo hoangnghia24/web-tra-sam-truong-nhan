@@ -7,8 +7,8 @@
   "secondaryAudience": "Người 45–60 tuổi quan tâm sức khỏe bản thân và gia đình.",
   "persona": {
     "belief": "Càng quý, tôi càng để dành cho những dịp đặc biệt. Nhưng quan tâm đến sức khỏe thì đâu cần đợi đến những dịp đặc biệt.",
-    "pain": "Biết sức khỏe quan trọng nhưng thường ưu tiên công việc và người thân; lo ngại việc chăm sóc bản thân phức tạp, khó duy trì; chưa hiểu sự khác biệt của sản phẩm và cần thêm thông tin để đánh giá mức giá 390.000 đồng/hộp trong kế hoạch.",
-    "motivation": "Tìm một lựa chọn đơn giản, thuận tiện, đáng tin cậy và phù hợp khả năng chi trả. Thông tin thành phần, nguồn gốc, quy cách, đánh giá thực tế và tư vấn đáng tin cậy có thể hỗ trợ quyết định mua."
+    "pain": "Bận rộn nên thường ưu tiên công việc hơn sức khỏe; khó duy trì thói quen; hoài nghi về nguồn gốc, tỷ lệ 3% lá Sâm Ngọc Linh và chất lượng; thiếu đánh giá đáng tin cậy khi mua online.",
+    "motivation": "Quyết định mua chịu ảnh hưởng bởi năm yếu tố: giá cả, chất lượng, niềm tin, trải nghiệm và ưu đãi. Thông tin cần minh bạch để khách hàng tự đánh giá."
   },
   "plannedBudgetVnd": 500000000,
   "plannedExecutionBudgetVnd": 400000000,
@@ -18,8 +18,8 @@
     { "label": "Lượt xem Hero Video", "target": 150000, "displayTarget": "≥ 150.000", "unit": "lượt xem; đăng ở W2 và đo đến W5" },
     { "label": "Tổng lượt xem video toàn chiến dịch", "target": 400000, "displayTarget": "≥ 400.000", "unit": "lượt xem đến W8; không cộng trùng với Hero Video" },
     { "label": "UGC hợp lệ đến W8", "target": 80, "displayTarget": "≥ 80", "unit": "bài; mốc W5: ≥40 hợp lệ và ≥100 bài nộp đúng hạn" },
-    { "label": "Đơn hàng trực tuyến lũy kế sơ bộ tại W8", "target": 100, "displayTarget": "100", "unit": "đơn; mốc W4: 20, W5: 60; giá trị bán gộp tham chiếu 39 triệu đồng" },
-    { "label": "ROAS Paid Ads", "target": 0, "displayTarget": "Theo dõi W2/W5/W8", "unit": "tính theo lần (×); chưa cam kết ngưỡng khi AOV, biên lợi nhuận và attribution chưa được xác nhận; CPA Paid tham chiếu khoảng 3,67 triệu đồng/đơn" },
+    { "label": "Đơn hàng trực tuyến lũy kế tại W8", "target": 3100, "displayTarget": "≥ 3.100", "unit": "đơn; TikTok Shop 2.015, Shopee 1.085; GMV kế hoạch 1,209 tỷ đồng" },
+    { "label": "ROAS Paid Ads", "target": 3.3, "displayTarget": "≈ 3,30×", "unit": "mốc W2/W5/W8; CPA Paid tham chiếu ≈ 118.280 đồng, CPO ≈ 129.032 đồng" },
     { "label": "Tỷ lệ hoàn tất tương tác Hóa đơn chờ đợi", "target": 15, "displayTarget": "15%", "unit": "225/1.500 phiên trong W1–W2; không phải tỷ lệ mua hàng" },
     { "label": "NPS tại W8", "target": 30, "displayTarget": "≥ +30", "unit": "điểm; chỉ báo cáo khi có tối thiểu 30 phản hồi hợp lệ" },
     { "label": "Phiên microsite trong W1–W2", "target": 1500, "displayTarget": "1.500", "unit": "phiên" },

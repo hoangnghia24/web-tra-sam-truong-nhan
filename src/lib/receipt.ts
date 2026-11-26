@@ -1,6 +1,10 @@
 import { randomUUID } from 'node:crypto';
 import type { ReceiptInput, ReceiptRecord } from './schemas';
 
+export function canPersistReceipts(environment: Readonly<Record<string, string | undefined>> = process.env) {
+  return environment.VERCEL !== '1';
+}
+
 export function createReceipt(input: ReceiptInput, now = new Date()): ReceiptRecord {
   const totalMinutes = input.activities.reduce((sum, activity) => sum + activity.minutes, 0);
   const selfMinutes = input.activities.find((activity) => activity.key === 'self')?.minutes ?? 0;

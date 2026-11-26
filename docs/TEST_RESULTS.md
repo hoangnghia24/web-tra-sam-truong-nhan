@@ -703,3 +703,17 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Video delivery | W7 KOL/KOC and the revised W8 MP4 returned HTTP 206 for 1,024-byte ranges with full lengths of 47,631,266 and 60,861,216 bytes. The removed W4 KOL/KOC and generated W3 poster URLs returned HTTP 404. |
 | Responsive browser | At 390 px and 1440 px, all three routes matched the configured media order, logged no console/page errors and had document width equal to viewport width. Production screenshots of W5 and W7 were reviewed. |
 | Playback | All nine live videos loaded nonzero dimensions and advanced after `play()` in mobile-width Chrome without a media error. |
+
+## CP-68 — Receipt repair and latest content/assets (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Production reproduction | `POST /api/receipts` on the existing Vercel production returned HTTP 500 because the route always attempted to append to JSON in the read-only application directory. |
+| Receipt repair | The route now keeps durable JSON persistence on writable hosts and skips the write only when `VERCEL=1`, returning HTTP 201 with `storage: "ephemeral"`. The UI states clearly that the production receipt can be downloaded, printed or shared but is not stored long-term. |
+| Word reconciliation | Extracted the full text and 11 embedded screenshots from `F:\NỘI DUNG SỬA WEBSITE.docx`; updated typography, customer pains and decision factors, SWOT/TOWS, PESTEL/legal framework, budget, funnel/KPIs, phase targets, scenarios, monitoring and risks without inventing performance results. |
+| Certificates | Copied four supplied document images to stable public paths and rendered them directly after the homepage introduction and on `/san-pham#chung-nhan`, with full-size links, descriptive alternative text and a verification disclaimer. |
+| Phase assets | Audited 50 supplied files and mapped all 46 phase media items plus four certificate images. All 18 supplied MP4 files are H.264; the campaign JSON references 46 unique existing phase assets. Git LFS applies to `public/videos/phases/*.mp4`. |
+| Code gates | `npm run validate:json` validated 10 content and five seed files; `npm run test` passed 10 tests; `npm run typecheck`, `npm run lint`, `npm run build` and `git diff --check` passed. |
+| Security audit | `npm audit --omit=dev --audit-level=moderate` reports one moderate Next.js 16.4.4 advisory group with an upgrade available. The dependency upgrade remains a separate follow-up to avoid mixing it into this content/production repair. |
+| Local HTTP | `/`, `/san-pham`, `/chien-luoc`, `/hoa-don-cho-doi` and all three phase routes returned HTTP 200 from the production-mode local server. A receipt POST returned HTTP 201 with 75 total minutes, 15 self-care minutes and ephemeral storage. |
+| Responsive browser | At 390 px, the homepage certificates, receipt flow and strategy page had no horizontal overflow; the detailed receipt created successfully and displayed the storage disclosure. At 1440 px, all four certificates loaded with nonzero dimensions and no broken images. Five representative phase videos loaded metadata with no media errors. |

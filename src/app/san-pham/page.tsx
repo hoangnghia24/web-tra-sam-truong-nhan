@@ -5,6 +5,7 @@ import { ArrowUpRight, Hourglass } from 'lucide-react';
 import { PageBanner } from '@/components/site/PageBanner';
 import { IngredientExplorer } from '@/components/product/IngredientExplorer';
 import { ProductJourney } from '@/components/product/ProductJourney';
+import { CertificationGallery } from '@/components/product/CertificationGallery';
 import { TrackedLink } from '@/components/site/TrackedLink';
 import { readJson } from '@/lib/json-store';
 import { faqsSchema, ingredientsSchema, productSchema, siteSettingsSchema } from '@/lib/schemas';
@@ -39,6 +40,15 @@ export default async function ProductPage() {
             <p className="product-positioning-summary">Trà túi lọc tiện pha với bảy thành phần, gợi mở một khoảng dừng 7 phút cho người bận rộn.</p>
             <dl className="product-facts"><div><dt>Quy cách</dt><dd>{product.packCount} túi lọc × {product.gramsPerBag} g</dd></div><div><dt>Khối lượng</dt><dd>{product.netWeightGrams} g / hộp</dd></div><div><dt>Thành phần</dt><dd>{product.ingredientCount} loại thảo mộc</dd></div></dl>
           </div>
+        </div>
+      </section>
+
+      <section className="product-certification-section" id="chung-nhan" aria-labelledby="product-certification-title">
+        <div className="product-container">
+          <p className="section-index"><span /> Hồ sơ minh bạch</p>
+          <h2 id="product-certification-title" className="section-title">Thông tin để bạn <em>tự mình kiểm tra.</em></h2>
+          <p className="product-section-lead">Các ảnh dưới đây là hồ sơ do nhóm cung cấp. Website trình bày nguyên bản để người xem đối chiếu; việc xuất hiện trong thư viện không thay thế xác minh pháp lý độc lập.</p>
+          <CertificationGallery />
         </div>
       </section>
 

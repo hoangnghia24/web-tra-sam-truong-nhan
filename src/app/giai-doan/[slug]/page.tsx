@@ -55,6 +55,10 @@ function WeekMediaItem({ media }: { media: WeekMedia }) {
     <PhaseVideo title={media.title} src={media.src} />
     <figcaption><strong>{media.title}</strong>{media.note && <small>{media.note}</small>}</figcaption>
   </figure>;
+  if (media.kind === 'gallery') return <div className="phase-media-item phase-media-gallery">
+    <h4>{media.title} · {media.images.length} ảnh</h4>
+    <ol>{media.images.map((image) => <li key={image.src}><a href={image.src} target="_blank" rel="noopener noreferrer" aria-label={`Mở ${image.title} ở kích thước đầy đủ`}><Image src={image.src} alt={image.title} width={image.width} height={image.height} sizes="(max-width: 768px) 78vw, 320px" /></a><p>{image.title}</p></li>)}</ol>
+  </div>;
   return <div className="phase-media-item phase-media-series">
     <h4>{media.title} · {media.videos.length} video</h4>
     <ol>{media.videos.map((video) => <li key={video.src}><PhaseVideo title={video.title} src={video.src} /><p>{video.title}</p></li>)}</ol>
@@ -99,7 +103,7 @@ export default async function PhasePage({ params }: PhaseParams) {
       <div className="phase-week-grid">{phase.weeklyPlan.map((week) => <article key={week.week} className="phase-week-card">
         <div className="phase-week-top"><span>TUẦN</span><strong>{String(week.week).padStart(2, '0')}</strong></div>
         <div className="phase-week-main"><h3>Hoạt động trong tuần</h3><ul className="phase-week-activities">{week.activities.map((activity) => <li key={activity.title}><p>{activity.title}</p><span className={`phase-activity-status phase-activity-status-${activity.status}`}>Trạng thái: {activity.status === 'done' ? 'Đã làm' : 'Chưa làm'}</span></li>)}</ul>
-          {week.media.length > 0 && <div className="phase-week-media"><h4>Tư liệu tuần {week.week}</h4><div className="phase-week-media-items">{week.media.map((media) => <WeekMediaItem key={media.kind === 'series' ? media.title : media.src} media={media} />)}</div></div>}
+          {week.media.length > 0 && <div className="phase-week-media"><h4>Tư liệu tuần {week.week}</h4><div className="phase-week-media-items">{week.media.map((media) => <WeekMediaItem key={media.kind === 'series' || media.kind === 'gallery' ? media.title : media.src} media={media} />)}</div></div>}
           <div className="phase-week-goal"><strong>Mục tiêu</strong><p>{week.goal}</p></div>
         </div>
       </article>)}</div>

@@ -10,6 +10,8 @@ import { useEffect, useRef, useState } from 'react';
 import { z } from 'zod';
 import type { ReceiptInput, ReceiptRecord } from '@/lib/schemas';
 
+type ReceiptResponse = ReceiptRecord & { storage?: 'persistent' | 'ephemeral' };
+
 const activities = [
   { key: 'work', label: 'Công việc', icon: BriefcaseBusiness },
   { key: 'family', label: 'Gia đình', icon: Heart },
@@ -70,8 +72,11 @@ export function ReceiptExperience() {
       const response = await fetch('/api/receipts', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(input) });
       const body = await response.json();
       if (!response.ok) throw new Error(body.error || 'Không thể tạo hóa đơn.');
-      setReceipt(body as ReceiptRecord);
-      setStatus('Hóa đơn đã được tạo và lưu trên máy chủ demo.');
+      const created = body as ReceiptResponse;
+      setReceipt(created);
+      setStatus(created.storage === 'ephemeral'
+        ? 'Hóa đơn đã được tạo. Bản production không lưu dữ liệu thời gian lâu dài; bạn có thể tải, in hoặc chia sẻ kết quả.'
+        : 'Hóa đơn đã được tạo và lưu trên máy chủ demo.');
     } catch (error) { setStatus(error instanceof Error ? error.message : 'Không thể tạo hóa đơn lúc này.'); }
   }
 
@@ -121,7 +126,7 @@ export function ReceiptExperience() {
             <div className="receipt-form-bottom"><p>Đã khai báo <strong>{formatMinutes(totalMinutes)}</strong> / 24 giờ</p><div className="form-progress"><span style={{ width: `${Math.min((totalMinutes / 1440) * 100, 100)}%` }} /></div></div>
             {Object.keys(errors).length > 0 && <p className="form-error" role="alert">{errors.root?.message || 'Vui lòng nhập giờ từ 0–24 và phút từ 0–59; tổng tối đa 24 giờ.'}</p>}
             <button className="button-primary receipt-submit" type="submit" disabled={isSubmitting}>{isSubmitting ? 'Đang tạo hóa đơn…' : 'Tạo hóa đơn'} <ArrowUpRight size={17} aria-hidden="true" /></button>
-            <p className="receipt-privacy">Không cần nhập tên hay email. Hóa đơn chỉ lưu thời gian và mã ngẫu nhiên.</p>
+            <p className="receipt-privacy">Không cần nhập tên hay email. Hóa đơn chỉ dùng dữ liệu thời gian để tạo kết quả; trạng thái lưu sẽ được thông báo sau khi tạo.</p>
           </form>
         </div>
 

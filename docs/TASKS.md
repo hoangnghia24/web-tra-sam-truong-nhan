@@ -1,5 +1,17 @@
 # Tasks
 
+## CP-68 — Receipt repair and latest content/assets
+
+- [x] Reproduce the production receipt failure (HTTP 500 from `/api/receipts`).
+- [x] Extract the supplied Word content and inspect its embedded screenshots.
+- [x] Inventory the latest phase assets and four supplied product-document images.
+- [x] Implement an honest Vercel-safe receipt fallback while preserving JSON persistence on writable hosts.
+- [x] Apply the Word revisions to strategy content and UI.
+- [x] Add the supplied product documents prominently to the home and product pages.
+- [x] Copy and map all latest phase images/videos.
+- [x] Run JSON, tests, typecheck, lint, build and responsive browser QA.
+- [x] Update checkpoint evidence and continue deployment in CP-69.
+
 | Status | Task |
 | --- | --- |
 | DONE | Verify both requested asset paths, inspect source image and 38-page PDF. |

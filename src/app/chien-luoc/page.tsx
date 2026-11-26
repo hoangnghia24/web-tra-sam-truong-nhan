@@ -6,6 +6,7 @@ import { PositioningDraft } from '@/components/strategy/PositioningDraft';
 import { RiskPlanAccordion } from '@/components/strategy/RiskPlanAccordion';
 import { StrategyPhaseCards } from '@/components/strategy/StrategyPhaseCards';
 import { BudgetChart, BudgetPhaseTable, KpiMilestoneTable, SevenPsExplorer, SwotExplorer } from '@/components/strategy/StrategyExplorer';
+import { FunnelKpiTable, MonitoringTable, PestelOverview, SalesScenarioTable } from '@/components/strategy/StrategyTables';
 import { readJson } from '@/lib/json-store';
 import { campaignSchema, strategyReportSchema, strategySchema } from '@/lib/schemas';
 
@@ -22,7 +23,7 @@ export default async function StrategyPage() {
   ]);
   return <main id="main" className="strategy-page">
     <PageBanner eyebrow="Báo cáo chiến lược" title="Chiến lược marketing" description="Một hành trình biến câu hỏi ‘Bạn đợi gì?’ thành những điểm chạm có thể trải nghiệm. Toàn bộ ngân sách và KPI bên dưới là mục tiêu kế hoạch." tone="forest" />
-    <nav className="strategy-local-nav" aria-label="Mục lục báo cáo"><a href="#tong-quan">Tổng quan</a><a href="#boi-canh">Bối cảnh</a><a href="#swot">SWOT & TOWS</a><a href="#sevenps">7Ps</a><a href="#hanh-trinh">Kênh & đo lường</a><a href="#trien-khai">Triển khai</a><a href="#do-luong">Đo lường</a></nav>
+    <nav className="strategy-local-nav" aria-label="Mục lục báo cáo"><a href="#tong-quan">Tổng quan</a><a href="#boi-canh">Bối cảnh</a><a href="#pestel">PESTEL</a><a href="#swot">SWOT & TOWS</a><a href="#sevenps">7Ps</a><a href="#hanh-trinh">Kênh & đo lường</a><a href="#trien-khai">Triển khai</a><a href="#do-luong">Đo lường</a></nav>
     <section id="tong-quan" className="report-section report-overview"><div className="product-container"><p className="section-index"><span /> 01 · Tổng quan dự án</p><div className="report-overview-grid"><div><h2>Chăm sóc <em>bản thân không cần chờ dịp đặc biệt</em></h2><p className="report-lead">{strategy.customerInsight}</p></div><div className="report-bigidea"><span>BIG IDEA</span><strong>{strategy.bigIdea}</strong><p></p></div></div><div className="report-audience"><div><span>ĐỐI TƯỢNG CHÍNH</span><p>{strategy.primaryAudience}</p></div><div><span>ĐỐI TƯỢNG PHỤ</span><p>{strategy.secondaryAudience}</p></div></div><div className="report-persona"><p><strong>Góc nhìn:</strong> {strategy.persona.belief}</p><p><strong>Điểm đau:</strong> {strategy.persona.pain}</p><p><strong>Động cơ:</strong> {strategy.persona.motivation}</p></div><PositioningDraft content={report.positioningDraft} /><h3 className="report-subtitle">Định vị sản phẩm và vai trò thương hiệu</h3><div className="report-card-grid">{report.brandRole.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.body}</p></article>)}</div></div></section>
     <section id="boi-canh" className="report-section report-market">
       <div className="product-container">
@@ -31,21 +32,22 @@ export default async function StrategyPage() {
         <MarketContext content={report.marketContext} />
       </div>
     </section>
-    <section id="swot" className="report-section report-swot"><div className="product-container"><p className="section-index light"><span /> 03 · SWOT & TOWS</p><h2 className="section-title">Từ quan sát đến <em>hướng hành động.</em></h2><SwotExplorer items={report.swot} /><div className="tows-grid">{report.tows.map((item) => <article key={item.key}><h3>{item.key} ({item.title}):</h3><p>{item.body}</p></article>)}</div></div></section>
-    <section id="sevenps" className="report-section report-sevenps"><div className="product-container"><p className="section-index"><span /> 04 · Marketing mix</p><h2 className="section-title">Bảy chính sách <em>Marketing Mix.</em></h2><SevenPsExplorer items={report.sevenPs} /></div></section>
+    <section id="pestel" className="report-section report-pestel"><div className="product-container"><p className="section-index"><span /> 03 · PESTEL & pháp lý</p><h2 className="section-title">Bối cảnh vận hành cần được nhìn <em>từ nhiều phía.</em></h2><p className="report-disclosure">Số liệu khảo sát và thị trường dưới đây thuộc tài liệu kế hoạch; nội dung pháp lý là bản tóm tắt phục vụ chiến lược, không thay thế tư vấn pháp lý.</p><PestelOverview pestel={report.pestel} legalFramework={report.legalFramework} externalFactors={report.externalFactors} /></div></section>
+    <section id="swot" className="report-section report-swot"><div className="product-container"><p className="section-index light"><span /> 04 · SWOT & TOWS</p><h2 className="section-title">Từ quan sát đến <em>hướng hành động.</em></h2><SwotExplorer items={report.swot} /><div className="tows-grid">{report.tows.map((item) => <article key={item.key}><h3>{item.key} ({item.title}):</h3><p>{item.body}</p></article>)}</div></div></section>
+    <section id="sevenps" className="report-section report-sevenps"><div className="product-container"><p className="section-index"><span /> 05 · Marketing mix</p><h2 className="section-title">Bảy chính sách <em>Marketing Mix.</em></h2><SevenPsExplorer items={report.sevenPs} /></div></section>
     <section id="hanh-trinh" className="report-section report-journey">
       <div className="product-container">
-        <p className="section-index"><span /> 05 · Kênh & đo lường</p>
+        <p className="section-index"><span /> 06 · Kênh & đo lường</p>
         <h2 className="section-title">MỖI KÊNH MỘT NHIỆM VỤ</h2>
         <ChannelJourney content={report.channelJourney} />
         <h3 className="report-subtitle">Bốn trụ cột nội dung</h3>
         <div className="pillar-grid">{report.pillars.map((item) => <article key={item.title}><h4>{item.title}</h4><p>{item.body}</p></article>)}</div>
       </div>
     </section>
-    <section id="trien-khai" className="report-section report-phases"><div className="product-container"><p className="section-index light"><span /> 06 · Lộ trình 8 tuần</p><h2 className="section-title">Bấm hoãn. Làm ngay. <em>Gửi lời nhắc.</em></h2><StrategyPhaseCards phases={campaign.phases} /><p className="report-disclosure">Mốc đánh giá: cuối W2, W5 và W8. {campaign.statusNote}</p></div></section>
+    <section id="trien-khai" className="report-section report-phases"><div className="product-container"><p className="section-index light"><span /> 07 · Lộ trình 8 tuần</p><h2 className="section-title">Bấm hoãn. Làm ngay. <em>Gửi lời nhắc.</em></h2><StrategyPhaseCards phases={campaign.phases} /><p className="report-disclosure">Mốc đánh giá: cuối W2, W5 và W8. {campaign.statusNote}</p></div></section>
     <section id="do-luong" className="report-section report-budget">
       <div className="product-container">
-        <p className="section-index"><span /> 07 · Ngân sách & đo lường</p>
+        <p className="section-index"><span /> 08 · Ngân sách & đo lường</p>
         <h2 className="section-title">Mục tiêu trên giấy. <em>Kết quả cần dữ liệu thật.</em></h2>
         <div className="budget-summary"><div><span>TỔNG KẾ HOẠCH</span><strong>{money(strategy.plannedBudgetVnd / 1_000_000)} triệu ₫</strong></div><div><span>TRIỂN KHAI</span><strong>{money(strategy.plannedExecutionBudgetVnd / 1_000_000)} triệu ₫</strong></div><div><span>DỰ PHÒNG</span><strong>{money(strategy.plannedReserveVnd / 1_000_000)} triệu ₫</strong></div></div>
         <BudgetChart items={report.budget} />
@@ -53,16 +55,18 @@ export default async function StrategyPage() {
         <h3 className="report-subtitle">Ngân sách theo giai đoạn</h3>
         <BudgetPhaseTable data={report.budgetByPhase} />
         <div className="budget-reserve"><h3>Quỹ dự phòng 100 triệu đồng</h3><ul>{report.reserveBreakdown.map((item) => <li key={item.name}><span>{item.name}</span><strong>{item.millionVnd} triệu ₫</strong></li>)}</ul><p>Chỉ giải ngân khi có phê duyệt.</p></div>
+        <h3 className="report-subtitle">KPI theo phễu AICCR</h3>
+        <FunnelKpiTable items={report.funnelKpis} />
         <h3 className="report-subtitle">KPI mục tiêu</h3>
         <div className="kpi-grid">{strategy.plannedKpis.map((kpi) => <article key={kpi.label}><span>KẾ HOẠCH</span><strong>{kpi.displayTarget ?? money(kpi.target)}</strong><p>{kpi.label}</p><p className="kpi-detail">{kpi.unit}</p><small>Thực tế: chưa có dữ liệu xác thực</small></article>)}</div>
         <h3 className="report-subtitle">KPI theo giai đoạn</h3>
         <KpiMilestoneTable items={report.kpiMilestones} />
-        <div className="sales-scenarios"><h3>Kịch bản doanh số (giả định)</h3><ul>{report.salesScenarios.map((item) => <li key={item.scenario}><span>{item.scenario}</span><strong>{item.orders} đơn</strong><span>Doanh số gộp: {item.grossSales} ₫</span></li>)}</ul></div>
+        <SalesScenarioTable items={report.salesScenarios} />
         <h3 className="report-subtitle">Khung Giám sát Chỉ số (Monitoring Cadence)</h3>
-        <div className="pillar-grid">{report.monitoring.map((item) => <article key={item.title}><h4>{item.title}</h4><p>{item.metrics}</p><small>Đo lường {item.cadence} qua {item.sources}</small></article>)}</div>
+        <MonitoringTable items={report.monitoring} />
         <div className="report-actual"><strong>Kết quả thực tế</strong><p>{strategy.actualResultsAvailable ? 'Dữ liệu thực tế sẽ được cập nhật sau khi kiểm tra.' : 'Chưa có dữ liệu thực tế. Dashboard quản trị chỉ hiển thị tương tác phát sinh từ website này.'}</p></div>
       </div>
     </section>
-    <section className="report-section report-risks"><div className="product-container"><p className="section-index"><span /> 08 · Rủi ro & kết luận</p><h2 className="section-title">Niềm tin được xây <em>bằng thông tin đúng.</em></h2><p className="report-disclosure">Các ngưỡng và phương án dưới đây là dự kiến, chưa được triển khai tự động.</p><RiskPlanAccordion items={report.riskPlan} /><h3 className="report-subtitle">Nâng tầm Sâm Việt Nam</h3><p className="report-conclusion">Kể thừa di sản 20 năm nghiên cứu dược liệu của Trường Sinh Group, chiến dịch không chỉ định vị Trà Sâm Trường Nhân là một sản phẩm tiện lợi, mà còn góp phần hiện thực hóa khát vọng đưa Sâm Việt Nam (Quốc bảo Nam Trà My) bước ra khỏi tủ kính biểu tặng, hòa vào nhịp sống hiện đại. </p></div></section>
+    <section className="report-section report-risks"><div className="product-container"><p className="section-index"><span /> 09 · Rủi ro & kết luận</p><h2 className="section-title">Niềm tin được xây <em>bằng thông tin đúng.</em></h2><p className="report-disclosure">Các ngưỡng và phương án dưới đây là dự kiến, chưa được triển khai tự động.</p><RiskPlanAccordion items={report.riskPlan} /><h3 className="report-subtitle">Nâng tầm Sâm Việt Nam</h3><p className="report-conclusion">Kế thừa di sản 20 năm nghiên cứu dược liệu của Trường Sinh Group, chiến dịch không chỉ định vị Trà Sâm Trường Nhân là một sản phẩm tiện lợi, mà còn góp phần hiện thực hóa khát vọng đưa Sâm Việt Nam bước ra khỏi tủ kính biếu tặng, hòa vào nhịp sống hiện đại.</p></div></section>
   </main>;
 }

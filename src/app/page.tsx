@@ -4,6 +4,7 @@ import { ArrowDown, ArrowUpRight, Clock3, Leaf, Mail, Sparkles } from 'lucide-re
 import { readJson } from '@/lib/json-store';
 import { brandSchema, campaignSchema, productSchema, teamSchema } from '@/lib/schemas';
 import { TrackedLink } from '@/components/site/TrackedLink';
+import { CertificationGallery } from '@/components/product/CertificationGallery';
 
 export const dynamic = 'force-dynamic';
 
@@ -31,6 +32,14 @@ export default async function HomePage() {
             <TrackedLink href="/san-pham" type="product_clicked" className="button-text">Tìm hiểu trà sâm <ArrowUpRight size={17} aria-hidden="true" /></TrackedLink>
           </div>
           <a className="intro-scroll" href="#hoa-don" aria-label="Cuộn đến hóa đơn chờ đợi"><ArrowDown size={17} aria-hidden="true" /></a>
+        </div>
+      </section>
+
+      <section className="home-certifications" id="chung-nhan" aria-labelledby="home-certifications-title">
+        <div className="home-container">
+          <div className="home-certifications-heading"><div><p className="section-index"><span /> Hồ sơ minh bạch</p><h2 className="section-title" id="home-certifications-title">Giấy tờ sản phẩm, <em>đặt ở nơi dễ kiểm tra.</em></h2></div><p>Bốn hình ảnh hồ sơ do nhóm cung cấp được hiển thị ngay sau phần mở đầu. Nhấn vào từng tài liệu để đọc bản đầy đủ.</p></div>
+          <CertificationGallery compact />
+          <Link className="editorial-link" href="/san-pham#chung-nhan">Xem hồ sơ cùng thông tin sản phẩm <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </div>
       </section>
 

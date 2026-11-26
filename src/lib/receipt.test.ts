@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { createReceipt } from './receipt';
+import { canPersistReceipts, createReceipt } from './receipt';
 import { receiptInputSchema } from './schemas';
 
 const keys = ['work', 'family', 'study', 'chores', 'social', 'leisure', 'self', 'other'] as const;
@@ -9,6 +9,10 @@ function sample(selfMinutes: number) {
 }
 
 describe('receipt calculation', () => {
+  it('uses ephemeral receipt storage on Vercel and persistent storage elsewhere', () => {
+    expect(canPersistReceipts({ VERCEL: '1' })).toBe(false);
+    expect(canPersistReceipts({})).toBe(true);
+  });
   it('uses actual time, including zero minutes of self care', () => {
     const input = receiptInputSchema.parse(sample(0));
     const receipt = createReceipt(input, new Date('2026-11-03T10:00:00.000Z'));

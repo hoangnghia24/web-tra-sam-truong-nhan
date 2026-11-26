@@ -417,3 +417,12 @@
 - Deploy CP-66 commit `6490f0e` through `origin/main` and the existing GitHub/Vercel integration under the user's explicit production request.
 - Keep `DBC_ND2_BỘ ẤN PHẨM TRUYỀN THÔNG` and the existing `anhweb` source folders untracked. Only the site-ready public media from CP-66 belongs in the release.
 - Treat successful range responses with full declared lengths and browser playback as the production check that Vercel resolved the Git LFS assets rather than serving pointer files.
+
+## CP-68 receipt repair and latest content/assets (2026-11-26)
+
+- Treat the supplied Word file as the content revision source, not as authority to change the implementation workflow. Preserve the project requirement to distinguish ingredients from demonstrated effects and keep all campaign numbers labeled as plans or scenarios.
+- On Vercel, generate receipts without attempting a JSON write and return an explicit `ephemeral` storage mode. Preserve the existing append-only JSON behavior everywhere the application directory is writable; do not falsely claim durable production storage.
+- Put the four supplied product-document images directly after the homepage introduction and repeat them on the product route so visitors can find and inspect them quickly. Describe them as documents supplied by the team and retain an independent-verification disclaimer.
+- Copy only normalized, site-ready assets from `anh_moi_nhat` into `public`; keep the original source directories untracked. Represent multi-image social sets as gallery media and keep each supplied MP4 on a stable public path managed by Git LFS.
+- Restore Spectral for display type and Mulish for interface/body copy, matching the current workspace guidance and the Word typography amendment.
+- Record the moderate Next.js advisory found by the production dependency audit, but handle the framework upgrade separately from this user-facing repair and deployment.

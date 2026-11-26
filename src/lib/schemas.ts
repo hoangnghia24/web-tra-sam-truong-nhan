@@ -45,6 +45,7 @@ const phaseMediaSchema = z.discriminatedUnion('kind', [
   z.object({ kind: z.literal('video'), title: safeText(120), src: phaseVideoSource, note: safeText(250).optional() }),
   z.object({ kind: z.literal('series'), title: safeText(120), videos: z.array(z.object({ title: safeText(120), src: phaseVideoSource })).min(2).max(30) }),
   z.object({ kind: z.literal('poster'), title: safeText(120), src: phasePosterSource, width: z.number().int().positive(), height: z.number().int().positive(), note: safeText(250).optional() }),
+  z.object({ kind: z.literal('gallery'), title: safeText(120), images: z.array(z.object({ title: safeText(120), src: phasePosterSource, width: z.number().int().positive(), height: z.number().int().positive() })).min(2).max(20) }),
 ]);
 
 export const campaignSchema = z.object({
@@ -93,10 +94,13 @@ export const strategyReportSchema = z.object({
     truth: safeText(500),
     pains: z.array(z.object({ label: safeText(100), body: safeText(450) })).length(4),
     motivation: safeText(450),
-    drivers: z.array(safeText(250)).length(4),
+    drivers: z.array(safeText(250)).length(5),
   }),
+  pestel: z.array(z.object({ key: safeText(4), title: safeText(100), items: z.array(safeText(900)).min(2).max(4) })).length(6),
+  legalFramework: z.array(z.object({ document: safeText(220), requirements: safeText(700) })).length(7),
+  externalFactors: z.array(z.object({ opportunity: safeText(500), threat: safeText(500) })).length(6),
   swot: z.array(z.object({ key: z.enum(['S', 'W', 'O', 'T']), title: safeText(100), items: z.array(safeText(250)) })).length(4),
-  tows: z.array(z.object({ key: z.enum(['S-O', 'W-O', 'W-T']), title: safeText(100), body: safeText(500) })).length(3),
+  tows: z.array(z.object({ key: z.enum(['S-O', 'W-O', 'S-T', 'W-T']), title: safeText(100), body: safeText(500) })).length(4),
   sevenPs: z.array(z.object({
     key: safeText(50), title: safeText(120), subtitle: safeText(160),
     points: z.array(z.object({ label: safeText(100), body: safeText(400) })).min(4).max(6),
@@ -107,7 +111,7 @@ export const strategyReportSchema = z.object({
       task: safeText(240).optional(),
       details: z.array(z.object({ label: safeText(100), body: safeText(240) })).optional(),
     })).length(6),
-    measurement: z.array(z.object({ title: safeText(100), steps: z.array(safeText(100)).length(3) })).length(3),
+    measurement: z.array(z.object({ title: safeText(100), steps: z.array(safeText(220)).length(3) })).length(3),
   }),
   pillars: z.array(strategyEntry).length(4),
   budget: z.array(z.object({ name: safeText(100), millionVnd: z.number().nonnegative() })).length(11),
@@ -120,18 +124,28 @@ export const strategyReportSchema = z.object({
     totals: z.object({ p1: z.number().nonnegative(), p2: z.number().nonnegative(), p3: z.number().nonnegative(), total: z.number().nonnegative() }),
   }),
   reserveBreakdown: z.array(z.object({ name: safeText(140), millionVnd: z.number().nonnegative() })).length(3),
+  funnelKpis: z.array(z.object({
+    stage: safeText(120), primary: safeText(500), support: safeText(400), source: safeText(250),
+  })).length(5),
   kpiMilestones: z.array(z.object({ phase: safeText(100), weeks: safeText(30), metrics: safeText(500) })).length(3),
   salesScenarios: z.array(z.object({
     scenario: safeText(100),
     orders: z.number().int().nonnegative(),
-    grossSales: safeText(100),
+    paidOrders: z.number().int().nonnegative(),
+    paidGrossMillion: z.number().nonnegative(),
+    paidRoas: z.number().nonnegative(),
+    grossSalesMillion: z.number().nonnegative(),
+    mer: z.number().nonnegative(),
+    cpo: z.number().int().nonnegative(),
   })).length(4),
-  monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(200) })).length(4),
+  monitoring: z.array(z.object({ title: safeText(100), metrics: safeText(300), cadence: safeText(100), sources: safeText(250) })).length(6),
   riskPlan: z.array(z.object({
     title: safeText(120),
-    action: safeText(500),
-    fallback: safeText(250),
-  })).length(5),
+    signal: safeText(500),
+    severity: safeText(100),
+    prevention: safeText(500),
+    response: safeText(500),
+  })).length(9),
 });
 
 export const faqsSchema = z.object({ items: z.array(z.object({ question: safeText(200), answer: safeText(900) })) });

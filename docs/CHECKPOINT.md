@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-67
-Status: DONE (source-folder phase media deployed and verified)
-Last completed checkpoint: CP-67 (production source commit `6490f0e`).
+Current checkpoint: CP-69
+Status: IN_PROGRESS (production deployment and verification)
+Last completed checkpoint: CP-68 (locally verified receipt repair, Word revisions, certificates and phase assets).
 
 ## Completed Work
 
+- Completed CP-68: repaired receipt creation on Vercel with an explicit ephemeral response, applied the supplied Word revisions, added four prominent certificate/document images, mapped all latest phase assets, and passed the complete local gate and responsive browser review.
 - Completed CP-67: pushed CP-66 to `origin/main`, observed Vercel success, and verified live campaign data, phase routes, poster loading, MP4 byte ranges, responsive order and playback of all nine videos.
 - Completed CP-66: reconciled all 14 supplied phase assets with W1–W8, added missing W4/W5 posters and the second W7 video, moved the KOL/KOC clip from W4 to W7, replaced stale W2/W6/W8 assets, and rendered all media in activity order.
 - Completed CP-65: replaced the remaining visitor-facing 380,000–390,000 VND range in the strategy persona with 390,000 VND per box, deployed `3a7df87`, and verified the live page and API.
@@ -82,7 +83,7 @@ Last completed checkpoint: CP-67 (production source commit `6490f0e`).
 
 ## Current Task
 
-CP-67 is complete on the public Vercel site. All 14 supplied assets are represented under the correct W1–W8 week, except that the W2 product-introduction clip intentionally uses the compatible H.264 conversion of the supplied HEVC original. Release gates, responsive browser checks and playback of all nine production videos passed. The source folders remain untracked.
+CP-68 is complete. CP-69 is in progress: commit and push the locally verified receipt repair, Word revisions, certificates and phase media, wait for the Vercel deployment, then verify the same flows on production.
 
 ## Completed Files
 
@@ -151,7 +152,8 @@ CP-67 is complete on the public Vercel site. All 14 supplied assets are represen
 - Full dependency audit reports 16 moderate advisories in the ESLint/minimatch development toolchain; production-only audit found 0. `npm audit fix --force` proposes a breaking ESLint downgrade, so no forced change was made.
 - Official purchase URL is not supplied, so no buy link should be shown.
 - Bogart is not bundled: a web-licensed font file or Adobe Fonts kit is needed before replacing the temporary Fraunces headings.
-- Vercel can display the challenge page and read seed UGC data, but JSON-backed form submissions cannot persist in its read-only application directory. Use a writable persistent Node host or approve a different storage service before accepting live submissions there.
+- Vercel can now generate receipts without writing to its read-only application directory, but those receipt records are explicitly ephemeral. Other JSON-backed form/admin mutations still require a writable persistent Node host or a different storage service.
+- `npm audit --omit=dev --audit-level=moderate` reports one moderate advisory group affecting Next.js 16.4.4; an upgrade is available and is intentionally kept outside CP-68 so it can be handled as a separate security change.
 
 ## Next Actions
 
@@ -161,4 +163,4 @@ CP-67 is complete on the public Vercel site. All 14 supplied assets are represen
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated user edits in the working tree. CP-25 through CP-65 are deployed. Deploy future changes only when the user asks.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue CP-69 from the current source tree: commit CP-68, push `main`, wait for Vercel success, verify receipt creation, certificates, phase media and strategy content in production, then record the deployment evidence. Preserve unrelated untracked source folders.

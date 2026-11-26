@@ -12,6 +12,7 @@ const primaryLinks = [
   { href: '/hoa-don-cho-doi', label: 'Hóa đơn chờ đợi' },
   { href: '/7-phut-cho-minh', label: '7 phút cho mình' },
   { href: '/san-pham', label: 'Sản phẩm' },
+  { href: '/san-pham#chung-nhan', label: 'Chứng nhận' },
   { href: '/chien-luoc', label: 'Chiến lược' },
   { href: '/lien-he', label: 'Liên hệ' },
 ];

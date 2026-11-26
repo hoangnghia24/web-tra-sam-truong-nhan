@@ -4,19 +4,23 @@ import { SiteFooter } from '@/components/site/SiteFooter';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import './globals.css';
 
-const fraunces = localFont({
+const spectral = localFont({
   src: [
-    { path: '../../public/fonts/fraunces-variable.ttf', weight: '100 900', style: 'normal' },
-    { path: '../../public/fonts/fraunces-italic-variable.ttf', weight: '100 900', style: 'italic' },
+    { path: '../../public/fonts/spectral-regular.ttf', weight: '400', style: 'normal' },
+    { path: '../../public/fonts/spectral-semibold.ttf', weight: '600', style: 'normal' },
+    { path: '../../public/fonts/spectral-bold.ttf', weight: '700', style: 'normal' },
   ],
-  variable: '--font-fraunces',
+  variable: '--font-spectral',
   display: 'swap',
 });
 
-const inter = localFont({
-  src: '../../public/fonts/inter-variable.ttf',
-  variable: '--font-inter',
-  weight: '100 900',
+const mulish = localFont({
+  src: [
+    { path: '../../public/fonts/mulish-regular.ttf', weight: '400', style: 'normal' },
+    { path: '../../public/fonts/mulish-semibold.ttf', weight: '600', style: 'normal' },
+    { path: '../../public/fonts/mulish-bold.ttf', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-mulish',
   display: 'swap',
 });
 
@@ -36,7 +40,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="vi" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="vi" className={`${spectral.variable} ${mulish.variable}`}>
       <body>
         <a href="#main" className="skip-link">Bỏ qua điều hướng</a>
         <SiteHeader />
