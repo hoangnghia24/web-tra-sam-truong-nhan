@@ -508,3 +508,11 @@
 - Verify every new URL with an HTTP byte-range request instead of sampling. All 18 must return HTTP 206 before browser QA is accepted.
 - Record direct old-URL behavior accurately: eight retired URLs returned 404 immediately, while ten immutable Vercel edge-cache entries still returned their prior bytes. They are unreachable from current navigation and are not application references; do not misstate CDN cache retention as a failed source removal.
 - Require all 4/5/9 videos to reach ready state 4 with nonzero dimensions and no media error on desktop and 390 × 844 mobile layouts. Reset the temporary browser viewport after verification.
+
+## CP-81 grouped risk and conclusion section (2026-11-26)
+
+- Treat the second supplied screenshot as the authoritative content table. It consolidates the prior nine single-topic risks into five operational groups rather than adding five more rows.
+- Preserve the established “09 · Rủi ro & kết luận” heading and the existing conclusion because the supplied table replaces only risk-group content and does not provide alternative conclusion copy.
+- Replace the single `signal` string with a validated `signals` array so grouped rows such as Truyền thông & Công chúng and Vận hành & Kỹ thuật retain separate, readable details.
+- Keep the accordion interaction shown in the first screenshot. Render the grouped signals as semantic bullet lists, preserve severity beside each title and keep the existing brand palette.
+- Publish through the existing `origin/main` and Vercel integration in CP-82, following the Sites workflow.

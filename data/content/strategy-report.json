@@ -318,14 +318,53 @@
     { "title": "Microsite", "metrics": "1.500 phiên; 225 lượt hoàn tất; CVR tương tác ≥15%", "cadence": "Cuối W2", "sources": "Phiên có invoice_complete ÷ tổng phiên hợp lệ; không phải mua hàng" }
   ],
   "riskPlan": [
-    { "title": "Tiến độ", "signal": "Chậm duyệt nội dung, quay dựng, microsite", "severity": "Trung bình – Cao", "prevention": "Sản xuất trước 2 tuần; phản hồi trong 48 giờ", "response": "Dùng nội dung dự trữ, thuê thêm nhân lực, ưu tiên ấn phẩm chính" },
-    { "title": "Nội dung & KOC", "signal": "KOC lệch thông điệp, bị phản ứng", "severity": "Trung bình – Cao", "prevention": "Brief, kịch bản duyệt trước; điều khoản hợp đồng", "response": "Gỡ hoặc chỉnh trong 24 giờ, thay KOC dự bị" },
-    { "title": "Bản quyền", "signal": "Vi phạm nhạc, hình ảnh, font, UGC", "severity": "Trung bình", "prevention": "Dùng tài nguyên có giấy phép; quy định quyền sử dụng trong thể lệ", "response": "Gỡ nội dung, loại bài không hợp lệ" },
-    { "title": "Thông tin sản phẩm", "signal": "Bị hiểu nhầm là thuốc, nói quá công dụng", "severity": "Cao", "prevention": "Đúng hồ sơ tự công bố; doanh nghiệp kiểm duyệt", "response": "Đính chính, bổ sung FAQ" },
-    { "title": "Phản hồi khách hàng", "signal": "Đánh giá xấu, hoài nghi giá 390.000 đồng, khiếu nại giao hàng", "severity": "Trung bình", "prevention": "Chuỗi FAQ W4; kịch bản trả lời; Zalo OA", "response": "Phản hồi trong 24 giờ qua inbox/Zalo" },
-    { "title": "Nền tảng & kỹ thuật", "signal": "Lỗi microsite, tracking, chính sách quảng cáo", "severity": "Thấp – Trung bình", "prevention": "Kiểm thử, sao lưu, kiểm tra tracking trước khi chạy", "response": "Chuyển traffic về gian hàng, liên hệ nền tảng" },
-    { "title": "Cung ứng", "signal": "Thiếu hàng, giao chậm khi đơn tăng", "severity": "Trung bình", "prevention": "Dự báo đơn theo tuần; tồn kho cho đỉnh W2, W5 và W6–W8", "response": "Giảm quảng cáo, thông báo thời gian giao" },
-    { "title": "Thị trường", "signal": "Đối thủ giảm giá, người tiêu dùng thắt chặt chi tiêu", "severity": "Trung bình", "prevention": "Nhấn mạnh tiện lợi, combo, voucher, freeship", "response": "Điều chỉnh ưu đãi, chuyển ngân sách sang kênh hiệu quả" },
-    { "title": "Hiệu quả kênh", "signal": "Video ít view, microsite ít hoàn tất, click cao nhưng ít đơn, ROAS thấp", "severity": "Trung bình", "prevention": "A/B test hook, CTA; đo từng bước phễu", "response": "Kích hoạt phương án dự phòng trong 24–48 giờ" }
+    {
+      "title": "Truyền thông & Công chúng",
+      "signals": [
+        "Nội dung & KOC: KOC lệch thông điệp, bị phản ứng.",
+        "Bản quyền: Vi phạm nhạc, hình ảnh, font, UGC."
+      ],
+      "severity": "Trung bình – Cao",
+      "prevention": "Brief, kịch bản duyệt trước; điều khoản hợp đồng; sử dụng tài nguyên có giấy phép và quy định quyền sử dụng trong thể lệ.",
+      "response": "Chỉnh/gỡ nội dung trong 24 giờ, thay KOC dự bị, loại bài dự thi không hợp lệ; sử dụng quỹ khủng hoảng 40 triệu nếu cần."
+    },
+    {
+      "title": "Sản phẩm & Niềm tin",
+      "signals": [
+        "Thông tin sản phẩm: Bị hiểu nhầm là thuốc, nói quá công dụng hoặc hiểu sai tỷ lệ 3% lá Sâm Ngọc Linh."
+      ],
+      "severity": "Cao",
+      "prevention": "Bám sát hồ sơ tự công bố; Leader và doanh nghiệp kiểm duyệt chặt chẽ trước khi phát hành.",
+      "response": "Đính chính kịp thời, bổ sung chuỗi FAQ minh bạch thông tin."
+    },
+    {
+      "title": "Vận hành & Kỹ thuật",
+      "signals": [
+        "Nền tảng & kỹ thuật: Lỗi microsite, tracking, vi phạm chính sách quảng cáo.",
+        "Tiến độ: Chậm duyệt nội dung, quay dựng, microsite."
+      ],
+      "severity": "Thấp – Cao",
+      "prevention": "Kiểm thử, sao lưu, rà soát tracking trước khi chạy; sản xuất nội dung dự trữ trước 2 tuần; phản hồi phê duyệt trong 48 giờ.",
+      "response": "Chuyển traffic về gian hàng, liên hệ nền tảng xử lý; dùng nội dung dự trữ, thuê thêm nhân lực, ưu tiên ấn phẩm chính."
+    },
+    {
+      "title": "Vận hành & Cung ứng",
+      "signals": [
+        "Cung ứng: Thiếu hàng, giao chậm khi đơn tăng cao (đỉnh 12.12, Năm mới, quà Tết)."
+      ],
+      "severity": "Trung bình",
+      "prevention": "Dự báo đơn theo tuần; chuẩn bị tồn kho cho đỉnh W2 (12.12), W5 (Năm mới) và W6–W8 (quà Tết).",
+      "response": "Giảm quảng cáo chuyển đổi khi thiếu hàng hoặc chuyển nền tảng, thông báo rõ thời gian giao hàng."
+    },
+    {
+      "title": "Thị trường & Kinh doanh",
+      "signals": [
+        "Thị trường & Phản hồi: Đối thủ giảm giá, thắt chặt chi tiêu; đánh giá xấu, hoài nghi giá 390.000đ, khiếu nại giao hàng.",
+        "Hiệu quả kênh: Video ít view, microsite ít hoàn tất, ROAS thấp."
+      ],
+      "severity": "Trung bình",
+      "prevention": "Nhấn mạnh tiện lợi, combo, voucher, freeship; chuỗi FAQ W4, kịch bản trả lời/Zalo OA; A/B test hook/CTA và đo từng bước phễu.",
+      "response": "Phản hồi khách hàng trong 24 giờ qua inbox/Zalo; điều chỉnh ưu đãi, chuyển ngân sách sang kênh hiệu quả và kích hoạt Plan B trong 24–48 giờ (theo mục 6.5)."
+    }
   ]
 }

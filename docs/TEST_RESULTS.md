@@ -853,3 +853,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | Production phases 1–3 rendered 4, 5 and 9 videos respectively. Every video loaded from a `vong-loai-*` URL, reached ready state 4, exposed nonzero 720×1280 or 1080×1920 metadata and reported no media error. |
 | Mobile browser | At 390 × 844, the same 4/5/9 videos reached ready state 4 from the new paths. Document scroll width equaled client width 375 on all three routes; W2 showed the corrected title. |
 | Console | The final mobile production review reported no warnings or errors. The temporary viewport override was reset after testing. |
+
+## CP-81 — Grouped risk and conclusion section (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Content mapping | Replaced nine fragmented risks with the five supplied groups: Truyền thông & Công chúng, Sản phẩm & Niềm tin, Vận hành & Kỹ thuật, Vận hành & Cung ứng, and Thị trường & Kinh doanh. Severity labels are Trung bình – Cao, Cao, Thấp – Cao, Trung bình and Trung bình. |
+| Detail structure | Grouped signal counts are 2/1/2/1/2. Each accordion retains the supplied prevention and response copy, including the 40-million crisis reserve, W2/W5/W6–W8 inventory peaks and Plan B timing. |
+| Schema and rendering | The risk schema now requires exactly five records with one to three `signals`; the accordion renders those signals as a semantic bullet list under “Nhóm chi tiết & biểu hiện”. The existing conclusion copy remains unchanged because no replacement conclusion was supplied. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js security-reminder retry. |
+| Desktop browser | All five accordions expanded successfully at the default 1280 viewport. The risk list measured 800 px wide, retained complete text and document scroll width equaled client width 1265. |
+| Mobile browser | At 390 × 844, all five accordions expanded with the same 2/1/2/1/2 bullet counts. Document scroll width equaled client width 375, the conclusion remained visible and the console reported no warnings/errors. |
+| Production state | CP-81 is locally verified and ready for CP-82 deployment. |

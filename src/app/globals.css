@@ -735,10 +735,14 @@ img { display: block; max-width: 100%; }
 .risk-list details { border-top: 1px solid #b9c6b3; }
 .risk-list details:last-child { border-bottom: 1px solid #b9c6b3; }
 .risk-list summary { padding: 1rem 0; font-family: var(--type-display); font-size: 1.35rem; cursor: pointer; }
-.risk-list summary span { margin-left: .45rem; color: var(--brand-tea); font-family: var(--type-body); font-size: .8rem; font-weight: 800; }
+.risk-list summary span { margin-left: .45rem; color: var(--brand-tea); font-family: var(--type-body); font-size: .8rem; font-weight: 800; white-space: nowrap; }
 .risk-list p { max-width: 640px; color: var(--text-secondary); }
 .risk-list p { margin: .45rem 0; }
 .risk-list p:last-child { margin-bottom: 1.5rem; }
+.risk-signals { max-width: 640px; margin: .45rem 0; color: var(--text-secondary); }
+.risk-signals ul { display: grid; gap: .4rem; margin: .55rem 0 .7rem; padding-left: 1.2rem; }
+.risk-signals li { padding-left: .15rem; }
+.risk-signals li::marker { color: var(--brand-gold); }
 .report-conclusion { max-width: 750px; font-family: var(--type-display); font-size: 1.4rem; line-height: 1.4; }
 
 .contact-team-section, .about-story-section, .about-team-section, .policy-section { padding: clamp(5rem, 8vw, 8rem) 0; background: var(--brand-ivory); }

@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-80
-Status: COMPLETE (all round-one videos reimported, deployed and verified on production)
-Last completed checkpoint: CP-80.
+Current checkpoint: CP-81
+Status: COMPLETE (five grouped risks implemented and verified locally; deployment pending)
+Last completed checkpoint: CP-81 (local source commit pending).
 
 ## Completed Work
 
+- Completed CP-81: replaced nine fragmented risks with the five grouped rows from the supplied table, added semantic signal bullets, preserved the conclusion, passed all gates and verified expanded desktop/mobile accordions without overflow or console warnings.
 - Completed CP-80: pushed `c65cd36`, observed all 18 new `vong-loai-*` URLs become active, confirmed all rendered phase pages use only the new set, and verified 4/5/9 videos at desktop/mobile widths without media errors, overflow or console warnings.
 - Completed CP-79: reimported all 18 source MP4s to new `vong-loai-*` paths, removed all 18 old video paths, aligned the W2 title, proved one-to-one hashes and verified every video at desktop/mobile widths.
 - Completed CP-78: pushed `5456eee`, observed the 3/4, 10/5 and 1/9 image/video counts become active on Vercel, verified removed URLs return 404, retained assets and video ranges load, and checked all phase pages at desktop/mobile widths without console errors.
@@ -95,7 +96,7 @@ Last completed checkpoint: CP-80.
 
 ## Current Task
 
-CP-80 is complete. Production serves the freshly imported 18-video `vong-loai-*` set and no campaign page references a prior video path.
+CP-81 is complete locally. The five grouped risk records and responsive accordion are ready for CP-82 production deployment.
 
 ## Completed Files
 
@@ -175,4 +176,4 @@ CP-80 is complete. Production serves the freshly imported 18-video `vong-loai-*`
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Resume after completed CP-80 from source commit `c65cd36` plus its documentation follow-up; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-82 deployment from the verified CP-81 source; preserve unrelated untracked source folders.

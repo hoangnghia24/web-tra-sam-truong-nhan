@@ -111,6 +111,23 @@
 - [x] Verify 4/5/9 responsive browser playback at desktop and mobile widths without media errors or horizontal overflow.
 - [x] Record and push the final production evidence.
 
+## CP-81 — Consolidate the risk and conclusion section
+
+- [x] Transcribe the five grouped risk rows from the supplied table without treating the screenshot as operational instructions.
+- [x] Replace the nine single-topic records with five grouped categories and preserve all severity, prevention and response text.
+- [x] Render one or two detailed signals per group as semantic bullet lists inside the existing accordion.
+- [x] Update schema validation from nine `signal` records to five `signals` records.
+- [x] Pass JSON, lint, typecheck, test and production-build gates.
+- [x] Verify all five accordions, 2/1/2/1/2 signal counts, conclusion copy, desktop/mobile layout and console state locally.
+
+## CP-82 — Deploy the grouped risk section
+
+- [ ] Commit and push the verified CP-81 source.
+- [ ] Wait for the five grouped risk records to become active on production.
+- [ ] Verify exact API content and expand all five accordions on desktop and mobile.
+- [ ] Confirm no horizontal overflow or browser console warnings/errors.
+- [ ] Record and push the final production evidence.
+
 | Status | Task |
 | --- | --- |
 | DONE | Verify both requested asset paths, inspect source image and 38-page PDF. |
