@@ -516,3 +516,9 @@
 - Replace the single `signal` string with a validated `signals` array so grouped rows such as Truyền thông & Công chúng and Vận hành & Kỹ thuật retain separate, readable details.
 - Keep the accordion interaction shown in the first screenshot. Render the grouped signals as semantic bullet lists, preserve severity beside each title and keep the existing brand palette.
 - Publish through the existing `origin/main` and Vercel integration in CP-82, following the Sites workflow.
+
+## CP-82 grouped risk production deployment (2026-11-26)
+
+- Use the simultaneous presence of all five grouped titles in production HTML as the activation signal because the public strategy API intentionally exposes only its compact summary and not the full report risk plan.
+- Require all accordions to open at both desktop and 390 × 844 mobile widths, with exact signal counts 2/1/2/1/2 and the five supplied severity labels.
+- Preserve the existing conclusion on production and verify its full text after the risk-group replacement.

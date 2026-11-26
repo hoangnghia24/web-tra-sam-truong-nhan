@@ -865,3 +865,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | All five accordions expanded successfully at the default 1280 viewport. The risk list measured 800 px wide, retained complete text and document scroll width equaled client width 1265. |
 | Mobile browser | At 390 × 844, all five accordions expanded with the same 2/1/2/1/2 bullet counts. Document scroll width equaled client width 375, the conclusion remained visible and the console reported no warnings/errors. |
 | Production state | CP-81 is locally verified and ready for CP-82 deployment. |
+
+## CP-82 — Grouped risk production deployment (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed commit `2999002` to `origin/main`; unrelated untracked source folders remained outside the release. |
+| Deployment signal | Production HTML exposed all five new grouped titles simultaneously: Truyền thông & Công chúng, Sản phẩm & Niềm tin, Vận hành & Kỹ thuật, Vận hành & Cung ứng, and Thị trường & Kinh doanh. |
+| Desktop browser | At the default 1280 viewport, all five production accordions expanded. Signal counts were exactly 2/1/2/1/2; the 40-million crisis reserve, Plan B timing and conclusion heading were present. Document scroll width equaled client width 1265. |
+| Mobile browser | At 390 × 844, all five accordions expanded with the same signal counts and severity labels. The complete conclusion remained present and document scroll width equaled client width 375. |
+| Console | The final production mobile review reported no warnings or errors. The temporary viewport override was reset after testing. |

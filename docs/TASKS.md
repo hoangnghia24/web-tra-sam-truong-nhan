@@ -122,11 +122,11 @@
 
 ## CP-82 — Deploy the grouped risk section
 
-- [ ] Commit and push the verified CP-81 source.
-- [ ] Wait for the five grouped risk records to become active on production.
-- [ ] Verify exact API content and expand all five accordions on desktop and mobile.
-- [ ] Confirm no horizontal overflow or browser console warnings/errors.
-- [ ] Record and push the final production evidence.
+- [x] Commit and push the verified CP-81 source.
+- [x] Wait for the five grouped risk records to become active on production.
+- [x] Verify exact rendered content and expand all five accordions on desktop and mobile.
+- [x] Confirm no horizontal overflow or browser console warnings/errors.
+- [x] Record and push the final production evidence.
 
 | Status | Task |
 | --- | --- |

@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-81
-Status: COMPLETE (five grouped risks implemented and verified locally; deployment pending)
-Last completed checkpoint: CP-81 (local source commit pending).
+Current checkpoint: CP-82
+Status: COMPLETE (five grouped risks deployed and verified on production)
+Last completed checkpoint: CP-82.
 
 ## Completed Work
 
+- Completed CP-82: pushed `2999002`, observed all five grouped risks become active on Vercel, expanded every accordion at desktop/mobile widths and verified exact signal counts, conclusion copy, no overflow and a clean console.
 - Completed CP-81: replaced nine fragmented risks with the five grouped rows from the supplied table, added semantic signal bullets, preserved the conclusion, passed all gates and verified expanded desktop/mobile accordions without overflow or console warnings.
 - Completed CP-80: pushed `c65cd36`, observed all 18 new `vong-loai-*` URLs become active, confirmed all rendered phase pages use only the new set, and verified 4/5/9 videos at desktop/mobile widths without media errors, overflow or console warnings.
 - Completed CP-79: reimported all 18 source MP4s to new `vong-loai-*` paths, removed all 18 old video paths, aligned the W2 title, proved one-to-one hashes and verified every video at desktop/mobile widths.
@@ -96,7 +97,7 @@ Last completed checkpoint: CP-81 (local source commit pending).
 
 ## Current Task
 
-CP-81 is complete locally. The five grouped risk records and responsive accordion are ready for CP-82 production deployment.
+CP-82 is complete. Production now shows the five supplied risk groups with complete detail, prevention and response content while preserving the conclusion section.
 
 ## Completed Files
 
@@ -176,4 +177,4 @@ CP-81 is complete locally. The five grouped risk records and responsive accordio
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-82 deployment from the verified CP-81 source; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Resume after completed CP-82 from source commit `2999002` plus its documentation follow-up; preserve unrelated untracked source folders.
