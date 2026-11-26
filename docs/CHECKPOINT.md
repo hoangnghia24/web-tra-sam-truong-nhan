@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-78
-Status: COMPLETE (round-one phase-media set deployed and verified)
-Last completed checkpoint: CP-78.
+Current checkpoint: CP-79
+Status: COMPLETE (all round-one videos reimported to new paths and verified locally; deployment pending)
+Last completed checkpoint: CP-79 (local source commit pending).
 
 ## Completed Work
 
+- Completed CP-79: reimported all 18 source MP4s to new `vong-loai-*` paths, removed all 18 old video paths, aligned the W2 title, proved one-to-one hashes and verified every video at desktop/mobile widths.
 - Completed CP-78: pushed `5456eee`, observed the 3/4, 10/5 and 1/9 image/video counts become active on Vercel, verified removed URLs return 404, retained assets and video ranges load, and checked all phase pages at desktop/mobile widths without console errors.
 - Completed CP-77: reduced phase media to the exact 32-file set from `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)`, removed 14 old images, proved full SHA-256 parity and verified all phase routes locally at desktop/mobile widths.
 - Completed CP-76: pushed `a355821`, observed the structured TOWS cards become active on Vercel, and verified exact content, visible bullets, responsive layout and clean console together with the five-factor interface.
@@ -93,7 +94,7 @@ Last completed checkpoint: CP-78.
 
 ## Current Task
 
-CP-78 is complete. Production now uses only the 32 phase images/videos from `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)`.
+CP-79 is complete locally. The freshly imported `vong-loai-*` video set is ready for CP-80 production deployment.
 
 ## Completed Files
 
@@ -173,4 +174,4 @@ CP-78 is complete. Production now uses only the 32 phase images/videos from `F:\
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Start the next user-requested checkpoint from production commit `5456eee`; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-80 deployment from the verified local source; preserve unrelated untracked source folders.

@@ -493,3 +493,11 @@
 - Deploy commit `5456eee` through the existing GitHub/Vercel integration. Treat live API media counts `3/4`, `10/5`, `1/9` for phases 1–3 as the primary activation signal.
 - Require representative removed image URLs to return 404, retained source images to return their exact byte lengths, and an MP4 range request to return HTTP 206 before browser QA.
 - Verify all three production phase routes at 1280 px and 390 px, with the same media counts, no old TikTok image paths, no horizontal overflow and no console warnings/errors.
+
+## CP-79 full round-one video reimport (2026-11-26)
+
+- Although all existing public videos already matched the source by SHA-256, honor the explicit remove-and-readd request with new `vong-loai-*` URLs. This makes the replacement externally verifiable and prevents old URLs or caches from masking the reimport.
+- Copy each of the 18 MP4 files directly from `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)` without transcoding or other byte changes. Track the new paths through the existing Git LFS rule.
+- Use descriptive source-aligned filenames; replace the ambiguous W2 “Hóa Đơn Thời Gian Dành Cho Bản Thân” label with “Hóa Đơn Của Những Lần Để Mai”.
+- Delete all 18 prior public video paths only after the new copies pass exact SHA-256 comparison and all campaign references point to the new set. The removals remain recoverable from Git history.
+- Publish through the existing `origin/main` and Vercel integration in CP-80, following the Sites workflow.

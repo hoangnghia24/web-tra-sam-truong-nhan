@@ -27,14 +27,14 @@
               { "title": "Dừng một chút cùng Trường Nhân — Facebook", "src": "/images/phases/w1-dung-mot-chut-fb.jpg", "width": 1254, "height": 1254 },
               { "title": "Hóa đơn chờ đợi — Facebook", "src": "/images/phases/w1-hoa-don-cho-doi-fb.png", "width": 937, "height": 788 }
             ] },
-            { "kind": "video", "title": "Video teaser Coming Soon", "src": "/videos/phases/w1-coming-soon.mp4" },
-            { "kind": "video", "title": "Nhắc Tôi Sau", "src": "/videos/phases/w1-nhac-toi-sau.mp4" }
+            { "kind": "video", "title": "Video teaser Coming Soon", "src": "/videos/phases/vong-loai-w1-teaser-coming-soon.mp4" },
+            { "kind": "video", "title": "Nhắc Tôi Sau", "src": "/videos/phases/vong-loai-w1-nhac-toi-sau.mp4" }
           ]
         },
         {
           "week": 2,
           "activities": [
-            { "title": "Video Hóa Đơn Thời Gian Dành Cho Bản Thân", "status": "done" },
+            { "title": "Video Hóa Đơn Của Những Lần Để Mai", "status": "done" },
             { "title": "TikTok Photo Mode/Slideshow “Để Dành Đến Bao Giờ?”", "status": "done" },
             { "title": "Video giới thiệu Trà Sâm", "status": "done" },
             { "title": "Video tương tác “Bạn Thường Dành Thời Gian Cho Ai Nhiều Nhất?”", "status": "not_done" }
@@ -42,8 +42,8 @@
           "goal": "Tạo điểm nhấn sáng tạo, tăng tương tác và giúp người xem hiểu trải nghiệm cũng như sản phẩm.",
           "media": [
             { "kind": "poster", "title": "48 giờ nữa — Hẹn bạn cùng Trường Nhân", "src": "/images/phases/w2-48-gio-nua-fb.jpg", "width": 1254, "height": 1254 },
-            { "kind": "video", "title": "Hóa Đơn Thời Gian Dành Cho Bản Thân", "src": "/videos/phases/w2-hoa-don-thoi-gian.mp4" },
-            { "kind": "video", "title": "Khám phá Trà Sâm Trường Nhân", "src": "/videos/phases/w2-gioi-thieu-tra-sam.mp4" }
+            { "kind": "video", "title": "Hóa Đơn Của Những Lần Để Mai", "src": "/videos/phases/vong-loai-w2-hoa-don-cua-nhung-lan-de-mai.mp4" },
+            { "kind": "video", "title": "Khám phá Trà Sâm Trường Nhân", "src": "/videos/phases/vong-loai-w2-kham-pha-tra-sam-truong-nhan.mp4" }
           ]
         }
       ]
@@ -78,8 +78,8 @@
               { "title": "Tổng cộng 15 túi trà lọc", "src": "/images/phases/w3-box-fb-06.jpg", "width": 1254, "height": 1254 },
               { "title": "Thưởng thức trà sâm mỗi ngày", "src": "/images/phases/w3-box-fb-07.jpg", "width": 1254, "height": 1254 }
             ] },
-            { "kind": "video", "title": "Hướng dẫn 4 bước tham gia", "src": "/videos/phases/w3-huong-dan-bon-buoc.mp4" },
-            { "kind": "video", "title": "Hóa đơn của riêng mình", "src": "/videos/phases/w3-video-mau-cau-chuyen.mp4" }
+            { "kind": "video", "title": "Hướng dẫn 4 bước tham gia", "src": "/videos/phases/vong-loai-w3-bon-buoc-tham-gia.mp4" },
+            { "kind": "video", "title": "Hóa đơn của riêng mình", "src": "/videos/phases/vong-loai-w3-hoa-don-cua-rieng-minh.mp4" }
           ]
         },
         {
@@ -93,8 +93,8 @@
           "goal": "Giảm rào cản sáng tạo, giải đáp thắc mắc và tạo động lực tham gia thử thách.",
           "media": [
             { "kind": "poster", "title": "Hóa đơn chờ đợi — Hỏi & đáp", "src": "/images/phases/w4-hoa-don-hoi-dap-fb.png", "width": 1254, "height": 1254 },
-            { "kind": "video", "title": "Những Hóa Đơn Đầu Tiên", "src": "/videos/phases/w4-nhung-hoa-don-dau-tien.mp4" },
-            { "kind": "video", "title": "Thử Trà, Trải Nghiệm", "src": "/videos/phases/w4-thu-tra-trai-nghiem.mp4" }
+            { "kind": "video", "title": "Những Hóa Đơn Đầu Tiên", "src": "/videos/phases/vong-loai-w4-nhung-hoa-don-dau-tien.mp4" },
+            { "kind": "video", "title": "Thử Trà, Trải Nghiệm", "src": "/videos/phases/vong-loai-w4-thu-tra-trai-nghiem.mp4" }
           ]
         },
         {
@@ -107,7 +107,7 @@
           "goal": "Tăng tỷ lệ bài hợp lệ và thúc đẩy người tham gia nộp bài đúng hạn vào cuối W5.",
           "media": [
             { "kind": "poster", "title": "Đinh Mùi khai xuân — Trường Nhân lên sóng", "src": "/images/phases/w5-dinh-mui-khai-xuan-fb.jpg", "width": 1254, "height": 1254 },
-            { "kind": "video", "title": "Checklist 4 điều trước khi gửi bài", "src": "/videos/phases/w5-checklist.mp4" }
+            { "kind": "video", "title": "Checklist 4 điều trước khi gửi bài", "src": "/videos/phases/vong-loai-w5-checklist-bon-dieu-truoc-khi-gui-bai.mp4" }
           ]
         }
       ]
@@ -134,8 +134,8 @@
           "goal": "Tôn vinh các bài đã nộp đúng hạn, lan tỏa câu chuyện tích cực và củng cố thông điệp chiến dịch.",
           "media": [
             { "kind": "poster", "title": "Mỗi hóa đơn, một câu chuyện", "src": "/images/phases/w6-moi-hoa-don-mot-cau-chuyen-fb.jpg", "width": 2508, "height": 2508 },
-            { "kind": "video", "title": "Một Hộp Trà, Một Lời Nhắn", "src": "/videos/phases/w6-mot-hop-tra-mot-loi-nhan.mp4" },
-            { "kind": "video", "title": "Một Ngày, Một Khoảng Dừng Cùng Trường Nhân", "src": "/videos/phases/w6-mot-ngay-mot-khoang-dung.mp4" }
+            { "kind": "video", "title": "Một Hộp Trà, Một Lời Nhắn", "src": "/videos/phases/vong-loai-w6-mot-hop-tra-mot-loi-nhan.mp4" },
+            { "kind": "video", "title": "Một Ngày, Một Khoảng Dừng Cùng Trường Nhân", "src": "/videos/phases/vong-loai-w6-mot-ngay-mot-khoang-dung-cung-truong-nhan.mp4" }
           ]
         },
         {
@@ -147,9 +147,9 @@
           ],
           "goal": "Mở rộng thông điệp đến người thân và duy trì hành vi gửi lời nhắc quan tâm.",
           "media": [
-            { "kind": "video", "title": "Lần Này Mình Nhắc Bạn", "src": "/videos/phases/w7-lan-nay-minh-nhac-ban.mp4" },
-            { "kind": "video", "title": "Tết Trao Trường Nhân, Gửi Trọn Yêu Thương", "src": "/videos/phases/w7-tet-trao-truong-nhan.mp4" },
-            { "kind": "video", "title": "Thương Người, Đừng Quên Thương Mình", "src": "/videos/phases/w7-kol-koc.mp4" }
+            { "kind": "video", "title": "Lần Này Mình Nhắc Bạn", "src": "/videos/phases/vong-loai-w7-lan-nay-minh-nhac-ban.mp4" },
+            { "kind": "video", "title": "Tết Trao Trường Nhân, Gửi Trọn Yêu Thương", "src": "/videos/phases/vong-loai-w7-tet-trao-truong-nhan-gui-tron-yeu-thuong.mp4" },
+            { "kind": "video", "title": "Thương Người, Đừng Quên Thương Mình", "src": "/videos/phases/vong-loai-w7-thuong-nguoi-dung-quen-thuong-minh.mp4" }
           ]
         },
         {
@@ -162,10 +162,10 @@
           ],
           "goal": "Tổng kết hành trình 8 tuần, công bố kết quả minh bạch và duy trì lời nhắc sau chiến dịch.",
           "media": [
-            { "kind": "video", "title": "Bạn Đã Thôi Chờ Chưa?", "src": "/videos/phases/w8-ban-da-thoi-cho-chua.mp4" },
-            { "kind": "video", "title": "Ngày Mai, Không Hẹn Lại", "src": "/videos/phases/w8-ngay-mai-khong-hen-lai.mp4" },
-            { "kind": "video", "title": "Tết Sum Vầy, Trọn Tình Trường Nhân", "src": "/videos/phases/w8-tet-sum-vay.mp4" },
-            { "kind": "video", "title": "Vinh Danh Những Hóa Đơn Đáng Nhớ", "src": "/videos/phases/w8-vinh-danh-hoa-don-dang-nho.mp4" }
+            { "kind": "video", "title": "Bạn Đã Thôi Chờ Chưa?", "src": "/videos/phases/vong-loai-w8-ban-da-thoi-cho-chua.mp4" },
+            { "kind": "video", "title": "Ngày Mai, Không Hẹn Lại", "src": "/videos/phases/vong-loai-w8-ngay-mai-khong-hen-lai.mp4" },
+            { "kind": "video", "title": "Tết Sum Vầy, Trọn Tình Trường Nhân", "src": "/videos/phases/vong-loai-w8-tet-sum-vay-tron-tinh-truong-nhan.mp4" },
+            { "kind": "video", "title": "Vinh Danh Những Hóa Đơn Đáng Nhớ", "src": "/videos/phases/vong-loai-w8-vinh-danh-nhung-hoa-don-dang-nho.mp4" }
           ]
         }
       ]

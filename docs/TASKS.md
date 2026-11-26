@@ -92,6 +92,22 @@
 - [x] Commit and push the verified CP-77 source.
 - [x] Wait for the reduced media configuration to become active on production.
 - [x] Verify live campaign counts, representative retained assets, removed old URLs, responsive rendering and console state.
+
+## CP-79 — Reimport every round-one video
+
+- [x] Re-audit all 18 source MP4 files and the 18 current public videos by SHA-256.
+- [x] Copy every source MP4 to a new descriptive `vong-loai-*` public path.
+- [x] Update all 18 campaign references and the W2 video title to match the source file.
+- [x] Remove every prior public phase-video path.
+- [x] Prove the 18 source, public and configured video sets match one-to-one with no missing, extra or duplicate hash.
+- [x] Pass JSON, lint, typecheck, test and production-build gates.
+- [x] Verify metadata for 4/5/9 videos on all phase routes at desktop and mobile widths without overflow or console errors.
+
+## CP-80 — Deploy reimported round-one videos
+
+- [ ] Commit and push the verified CP-79 source and Git LFS pointers.
+- [ ] Wait for all 18 new `vong-loai-*` URLs to become active on production.
+- [ ] Verify representative new MP4 range responses, retired old URLs, exact live campaign references and responsive browser playback.
 - [ ] Wait for the Vercel production build to become active.
 - [ ] Verify the five cards, exact copy and responsive layout on production.
 - [ ] Record and push the final production evidence.

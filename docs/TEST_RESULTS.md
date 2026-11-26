@@ -827,3 +827,17 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At 1280 px, all three routes rendered 3/4, 10/5 and 1/9 image/video counts, contained no old TikTok phase paths, and had document scroll width equal to client width 1265. |
 | Mobile browser | At 390 × 844, the same counts rendered with document width 375, no horizontal overflow and a clean one-column W3 Facebook carousel. |
 | Console | The final production browser review reported no warnings or errors. |
+
+## CP-79 — Full round-one video reimport (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source comparison | The source folder and prior public directory each contained 18 MP4 files, with a complete one-to-one SHA-256 match and no unmatched files. |
+| Fresh import | Copied all 18 source files directly to descriptive `vong-loai-*` paths; every destination size and SHA-256 matched its source. All new paths inherit the Git LFS filter. |
+| Old-set removal | Removed all 18 prior public video paths after configuring the new set. The public directory now contains exactly 18 `vong-loai-*` MP4 files and no old filename. |
+| Exact-set proof | Source videos = 18, public videos = 18, configured video references = 18. Missing references, source/public hash differences, duplicate public hashes and old public files all equal zero. |
+| Content alignment | W2 now displays “Hóa Đơn Của Những Lần Để Mai” for both the activity and media title, matching the supplied filename. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js security-reminder retry. |
+| Desktop browser | All 4/5/9 videos on phases 1–3 loaded from `vong-loai-*` URLs to ready state 4 with nonzero 720×1280 or 1080×1920 metadata and no media errors. Representative phase 2 and phase 3 layouts were visually reviewed. |
+| Mobile browser | At 390 × 844, all phase videos again reached ready state 4 from versioned URLs, document scroll width equaled client width 375, and the console reported no warnings/errors. |
+| Production state | CP-79 is locally verified and ready for CP-80 deployment. |

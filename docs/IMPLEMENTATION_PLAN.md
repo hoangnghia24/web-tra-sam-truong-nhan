@@ -83,5 +83,7 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-76 Production deployment | Push CP-75 through the existing GitHub/Vercel path, wait for the structured TOWS cards to become active, and verify both the five-factor and TOWS interfaces on production. |
 | CP-77 Round-one media-only cleanup | Treat `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)` as the sole source for phase campaign media, remove every phase image/video outside that set, update single-image collections to posters, and verify exact hash parity plus responsive rendering locally. |
 | CP-78 Production deployment | Push CP-77 through the existing GitHub/Vercel path, wait for the reduced phase-media set to become active, then verify live campaign data, removed asset URLs and responsive phase pages. |
+| CP-79 Full round-one video reimport | Remove all 18 existing public phase-video paths, copy all 18 MP4 files directly from `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)` to new `vong-loai-*` paths, update campaign references and verify hash parity, metadata and responsive playback locally. |
+| CP-80 Production deployment | Push CP-79 through the existing GitHub/Vercel path, wait for all new video paths to become active, then verify new MP4 range responses, retired old URLs, phase pages and browser playback on production. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.
