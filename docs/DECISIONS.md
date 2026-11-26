@@ -474,3 +474,8 @@
 - Render the supplied lead statement in bold and every action as a semantic list item. Use an explicit gold `::before` bullet so global list resets cannot hide the requested markers.
 - Preserve the existing two-column desktop grid and single-column mobile flow; allow card heights to follow content instead of truncating or compressing lines.
 - Publish through the existing `origin/main` and Vercel integration in CP-76, following the user's continuing edit request and the Sites publication workflow.
+
+## CP-76 structured TOWS production deployment (2026-11-26)
+
+- Publish source commit `a355821` through the existing GitHub/Vercel integration. Treat the simultaneous presence of all four uppercase headings, the 3/2/2/3 list structure and the final NPS sentence as the activation signal.
+- Use the same production browser pass to close CP-74 and CP-76: verify the five-factor cards and the TOWS cards at 1280 px and 390 px, require zero horizontal overflow, visible custom bullet markers and no console warnings/errors.

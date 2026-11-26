@@ -790,3 +790,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At 1280 px, the TOWS grid measured 1180 × 494 px. Cards rendered in two columns with visible gold bullet dots, full line wrapping, no horizontal overflow and no browser warnings/errors. |
 | Mobile browser | At 390 × 844, the four cards stacked at approximately 335 px wide. All 10 gold bullet dots were present, long lines wrapped inside the cards, document width remained 375 px and the console reported no warnings/errors. |
 | Production state | CP-75 is locally verified and ready for CP-76 deployment. |
+
+## CP-74 / CP-76 — Strategy interface production deployment (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed five-factor commit `40b70f4` and structured TOWS commit `a355821` to `origin/main`; unrelated source folders remained untracked. |
+| Deployment signal | Production changed from the compressed legacy TOWS sentence to all four exact uppercase titles, supplied lead statements and the final NPS bullet. The exact five-factor heading and descriptions were already active. |
+| Desktop five factors | At 1280 px, the section measured 1180 × 663 px. Cards 01–03 measured 340 × 170 px and cards 04–05 measured 518 × 170 px; the screenshot showed clean 3+2 alignment. |
+| Desktop TOWS | At 1280 px, the grid measured 1180 × 494 px with two 582 px columns. All ten gold bullet markers were visible and all supplied lines rendered without clipping. |
+| Mobile five factors | At 390 × 844, all five cards stacked at approximately 271 px wide and retained the exact labels and descriptions. |
+| Mobile TOWS | At 390 × 844, all four cards stacked at approximately 335 px wide with 3/2/2/3 visible bullet markers and complete wrapped copy. |
+| Responsive and console | At both production widths, document scroll width equaled client width. The final browser review reported no warnings or errors. |

@@ -61,7 +61,7 @@
 
 - [x] Commit and push the verified CP-73 source.
 - [x] Wait for the five-factor interface to become active on production.
-- [ ] Complete final production browser verification together with CP-76.
+- [x] Complete final production browser verification together with CP-76.
 
 ## CP-75 — Structured TOWS action cards
 
@@ -73,9 +73,9 @@
 
 ## CP-76 — Deploy structured TOWS cards
 
-- [ ] Commit and push the verified CP-75 source.
-- [ ] Wait for the structured TOWS copy and bullet markers to become active on production.
-- [ ] Verify exact copy, responsive layout, the previously deployed five-factor cards and console state on production.
+- [x] Commit and push the verified CP-75 source.
+- [x] Wait for the structured TOWS copy and bullet markers to become active on production.
+- [x] Verify exact copy, responsive layout, the previously deployed five-factor cards and console state on production.
 - [ ] Wait for the Vercel production build to become active.
 - [ ] Verify the five cards, exact copy and responsive layout on production.
 - [ ] Record and push the final production evidence.
