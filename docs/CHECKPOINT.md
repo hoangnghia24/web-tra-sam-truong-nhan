@@ -6,7 +6,7 @@ Project: Truong Nhan Digital Campaign
 
 Current checkpoint: CP-70
 Status: COMPLETE (cover and latest campaign media verified locally)
-Last completed checkpoint: CP-70 (local cover/media source commit pending).
+Last completed checkpoint: CP-70 (local source commit `80130df`).
 
 ## Completed Work
 
