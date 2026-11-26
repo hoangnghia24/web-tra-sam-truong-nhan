@@ -89,9 +89,9 @@
 
 ## CP-78 — Deploy round-one media cleanup
 
-- [ ] Commit and push the verified CP-77 source.
-- [ ] Wait for the reduced media configuration to become active on production.
-- [ ] Verify live campaign counts, representative retained assets, removed old URLs, responsive rendering and console state.
+- [x] Commit and push the verified CP-77 source.
+- [x] Wait for the reduced media configuration to become active on production.
+- [x] Verify live campaign counts, representative retained assets, removed old URLs, responsive rendering and console state.
 - [ ] Wait for the Vercel production build to become active.
 - [ ] Verify the five cards, exact copy and responsive layout on production.
 - [ ] Record and push the final production evidence.

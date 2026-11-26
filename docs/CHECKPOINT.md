@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-77
-Status: COMPLETE (round-one phase-media set verified locally; deployment pending)
-Last completed checkpoint: CP-77 (local source commit pending).
+Current checkpoint: CP-78
+Status: COMPLETE (round-one phase-media set deployed and verified)
+Last completed checkpoint: CP-78.
 
 ## Completed Work
 
+- Completed CP-78: pushed `5456eee`, observed the 3/4, 10/5 and 1/9 image/video counts become active on Vercel, verified removed URLs return 404, retained assets and video ranges load, and checked all phase pages at desktop/mobile widths without console errors.
 - Completed CP-77: reduced phase media to the exact 32-file set from `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)`, removed 14 old images, proved full SHA-256 parity and verified all phase routes locally at desktop/mobile widths.
 - Completed CP-76: pushed `a355821`, observed the structured TOWS cards become active on Vercel, and verified exact content, visible bullets, responsive layout and clean console together with the five-factor interface.
 - Completed CP-75: replaced four compressed TOWS paragraphs with exact bold lead statements and 3/2/2/3 visible bullet lists; verified desktop and mobile layout without overflow or console errors.
@@ -92,7 +93,7 @@ Last completed checkpoint: CP-77 (local source commit pending).
 
 ## Current Task
 
-CP-77 is complete locally. The exact round-one phase-media set is ready for CP-78 production deployment.
+CP-78 is complete. Production now uses only the 32 phase images/videos from `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)`.
 
 ## Completed Files
 
@@ -172,4 +173,4 @@ CP-77 is complete locally. The exact round-one phase-media set is ready for CP-7
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-78 deployment from the verified local source; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Start the next user-requested checkpoint from production commit `5456eee`; preserve unrelated untracked source folders.

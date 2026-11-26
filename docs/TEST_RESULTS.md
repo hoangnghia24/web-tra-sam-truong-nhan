@@ -815,3 +815,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | Phase routes rendered 3 images/4 videos, 10 images/5 videos and 1 image/9 videos with no old TikTok phase paths or horizontal overflow. The W3 Facebook carousel and W6 poster/video layout were visually reviewed; loaded images had nonzero dimensions and all nine phase-three videos reached ready state 4 without media errors. |
 | Mobile browser | At 390 × 844, the same 3/4, 10/5 and 1/9 media counts rendered with document scroll width equal to client width 375. The W3 carousel stacked cleanly and the console reported no warnings/errors. |
 | Production state | CP-77 is locally verified and ready for CP-78 deployment. |
+
+## CP-78 — Round-one media production deployment (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed commit `5456eee` to `origin/main`, including the 14 recoverable image deletions and revised campaign media records. Untracked source folders remained outside the commit. |
+| Deployment signal | Live `/api/campaign` changed from image/video counts 6/4, 20/5 and 2/9 to the requested 3/4, 10/5 and 1/9 for phases 1–3. |
+| Removed assets | Representative old W1, W3 and W6 TikTok image URLs returned HTTP 404 after deployment. |
+| Retained assets | Representative W1, W3 and W6 source images returned HTTP 200 with exact lengths 429,236; 293,094; and 1,146,616 bytes. The W8 video returned HTTP 206 for bytes 0–1023 of 77,998,118. |
+| Desktop browser | At 1280 px, all three routes rendered 3/4, 10/5 and 1/9 image/video counts, contained no old TikTok phase paths, and had document scroll width equal to client width 1265. |
+| Mobile browser | At 390 × 844, the same counts rendered with document width 375, no horizontal overflow and a clean one-column W3 Facebook carousel. |
+| Console | The final production browser review reported no warnings or errors. |

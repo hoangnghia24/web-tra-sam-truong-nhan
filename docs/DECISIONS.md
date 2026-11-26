@@ -487,3 +487,9 @@
 - Delete the 14 extra TikTok image variants that have no source counterpart. Keep all 18 videos because all of them match the source folder exactly; there are no obsolete public phase videos.
 - Change four one-image galleries to `poster` records rather than weakening the gallery schema's two-image minimum.
 - Publish the verified cleanup through the existing `origin/main` and Vercel integration in CP-78, following the Sites workflow.
+
+## CP-78 round-one media production deployment (2026-11-26)
+
+- Deploy commit `5456eee` through the existing GitHub/Vercel integration. Treat live API media counts `3/4`, `10/5`, `1/9` for phases 1–3 as the primary activation signal.
+- Require representative removed image URLs to return 404, retained source images to return their exact byte lengths, and an MP4 range request to return HTTP 206 before browser QA.
+- Verify all three production phase routes at 1280 px and 390 px, with the same media counts, no old TikTok image paths, no horizontal overflow and no console warnings/errors.
