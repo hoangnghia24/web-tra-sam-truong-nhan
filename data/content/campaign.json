@@ -25,9 +25,7 @@
           "media": [
             { "kind": "gallery", "title": "Bộ poster W1", "images": [
               { "title": "Dừng một chút cùng Trường Nhân — Facebook", "src": "/images/phases/w1-dung-mot-chut-fb.jpg", "width": 1254, "height": 1254 },
-              { "title": "Dừng một chút cùng Trường Nhân — TikTok", "src": "/images/phases/w1-dung-mot-chut-tiktok.jpg", "width": 1442, "height": 2560 },
-              { "title": "Hóa đơn chờ đợi — Facebook", "src": "/images/phases/w1-hoa-don-cho-doi-fb.png", "width": 937, "height": 788 },
-              { "title": "Hóa đơn chờ đợi — TikTok", "src": "/images/phases/w1-hoa-don-cho-doi-tiktok.png", "width": 1300, "height": 2311 }
+              { "title": "Hóa đơn chờ đợi — Facebook", "src": "/images/phases/w1-hoa-don-cho-doi-fb.png", "width": 937, "height": 788 }
             ] },
             { "kind": "video", "title": "Video teaser Coming Soon", "src": "/videos/phases/w1-coming-soon.mp4" },
             { "kind": "video", "title": "Nhắc Tôi Sau", "src": "/videos/phases/w1-nhac-toi-sau.mp4" }
@@ -43,10 +41,7 @@
           ],
           "goal": "Tạo điểm nhấn sáng tạo, tăng tương tác và giúp người xem hiểu trải nghiệm cũng như sản phẩm.",
           "media": [
-            { "kind": "gallery", "title": "48 giờ nữa — Hẹn bạn cùng Trường Nhân", "images": [
-              { "title": "Poster Facebook", "src": "/images/phases/w2-48-gio-nua-fb.jpg", "width": 1254, "height": 1254 },
-              { "title": "Poster TikTok", "src": "/images/phases/w2-48-gio-nua-tiktok.jpg", "width": 941, "height": 1672 }
-            ] },
+            { "kind": "poster", "title": "48 giờ nữa — Hẹn bạn cùng Trường Nhân", "src": "/images/phases/w2-48-gio-nua-fb.jpg", "width": 1254, "height": 1254 },
             { "kind": "video", "title": "Hóa Đơn Thời Gian Dành Cho Bản Thân", "src": "/videos/phases/w2-hoa-don-thoi-gian.mp4" },
             { "kind": "video", "title": "Khám phá Trà Sâm Trường Nhân", "src": "/videos/phases/w2-gioi-thieu-tra-sam.mp4" }
           ]
@@ -83,16 +78,6 @@
               { "title": "Tổng cộng 15 túi trà lọc", "src": "/images/phases/w3-box-fb-06.jpg", "width": 1254, "height": 1254 },
               { "title": "Thưởng thức trà sâm mỗi ngày", "src": "/images/phases/w3-box-fb-07.jpg", "width": 1254, "height": 1254 }
             ] },
-            { "kind": "gallery", "title": "Trà Sâm Trường Nhân có gì trong hộp — TikTok", "images": [
-              { "title": "Mở đầu", "src": "/images/phases/w3-box-tiktok-00.jpg", "width": 768, "height": 1376 },
-              { "title": "Nhận hộp trà tinh tế", "src": "/images/phases/w3-box-tiktok-01.jpg", "width": 768, "height": 1376 },
-              { "title": "Mở hộp và khám phá", "src": "/images/phases/w3-box-tiktok-02.jpg", "width": 768, "height": 1376 },
-              { "title": "Có 3 gói trà bên trong", "src": "/images/phases/w3-box-tiktok-03.jpg", "width": 768, "height": 1376 },
-              { "title": "Chi tiết 1 gói trà", "src": "/images/phases/w3-box-tiktok-04.jpg", "width": 768, "height": 1376 },
-              { "title": "Mỗi gói có 5 túi trà lọc", "src": "/images/phases/w3-box-tiktok-05.jpg", "width": 768, "height": 1376 },
-              { "title": "Tổng cộng 15 túi trà lọc", "src": "/images/phases/w3-box-tiktok-06.jpg", "width": 768, "height": 1376 },
-              { "title": "Thưởng thức trà sâm mỗi ngày", "src": "/images/phases/w3-box-tiktok-07.jpg", "width": 768, "height": 1376 }
-            ] },
             { "kind": "video", "title": "Hướng dẫn 4 bước tham gia", "src": "/videos/phases/w3-huong-dan-bon-buoc.mp4" },
             { "kind": "video", "title": "Hóa đơn của riêng mình", "src": "/videos/phases/w3-video-mau-cau-chuyen.mp4" }
           ]
@@ -107,10 +92,7 @@
           ],
           "goal": "Giảm rào cản sáng tạo, giải đáp thắc mắc và tạo động lực tham gia thử thách.",
           "media": [
-            { "kind": "gallery", "title": "Hóa đơn chờ đợi — Hỏi & đáp", "images": [
-              { "title": "Poster Facebook", "src": "/images/phases/w4-hoa-don-hoi-dap-fb.png", "width": 1254, "height": 1254 },
-              { "title": "Poster TikTok", "src": "/images/phases/w4-hoa-don-hoi-dap-tiktok.png", "width": 1083, "height": 1452 }
-            ] },
+            { "kind": "poster", "title": "Hóa đơn chờ đợi — Hỏi & đáp", "src": "/images/phases/w4-hoa-don-hoi-dap-fb.png", "width": 1254, "height": 1254 },
             { "kind": "video", "title": "Những Hóa Đơn Đầu Tiên", "src": "/videos/phases/w4-nhung-hoa-don-dau-tien.mp4" },
             { "kind": "video", "title": "Thử Trà, Trải Nghiệm", "src": "/videos/phases/w4-thu-tra-trai-nghiem.mp4" }
           ]
@@ -124,10 +106,7 @@
           ],
           "goal": "Tăng tỷ lệ bài hợp lệ và thúc đẩy người tham gia nộp bài đúng hạn vào cuối W5.",
           "media": [
-            { "kind": "gallery", "title": "Đinh Mùi khai xuân — Trường Nhân lên sóng", "images": [
-              { "title": "Poster Facebook", "src": "/images/phases/w5-dinh-mui-khai-xuan-fb.jpg", "width": 1254, "height": 1254 },
-              { "title": "Poster TikTok", "src": "/images/phases/w5-dinh-mui-khai-xuan-tiktok.jpg", "width": 941, "height": 1672 }
-            ] },
+            { "kind": "poster", "title": "Đinh Mùi khai xuân — Trường Nhân lên sóng", "src": "/images/phases/w5-dinh-mui-khai-xuan-fb.jpg", "width": 1254, "height": 1254 },
             { "kind": "video", "title": "Checklist 4 điều trước khi gửi bài", "src": "/videos/phases/w5-checklist.mp4" }
           ]
         }
@@ -154,10 +133,7 @@
           ],
           "goal": "Tôn vinh các bài đã nộp đúng hạn, lan tỏa câu chuyện tích cực và củng cố thông điệp chiến dịch.",
           "media": [
-            { "kind": "gallery", "title": "Mỗi hóa đơn, một câu chuyện", "images": [
-              { "title": "Poster Facebook", "src": "/images/phases/w6-moi-hoa-don-mot-cau-chuyen-fb.jpg", "width": 2508, "height": 2508 },
-              { "title": "Poster TikTok", "src": "/images/phases/w6-moi-hoa-don-mot-cau-chuyen-tiktok.jpg", "width": 941, "height": 1672 }
-            ] },
+            { "kind": "poster", "title": "Mỗi hóa đơn, một câu chuyện", "src": "/images/phases/w6-moi-hoa-don-mot-cau-chuyen-fb.jpg", "width": 2508, "height": 2508 },
             { "kind": "video", "title": "Một Hộp Trà, Một Lời Nhắn", "src": "/videos/phases/w6-mot-hop-tra-mot-loi-nhan.mp4" },
             { "kind": "video", "title": "Một Ngày, Một Khoảng Dừng Cùng Trường Nhân", "src": "/videos/phases/w6-mot-ngay-mot-khoang-dung.mp4" }
           ]

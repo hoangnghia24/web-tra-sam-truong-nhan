@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-76
-Status: COMPLETE (five-factor and structured TOWS interfaces deployed and verified)
-Last completed checkpoint: CP-76.
+Current checkpoint: CP-77
+Status: COMPLETE (round-one phase-media set verified locally; deployment pending)
+Last completed checkpoint: CP-77 (local source commit pending).
 
 ## Completed Work
 
+- Completed CP-77: reduced phase media to the exact 32-file set from `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)`, removed 14 old images, proved full SHA-256 parity and verified all phase routes locally at desktop/mobile widths.
 - Completed CP-76: pushed `a355821`, observed the structured TOWS cards become active on Vercel, and verified exact content, visible bullets, responsive layout and clean console together with the five-factor interface.
 - Completed CP-75: replaced four compressed TOWS paragraphs with exact bold lead statements and 3/2/2/3 visible bullet lists; verified desktop and mobile layout without overflow or console errors.
 - Completed CP-74: pushed commit `40b70f4`, observed the exact five-factor interface become active on production, and completed desktop/mobile browser verification together with CP-76.
@@ -91,7 +92,7 @@ Last completed checkpoint: CP-76.
 
 ## Current Task
 
-CP-76 is complete. Both requested strategy interfaces are active and verified on production.
+CP-77 is complete locally. The exact round-one phase-media set is ready for CP-78 production deployment.
 
 ## Completed Files
 
@@ -171,4 +172,4 @@ CP-76 is complete. Both requested strategy interfaces are active and verified on
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Start the next user-requested checkpoint from production commit `a355821`; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-78 deployment from the verified local source; preserve unrelated untracked source folders.

@@ -81,5 +81,7 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-74 Production deployment | Push CP-73 through the existing GitHub/Vercel path, wait for the new strategy interface to become active, and verify exact copy, five-card layout, responsive behavior and console state on production. |
 | CP-75 Structured TOWS action cards | Replace the four compressed TOWS paragraphs with the supplied SO/WO/ST/WT headings, bold lead statements and semantic bullet lists; preserve brand styling and verify desktop/mobile readability locally. |
 | CP-76 Production deployment | Push CP-75 through the existing GitHub/Vercel path, wait for the structured TOWS cards to become active, and verify both the five-factor and TOWS interfaces on production. |
+| CP-77 Round-one media-only cleanup | Treat `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)` as the sole source for phase campaign media, remove every phase image/video outside that set, update single-image collections to posters, and verify exact hash parity plus responsive rendering locally. |
+| CP-78 Production deployment | Push CP-77 through the existing GitHub/Vercel path, wait for the reduced phase-media set to become active, then verify live campaign data, removed asset URLs and responsive phase pages. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

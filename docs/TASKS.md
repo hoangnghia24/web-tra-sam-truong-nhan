@@ -76,6 +76,22 @@
 - [x] Commit and push the verified CP-75 source.
 - [x] Wait for the structured TOWS copy and bullet markers to become active on production.
 - [x] Verify exact copy, responsive layout, the previously deployed five-factor cards and console state on production.
+
+## CP-77 — Keep only round-one campaign media
+
+- [x] Inventory and hash every file in `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)`.
+- [x] Compare the source set against configured and public phase media.
+- [x] Remove the 14 phase images outside the source set; retain all 18 videos because each is an exact source match.
+- [x] Convert W2/W4/W5/W6 single-image collections to poster entries.
+- [x] Prove 32 source files, 32 public files and 32 unique configured references have exact SHA-256 parity.
+- [x] Pass JSON, lint, typecheck, test and production-build gates.
+- [x] Verify all three phase routes at desktop and mobile widths without old media references, overflow or console errors.
+
+## CP-78 — Deploy round-one media cleanup
+
+- [ ] Commit and push the verified CP-77 source.
+- [ ] Wait for the reduced media configuration to become active on production.
+- [ ] Verify live campaign counts, representative retained assets, removed old URLs, responsive rendering and console state.
 - [ ] Wait for the Vercel production build to become active.
 - [ ] Verify the five cards, exact copy and responsive layout on production.
 - [ ] Record and push the final production evidence.

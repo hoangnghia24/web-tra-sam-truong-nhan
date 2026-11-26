@@ -802,3 +802,16 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Mobile five factors | At 390 × 844, all five cards stacked at approximately 271 px wide and retained the exact labels and descriptions. |
 | Mobile TOWS | At 390 × 844, all four cards stacked at approximately 335 px wide with 3/2/2/3 visible bullet markers and complete wrapped copy. |
 | Responsive and console | At both production widths, document scroll width equaled client width. The final browser review reported no warnings or errors. |
+
+## CP-77 — Round-one media-only cleanup (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source audit | `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)` contains 32 files: 14 images and 18 MP4 videos. All 32 have an exact SHA-256 match in the public phase directories. |
+| Cleanup | Removed 14 extra TikTok image variants absent from the source folder. No video was removed because all 18 public phase videos exactly match source files. The deletion remains recoverable from Git history. |
+| Exact-set proof | After cleanup: source files = 32, public phase files = 32, configured references = 32, unique references = 32. Missing references, configured/public files outside the source set, unused source files and unconfigured public files all equal zero. |
+| Data model | W2, W4, W5 and W6 now use single `poster` entries; W1 retains a two-image gallery and W3 retains the supplied eight-image Facebook carousel. JSON validation passed. |
+| Code gates | `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js security-reminder retry and validated all content/seed JSON. |
+| Desktop browser | Phase routes rendered 3 images/4 videos, 10 images/5 videos and 1 image/9 videos with no old TikTok phase paths or horizontal overflow. The W3 Facebook carousel and W6 poster/video layout were visually reviewed; loaded images had nonzero dimensions and all nine phase-three videos reached ready state 4 without media errors. |
+| Mobile browser | At 390 × 844, the same 3/4, 10/5 and 1/9 media counts rendered with document scroll width equal to client width 375. The W3 carousel stacked cleanly and the console reported no warnings/errors. |
+| Production state | CP-77 is locally verified and ready for CP-78 deployment. |

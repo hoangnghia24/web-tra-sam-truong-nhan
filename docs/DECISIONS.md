@@ -479,3 +479,11 @@
 
 - Publish source commit `a355821` through the existing GitHub/Vercel integration. Treat the simultaneous presence of all four uppercase headings, the 3/2/2/3 list structure and the final NPS sentence as the activation signal.
 - Use the same production browser pass to close CP-74 and CP-76: verify the five-factor cards and the TOWS cards at 1280 px and 390 px, require zero horizontal overflow, visible custom bullet markers and no console warnings/errors.
+
+## CP-77 round-one media-only cleanup (2026-11-26)
+
+- Scope “ảnh và video cũ” to campaign phase media under `public/images/phases` and `public/videos/phases`. Preserve the cover, product imagery, logo, portraits and certification documents because they are not phase publications.
+- Treat SHA-256 membership in `F:\DBC_ND2_DIGICHAMPS (VÒNG LOẠI)` as authoritative. The folder contains 14 images and 18 videos; every file already has one byte-identical public counterpart.
+- Delete the 14 extra TikTok image variants that have no source counterpart. Keep all 18 videos because all of them match the source folder exactly; there are no obsolete public phase videos.
+- Change four one-image galleries to `poster` records rather than weakening the gallery schema's two-image minimum.
+- Publish the verified cleanup through the existing `origin/main` and Vercel integration in CP-78, following the Sites workflow.
