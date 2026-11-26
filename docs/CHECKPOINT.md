@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-82
-Status: COMPLETE (five grouped risks deployed and verified on production)
-Last completed checkpoint: CP-82.
+Current checkpoint: CP-83
+Status: COMPLETE (simplified measurement paths implemented and verified locally; deployment pending)
+Last completed checkpoint: CP-83 (local source commit pending).
 
 ## Completed Work
 
+- Completed CP-83: replaced the detailed measurement flows with the exact LỐI 1, LỐI 2 and SAU MUA copy, passed all gates and verified desktop/mobile cards, arrows, overflow and console state locally.
 - Completed CP-82: pushed `2999002`, observed all five grouped risks become active on Vercel, expanded every accordion at desktop/mobile widths and verified exact signal counts, conclusion copy, no overflow and a clean console.
 - Completed CP-81: replaced nine fragmented risks with the five grouped rows from the supplied table, added semantic signal bullets, preserved the conclusion, passed all gates and verified expanded desktop/mobile accordions without overflow or console warnings.
 - Completed CP-80: pushed `c65cd36`, observed all 18 new `vong-loai-*` URLs become active, confirmed all rendered phase pages use only the new set, and verified 4/5/9 videos at desktop/mobile widths without media errors, overflow or console warnings.
@@ -97,7 +98,7 @@ Last completed checkpoint: CP-82.
 
 ## Current Task
 
-CP-82 is complete. Production now shows the five supplied risk groups with complete detail, prevention and response content while preserving the conclusion section.
+CP-83 is complete locally. The simplified three-path “Đo lường hiệu quả” block is ready for CP-84 production deployment.
 
 ## Completed Files
 
@@ -177,4 +178,4 @@ CP-82 is complete. Production now shows the five supplied risk groups with compl
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Resume after completed CP-82 from source commit `2999002` plus its documentation follow-up; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-84 deployment from the verified CP-83 source; preserve unrelated untracked source folders.

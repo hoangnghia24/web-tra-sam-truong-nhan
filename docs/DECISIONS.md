@@ -522,3 +522,10 @@
 - Use the simultaneous presence of all five grouped titles in production HTML as the activation signal because the public strategy API intentionally exposes only its compact summary and not the full report risk plan.
 - Require all accordions to open at both desktop and 390 × 844 mobile widths, with exact signal counts 2/1/2/1/2 and the five supplied severity labels.
 - Preserve the existing conclusion on production and verify its full text after the risk-group replacement.
+
+## CP-83 simplified measurement paths (2026-11-26)
+
+- Treat the typed request as authoritative and use the screenshot only to identify the existing three-card measurement block.
+- Replace the prior detailed LUỒNG A/B/C copy rather than appending new routes. Preserve the existing ordered-list rendering so CSS supplies a visible arrow between each of the three steps.
+- Match the requested heading and route labels exactly: “Đo lường hiệu quả”, “LỐI 1:”, “LỐI 2:” and “SAU MUA:”.
+- Publish through the existing `origin/main` and Vercel integration in CP-84, following the Sites workflow.

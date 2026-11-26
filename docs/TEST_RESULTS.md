@@ -875,3 +875,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At the default 1280 viewport, all five production accordions expanded. Signal counts were exactly 2/1/2/1/2; the 40-million crisis reserve, Plan B timing and conclusion heading were present. Document scroll width equaled client width 1265. |
 | Mobile browser | At 390 × 844, all five accordions expanded with the same signal counts and severity labels. The complete conclusion remained present and document scroll width equaled client width 375. |
 | Console | The final production mobile review reported no warnings or errors. The temporary viewport override was reset after testing. |
+
+## CP-83 — Simplified measurement paths (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Exact copy | The heading is “Đo lường hiệu quả”. Cards render LỐI 1: Tiktok → Click gian hàng → Đơn; LỐI 2: KOC/Livestream → Click → Đơn; and SAU MUA: QR → Theo dõi OA → Mua lại. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js security-reminder retry. |
+| Desktop browser | At the default 1280 viewport, the measurement grid measured 1180 px wide and rendered three equal cards in one row with all arrows and text visible. Document scroll width equaled client width 1265. |
+| Mobile browser | At 390 × 844, the cards stacked in a single 334.667 px column. All steps and arrows remained on readable lines, document scroll width equaled client width 375 and the console reported no warnings/errors. |
+| Production state | CP-83 is locally verified and ready for CP-84 deployment. |

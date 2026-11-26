@@ -226,27 +226,27 @@
     ],
     "measurement": [
       {
-        "title": "LUỒNG A:",
+        "title": "LỐI 1:",
         "steps": [
-          "Video TikTok/Reels",
-          "Microsite “Hóa đơn chờ đợi” → CTA Shop",
-          "Đơn hợp lệ"
+          "Tiktok",
+          "Click gian hàng",
+          "Đơn"
         ]
       },
       {
-        "title": "LUỒNG B:",
+        "title": "LỐI 2:",
         "steps": [
-          "KOC/LIVE/UGC",
-          "Giỏ TikTok Shop",
-          "Minh bạch 3% Sâm Ngọc Linh → Mua"
+          "KOC/Livestream",
+          "Click",
+          "Đơn"
         ]
       },
       {
-        "title": "LUỒNG C:",
+        "title": "SAU MUA:",
         "steps": [
-          "Quét QR → Zalo OA",
-          "Pha ủ 5–7 phút → NPS",
-          "Nhắc mua lại"
+          "QR",
+          "Theo dõi OA",
+          "Mua lại"
         ]
       }
     ]

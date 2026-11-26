@@ -128,6 +128,21 @@
 - [x] Confirm no horizontal overflow or browser console warnings/errors.
 - [x] Record and push the final production evidence.
 
+## CP-83 — Simplify measurement paths
+
+- [x] Replace the section heading with the supplied “Đo lường hiệu quả” casing.
+- [x] Replace LUỒNG A/B/C with LỐI 1, LỐI 2 and SAU MUA.
+- [x] Use the exact three requested steps in each path.
+- [x] Pass JSON, lint, typecheck, test and production-build gates.
+- [x] Verify exact copy, arrows, three-column desktop layout, single-column mobile layout, overflow and console state locally.
+
+## CP-84 — Deploy simplified measurement paths
+
+- [ ] Commit and push the verified CP-83 source.
+- [ ] Wait for the three new paths to become active on production.
+- [ ] Verify exact copy and responsive layout on production.
+- [ ] Record and push the final production evidence.
+
 | Status | Task |
 | --- | --- |
 | DONE | Verify both requested asset paths, inspect source image and 38-page PDF. |

@@ -87,5 +87,7 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-80 Production deployment | Push CP-79 through the existing GitHub/Vercel path, wait for all new video paths to become active, then verify new MP4 range responses, retired old URLs, phase pages and browser playback on production. |
 | CP-81 Consolidated risk and conclusion section | Replace nine fragmented risk rows with the five grouped risk categories from the supplied table, retain every severity, prevention and response detail, render grouped signals as semantic bullets, and verify responsive accordion behavior locally. |
 | CP-82 Production deployment | Push CP-81 through the existing GitHub/Vercel path, wait for the five grouped risks to become active, then verify exact live API content, accordion expansion, responsive layout and console state. |
+| CP-83 Simplified measurement paths | Replace the three detailed measurement routes with the exact LỐI 1, LỐI 2 and SAU MUA steps supplied by the user, use the requested section-heading casing, and verify the three-card desktop/mobile layout locally. |
+| CP-84 Production deployment | Push CP-83 through the existing GitHub/Vercel path, wait for the simplified measurement paths to become active, then verify exact production copy, arrows, responsive stacking and console state. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

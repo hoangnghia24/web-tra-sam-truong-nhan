@@ -18,7 +18,7 @@ export function ChannelJourney({ content }: { content: ChannelJourneyContent }) 
       </article>)}
     </div>
     <div className="channel-measurement">
-      <h3>ĐO LƯỜNG HIỆU QUẢ</h3>
+      <h3>Đo lường hiệu quả</h3>
       <div className="channel-measurement-grid">
         {content.measurement.map((route) => <article key={route.title}>
           <h4>{route.title}</h4>
