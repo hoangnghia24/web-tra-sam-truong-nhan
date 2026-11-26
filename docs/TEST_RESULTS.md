@@ -885,3 +885,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At the default 1280 viewport, the measurement grid measured 1180 px wide and rendered three equal cards in one row with all arrows and text visible. Document scroll width equaled client width 1265. |
 | Mobile browser | At 390 × 844, the cards stacked in a single 334.667 px column. All steps and arrows remained on readable lines, document scroll width equaled client width 375 and the console reported no warnings/errors. |
 | Production state | CP-83 is locally verified and ready for CP-84 deployment. |
+
+## CP-84 — Simplified measurement production deployment (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed commit `027d537` to `origin/main`; unrelated untracked source folders remained outside the release. |
+| Deployment signal | Production HTML exposed LỐI 1, Click gian hàng, KOC/Livestream and Theo dõi OA together, confirming the new version was active. |
+| Desktop browser | Production rendered the exact heading, labels and 3 × 3 steps in three equal 382.667 px columns. Document scroll width equaled client width 1265. |
+| Mobile browser | At 390 × 844, the three cards stacked in one 334.667 px column with all arrows and text present. Document scroll width equaled client width 375. |
+| Console | The final production mobile review reported no warnings or errors. The temporary viewport override was reset after testing. |

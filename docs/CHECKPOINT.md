@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-83
-Status: COMPLETE (simplified measurement paths implemented and verified locally; deployment pending)
-Last completed checkpoint: CP-83 (local source commit pending).
+Current checkpoint: CP-84
+Status: COMPLETE (simplified measurement paths deployed and verified on production)
+Last completed checkpoint: CP-84.
 
 ## Completed Work
 
+- Completed CP-84: pushed `027d537`, observed the exact LỐI 1, LỐI 2 and SAU MUA paths become active on Vercel, and verified three-column desktop plus single-column mobile rendering without overflow or console warnings.
 - Completed CP-83: replaced the detailed measurement flows with the exact LỐI 1, LỐI 2 and SAU MUA copy, passed all gates and verified desktop/mobile cards, arrows, overflow and console state locally.
 - Completed CP-82: pushed `2999002`, observed all five grouped risks become active on Vercel, expanded every accordion at desktop/mobile widths and verified exact signal counts, conclusion copy, no overflow and a clean console.
 - Completed CP-81: replaced nine fragmented risks with the five grouped rows from the supplied table, added semantic signal bullets, preserved the conclusion, passed all gates and verified expanded desktop/mobile accordions without overflow or console warnings.
@@ -98,7 +99,7 @@ Last completed checkpoint: CP-83 (local source commit pending).
 
 ## Current Task
 
-CP-83 is complete locally. The simplified three-path “Đo lường hiệu quả” block is ready for CP-84 production deployment.
+CP-84 is complete. Production now shows the exact simplified “Đo lường hiệu quả” paths requested by the user.
 
 ## Completed Files
 
@@ -178,4 +179,4 @@ CP-83 is complete locally. The simplified three-path “Đo lường hiệu qu�
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-84 deployment from the verified CP-83 source; preserve unrelated untracked source folders.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Resume after completed CP-84 from source commit `027d537` plus its documentation follow-up; preserve unrelated untracked source folders.

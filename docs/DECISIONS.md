@@ -529,3 +529,8 @@
 - Replace the prior detailed LUỒNG A/B/C copy rather than appending new routes. Preserve the existing ordered-list rendering so CSS supplies a visible arrow between each of the three steps.
 - Match the requested heading and route labels exactly: “Đo lường hiệu quả”, “LỐI 1:”, “LỐI 2:” and “SAU MUA:”.
 - Publish through the existing `origin/main` and Vercel integration in CP-84, following the Sites workflow.
+
+## CP-84 simplified measurement production deployment (2026-11-26)
+
+- Use the simultaneous presence of the four exact strings “LỐI 1:”, “Click gian hàng”, “KOC/Livestream” and “Theo dõi OA” in production HTML as the activation signal.
+- Require the production grid to retain three equal desktop columns and one mobile column, with scroll width equal to client width and no console warnings/errors.

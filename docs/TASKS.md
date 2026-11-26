@@ -138,10 +138,10 @@
 
 ## CP-84 — Deploy simplified measurement paths
 
-- [ ] Commit and push the verified CP-83 source.
-- [ ] Wait for the three new paths to become active on production.
-- [ ] Verify exact copy and responsive layout on production.
-- [ ] Record and push the final production evidence.
+- [x] Commit and push the verified CP-83 source.
+- [x] Wait for the three new paths to become active on production.
+- [x] Verify exact copy and responsive layout on production.
+- [x] Record and push the final production evidence.
 
 | Status | Task |
 | --- | --- |
