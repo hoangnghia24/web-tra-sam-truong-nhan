@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: 'website', locale: 'vi_VN', siteName: 'Trà Sâm Trường Nhân',
     title: 'Trà Sâm Trường Nhân — Sâm không đợi dịp',
     description: 'Một khoảng dừng nhỏ để bắt đầu chăm sóc bản thân hôm nay.',
-    images: process.env.NEXT_PUBLIC_SITE_URL ? [{ url: new URL('/images/truong-nhan-cover.png', process.env.NEXT_PUBLIC_SITE_URL).toString(), width: 1920, height: 1080, alt: 'Trà Sâm Trường Nhân' }] : undefined,
+    images: process.env.NEXT_PUBLIC_SITE_URL ? [{ url: new URL('/images/truong-nhan-cover-v2.png', process.env.NEXT_PUBLIC_SITE_URL).toString(), width: 1920, height: 1080, alt: 'Trà Sâm Trường Nhân' }] : undefined,
   },
   robots: { index: true, follow: true },
   icons: { icon: { url: '/images/logo-truong-nhan.png', type: 'image/png' } },

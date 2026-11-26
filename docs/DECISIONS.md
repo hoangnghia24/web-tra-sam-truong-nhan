@@ -432,3 +432,11 @@
 - Deploy CP-68 commit `0900c5d` through `origin/main` and the existing Vercel integration under the user's explicit production request. Treat the live receipt transition from HTTP 500 to a 201 response containing `storage: "ephemeral"` as the authoritative deployment signal when the unauthenticated GitHub status API is rate-limited.
 - Verify media in two layers: HTTP 200/206 responses with real byte lengths for certificate images and representative MP4s, then responsive browser checks for visual rendering and video metadata.
 - Keep the source folders untracked and push only normalized public assets. Record the Git LFS upload count and total because this release adds 10 changed video objects.
+
+## CP-70 cover and latest campaign artwork (2026-11-26)
+
+- Treat `F:\vòng loại .png` as the requested replacement cover. Keep an exact copy at the required `public/images/truong-nhan-cover.png` path and use the identical versioned public path `truong-nhan-cover-v2.png` in rendered/metadata references so existing Next Image and browser caches cannot retain the old artwork.
+- Preserve the existing 1920 × 1080 intrinsic dimensions and uncropped 16:9 layout. Do not add overlay text because the artwork already contains campaign and product typography.
+- Treat SHA-256 equality as the authoritative reconciliation for `anh_moi_nhat`: all 46 non-certificate source files have exactly one configured public counterpart, and no configured phase asset falls outside the new source set.
+- Remove five tracked legacy posters only after confirming that no source or content JSON references them. Their deletion is recoverable from Git history; all 46 currently rendered images/videos remain intact.
+- Keep CP-70 local because the user asked for editing but did not explicitly request a production deployment in this turn.

@@ -730,3 +730,16 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Video delivery | Representative W1, W4, W6 and W8 MP4s returned HTTP 206, `video/mp4`, 1,024-byte ranges and full-file lengths rather than Git LFS pointer text. |
 | Production browser | At 390 px, the homepage used Mulish body/Spectral display type, showed four intact certificate images and had no horizontal overflow. The detailed receipt created a TN code and displayed the nonpersistent-production notice. Strategy rendered six PESTEL cards, four TOWS entries, five funnel rows and six monitoring rows without the global error page. |
 | Production media | Five videos on `/giai-doan/lam-ngay` loaded to ready state 4 with nonzero 1080×1920 or 720×1280 metadata and no media errors. Browser console QA found no warnings or errors. |
+
+## CP-70 — Cover and latest campaign artwork (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Cover source | `F:\vòng loại .png` is 1920 × 1080, 3,089,925 bytes and SHA-256 `F62387572911E4D5D0878170EF952C1BF5FD7CD22A0F24D0030093B1D6CE2592`. Both public cover copies match it exactly. |
+| Cache handling | Reusing the prior optimized URL served the stale cover locally. A query-string cache key was rejected by Next Image because it was not in `images.localPatterns`; the final versioned filename loads successfully and avoids both failure modes. |
+| Latest-media audit | `anh_moi_nhat` contains 46 phase files outside the four certificate images. Campaign data contains 46 unique phase references; every public file exists, every SHA-256 matches the latest source set, and no latest source asset is unused. |
+| Legacy cleanup | Removed five tracked, unreferenced old posters from `public/images/phases`. Repository search confirmed no source or content reference to those paths before removal. |
+| Code gates | `npm run lint` passed; `npm run test` passed 10 tests; `npm run build` passed after the required security-reminder retry and validated all 10 content and five seed JSON files. |
+| Cover browser QA | At 390 px and 1440 px, the versioned cover loaded with a 1.7778 ratio, no broken image and no horizontal overflow. Screenshots showed the new turquoise package artwork and the added campaign marks. |
+| Phase browser QA | At 390 px, phase routes rendered 6 images/4 videos, 20 images/5 videos and 2 images/9 videos respectively, with no horizontal overflow or loaded broken images. All nine phase-three videos reached ready state 4 with nonzero metadata and no media errors; console QA reported no warnings or errors. |
+| Production | Not pushed or deployed; the live site remains on CP-69 pending an explicit deployment request. |

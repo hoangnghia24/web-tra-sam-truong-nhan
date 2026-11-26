@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-69
-Status: COMPLETE (production deployment and verification)
-Last completed checkpoint: CP-69 (production source commit `0900c5d`).
+Current checkpoint: CP-70
+Status: COMPLETE (cover and latest campaign media verified locally)
+Last completed checkpoint: CP-70 (local cover/media source commit pending).
 
 ## Completed Work
 
+- Completed CP-70: replaced the cover with the supplied 1920 × 1080 artwork, added a versioned cover URL to bypass stale optimized-image caches, proved all 46 rendered phase assets match `anh_moi_nhat` by SHA-256, removed five unreferenced legacy posters, and passed local build and responsive browser QA.
 - Completed CP-69: pushed `0900c5d` and 390 MB of Git LFS media to `origin/main`, observed the live receipt endpoint switch from HTTP 500 to 201, and verified production routes, exact campaign data, certificates, media ranges, mobile receipt creation, strategy content and responsive layout.
 - Completed CP-68: repaired receipt creation on Vercel with an explicit ephemeral response, applied the supplied Word revisions, added four prominent certificate/document images, mapped all latest phase assets, and passed the complete local gate and responsive browser review.
 - Completed CP-67: pushed CP-66 to `origin/main`, observed Vercel success, and verified live campaign data, phase routes, poster loading, MP4 byte ranges, responsive order and playback of all nine videos.
@@ -84,7 +85,7 @@ Last completed checkpoint: CP-69 (production source commit `0900c5d`).
 
 ## Current Task
 
-CP-69 is complete. Production source commit `0900c5d` is live at `https://web-tra-sam-truong-nhan.vercel.app`; continue from the next user request.
+CP-70 is complete locally. The supplied cover and every current phase asset are verified; production remains on CP-69 until the user explicitly requests deployment.
 
 ## Completed Files
 
@@ -164,4 +165,4 @@ CP-69 is complete. Production source commit `0900c5d` is live at `https://web-tr
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated untracked source folders. CP-69 is deployed and verified on production.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated untracked source folders. CP-70 is locally verified but not deployed.

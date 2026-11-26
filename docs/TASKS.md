@@ -22,6 +22,16 @@
 - [x] Verify mobile homepage, receipt creation, strategy content and phase-video metadata in the production browser.
 - [x] Record deployment evidence and leave original source-asset directories untracked.
 
+## CP-70 — Replace cover and reconcile latest campaign artwork
+
+- [x] Inspect the supplied and current cover images and confirm both are 1920 × 1080.
+- [x] Audit all 46 phase media references against `anh_moi_nhat` by SHA-256.
+- [x] Replace the stable public cover asset and use a versioned URL without changing crop behavior.
+- [x] Remove five unreferenced legacy posters; retain all 46 current media assets.
+- [x] Run focused code/build checks and responsive browser QA.
+- [x] Record the local result and commit the verified asset change.
+- [x] Keep production unchanged until the user explicitly requests deployment.
+
 | Status | Task |
 | --- | --- |
 | DONE | Verify both requested asset paths, inspect source image and 38-page PDF. |

@@ -7,6 +7,7 @@ import { TrackedLink } from '@/components/site/TrackedLink';
 import { CertificationGallery } from '@/components/product/CertificationGallery';
 
 export const dynamic = 'force-dynamic';
+const coverImage = '/images/truong-nhan-cover-v2.png';
 
 export default async function HomePage() {
   const [brand, campaign, product, team] = await Promise.all([
@@ -19,7 +20,7 @@ export default async function HomePage() {
   return (
     <main id="main">
       <section className="cover-hero" aria-label="Trà Sâm Trường Nhân">
-        <Image src="/images/truong-nhan-cover.png" alt="Trà Sâm Trường Nhân: hộp trà, túi lọc và tách trà bên núi Ngọc Linh" width={1920} height={1080} priority sizes="100vw" className="cover-image" />
+        <Image src={coverImage} alt="Trà Sâm Trường Nhân: hộp trà, túi lọc và tách trà bên núi Ngọc Linh" width={1920} height={1080} priority sizes="100vw" className="cover-image" />
       </section>
 
       <section className="intro-panel" aria-labelledby="home-intro-title">
@@ -100,7 +101,7 @@ export default async function HomePage() {
             <div className="product-feature-facts"><div><strong>{product.packCount} × {product.gramsPerBag}g</strong><span>Mỗi hộp</span></div><div><strong>{product.brewMinutesMin}–{product.brewMinutesMax} phút</strong><span>Thời gian pha gợi ý</span></div></div>
             <TrackedLink className="editorial-link" href="/san-pham" type="product_clicked">Khám phá sản phẩm <ArrowUpRight size={16} aria-hidden="true" /></TrackedLink>
           </div>
-          <div className="product-feature-visual"><Image src="/images/truong-nhan-cover.png" alt="Trọn bộ hình ảnh sản phẩm Trà Sâm Trường Nhân" width={1920} height={1080} sizes="(max-width: 800px) 100vw, 50vw" /><span className="image-seal"><Leaf size={18} aria-hidden="true" /> Tinh hoa từ núi Ngọc Linh</span></div>
+          <div className="product-feature-visual"><Image src={coverImage} alt="Trọn bộ hình ảnh sản phẩm Trà Sâm Trường Nhân" width={1920} height={1080} sizes="(max-width: 800px) 100vw, 50vw" /><span className="image-seal"><Leaf size={18} aria-hidden="true" /> Tinh hoa từ núi Ngọc Linh</span></div>
         </div>
       </section>
 
