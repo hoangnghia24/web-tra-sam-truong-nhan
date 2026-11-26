@@ -3,6 +3,11 @@ import type { strategyReportSchema } from '@/lib/schemas';
 
 type MarketContextContent = z.infer<typeof strategyReportSchema>['marketContext'];
 
+function splitDriver(driver: string) {
+  const [title, description = ''] = driver.split(' — ');
+  return { title, description };
+}
+
 export function MarketContext({ content }: { content: MarketContextContent }) {
   return <div className="market-context">
     <div className="market-truth">
@@ -19,10 +24,17 @@ export function MarketContext({ content }: { content: MarketContextContent }) {
       </article>)}</div>
     </div>
 
-    <div className="market-motivation">
-      <div><h3>Động cơ mua hàng:</h3><p>{content.motivation}</p></div>
-      <div><h3>Các yếu tố có thể thúc đẩy quyết định mua:</h3><ul>{content.drivers.map((driver) => <li key={driver}>{driver}</li>)}</ul></div>
-    </div>
+    <section className="market-drivers" aria-labelledby="market-drivers-title">
+      <p className="market-drivers-eyebrow">Quyết định mua</p>
+      <h3 id="market-drivers-title">5 YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH MUA</h3>
+      <ol className="market-driver-grid">{content.drivers.map((driver, index) => {
+        const { title, description } = splitDriver(driver);
+        return <li key={driver}>
+          <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+          <div><h4>{title}</h4><p>{description}</p></div>
+        </li>;
+      })}</ol>
+    </section>
 
    </div>;
 }

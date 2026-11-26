@@ -768,3 +768,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop cover | At the default 1280 viewport, production loaded the versioned cover at 1280 × 720 and rendered it uncropped at 1265 × 711; document width was 1265. |
 | Strategy content | Production contained the 318,9-trillion marketplace figure, 5,4-million income figure, 76,1-million TikTok reach qualification, approximately 87% packaging statistic, TikTok/Reels split, TikTok Shop/Shopee split, phase dates and S-T trust objective. |
 | Typography and console | At 390 px, body/interface copy computed to Mulish and the H1 to Spectral. The strategy page had no horizontal overflow and the browser console reported no warnings or errors. |
+
+## CP-73 — Five purchase factors interface (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Copy | The section heading is exactly “5 YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH MUA”. Cards render 01–05 with the supplied Giá cả, Chất lượng, Niềm tin, Trải nghiệm and Ưu đãi descriptions, without the old motivation paragraph. |
+| Semantics | The panel is a labelled section containing an ordered list; each factor has a heading and description while the visible two-digit number is decorative for assistive technology. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js security-reminder retry. |
+| Desktop browser | At 1280 px, the section measured 1180 × 663 px with no horizontal overflow. Cards 01–03 measured 340 × 170 px; cards 04–05 measured 518 × 170 px. The reviewed screenshot showed clean alignment and readable copy. |
+| Mobile browser | At 390 × 844, document width was 375 and the section measured approximately 335 × 917 px. All five cards stacked in one column at 271 px wide with no clipping, overflow, console warnings or errors. |
+| Production state | CP-73 is locally verified and ready for CP-74 deployment. |

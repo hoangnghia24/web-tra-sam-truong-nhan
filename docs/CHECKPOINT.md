@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-72
-Status: COMPLETE (final cover and Word details deployed and verified)
-Last completed checkpoint: CP-72 (production source commit `54e6b28`).
+Current checkpoint: CP-73
+Status: COMPLETE (five purchase-factor cards verified locally; deployment pending)
+Last completed checkpoint: CP-73 (local source commit pending).
 
 ## Completed Work
 
+- Completed CP-73: replaced the former purchase-motivation split panel with an exact five-factor card interface and verified balanced desktop rows plus a single-column mobile layout without overflow or console errors.
 - Completed CP-72: pushed the CP-70/CP-71 source through `origin/main`, observed the versioned cover and detailed strategy copy become active on Vercel, and verified mobile/desktop production rendering with no console errors.
 - Completed CP-71: re-read all 109 Word paragraphs, nine tables and 11 embedded screenshots, found four groups of overly compressed strategy copy, restored the supplied detail, and verified the versioned cover plus strategy page at mobile and desktop widths.
 - Completed CP-70: replaced the cover with the supplied 1920 × 1080 artwork, added a versioned cover URL to bypass stale optimized-image caches, proved all 46 rendered phase assets match `anh_moi_nhat` by SHA-256, removed five unreferenced legacy posters, and passed local build and responsive browser QA.
@@ -87,7 +88,7 @@ Last completed checkpoint: CP-72 (production source commit `54e6b28`).
 
 ## Current Task
 
-CP-72 is complete. The supplied cover and detailed Word revisions are active and verified on production.
+CP-73 is complete locally. The exact five-factor interface is ready for the CP-74 production deployment.
 
 ## Completed Files
 
@@ -167,4 +168,4 @@ CP-72 is complete. The supplied cover and detailed Word revisions are active and
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated untracked source folders. CP-72 is deployed and verified.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-74 deployment from the verified local source; preserve unrelated untracked source folders.

@@ -48,6 +48,22 @@
 - [x] Verify the versioned cover and detailed strategy content on production.
 - [x] Record the production result and commit the final checkpoint evidence.
 
+## CP-73 — Five purchase factors interface
+
+- [x] Replace the old motivation/list panel with one semantic five-factor section.
+- [x] Use the exact supplied title, numbering, labels and descriptions.
+- [x] Balance three cards on the first desktop row and two wider cards on the second.
+- [x] Stack all five cards in one column on mobile.
+- [x] Pass JSON validation, lint, typecheck, 10 tests and the production build.
+- [x] Verify copy, dimensions, overflow and console state at 1280 px and 390 px.
+
+## CP-74 — Deploy five purchase factors interface
+
+- [ ] Commit and push the verified CP-73 source.
+- [ ] Wait for the Vercel production build to become active.
+- [ ] Verify the five cards, exact copy and responsive layout on production.
+- [ ] Record and push the final production evidence.
+
 | Status | Task |
 | --- | --- |
 | DONE | Verify both requested asset paths, inspect source image and 38-page PDF. |

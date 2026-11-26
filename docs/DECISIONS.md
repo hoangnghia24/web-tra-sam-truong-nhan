@@ -454,3 +454,11 @@
 - Push the three verified source commits from `2d896b5..54e6b28` to `origin/main`; preserve the original media source folders as untracked workspace inputs.
 - Treat the exact SHA-256 match of `/images/truong-nhan-cover-v2.png` plus the presence of the restored strategy markers in server-rendered HTML as the deployment signal before browser QA.
 - Verify the production cover at both 390 px and the default 1280 px viewport, then verify the detailed strategy copy, typography, console and horizontal overflow at 390 px.
+
+## CP-73 five purchase factors interface (2026-11-26)
+
+- Replace the complete two-column “Động cơ mua hàng” block shown in the supplied screenshot, not only its right-hand list. The requested five factors become the single purpose of the panel.
+- Render the factors as an ordered semantic list with visible 01–05 labels. Preserve the forest-green and muted-gold brand treatment while giving each factor its own bordered card.
+- Use a six-column desktop grid so cards 01–03 occupy equal thirds and cards 04–05 occupy equal halves; collapse to two columns at intermediate widths and one column below 800 px.
+- Keep the visitor copy data-backed in `strategy-report.json`; split the existing title/description delimiter only for presentation.
+- Publish the completed interface through the existing `origin/main` and Vercel integration in CP-74, following the Sites workflow for requested website edits.

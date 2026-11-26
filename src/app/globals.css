@@ -577,24 +577,25 @@ img { display: block; max-width: 100%; }
 .market-truth > span { color: var(--brand-gold-text); font-size: .88rem; font-weight: 800; }
 .market-truth blockquote { max-width: 850px; margin: 0; color: var(--brand-forest); font-family: var(--type-display); font-size: clamp(1.4rem, 2.4vw, 2rem); font-style: italic; line-height: 1.35; }
 .market-pains { margin-top: clamp(3rem, 6vw, 5rem); }
-.market-pains h3, .market-motivation h3 { margin: 0 0 1.4rem; font-family: var(--type-display); font-size: clamp(1.6rem, 2.6vw, 2.3rem); font-weight: 600; line-height: 1.2; }
+.market-pains h3 { margin: 0 0 1.4rem; font-family: var(--type-display); font-size: clamp(1.6rem, 2.6vw, 2.3rem); font-weight: 600; line-height: 1.2; }
 .market-pain-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .market-pain-grid article { min-height: 205px; padding: clamp(1.5rem, 2.5vw, 2rem); border-top: 2px solid var(--brand-gold); border-radius: 18px; background: var(--brand-ivory); }
 .market-pain-grid span { color: var(--brand-gold-text); font-family: var(--type-display); font-size: 1.45rem; }
 .market-pain-grid h4 { margin: .9rem 0 .45rem; color: var(--brand-forest); font-size: 1.35rem; font-weight: 600; }
 .market-pain-grid p { margin: 0; color: var(--text-secondary); font-size: .9rem; }
-.market-motivation { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: stretch; gap: clamp(2rem, 5vw, 5rem); margin-top: 1rem; padding: clamp(1.8rem, 4vw, 3.5rem); border-radius: 18px; background: var(--brand-forest); color: var(--brand-ivory); }
-.market-motivation > div { display: flex; min-width: 0; height: 100%; flex-direction: column; }
-.market-motivation h3 { color: var(--brand-gold-light); }
-.market-motivation p, .market-motivation ul { margin-top: 0; margin-bottom: 0; color: #d8e6d5; font-family: var(--type-body); font-size: 1rem; font-weight: 400; line-height: 1.6; }
-.market-motivation ul { padding-left: 1.25rem; }
-.market-motivation li + li { margin-top: .25rem; }
-.market-motivation p { max-width: 360px; }
-@media (min-width: 1051px) {
-  .market-motivation h3 { min-height: 2.4em; }
-}
-@media (max-width: 1050px) {
-  .market-motivation { grid-template-columns: 1fr; }
+.market-drivers { margin-top: 1rem; padding: clamp(2rem, 5vw, 4rem); border-radius: 18px; background: var(--brand-forest); color: var(--brand-ivory); }
+.market-drivers-eyebrow { margin: 0 0 .65rem; color: var(--brand-gold-light); font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.market-drivers h3 { width: min(100%, 850px); margin: 0; color: var(--brand-gold-light); font-family: var(--type-display); font-size: clamp(1.8rem, 3.5vw, 3.2rem); font-weight: 600; line-height: 1.08; }
+.market-driver-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem; margin: clamp(2rem, 4vw, 3.25rem) 0 0; padding: 0; list-style: none; }
+.market-driver-grid li { display: grid; grid-column: span 2; grid-template-columns: auto minmax(0, 1fr); gap: 1rem; min-height: 170px; padding: clamp(1.25rem, 2vw, 1.7rem); border: 1px solid rgba(226, 199, 124, .34); border-radius: 16px; background: rgba(255, 245, 220, .075); }
+.market-driver-grid li:nth-last-child(-n + 2) { grid-column: span 3; }
+.market-driver-grid li > span { color: var(--brand-gold-light); font-family: var(--type-display); font-size: 1.15rem; line-height: 1.2; }
+.market-driver-grid h4 { margin: 0; color: var(--brand-ivory); font-family: var(--type-display); font-size: clamp(1.3rem, 2vw, 1.7rem); font-weight: 600; line-height: 1.15; }
+.market-driver-grid p { margin: .65rem 0 0; color: #d8e6d5; font-size: 1rem; line-height: 1.55; }
+@media (max-width: 950px) {
+  .market-driver-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .market-driver-grid li, .market-driver-grid li:nth-last-child(-n + 2) { grid-column: span 1; }
+  .market-driver-grid li:last-child { grid-column: 1 / -1; }
 }
 .market-context-note { margin: 1rem 0 0; color: var(--text-secondary); font-size: .8rem; }
 .report-pestel { background: #f5f1e6; }
@@ -912,9 +913,11 @@ img { display: block; max-width: 100%; }
 @media (max-width: 800px) {
   .home-certifications-heading { grid-template-columns: 1fr; gap: 0; }
   .pestel-grid { grid-template-columns: 1fr; }
-  .market-truth, .market-pain-grid, .market-motivation { grid-template-columns: 1fr; }
+  .market-truth, .market-pain-grid { grid-template-columns: 1fr; }
   .market-truth { gap: .75rem; }
   .market-pain-grid article { min-height: 0; }
+  .market-driver-grid { grid-template-columns: 1fr; }
+  .market-driver-grid li, .market-driver-grid li:last-child { grid-column: auto; min-height: 0; }
   .positioning-pillars ol, .positioning-roles > div { grid-template-columns: 1fr; }
   .positioning-highlight { align-items: flex-start; flex-direction: column; gap: .8rem; }
   .positioning-highlight p { justify-content: flex-start; }
