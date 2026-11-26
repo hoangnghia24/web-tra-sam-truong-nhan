@@ -933,3 +933,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Local browser | The default-width page showed the revised SWOT text, all four exact TOWS headings, 4/4/4/4 action counts and `≈ 3,02×`; old TOWS copy was absent and there was no horizontal overflow. |
 | Mobile browser | At 390 × 844, the TOWS cards stacked with complete copy, document width remained 375 px, no horizontal overflow occurred, and the browser console had no warnings or errors. The temporary viewport override was reset. |
 | Production state | CP-87 is locally verified and ready for CP-88 deployment. |
+
+## CP-88 — Strategy data production deployment (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed commit `51645e9` to `origin/main`; untracked source-media folders remained outside the release. |
+| Deployment signal | Production `/chien-luoc` returned HTTP 200 and exposed all 40 audited revised SWOT, TOWS and KPI strings. Representative old TOWS, Hero Video and `≈ 3,30×` strings were absent. `/api/strategy` exposed `Lượt xem Video chính` and the `3,02` value. |
+| Desktop browser | At 1280 px, production rendered the four exact TOWS headings, 4/4/4/4 TOWS action counts, five selected Strength items and `≈ 3,02×`. Document scroll width equaled client width 1265. |
+| Mobile browser | At 390 × 844, the same TOWS headings and counts rendered with complete copy; document scroll width equaled client width 375. |
+| Console | The final production browser review reported no warnings or errors, and the temporary viewport override was reset. |

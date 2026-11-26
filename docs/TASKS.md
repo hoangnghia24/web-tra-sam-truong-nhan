@@ -220,6 +220,6 @@
 | DONE | CP-85: replaced all 14 phase images from the adjusted round-one set, preserved the 18 videos, applied the supplied 28-row weekly plan as “Đã làm”, moved titles below media and unified the site on Mulish; verified locally. |
 | DONE | CP-86: pushed CP-85 to production and verified live campaign data, exact image hashes, captions, Mulish typography and responsive phase pages. |
 | DONE | CP-87: reconciled the edited strategy JSON with its schema and page, removed the stale TOWS summary read, rendered four updated actions per quadrant, and passed local data/code/build/browser checks. |
-| IN_PROGRESS | CP-88: deploy the reconciled strategy data and verify the production strategy page. |
+| DONE | CP-88: deployed the reconciled strategy data and verified exact production TOWS/SWOT/KPI copy, responsive layout and console state. |
 
 Typography amendment: the latest user brief supersedes the prior two-font treatment. The public site now uses self-hosted Mulish for display and interface copy, minimizing font variation while retaining Vietnamese glyph coverage.
