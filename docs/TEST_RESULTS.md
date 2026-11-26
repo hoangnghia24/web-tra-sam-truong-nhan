@@ -910,3 +910,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Mobile browser | At 390 × 844, the same activity/media counts and caption ordering held. The W3 carousel loaded all ten images on the page, its supplied title appeared beneath the final row, and document scroll width equaled client width 375 on all three routes. |
 | Visual review | The adjusted vertical artwork and bottom gallery caption were visually inspected. The browser reported no media errors; the temporary responsive viewport was reset. |
 | Production state | CP-85 is locally verified and ready for CP-86 deployment. |
+
+## CP-86 — Round-one artwork production deployment (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed `15a0397..b63e18a` to `origin/main`. The commit contains only the requested campaign media/content/typography work and checkpoint records; unrelated source folders and pre-existing strategy edits remained outside the release. |
+| Deployment signal | Production `/api/campaign` exposed the new W1–W8 titles and `vong-loai-*` image paths on the first post-push poll. It reports 28 activities, all 28 `done`, 14 image references and 18 video references. |
+| Image integrity | All 14 new production image URLs returned HTTP 200. Their byte lengths and SHA-256 hashes exactly matched the committed files and adjusted source assets. |
+| Desktop browser | At 1280 px, phases rendered 8/10/10 activities and 7/8/10 media groups. Every status was “Đã làm”, every caption followed its visual, body/H1 computed to Mulish, no platform suffix remained and document scroll width equaled client width 1265. |
+| Mobile browser | At 390 × 844, the same activity/media counts, caption ordering and Mulish typography held. Document scroll width equaled client width 375 on all three phase routes. |
+| Console and media | All 18 videos remained configured and no video element reported a media error. The final production console contained no warnings or errors, and the temporary viewport override was reset. |

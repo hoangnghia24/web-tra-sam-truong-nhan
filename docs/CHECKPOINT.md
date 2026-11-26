@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-85
-Status: COMPLETE (round-one artwork, weekly plan and unified typography verified locally)
-Last completed checkpoint: CP-85.
+Current checkpoint: CP-86
+Status: COMPLETE (round-one artwork, weekly plan and unified typography deployed and verified)
+Last completed checkpoint: CP-86.
 
 ## Completed Work
 
+- Completed CP-86: pushed `b63e18a`, observed the new campaign data and all 14 image paths become active on Vercel, proved exact production image hashes and verified all three phase pages at desktop/mobile widths with Mulish typography, bottom captions, no overflow, no media errors and a clean console.
 - Completed CP-85: replaced all 14 phase images with the adjusted round-one files, preserved all 18 video bytes, aligned 28 activity titles/statuses with the supplied W1–W8 tables, moved every media title below its visual, removed platform suffixes and unified the site on self-hosted Mulish; all local gates and responsive browser checks passed.
 - Completed CP-84: pushed `027d537`, observed the exact LỐI 1, LỐI 2 and SAU MUA paths become active on Vercel, and verified three-column desktop plus single-column mobile rendering without overflow or console warnings.
 - Completed CP-83: replaced the detailed measurement flows with the exact LỐI 1, LỐI 2 and SAU MUA copy, passed all gates and verified desktop/mobile cards, arrows, overflow and console state locally.
@@ -180,4 +181,4 @@ CP-84 is complete. Production now shows the exact simplified “Đo lường hi�
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Resume at CP-86: commit and push the staged CP-85 release, verify Vercel production, then record live evidence. Preserve unrelated untracked source folders and the pre-existing strategy edits held outside this checkpoint.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Resume after completed CP-86 from source commit `b63e18a` plus its documentation follow-up. Preserve unrelated untracked source folders and pre-existing strategy edits outside this release.

@@ -218,6 +218,6 @@
 | DONE | CP-67: pushed CP-66 to production and verified Vercel success, live W1–W8 media order, poster loading, full MP4 responses and playback. |
 | SUPERSEDED | The prior Bogart/Fraunces display-font task is no longer required because CP-85 standardizes the site on Mulish. |
 | DONE | CP-85: replaced all 14 phase images from the adjusted round-one set, preserved the 18 videos, applied the supplied 28-row weekly plan as “Đã làm”, moved titles below media and unified the site on Mulish; verified locally. |
-| IN_PROGRESS | CP-86: push CP-85 to production and verify live campaign data, image hashes, captions, typography and responsive phase pages. |
+| DONE | CP-86: pushed CP-85 to production and verified live campaign data, exact image hashes, captions, Mulish typography and responsive phase pages. |
 
 Typography amendment: the latest user brief supersedes the prior two-font treatment. The public site now uses self-hosted Mulish for display and interface copy, minimizing font variation while retaining Vietnamese glyph coverage.
