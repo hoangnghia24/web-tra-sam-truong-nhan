@@ -448,3 +448,9 @@
 - Restore Word details that CP-68 had summarized too aggressively: five PESTEL evidence groups, four legal effective dates, TikTok/Reels and shop splits, all three phase date ranges, and the S-T trust objective.
 - Keep the supplied cover uncropped at 16:9, use the versioned public URL for cache invalidation, and retain the stable source path required by the Master Prompt.
 - Deploy the completed cover and Word reconciliation through the existing `origin/main` and Vercel integration in CP-72, following the user's continuing website-edit request and the Sites publication workflow.
+
+## CP-72 production deployment (2026-11-26)
+
+- Push the three verified source commits from `2d896b5..54e6b28` to `origin/main`; preserve the original media source folders as untracked workspace inputs.
+- Treat the exact SHA-256 match of `/images/truong-nhan-cover-v2.png` plus the presence of the restored strategy markers in server-rendered HTML as the deployment signal before browser QA.
+- Verify the production cover at both 390 px and the default 1280 px viewport, then verify the detailed strategy copy, typography, console and horizontal overflow at 390 px.

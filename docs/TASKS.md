@@ -43,10 +43,10 @@
 
 ## CP-72 — Deploy final cover and reconciled Word content
 
-- [ ] Commit and push the verified CP-70 and CP-71 source.
-- [ ] Wait for the Vercel production build to become active.
-- [ ] Verify the versioned cover and detailed strategy content on production.
-- [ ] Record the production result and commit the final checkpoint evidence.
+- [x] Commit and push the verified CP-70 and CP-71 source.
+- [x] Wait for the Vercel production build to become active.
+- [x] Verify the versioned cover and detailed strategy content on production.
+- [x] Record the production result and commit the final checkpoint evidence.
 
 | Status | Task |
 | --- | --- |

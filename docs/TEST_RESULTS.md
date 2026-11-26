@@ -757,3 +757,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Mobile browser | At 390 × 844, the versioned cover loaded at 390 × 219 intrinsic output and rendered uncropped at 372 × 209. The strategy page had document width 375 for a 390 viewport, no console warnings/errors, and rendered the restored PESTEL and phase-date copy. |
 | Desktop browser | At the default 1280 viewport, the versioned cover loaded at 1280 × 720 and rendered uncropped at 1265 × 711 with no horizontal overflow. |
 | Production state | Production still referenced `/images/truong-nhan-cover.png` before CP-72; the cover and final Word-detail repair were verified locally before deployment. |
+
+## CP-72 — Production deployment (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed `2d896b5..54e6b28` to `origin/main`, including the versioned cover, removal of five unreferenced legacy posters and the final Word-detail reconciliation. Original source folders remained untracked. |
+| Deployment signal | Production changed from HTTP 404 to HTTP 200 for `/images/truong-nhan-cover-v2.png`; its SHA-256 matched `F:\vòng loại .png` exactly. The strategy HTML simultaneously exposed the restored market statistic, phase date and funnel split. |
+| Mobile cover | At 390 × 844, production loaded the versioned cover at 390 × 219 intrinsic output and rendered it uncropped at 372 × 209; document width was 375 for a 390 viewport. |
+| Desktop cover | At the default 1280 viewport, production loaded the versioned cover at 1280 × 720 and rendered it uncropped at 1265 × 711; document width was 1265. |
+| Strategy content | Production contained the 318,9-trillion marketplace figure, 5,4-million income figure, 76,1-million TikTok reach qualification, approximately 87% packaging statistic, TikTok/Reels split, TikTok Shop/Shopee split, phase dates and S-T trust objective. |
+| Typography and console | At 390 px, body/interface copy computed to Mulish and the H1 to Spectral. The strategy page had no horizontal overflow and the browser console reported no warnings or errors. |
