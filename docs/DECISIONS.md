@@ -440,3 +440,11 @@
 - Treat SHA-256 equality as the authoritative reconciliation for `anh_moi_nhat`: all 46 non-certificate source files have exactly one configured public counterpart, and no configured phase asset falls outside the new source set.
 - Remove five tracked legacy posters only after confirming that no source or content JSON references them. Their deletion is recoverable from Git history; all 46 currently rendered images/videos remain intact.
 - Keep CP-70 local because the user asked for editing but did not explicitly request a production deployment in this turn.
+
+## CP-71 Word reconciliation and final cover (2026-11-26)
+
+- Treat the Word document as the requested content source, while treating its embedded screenshots as examples of the prior web state rather than operational instructions.
+- Preserve the existing campaign-plan disclaimers. Detailed market, survey, budget and KPI numbers remain attributed or labeled as planned figures, not proven results.
+- Restore Word details that CP-68 had summarized too aggressively: five PESTEL evidence groups, four legal effective dates, TikTok/Reels and shop splits, all three phase date ranges, and the S-T trust objective.
+- Keep the supplied cover uncropped at 16:9, use the versioned public URL for cache invalidation, and retain the stable source path required by the Master Prompt.
+- Deploy the completed cover and Word reconciliation through the existing `origin/main` and Vercel integration in CP-72, following the user's continuing website-edit request and the Sites publication workflow.

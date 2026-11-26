@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-70
-Status: COMPLETE (cover and latest campaign media verified locally)
-Last completed checkpoint: CP-70 (local source commit `80130df`).
+Current checkpoint: CP-71
+Status: COMPLETE (Word details and final cover verified locally; deployment pending)
+Last completed checkpoint: CP-71 (local source commit pending).
 
 ## Completed Work
 
+- Completed CP-71: re-read all 109 Word paragraphs, nine tables and 11 embedded screenshots, found four groups of overly compressed strategy copy, restored the supplied detail, and verified the versioned cover plus strategy page at mobile and desktop widths.
 - Completed CP-70: replaced the cover with the supplied 1920 × 1080 artwork, added a versioned cover URL to bypass stale optimized-image caches, proved all 46 rendered phase assets match `anh_moi_nhat` by SHA-256, removed five unreferenced legacy posters, and passed local build and responsive browser QA.
 - Completed CP-69: pushed `0900c5d` and 390 MB of Git LFS media to `origin/main`, observed the live receipt endpoint switch from HTTP 500 to 201, and verified production routes, exact campaign data, certificates, media ranges, mobile receipt creation, strategy content and responsive layout.
 - Completed CP-68: repaired receipt creation on Vercel with an explicit ephemeral response, applied the supplied Word revisions, added four prominent certificate/document images, mapped all latest phase assets, and passed the complete local gate and responsive browser review.
@@ -85,7 +86,7 @@ Last completed checkpoint: CP-70 (local source commit `80130df`).
 
 ## Current Task
 
-CP-70 is complete locally. The supplied cover and every current phase asset are verified; production remains on CP-69 until the user explicitly requests deployment.
+CP-71 is complete locally. The supplied cover and detailed Word revisions are ready for the CP-72 production deployment.
 
 ## Completed Files
 
@@ -165,4 +166,4 @@ CP-70 is complete locally. The supplied cover and every current phase asset are 
 
 ## Resume Command
 
-Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue from the next user request; preserve unrelated untracked source folders. CP-70 is locally verified but not deployed.
+Read `AGENTS.md`, `docs/MASTER_PROMPT.md`, `docs/CHECKPOINT.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, and `docs/TEST_RESULTS.md`. Continue with CP-72 deployment from the verified local source; preserve unrelated untracked source folders.

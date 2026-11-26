@@ -744,3 +744,16 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Phase browser QA | At 390 px, phase routes rendered 6 images/4 videos, 20 images/5 videos and 2 images/9 videos respectively, with no horizontal overflow or loaded broken images. All nine phase-three videos reached ready state 4 with nonzero metadata and no media errors; console QA reported no warnings or errors. |
 | Local source commit | Committed the verified cover, legacy cleanup, code and checkpoint records as `80130df`; no push was performed. |
 | Production | Not pushed or deployed; the live site remains on CP-69 pending an explicit deployment request. |
+
+## CP-71 — Word reconciliation and final cover (2026-11-26)
+
+| Check | Observed result |
+| --- | --- |
+| Word structure | Read 109 non-empty/empty paragraphs, nine tables and 11 embedded screenshots from `F:\NỘI DUNG SỬA WEBSITE.docx`. The screenshots showed the prior web state; the following text and tables supplied the requested replacements. |
+| Production audit | The live strategy page already used Mulish for body/interface copy and Spectral for display headings and contained the four pains, five drivers, SWOT/TOWS, three measurement flows, budget/reserve, funnel, phases, scenarios, monitoring, risk and legal sections. |
+| Gaps found | The live copy omitted or compressed the detailed Metric, income, TPB/demographic, DataReportal and packaging-study evidence; four legal effective dates; TikTok/Reels and shop splits; three phase date ranges; and the S-T trust objective. |
+| Content repair | Restored every identified detail in `strategy-report.json` while retaining survey-scope, advertising-reach, market-data and plan-versus-actual qualifications. |
+| Code gates | `npm run validate:json`, `npm run lint` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js security-reminder retry. |
+| Mobile browser | At 390 × 844, the versioned cover loaded at 390 × 219 intrinsic output and rendered uncropped at 372 × 209. The strategy page had document width 375 for a 390 viewport, no console warnings/errors, and rendered the restored PESTEL and phase-date copy. |
+| Desktop browser | At the default 1280 viewport, the versioned cover loaded at 1280 × 720 and rendered uncropped at 1265 × 711 with no horizontal overflow. |
+| Production state | Production still referenced `/images/truong-nhan-cover.png` before CP-72; the cover and final Word-detail repair were verified locally before deployment. |

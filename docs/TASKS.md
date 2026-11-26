@@ -32,6 +32,22 @@
 - [x] Record the local result and commit the verified asset change.
 - [x] Keep production unchanged until the user explicitly requests deployment.
 
+## CP-71 — Reconcile full Word detail and final cover
+
+- [x] Re-read all Word paragraphs and tables and inspect all 11 embedded screenshots.
+- [x] Compare the requested content groups with the live strategy page and computed typography.
+- [x] Restore omitted PESTEL statistics and legal effective dates with the supplied qualifications.
+- [x] Restore the funnel channel splits, three phase date ranges and the omitted S-T trust objective.
+- [x] Verify the versioned 1920 × 1080 cover at mobile and desktop widths.
+- [x] Pass JSON validation, lint, 10 tests and the production build.
+
+## CP-72 — Deploy final cover and reconciled Word content
+
+- [ ] Commit and push the verified CP-70 and CP-71 source.
+- [ ] Wait for the Vercel production build to become active.
+- [ ] Verify the versioned cover and detailed strategy content on production.
+- [ ] Record the production result and commit the final checkpoint evidence.
+
 | Status | Task |
 | --- | --- |
 | DONE | Verify both requested asset paths, inspect source image and 38-page PDF. |
