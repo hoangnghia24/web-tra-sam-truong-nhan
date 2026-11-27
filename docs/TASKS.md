@@ -1,5 +1,12 @@
 # Tasks
 
+## CP-93 — Deploy status and cover updates
+
+- [x] Push commits `92d79f7` and `31f846e` to `origin/main`.
+- [x] Wait for the two red not-done TikTok LIVE badges and product cover artwork to become active on Vercel.
+- [x] Verify production desktop/mobile layout, image ratio, status colors, overflow and console state.
+- [x] Record production evidence and complete the checkpoint.
+
 ## CP-92 — Product-page cover artwork
 
 - [x] Inspect the supplied cover and compare it with tracked public assets by dimensions, bytes and SHA-256.

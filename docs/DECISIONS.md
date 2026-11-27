@@ -590,3 +590,9 @@
 - Render the artwork with the same `cover-hero` and `cover-image` treatment as the homepage so the full 16:9 composition remains visible without cropping on desktop or mobile.
 - Remove the visible `PageBanner` copy because the artwork already contains the product name and tagline. Retain a visually hidden H1 for document structure and accessibility, and preload the cover instead of the below-fold square product image.
 - Keep CP-92 local because this request does not explicitly authorize another production deployment.
+
+## CP-93 status and cover production deployment (2026-11-27)
+
+- Publish the complete pending CP-91 and CP-92 commits through the existing `origin/main` to Vercel workflow; keep all unrelated untracked source-media folders outside the release.
+- Use two simultaneous activation signals: `/api/campaign` must expose exactly the two requested `not_done` activities, and `/san-pham` must contain the cover hero with no legacy page banner.
+- Verify the cover ratio, hidden H1, red badge foreground/background colors, overflow and console state at 1280 × 800 and 390 × 844 before closing the deployment checkpoint.
