@@ -96,5 +96,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-89 Copy correction and homepage document cleanup | Correct “nghỉ rằng” to “nghĩ rằng”; remove the circled heading and explanatory copy above the homepage document gallery, preserve the four images and accessible section labeling, then verify locally. |
 | CP-90 Product banner background and production deployment | Switch the product-page banner from forest to the homepage-aligned light cream-and-sage treatment, verify responsive rendering, then push CP-89 and CP-90 and confirm all requested changes on Vercel production. |
 | CP-91 TikTok LIVE status correction | Change the W2 TikTok LIVE 12.12 and W5 TikTok LIVE 01/01 activities to `not_done`, render not-done badges in accessible red, and verify both affected phase pages locally. |
+| CP-92 Product-page cover artwork | Replace the product-page text banner with the exact supplied 1920 × 1080 cover artwork, preserve the full uncropped image and an accessible hidden H1, then verify locally. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

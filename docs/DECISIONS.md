@@ -582,3 +582,11 @@
 - Reuse the existing status model and rendering logic so `not_done` continues to display as “Chưa làm”. Change the shared not-done badge from amber to dark red on pale red rather than adding title-specific presentation rules.
 - Use `#8f1d1d` on `#f7d6d3`, which provides a measured 6.57:1 contrast ratio for the status text.
 - Keep CP-91 local because this request does not explicitly authorize another production deployment.
+
+## CP-92 product-page cover artwork (2026-11-27)
+
+- Interpret the first screenshot as the current product-page banner and `F:\vòng loại .png` as its requested replacement.
+- Reuse `/images/truong-nhan-cover-v2.png` because it is an exact copy of the supplied file: 1920 × 1080, 3,089,925 bytes and SHA-256 `F62387572911E4D5D0878170EF952C1BF5FD7CD22A0F24D0030093B1D6CE2592`. Do not add a duplicate asset.
+- Render the artwork with the same `cover-hero` and `cover-image` treatment as the homepage so the full 16:9 composition remains visible without cropping on desktop or mobile.
+- Remove the visible `PageBanner` copy because the artwork already contains the product name and tagline. Retain a visually hidden H1 for document structure and accessibility, and preload the cover instead of the below-fold square product image.
+- Keep CP-92 local because this request does not explicitly authorize another production deployment.

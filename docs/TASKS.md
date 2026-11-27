@@ -1,5 +1,13 @@
 # Tasks
 
+## CP-92 — Product-page cover artwork
+
+- [x] Inspect the supplied cover and compare it with tracked public assets by dimensions, bytes and SHA-256.
+- [x] Replace the product-page text banner with the exact existing copy of the supplied 16:9 artwork.
+- [x] Preserve one accessible H1 without overlaying visible copy on the artwork.
+- [x] Run data, lint, typecheck, test, build and responsive browser checks.
+- [x] Record evidence, commit locally and complete the checkpoint.
+
 ## CP-91 — TikTok LIVE status correction
 
 - [x] Locate the two exact TikTok LIVE activities and the shared not-done badge style.

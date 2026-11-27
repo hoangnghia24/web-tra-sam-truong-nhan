@@ -977,3 +977,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At 1280 × 800, each affected phase route rendered exactly one red not-done badge, the requested title/status pair and no horizontal overflow or browser warnings/errors. |
 | Mobile browser | At 390 × 844, the same two target badges remained readable with document scroll width equal to client width and no browser warnings/errors. |
 | Production state | CP-91 is locally verified and not deployed. |
+
+## CP-92 — Product-page cover artwork (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Source parity | `F:\vòng loại .png`, `public/images/truong-nhan-cover.png` and `public/images/truong-nhan-cover-v2.png` are all 1920 × 1080, 3,089,925 bytes and share SHA-256 `F62387572911E4D5D0878170EF952C1BF5FD7CD22A0F24D0030093B1D6CE2592`. |
+| Rendering | `/san-pham` contains the optimized `/images/truong-nhan-cover-v2.png` hero, no `.page-banner`, and one `Trà Sâm Trường Nhân` H1 with the `visually-hidden` class. The visible artwork has no overlaid duplicate title. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
+| Desktop browser | At 1280 × 800, the image rendered at a measured 1.7778 ratio with the complete composition visible, no horizontal overflow and no browser warnings/errors. |
+| Mobile browser | At 390 × 844, the image retained the same 1.7778 ratio and full composition; the following product content remained readable, document scroll width equaled client width and the console was clean. |
+| Production state | CP-92 is locally verified and not deployed. |

@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, Hourglass } from 'lucide-react';
-import { PageBanner } from '@/components/site/PageBanner';
 import { IngredientExplorer } from '@/components/product/IngredientExplorer';
 import { ProductJourney } from '@/components/product/ProductJourney';
 import { CertificationGallery } from '@/components/product/CertificationGallery';
@@ -28,11 +27,14 @@ export default async function ProductPage() {
 
   return (
     <main id="main">
-      <PageBanner eyebrow="Tinh hoa từ núi Ngọc Linh" title={product.name} description="Trà túi lọc tiện pha cho một khoảng dừng 7 phút giữa ngày bận rộn. Khám phá công thức bảy thành phần và cách pha trà." tone="light" />
+      <section className="cover-hero" aria-labelledby="product-cover-title">
+        <h1 className="visually-hidden" id="product-cover-title">{product.name}</h1>
+        <Image src="/images/truong-nhan-cover-v2.png" alt="Trà Sâm Trường Nhân với hộp trà, túi lọc và tách trà bên núi Ngọc Linh" width={1920} height={1080} preload sizes="100vw" className="cover-image" />
+      </section>
 
       <section className="product-page-intro" aria-labelledby="product-intro-title">
         <div className="product-page-layout">
-          <div className="product-page-image"><Image src="/images/sanpham.jpg" alt="Hộp Trà Sâm Trường Nhân với họa tiết cây sâm và lá xanh" width={1254} height={1254} sizes="(max-width: 1200px) 100vw, 55vw" priority /></div>
+          <div className="product-page-image"><Image src="/images/sanpham.jpg" alt="Hộp Trà Sâm Trường Nhân với họa tiết cây sâm và lá xanh" width={1254} height={1254} sizes="(max-width: 1200px) 100vw, 55vw" /></div>
           <div className="product-page-copy">
             <p className="section-index"><span /> 01 · Câu chuyện sản phẩm</p>
             <h2 id="product-intro-title">Một khoảng lặng <em>được nâng niu.</em></h2>

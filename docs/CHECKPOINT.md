@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-91
-Status: COMPLETE (two TikTok LIVE activities now show red not-done badges)
-Last completed checkpoint: CP-91.
+Current checkpoint: CP-92
+Status: COMPLETE (product page now uses the supplied full 16:9 cover artwork)
+Last completed checkpoint: CP-92.
 
 ## Completed Work
 
+- Completed CP-92: replaced the visible product-page text banner with the exact tracked copy of `F:\vòng loại .png`, kept the complete uncropped 16:9 composition, preserved a screen-reader-only H1 and verified desktop/mobile rendering without overflow or console warnings/errors.
 - Completed CP-91: changed only the W2 TikTok LIVE 12.12 and W5 TikTok LIVE 01/01 activities to `not_done`, restyled not-done badges in accessible red, and verified both affected routes at desktop/mobile widths without overflow or console warnings/errors.
 - Completed CP-90: changed the product hero from the dark forest banner to the homepage-aligned cream-and-sage treatment, pushed CP-89 and CP-90 through `origin/main`, and verified all requested changes on Vercel production at desktop/mobile widths without overflow or console warnings/errors.
 - Completed CP-89: corrected “nghỉ rằng” to “nghĩ rằng”, removed the circled heading and explanatory copy above the homepage document gallery, retained all four document cards with an accessible section label, and passed data/code/build plus desktop/mobile browser checks.
@@ -106,7 +107,7 @@ Last completed checkpoint: CP-91.
 
 ## Current Task
 
-CP-91 is complete locally. The two specified TikTok LIVE activities show “Chưa làm” in red and are ready for a future production deployment.
+CP-92 is complete locally. The product page now opens with the supplied full 16:9 cover artwork and is ready for a future production deployment.
 
 ## Completed Files
 
