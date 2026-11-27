@@ -100,5 +100,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-93 Production deployment | Push CP-91 and CP-92 through `origin/main`, wait for Vercel activation, then verify both red TikTok LIVE status badges and the product-page 16:9 cover at desktop/mobile widths. |
 | CP-94 Rename not-done LIVE activities | Replace both specified TikTok LIVE titles with the exact shared title “Live trực tiếp trên sàn tiktok”, preserve their red not-done statuses and verify locally. |
 | CP-95 Production deployment | Push CP-94 through `origin/main`, wait for Vercel activation, then verify the shared LIVE title and red not-done badges on both production phase pages. |
+| CP-96 LIVE title and badge correction | Restore both dated TikTok LIVE activity titles, replace the red not-done badge copy with “Live trực tiếp trên sàn tiktok”, validate responsive rendering, deploy and verify production. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

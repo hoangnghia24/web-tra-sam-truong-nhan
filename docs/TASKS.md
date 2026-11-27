@@ -1,5 +1,13 @@
 # Tasks
 
+## CP-96 — Restore LIVE titles and correct status badge copy
+
+- [x] Restore the original W2 and W5 TikTok LIVE activity titles.
+- [x] Render “Live trực tiếp trên sàn tiktok” inside each red `not_done` badge.
+- [x] Preserve both `not_done` values and the existing red badge colors.
+- [x] Run data, lint, typecheck, test, build and responsive browser checks.
+- [ ] Commit, deploy through `origin/main`, verify production and record evidence.
+
 ## CP-95 — Deploy shared LIVE activity title
 
 - [x] Push commit `b2aa944` to `origin/main`.

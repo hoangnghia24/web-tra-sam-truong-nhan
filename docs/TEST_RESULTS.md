@@ -1020,3 +1020,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Mobile browser | At 390 × 844, both routes retained the exact title and badge colors `rgb(143, 29, 29)` on `rgb(247, 214, 211)` without horizontal overflow. |
 | Console | The final production review reported no warnings or errors. |
 | Production state | CP-94 is active and verified on Vercel production. |
+
+## CP-96 — LIVE title and badge correction (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Data scope | Campaign data contains exactly two `not_done` records with their restored original titles: W2 TikTok LIVE 12.12 and W5 TikTok LIVE 01/01. |
+| Rendering | `done` activities retain “Trạng thái: Đã làm”; both `not_done` activities instead render the complete badge copy “Live trực tiếp trên sàn tiktok”. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
+| Desktop browser | At 1280 × 800, each affected route rendered its original title once and one exact new badge. The badge retained `rgb(143, 29, 29)` on `rgb(247, 214, 211)`; no overflow or console warnings/errors occurred. |
+| Mobile browser | At 390 × 844, the same title/badge placement and colors held on both routes with zero horizontal overflow and a clean console. |
+| Production state | Local verification passed; deployment and production verification are in progress. |

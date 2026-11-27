@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-95
-Status: COMPLETE (shared LIVE activity title deployed and verified)
+Current checkpoint: CP-96
+Status: IN_PROGRESS (restoring LIVE titles and correcting red badge copy)
 Last completed checkpoint: CP-95.
 
 ## Completed Work
 
+- CP-96 local verification complete: restored the two original dated TikTok LIVE titles, moved “Live trực tiếp trên sàn tiktok” into the red `not_done` badge, and passed all code/build plus desktop/mobile browser checks.
 - Completed CP-95: pushed `b2aa944` to `origin/main`, observed both campaign records change on Vercel, and verified the exact shared LIVE title plus red not-done badges on both production phase pages at desktop/mobile widths.
 - Completed CP-94: renamed both specified not-done activities to the exact title “Live trực tiếp trên sàn tiktok”, preserved their red “Chưa làm” badges and verified both affected routes at desktop/mobile widths without overflow or console warnings/errors.
 - Completed CP-93: pushed `92d79f7` and `31f846e` to `origin/main`, observed the campaign API and product page switch to the new version, and verified the full product cover plus both red TikTok LIVE not-done badges on Vercel production at desktop/mobile widths.
@@ -110,7 +111,7 @@ Last completed checkpoint: CP-95.
 
 ## Current Task
 
-CP-95 is complete. Both production phase pages now show “Live trực tiếp trên sàn tiktok” with red “Chưa làm” badges.
+CP-96 is locally verified. Commit and deploy the correction, then confirm both production phase pages retain the original titles and show the new red badge copy.
 
 ## Completed Files
 

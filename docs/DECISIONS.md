@@ -608,3 +608,10 @@
 - Publish CP-94 through the existing `origin/main` to Vercel workflow and preserve unrelated untracked source-media folders.
 - Use `/api/campaign` as the activation signal: exactly two `not_done` records must share the new exact title and no activity may retain a prior `TikTok LIVE` title.
 - Verify both production phase routes at desktop and mobile widths, including red badge colors, title count, overflow and console state.
+
+## CP-96 LIVE title and badge correction (2026-11-27)
+
+- Treat the user's correction as authoritative: activity titles remain “TikTok LIVE 12.12 – “Chọn Trường Nhân, Chọn Cho Mình”” and “TikTok LIVE 01/01 – “Cùng Trường Nhân Đón Năm Mới!””.
+- Interpret “Live trực tiếp trên sàn tiktok” as the complete visitor-facing copy inside each `not_done` badge, replacing “Trạng thái: Chưa làm” rather than supplementing it.
+- Preserve the `not_done` data values and shared `phase-activity-status-not_done` class so the established accessible red treatment remains unchanged.
+- Publish the verified correction through the existing `origin/main` and Vercel integration, then require exact title/badge placement at desktop and mobile widths.
