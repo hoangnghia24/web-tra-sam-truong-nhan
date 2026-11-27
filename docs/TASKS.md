@@ -5,9 +5,9 @@
 - [x] Identify the dark product banner as the shared `PageBanner` forest tone.
 - [x] Switch the product banner to the light cream-and-sage treatment used across the homepage.
 - [x] Run data, lint, typecheck, test, build and responsive browser checks.
-- [ ] Commit and push CP-89 plus CP-90 to `origin/main`.
-- [ ] Wait for Vercel production activation and verify the product banner, corrected strategy copy and simplified homepage document gallery.
-- [ ] Record production evidence and complete the checkpoint.
+- [x] Commit and push CP-89 plus CP-90 to `origin/main`.
+- [x] Wait for Vercel production activation and verify the product banner, corrected strategy copy and simplified homepage document gallery.
+- [x] Record production evidence and complete the checkpoint.
 
 ## CP-89 — Copy correction and homepage document cleanup
 

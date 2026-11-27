@@ -5,11 +5,12 @@ Project: Truong Nhan Digital Campaign
 ## Current Status
 
 Current checkpoint: CP-90
-Status: IN_PROGRESS (matching the product banner to the homepage palette before production deployment)
-Last completed checkpoint: CP-89.
+Status: COMPLETE (product banner and all pending fixes deployed and verified)
+Last completed checkpoint: CP-90.
 
 ## Completed Work
 
+- Completed CP-90: changed the product hero from the dark forest banner to the homepage-aligned cream-and-sage treatment, pushed CP-89 and CP-90 through `origin/main`, and verified all requested changes on Vercel production at desktop/mobile widths without overflow or console warnings/errors.
 - Completed CP-89: corrected “nghỉ rằng” to “nghĩ rằng”, removed the circled heading and explanatory copy above the homepage document gallery, retained all four document cards with an accessible section label, and passed data/code/build plus desktop/mobile browser checks.
 - Completed CP-88: pushed `51645e9`, confirmed all 40 revised strategy signals on production, verified exact TOWS/SWOT/KPI rendering at desktop/mobile widths, and found no overflow or browser warnings/errors.
 - Completed CP-87: reconciled the edited strategy JSON with its schema and page consumers, removed the obsolete TOWS summary read, rendered four updated actions in every quadrant, and passed all local gates plus responsive browser verification.
@@ -104,7 +105,7 @@ Last completed checkpoint: CP-89.
 
 ## Current Task
 
-Change the product-page hero from the dark forest treatment to the light cream-and-sage treatment used by the homepage, verify it locally, then deploy all pending CP-89 and CP-90 work to production.
+CP-90 is complete. Production now contains the light product banner, corrected strategy sentence and simplified homepage document gallery.
 
 ## Completed Files
 
