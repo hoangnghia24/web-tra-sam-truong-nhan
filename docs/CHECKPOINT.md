@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-94
-Status: COMPLETE (both not-done LIVE activities use the requested shared title)
-Last completed checkpoint: CP-94.
+Current checkpoint: CP-95
+Status: COMPLETE (shared LIVE activity title deployed and verified)
+Last completed checkpoint: CP-95.
 
 ## Completed Work
 
+- Completed CP-95: pushed `b2aa944` to `origin/main`, observed both campaign records change on Vercel, and verified the exact shared LIVE title plus red not-done badges on both production phase pages at desktop/mobile widths.
 - Completed CP-94: renamed both specified not-done activities to the exact title “Live trực tiếp trên sàn tiktok”, preserved their red “Chưa làm” badges and verified both affected routes at desktop/mobile widths without overflow or console warnings/errors.
 - Completed CP-93: pushed `92d79f7` and `31f846e` to `origin/main`, observed the campaign API and product page switch to the new version, and verified the full product cover plus both red TikTok LIVE not-done badges on Vercel production at desktop/mobile widths.
 - Completed CP-92: replaced the visible product-page text banner with the exact tracked copy of `F:\vòng loại .png`, kept the complete uncropped 16:9 composition, preserved a screen-reader-only H1 and verified desktop/mobile rendering without overflow or console warnings/errors.
@@ -109,7 +110,7 @@ Last completed checkpoint: CP-94.
 
 ## Current Task
 
-CP-94 is complete locally. Both affected phase pages show “Live trực tiếp trên sàn tiktok” with red “Chưa làm” badges and are ready for a future production deployment.
+CP-95 is complete. Both production phase pages now show “Live trực tiếp trên sàn tiktok” with red “Chưa làm” badges.
 
 ## Completed Files
 

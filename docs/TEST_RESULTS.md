@@ -1008,4 +1008,15 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
 | Desktop browser | At 1280 × 800, each affected phase route rendered the new title exactly once, retained the red “Trạng thái: Chưa làm” badge and contained neither former dated title. No overflow or console warnings/errors occurred. |
 | Mobile browser | At 390 × 844, the same exact title and red badge rendered on both routes with document scroll width equal to client width and a clean console. |
-| Production state | CP-94 is locally verified and not deployed. |
+| Production state | CP-94 was deployed with CP-95 and verified on Vercel production. |
+
+## CP-95 — Shared LIVE title production deployment (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Source push | Pushed commit `b2aa944` from `main` to `origin/main`; unrelated untracked source-media folders remained outside the release. |
+| Deployment signal | Production `/api/campaign` changed from two prior `TikTok LIVE` titles to exactly two `not_done` records titled “Live trực tiếp trên sàn tiktok”; no prior dated LIVE title remained. |
+| Desktop browser | At 1280 × 800, both production phase routes rendered the exact new title once and retained the red “Trạng thái: Chưa làm” badge. Document scroll width equaled client width. |
+| Mobile browser | At 390 × 844, both routes retained the exact title and badge colors `rgb(143, 29, 29)` on `rgb(247, 214, 211)` without horizontal overflow. |
+| Console | The final production review reported no warnings or errors. |
+| Production state | CP-94 is active and verified on Vercel production. |

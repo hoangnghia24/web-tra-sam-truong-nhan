@@ -602,3 +602,9 @@
 - Replace both prior dated TikTok LIVE titles with the user's exact shared wording “Live trực tiếp trên sàn tiktok”; do not normalize the capitalization of “tiktok”.
 - Preserve both activities in their original W2 and W5 positions with `not_done` status and the existing accessible red badge styling.
 - Keep CP-94 local because this request does not explicitly authorize another production deployment.
+
+## CP-95 shared LIVE title production deployment (2026-11-27)
+
+- Publish CP-94 through the existing `origin/main` to Vercel workflow and preserve unrelated untracked source-media folders.
+- Use `/api/campaign` as the activation signal: exactly two `not_done` records must share the new exact title and no activity may retain a prior `TikTok LIVE` title.
+- Verify both production phase routes at desktop and mobile widths, including red badge colors, title count, overflow and console state.

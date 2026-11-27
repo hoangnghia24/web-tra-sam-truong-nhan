@@ -1,5 +1,12 @@
 # Tasks
 
+## CP-95 — Deploy shared LIVE activity title
+
+- [x] Push commit `b2aa944` to `origin/main`.
+- [x] Wait for both production phase pages to expose “Live trực tiếp trên sàn tiktok”.
+- [x] Verify red not-done badges, responsive layout, overflow and console state.
+- [x] Record production evidence and complete the checkpoint.
+
 ## CP-94 — Rename not-done LIVE activities
 
 - [x] Locate the two exact not-done TikTok LIVE activities.
