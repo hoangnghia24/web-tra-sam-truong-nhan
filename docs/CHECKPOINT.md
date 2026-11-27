@@ -4,8 +4,8 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-89
-Status: COMPLETE (copy corrected and homepage document section simplified)
+Current checkpoint: CP-90
+Status: IN_PROGRESS (matching the product banner to the homepage palette before production deployment)
 Last completed checkpoint: CP-89.
 
 ## Completed Work
@@ -104,7 +104,7 @@ Last completed checkpoint: CP-89.
 
 ## Current Task
 
-CP-89 is complete locally. The corrected strategy sentence and simplified homepage document gallery are ready for a future production deployment.
+Change the product-page hero from the dark forest treatment to the light cream-and-sage treatment used by the homepage, verify it locally, then deploy all pending CP-89 and CP-90 work to production.
 
 ## Completed Files
 

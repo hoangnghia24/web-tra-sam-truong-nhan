@@ -954,3 +954,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At 1280 × 800, the homepage rendered four document figures with both circled text strings absent; the strategy page showed the corrected sentence. Document scroll width equaled client width and the console had no warnings/errors. |
 | Mobile browser | At 390 × 844, the same four figures and corrected sentence were present, both removed strings were absent, document scroll width equaled client width and the console had no warnings/errors. |
 | Production state | CP-89 is locally verified and not deployed. |
+
+## CP-90 — Product banner background and production deployment (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Banner treatment | `/san-pham` renders `page-banner-light` with cream `rgb(255, 245, 220)`, the sage radial gradient and forest heading text at both tested widths. The former `page-banner-forest` class is absent. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
+| Desktop browser | At 1280 × 800, the light product banner rendered without horizontal overflow or browser warnings/errors. The four homepage document figures and corrected strategy sentence also remained present. |
+| Mobile browser | At 390 × 844, the same light banner colors and prior CP-89 changes rendered with document scroll width equal to client width and no browser warnings/errors. |
+| Production state | Local verification passed; production deployment and verification are in progress. |

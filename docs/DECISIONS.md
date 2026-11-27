@@ -569,3 +569,9 @@
 - Interpret the red circles as identifying only the heading and explanatory paragraph above the four homepage document cards. Preserve the four supplied document images, their captions and the product-detail link outside the circled area.
 - Replace the removed heading reference with an explicit `aria-label` on the section and delete the now-unused heading layout rules.
 - Keep this checkpoint local; the user requested the source correction, not a production deployment.
+
+## CP-90 product banner background and production deployment (2026-11-27)
+
+- Interpret “giống nền của trang chủ” as the established light cream-and-sage homepage palette, not the 16:9 cover artwork. The cover contains embedded product and campaign text and must not become a cropped text background behind another heading.
+- Reuse the shared `PageBanner` light tone on `/san-pham` instead of introducing one-off CSS. This preserves the cream `#fff5dc` base, sage radial accent and forest text already used across the site.
+- Publish both pending CP-89 and CP-90 commits through the existing `origin/main` to Vercel workflow. Preserve all unrelated untracked source-media folders.

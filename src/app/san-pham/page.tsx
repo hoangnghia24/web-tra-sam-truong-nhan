@@ -28,7 +28,7 @@ export default async function ProductPage() {
 
   return (
     <main id="main">
-      <PageBanner eyebrow="Tinh hoa từ núi Ngọc Linh" title={product.name} description="Trà túi lọc tiện pha cho một khoảng dừng 7 phút giữa ngày bận rộn. Khám phá công thức bảy thành phần và cách pha trà." tone="forest" />
+      <PageBanner eyebrow="Tinh hoa từ núi Ngọc Linh" title={product.name} description="Trà túi lọc tiện pha cho một khoảng dừng 7 phút giữa ngày bận rộn. Khám phá công thức bảy thành phần và cách pha trà." tone="light" />
 
       <section className="product-page-intro" aria-labelledby="product-intro-title">
         <div className="product-page-layout">
