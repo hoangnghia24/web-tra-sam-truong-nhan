@@ -562,3 +562,10 @@
 - Publish the complete reconciled strategy data, schema, consumer, print treatment and supporting checkpoint corrections through the existing `origin/main` and Vercel integration.
 - Use simultaneous presence of the new four-item TOWS groups, five-item SWOT groups, `Video chính` labels and `≈ 3,02×` KPI value as the production activation signal.
 - Require responsive production rendering without horizontal overflow and a clean browser console before closing the checkpoint.
+
+## CP-89 copy correction and homepage document cleanup (2026-11-27)
+
+- Treat the user's typed correction as authoritative and change the market-truth sentence from “nghỉ rằng” to “nghĩ rằng”.
+- Interpret the red circles as identifying only the heading and explanatory paragraph above the four homepage document cards. Preserve the four supplied document images, their captions and the product-detail link outside the circled area.
+- Replace the removed heading reference with an explicit `aria-label` on the section and delete the now-unused heading layout rules.
+- Keep this checkpoint local; the user requested the source correction, not a production deployment.

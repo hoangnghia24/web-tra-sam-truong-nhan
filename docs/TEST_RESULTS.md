@@ -943,3 +943,14 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Desktop browser | At 1280 px, production rendered the four exact TOWS headings, 4/4/4/4 TOWS action counts, five selected Strength items and `≈ 3,02×`. Document scroll width equaled client width 1265. |
 | Mobile browser | At 390 × 844, the same TOWS headings and counts rendered with complete copy; document scroll width equaled client width 375. |
 | Console | The final production browser review reported no warnings or errors, and the temporary viewport override was reset. |
+
+## CP-89 — Copy correction and homepage document cleanup (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Copy | `/chien-luoc` renders “vì nghĩ rằng ngày mai vẫn kịp.” and does not render the incorrect “nghỉ rằng” form. |
+| Homepage cleanup | The circled “Hồ sơ minh bạch” heading, title and explanatory paragraph are absent; all four document figures remain and the section exposes `aria-label="Hồ sơ sản phẩm"`. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
+| Desktop browser | At 1280 × 800, the homepage rendered four document figures with both circled text strings absent; the strategy page showed the corrected sentence. Document scroll width equaled client width and the console had no warnings/errors. |
+| Mobile browser | At 390 × 844, the same four figures and corrected sentence were present, both removed strings were absent, document scroll width equaled client width and the console had no warnings/errors. |
+| Production state | CP-89 is locally verified and not deployed. |

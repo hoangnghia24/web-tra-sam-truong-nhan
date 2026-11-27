@@ -63,8 +63,6 @@ img { display: block; max-width: 100%; }
 .intro-scroll { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin-top: 3.5rem; border: 1px solid rgba(23,62,41,.28); border-radius: 50%; color: var(--brand-forest); }
 
 .home-certifications, .product-certification-section { padding: clamp(4.5rem, 8vw, 7.5rem) 0; background: #e8eddd; }
-.home-certifications-heading { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr); gap: 3rem; align-items: end; margin-bottom: 2rem; }
-.home-certifications-heading > p { margin: 0 0 1.7rem; color: var(--text-secondary); }
 .certification-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; margin: 2rem 0; }
 .certification-gallery-compact { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .certification-gallery figure { display: flex; min-width: 0; margin: 0; flex-direction: column; overflow: hidden; border: 1px solid #bcc9b5; border-radius: 18px; background: var(--brand-ivory); box-shadow: 0 18px 40px rgba(23,62,41,.07); }
@@ -919,7 +917,6 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 800px) {
-  .home-certifications-heading { grid-template-columns: 1fr; gap: 0; }
   .pestel-grid { grid-template-columns: 1fr; }
   .market-truth, .market-pain-grid { grid-template-columns: 1fr; }
   .market-truth { gap: .75rem; }

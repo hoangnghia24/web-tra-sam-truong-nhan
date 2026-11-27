@@ -1,5 +1,14 @@
 # Tasks
 
+## CP-89 — Copy correction and homepage document cleanup
+
+- [x] Locate the incorrect “nghỉ rằng” source and the circled homepage document copy.
+- [x] Change the strategy sentence to “nghĩ rằng”.
+- [x] Remove the heading and explanatory paragraph above the four homepage document images.
+- [x] Remove styling that becomes unused and preserve accessible section labeling.
+- [x] Run focused content, lint, typecheck, test and production-build checks.
+- [x] Record verification evidence and complete the checkpoint.
+
 ## CP-68 — Receipt repair and latest content/assets
 
 - [x] Reproduce the production receipt failure (HTTP 500 from `/api/receipts`).

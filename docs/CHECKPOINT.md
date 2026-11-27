@@ -4,12 +4,13 @@ Project: Truong Nhan Digital Campaign
 
 ## Current Status
 
-Current checkpoint: CP-88
-Status: COMPLETE (strategy JSON reconciliation deployed and verified)
-Last completed checkpoint: CP-88.
+Current checkpoint: CP-89
+Status: COMPLETE (copy corrected and homepage document section simplified)
+Last completed checkpoint: CP-89.
 
 ## Completed Work
 
+- Completed CP-89: corrected “nghỉ rằng” to “nghĩ rằng”, removed the circled heading and explanatory copy above the homepage document gallery, retained all four document cards with an accessible section label, and passed data/code/build plus desktop/mobile browser checks.
 - Completed CP-88: pushed `51645e9`, confirmed all 40 revised strategy signals on production, verified exact TOWS/SWOT/KPI rendering at desktop/mobile widths, and found no overflow or browser warnings/errors.
 - Completed CP-87: reconciled the edited strategy JSON with its schema and page consumers, removed the obsolete TOWS summary read, rendered four updated actions in every quadrant, and passed all local gates plus responsive browser verification.
 - Completed CP-86: pushed `b63e18a`, observed the new campaign data and all 14 image paths become active on Vercel, proved exact production image hashes and verified all three phase pages at desktop/mobile widths with Mulish typography, bottom captions, no overflow, no media errors and a clean console.
@@ -103,7 +104,7 @@ Last completed checkpoint: CP-88.
 
 ## Current Task
 
-CP-84 is complete. Production now shows the exact simplified “Đo lường hiệu quả” paths requested by the user.
+CP-89 is complete locally. The corrected strategy sentence and simplified homepage document gallery are ready for a future production deployment.
 
 ## Completed Files
 

@@ -36,9 +36,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="home-certifications" id="chung-nhan" aria-labelledby="home-certifications-title">
+      <section className="home-certifications" id="chung-nhan" aria-label="Hồ sơ sản phẩm">
         <div className="home-container">
-          <div className="home-certifications-heading"><div><p className="section-index"><span /> Hồ sơ minh bạch</p><h2 className="section-title" id="home-certifications-title">Giấy tờ sản phẩm, <em>đặt ở nơi dễ kiểm tra.</em></h2></div><p>Bốn hình ảnh hồ sơ do nhóm cung cấp được hiển thị ngay sau phần mở đầu. Nhấn vào từng tài liệu để đọc bản đầy đủ.</p></div>
           <CertificationGallery compact />
           <Link className="editorial-link" href="/san-pham#chung-nhan">Xem hồ sơ cùng thông tin sản phẩm <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </div>
