@@ -1030,4 +1030,7 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
 | Desktop browser | At 1280 × 800, each affected route rendered its original title once and one exact new badge. The badge retained `rgb(143, 29, 29)` on `rgb(247, 214, 211)`; no overflow or console warnings/errors occurred. |
 | Mobile browser | At 390 × 844, the same title/badge placement and colors held on both routes with zero horizontal overflow and a clean console. |
-| Production state | Local verification passed; deployment and production verification are in progress. |
+| Source push | Pushed commit `2d7e3bf` from `main` to `origin/main`; unrelated untracked source-media folders remained outside the release. |
+| Deployment signal | Production `/api/campaign` exposed each restored dated LIVE title exactly once and no activity retained “Live trực tiếp trên sàn tiktok” as its title. |
+| Production browser | At 1280 × 800 and 390 × 844, both production routes rendered the exact original title plus one red “Live trực tiếp trên sàn tiktok” badge, with zero horizontal overflow and no console warnings/errors. |
+| Production state | CP-96 is active and verified on Vercel production. |

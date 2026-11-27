@@ -6,7 +6,7 @@
 - [x] Render “Live trực tiếp trên sàn tiktok” inside each red `not_done` badge.
 - [x] Preserve both `not_done` values and the existing red badge colors.
 - [x] Run data, lint, typecheck, test, build and responsive browser checks.
-- [ ] Commit, deploy through `origin/main`, verify production and record evidence.
+- [x] Commit, deploy through `origin/main`, verify production and record evidence.
 
 ## CP-95 — Deploy shared LIVE activity title
 
