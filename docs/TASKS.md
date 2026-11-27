@@ -1,5 +1,13 @@
 # Tasks
 
+## CP-91 — TikTok LIVE status correction
+
+- [x] Locate the two exact TikTok LIVE activities and the shared not-done badge style.
+- [x] Change only those two activities from `done` to `not_done`.
+- [x] Change the shared `Chưa làm` badge from amber to accessible red styling.
+- [x] Run data, lint, typecheck, test, build and responsive browser checks.
+- [x] Record evidence, commit locally and complete the checkpoint.
+
 ## CP-90 — Product banner background and production deployment
 
 - [x] Identify the dark product banner as the shared `PageBanner` forest tone.

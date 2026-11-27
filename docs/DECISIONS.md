@@ -575,3 +575,10 @@
 - Interpret “giống nền của trang chủ” as the established light cream-and-sage homepage palette, not the 16:9 cover artwork. The cover contains embedded product and campaign text and must not become a cropped text background behind another heading.
 - Reuse the shared `PageBanner` light tone on `/san-pham` instead of introducing one-off CSS. This preserves the cream `#fff5dc` base, sage radial accent and forest text already used across the site.
 - Publish both pending CP-89 and CP-90 commits through the existing `origin/main` to Vercel workflow. Preserve all unrelated untracked source-media folders.
+
+## CP-91 TikTok LIVE status correction (2026-11-27)
+
+- Treat the two exact activity titles supplied by the user as the only status changes: W2 TikTok LIVE 12.12 and W5 TikTok LIVE 01/01 become `not_done`; the other 26 campaign activities remain `done`.
+- Reuse the existing status model and rendering logic so `not_done` continues to display as “Chưa làm”. Change the shared not-done badge from amber to dark red on pale red rather than adding title-specific presentation rules.
+- Use `#8f1d1d` on `#f7d6d3`, which provides a measured 6.57:1 contrast ratio for the status text.
+- Keep CP-91 local because this request does not explicitly authorize another production deployment.

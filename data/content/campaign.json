@@ -35,7 +35,7 @@
             { "title": "Hóa Đơn Của Những Lần Để Mai", "status": "done" },
             { "title": "48 Giờ Nữa - Hẹn Bạn Cùng Trường Nhân", "status": "done" },
             { "title": "Khám Phá Trà Sâm Trường Nhân", "status": "done" },
-            { "title": "TikTok LIVE 12.12 – “Chọn Trường Nhân, Chọn Cho Mình”", "status": "done" }
+            { "title": "TikTok LIVE 12.12 – “Chọn Trường Nhân, Chọn Cho Mình”", "status": "not_done" }
           ],
           "goal": "Tạo điểm nhấn sáng tạo, tăng tương tác và giúp người xem hiểu trải nghiệm cũng như sản phẩm.",
           "media": [
@@ -99,7 +99,7 @@
           "week": 5,
           "activities": [
             { "title": "Đinh Mùi Khai Xuân – Trường Nhân Lên Sóng!", "status": "done" },
-            { "title": "TikTok LIVE 01/01 – “Cùng Trường Nhân Đón Năm Mới!”", "status": "done" },
+            { "title": "TikTok LIVE 01/01 – “Cùng Trường Nhân Đón Năm Mới!”", "status": "not_done" },
             { "title": "Checklist 4 Điều Trước Khi Gửi Bài", "status": "done" }
           ],
           "goal": "Tăng tỷ lệ bài hợp lệ và thúc đẩy người tham gia nộp bài đúng hạn vào cuối W5.",

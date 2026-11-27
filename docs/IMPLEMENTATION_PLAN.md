@@ -95,5 +95,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-88 Strategy data production deployment | Push CP-87 through the existing GitHub/Vercel path, wait for the revised strategy data to become active, then verify exact TOWS/SWOT/KPI copy, responsive layout and console state on production. |
 | CP-89 Copy correction and homepage document cleanup | Correct “nghỉ rằng” to “nghĩ rằng”; remove the circled heading and explanatory copy above the homepage document gallery, preserve the four images and accessible section labeling, then verify locally. |
 | CP-90 Product banner background and production deployment | Switch the product-page banner from forest to the homepage-aligned light cream-and-sage treatment, verify responsive rendering, then push CP-89 and CP-90 and confirm all requested changes on Vercel production. |
+| CP-91 TikTok LIVE status correction | Change the W2 TikTok LIVE 12.12 and W5 TikTok LIVE 01/01 activities to `not_done`, render not-done badges in accessible red, and verify both affected phase pages locally. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

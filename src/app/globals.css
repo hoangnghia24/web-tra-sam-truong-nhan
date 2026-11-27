@@ -1137,7 +1137,7 @@ img { display: block; max-width: 100%; }
 .phase-week-activities > li > p { margin: 0; color: var(--text-primary); font-size: 1rem; line-height: 1.6; }
 .phase-activity-status { display: inline-block; margin-top: .45rem; padding: .22rem .55rem; border-radius: 999px; font-size: .72rem; font-weight: 800; }
 .phase-activity-status-done { color: #245331; background: #dce9d8; }
-.phase-activity-status-not_done { color: #75521c; background: #f2e5c7; }
+.phase-activity-status-not_done { color: #8f1d1d; background: #f7d6d3; }
 .phase-week-media { margin-top: 2rem; }
 .phase-week-media > h4 { margin: 0 0 1.25rem; color: var(--brand-leaf); font-family: var(--type-body); font-size: .8rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .phase-week-media-items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 1.25rem; }
