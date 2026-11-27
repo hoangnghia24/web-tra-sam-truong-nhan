@@ -98,5 +98,6 @@ Follow `docs/MASTER_PROMPT.md` with the later typography amendment. Keep the exi
 | CP-91 TikTok LIVE status correction | Change the W2 TikTok LIVE 12.12 and W5 TikTok LIVE 01/01 activities to `not_done`, render not-done badges in accessible red, and verify both affected phase pages locally. |
 | CP-92 Product-page cover artwork | Replace the product-page text banner with the exact supplied 1920 × 1080 cover artwork, preserve the full uncropped image and an accessible hidden H1, then verify locally. |
 | CP-93 Production deployment | Push CP-91 and CP-92 through `origin/main`, wait for Vercel activation, then verify both red TikTok LIVE status badges and the product-page 16:9 cover at desktop/mobile widths. |
+| CP-94 Rename not-done LIVE activities | Replace both specified TikTok LIVE titles with the exact shared title “Live trực tiếp trên sàn tiktok”, preserve their red not-done statuses and verify locally. |
 
 After each completed checkpoint: run its verification gate, write observed results, update status, commit focused changes. Never commit `data/runtime`, `.env`, `.next`, `node_modules`, or the large strategy PDF.

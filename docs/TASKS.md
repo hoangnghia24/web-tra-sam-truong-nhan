@@ -1,5 +1,13 @@
 # Tasks
 
+## CP-94 — Rename not-done LIVE activities
+
+- [x] Locate the two exact not-done TikTok LIVE activities.
+- [x] Replace both titles with “Live trực tiếp trên sàn tiktok”.
+- [x] Preserve both `not_done` values and red badge styling.
+- [x] Run data, lint, typecheck, test, build and responsive browser checks.
+- [x] Record evidence, commit locally and complete the checkpoint.
+
 ## CP-93 — Deploy status and cover updates
 
 - [x] Push commits `92d79f7` and `31f846e` to `origin/main`.

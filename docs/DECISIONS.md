@@ -596,3 +596,9 @@
 - Publish the complete pending CP-91 and CP-92 commits through the existing `origin/main` to Vercel workflow; keep all unrelated untracked source-media folders outside the release.
 - Use two simultaneous activation signals: `/api/campaign` must expose exactly the two requested `not_done` activities, and `/san-pham` must contain the cover hero with no legacy page banner.
 - Verify the cover ratio, hidden H1, red badge foreground/background colors, overflow and console state at 1280 × 800 and 390 × 844 before closing the deployment checkpoint.
+
+## CP-94 rename not-done LIVE activities (2026-11-27)
+
+- Replace both prior dated TikTok LIVE titles with the user's exact shared wording “Live trực tiếp trên sàn tiktok”; do not normalize the capitalization of “tiktok”.
+- Preserve both activities in their original W2 and W5 positions with `not_done` status and the existing accessible red badge styling.
+- Keep CP-94 local because this request does not explicitly authorize another production deployment.

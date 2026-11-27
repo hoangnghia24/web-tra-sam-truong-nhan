@@ -999,3 +999,13 @@ Native Chrome automation stopped because the Computer Use tool could not determi
 | Mobile browser | At 390 × 844, the cover retained ratio 1.7778 and both target badges retained `rgb(143, 29, 29)` on `rgb(247, 214, 211)`. Document scroll width equaled client width. |
 | Console | The final DOM-based production review reported no warnings or errors. A prior network-idle wait timed out because phase videos continue loading; direct DOM and computed-style checks then passed. |
 | Production state | CP-91 and CP-92 are active and verified on Vercel production. |
+
+## CP-94 — Rename not-done LIVE activities (2026-11-27)
+
+| Check | Observed result |
+| --- | --- |
+| Data scope | Campaign data contains exactly two `not_done` records, both titled “Live trực tiếp trên sàn tiktok”; they remain in W2 `bam-hoan` and W5 `lam-ngay`. |
+| Code gates | `npm run validate:json`, `npm run lint`, `npm run typecheck` and `npm run test` passed; all 10 tests succeeded. `npm run build` passed after the required Next.js 16.4.4 security-reminder retry. |
+| Desktop browser | At 1280 × 800, each affected phase route rendered the new title exactly once, retained the red “Trạng thái: Chưa làm” badge and contained neither former dated title. No overflow or console warnings/errors occurred. |
+| Mobile browser | At 390 × 844, the same exact title and red badge rendered on both routes with document scroll width equal to client width and a clean console. |
+| Production state | CP-94 is locally verified and not deployed. |
